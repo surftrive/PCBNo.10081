@@ -88,10 +88,11 @@ end ppmc_top_S118M;
 
 architecture RTL of ppmc_top_S118M is
 
-signal  s_S1 : std_logic;
-signal  s_S2 : std_logic;
-signal  s_S3 : std_logic;
-signal  s_S4 : std_logic;
+-- [OPTIMIZATION] s_S1-s_S4 signals removed: S1-S4 outputs unused (all 'open' at top level)
+-- signal  s_S1 : std_logic;
+-- signal  s_S2 : std_logic;
+-- signal  s_S3 : std_logic;
+-- signal  s_S4 : std_logic;
 
 component fc_dec
     port(
@@ -185,10 +186,12 @@ begin
 --------------process-----------------------------------------
 --
   MPO_A <= s_MPO_A;
-  S1 <= s_S1 and s_MPO_A(0);
-  S2 <= s_S2 and s_MPO_A(0);
-  S3 <= s_S3 and s_MPO_A(0);
-  S4 <= s_S4 and s_MPO_A(0);
+  -- [OPTIMIZATION] S1-S4 AND gates removed: outputs unused (all 'open' at top level for all 13 instances)
+  -- Savings: 4 AND gates per instance x 13 instances
+  S1 <= '0';
+  S2 <= '0';
+  S3 <= '0';
+  S4 <= '0';
 
 --[LCW&LCCW] is synchronized with a clock.
 process (CLK, LRSTb) begin
@@ -264,10 +267,10 @@ ppmc_reg_S118M_inst : ppmc_reg_S118M port map(
         MPI         => MPI,
         MPO_A       => s_MPO_A,
         MPO_B       => MPO_B,
-        S1          => s_S1,
-        S2          => s_S2,
-        S3          => s_S3,
-        S4          => s_S4,
+        S1          => open,  -- [OPTIMIZATION] unused, ppmc_phgen removed
+        S2          => open,  -- [OPTIMIZATION] unused, ppmc_phgen removed
+        S3          => open,  -- [OPTIMIZATION] unused, ppmc_phgen removed
+        S4          => open,  -- [OPTIMIZATION] unused, ppmc_phgen removed
         POUT        => POUT,
         DIR         => DIR,
         CURRENT_DOWN=> CURRENT_DOWN,

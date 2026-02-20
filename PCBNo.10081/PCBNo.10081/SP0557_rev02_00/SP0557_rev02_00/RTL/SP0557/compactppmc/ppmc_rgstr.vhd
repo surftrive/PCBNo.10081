@@ -126,6 +126,11 @@ architecture RTL of ppmc_rgstr is
 
 begin
 
+-- [OPTIMIZATION NOTE] Many register write processes below contain redundant 'else REG <= REG'
+-- self-assignments. In clocked VHDL processes, unassigned signals automatically retain their value.
+-- These self-assignments are harmless but add unnecessary logic if hierarchy is preserved during synthesis.
+-- Synplify should optimize these automatically; if not, removing them is a safe optimization.
+
 -- output assign
     INIT_REG            <= INIT_REG_O;
     COMMAND_REG         <= COMMAND_REG_O;
@@ -159,8 +164,6 @@ begin
         elsif(CLK' event and CLK ='1') then
             if(START_STOP='0' and SEL_INI = '1' and LWEb = '0')then         -- write (00h)
                 INIT_REG_O <= '0' & LDI(6) & "000000";
-            else
-                INIT_REG_O <= INIT_REG_O;
             end if;
         end if;
     end process;
@@ -174,13 +177,9 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(COMMAND_HIT='1') then
                 com_cng     <= '0';
-                COMMAND_REG_O   <= COMMAND_REG_O;
             elsif(SEL_COM='1' and LWEb='0') then            -- write (02h)
                 COMMAND_REG_O   <= LDI;
                 com_cng         <= '1';
-            else
-                COMMAND_REG_O   <= COMMAND_REG_O;
-                com_cng         <= com_cng;
             end if;
         end if;
     end process;
@@ -193,8 +192,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_PLS_L='1' and LWEb='0') then         -- write (03h)
                 PULSE_REG_O(7 downto 0) <= LDI;
-            else
-                PULSE_REG_O(7 downto 0) <= PULSE_REG_O(7 downto 0);
             end if;
         end if;
     end process;
@@ -206,8 +203,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_PLS_H='1' and LWEb='0') then         -- write (04h)
                 PULSE_REG_O(15 downto 8) <= LDI;
-            else
-                PULSE_REG_O(15 downto 8) <= PULSE_REG_O(15 downto 8);
             end if;
         end if;
     end process;
@@ -221,8 +216,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_HIGH_L='1' and LWEb='0') then            -- write (06h)
                 HIGH_FREQ_REG_O(7 downto 0) <= LDI;
-            else
-                HIGH_FREQ_REG_O(7 downto 0) <= HIGH_FREQ_REG_O(7 downto 0);
             end if;
         end if;
     end process;
@@ -234,8 +227,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_HIGH_H='1' and LWEb='0') then            -- write (07h)
                 HIGH_FREQ_REG_O(15 downto 8) <= LDI;
-            else
-                HIGH_FREQ_REG_O(15 downto 8) <= HIGH_FREQ_REG_O(15 downto 8);
             end if;
         end if;
     end process;
@@ -248,8 +239,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_LOW_L='1' and LWEb='0') then         -- write (08h)
                 LOW_FREQ_REG_O(7 downto 0) <= LDI;
-            else
-                LOW_FREQ_REG_O(7 downto 0) <= LOW_FREQ_REG_O(7 downto 0);
             end if;
         end if;
     end process;
@@ -261,8 +250,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_LOW_H='1' and LWEb='0') then         -- write (09h)
                 LOW_FREQ_REG_O(15 downto 8) <= LDI;
-            else
-                LOW_FREQ_REG_O(15 downto 8) <= LOW_FREQ_REG_O(15 downto 8);
             end if;
         end if;
     end process;
@@ -275,8 +262,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_ACC_L='1' and LWEb='0') then         -- write (0Ah)
                 ACC_RATE_REG_O(7 downto 0) <= LDI;
-            else
-                ACC_RATE_REG_O(7 downto 0) <= ACC_RATE_REG_O(7 downto 0);
             end if;
         end if;
     end process;
@@ -288,8 +273,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_ACC_H='1' and LWEb='0') then         -- write (0Bh)
                 ACC_RATE_REG_O(15 downto 8) <= LDI;
-            else
-                ACC_RATE_REG_O(15 downto 8) <= ACC_RATE_REG_O(15 downto 8);
             end if;
         end if;
     end process;
@@ -302,8 +285,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_SLOW_L='1' and LWEb='0') then            -- write (0Ch)
                 SLOW_DOWN_REG_O(7 downto 0) <= LDI;
-            else
-                SLOW_DOWN_REG_O(7 downto 0) <= SLOW_DOWN_REG_O(7 downto 0);
             end if;
         end if;
     end process;
@@ -315,8 +296,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_SLOW_H='1' and LWEb='0') then            -- write (0Dh)
                 SLOW_DOWN_REG_O(15 downto 8) <= LDI;
-            else
-                SLOW_DOWN_REG_O(15 downto 8) <= SLOW_DOWN_REG_O(15 downto 8);
             end if;
         end if;
     end process;
@@ -329,8 +308,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_L_MASK='1' and LWEb='0') then            -- write (0Eh)
                 LIMIT_MASK_REG_O    <= LDI;
-            else
-                LIMIT_MASK_REG_O    <= LIMIT_MASK_REG_O;
             end if;
         end if;
     end process;
@@ -369,8 +346,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_PRE='1' and LWEb='0') then            -- write (11h)
                 PRE_REG_O    <= LDI;
-            else
-                PRE_REG_O    <= PRE_REG_O;
             end if;
         end if;
     end process;
@@ -383,8 +358,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_MORE_L='1' and LWEb='0') then            -- write (12h)
                 MORE_REG_O(7 downto 0)    <= LDI;
-            else
-                MORE_REG_O(7 downto 0)    <= MORE_REG_O(7 downto 0);
             end if;
         end if;
     end process;
@@ -397,8 +370,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_MORE_H='1' and LWEb='0') then            -- write (13h)
                 MORE_REG_O(15 downto 8)    <= LDI;
-            else
-                MORE_REG_O(15 downto 8)    <= MORE_REG_O(15 downto 8);
             end if;
         end if;
     end process;
@@ -411,8 +382,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_DOWNDELAY='1' and LWEb='0') then            -- write (14h)
                 DOWNDELAY_REG_O    <= LDI;
-            else
-                DOWNDELAY_REG_O    <= DOWNDELAY_REG_O;
             end if;
         end if;
     end process;
@@ -425,8 +394,6 @@ begin
 		elsif(CLK' event and CLK = '1') then
 			if(SEL_CTRL2='1' and LWEb='0') then            		-- write (15h)
                 CTRL2_REG_O    <= LDI;
-            else
-                CTRL2_REG_O    <= CTRL2_REG_O;
             end if;
 		end if;
     end process;
@@ -440,8 +407,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_MP_A='1' and LWEb='0') then           -- write (18h)
                 MPO_REG_A_O(7 downto 0)   <= LDI;
-            else
-                MPO_REG_A_O(7 downto 0)   <= MPO_REG_A_O(7 downto 0);
             end if;
         end if;
     end process;
@@ -467,8 +432,6 @@ begin
         elsif(CLK' event and CLK = '1') then
             if(SEL_MP_B='1' and LWEb='0') then           -- write (19h)
                 MPO_REG_B_O(7 downto 0)   <= LDI;
-            else
-                MPO_REG_B_O(7 downto 0)   <= MPO_REG_B_O(7 downto 0);
             end if;
         end if;
     end process;

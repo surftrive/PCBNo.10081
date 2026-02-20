@@ -45,6 +45,12 @@ entity cds is
 		);
 end cds;
 
+-- [OPTIMIZATION CANDIDATE] az register width reduction: 10-bit -> 5-bit
+-- az(5)-az(9) are only used in idle detection comparison (az = "0000000000").
+-- Reducing to 5-bit would change idle detection timing from 100ns to 50ns @100MHz.
+-- NOT IMPLEMENTED: This constitutes a timing behavior change.
+-- Estimated savings: 5 FF + ~5 LUT per instance
+
 architecture RTL of cds is
 
 	signal	az		 	: std_logic_vector( 9 downto 0);	--2007/01/11
