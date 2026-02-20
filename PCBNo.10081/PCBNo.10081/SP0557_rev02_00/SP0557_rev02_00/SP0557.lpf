@@ -254,3 +254,69 @@ LOCATE COMP "ENC_B[1]" SITE "A3" ;
 IOBUF PORT "ENC_B[1]" IO_TYPE=LVCMOS33 PULLMODE=NONE DRIVE=NA SLEWRATE=NA CLAMP=ON OPENDRAIN=OFF DIFFRESISTOR=OFF DIFFDRIVE="NA" HYSTERESIS=ON TERMINATION=OFF ;
 LOCATE COMP "ENC_A[1]" SITE "A2" ;
 IOBUF PORT "ENC_A[1]" IO_TYPE=LVCMOS33 PULLMODE=NONE DRIVE=NA SLEWRATE=NA CLAMP=ON OPENDRAIN=OFF DIFFRESISTOR=OFF DIFFDRIVE="NA" HYSTERESIS=ON TERMINATION=OFF ;
+
+#============================================================================
+# SP0557 Timing Constraint Optimization
+# Purpose: Reduce SLICE utilization (83%) by relaxing unnecessary timing
+#          pressure and eliminating false cross-domain analysis
+# Date: 2026-02-20
+# Target: LFE5U-25F-6 CABGA256 (Lattice Diamond 3.13 / Synplify)
+#============================================================================
+
+#----------------------------------------------------------------------------
+# Section 1: Explicit Clock Frequency Constraints
+#   - Synplify auto-detects PLL clocks, but explicit constraints ensure
+#     consistent behavior across synthesis and P&R.
+#   - s_PLL_CLK20M: Main 20MHz system clock (4645 loads, 29ns slack)
+#   - CLKCOM_OUT: 100MHz serial comm clock (163 loads, 0.244ns slack)
+#   - CLK1: 10MHz internal clock (327 loads)
+#   - CLK2A: 100MHz internal clock (16 loads)
+#   - UP_CLK_c: External 20MHz input (PLL reference)
+#----------------------------------------------------------------------------
+FREQUENCY NET "s_PLL_CLK20M" 20.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst.CLK1" 10.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst.CLKCOM_OUT" 100.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst/CLK2A" 100.000000 MHz ;
+FREQUENCY NET "UP_CLK_c" 20.000000 MHz ;
+
+#----------------------------------------------------------------------------
+# Section 2: FALSE_PATH - Unrelated Clock Domain Crossings
+#   - CLK20M_c is an external clock input that feeds the PLL only.
+#     No functional data transfer exists between CLK20M_c domain and
+#     PLL output domains. These paths are physically through the PLL
+#     and do not require timing analysis.
+#   - Impact: Eliminates unnecessary path analysis, frees router resources.
+#----------------------------------------------------------------------------
+BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "s_PLL_CLK20M" ;
+BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst.CLK1" ;
+BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst.CLKCOM_OUT" ;
+BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/CLK2A" ;
+BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "CLK20M_c" ;
+BLOCK PATH FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "CLK20M_c" ;
+BLOCK PATH FROM CLKNET "slv_com_top_inst.CLKCOM_OUT" TO CLKNET "CLK20M_c" ;
+BLOCK PATH FROM CLKNET "slv_com_top_inst/CLK2A" TO CLKNET "CLK20M_c" ;
+
+#----------------------------------------------------------------------------
+# Section 3: MULTICYCLE_PATH - Related Clock Domain Crossings (PLL derived)
+#   - s_PLL_CLK20M (20MHz, CLKOS2) <-> CLK1 (10MHz, CLKOS3)
+#     Same PLL, 2:1 frequency ratio. 2,393 transfers from 20MHz->10MHz,
+#     85 transfers from 10MHz->20MHz.
+#     Data launched at 20MHz and captured at 10MHz has 2 source clock
+#     periods (100ns) to arrive. MULTICYCLE 2X relaxes this.
+#   - Impact: ~2,478 paths relaxed, major reduction in routing pressure.
+#----------------------------------------------------------------------------
+MULTICYCLE FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst.CLK1" 2 X ;
+MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "s_PLL_CLK20M" 2 X ;
+
+#----------------------------------------------------------------------------
+# Section 4: BLOCK PATH - s_PLL_CLK20M <-> 100MHz Communication Clocks
+#   - s_PLL_CLK20M (20MHz) and CLKCOM_OUT/CLK2A (100MHz) are different
+#     PLL outputs with no direct data transfer between these domains.
+#     All CDC between slv_com_top_inst and the rest of the design is
+#     handled through DCFIFO IP blocks (rx/tx CDC FIFOs).
+#   - Impact: Prevents over-constraining of DCFIFO-bridged paths.
+#----------------------------------------------------------------------------
+BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst.CLKCOM_OUT" ;
+BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst/CLK2A" ;
+BLOCK PATH FROM CLKNET "slv_com_top_inst.CLKCOM_OUT" TO CLKNET "s_PLL_CLK20M" ;
+BLOCK PATH FROM CLKNET "slv_com_top_inst/CLK2A" TO CLKNET "s_PLL_CLK20M" ;
