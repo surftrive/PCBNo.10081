@@ -63,7 +63,7 @@ IOBUF PORT "PTLEDb[6]" IO_TYPE=LVCMOS33 PULLMODE=NONE DRIVE=8 SLEWRATE=SLOW CLAM
 LOCATE COMP "PTLEDb[7]" SITE "L5" ;
 IOBUF PORT "PTLEDb[7]" IO_TYPE=LVCMOS33 PULLMODE=NONE DRIVE=8 SLEWRATE=SLOW CLAMP=ON OPENDRAIN=OFF DIFFRESISTOR=OFF DIFFDRIVE="NA" HYSTERESIS=NA TERMINATION=OFF ;
 LOCATE COMP "UP_TXD" SITE "N1" ;
-IOBUF PORT "UP_TXD" IO_TYPE=LVCMOS33 PULLMODE=NONE DRIVE=8 SLEWRATE=SLOW CLAMP=ON OPENDRAIN=OFF DIFFRESISTOR=OFF DIFFDRIVE="NA" HYSTERESIS=NA TERMINATION=OFF ;
+IOBUF PORT "UP_TXD" IO_TYPE=LVCMOS33 PULLMODE=NONE DRIVE=8 SLEWRATE=FAST CLAMP=ON OPENDRAIN=OFF DIFFRESISTOR=OFF DIFFDRIVE="NA" HYSTERESIS=NA TERMINATION=OFF ;
 LOCATE COMP "PTLEDb[1]" SITE "L3" ;
 IOBUF PORT "PTLEDb[1]" IO_TYPE=LVCMOS33 PULLMODE=NONE DRIVE=8 SLEWRATE=SLOW CLAMP=ON OPENDRAIN=OFF DIFFRESISTOR=OFF DIFFDRIVE="NA" HYSTERESIS=NA TERMINATION=OFF ;
 LOCATE COMP "PTLEDb[2]" SITE "M3" ;
@@ -320,3 +320,37 @@ BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst.CLKCOM_OUT" ;
 BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst/CLK2A" ;
 BLOCK PATH FROM CLKNET "slv_com_top_inst.CLKCOM_OUT" TO CLKNET "s_PLL_CLK20M" ;
 BLOCK PATH FROM CLKNET "slv_com_top_inst/CLK2A" TO CLKNET "s_PLL_CLK20M" ;
+
+#----------------------------------------------------------------------------
+# Section 5: MULTICYCLE_PATH - CLK1 (10MHz) <-> CLKCOM_OUT (100MHz)
+#   - CLK1 (10MHz, CLKOS3) -> CLKCOM_OUT (100MHz, CLKOP): 59 transfers
+#     Same PLL, 10:1 frequency ratio. Data from CLK1 is stable for 100ns,
+#     so 10 CLKCOM_OUT cycles are available for transfer.
+#     Targets: DCFIFO gray-pointer crossings and CDC sync chains.
+#   - CLKCOM_OUT (100MHz) -> CLK1 (10MHz): 23 transfers
+#     Fast-to-slow domain. Default uses 10ns constraint (CLKCOM_OUT period).
+#     Data is stable for multiple CLKCOM_OUT cycles before CLK1 capture.
+#     2X relaxation is safe for CDC control signals (e.g., CRC_ERR).
+#   - Impact: Frees 82 cross-domain paths from CLKCOM_OUT 100MHz analysis,
+#     allowing router to focus on intra-domain critical path
+#     (TX DCFIFO Block RAM -> UP_TXD MGIOL, current slack 0.244ns).
+#----------------------------------------------------------------------------
+MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "slv_com_top_inst.CLKCOM_OUT" 10 X ;
+MULTICYCLE FROM CLKNET "slv_com_top_inst.CLKCOM_OUT" TO CLKNET "slv_com_top_inst.CLK1" 2 X ;
+
+#----------------------------------------------------------------------------
+# Section 6: MULTICYCLE_PATH - CLK1 (10MHz) <-> CLK2A (100MHz)
+#   - Same PLL, 10:1 frequency ratio. CLK1 <-> CLK2A CDC paths are
+#     internal to slv_com_top (cds.vhd synchronizer chains, rst_cnt).
+#   - Impact: Additional cross-domain path relaxation for 100MHz domains.
+#----------------------------------------------------------------------------
+MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "slv_com_top_inst/CLK2A" 10 X ;
+MULTICYCLE FROM CLKNET "slv_com_top_inst/CLK2A" TO CLKNET "slv_com_top_inst.CLK1" 2 X ;
+
+#----------------------------------------------------------------------------
+# Section 7: UP_CLK Input Clock Port Constraint
+#   - Adds port-level frequency constraint in addition to NET constraint.
+#     Ensures input clock timing is properly analyzed at the pad level.
+#   - PLL (PLL_BL0) is placed adjacent to pin M1 (route 0.383ns) - OK.
+#----------------------------------------------------------------------------
+FREQUENCY PORT "UP_CLK" 20.000000 MHz ;

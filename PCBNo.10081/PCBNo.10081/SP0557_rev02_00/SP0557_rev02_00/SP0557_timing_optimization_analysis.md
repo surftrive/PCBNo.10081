@@ -122,6 +122,34 @@ BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst/CLK2A" ;
 
 **Expected Impact**: **High**. Prevents over-constraining of DCFIFO-bridged paths, allowing the router more freedom.
 
+#### E. MULTICYCLE_PATH: CLK1 (10MHz) <-> CLKCOM_OUT (100MHz)
+```
+MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "slv_com_top_inst.CLKCOM_OUT" 10 X ;
+MULTICYCLE FROM CLKNET "slv_com_top_inst.CLKCOM_OUT" TO CLKNET "slv_com_top_inst.CLK1" 2 X ;
+```
+**Rationale**: CLK1 (10MHz) and CLKCOM_OUT (100MHz) are from the same PLL with a 10:1 frequency ratio. 59 transfers from CLK1→CLKCOM_OUT were being analyzed under the 100MHz constraint (10ns requirement), consuming router resources that compete directly with the critical TX path (Block RAM→UP_TXD MGIOL, slack 0.244ns). Data from CLK1 is stable for 100ns (one CLK1 period), so MULTICYCLE 10X is safe. The 23 transfers from CLKCOM_OUT→CLK1 include CDC control signals (e.g., CRC_ERR) that are stable for multiple CLKCOM_OUT cycles; 2X relaxation is conservative and safe.
+
+**Expected Impact**: **Very High**. This is the most critical missing constraint. Frees 82 cross-domain paths from 100MHz routing pressure, directly improving the CLKCOM_OUT critical path slack.
+
+#### F. MULTICYCLE_PATH: CLK1 (10MHz) <-> CLK2A (100MHz)
+```
+MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "slv_com_top_inst/CLK2A" 10 X ;
+MULTICYCLE FROM CLKNET "slv_com_top_inst/CLK2A" TO CLKNET "slv_com_top_inst.CLK1" 2 X ;
+```
+**Rationale**: Same PLL, 10:1 ratio. CLK1↔CLK2A CDC paths are internal to slv_com_top (cds.vhd synchronizer chains, rst_cnt). Additional routing pressure relief for 100MHz domains.
+
+#### G. FREQUENCY PORT for UP_CLK
+```
+FREQUENCY PORT "UP_CLK" 20.000000 MHz ;
+```
+**Rationale**: Adds port-level clock constraint at the pad. The existing NET constraint (UP_CLK_c) covers internal routing, but the PORT constraint ensures proper input timing analysis including pad delays.
+
+#### H. UP_TXD SLEWRATE Change (SLOW → FAST)
+```
+IOBUF PORT "UP_TXD" ... SLEWRATE=FAST ...
+```
+**Rationale**: The critical path terminates at UP_TXD MGIOL. SLEWRATE=FAST may marginally improve internal I/O cell timing. S3IO communication timing margin is prioritized over signal integrity.
+
 ---
 
 ## 5. Additional Optimization Recommendations
@@ -156,15 +184,18 @@ define_attribute {ENC_inst} syn_replicate {0}
 
 ## 6. Expected Results
 
-| Metric | Before | After (Expected) |
-|--------|--------|-------------------|
-| SLICE Utilization | 83% | **75-78%** |
-| Cross-domain paths analyzed | ~2,500 | ~0 (blocked/multicycle) |
-| P&R Runtime | ~3m 18s | ~2m 30s (estimated) |
-| CLKCOM_OUT Slack | 0.244 ns | 0.3-0.5 ns (improved routing) |
-| s_PLL_CLK20M Slack | 29.2 ns | ~29 ns (unchanged) |
+| Metric | Before | After Phase 1 (Sections 1-4) | After Phase 2 (Sections 5-7) |
+|--------|--------|-------------------------------|-------------------------------|
+| SLICE Utilization | 83% | 75-78% | **73-76%** |
+| Cross-domain paths (100MHz) | ~2,500 + 82 | ~2,500 | **~0** (all relaxed) |
+| P&R Runtime | ~3m 18s | ~2m 30s | **~2m 00s** |
+| CLKCOM_OUT Slack (Setup) | 0.244 ns | 0.3-0.5 ns | **0.8-1.5 ns** |
+| CLKCOM_OUT Slack (Hold) | 0.170 ns | ~0.2 ns | **0.3-0.5 ns** |
+| s_PLL_CLK20M Slack | 29.2 ns | ~29 ns | ~29 ns (unchanged) |
 
-**Note**: SLICE reduction of 5-8% (500-1000 SLICEs) is expected primarily from:
+**Phase 2 Key Improvement**: Section 5 (CLK1↔CLKCOM_OUT MULTICYCLE) is the most impactful single constraint. It removes 82 cross-domain paths from the 100MHz timing analysis, freeing routing resources for the critical TX path (Block RAM→UP_TXD MGIOL) which has only 4.170ns of routing budget after the fixed 5.830ns Block RAM C2Q delay.
+
+**Note**: SLICE reduction is expected primarily from:
 - Elimination of routing congestion that forces sub-optimal SLICE packing
 - Reduced timing-driven logic replication
 - More efficient placement when router has fewer constraints to satisfy
@@ -177,7 +208,10 @@ After rebuilding with new constraints:
 
 - [ ] Timing closure: all 0 timing errors (check .twr)
 - [ ] SLICE utilization: verify reduction from 83%
-- [ ] CLKCOM_OUT domain: verify slack >= 0.2ns (critical path)
-- [ ] Hold time: verify no new hold violations
+- [ ] CLKCOM_OUT domain: verify setup slack >= 0.5ns (critical path)
+- [ ] CLKCOM_OUT domain: verify hold slack >= 0.2ns
+- [ ] CLK2A domain: verify slack maintained (~6ns)
+- [ ] Hold time: verify no new hold violations across all domains
 - [ ] Functional verification: confirm DCFIFO CDC paths still work correctly
 - [ ] Bitstream generation: successful .bit file creation
+- [ ] S3IO communication: verify stable operation at full occupancy
