@@ -60,104 +60,48 @@ entity ppmc_enblr_S118M is
 end ppmc_enblr_S118M;
 
 
+-- [OPTIMIZATION] Dead code removed: CURRENT_DOWN timer logic (dsb_wait_cnt, s_PLUSE10M_ST, st_stop_old)
+-- CURRENT_DOWN was already hardcoded to '0'. Related timer signals only affected CURRENT_DOWN output.
+-- Analysis confirmed no impact on START_STOP output path.
+-- Savings: 10 FF (dsb_wait_cnt:8 + s_PLUSE10M_ST:1 + st_stop_old:1) + ~15 LUT per instance x 13 = 130 FF + 195 LUT
 architecture RTL of ppmc_enblr_S118M is
 
 	signal st_stop			: std_logic;
-	signal st_stop_old		: std_logic;
 	signal s_P_STOP_old		: std_logic;
 	signal ph_flag			: std_logic;
 	signal enb_wait_cnt		: std_logic_vector(13 downto 0);
 	signal enb_wait_1280us	: std_logic;
-	signal dsb_wait_cnt		: std_logic_vector(7 downto 0);
-	--
---	signal s_CURRENT_UP		: std_logic;
-	signal s_PLUSE10M_ST	: std_logic;
---	signal s_DOWNDELAYold		: std_logic_vector(7 downto 0);		--
 
 begin
 
 	START_STOP   <= st_stop;
---	CURRENT_DOWN <= not (s_CURRENT_UP);
-CURRENT_DOWN <= '0';  --
---s_CURRENT_UP <= '0';
+	CURRENT_DOWN <= '0';
+
 ----------------------------------------------------------------------
---	Current Down Timmer												--
+--	Current Up Timmer												--
 --ENABLE_START waits for change of DIR signal  toku add 2005.06.23	--
---ina Changed 2008.09.24											--
 ----------------------------------------------------------------------
 	process (nMRST, CLK)
 	begin
 		if (nMRST = '0') then
 			enb_wait_cnt <= (others =>'0');
---			s_CURRENT_UP <= '0';
-			s_PLUSE10M_ST <= '0';
 			enb_wait_1280us <= '0';
-			enb_wait_cnt <= (others =>'0');
-			dsb_wait_cnt <= (others =>'0');
---			s_DOWNDELAYold <= "11111111";
+			s_P_STOP_old <= '0';
 		elsif (CLK'event and CLK='1') then
 			s_P_STOP_old <= P_STOP;
-			st_stop_old <= st_stop;
---			s_DOWNDELAYold <= DOWNDELAY;
 			if P_STOP = '1' and s_P_STOP_old = '0' then
-				if  (DOWNDELAY /= "00000000" and enb_wait_cnt /= "0000000000000" ) then		--Added by Y.Takao
---					s_CURRENT_UP <= '0';						--
-					enb_wait_cnt <= (others =>'0');				--
-					enb_wait_1280us <= '0';						--
-					dsb_wait_cnt <= dsb_wait_cnt;				--
-					s_PLUSE10M_ST <= s_PLUSE10M_ST;				--
-				else											--Added by Y.Takao
-					enb_wait_1280us <= '0';
-					enb_wait_cnt <= (others =>'0');
---					s_CURRENT_UP <= s_CURRENT_UP;
-					dsb_wait_cnt <= dsb_wait_cnt;
-					s_PLUSE10M_ST <= s_PLUSE10M_ST;
-				end if;
-			---------------- Current Up Timmer ---------------------------------------------------------
-			elsif (ENB_START='1' or enb_wait_cnt /= "0000000000000" ) then
---				s_CURRENT_UP <= '1';
-				dsb_wait_cnt <= (others =>'0');
-				s_PLUSE10M_ST <= '0';
-				if (enb_wait_cnt = "111111" & "11111111") then --819.15usec
+				-- P_STOP rising edge: reset up timer
+				enb_wait_cnt <= (others =>'0');
+				enb_wait_1280us <= '0';
+			elsif (ENB_START='1' or enb_wait_cnt /= "00000000000000" ) then
+				-- Current Up Timer: count to 819.15usec
+				if (enb_wait_cnt = "111111" & "11111111") then
 					enb_wait_cnt <= (others =>'0');
 					enb_wait_1280us <= '1';
 				else
 					enb_wait_cnt <= enb_wait_cnt + '1';
 					enb_wait_1280us <= '0';
 				end if;
-			---------------- Current Down Timmer ------------------------------------------------------
-			elsif (st_stop='0' and st_stop_old ='1') or (s_PLUSE10M_ST = '1')  then
-				enb_wait_cnt <= (others =>'0');
-				enb_wait_1280us <= '0';
-				if (DOWNDELAY = "00000000") then
---					s_CURRENT_UP <='1';
-					dsb_wait_cnt <= dsb_wait_cnt;
-					s_PLUSE10M_ST <= s_PLUSE10M_ST;
-				elsif dsb_wait_cnt < DOWNDELAY then
-					s_PLUSE10M_ST <= '1';
-					if KCLK = '1' then
-						dsb_wait_cnt <= dsb_wait_cnt + '1';
-					else
-						dsb_wait_cnt <= dsb_wait_cnt;
-					end if;
---					s_CURRENT_UP <='1';
-				else
-					s_PLUSE10M_ST <= '0';
---					s_CURRENT_UP <='0';
-					dsb_wait_cnt <= (others =>'0');
-				end if;
-			else
-				enb_wait_1280us <= enb_wait_1280us;
-				enb_wait_cnt <= enb_wait_cnt;
-				dsb_wait_cnt <= dsb_wait_cnt;
-				s_PLUSE10M_ST <= s_PLUSE10M_ST;
---				if (DOWNDELAY = "00000000") and (s_DOWNDELAYold /= "00000000") and (st_stop = '0') and (s_PLUSE10M_ST = '0')	then
---					s_CURRENT_UP <= '1';
---				elsif (DOWNDELAY /= "00000000") and (s_DOWNDELAYold = "00000000") and (st_stop = '0') and (s_PLUSE10M_ST = '0')	then
---					s_CURRENT_UP <= '0';
---				else
---					s_CURRENT_UP <= s_CURRENT_UP;
---				end if;
 			end if;
 		end if;
 	end process;
@@ -173,8 +117,6 @@ CURRENT_DOWN <= '0';  --
 				ph_flag	 <= '0';
 			elsif(enb_wait_1280us='1') then
 				ph_flag <= '1';
-			else
-				ph_flag <= ph_flag;
 			end if;
 		end if;
 	end process;

@@ -7,10 +7,14 @@
 --Doc		: ADC128S022 Controller
 --Designed by Nobuhisa Hatashima(PHR)
 -------------------------------------
---Date		:
---Ver		:
---Doc		:
---Changed by
+--Date		: 2026/02/20
+--Ver		: 0.01
+--Doc		: [OPTIMIZATION] Removed unused ADC channels 3-8 (s_REG3-s_REG8)
+--            ADDATA03-08 are connected to 'open' in SP0557.vhd top level
+--            Only channels 1,2 used for pressure sensors
+--            Also removed redundant self-assignments from case statement
+--            Savings: 6 channels x 12 FF = 72 FF + comparison logic
+--Changed by RTL Optimization
 -------------------------------------------------
 
 ----- library ------------------------------------------------------------------
@@ -42,24 +46,11 @@ end adc_reg;
 ----- architecture ------------------------------------------------------------------
 architecture RTL of adc_reg is
 
------ component ---------------------------------------------------------------
-
------ type --------------------------------------------------------------------
-
 ----- signal ------------------------------------------------------------------
 signal	s_WREND	: std_logic;
 signal	s_WRP	: std_logic;
-signal	s_comp	: std_logic_vector( 3 downto 0);
 signal	s_REG1	: std_logic_vector(11 downto 0);
 signal	s_REG2	: std_logic_vector(11 downto 0);
-signal	s_REG3	: std_logic_vector(11 downto 0);
-signal	s_REG4	: std_logic_vector(11 downto 0);
-signal	s_REG5	: std_logic_vector(11 downto 0);
-signal	s_REG6	: std_logic_vector(11 downto 0);
-signal	s_REG7	: std_logic_vector(11 downto 0);
-signal	s_REG8	: std_logic_vector(11 downto 0);
-
------ constant ----------------------------------------------------------------
 
 ----- begin -------------------------------------------------------------------
 begin
@@ -73,111 +64,31 @@ begin
 	end process;
 	s_WRP	<= WREN and not (s_WREND);
 
-	s_comp <= s_WRP & CH;
-
 	ADDATA01	<= s_REG1;
 	ADDATA02	<= s_REG2;
-	ADDATA03	<= s_REG3;
-	ADDATA04	<= s_REG4;
-	ADDATA05	<= s_REG5;
-	ADDATA06	<= s_REG6;
-	ADDATA07	<= s_REG7;
-	ADDATA08	<= s_REG8;
+	-- [OPTIMIZATION] Channels 3-8 unused (connected to 'open' at top level)
+	ADDATA03	<= (others => '0');
+	ADDATA04	<= (others => '0');
+	ADDATA05	<= (others => '0');
+	ADDATA06	<= (others => '0');
+	ADDATA07	<= (others => '0');
+	ADDATA08	<= (others => '0');
 
 	process (CLK, LRSTb) begin
 		if (LRSTb = '0') then
 			s_REG1 <= (others => '0');
 			s_REG2 <= (others => '0');
-			s_REG3 <= (others => '0');
-			s_REG4 <= (others => '0');
-			s_REG5 <= (others => '0');
-			s_REG6 <= (others => '0');
-			s_REG7 <= (others => '0');
-			s_REG8 <= (others => '0');
 		elsif rising_edge(CLK) then
-			case s_comp is
-				when "1000" =>
-					s_REG1 <= AD_DATA;
-					s_REG2 <= s_REG2;
-					s_REG3 <= s_REG3;
-					s_REG4 <= s_REG4;
-					s_REG5 <= s_REG5;
-					s_REG6 <= s_REG6;
-					s_REG7 <= s_REG7;
-					s_REG8 <= s_REG8;
-				when "1001" =>
-					s_REG1 <= s_REG1;
-					s_REG2 <= AD_DATA;
-					s_REG3 <= s_REG3;
-					s_REG4 <= s_REG4;
-					s_REG5 <= s_REG5;
-					s_REG6 <= s_REG6;
-					s_REG7 <= s_REG7;
-					s_REG8 <= s_REG8;
-				when "1010" =>
-					s_REG1 <= s_REG1;
-					s_REG2 <= s_REG2;
-					s_REG3 <= AD_DATA;
-					s_REG4 <= s_REG4;
-					s_REG5 <= s_REG5;
-					s_REG6 <= s_REG6;
-					s_REG7 <= s_REG7;
-					s_REG8 <= s_REG8;
-				when "1011" =>
-					s_REG1 <= s_REG1;
-					s_REG2 <= s_REG2;
-					s_REG3 <= s_REG3;
-					s_REG4 <= AD_DATA;
-					s_REG5 <= s_REG5;
-					s_REG6 <= s_REG6;
-					s_REG7 <= s_REG7;
-					s_REG8 <= s_REG8;
-				when "1100" =>
-					s_REG1 <= s_REG1;
-					s_REG2 <= s_REG2;
-					s_REG3 <= s_REG3;
-					s_REG4 <= s_REG4;
-					s_REG5 <= AD_DATA;
-					s_REG6 <= s_REG6;
-					s_REG7 <= s_REG7;
-					s_REG8 <= s_REG8;
-				when "1101" =>
-					s_REG1 <= s_REG1;
-					s_REG2 <= s_REG2;
-					s_REG3 <= s_REG3;
-					s_REG4 <= s_REG4;
-					s_REG5 <= s_REG5;
-					s_REG6 <= AD_DATA;
-					s_REG7 <= s_REG7;
-					s_REG8 <= s_REG8;
-				when "1110" =>
-					s_REG1 <= s_REG1;
-					s_REG2 <= s_REG2;
-					s_REG3 <= s_REG3;
-					s_REG4 <= s_REG4;
-					s_REG5 <= s_REG5;
-					s_REG6 <= s_REG6;
-					s_REG7 <= AD_DATA;
-					s_REG8 <= s_REG8;
-				when "1111" =>
-					s_REG1 <= s_REG1;
-					s_REG2 <= s_REG2;
-					s_REG3 <= s_REG3;
-					s_REG4 <= s_REG4;
-					s_REG5 <= s_REG5;
-					s_REG6 <= s_REG6;
-					s_REG7 <= s_REG7;
-					s_REG8 <= AD_DATA;
-				when others =>
-					s_REG1 <= s_REG1;
-					s_REG2 <= s_REG2;
-					s_REG3 <= s_REG3;
-					s_REG4 <= s_REG4;
-					s_REG5 <= s_REG5;
-					s_REG6 <= s_REG6;
-					s_REG7 <= s_REG7;
-					s_REG8 <= s_REG8;
-			end case;
+			if s_WRP = '1' then
+				case CH is
+					when "000" =>
+						s_REG1 <= AD_DATA;
+					when "001" =>
+						s_REG2 <= AD_DATA;
+					when others =>
+						null;  -- channels 3-8 unused
+				end case;
+			end if;
 		end if;
 	end process;
 

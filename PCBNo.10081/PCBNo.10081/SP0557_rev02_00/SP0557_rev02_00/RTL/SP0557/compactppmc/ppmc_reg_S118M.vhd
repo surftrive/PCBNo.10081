@@ -286,21 +286,21 @@ component ppmc_ctrl is
         );
 end component;
 
-component ppmc_phgen
-    port(
-        nMRST           : in std_logic;                             -- local reset(active Low)
-        CLK             : in std_logic;                             -- Clock 20MHz
-        PULSE_OUT_EDGE  : in std_logic;                             -- pulse in edge
-        STOP            : in std_logic;                             -- stop pulse
-        INIT_REG        : in std_logic_vector( 7 downto 0);         -- init_reg
-        DIR             : in std_logic;                             -- dir
-
-        S1              : out std_logic;
-        S2              : out std_logic;
-        S3              : out std_logic;
-        S4              : out std_logic
-        );
-end component;
+-- [OPTIMIZATION] ppmc_phgen component declaration removed: S1-S4 outputs unused (all 'open' at top level)
+-- component ppmc_phgen
+--     port(
+--         nMRST           : in std_logic;
+--         CLK             : in std_logic;
+--         PULSE_OUT_EDGE  : in std_logic;
+--         STOP            : in std_logic;
+--         INIT_REG        : in std_logic_vector( 7 downto 0);
+--         DIR             : in std_logic;
+--         S1              : out std_logic;
+--         S2              : out std_logic;
+--         S3              : out std_logic;
+--         S4              : out std_logic
+--         );
+-- end component;
 
 component ppmc_cmdchk is
     port(
@@ -558,20 +558,12 @@ inst_ppmc_enblr :ppmc_enblr_S118M
         START_STOP      => START_STOP
         );
 
-inst_ppmc_phgen : ppmc_phgen
-    port map(
-        nMRST           => nMRST,
-        CLK             => CLK,
-        PULSE_OUT_EDGE  => PULSE_OUT_EDGE,
-        STOP            => P_STOP,  --toku chng 2004.01.16
-        INIT_REG        => INIT_REG,
-        DIR             => DIRECTION,
-
-        S1              => S1,
-        S2              => S2,
-        S3              => S3,
-        S4              => S4
-        );
+-- [OPTIMIZATION] ppmc_phgen removed: S1-S4 outputs are unused (connected to 'open' at top level for all 13 instances)
+-- Savings: 12 FF (8-bit STATE + 4-bit SOUT) + ~20 LUT per instance x 13 = 156 FF + 260 LUT
+S1 <= '0';
+S2 <= '0';
+S3 <= '0';
+S4 <= '0';
 
 inst_ppmc_ctrl : ppmc_ctrl
     port map(

@@ -98,6 +98,12 @@ entity gpio_reg is
 		);
 end gpio_reg;
 
+-- [OPTIMIZATION CANDIDATE] gpio02 unused input registers (gpio_ip_reg 15-16, 18-31):
+-- In SP0557.vhd gpio02 instance (Node 14), GPI_15, GPI_16, GPI_18-31 are tied to oct0 ("00000000").
+-- These gpio_ip_reg instances always store '0' but remain accessible via register read.
+-- NOT IMPLEMENTED: Removing them would alter register map read-back behavior.
+-- Estimated savings: ~15 instances x 16 FF = 240 FF (~60 SLICE) if safely removable
+
 architecture RTL of gpio_reg is
 
 component gpio_op_reg
@@ -618,15 +624,21 @@ gpio_ip_reg_inst19 : gpio_ip_reg port map (
 		REGDO	=> REGDO_19,
 		GPI		=> GPI_19
 		);
-gpio_op_reg_inst20 : gpio_op_reg port map (
-		CLK		=> CLK,
-		LRSTb	=> LRSTb,
-		LDI		=> LDI,
-		REGSEL	=> REGSEL20,
-		LWEb	=> LWEb,
-		LATCH_L	=> LATCH_L,
-		GPO		=> GPO_20
-		);
+-- [OPTIMIZATION] gpio_op_reg instances 20-31 removed: GPO_20-31 connected to OPEN at top level
+-- for both gpio01 and gpio02. Read path (gpio_ip_reg) preserved for register map compatibility.
+-- Savings: 12 channels x 16 FF (REG:8 + GPO:8) x 2 instances = 384 FF
+GPO_20 <= (others => '0');
+GPO_21 <= (others => '0');
+GPO_22 <= (others => '0');
+GPO_23 <= (others => '0');
+GPO_24 <= (others => '0');
+GPO_25 <= (others => '0');
+GPO_26 <= (others => '0');
+GPO_27 <= (others => '0');
+GPO_28 <= (others => '0');
+GPO_29 <= (others => '0');
+GPO_30 <= (others => '0');
+GPO_31 <= (others => '0');
 
 gpio_ip_reg_inst20 : gpio_ip_reg port map (
 		CLK		=> CLK,
@@ -637,16 +649,6 @@ gpio_ip_reg_inst20 : gpio_ip_reg port map (
 		REGDO	=> REGDO_20,
 		GPI		=> GPI_20
 		);
-gpio_op_reg_inst21 : gpio_op_reg port map (
-		CLK		=> CLK,
-		LRSTb	=> LRSTb,
-		LDI		=> LDI,
-		REGSEL	=> REGSEL21,
-		LWEb	=> LWEb,
-		LATCH_L	=> LATCH_L,
-		GPO		=> GPO_21
-		);
-
 gpio_ip_reg_inst21 : gpio_ip_reg port map (
 		CLK		=> CLK,
 		LRSTb	=> LRSTb,
@@ -656,16 +658,6 @@ gpio_ip_reg_inst21 : gpio_ip_reg port map (
 		REGDO	=> REGDO_21,
 		GPI		=> GPI_21
 		);
-gpio_op_reg_inst22 : gpio_op_reg port map (
-		CLK		=> CLK,
-		LRSTb	=> LRSTb,
-		LDI		=> LDI,
-		REGSEL	=> REGSEL22,
-		LWEb	=> LWEb,
-		LATCH_L	=> LATCH_L,
-		GPO		=> GPO_22
-		);
-
 gpio_ip_reg_inst22 : gpio_ip_reg port map (
 		CLK		=> CLK,
 		LRSTb	=> LRSTb,
@@ -675,16 +667,6 @@ gpio_ip_reg_inst22 : gpio_ip_reg port map (
 		REGDO	=> REGDO_22,
 		GPI		=> GPI_22
 		);
-gpio_op_reg_inst23 : gpio_op_reg port map (
-		CLK		=> CLK,
-		LRSTb	=> LRSTb,
-		LDI		=> LDI,
-		REGSEL	=> REGSEL23,
-		LWEb	=> LWEb,
-		LATCH_L	=> LATCH_L,
-		GPO		=> GPO_23
-		);
-
 gpio_ip_reg_inst23 : gpio_ip_reg port map (
 		CLK		=> CLK,
 		LRSTb	=> LRSTb,
@@ -694,16 +676,6 @@ gpio_ip_reg_inst23 : gpio_ip_reg port map (
 		REGDO	=> REGDO_23,
 		GPI		=> GPI_23
 		);
-gpio_op_reg_inst24 : gpio_op_reg port map (
-		CLK		=> CLK,
-		LRSTb	=> LRSTb,
-		LDI		=> LDI,
-		REGSEL	=> REGSEL24,
-		LWEb	=> LWEb,
-		LATCH_L	=> LATCH_L,
-		GPO		=> GPO_24
-		);
-
 gpio_ip_reg_inst24 : gpio_ip_reg port map (
 		CLK		=> CLK,
 		LRSTb	=> LRSTb,
@@ -713,16 +685,6 @@ gpio_ip_reg_inst24 : gpio_ip_reg port map (
 		REGDO	=> REGDO_24,
 		GPI		=> GPI_24
 		);
-gpio_op_reg_inst25 : gpio_op_reg port map (
-		CLK		=> CLK,
-		LRSTb	=> LRSTb,
-		LDI		=> LDI,
-		REGSEL	=> REGSEL25,
-		LWEb	=> LWEb,
-		LATCH_L	=> LATCH_L,
-		GPO		=> GPO_25
-		);
-
 gpio_ip_reg_inst25 : gpio_ip_reg port map (
 		CLK		=> CLK,
 		LRSTb	=> LRSTb,
@@ -732,16 +694,6 @@ gpio_ip_reg_inst25 : gpio_ip_reg port map (
 		REGDO	=> REGDO_25,
 		GPI		=> GPI_25
 		);
-gpio_op_reg_inst26 : gpio_op_reg port map (
-		CLK		=> CLK,
-		LRSTb	=> LRSTb,
-		LDI		=> LDI,
-		REGSEL	=> REGSEL26,
-		LWEb	=> LWEb,
-		LATCH_L	=> LATCH_L,
-		GPO		=> GPO_26
-		);
-
 gpio_ip_reg_inst26 : gpio_ip_reg port map (
 		CLK		=> CLK,
 		LRSTb	=> LRSTb,
@@ -751,16 +703,6 @@ gpio_ip_reg_inst26 : gpio_ip_reg port map (
 		REGDO	=> REGDO_26,
 		GPI		=> GPI_26
 		);
-gpio_op_reg_inst27 : gpio_op_reg port map (
-		CLK		=> CLK,
-		LRSTb	=> LRSTb,
-		LDI		=> LDI,
-		REGSEL	=> REGSEL27,
-		LWEb	=> LWEb,
-		LATCH_L	=> LATCH_L,
-		GPO		=> GPO_27
-		);
-
 gpio_ip_reg_inst27 : gpio_ip_reg port map (
 		CLK		=> CLK,
 		LRSTb	=> LRSTb,
@@ -770,16 +712,6 @@ gpio_ip_reg_inst27 : gpio_ip_reg port map (
 		REGDO	=> REGDO_27,
 		GPI		=> GPI_27
 		);
-gpio_op_reg_inst28 : gpio_op_reg port map (
-		CLK		=> CLK,
-		LRSTb	=> LRSTb,
-		LDI		=> LDI,
-		REGSEL	=> REGSEL28,
-		LWEb	=> LWEb,
-		LATCH_L	=> LATCH_L,
-		GPO		=> GPO_28
-		);
-
 gpio_ip_reg_inst28 : gpio_ip_reg port map (
 		CLK		=> CLK,
 		LRSTb	=> LRSTb,
@@ -789,16 +721,6 @@ gpio_ip_reg_inst28 : gpio_ip_reg port map (
 		REGDO	=> REGDO_28,
 		GPI		=> GPI_28
 		);
-gpio_op_reg_inst29 : gpio_op_reg port map (
-		CLK		=> CLK,
-		LRSTb	=> LRSTb,
-		LDI		=> LDI,
-		REGSEL	=> REGSEL29,
-		LWEb	=> LWEb,
-		LATCH_L	=> LATCH_L,
-		GPO		=> GPO_29
-		);
-
 gpio_ip_reg_inst29 : gpio_ip_reg port map (
 		CLK		=> CLK,
 		LRSTb	=> LRSTb,
@@ -808,16 +730,6 @@ gpio_ip_reg_inst29 : gpio_ip_reg port map (
 		REGDO	=> REGDO_29,
 		GPI		=> GPI_29
 		);
-gpio_op_reg_inst30 : gpio_op_reg port map (
-		CLK		=> CLK,
-		LRSTb	=> LRSTb,
-		LDI		=> LDI,
-		REGSEL	=> REGSEL30,
-		LWEb	=> LWEb,
-		LATCH_L	=> LATCH_L,
-		GPO		=> GPO_30
-		);
-
 gpio_ip_reg_inst30 : gpio_ip_reg port map (
 		CLK		=> CLK,
 		LRSTb	=> LRSTb,
@@ -827,16 +739,6 @@ gpio_ip_reg_inst30 : gpio_ip_reg port map (
 		REGDO	=> REGDO_30,
 		GPI		=> GPI_30
 		);
-gpio_op_reg_inst31 : gpio_op_reg port map (
-		CLK		=> CLK,
-		LRSTb	=> LRSTb,
-		LDI		=> LDI,
-		REGSEL	=> REGSEL31,
-		LWEb	=> LWEb,
-		LATCH_L	=> LATCH_L,
-		GPO		=> GPO_31
-		);
-
 gpio_ip_reg_inst31 : gpio_ip_reg port map (
 		CLK		=> CLK,
 		LRSTb	=> LRSTb,
