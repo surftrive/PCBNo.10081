@@ -182,6 +182,11 @@ end component;
     signal s_LCCW   : std_logic;
     signal s_MPO_A  : std_logic_vector(7 downto 0);
 
+-- Prevent merging of limit switch synchronization registers (each drives separate HW path)
+attribute syn_preserve : boolean;
+attribute syn_preserve of s_LCW  : signal is true;
+attribute syn_preserve of s_LCCW : signal is true;
+
 begin
 --------------process-----------------------------------------
 --

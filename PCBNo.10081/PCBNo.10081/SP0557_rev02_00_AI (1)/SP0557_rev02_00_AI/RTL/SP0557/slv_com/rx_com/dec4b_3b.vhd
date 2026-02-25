@@ -19,7 +19,7 @@ entity dec4b_3b is
         ENB         : in std_logic;
         IDLE_DEL    : in std_logic;
         RD_IN       : in std_logic;
-        DATAIN      : in std_logic_vector(9 downto 0);   --jhgfiedcba
+        DATAIN      : in std_logic_vector(9 downto 0);   --jhgfiedcba (bits [1:0] unused by 4b/3b decoder; 10-bit bus width required by 8b10b protocol)
         DATAOUT     : out std_logic_vector(2 downto 0);  --HGF
         RD_OUT      : out std_logic;                      -- '0' -> RD=negative, '1' -> RD=pogitive
         VALID3B     : out std_logic;

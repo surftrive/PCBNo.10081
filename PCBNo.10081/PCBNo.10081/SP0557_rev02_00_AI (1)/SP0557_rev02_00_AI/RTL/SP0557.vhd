@@ -567,6 +567,15 @@ begin
 	STM_PCK <= s_STM_POUT;
 	PTLEDb	<= s_PLSLEDb((c_PLS_CH - 1) downto 0) or  (not( s_PLSLED_EN((c_PLS_CH - 1) downto 0) ));
 
+-- LED SERCH BOARD (not implemented, drive safe default values)
+	LEDSH_RESETb	<= '1';		-- hold in non-reset state
+	LEDSH_SCK		<= '0';
+	LEDSH_nCS		<= '1';		-- chip select inactive
+	LEDSH_MOSI		<= '0';
+
+-- Node 15 not used, tie to zero to avoid undriven signal
+	sa_ND(15) <= (others => '0');
+
 -- Slave ---------------------------------------------------------------------
 	slv_com_top_inst: slv_com_top port map (
 		-- System --
