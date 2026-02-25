@@ -1,27 +1,125 @@
 #----------------------------------------------------------------------
 # SP0557 Synplify Forward Declaration Constraint (FDC) File
-# Purpose: Define PLL output clocks for proper timing analysis
+# Purpose: Define PLL output clocks with proper clock groups, phase
+#          relationships, and cross-domain timing constraints.
+#
+# Problem: Without these constraints, Synplify places each PLL output
+#          clock in a separate clock group (Autoconstr_clkgroup_0..4),
+#          causing ALL cross-domain paths to be marked "Diff grp" and
+#          excluded from timing analysis. This makes the cds.vhd CDR
+#          sampling paths (CLK2 <-> CLK2A) completely untimed, leading
+#          to communication errors at high LE utilization (>80%).
+#
 # Date   : 2026-02-25
 # Target : LFE5U-25F-6 CABGA256
 #----------------------------------------------------------------------
 
 #----------------------------------------------------------------------
-# PLL Output Clock Definitions
-#   PLL input: CLK20M (20MHz external oscillator)
-#   PLL primitive: EHXPLLL (pll_gen)
+# Section 1: PLL Output Clock Definitions
+#
+#   All PLL output clocks are placed in the SAME clock group "pll_clks"
+#   so that Synplify analyzes cross-domain paths between them.
+#
+#   PLL input : UP_CLK (20MHz external, M1 pin)
+#   PLL primitive: EHXPLLL (pll_gen) on PLL_BL0
+#   VCO = 20MHz x 5 x 6 = 600MHz
+#
+#   CLKOP  (CLK2)  : 100MHz, 0 deg    - Serial communication
+#   CLKOS  (CLK2A) : 100MHz, 90 deg   - CDR phase-shifted sampling
+#   CLKOS2 (20MHz) : 20MHz, 0 deg     - Main system logic
+#   CLKOS3 (CLK1)  : 10MHz, 0 deg     - Slave control / 8b10b
 #----------------------------------------------------------------------
 
-# CLKOS2: 20MHz system clock (main logic clock, ~8600 sequential elements)
-define_clock -name {CLKOS2} -freq 20.000 {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.s_PLL_CLK20M}
+# CLKOP: 100MHz serial communication clock (0 deg phase)
+#   258 sequential elements: cds.vhd posedge/negedge, DCFIFO, tx/rx
+define_clock -name {CLKOP} \
+    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLKCOM_OUT} \
+    -freq 100.000 \
+    -rise 0.000 -fall 5.000 \
+    -clockgroup pll_clks
 
-# CLK20M: 20MHz external input clock (PLL reference, ~12 sequential elements)
-define_clock -name {CLK20M} -freq 20.000 {p:CLK20M}
+# CLKOS: 100MHz CDR sampling clock (90 deg phase = 2.5ns offset)
+#   22 sequential elements: cds.vhd bz(0), dz(0..2), rst_cnt
+#   CRITICAL: -rise 2.500 communicates the 90-degree phase shift to
+#   Synplify, enabling correct setup/hold analysis for cds.vhd paths
+#   where data crosses between CLK2 (0 deg) and CLK2A (90 deg).
+define_clock -name {CLKOS} \
+    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLK2A} \
+    -freq 100.000 \
+    -rise 2.500 -fall 7.500 \
+    -clockgroup pll_clks
 
-# CLKOS: 100MHz internal clock (CDC sync chains, ~22 sequential elements)
-define_clock -name {CLKOS} -freq 100.000 {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLK2A}
+# CLKOS2: 20MHz system clock (0 deg phase)
+#   8628 sequential elements: GPIO, encoder, ADC, DAC, motor control
+define_clock -name {CLKOS2} \
+    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.s_PLL_CLK20M} \
+    -freq 20.000 \
+    -rise 0.000 -fall 25.000 \
+    -clockgroup pll_clks
 
-# CLKOP: 100MHz serial communication clock (~258 sequential elements)
-define_clock -name {CLKOP} -freq 100.000 {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLKCOM_OUT}
+# CLKOS3: 10MHz slave control clock (0 deg phase)
+#   545 sequential elements: slv_ctrl, 8b10b enc/dec, rx/tx control
+define_clock -name {CLKOS3} \
+    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLK1} \
+    -freq 10.000 \
+    -rise 0.000 -fall 50.000 \
+    -clockgroup pll_clks
 
-# CLKOS3: 10MHz internal clock (slave control, ~545 sequential elements)
-define_clock -name {CLKOS3} -freq 10.000 {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLK1}
+# CLK20M: 20MHz external input clock (separate domain)
+#   12 sequential elements: rst_cnt LOCAL_CLK, ck_state
+define_clock -name {CLK20M} \
+    {p:CLK20M} \
+    -freq 20.000 \
+    -rise 0.000 -fall 25.000 \
+    -clockgroup ext_clks
+
+#----------------------------------------------------------------------
+# Section 2: Cross-Domain Path Constraints (within PLL group)
+#
+#   Since all PLL clocks are now in the same group, Synplify will
+#   analyze paths between them. We need multicycle constraints to
+#   reflect the actual data transfer timing.
+#----------------------------------------------------------------------
+
+# CLKOS2 (20MHz) <-> CLKOS3 (10MHz): Same PLL, 2:1 ratio
+#   Data from 20MHz is stable for 2 CLKOS3 periods before capture
+define_multicycle_path -from {CLKOS2} -to {CLKOS3} 2
+define_multicycle_path -from {CLKOS3} -to {CLKOS2} 2
+
+# CLKOS3 (10MHz) -> CLKOP (100MHz): Same PLL, 1:10 ratio
+#   Data from 10MHz is stable for 10 CLKOP periods (100ns)
+define_multicycle_path -from {CLKOS3} -to {CLKOP} 10
+
+# CLKOP (100MHz) -> CLKOS3 (10MHz): Fast to slow
+#   Data captured at 10MHz; 2x relaxation for CDC sync chains
+define_multicycle_path -from {CLKOP} -to {CLKOS3} 2
+
+# CLKOS3 (10MHz) -> CLKOS (100MHz): Same PLL, 1:10 ratio
+define_multicycle_path -from {CLKOS3} -to {CLKOS} 10
+
+# CLKOS (100MHz) -> CLKOS3 (10MHz): Fast to slow
+define_multicycle_path -from {CLKOS} -to {CLKOS3} 2
+
+# CLKOS2 (20MHz) <-> CLKOP/CLKOS (100MHz): No direct data transfer
+#   All CDC between 20MHz system domain and 100MHz comm domain is
+#   handled through DCFIFO IP blocks (rx/tx CDC FIFOs).
+define_false_path -from {CLKOS2} -to {CLKOP}
+define_false_path -from {CLKOP}  -to {CLKOS2}
+define_false_path -from {CLKOS2} -to {CLKOS}
+define_false_path -from {CLKOS}  -to {CLKOS2}
+
+#----------------------------------------------------------------------
+# Section 3: External Clock Domain Isolation
+#
+#   CLK20M (external 20MHz input) feeds CLKSLV in slv_com_top.
+#   No direct functional data transfer between CLK20M domain and
+#   PLL output domains.
+#----------------------------------------------------------------------
+define_false_path -from {CLK20M} -to {CLKOS2}
+define_false_path -from {CLK20M} -to {CLKOP}
+define_false_path -from {CLK20M} -to {CLKOS}
+define_false_path -from {CLK20M} -to {CLKOS3}
+define_false_path -from {CLKOS2} -to {CLK20M}
+define_false_path -from {CLKOP}  -to {CLK20M}
+define_false_path -from {CLKOS}  -to {CLK20M}
+define_false_path -from {CLKOS3} -to {CLK20M}
