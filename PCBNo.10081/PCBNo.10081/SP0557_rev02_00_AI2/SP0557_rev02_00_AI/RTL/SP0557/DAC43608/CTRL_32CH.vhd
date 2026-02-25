@@ -121,6 +121,10 @@ signal s_DA_SEND_30CH_ago	: std_logic_vector(7 downto 0);				--1クロック前�
 signal s_DA_SEND_31CH_ago	: std_logic_vector(7 downto 0);				--1クロック前の入力信号--
 signal s_DA_SEND_32CH_ago	: std_logic_vector(7 downto 0);				--1クロック前の入力信号--
 
+-- Prevent pruning of upper LATCH bits (32ch full bus width required for DAC control)
+attribute syn_keep : boolean;
+attribute syn_keep of s_LATCH : signal is true;
+
 ---------------begin------------------------------------------
 
 begin

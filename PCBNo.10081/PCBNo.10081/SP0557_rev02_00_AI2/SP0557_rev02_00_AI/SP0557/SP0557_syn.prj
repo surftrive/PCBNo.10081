@@ -175,6 +175,9 @@ set_option -vhdl2008 1
 #automatic place and route (vendor) options
 set_option -write_apr_constraint 1
 
+#constraint files
+add_file -constraint "./SP0557.fdc"
+
 #set result format/file last
 project -result_file "./SP0557.edi"
 impl -active "SP0557"

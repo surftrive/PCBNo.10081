@@ -44,6 +44,9 @@ constant	c_wait_time			: std_logic_vector( 7 downto 0)		:= X"0A";
 
 ---------------signal-------------------------------------------------------------------------------
 signal		s_LEDPTN		: std_logic_vector(15 downto 0) := (others => '0');
+-- Prevent pruning of unused LED pattern bits (full 16-bit width for future patterns)
+attribute syn_keep : boolean;
+attribute syn_keep of s_LEDPTN : signal is true;
 
 signal		s_TLC5916_START		: std_logic;
 signal		s_TLC5916_BUSY		: std_logic;
@@ -84,7 +87,7 @@ component AD8402_CTRL
 		CH2				: in	std_logic_vector( 7 downto 0 ) ;	-- TX data (ch2)
 		START			: in	std_logic ;							-- process start (act.H)
 		CMND_BUSY		: out	std_logic ;							-- command statemachine not idle
-		CMND_FIN		: out	std_logic ;							-- ‘—MŒãƒXƒe[ƒg‚ªFIN
+		CMND_FIN		: out	std_logic ;							-- ï¿½ï¿½ï¿½Mï¿½ï¿½Xï¿½eï¿½[ï¿½gï¿½ï¿½FIN
 		AD8402_BUSY		: out	std_logic ;							-- ad8402 statemachine not idle
 		AD8402_CS_n		: out	std_logic ;							-- SPI Chip select
 		AD8402_SCK		: out	std_logic ;							-- SPI shift clock

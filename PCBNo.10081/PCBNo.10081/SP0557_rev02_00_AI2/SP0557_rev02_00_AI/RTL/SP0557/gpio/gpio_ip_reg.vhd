@@ -35,6 +35,10 @@ architecture RTL of gpio_ip_reg is
 	signal REG1			: std_logic_vector( 7 downto 0);
 	signal REG2			: std_logic_vector( 7 downto 0);
 
+-- Prevent combinational reduction of REG1 (input sampling register)
+attribute syn_preserve : boolean;
+attribute syn_preserve of REG1 : signal is true;
+
 begin
 
 	READENB		<= REGSEL and (not LRDb);

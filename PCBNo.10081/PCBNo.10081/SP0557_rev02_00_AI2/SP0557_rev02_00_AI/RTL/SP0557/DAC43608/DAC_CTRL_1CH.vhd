@@ -34,7 +34,7 @@ entity DAC_CTRL_1CH is
 	-- WISHBONE interface signals
 		WB_ADR_I	: out	std_logic_vector( 2 downto 0 ) ;
 		WB_DAT_I	: out	std_logic_vector( 7 downto 0 ) ;
-		WB_DAT_O	: in	std_logic_vector( 7 downto 0 ) ;
+		WB_DAT_O	: in	std_logic_vector( 7 downto 0 ) ;	-- bits [5:2,0] unused; 8-bit WISHBONE bus width required by I2C core interface
 		WB_WE_I		: out	std_logic ;
 		WB_STB_I	: out	std_logic ;
 		WB_CYC_I	: out	std_logic ;
