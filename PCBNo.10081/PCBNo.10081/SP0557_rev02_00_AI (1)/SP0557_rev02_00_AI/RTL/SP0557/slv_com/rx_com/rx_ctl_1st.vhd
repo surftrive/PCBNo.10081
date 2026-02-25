@@ -38,6 +38,12 @@ architecture RTL of rx_ctl_1st is
 
 	signal illegal_dat	: std_logic;		--toku add 2005.06.23
 
+-- Prevent register sharing/merging of shift register pipeline stages
+attribute syn_preserve : boolean;
+attribute syn_preserve of sp_dt    : signal is true;
+attribute syn_preserve of sp_dt_1q : signal is true;
+attribute syn_preserve of sp_dt_2q : signal is true;
+
 begin
 
 

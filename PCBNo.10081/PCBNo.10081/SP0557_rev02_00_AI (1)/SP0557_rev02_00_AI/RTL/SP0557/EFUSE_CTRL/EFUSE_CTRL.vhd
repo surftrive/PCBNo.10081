@@ -56,6 +56,22 @@ signal		s_PW_LEDSH_EN		: std_logic;
 signal		s_PW_LEDLT_EN		: std_logic;
 signal		s_MODE				: std_logic_vector( 3 downto 0);
 
+-- Synthesis attributes: prevent merging of equivalent power enable registers (each drives separate HW)
+attribute syn_preserve : boolean;
+attribute syn_preserve of s_PW_SV_EN     : signal is true;
+attribute syn_preserve of s_PW_PUMP_EN   : signal is true;
+attribute syn_preserve of s_PW_PLS_EN    : signal is true;
+attribute syn_preserve of s_PW_LMT_EN    : signal is true;
+attribute syn_preserve of s_PW_ENC_EN    : signal is true;
+attribute syn_preserve of s_PW_SNS_EN    : signal is true;
+attribute syn_preserve of s_PW_SNSLED_EN : signal is true;
+attribute syn_preserve of s_PW_PLSSNS_EN : signal is true;
+attribute syn_preserve of s_PW_LEDSH_EN  : signal is true;
+attribute syn_preserve of s_PW_LEDLT_EN  : signal is true;
+-- Prevent pruning of unused MODE bits (bus width matches interface specification)
+attribute syn_keep : boolean;
+attribute syn_keep of s_MODE : signal is true;
+
 ---------------component----------------------------------------------------------------------------
 
 -------------------- begin -------------------------------------------------------------------------

@@ -38,7 +38,7 @@ entity ppmc_ctrl is
         CLK             : in std_logic;                             -- Clock 20MHZ
         LRSTb           : in std_logic;                             -- power on reset or CPU reset(active Low)
         nSRESET         : out std_logic;                            -- software reset
-        COMMAND_REG     : in std_logic_vector( 7 downto 0);         -- command reg
+        COMMAND_REG     : in std_logic_vector( 7 downto 0);         -- command reg (bits [6:4] unused; 8-bit register map bus width)
         PULSE_REG       : in std_logic_vector(15 downto 0);         -- pulse reg
         HIGH_FREQ_REG   : in std_logic_vector(15 downto 0);         -- high freq reg
         LOW_FREQ_REG    : in std_logic_vector(15 downto 0);         -- low freq reg
@@ -129,6 +129,11 @@ architecture RTL of ppmc_ctrl is
     signal s_more_inh_ccw   : std_logic;
 
     signal s_pls_ld         : std_logic;
+
+-- Prevent register sharing of s_pls_ld and ENB_START (separate timing functions)
+attribute syn_preserve : boolean;
+attribute syn_preserve of s_pls_ld  : signal is true;
+attribute syn_preserve of ENB_START : signal is true;
 
 begin
 

@@ -1,0 +1,27 @@
+#----------------------------------------------------------------------
+# SP0557 Synplify Forward Declaration Constraint (FDC) File
+# Purpose: Define PLL output clocks for proper timing analysis
+# Date   : 2026-02-25
+# Target : LFE5U-25F-6 CABGA256
+#----------------------------------------------------------------------
+
+#----------------------------------------------------------------------
+# PLL Output Clock Definitions
+#   PLL input: CLK20M (20MHz external oscillator)
+#   PLL primitive: EHXPLLL (pll_gen)
+#----------------------------------------------------------------------
+
+# CLKOS2: 20MHz system clock (main logic clock, ~8600 sequential elements)
+define_clock -name {CLKOS2} -freq 20.000 {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.s_PLL_CLK20M}
+
+# CLK20M: 20MHz external input clock (PLL reference, ~12 sequential elements)
+define_clock -name {CLK20M} -freq 20.000 {p:CLK20M}
+
+# CLKOS: 100MHz internal clock (CDC sync chains, ~22 sequential elements)
+define_clock -name {CLKOS} -freq 100.000 {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLK2A}
+
+# CLKOP: 100MHz serial communication clock (~258 sequential elements)
+define_clock -name {CLKOP} -freq 100.000 {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLKCOM_OUT}
+
+# CLKOS3: 10MHz internal clock (slave control, ~545 sequential elements)
+define_clock -name {CLKOS3} -freq 10.000 {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLK1}

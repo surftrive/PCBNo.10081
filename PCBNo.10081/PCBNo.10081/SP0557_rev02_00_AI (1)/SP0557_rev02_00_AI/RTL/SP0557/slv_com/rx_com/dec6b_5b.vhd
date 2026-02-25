@@ -33,6 +33,10 @@ architecture RTL of dec6b_5b is
 signal ERR_NEG : std_logic;
 signal ERR_POS : std_logic;
 
+-- Prevent merging of DATAOUT register with input register (8b10b decode pipeline)
+attribute syn_preserve : boolean;
+attribute syn_preserve of DATAOUT : signal is true;
+
 begin
 
 	ERR_NEG <= '1' when DATAIN="000000" or DATAIN="000001" or DATAIN="000010" or

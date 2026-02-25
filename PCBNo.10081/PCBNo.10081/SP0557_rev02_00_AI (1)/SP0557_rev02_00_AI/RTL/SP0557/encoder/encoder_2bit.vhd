@@ -65,12 +65,12 @@ begin	--**************************************************
 	CNT_DWN <= minus_cnd; -- add 2020/02/07 ver1.02
 
 	-- Noise Filter A
-	process (CLK, LRSTb, ENCPHASE_A)
+	process (CLK, LRSTb)
 	begin
 		if (LRSTb='0') then
 				s_ph_a_flt	<= c_ADzero;
-				s_ph_a		<= ENCPHASE_A;
-				s_ph_a_p	<= ENCPHASE_A;
+				s_ph_a		<= '0';
+				s_ph_a_p	<= '0';
 		elsif (CLK'event and CLK='1') then
 			if s_ph_a=ENCPHASE_A then
 				s_ph_a_flt	<= c_ADzero;
@@ -99,12 +99,12 @@ begin	--**************************************************
 	end process;
 
 	-- Noise Filter B
-	process (CLK, LRSTb, ENCPHASE_B)
+	process (CLK, LRSTb)
 	begin
 		if (LRSTb='0') then
 				s_ph_b_flt	<= c_ADzero;
-				s_ph_b		<= ENCPHASE_B;
-				s_ph_b_p	<= ENCPHASE_B;
+				s_ph_b		<= '0';
+				s_ph_b_p	<= '0';
 		elsif (CLK'event and CLK='1') then
 			if s_ph_b=ENCPHASE_B then
 				s_ph_b_flt	<= c_ADzero;

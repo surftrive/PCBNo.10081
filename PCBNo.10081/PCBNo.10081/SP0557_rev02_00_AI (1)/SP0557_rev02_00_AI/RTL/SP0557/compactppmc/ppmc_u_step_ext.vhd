@@ -30,7 +30,7 @@ entity ppmc_u_step_ext is
         nRST            : in    std_logic;
         SSEL            : in    std_logic;
         MSEL            : in    std_logic_vector(3 downto 1);
-        INIT_REG_IN     : in    std_logic_vector(7 downto 0);
+        INIT_REG_IN     : in    std_logic_vector(7 downto 0);  -- bits [7,5:0] unused; 8-bit register map bus width, only bit 6 used for mode select
         POUT_IN         : in    std_logic;
         M               : out   std_logic_vector(3 downto 1);
         POUT            : out   std_logic

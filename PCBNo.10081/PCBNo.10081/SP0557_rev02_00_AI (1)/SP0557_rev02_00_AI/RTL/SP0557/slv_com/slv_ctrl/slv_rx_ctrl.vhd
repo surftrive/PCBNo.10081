@@ -82,10 +82,16 @@ architecture RTL of slv_rx_ctrl is
 	signal cnt			: std_logic;
 	signal w_enable		: std_logic;		-- write enable flag
 	signal err_flg		: std_logic;
-	
+
 	signal rst_flg		: std_logic;
 	signal slv_flg		: std_logic;
 	--signal s_sync		: std_logic_vector( 7 downto 0);
+
+-- Prevent pruning of byte counter bits (bus width for protocol) and NODE register merging
+attribute syn_keep : boolean;
+attribute syn_keep of byte_cnt : signal is true;
+attribute syn_preserve : boolean;
+attribute syn_preserve of NODE : signal is true;
 
 begin
 	err_flg <= CRC_ERR or RX_ERR;
