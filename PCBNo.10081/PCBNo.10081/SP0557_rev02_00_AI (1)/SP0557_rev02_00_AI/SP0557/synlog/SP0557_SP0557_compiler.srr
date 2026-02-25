@@ -1,0 +1,1180 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: SCPP006598
+
+Implementation : SP0557
+Synopsys HDL Compiler, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: SCPP006598
+
+Implementation : SP0557
+Synopsys VHDL Compiler, Version comp202303synp1, Build 173R, Built Aug 31 2023 03:59:48, @
+
+@N|Running in 64-bit mode
+Location map warning "C:\lscc\diamond\3.13\synpbase\lib\vhd2008\location.map":55 - Attempted redefinition of package mach.components
+@N:"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557.vhd":19:7:19:12|Top entity is set to SP0557.
+Options changed - recompiling
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\com\fc_dec.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\com\fc_sel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\com\w_pack.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_clk_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adc_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adclk_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\shiftreg12bit.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_acc_tim_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_dec.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_id.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_phgen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_timer_cnt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_registers.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\enc_lmt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\encoder_2bit.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_id.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_ip_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_op_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\pls_sens\pls_sens.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slaveid_top\slaveid_id.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\crc_check.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\dec4b_3b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\adr_sel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\nd_sel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\node_sel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\crc_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc5b_6b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\tx_ctl_1st.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\tx_ctl_3rd.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\cds.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rst_cnt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slvadr_cnv.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\SPI_master2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\pll_gen\pll_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\ad_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_plsgen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_reg_S118M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_top_S118M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_wb_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC43608_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\enc_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\enc_func_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\dec8b10b_new.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\dec8b10b_wrapper.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_cont_b1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_cont_b2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc8b_10b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc8b10b_new.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc8b10b_wrapper.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\tx_cont_b1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\tx_cont_b2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\CLK_gen_S124M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_com_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\SIO_ctrl2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\sp_conv.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\IPcore.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slaveid_top\slaveid_top.vhd'.
+VHDL syntax check successful!
+Options changed - recompiling
+@N: CD231 :"C:\lscc\diamond\3.13\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557.vhd":19:7:19:12|Synthesizing work.sp0557.rtl.
+@W: CD638 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557.vhd":86:8:86:12|Signal sa_ND_15 is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_top.vhd":20:7:20:14|Synthesizing work.gpio_top.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_reg.vhd":20:7:20:14|Synthesizing work.gpio_reg.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_ip_reg.vhd":20:7:20:17|Synthesizing work.gpio_ip_reg.rtl.
+Post processing for work.gpio_ip_reg.rtl
+Running optimization stage 1 on gpio_ip_reg .......
+Finished optimization stage 1 on gpio_ip_reg (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 111MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_op_reg.vhd":20:7:20:17|Synthesizing work.gpio_op_reg.rtl.
+Post processing for work.gpio_op_reg.rtl
+Running optimization stage 1 on gpio_op_reg .......
+Finished optimization stage 1 on gpio_op_reg (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 111MB)
+Post processing for work.gpio_reg.rtl
+Running optimization stage 1 on gpio_reg .......
+Finished optimization stage 1 on gpio_reg (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 111MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_id.vhd":20:7:20:13|Synthesizing work.gpio_id.rtl.
+Post processing for work.gpio_id.rtl
+Running optimization stage 1 on gpio_id .......
+Finished optimization stage 1 on gpio_id (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 112MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\com\fc_sel.vhd":20:7:20:12|Synthesizing work.fc_sel.rtl.
+Post processing for work.fc_sel.rtl
+Running optimization stage 1 on fc_sel .......
+Finished optimization stage 1 on fc_sel (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 112MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\com\fc_dec.vhd":20:7:20:12|Synthesizing work.fc_dec.rtl.
+Post processing for work.fc_dec.rtl
+Running optimization stage 1 on fc_dec .......
+Finished optimization stage 1 on fc_dec (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 112MB)
+Post processing for work.gpio_top.rtl
+Running optimization stage 1 on gpio_top .......
+Finished optimization stage 1 on gpio_top (CPU Time 0h:00m:00s, Memory Used current: 111MB peak: 112MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_top_S118M.vhd":48:7:48:20|Synthesizing work.ppmc_top_s118m.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_reg_S118M.vhd":53:7:53:20|Synthesizing work.ppmc_reg_s118m.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":25:7:25:17|Synthesizing work.ppmc_cmdchk.rtl.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":152:16:152:25|Removing redundant assignment.
+Post processing for work.ppmc_cmdchk.rtl
+Running optimization stage 1 on ppmc_cmdchk .......
+Finished optimization stage 1 on ppmc_cmdchk (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":36:7:36:15|Synthesizing work.ppmc_ctrl.rtl.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":167:16:167:22|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":217:20:217:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":346:24:346:32|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":353:20:353:24|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":387:20:387:24|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":406:20:406:24|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":420:24:420:28|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":423:24:423:31|Removing redundant assignment.
+Post processing for work.ppmc_ctrl.rtl
+Running optimization stage 1 on ppmc_ctrl .......
+Finished optimization stage 1 on ppmc_ctrl (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 114MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd":49:7:49:22|Synthesizing work.ppmc_enblr_s118m.rtl.
+Post processing for work.ppmc_enblr_s118m.rtl
+Running optimization stage 1 on ppmc_enblr_S118M .......
+Finished optimization stage 1 on ppmc_enblr_S118M (CPU Time 0h:00m:00s, Memory Used current: 114MB peak: 114MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":34:7:34:16|Synthesizing work.ppmc_rgstr.rtl.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":336:16:336:34|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":422:16:422:22|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":447:16:447:22|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":474:16:474:20|Removing redundant assignment.
+Post processing for work.ppmc_rgstr.rtl
+Running optimization stage 1 on ppmc_rgstr .......
+@W: CL111 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":318:8:318:9|All reachable assignments to LIMIT_IN_A(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":318:8:318:9|All reachable assignments to LIMIT_IN_A(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":318:8:318:9|All reachable assignments to LIMIT_IN_A(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":318:8:318:9|All reachable assignments to LIMIT_IN_A(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":318:8:318:9|All reachable assignments to LIMIT_IN_A(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":318:8:318:9|All reachable assignments to LIMIT_IN_A(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":330:8:330:9|Optimizing register bit LIMIT_MONITOR_REG_O(0) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":330:8:330:9|Optimizing register bit LIMIT_MONITOR_REG_O(3) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":330:8:330:9|Optimizing register bit LIMIT_MONITOR_REG_O(4) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":330:8:330:9|Optimizing register bit LIMIT_MONITOR_REG_O(5) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":330:8:330:9|Optimizing register bit LIMIT_MONITOR_REG_O(6) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":330:8:330:9|Optimizing register bit LIMIT_MONITOR_REG_O(7) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":330:8:330:9|Pruning register bits 7 to 3 of LIMIT_MONITOR_REG_O(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":330:8:330:9|Pruning register bit 0 of LIMIT_MONITOR_REG_O(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+Finished optimization stage 1 on ppmc_rgstr (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_dec.vhd":34:7:34:14|Synthesizing work.ppmc_dec.rtl.
+Post processing for work.ppmc_dec.rtl
+Running optimization stage 1 on ppmc_dec .......
+Finished optimization stage 1 on ppmc_dec (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 115MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_plsgen.vhd":19:7:19:17|Synthesizing work.ppmc_plsgen.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":26:7:26:18|Synthesizing work.ppmc_pls_cnt.rtl.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":74:10:74:15|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":76:10:76:12|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":77:10:77:15|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":97:20:97:28|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":100:16:100:24|Removing redundant assignment.
+Post processing for work.ppmc_pls_cnt.rtl
+Running optimization stage 1 on ppmc_pls_cnt .......
+Finished optimization stage 1 on ppmc_pls_cnt (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_timer_cnt.vhd":20:7:20:20|Synthesizing work.ppmc_timer_cnt.rtl.
+Post processing for work.ppmc_timer_cnt.rtl
+Running optimization stage 1 on ppmc_timer_cnt .......
+Finished optimization stage 1 on ppmc_timer_cnt (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd":25:7:25:20|Synthesizing work.ppmc_speed_cnt.rtl.
+@N: CD231 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd":47:31:47:32|Using onehot encoding for type visual_stop_st_states. For example, enumeration stop_st is mapped to "10000".
+@N: CD604 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd":125:16:125:29|OTHERS clause is not synthesized.
+Post processing for work.ppmc_speed_cnt.rtl
+Running optimization stage 1 on ppmc_speed_cnt .......
+Finished optimization stage 1 on ppmc_speed_cnt (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_acc_tim_gen.vhd":20:7:20:22|Synthesizing work.ppmc_acc_tim_gen.rtl.
+Post processing for work.ppmc_acc_tim_gen.rtl
+Running optimization stage 1 on ppmc_acc_tim_gen .......
+Finished optimization stage 1 on ppmc_acc_tim_gen (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+Post processing for work.ppmc_plsgen.rtl
+Running optimization stage 1 on ppmc_plsgen .......
+Finished optimization stage 1 on ppmc_plsgen (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd":27:7:27:21|Synthesizing work.ppmc_u_step_ext.rtl.
+Post processing for work.ppmc_u_step_ext.rtl
+Running optimization stage 1 on ppmc_u_step_ext .......
+Finished optimization stage 1 on ppmc_u_step_ext (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+Post processing for work.ppmc_reg_s118m.rtl
+Running optimization stage 1 on ppmc_reg_S118M .......
+Finished optimization stage 1 on ppmc_reg_S118M (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_id.vhd":19:7:19:13|Synthesizing work.ppmc_id.rtl.
+Post processing for work.ppmc_id.rtl
+Running optimization stage 1 on ppmc_id .......
+Finished optimization stage 1 on ppmc_id (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+Post processing for work.ppmc_top_s118m.rtl
+Running optimization stage 1 on ppmc_top_S118M .......
+Finished optimization stage 1 on ppmc_top_S118M (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\pls_sens\pls_sens.vhd":21:7:21:14|Synthesizing work.pls_sens.rtl.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\pls_sens\pls_sens.vhd":80:4:80:12|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\pls_sens\pls_sens.vhd":96:6:96:14|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\pls_sens\pls_sens.vhd":100:4:100:12|Removing redundant assignment.
+Post processing for work.pls_sens.rtl
+Running optimization stage 1 on pls_sens .......
+Finished optimization stage 1 on pls_sens (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\enc_func_top.vhd":24:7:24:18|Synthesizing work.enc_func_top.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\enc_top.vhd":24:7:24:13|Synthesizing work.enc_top.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\enc_lmt.vhd":25:8:25:14|Synthesizing work.enc_lmt.rtl.
+Post processing for work.enc_lmt.rtl
+Running optimization stage 1 on enc_lmt .......
+Finished optimization stage 1 on enc_lmt (CPU Time 0h:00m:00s, Memory Used current: 118MB peak: 119MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\encoder_2bit.vhd":26:8:26:19|Synthesizing work.encoder_2bit.rtl.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\encoder_2bit.vhd":77:4:77:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\encoder_2bit.vhd":80:4:80:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\encoder_2bit.vhd":82:4:82:13|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\encoder_2bit.vhd":111:4:111:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\encoder_2bit.vhd":114:4:114:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\encoder_2bit.vhd":116:4:116:13|Removing redundant assignment.
+Post processing for work.encoder_2bit.rtl
+Running optimization stage 1 on encoder_2bit .......
+Finished optimization stage 1 on encoder_2bit (CPU Time 0h:00m:00s, Memory Used current: 118MB peak: 119MB)
+Post processing for work.enc_top.rtl
+Running optimization stage 1 on enc_top .......
+Finished optimization stage 1 on enc_top (CPU Time 0h:00m:00s, Memory Used current: 118MB peak: 119MB)
+Post processing for work.enc_func_top.rtl
+Running optimization stage 1 on enc_func_top .......
+Finished optimization stage 1 on enc_func_top (CPU Time 0h:00m:00s, Memory Used current: 118MB peak: 119MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":16:7:16:15|Synthesizing work.ledlt_top.rtl.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":124:6:124:23|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":144:4:144:18|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":174:6:174:22|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":194:4:194:17|Removing redundant assignment.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd":26:7:26:17|Synthesizing work.ad8402_ctrl.rtl.
+@N: CD233 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd":62:13:62:14|Using sequential encoding for type ty_sta.
+@N: CD604 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd":208:4:208:17|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd":28:7:28:12|Synthesizing work.ad8402.rtl.
+Post processing for work.ad8402.rtl
+Running optimization stage 1 on ad8402 .......
+Finished optimization stage 1 on ad8402 (CPU Time 0h:00m:00s, Memory Used current: 119MB peak: 120MB)
+Post processing for work.ad8402_ctrl.rtl
+Running optimization stage 1 on AD8402_CTRL .......
+Finished optimization stage 1 on AD8402_CTRL (CPU Time 0h:00m:00s, Memory Used current: 119MB peak: 120MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":16:7:16:18|Synthesizing work.tlc5916_ctrl.rtl.
+@N: CD233 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":40:15:40:16|Using sequential encoding for type ty_state.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":95:7:95:11|Removing redundant assignment.
+@N: CD604 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":110:5:110:18|OTHERS clause is not synthesized.
+Post processing for work.tlc5916_ctrl.rtl
+Running optimization stage 1 on TLC5916_CTRL .......
+Finished optimization stage 1 on TLC5916_CTRL (CPU Time 0h:00m:00s, Memory Used current: 119MB peak: 120MB)
+Post processing for work.ledlt_top.rtl
+Running optimization stage 1 on LEDLT_TOP .......
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":100:2:100:3|Optimizing register bit s_LEDPTN(5) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":100:2:100:3|Optimizing register bit s_LEDPTN(6) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":100:2:100:3|Optimizing register bit s_LEDPTN(7) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":100:2:100:3|Optimizing register bit s_LEDPTN(13) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":100:2:100:3|Optimizing register bit s_LEDPTN(14) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":100:2:100:3|Optimizing register bit s_LEDPTN(15) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":100:2:100:3|Pruning register bits 15 to 13 of s_LEDPTN(15 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":100:2:100:3|Pruning register bits 7 to 5 of s_LEDPTN(15 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Finished optimization stage 1 on LEDLT_TOP (CPU Time 0h:00m:00s, Memory Used current: 119MB peak: 120MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\ad_ctrl.vhd":19:7:19:13|Synthesizing work.ad_ctrl.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adc_reg.vhd":26:7:26:13|Synthesizing work.adc_reg.rtl.
+Post processing for work.adc_reg.rtl
+Running optimization stage 1 on adc_reg .......
+Finished optimization stage 1 on adc_reg (CPU Time 0h:00m:00s, Memory Used current: 119MB peak: 120MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\shiftreg12bit.vhd":18:7:18:19|Synthesizing work.shiftreg12bit.rtl.
+Post processing for work.shiftreg12bit.rtl
+Running optimization stage 1 on shiftreg12bit .......
+Finished optimization stage 1 on shiftreg12bit (CPU Time 0h:00m:00s, Memory Used current: 119MB peak: 120MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":19:7:19:14|Synthesizing work.adif_seq.rtl.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":79:6:79:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":86:6:86:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":93:6:93:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":100:6:100:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":107:6:107:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":114:6:114:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":121:6:121:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":128:6:128:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":135:6:135:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":142:6:142:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":149:6:149:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":156:6:156:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":163:6:163:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":170:6:170:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":177:6:177:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":184:6:184:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":191:6:191:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":198:6:198:9|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":205:6:205:9|Removing redundant assignment.
+Post processing for work.adif_seq.rtl
+Running optimization stage 1 on adif_seq .......
+Finished optimization stage 1 on adif_seq (CPU Time 0h:00m:00s, Memory Used current: 119MB peak: 120MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adclk_gen.vhd":19:7:19:15|Synthesizing work.adclk_gen.rtl.
+Post processing for work.adclk_gen.rtl
+Running optimization stage 1 on adclk_gen .......
+Finished optimization stage 1 on adclk_gen (CPU Time 0h:00m:00s, Memory Used current: 119MB peak: 120MB)
+Post processing for work.ad_ctrl.rtl
+Running optimization stage 1 on ad_ctrl .......
+Finished optimization stage 1 on ad_ctrl (CPU Time 0h:00m:00s, Memory Used current: 119MB peak: 120MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC43608_top.vhd":23:7:23:18|Synthesizing work.dac43608_top.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":21:7:21:15|Synthesizing work.ctrl_32ch.rtl.
+@N: CD233 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":75:11:75:12|Using sequential encoding for type state.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":176:4:176:20|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":182:4:182:20|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":188:4:188:20|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":194:4:194:20|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":200:4:200:20|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":206:4:206:20|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":212:4:212:20|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":218:4:218:20|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":224:4:224:20|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":230:4:230:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":236:4:236:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":242:4:242:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":248:4:248:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":254:4:254:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":260:4:260:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":266:4:266:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":272:4:272:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":278:4:278:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":284:4:284:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":290:4:290:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":296:4:296:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":302:4:302:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":308:4:308:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":314:4:314:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":320:4:320:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":326:4:326:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":332:4:332:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":338:4:338:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":344:4:344:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":350:4:350:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":356:4:356:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":362:4:362:21|Removing redundant assignment.
+@N: CD604 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":538:5:538:19|OTHERS clause is not synthesized.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":803:6:803:15|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":804:6:804:11|Removing redundant assignment.
+@N: CD604 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":816:4:816:18|OTHERS clause is not synthesized.
+Post processing for work.ctrl_32ch.rtl
+Running optimization stage 1 on CTRL_32CH .......
+Finished optimization stage 1 on CTRL_32CH (CPU Time 0h:00m:00s, Memory Used current: 122MB peak: 127MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":19:7:19:18|Synthesizing work.dac_ctrl_1ch.rtl.
+@N: CD232 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":51:11:51:12|Using gray code encoding for type state.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":133:6:133:10|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":150:5:150:14|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":151:5:151:14|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":152:5:152:13|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":157:5:157:14|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":158:5:158:14|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":165:6:165:14|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":166:6:166:15|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":178:5:178:14|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":179:5:179:14|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":180:5:180:13|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":186:5:186:14|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":187:5:187:14|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":194:6:194:14|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":195:6:195:15|Removing redundant assignment.
+
+Only the first 100 messages of id 'CD364' are reported. To see all messages use 'report_messages -log C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\synlog\SP0557_SP0557_compiler.srr -id CD364' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {CD364} -count unlimited' in the Tcl shell.
+Post processing for work.dac_ctrl_1ch.rtl
+Running optimization stage 1 on DAC_CTRL_1CH .......
+Finished optimization stage 1 on DAC_CTRL_1CH (CPU Time 0h:00m:00s, Memory Used current: 122MB peak: 127MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_wb_top.vhd":81:7:81:23|Synthesizing work.i2c_master_wb_top.arch.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_registers.vhd":81:7:81:26|Synthesizing work.i2c_master_registers.arch.
+Post processing for work.i2c_master_registers.arch
+Running optimization stage 1 on i2c_master_registers .......
+Finished optimization stage 1 on i2c_master_registers (CPU Time 0h:00m:00s, Memory Used current: 122MB peak: 127MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd":122:7:122:25|Synthesizing work.i2c_master_bit_ctrl.arch.
+Post processing for work.i2c_master_bit_ctrl.arch
+Running optimization stage 1 on i2c_master_bit_ctrl .......
+Finished optimization stage 1 on i2c_master_bit_ctrl (CPU Time 0h:00m:00s, Memory Used current: 122MB peak: 127MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd":80:7:80:26|Synthesizing work.i2c_master_byte_ctrl.arch.
+Post processing for work.i2c_master_byte_ctrl.arch
+Running optimization stage 1 on i2c_master_byte_ctrl .......
+Finished optimization stage 1 on i2c_master_byte_ctrl (CPU Time 0h:00m:00s, Memory Used current: 122MB peak: 127MB)
+Post processing for work.i2c_master_wb_top.arch
+Running optimization stage 1 on i2c_master_wb_top .......
+Finished optimization stage 1 on i2c_master_wb_top (CPU Time 0h:00m:00s, Memory Used current: 122MB peak: 127MB)
+Post processing for work.dac43608_top.rtl
+Running optimization stage 1 on DAC43608_top .......
+Finished optimization stage 1 on DAC43608_top (CPU Time 0h:00m:00s, Memory Used current: 122MB peak: 127MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd":16:7:16:16|Synthesizing work.efuse_ctrl.rtl.
+Post processing for work.efuse_ctrl.rtl
+Running optimization stage 1 on EFUSE_CTRL .......
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd":78:2:78:3|Optimizing register bit s_MODE(1) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd":78:2:78:3|Optimizing register bit s_MODE(2) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd":78:2:78:3|Optimizing register bit s_MODE(3) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd":78:2:78:3|Pruning register bits 3 to 1 of s_MODE(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Finished optimization stage 1 on EFUSE_CTRL (CPU Time 0h:00m:00s, Memory Used current: 122MB peak: 127MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\sp_conv.vhd":24:7:24:13|Synthesizing work.sp_conv.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\SIO_ctrl2.vhd":35:7:35:15|Synthesizing work.sio_ctrl2.rtl.
+@N: CD233 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\SIO_ctrl2.vhd":120:16:120:17|Using sequential encoding for type ty_state.
+@N: CD604 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\SIO_ctrl2.vhd":188:3:188:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\SPI_master2.vhd":35:7:35:17|Synthesizing work.spi_master2.rtl.
+@N: CD231 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\SPI_master2.vhd":65:13:65:14|Using onehot encoding for type ty_sta. For example, enumeration st_idle is mapped to "10000".
+@N: CD604 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\SPI_master2.vhd":344:5:344:18|OTHERS clause is not synthesized.
+Post processing for work.spi_master2.rtl
+Running optimization stage 1 on SPI_master2 .......
+Finished optimization stage 1 on SPI_master2 (CPU Time 0h:00m:00s, Memory Used current: 123MB peak: 127MB)
+Post processing for work.sio_ctrl2.rtl
+Running optimization stage 1 on SIO_ctrl2 .......
+Finished optimization stage 1 on SIO_ctrl2 (CPU Time 0h:00m:00s, Memory Used current: 123MB peak: 127MB)
+Post processing for work.sp_conv.rtl
+Running optimization stage 1 on sp_conv .......
+Finished optimization stage 1 on sp_conv (CPU Time 0h:00m:00s, Memory Used current: 123MB peak: 127MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_clk_gen.vhd":19:7:19:17|Synthesizing work.slv_clk_gen.rtl.
+Post processing for work.slv_clk_gen.rtl
+Running optimization stage 1 on slv_clk_gen .......
+Finished optimization stage 1 on slv_clk_gen (CPU Time 0h:00m:00s, Memory Used current: 123MB peak: 127MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_com_top.vhd":30:7:30:17|Synthesizing work.slv_com_top.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_com_top.vhd":315:4:315:17|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\cds.vhd":25:7:25:9|Synthesizing work.cds.rtl.
+Post processing for work.cds.rtl
+Running optimization stage 1 on cds .......
+Finished optimization stage 1 on cds (CPU Time 0h:00m:00s, Memory Used current: 123MB peak: 127MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com.vhd":24:7:24:12|Synthesizing work.rx_com.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_cont_b2.vhd":20:7:20:16|Synthesizing work.rx_cont_b2.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd":19:7:19:16|Synthesizing work.rx_ctl_3rd.rtl.
+Post processing for work.rx_ctl_3rd.rtl
+Running optimization stage 1 on rx_ctl_3rd .......
+Finished optimization stage 1 on rx_ctl_3rd (CPU Time 0h:00m:00s, Memory Used current: 124MB peak: 127MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\crc_check.vhd":19:7:19:15|Synthesizing work.crc_check.rtl.
+Post processing for work.crc_check.rtl
+Running optimization stage 1 on crc_check .......
+Finished optimization stage 1 on crc_check (CPU Time 0h:00m:00s, Memory Used current: 124MB peak: 127MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd":12:7:12:18|Synthesizing work.dcfifo_rx_b2.structure.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":768:10:768:17|Synthesizing work.rom16x1a.syn_black_box.
+Post processing for work.rom16x1a.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":1128:10:1128:15|Synthesizing work.dp16kd.syn_black_box.
+Post processing for work.dp16kd.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":118:10:118:16|Synthesizing work.fd1p3bx.syn_black_box.
+Post processing for work.fd1p3bx.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":130:10:130:16|Synthesizing work.fd1p3dx.syn_black_box.
+Post processing for work.fd1p3dx.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":197:10:197:16|Synthesizing work.fd1s3dx.syn_black_box.
+Post processing for work.fd1s3dx.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":186:10:186:16|Synthesizing work.fd1s3bx.syn_black_box.
+Post processing for work.fd1s3bx.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":34:10:34:14|Synthesizing work.ccu2c.syn_black_box.
+Post processing for work.ccu2c.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":830:10:830:12|Synthesizing work.vlo.syn_black_box.
+Post processing for work.vlo.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":823:10:823:12|Synthesizing work.vhi.syn_black_box.
+Post processing for work.vhi.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":837:10:837:13|Synthesizing work.xor2.syn_black_box.
+Post processing for work.xor2.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":716:10:716:12|Synthesizing work.or2.syn_black_box.
+Post processing for work.or2.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":362:10:362:12|Synthesizing work.inv.syn_black_box.
+Post processing for work.inv.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":54:10:54:13|Synthesizing work.and2.syn_black_box.
+Post processing for work.and2.syn_black_box
+Post processing for work.dcfifo_rx_b2.structure
+Running optimization stage 1 on dcfifo_rx_b2 .......
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd":815:4:815:16|Input cin of instance full_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd":770:4:770:17|Input cin of instance empty_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd":731:4:731:13|Input cin of instance r_gctr_cia is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd":693:4:693:13|Input cin of instance w_gctr_cia is floating
+Finished optimization stage 1 on dcfifo_rx_b2 (CPU Time 0h:00m:00s, Memory Used current: 128MB peak: 128MB)
+Post processing for work.rx_cont_b2.rtl
+Running optimization stage 1 on rx_cont_b2 .......
+Finished optimization stage 1 on rx_cont_b2 (CPU Time 0h:00m:00s, Memory Used current: 128MB peak: 128MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_cont_b1.vhd":21:7:21:16|Synthesizing work.rx_cont_b1.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd":20:7:20:16|Synthesizing work.rx_ctl_1st.rtl.
+Post processing for work.rx_ctl_1st.rtl
+Running optimization stage 1 on rx_ctl_1st .......
+Finished optimization stage 1 on rx_ctl_1st (CPU Time 0h:00m:00s, Memory Used current: 128MB peak: 129MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd":12:7:12:18|Synthesizing work.dcfifo_rx_b1.structure.
+Post processing for work.dcfifo_rx_b1.structure
+Running optimization stage 1 on dcfifo_rx_b1 .......
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd":816:4:816:16|Input cin of instance full_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd":771:4:771:17|Input cin of instance empty_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd":732:4:732:13|Input cin of instance r_gctr_cia is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd":694:4:694:13|Input cin of instance w_gctr_cia is floating
+Finished optimization stage 1 on dcfifo_rx_b1 (CPU Time 0h:00m:00s, Memory Used current: 128MB peak: 129MB)
+Post processing for work.rx_cont_b1.rtl
+Running optimization stage 1 on rx_cont_b1 .......
+Finished optimization stage 1 on rx_cont_b1 (CPU Time 0h:00m:00s, Memory Used current: 129MB peak: 129MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\dec8b10b_wrapper.vhd":5:7:5:22|Synthesizing work.dec8b10b_wrapper.wrapper.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\dec8b10b_new.vhd":15:7:15:18|Synthesizing work.dec8b10b_new.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\dec4b_3b.vhd":15:7:15:14|Synthesizing work.dec4b_3b.rtl.
+Post processing for work.dec4b_3b.rtl
+Running optimization stage 1 on dec4b_3b .......
+Finished optimization stage 1 on dec4b_3b (CPU Time 0h:00m:00s, Memory Used current: 129MB peak: 130MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd":15:7:15:14|Synthesizing work.dec6b_5b.rtl.
+Post processing for work.dec6b_5b.rtl
+Running optimization stage 1 on dec6b_5b .......
+Finished optimization stage 1 on dec6b_5b (CPU Time 0h:00m:00s, Memory Used current: 129MB peak: 130MB)
+Post processing for work.dec8b10b_new.rtl
+Running optimization stage 1 on dec8b10b_new .......
+Finished optimization stage 1 on dec8b10b_new (CPU Time 0h:00m:00s, Memory Used current: 129MB peak: 130MB)
+Post processing for work.dec8b10b_wrapper.wrapper
+Running optimization stage 1 on dec8b10b_wrapper .......
+Finished optimization stage 1 on dec8b10b_wrapper (CPU Time 0h:00m:00s, Memory Used current: 129MB peak: 130MB)
+Post processing for work.rx_com.rtl
+Running optimization stage 1 on rx_com .......
+Finished optimization stage 1 on rx_com (CPU Time 0h:00m:00s, Memory Used current: 129MB peak: 130MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com.vhd":25:7:25:12|Synthesizing work.tx_com.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\tx_cont_b2.vhd":20:7:20:16|Synthesizing work.tx_cont_b2.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\tx_ctl_3rd.vhd":20:7:20:16|Synthesizing work.tx_ctl_3rd.rtl.
+Post processing for work.tx_ctl_3rd.rtl
+Running optimization stage 1 on tx_ctl_3rd .......
+Finished optimization stage 1 on tx_ctl_3rd (CPU Time 0h:00m:00s, Memory Used current: 130MB peak: 130MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd":12:7:12:18|Synthesizing work.dcfifo_tx_b2.structure.
+Post processing for work.dcfifo_tx_b2.structure
+Running optimization stage 1 on dcfifo_tx_b2 .......
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd":816:4:816:16|Input cin of instance full_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd":771:4:771:17|Input cin of instance empty_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd":732:4:732:13|Input cin of instance r_gctr_cia is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd":694:4:694:13|Input cin of instance w_gctr_cia is floating
+Finished optimization stage 1 on dcfifo_tx_b2 (CPU Time 0h:00m:00s, Memory Used current: 130MB peak: 131MB)
+Post processing for work.tx_cont_b2.rtl
+Running optimization stage 1 on tx_cont_b2 .......
+Finished optimization stage 1 on tx_cont_b2 (CPU Time 0h:00m:00s, Memory Used current: 130MB peak: 131MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\tx_cont_b1.vhd":20:7:20:16|Synthesizing work.tx_cont_b1.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\tx_ctl_1st.vhd":20:7:20:16|Synthesizing work.tx_ctl_1st.rtl.
+Post processing for work.tx_ctl_1st.rtl
+Running optimization stage 1 on tx_ctl_1st .......
+Finished optimization stage 1 on tx_ctl_1st (CPU Time 0h:00m:00s, Memory Used current: 131MB peak: 131MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\crc_gen.vhd":20:7:20:13|Synthesizing work.crc_gen.rtl.
+Post processing for work.crc_gen.rtl
+Running optimization stage 1 on crc_gen .......
+Finished optimization stage 1 on crc_gen (CPU Time 0h:00m:00s, Memory Used current: 131MB peak: 131MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd":12:7:12:18|Synthesizing work.dcfifo_tx_b1.structure.
+Post processing for work.dcfifo_tx_b1.structure
+Running optimization stage 1 on dcfifo_tx_b1 .......
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd":815:4:815:16|Input cin of instance full_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd":770:4:770:17|Input cin of instance empty_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd":731:4:731:13|Input cin of instance r_gctr_cia is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd":693:4:693:13|Input cin of instance w_gctr_cia is floating
+Finished optimization stage 1 on dcfifo_tx_b1 (CPU Time 0h:00m:00s, Memory Used current: 131MB peak: 132MB)
+Post processing for work.tx_cont_b1.rtl
+Running optimization stage 1 on tx_cont_b1 .......
+Finished optimization stage 1 on tx_cont_b1 (CPU Time 0h:00m:00s, Memory Used current: 131MB peak: 132MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc8b10b_wrapper.vhd":5:7:5:22|Synthesizing work.enc8b10b_wrapper.wrapper.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc8b10b_new.vhd":15:7:15:18|Synthesizing work.enc8b10b_new.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc8b_10b.vhd":15:7:15:15|Synthesizing work.enc8b_10b.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd":15:7:15:14|Synthesizing work.enc3b_4b.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd":99:20:99:33|OTHERS clause is not synthesized.
+Post processing for work.enc3b_4b.rtl
+Running optimization stage 1 on enc3b_4b .......
+Finished optimization stage 1 on enc3b_4b (CPU Time 0h:00m:00s, Memory Used current: 132MB peak: 132MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc5b_6b.vhd":15:7:15:14|Synthesizing work.enc5b_6b.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc5b_6b.vhd":226:20:226:33|OTHERS clause is not synthesized.
+Post processing for work.enc5b_6b.rtl
+Running optimization stage 1 on enc5b_6b .......
+Finished optimization stage 1 on enc5b_6b (CPU Time 0h:00m:00s, Memory Used current: 132MB peak: 132MB)
+Post processing for work.enc8b_10b.rtl
+Running optimization stage 1 on enc8b_10b .......
+Finished optimization stage 1 on enc8b_10b (CPU Time 0h:00m:00s, Memory Used current: 132MB peak: 132MB)
+Post processing for work.enc8b10b_new.rtl
+Running optimization stage 1 on enc8b10b_new .......
+Finished optimization stage 1 on enc8b10b_new (CPU Time 0h:00m:00s, Memory Used current: 132MB peak: 132MB)
+Post processing for work.enc8b10b_wrapper.wrapper
+Running optimization stage 1 on enc8b10b_wrapper .......
+Finished optimization stage 1 on enc8b10b_wrapper (CPU Time 0h:00m:00s, Memory Used current: 132MB peak: 132MB)
+Post processing for work.tx_com.rtl
+Running optimization stage 1 on tx_com .......
+Finished optimization stage 1 on tx_com (CPU Time 0h:00m:00s, Memory Used current: 132MB peak: 132MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\CLK_gen_S124M.vhd":17:7:17:19|Synthesizing work.clk_gen_s124m.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\pll_gen\pll_gen.vhd":12:7:12:13|Synthesizing work.pll_gen.structure.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":2081:10:2081:16|Synthesizing work.ehxplll.syn_black_box.
+Post processing for work.ehxplll.syn_black_box
+Post processing for work.pll_gen.structure
+Running optimization stage 1 on pll_gen .......
+@W: CL168 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\pll_gen\pll_gen.vhd":54:4:54:17|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+Finished optimization stage 1 on pll_gen (CPU Time 0h:00m:00s, Memory Used current: 132MB peak: 132MB)
+Post processing for work.clk_gen_s124m.rtl
+Running optimization stage 1 on CLK_gen_S124M .......
+Finished optimization stage 1 on CLK_gen_S124M (CPU Time 0h:00m:00s, Memory Used current: 132MB peak: 132MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slvadr_cnv.vhd":19:7:19:16|Synthesizing work.slvadr_cnv.rtl.
+Post processing for work.slvadr_cnv.rtl
+Running optimization stage 1 on slvadr_cnv .......
+Finished optimization stage 1 on slvadr_cnv (CPU Time 0h:00m:00s, Memory Used current: 132MB peak: 133MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl_top.vhd":20:7:20:18|Synthesizing work.slv_ctrl_top.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\nd_sel.vhd":20:7:20:12|Synthesizing work.nd_sel.rtl.
+Post processing for work.nd_sel.rtl
+Running optimization stage 1 on nd_sel .......
+Finished optimization stage 1 on nd_sel (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 133MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\adr_sel.vhd":20:7:20:13|Synthesizing work.adr_sel.rtl.
+Post processing for work.adr_sel.rtl
+Running optimization stage 1 on adr_sel .......
+Finished optimization stage 1 on adr_sel (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 133MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\node_sel.vhd":20:7:20:14|Synthesizing work.node_sel.rtl.
+Post processing for work.node_sel.rtl
+Running optimization stage 1 on node_sel .......
+Finished optimization stage 1 on node_sel (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 133MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":26:7:26:17|Synthesizing work.slv_rx_ctrl.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":432:3:432:16|OTHERS clause is not synthesized.
+Post processing for work.slv_rx_ctrl.rtl
+Running optimization stage 1 on slv_rx_ctrl .......
+@A: CL282 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":108:2:108:3|Feedback mux created for signal LD[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":108:2:108:3|Feedback mux created for signal prpty_data[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+Finished optimization stage 1 on slv_rx_ctrl (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":25:7:25:17|Synthesizing work.slv_tx_ctrl.rtl.
+Post processing for work.slv_tx_ctrl.rtl
+Running optimization stage 1 on slv_tx_ctrl .......
+Finished optimization stage 1 on slv_tx_ctrl (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Post processing for work.slv_ctrl_top.rtl
+Running optimization stage 1 on slv_ctrl_top .......
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl_top.vhd":189:2:189:3|Optimizing register bit s_prpty(1) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl_top.vhd":189:2:189:3|Optimizing register bit s_prpty(2) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl_top.vhd":189:2:189:3|Optimizing register bit s_prpty(4) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl_top.vhd":189:2:189:3|Optimizing register bit s_prpty(5) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl_top.vhd":189:2:189:3|Optimizing register bit s_prpty(6) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl_top.vhd":189:2:189:3|Optimizing register bit s_prpty(7) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl_top.vhd":189:2:189:3|Pruning register bits 7 to 4 of s_prpty(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl_top.vhd":189:2:189:3|Pruning register bits 2 to 1 of s_prpty(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Finished optimization stage 1 on slv_ctrl_top (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+@N: CD630 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rst_cnt.vhd":20:7:20:13|Synthesizing work.rst_cnt.rtl.
+Post processing for work.rst_cnt.rtl
+Running optimization stage 1 on rst_cnt .......
+Finished optimization stage 1 on rst_cnt (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Post processing for work.slv_com_top.rtl
+Running optimization stage 1 on slv_com_top .......
+Finished optimization stage 1 on slv_com_top (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Post processing for work.sp0557.rtl
+Running optimization stage 1 on SP0557 .......
+@W: CL240 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557.vhd":52:2:52:11|Signal LEDSH_MOSI is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557.vhd":51:2:51:10|Signal LEDSH_nCS is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557.vhd":50:2:50:10|Signal LEDSH_SCK is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557.vhd":49:2:49:13|Signal LEDSH_RESETb is floating; a simulation mismatch is possible.
+Finished optimization stage 1 on SP0557 (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on rst_cnt .......
+Finished optimization stage 2 on rst_cnt (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 135MB)
+Running optimization stage 2 on slv_tx_ctrl .......
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Trying to extract state machine for register STATE.
+Extracted state machine for register STATE
+State machine has 10 reachable states with original encodings of:
+   0000000001
+   0000000010
+   0000000100
+   0000001000
+   0000010000
+   0000100000
+   0001000000
+   0010000000
+   0100000000
+   1000000000
+Finished optimization stage 2 on slv_tx_ctrl (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 135MB)
+Running optimization stage 2 on slv_rx_ctrl .......
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":108:2:108:3|Optimizing register bit byte_cnt(2) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":108:2:108:3|Pruning register bit 2 of byte_cnt(2 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":108:2:108:3|Trying to extract state machine for register STATE.
+Extracted state machine for register STATE
+State machine has 15 reachable states with original encodings of:
+   00000000000001
+   00000000000010
+   00000000000011
+   00000000000100
+   00000000000110
+   00000000001000
+   00000000001100
+   00000000010000
+   00000000011000
+   00000000100000
+   00000000110000
+   00000001000000
+   00000001100000
+   00000010000000
+   00000011000000
+Finished optimization stage 2 on slv_rx_ctrl (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 138MB)
+Running optimization stage 2 on node_sel .......
+Finished optimization stage 2 on node_sel (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 138MB)
+Running optimization stage 2 on adr_sel .......
+Finished optimization stage 2 on adr_sel (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 138MB)
+Running optimization stage 2 on nd_sel .......
+Finished optimization stage 2 on nd_sel (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on slv_ctrl_top .......
+Finished optimization stage 2 on slv_ctrl_top (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on slvadr_cnv .......
+@W: CL279 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slvadr_cnv.vhd":50:4:50:5|Pruning register bits 7 to 6 of s_HEX_OUT(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Finished optimization stage 2 on slvadr_cnv (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on pll_gen .......
+Finished optimization stage 2 on pll_gen (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on CLK_gen_S124M .......
+Finished optimization stage 2 on CLK_gen_S124M (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on enc5b_6b .......
+Finished optimization stage 2 on enc5b_6b (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on enc3b_4b .......
+Finished optimization stage 2 on enc3b_4b (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on enc8b_10b .......
+Finished optimization stage 2 on enc8b_10b (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on enc8b10b_new .......
+Finished optimization stage 2 on enc8b10b_new (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on enc8b10b_wrapper .......
+Finished optimization stage 2 on enc8b10b_wrapper (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on dcfifo_tx_b1 .......
+Finished optimization stage 2 on dcfifo_tx_b1 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on crc_gen .......
+Finished optimization stage 2 on crc_gen (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on tx_ctl_1st .......
+Finished optimization stage 2 on tx_ctl_1st (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on tx_cont_b1 .......
+Finished optimization stage 2 on tx_cont_b1 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on dcfifo_tx_b2 .......
+Finished optimization stage 2 on dcfifo_tx_b2 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on tx_ctl_3rd .......
+Finished optimization stage 2 on tx_ctl_3rd (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on tx_cont_b2 .......
+Finished optimization stage 2 on tx_cont_b2 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on tx_com .......
+Finished optimization stage 2 on tx_com (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on dec6b_5b .......
+Finished optimization stage 2 on dec6b_5b (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on dec4b_3b .......
+@W: CL246 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\dec4b_3b.vhd":22:8:22:13|Input port bits 1 to 0 of datain(9 downto 0) are unused. Assign logic for all port bits or change the input port size.
+Finished optimization stage 2 on dec4b_3b (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on dec8b10b_new .......
+Finished optimization stage 2 on dec8b10b_new (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on dec8b10b_wrapper .......
+Finished optimization stage 2 on dec8b10b_wrapper (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on dcfifo_rx_b1 .......
+Finished optimization stage 2 on dcfifo_rx_b1 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on rx_ctl_1st .......
+@W: CL177 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd":49:2:49:3|Sharing sequential element sp_dt and merging sp_dt_1q. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL279 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd":49:2:49:3|Pruning register bits 8 to 0 of sp_dt(9 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd":126:2:126:3|Trying to extract state machine for register state_count.
+Extracted state machine for register state_count
+State machine has 6 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+@W: CL279 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd":76:2:76:3|Pruning register bits 9 to 1 of sp_dt_2q(9 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Finished optimization stage 2 on rx_ctl_1st (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on rx_cont_b1 .......
+Finished optimization stage 2 on rx_cont_b1 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on dcfifo_rx_b2 .......
+Finished optimization stage 2 on dcfifo_rx_b2 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on crc_check .......
+Finished optimization stage 2 on crc_check (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on rx_ctl_3rd .......
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd":25:2:25:9|Input RX_EMPTY is unused.
+Finished optimization stage 2 on rx_ctl_3rd (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on rx_cont_b2 .......
+Finished optimization stage 2 on rx_cont_b2 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on rx_com .......
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com.vhd":28:8:28:12|Input CLK2A is unused.
+Finished optimization stage 2 on rx_com (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on cds .......
+Finished optimization stage 2 on cds (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on slv_com_top .......
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_com_top.vhd":286:2:286:3|Trying to extract state machine for register ck_state.
+Extracted state machine for register ck_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_com_top.vhd":41:2:41:9|Input LVCLK_Ip is unused.
+Finished optimization stage 2 on slv_com_top (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on slv_clk_gen .......
+Finished optimization stage 2 on slv_clk_gen (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 138MB)
+Running optimization stage 2 on SPI_master2 .......
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\SPI_master2.vhd":289:2:289:3|Trying to extract state machine for register s_sta.
+Extracted state machine for register s_sta
+State machine has 5 reachable states with original encodings of:
+   00001
+   00010
+   00100
+   01000
+   10000
+Finished optimization stage 2 on SPI_master2 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 156MB)
+Running optimization stage 2 on SIO_ctrl2 .......
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\SIO_ctrl2.vhd":156:2:156:3|Trying to extract state machine for register s_state.
+Extracted state machine for register s_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+Finished optimization stage 2 on SIO_ctrl2 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 156MB)
+Running optimization stage 2 on sp_conv .......
+Finished optimization stage 2 on sp_conv (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 156MB)
+Running optimization stage 2 on EFUSE_CTRL .......
+Finished optimization stage 2 on EFUSE_CTRL (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 156MB)
+Running optimization stage 2 on i2c_master_byte_ctrl .......
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd":177:1:177:2|Trying to extract state machine for register c_state.
+Extracted state machine for register c_state
+State machine has 6 reachable states with original encodings of:
+   00000
+   00001
+   00010
+   00100
+   01000
+   10000
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd":85:8:85:14|Input clk_cnt is unused.
+Finished optimization stage 2 on i2c_master_byte_ctrl (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 156MB)
+Running optimization stage 2 on i2c_master_bit_ctrl .......
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd":357:1:357:2|Trying to extract state machine for register c_state.
+Extracted state machine for register c_state
+State machine has 18 reachable states with original encodings of:
+   00000000000000000
+   00000000000000001
+   00000000000000010
+   00000000000000100
+   00000000000001000
+   00000000000010000
+   00000000000100000
+   00000000001000000
+   00000000010000000
+   00000000100000000
+   00000001000000000
+   00000010000000000
+   00000100000000000
+   00001000000000000
+   00010000000000000
+   00100000000000000
+   01000000000000000
+   10000000000000000
+Finished optimization stage 2 on i2c_master_bit_ctrl (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 156MB)
+Running optimization stage 2 on i2c_master_registers .......
+Finished optimization stage 2 on i2c_master_registers (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 156MB)
+Running optimization stage 2 on i2c_master_wb_top .......
+Finished optimization stage 2 on i2c_master_wb_top (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 156MB)
+Running optimization stage 2 on DAC_CTRL_1CH .......
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":103:2:103:3|Trying to extract state machine for register st.
+Extracted state machine for register st
+State machine has 81 reachable states with original encodings of:
+   0000000
+   0000010
+   0000011
+   0000100
+   0000101
+   0000110
+   0000111
+   0001000
+   0001001
+   0001010
+   0001011
+   0001100
+   0001101
+   0010000
+   0010001
+   0010010
+   0010011
+   0010100
+   0010101
+   0010110
+   0010111
+   0011010
+   0011011
+   0011100
+   0011101
+   0011110
+   0011111
+   0100000
+   0100001
+   0100010
+   0100011
+   0100100
+   0100101
+   0100110
+   0101001
+   0101010
+   0101011
+   0101100
+   0101110
+   0110000
+   0110001
+   0110010
+   0110011
+   0110100
+   0110110
+   0110111
+   0111010
+   0111011
+   0111100
+   0111101
+   0111110
+   0111111
+   1100000
+   1100001
+   1100010
+   1100100
+   1100101
+   1100110
+   1100111
+   1101000
+   1101001
+   1101010
+   1101011
+   1101100
+   1101101
+   1101110
+   1110001
+   1110010
+   1110011
+   1110100
+   1110101
+   1110110
+   1110111
+   1111000
+   1111001
+   1111010
+   1111011
+   1111100
+   1111101
+   1111110
+   1111111
+@W: CL246 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":37:2:37:9|Input port bits 5 to 2 of wb_dat_o(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@W: CL247 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":37:2:37:9|Input port bit 0 of wb_dat_o(7 downto 0) is unused 
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":42:2:42:10|Input WB_INTA_O is unused.
+Finished optimization stage 2 on DAC_CTRL_1CH (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 156MB)
+Running optimization stage 2 on CTRL_32CH .......
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd":547:2:547:3|Trying to extract state machine for register s_state.
+Extracted state machine for register s_state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+Finished optimization stage 2 on CTRL_32CH (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 156MB)
+Running optimization stage 2 on DAC43608_top .......
+Finished optimization stage 2 on DAC43608_top (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 156MB)
+Running optimization stage 2 on adclk_gen .......
+Finished optimization stage 2 on adclk_gen (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 156MB)
+Running optimization stage 2 on adif_seq .......
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd":64:2:64:3|Trying to extract state machine for register st.
+Extracted state machine for register st
+State machine has 20 reachable states with original encodings of:
+   00000
+   00001
+   00010
+   00011
+   00100
+   00101
+   00110
+   00111
+   01000
+   01001
+   01010
+   01011
+   01100
+   01101
+   01110
+   01111
+   10000
+   10001
+   10010
+   10011
+Finished optimization stage 2 on adif_seq (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 156MB)
+Running optimization stage 2 on shiftreg12bit .......
+Finished optimization stage 2 on shiftreg12bit (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 156MB)
+Running optimization stage 2 on adc_reg .......
+Finished optimization stage 2 on adc_reg (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 156MB)
+Running optimization stage 2 on ad_ctrl .......
+Finished optimization stage 2 on ad_ctrl (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 156MB)
+Running optimization stage 2 on TLC5916_CTRL .......
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":68:2:68:3|Trying to extract state machine for register s_state.
+Extracted state machine for register s_state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+Finished optimization stage 2 on TLC5916_CTRL (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 156MB)
+Running optimization stage 2 on ad8402 .......
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd":78:2:78:3|Trying to extract state machine for register st.
+Extracted state machine for register st
+State machine has 6 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   1001
+Finished optimization stage 2 on ad8402 (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 156MB)
+Running optimization stage 2 on AD8402_CTRL .......
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd":172:2:172:3|Trying to extract state machine for register s_sta.
+Extracted state machine for register s_sta
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+Finished optimization stage 2 on AD8402_CTRL (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 156MB)
+Running optimization stage 2 on LEDLT_TOP .......
+@W: CL279 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":100:2:100:3|Pruning register bits 12 to 11 of s_LEDPTN(12 downto 8). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":100:2:100:3|Pruning register bit 9 of s_LEDPTN(12 downto 8). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":100:2:100:3|Pruning register bits 4 to 1 of s_LEDPTN(4 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Finished optimization stage 2 on LEDLT_TOP (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 156MB)
+Running optimization stage 2 on encoder_2bit .......
+Finished optimization stage 2 on encoder_2bit (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Running optimization stage 2 on enc_lmt .......
+Finished optimization stage 2 on enc_lmt (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Running optimization stage 2 on enc_top .......
+Finished optimization stage 2 on enc_top (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Running optimization stage 2 on enc_func_top .......
+Finished optimization stage 2 on enc_func_top (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Running optimization stage 2 on pls_sens .......
+Finished optimization stage 2 on pls_sens (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Running optimization stage 2 on ppmc_id .......
+Finished optimization stage 2 on ppmc_id (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Running optimization stage 2 on ppmc_u_step_ext .......
+@W: CL247 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd":33:8:33:18|Input port bit 7 of init_reg_in(7 downto 0) is unused 
+@W: CL246 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd":33:8:33:18|Input port bits 5 to 0 of init_reg_in(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+Finished optimization stage 2 on ppmc_u_step_ext (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Running optimization stage 2 on ppmc_acc_tim_gen .......
+Finished optimization stage 2 on ppmc_acc_tim_gen (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Running optimization stage 2 on ppmc_speed_cnt .......
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd":57:8:57:9|Trying to extract state machine for register visual_STOP_ST_current.
+Extracted state machine for register visual_STOP_ST_current
+State machine has 5 reachable states with original encodings of:
+   00001
+   00010
+   00100
+   01000
+   10000
+Finished optimization stage 2 on ppmc_speed_cnt (CPU Time 0h:00m:00s, Memory Used current: 139MB peak: 156MB)
+Running optimization stage 2 on ppmc_timer_cnt .......
+Finished optimization stage 2 on ppmc_timer_cnt (CPU Time 0h:00m:00s, Memory Used current: 139MB peak: 156MB)
+Running optimization stage 2 on ppmc_pls_cnt .......
+Finished optimization stage 2 on ppmc_pls_cnt (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 156MB)
+Running optimization stage 2 on ppmc_plsgen .......
+Finished optimization stage 2 on ppmc_plsgen (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 156MB)
+Running optimization stage 2 on ppmc_dec .......
+Finished optimization stage 2 on ppmc_dec (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 156MB)
+Running optimization stage 2 on ppmc_rgstr .......
+@W: CL260 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":162:8:162:9|Pruning register bit 7 of INIT_REG_O(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":162:8:162:9|Pruning register bits 5 to 1 of INIT_REG_O(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL190 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":162:8:162:9|Optimizing register bit INIT_REG_O(0) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":162:8:162:9|Pruning unused register INIT_REG_O(0). Make sure that there are no unused intermediate registers.
+Finished optimization stage 2 on ppmc_rgstr (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 156MB)
+Running optimization stage 2 on ppmc_enblr_S118M .......
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd":53:8:53:11|Input KCLK is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd":56:2:56:10|Input DOWNDELAY is unused.
+Finished optimization stage 2 on ppmc_enblr_S118M (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 156MB)
+Running optimization stage 2 on ppmc_ctrl .......
+@W: CL177 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":283:8:283:9|Sharing sequential element s_pls_ld and merging ENB_START. Add a syn_preserve attribute to the element to prevent sharing.
+@N: CL201 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":283:8:283:9|Trying to extract state machine for register STATE.
+Extracted state machine for register STATE
+State machine has 4 reachable states with original encodings of:
+   0001
+   0010
+   0100
+   1000
+@W: CL246 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":41:8:41:18|Input port bits 6 to 4 of command_reg(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":42:8:42:16|Input PULSE_REG is unused.
+Finished optimization stage 2 on ppmc_ctrl (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Running optimization stage 2 on ppmc_cmdchk .......
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":29:8:29:14|Input UP_DOWN is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":30:8:30:14|Input ACC_ENB is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":34:8:34:15|Input LOW_FREQ is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":35:8:35:16|Input HIGH_FREQ is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":36:8:36:16|Input PULSE_REG is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":39:8:39:12|Input SPEED is unused.
+Finished optimization stage 2 on ppmc_cmdchk (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Running optimization stage 2 on ppmc_reg_S118M .......
+Finished optimization stage 2 on ppmc_reg_S118M (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Running optimization stage 2 on ppmc_top_S118M .......
+Finished optimization stage 2 on ppmc_top_S118M (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Running optimization stage 2 on fc_dec .......
+Finished optimization stage 2 on fc_dec (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Running optimization stage 2 on fc_sel .......
+Finished optimization stage 2 on fc_sel (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Running optimization stage 2 on gpio_id .......
+Finished optimization stage 2 on gpio_id (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Running optimization stage 2 on gpio_op_reg .......
+Finished optimization stage 2 on gpio_op_reg (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Running optimization stage 2 on gpio_ip_reg .......
+Finished optimization stage 2 on gpio_ip_reg (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Running optimization stage 2 on gpio_reg .......
+Finished optimization stage 2 on gpio_reg (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Running optimization stage 2 on gpio_top .......
+Finished optimization stage 2 on gpio_top (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Running optimization stage 2 on SP0557 .......
+@N: CL159 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557.vhd":53:2:53:11|Input LEDSH_MISO is unused.
+Finished optimization stage 2 on SP0557 (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\synwork\layer0.duruntime
+
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:33s; CPU Time elapsed 0h:00m:21s; Memory used current: 141MB peak: 156MB)
+
+Process took 0h:00m:33s realtime, 0h:00m:21s cputime
+
+Process completed successfully.
+# Tue Feb 24 10:30:15 2026
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: SCPP006598
+
+Implementation : SP0557
+Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 155R, Built Aug 10 2023 09:42:17, @
+
+@N|Running in 64-bit mode
+File C:\work\S127M\PCBNo_10081\SP0557_rev02_00\SP0557\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 101MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Feb 24 10:30:16 2026
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\synwork\SP0557_SP0557_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:35s; CPU Time elapsed 0h:00m:22s; Memory used current: 23MB peak: 23MB)
+
+Process took 0h:00m:35s realtime, 0h:00m:22s cputime
+
+Process completed successfully.
+# Tue Feb 24 10:30:16 2026
+
+###########################################################]
