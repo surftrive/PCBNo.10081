@@ -257,26 +257,38 @@ IOBUF PORT "ENC_A[1]" IO_TYPE=LVCMOS33 PULLMODE=NONE DRIVE=NA SLEWRATE=NA CLAMP=
 
 #============================================================================
 # SP0557 Timing Constraint Optimization
-# Purpose: Reduce SLICE utilization (83%) by relaxing unnecessary timing
-#          pressure and eliminating false cross-domain analysis
-# Date: 2026-02-20
+# Purpose: Fix S3IO communication errors at high LE utilization (>80%)
+#
+# Root Cause Analysis (2026-02-25):
+#   1. Synplify placed all PLL clocks in separate clock groups, causing
+#      CLK2 <-> CLK2A cross-domain paths (cds.vhd CDR) to be untimed.
+#   2. AutoConstraint_SP0557.sdc had incorrect periods and conflicting
+#      clock group assignments. Renamed to .sdc.bak to disable.
+#   3. SP0557.fdc rewritten with: same clock group for all PLL clocks,
+#      90-degree phase offset on CLKOS (CLK2A), multicycle + false paths.
+#   4. Guard-banding: 100MHz constrained as 115MHz for timing margin.
+#
+# Date: 2026-02-25 (updated from 2026-02-20)
 # Target: LFE5U-25F-6 CABGA256 (Lattice Diamond 3.13 / Synplify)
 #============================================================================
 
 #----------------------------------------------------------------------------
 # Section 1: Explicit Clock Frequency Constraints
-#   - Synplify auto-detects PLL clocks, but explicit constraints ensure
-#     consistent behavior across synthesis and P&R.
-#   - s_PLL_CLK20M: Main 20MHz system clock (4645 loads, 29ns slack)
-#   - CLKCOM_OUT: 100MHz serial comm clock (163 loads, 0.244ns slack)
+#   - s_PLL_CLK20M: Main 20MHz system clock (4645 loads)
+#   - CLKCOM_OUT: 100MHz serial comm clock (163 loads)
+#       Guard-banded to 115MHz (8.696ns period) for timing margin.
+#       Previous 100MHz constraint yielded only 0.244ns slack on
+#       TX DCFIFO Block RAM -> UP_TXD MGIOL path. 15% margin added.
 #   - CLK1: 10MHz internal clock (327 loads)
 #   - CLK2A: 100MHz internal clock (16 loads)
+#       Guard-banded to 115MHz to match CLKCOM_OUT. CLK2A drives
+#       cds.vhd CDR phase-shifted sampling registers.
 #   - UP_CLK_c: External 20MHz input (PLL reference)
 #----------------------------------------------------------------------------
 FREQUENCY NET "s_PLL_CLK20M" 20.000000 MHz ;
 FREQUENCY NET "slv_com_top_inst.CLK1" 10.000000 MHz ;
-FREQUENCY NET "slv_com_top_inst.CLKCOM_OUT" 100.000000 MHz ;
-FREQUENCY NET "slv_com_top_inst/CLK2A" 100.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst.CLKCOM_OUT" 115.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst/CLK2A" 115.000000 MHz ;
 FREQUENCY NET "UP_CLK_c" 20.000000 MHz ;
 
 #----------------------------------------------------------------------------
