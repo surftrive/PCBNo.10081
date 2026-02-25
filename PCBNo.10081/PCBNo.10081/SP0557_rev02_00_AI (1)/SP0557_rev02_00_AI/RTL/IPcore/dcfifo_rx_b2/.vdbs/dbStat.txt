@@ -1,1 +1,0 @@
-dcfifo_rx_b2_rtl.vdb

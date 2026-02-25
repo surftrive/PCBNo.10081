@@ -1,2 +1,0 @@
-@W: CL168 :"C:\work\S127M\PCBNo_10081\SP0557_rev02_00\RTL\IPcore\pll_gen\pll_gen.vhd":54:4:54:17|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
-

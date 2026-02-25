@@ -1,3 +1,0 @@
-Results of NGD DRC are available in dcfifo_tx_b2_drc.log.
-WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
-Writing NGD file //scpfsp01.sysmex.co.jp/11052/12_FPGA_DATA/04808/S124M/PCBNo.10083/RTL/IPcore/dcfifo_tx_b2/dcfifo_tx_b2.ngo.
