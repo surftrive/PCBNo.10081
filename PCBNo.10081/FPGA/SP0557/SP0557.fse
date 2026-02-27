@@ -343,422 +343,378 @@ fsm_state_encoding {31551255110} st_wait {10}
 
 fsm_registers {31551255110} {s_state[1]}  {s_state[0]} 
 
-fsm_encoding {176426411} original
+fsm_encoding {426826811} sequential
 
-fsm_state_encoding {176426411} s0 {00000}
+fsm_state_encoding {426826811} st_idle {00}
 
-fsm_state_encoding {176426411} s1 {00001}
+fsm_state_encoding {426826811} st_shift {01}
 
-fsm_state_encoding {176426411} s2 {00010}
+fsm_state_encoding {426826811} st_end {10}
 
-fsm_state_encoding {176426411} s3 {00011}
+fsm_registers {426826811} {s_state[1]}  {s_state[0]} 
 
-fsm_state_encoding {176426411} s4 {00100}
+fsm_encoding {437827812} onehot
 
-fsm_state_encoding {176426411} s5 {00101}
+fsm_state_encoding {437827812} 0000 {000001}
 
-fsm_state_encoding {176426411} s6 {00110}
+fsm_state_encoding {437827812} 0001 {000010}
 
-fsm_state_encoding {176426411} s7 {00111}
+fsm_state_encoding {437827812} 0010 {000100}
 
-fsm_state_encoding {176426411} s8 {01000}
+fsm_state_encoding {437827812} 0011 {001000}
 
-fsm_state_encoding {176426411} s9 {01001}
+fsm_state_encoding {437827812} 0100 {010000}
 
-fsm_state_encoding {176426411} s10 {01010}
+fsm_state_encoding {437827812} 1001 {100000}
 
-fsm_state_encoding {176426411} s11 {01011}
+fsm_registers {437827812} {st[0]}  {st[1]}  {st[2]}  {st[3]}  {st[4]}  {st[5]} 
 
-fsm_state_encoding {176426411} s12 {01100}
+fsm_encoding {81172217213} sequential
 
-fsm_state_encoding {176426411} s13 {01101}
+fsm_state_encoding {81172217213} st_idle {00}
 
-fsm_state_encoding {176426411} s14 {01110}
+fsm_state_encoding {81172217213} st_wait1 {01}
 
-fsm_state_encoding {176426411} s15 {01111}
+fsm_state_encoding {81172217213} st_wait2 {10}
 
-fsm_state_encoding {176426411} s16 {10000}
+fsm_state_encoding {81172217213} st_fin {11}
 
-fsm_state_encoding {176426411} s17 {10001}
+fsm_registers {81172217213} {s_sta[1]}  {s_sta[0]} 
 
-fsm_state_encoding {176426411} s18 {10010}
+fsm_encoding {285785714} onehot
 
-fsm_state_encoding {176426411} s19 {10011}
+fsm_state_encoding {285785714} stop_st {00001}
 
-fsm_registers {176426411} {st[4]}  {st[3]}  {st[2]}  {st[1]}  {st[0]} 
+fsm_state_encoding {285785714} wait_down_st {00010}
 
-fsm_encoding {426826812} sequential
+fsm_state_encoding {285785714} down_st {00100}
 
-fsm_state_encoding {426826812} st_idle {00}
+fsm_state_encoding {285785714} wait_up_st {01000}
 
-fsm_state_encoding {426826812} st_shift {01}
+fsm_state_encoding {285785714} up_st {10000}
 
-fsm_state_encoding {426826812} st_end {10}
+fsm_registers {285785714} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
 
-fsm_registers {426826812} {s_state[1]}  {s_state[0]} 
+fsm_encoding {21288828815} sequential
 
-fsm_encoding {437827813} onehot
+fsm_state_encoding {21288828815} idle {00}
 
-fsm_state_encoding {437827813} 0000 {000001}
+fsm_state_encoding {21288828815} s_high_low {01}
 
-fsm_state_encoding {437827813} 0001 {000010}
+fsm_state_encoding {21288828815} s_const {10}
 
-fsm_state_encoding {437827813} 0010 {000100}
+fsm_state_encoding {21288828815} s_l_const {11}
 
-fsm_state_encoding {437827813} 0011 {001000}
+fsm_registers {21288828815} {STATE[1]}  {STATE[0]} 
 
-fsm_state_encoding {437827813} 0100 {010000}
+fsm_encoding {285785714} onehot
 
-fsm_state_encoding {437827813} 1001 {100000}
+fsm_state_encoding {285785714} stop_st {00001}
 
-fsm_registers {437827813} {st[0]}  {st[1]}  {st[2]}  {st[3]}  {st[4]}  {st[5]} 
+fsm_state_encoding {285785714} wait_down_st {00010}
 
-fsm_encoding {81172217214} sequential
+fsm_state_encoding {285785714} down_st {00100}
 
-fsm_state_encoding {81172217214} st_idle {00}
+fsm_state_encoding {285785714} wait_up_st {01000}
 
-fsm_state_encoding {81172217214} st_wait1 {01}
+fsm_state_encoding {285785714} up_st {10000}
 
-fsm_state_encoding {81172217214} st_wait2 {10}
+fsm_registers {285785714} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
 
-fsm_state_encoding {81172217214} st_fin {11}
+fsm_encoding {21288828815} sequential
 
-fsm_registers {81172217214} {s_sta[1]}  {s_sta[0]} 
+fsm_state_encoding {21288828815} idle {00}
 
-fsm_encoding {285785715} onehot
+fsm_state_encoding {21288828815} s_high_low {01}
 
-fsm_state_encoding {285785715} stop_st {00001}
+fsm_state_encoding {21288828815} s_const {10}
 
-fsm_state_encoding {285785715} wait_down_st {00010}
+fsm_state_encoding {21288828815} s_l_const {11}
 
-fsm_state_encoding {285785715} down_st {00100}
+fsm_registers {21288828815} {STATE[1]}  {STATE[0]} 
 
-fsm_state_encoding {285785715} wait_up_st {01000}
+fsm_encoding {285785714} onehot
 
-fsm_state_encoding {285785715} up_st {10000}
+fsm_state_encoding {285785714} stop_st {00001}
 
-fsm_registers {285785715} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
+fsm_state_encoding {285785714} wait_down_st {00010}
 
-fsm_encoding {21288828816} sequential
+fsm_state_encoding {285785714} down_st {00100}
 
-fsm_state_encoding {21288828816} idle {00}
+fsm_state_encoding {285785714} wait_up_st {01000}
 
-fsm_state_encoding {21288828816} s_high_low {01}
+fsm_state_encoding {285785714} up_st {10000}
 
-fsm_state_encoding {21288828816} s_const {10}
+fsm_registers {285785714} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
 
-fsm_state_encoding {21288828816} s_l_const {11}
+fsm_encoding {21288828815} sequential
 
-fsm_registers {21288828816} {STATE[1]}  {STATE[0]} 
+fsm_state_encoding {21288828815} idle {00}
 
-fsm_encoding {285785715} onehot
+fsm_state_encoding {21288828815} s_high_low {01}
 
-fsm_state_encoding {285785715} stop_st {00001}
+fsm_state_encoding {21288828815} s_const {10}
 
-fsm_state_encoding {285785715} wait_down_st {00010}
+fsm_state_encoding {21288828815} s_l_const {11}
 
-fsm_state_encoding {285785715} down_st {00100}
+fsm_registers {21288828815} {STATE[1]}  {STATE[0]} 
 
-fsm_state_encoding {285785715} wait_up_st {01000}
+fsm_encoding {285785714} onehot
 
-fsm_state_encoding {285785715} up_st {10000}
+fsm_state_encoding {285785714} stop_st {00001}
 
-fsm_registers {285785715} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
+fsm_state_encoding {285785714} wait_down_st {00010}
 
-fsm_encoding {21288828816} sequential
+fsm_state_encoding {285785714} down_st {00100}
 
-fsm_state_encoding {21288828816} idle {00}
+fsm_state_encoding {285785714} wait_up_st {01000}
 
-fsm_state_encoding {21288828816} s_high_low {01}
+fsm_state_encoding {285785714} up_st {10000}
 
-fsm_state_encoding {21288828816} s_const {10}
+fsm_registers {285785714} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
 
-fsm_state_encoding {21288828816} s_l_const {11}
+fsm_encoding {21288828815} sequential
 
-fsm_registers {21288828816} {STATE[1]}  {STATE[0]} 
+fsm_state_encoding {21288828815} idle {00}
 
-fsm_encoding {285785715} onehot
+fsm_state_encoding {21288828815} s_high_low {01}
 
-fsm_state_encoding {285785715} stop_st {00001}
+fsm_state_encoding {21288828815} s_const {10}
 
-fsm_state_encoding {285785715} wait_down_st {00010}
+fsm_state_encoding {21288828815} s_l_const {11}
 
-fsm_state_encoding {285785715} down_st {00100}
+fsm_registers {21288828815} {STATE[1]}  {STATE[0]} 
 
-fsm_state_encoding {285785715} wait_up_st {01000}
+fsm_encoding {285785714} onehot
 
-fsm_state_encoding {285785715} up_st {10000}
+fsm_state_encoding {285785714} stop_st {00001}
 
-fsm_registers {285785715} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
+fsm_state_encoding {285785714} wait_down_st {00010}
 
-fsm_encoding {21288828816} sequential
+fsm_state_encoding {285785714} down_st {00100}
 
-fsm_state_encoding {21288828816} idle {00}
+fsm_state_encoding {285785714} wait_up_st {01000}
 
-fsm_state_encoding {21288828816} s_high_low {01}
+fsm_state_encoding {285785714} up_st {10000}
 
-fsm_state_encoding {21288828816} s_const {10}
+fsm_registers {285785714} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
 
-fsm_state_encoding {21288828816} s_l_const {11}
+fsm_encoding {21288828815} sequential
 
-fsm_registers {21288828816} {STATE[1]}  {STATE[0]} 
+fsm_state_encoding {21288828815} idle {00}
 
-fsm_encoding {285785715} onehot
+fsm_state_encoding {21288828815} s_high_low {01}
 
-fsm_state_encoding {285785715} stop_st {00001}
+fsm_state_encoding {21288828815} s_const {10}
 
-fsm_state_encoding {285785715} wait_down_st {00010}
+fsm_state_encoding {21288828815} s_l_const {11}
 
-fsm_state_encoding {285785715} down_st {00100}
+fsm_registers {21288828815} {STATE[1]}  {STATE[0]} 
 
-fsm_state_encoding {285785715} wait_up_st {01000}
+fsm_encoding {285785714} onehot
 
-fsm_state_encoding {285785715} up_st {10000}
+fsm_state_encoding {285785714} stop_st {00001}
 
-fsm_registers {285785715} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
+fsm_state_encoding {285785714} wait_down_st {00010}
 
-fsm_encoding {21288828816} sequential
+fsm_state_encoding {285785714} down_st {00100}
 
-fsm_state_encoding {21288828816} idle {00}
+fsm_state_encoding {285785714} wait_up_st {01000}
 
-fsm_state_encoding {21288828816} s_high_low {01}
+fsm_state_encoding {285785714} up_st {10000}
 
-fsm_state_encoding {21288828816} s_const {10}
+fsm_registers {285785714} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
 
-fsm_state_encoding {21288828816} s_l_const {11}
+fsm_encoding {21288828815} sequential
 
-fsm_registers {21288828816} {STATE[1]}  {STATE[0]} 
+fsm_state_encoding {21288828815} idle {00}
 
-fsm_encoding {285785715} onehot
+fsm_state_encoding {21288828815} s_high_low {01}
 
-fsm_state_encoding {285785715} stop_st {00001}
+fsm_state_encoding {21288828815} s_const {10}
 
-fsm_state_encoding {285785715} wait_down_st {00010}
+fsm_state_encoding {21288828815} s_l_const {11}
 
-fsm_state_encoding {285785715} down_st {00100}
+fsm_registers {21288828815} {STATE[1]}  {STATE[0]} 
 
-fsm_state_encoding {285785715} wait_up_st {01000}
+fsm_encoding {285785714} onehot
 
-fsm_state_encoding {285785715} up_st {10000}
+fsm_state_encoding {285785714} stop_st {00001}
 
-fsm_registers {285785715} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
+fsm_state_encoding {285785714} wait_down_st {00010}
 
-fsm_encoding {21288828816} sequential
+fsm_state_encoding {285785714} down_st {00100}
 
-fsm_state_encoding {21288828816} idle {00}
+fsm_state_encoding {285785714} wait_up_st {01000}
 
-fsm_state_encoding {21288828816} s_high_low {01}
+fsm_state_encoding {285785714} up_st {10000}
 
-fsm_state_encoding {21288828816} s_const {10}
+fsm_registers {285785714} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
 
-fsm_state_encoding {21288828816} s_l_const {11}
+fsm_encoding {21288828815} sequential
 
-fsm_registers {21288828816} {STATE[1]}  {STATE[0]} 
+fsm_state_encoding {21288828815} idle {00}
 
-fsm_encoding {285785715} onehot
+fsm_state_encoding {21288828815} s_high_low {01}
 
-fsm_state_encoding {285785715} stop_st {00001}
+fsm_state_encoding {21288828815} s_const {10}
 
-fsm_state_encoding {285785715} wait_down_st {00010}
+fsm_state_encoding {21288828815} s_l_const {11}
 
-fsm_state_encoding {285785715} down_st {00100}
+fsm_registers {21288828815} {STATE[1]}  {STATE[0]} 
 
-fsm_state_encoding {285785715} wait_up_st {01000}
+fsm_encoding {285785714} onehot
 
-fsm_state_encoding {285785715} up_st {10000}
+fsm_state_encoding {285785714} stop_st {00001}
 
-fsm_registers {285785715} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
+fsm_state_encoding {285785714} wait_down_st {00010}
 
-fsm_encoding {21288828816} sequential
+fsm_state_encoding {285785714} down_st {00100}
 
-fsm_state_encoding {21288828816} idle {00}
+fsm_state_encoding {285785714} wait_up_st {01000}
 
-fsm_state_encoding {21288828816} s_high_low {01}
+fsm_state_encoding {285785714} up_st {10000}
 
-fsm_state_encoding {21288828816} s_const {10}
+fsm_registers {285785714} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
 
-fsm_state_encoding {21288828816} s_l_const {11}
+fsm_encoding {21288828815} sequential
 
-fsm_registers {21288828816} {STATE[1]}  {STATE[0]} 
+fsm_state_encoding {21288828815} idle {00}
 
-fsm_encoding {285785715} onehot
+fsm_state_encoding {21288828815} s_high_low {01}
 
-fsm_state_encoding {285785715} stop_st {00001}
+fsm_state_encoding {21288828815} s_const {10}
 
-fsm_state_encoding {285785715} wait_down_st {00010}
+fsm_state_encoding {21288828815} s_l_const {11}
 
-fsm_state_encoding {285785715} down_st {00100}
+fsm_registers {21288828815} {STATE[1]}  {STATE[0]} 
 
-fsm_state_encoding {285785715} wait_up_st {01000}
+fsm_encoding {285785714} onehot
 
-fsm_state_encoding {285785715} up_st {10000}
+fsm_state_encoding {285785714} stop_st {00001}
 
-fsm_registers {285785715} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
+fsm_state_encoding {285785714} wait_down_st {00010}
 
-fsm_encoding {21288828816} sequential
+fsm_state_encoding {285785714} down_st {00100}
 
-fsm_state_encoding {21288828816} idle {00}
+fsm_state_encoding {285785714} wait_up_st {01000}
 
-fsm_state_encoding {21288828816} s_high_low {01}
+fsm_state_encoding {285785714} up_st {10000}
 
-fsm_state_encoding {21288828816} s_const {10}
+fsm_registers {285785714} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
 
-fsm_state_encoding {21288828816} s_l_const {11}
+fsm_encoding {21288828815} sequential
 
-fsm_registers {21288828816} {STATE[1]}  {STATE[0]} 
+fsm_state_encoding {21288828815} idle {00}
 
-fsm_encoding {285785715} onehot
+fsm_state_encoding {21288828815} s_high_low {01}
 
-fsm_state_encoding {285785715} stop_st {00001}
+fsm_state_encoding {21288828815} s_const {10}
 
-fsm_state_encoding {285785715} wait_down_st {00010}
+fsm_state_encoding {21288828815} s_l_const {11}
 
-fsm_state_encoding {285785715} down_st {00100}
+fsm_registers {21288828815} {STATE[1]}  {STATE[0]} 
 
-fsm_state_encoding {285785715} wait_up_st {01000}
+fsm_encoding {285785714} onehot
 
-fsm_state_encoding {285785715} up_st {10000}
+fsm_state_encoding {285785714} stop_st {00001}
 
-fsm_registers {285785715} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
+fsm_state_encoding {285785714} wait_down_st {00010}
 
-fsm_encoding {21288828816} sequential
+fsm_state_encoding {285785714} down_st {00100}
 
-fsm_state_encoding {21288828816} idle {00}
+fsm_state_encoding {285785714} wait_up_st {01000}
 
-fsm_state_encoding {21288828816} s_high_low {01}
+fsm_state_encoding {285785714} up_st {10000}
 
-fsm_state_encoding {21288828816} s_const {10}
+fsm_registers {285785714} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
 
-fsm_state_encoding {21288828816} s_l_const {11}
+fsm_encoding {21288828815} sequential
 
-fsm_registers {21288828816} {STATE[1]}  {STATE[0]} 
+fsm_state_encoding {21288828815} idle {00}
 
-fsm_encoding {285785715} onehot
+fsm_state_encoding {21288828815} s_high_low {01}
 
-fsm_state_encoding {285785715} stop_st {00001}
+fsm_state_encoding {21288828815} s_const {10}
 
-fsm_state_encoding {285785715} wait_down_st {00010}
+fsm_state_encoding {21288828815} s_l_const {11}
 
-fsm_state_encoding {285785715} down_st {00100}
+fsm_registers {21288828815} {STATE[1]}  {STATE[0]} 
 
-fsm_state_encoding {285785715} wait_up_st {01000}
+fsm_encoding {285785714} onehot
 
-fsm_state_encoding {285785715} up_st {10000}
+fsm_state_encoding {285785714} stop_st {00001}
 
-fsm_registers {285785715} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
+fsm_state_encoding {285785714} wait_down_st {00010}
 
-fsm_encoding {21288828816} sequential
+fsm_state_encoding {285785714} down_st {00100}
 
-fsm_state_encoding {21288828816} idle {00}
+fsm_state_encoding {285785714} wait_up_st {01000}
 
-fsm_state_encoding {21288828816} s_high_low {01}
+fsm_state_encoding {285785714} up_st {10000}
 
-fsm_state_encoding {21288828816} s_const {10}
+fsm_registers {285785714} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
 
-fsm_state_encoding {21288828816} s_l_const {11}
+fsm_encoding {21288828815} sequential
 
-fsm_registers {21288828816} {STATE[1]}  {STATE[0]} 
+fsm_state_encoding {21288828815} idle {00}
 
-fsm_encoding {285785715} onehot
+fsm_state_encoding {21288828815} s_high_low {01}
 
-fsm_state_encoding {285785715} stop_st {00001}
+fsm_state_encoding {21288828815} s_const {10}
 
-fsm_state_encoding {285785715} wait_down_st {00010}
+fsm_state_encoding {21288828815} s_l_const {11}
 
-fsm_state_encoding {285785715} down_st {00100}
+fsm_registers {21288828815} {STATE[1]}  {STATE[0]} 
 
-fsm_state_encoding {285785715} wait_up_st {01000}
+fsm_encoding {285785714} onehot
 
-fsm_state_encoding {285785715} up_st {10000}
+fsm_state_encoding {285785714} stop_st {00001}
 
-fsm_registers {285785715} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
+fsm_state_encoding {285785714} wait_down_st {00010}
 
-fsm_encoding {21288828816} sequential
+fsm_state_encoding {285785714} down_st {00100}
 
-fsm_state_encoding {21288828816} idle {00}
+fsm_state_encoding {285785714} wait_up_st {01000}
 
-fsm_state_encoding {21288828816} s_high_low {01}
+fsm_state_encoding {285785714} up_st {10000}
 
-fsm_state_encoding {21288828816} s_const {10}
+fsm_registers {285785714} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
 
-fsm_state_encoding {21288828816} s_l_const {11}
+fsm_encoding {21288828815} sequential
 
-fsm_registers {21288828816} {STATE[1]}  {STATE[0]} 
+fsm_state_encoding {21288828815} idle {00}
 
-fsm_encoding {285785715} onehot
+fsm_state_encoding {21288828815} s_high_low {01}
 
-fsm_state_encoding {285785715} stop_st {00001}
+fsm_state_encoding {21288828815} s_const {10}
 
-fsm_state_encoding {285785715} wait_down_st {00010}
+fsm_state_encoding {21288828815} s_l_const {11}
 
-fsm_state_encoding {285785715} down_st {00100}
+fsm_registers {21288828815} {STATE[1]}  {STATE[0]} 
 
-fsm_state_encoding {285785715} wait_up_st {01000}
+fsm_encoding {285785714} onehot
 
-fsm_state_encoding {285785715} up_st {10000}
+fsm_state_encoding {285785714} stop_st {00001}
 
-fsm_registers {285785715} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
+fsm_state_encoding {285785714} wait_down_st {00010}
 
-fsm_encoding {21288828816} sequential
+fsm_state_encoding {285785714} down_st {00100}
 
-fsm_state_encoding {21288828816} idle {00}
+fsm_state_encoding {285785714} wait_up_st {01000}
 
-fsm_state_encoding {21288828816} s_high_low {01}
+fsm_state_encoding {285785714} up_st {10000}
 
-fsm_state_encoding {21288828816} s_const {10}
+fsm_registers {285785714} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
 
-fsm_state_encoding {21288828816} s_l_const {11}
+fsm_encoding {21288828815} sequential
 
-fsm_registers {21288828816} {STATE[1]}  {STATE[0]} 
+fsm_state_encoding {21288828815} idle {00}
 
-fsm_encoding {285785715} onehot
+fsm_state_encoding {21288828815} s_high_low {01}
 
-fsm_state_encoding {285785715} stop_st {00001}
+fsm_state_encoding {21288828815} s_const {10}
 
-fsm_state_encoding {285785715} wait_down_st {00010}
+fsm_state_encoding {21288828815} s_l_const {11}
 
-fsm_state_encoding {285785715} down_st {00100}
-
-fsm_state_encoding {285785715} wait_up_st {01000}
-
-fsm_state_encoding {285785715} up_st {10000}
-
-fsm_registers {285785715} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
-
-fsm_encoding {21288828816} sequential
-
-fsm_state_encoding {21288828816} idle {00}
-
-fsm_state_encoding {21288828816} s_high_low {01}
-
-fsm_state_encoding {21288828816} s_const {10}
-
-fsm_state_encoding {21288828816} s_l_const {11}
-
-fsm_registers {21288828816} {STATE[1]}  {STATE[0]} 
-
-fsm_encoding {285785715} onehot
-
-fsm_state_encoding {285785715} stop_st {00001}
-
-fsm_state_encoding {285785715} wait_down_st {00010}
-
-fsm_state_encoding {285785715} down_st {00100}
-
-fsm_state_encoding {285785715} wait_up_st {01000}
-
-fsm_state_encoding {285785715} up_st {10000}
-
-fsm_registers {285785715} {visual_STOP_ST_current[0]}  {visual_STOP_ST_current[1]}  {visual_STOP_ST_current[2]}  {visual_STOP_ST_current[3]}  {visual_STOP_ST_current[4]} 
-
-fsm_encoding {21288828816} sequential
-
-fsm_state_encoding {21288828816} idle {00}
-
-fsm_state_encoding {21288828816} s_high_low {01}
-
-fsm_state_encoding {21288828816} s_const {10}
-
-fsm_state_encoding {21288828816} s_l_const {11}
-
-fsm_registers {21288828816} {STATE[1]}  {STATE[0]} 
+fsm_registers {21288828815} {STATE[1]}  {STATE[0]} 

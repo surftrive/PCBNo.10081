@@ -1,13 +1,13 @@
 #
-# Logical Preferences generated for Lattice by Synplify map202303lat, Build 132R.
+# Logical Preferences generated for Lattice by Synplify map202309lat, Build 191R.
 #
 
 # Period Constraints 
-#FREQUENCY NET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M" 160.9 MHz;
-#FREQUENCY PORT "CLK20M" 382.3 MHz;
-#FREQUENCY NET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A" 382.3 MHz;
-#FREQUENCY NET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT" 286.3 MHz;
-#FREQUENCY NET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1" 2.3 MHz;
+#FREQUENCY NET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M" 100.0 MHz;
+#FREQUENCY PORT "CLK20M" 100.0 MHz;
+#FREQUENCY NET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A" 100.0 MHz;
+#FREQUENCY NET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT" 100.0 MHz;
+#FREQUENCY NET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1" 100.0 MHz;
 
 
 # Output Constraints 

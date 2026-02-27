@@ -1,7 +1,7 @@
-C:\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe  -link  -top  SP0557  -multisrs  C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI3\SP0557\synwork\SP0557_comp.srs  -osyn  C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI3\SP0557\synwork\SP0557_mult.srs  -log  C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI3\SP0557\synlog\SP0557_multi_srs_gen.srr 
-relcom:..\..\..\..\..\..\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe -link -top SP0557 -multisrs ..\synwork\SP0557_comp.srs -osyn ..\synwork\SP0557_mult.srs -log ..\synlog\SP0557_multi_srs_gen.srr
+C:\lscc\diamond\3.14\synpbase\bin64\syn_nfilter.exe  -link  -top  SP0557  -multisrs  "C:\FPGA work\PCBNo.10081\FPGA\SP0557\synwork\SP0557_comp.srs"  -osyn  "C:\FPGA work\PCBNo.10081\FPGA\SP0557\synwork\SP0557_mult.srs"  -log  "C:\FPGA work\PCBNo.10081\FPGA\SP0557\synlog\SP0557_multi_srs_gen.srr" 
+relcom:..\..\..\..\..\lscc\diamond\3.14\synpbase\bin64\syn_nfilter.exe -link -top SP0557 -multisrs "C:\FPGA work\PCBNo.10081\FPGA\SP0557\synwork\SP0557_comp.srs" -osyn "C:\FPGA work\PCBNo.10081\FPGA\SP0557\synwork\SP0557_mult.srs" -log "C:\FPGA work\PCBNo.10081\FPGA\SP0557\synlog\SP0557_multi_srs_gen.srr"
 rc:0 success:1 runtime:0
-file:..\synwork\sp0557_comp.srs|io:i|time:1772070235|size:266260|exec:0|csum:308FAA260C060CA214ACA3BA2F1E4166
-file:..\synwork\sp0557_mult.srs|io:o|time:1772070237|size:17569|exec:0|csum:
-file:..\synlog\sp0557_multi_srs_gen.srr|io:o|time:1772070237|size:1149|exec:0|csum:
-file:..\..\..\..\..\..\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe|io:i|time:1691628856|size:10600960|exec:1|csum:6BAEBE966B12EE4A1CCC452B6603E0B1
+file:..\synwork\sp0557_comp.srs|io:i|time:1772211201|size:265275|exec:0|csum:89C1D77684B2F77A813EB9D60AB5D5EE
+file:..\synwork\sp0557_mult.srs|io:o|time:1772211203|size:17525|exec:0|csum:
+file:..\synlog\sp0557_multi_srs_gen.srr|io:o|time:1772211203|size:1225|exec:0|csum:
+file:..\..\..\..\..\lscc\diamond\3.14\synpbase\bin64\syn_nfilter.exe|io:i|time:1727134362|size:10549248|exec:1|csum:D91EA53737F6BC51A484A15DD0EB29F5
