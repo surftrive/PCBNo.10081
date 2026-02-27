@@ -1,7 +1,0 @@
-C:\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe  -link  -top  SP0557  -multisrs  C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\synwork\SP0557_comp.srs  -osyn  C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\synwork\SP0557_mult.srs  -log  C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\synlog\SP0557_multi_srs_gen.srr 
-relcom:..\..\..\..\..\..\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe -link -top SP0557 -multisrs ..\synwork\SP0557_comp.srs -osyn ..\synwork\SP0557_mult.srs -log ..\synlog\SP0557_multi_srs_gen.srr
-rc:0 success:1 runtime:1
-file:..\synwork\sp0557_comp.srs|io:i|time:1771898294|size:264172|exec:0|csum:EC764BEE913624CABDC5F41CA2047B9A
-file:..\synwork\sp0557_mult.srs|io:o|time:1771898296|size:17539|exec:0|csum:
-file:..\synlog\sp0557_multi_srs_gen.srr|io:o|time:1771898296|size:1045|exec:0|csum:
-file:..\..\..\..\..\..\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe|io:i|time:1691628856|size:10600960|exec:1|csum:6BAEBE966B12EE4A1CCC452B6603E0B1
