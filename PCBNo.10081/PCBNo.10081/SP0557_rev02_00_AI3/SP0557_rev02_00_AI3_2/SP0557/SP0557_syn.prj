@@ -15,6 +15,7 @@ add_file -vhdl -lib work "../RTL/IPcore/dcfifo_rx_b2/dcfifo_rx_b2.vhd"
 add_file -vhdl -lib work "../RTL/IPcore/dcfifo_tx_b1/dcfifo_tx_b1.vhd"
 add_file -vhdl -lib work "../RTL/IPcore/dcfifo_tx_b2/dcfifo_tx_b2.vhd"
 add_file -vhdl -lib work "../RTL/IPcore/pll_gen/pll_gen.vhd"
+add_file -constraint "../RTL/IPcore/pll_gen/pll_gen.fdc"
 add_file -vhdl -lib work "../RTL/IPcore/IPcore.vhd"
 add_file -vhdl -lib work "../RTL/SP0557/slv_clk_gen.vhd"
 add_file -vhdl -lib work "../RTL/SP0557/ad_ctrl/ad_ctrl.vhd"
@@ -126,7 +127,10 @@ set_option -rtl_xmr_naming 0
 set_option -use_module_idb 1
 
 # mapper_without_write_options
-set_option -frequency auto
+# Changed from "auto" to 100.0 to prevent Synplify from auto-generating
+# AutoConstraint_SP0557.sdc with wrong clock periods and separate groups.
+# Correct clock definitions are in pll_gen.fdc and SP0557.fdc.
+set_option -frequency 100.0
 set_option -srs_instrumentation 1
 
 # mapper_options

@@ -256,113 +256,104 @@ LOCATE COMP "ENC_A[1]" SITE "A2" ;
 IOBUF PORT "ENC_A[1]" IO_TYPE=LVCMOS33 PULLMODE=NONE DRIVE=NA SLEWRATE=NA CLAMP=ON OPENDRAIN=OFF DIFFRESISTOR=OFF DIFFDRIVE="NA" HYSTERESIS=ON TERMINATION=OFF ;
 
 #============================================================================
-# SP0557 Timing Constraint Optimization
+# SP0557 Timing Constraint Optimization (Diamond PAR)
 # Purpose: Fix S3IO communication errors at high LE utilization (>80%)
 #
-# Root Cause Analysis (2026-02-25):
-#   1. Synplify placed all PLL clocks in separate clock groups, causing
-#      CLK2 <-> CLK2A cross-domain paths (cds.vhd CDR) to be untimed.
-#   2. AutoConstraint_SP0557.sdc had incorrect periods and conflicting
-#      clock group assignments. Renamed to .sdc.bak to disable.
-#   3. SP0557.fdc rewritten with: same clock group for all PLL clocks,
-#      90-degree phase offset on CLKOS (CLK2A), multicycle + false paths.
-#   4. Guard-banding: 100MHz constrained as 115MHz for timing margin.
+# Root Cause Analysis (2026-02-27):
+#   Previous No.6 implementation had CRITICAL errors:
+#   1. FDC clock net names were WRONG (referenced non-existent signals
+#      inside pll_gen: CLKCOM_OUT, CLK2A instead of CLKOP, CLKOS).
+#      Synplify silently ignored all FDC constraints.
+#   2. AutoConstraint_SP0557.sdc was NOT properly disabled (both .sdc
+#      and .sdc.bak existed). SDC had wrong periods and separate groups.
+#   3. set_option -frequency auto caused SDC auto-regeneration.
+#   4. LPF used wrong net names (CLKCOM_OUT open at top, / vs . separator).
+#   5. No CLK2<->CLK2A constraint for cds.vhd CDR paths.
 #
-# Date: 2026-02-25 (updated from 2026-02-20)
+# Fix applied:
+#   - pll_gen.fdc: Correct clock definitions using {p:PORT} references
+#   - SP0557.fdc: Multicycle/false path constraints only
+#   - AutoConstraint_SP0557.sdc: Emptied (constraints removed)
+#   - SP0557_syn.prj: frequency auto -> 100.0, pll_gen.fdc added
+#   - SP0557.lpf (this file): Net names corrected, CLK2<->CLK2A added
+#
+# Date: 2026-02-27
 # Target: LFE5U-25F-6 CABGA256 (Lattice Diamond 3.13 / Synplify)
 #============================================================================
 
 #----------------------------------------------------------------------------
 # Section 1: Explicit Clock Frequency Constraints
-#   - s_PLL_CLK20M: Main 20MHz system clock (4645 loads)
-#   - CLKCOM_OUT: 100MHz serial comm clock (163 loads)
-#       Guard-banded to 115MHz (8.696ns period) for timing margin.
-#       Previous 100MHz constraint yielded only 0.244ns slack on
-#       TX DCFIFO Block RAM -> UP_TXD MGIOL path. 15% margin added.
-#   - CLK1: 10MHz internal clock (327 loads)
-#   - CLK2A: 100MHz internal clock (16 loads)
-#       Guard-banded to 115MHz to match CLKCOM_OUT. CLK2A drives
-#       cds.vhd CDR phase-shifted sampling registers.
-#   - UP_CLK_c: External 20MHz input (PLL reference)
+#
+# Net name conventions (VHDL hierarchy, "." separator):
+#   s_PLL_CLK20M             : Top-level signal in SP0557.vhd (CLKOS2 output)
+#   slv_com_top_inst.CLK2    : 100MHz serial comm clock (CLKOP output)
+#   slv_com_top_inst.CLK2A   : 100MHz CDR clock, 90deg (CLKOS output)
+#   slv_com_top_inst.CLK1    : 10MHz slave control clock (CLKOS3 output)
+#   CLK20M_c                 : External 20MHz input (PLL reference)
+#   UP_CLK_c                 : External 20MHz input (alias for PLL ref)
+#
+# Note: "slv_com_top_inst.CLKCOM_OUT" was previously used but is WRONG -
+# CLKCOM_OUT port is connected to "open" in SP0557.vhd, so the net may
+# not exist post-synthesis. Use "slv_com_top_inst.CLK2" instead.
+#
+# Guard-banding: 100MHz constrained as 115MHz for timing margin.
 #----------------------------------------------------------------------------
 FREQUENCY NET "s_PLL_CLK20M" 20.000000 MHz ;
 FREQUENCY NET "slv_com_top_inst.CLK1" 10.000000 MHz ;
-FREQUENCY NET "slv_com_top_inst.CLKCOM_OUT" 115.000000 MHz ;
-FREQUENCY NET "slv_com_top_inst/CLK2A" 115.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst.CLK2" 115.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst.CLK2A" 115.000000 MHz ;
 FREQUENCY NET "UP_CLK_c" 20.000000 MHz ;
 
 #----------------------------------------------------------------------------
-# Section 2: FALSE_PATH - Unrelated Clock Domain Crossings
-#   - CLK20M_c is an external clock input that feeds the PLL only.
-#     No functional data transfer exists between CLK20M_c domain and
-#     PLL output domains. These paths are physically through the PLL
-#     and do not require timing analysis.
-#   - Impact: Eliminates unnecessary path analysis, frees router resources.
+# Section 2: FALSE_PATH - External Clock Domain Isolation
+#   CLK20M_c is the external clock input that feeds the PLL.
+#   No functional data transfer between CLK20M_c domain and
+#   PLL output domains.
 #----------------------------------------------------------------------------
 BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "s_PLL_CLK20M" ;
 BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst.CLK1" ;
-BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst.CLKCOM_OUT" ;
-BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/CLK2A" ;
+BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst.CLK2" ;
+BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst.CLK2A" ;
 BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "CLK20M_c" ;
 BLOCK PATH FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "CLK20M_c" ;
-BLOCK PATH FROM CLKNET "slv_com_top_inst.CLKCOM_OUT" TO CLKNET "CLK20M_c" ;
-BLOCK PATH FROM CLKNET "slv_com_top_inst/CLK2A" TO CLKNET "CLK20M_c" ;
+BLOCK PATH FROM CLKNET "slv_com_top_inst.CLK2" TO CLKNET "CLK20M_c" ;
+BLOCK PATH FROM CLKNET "slv_com_top_inst.CLK2A" TO CLKNET "CLK20M_c" ;
 
 #----------------------------------------------------------------------------
-# Section 3: MULTICYCLE_PATH - Related Clock Domain Crossings (PLL derived)
-#   - s_PLL_CLK20M (20MHz, CLKOS2) <-> CLK1 (10MHz, CLKOS3)
-#     Same PLL, 2:1 frequency ratio. 2,393 transfers from 20MHz->10MHz,
-#     85 transfers from 10MHz->20MHz.
-#     Data launched at 20MHz and captured at 10MHz has 2 source clock
-#     periods (100ns) to arrive. MULTICYCLE 2X relaxes this.
-#   - Impact: ~2,478 paths relaxed, major reduction in routing pressure.
+# Section 3: MULTICYCLE_PATH - s_PLL_CLK20M (20MHz) <-> CLK1 (10MHz)
+#   Same PLL, 2:1 frequency ratio. ~2,478 paths relaxed.
 #----------------------------------------------------------------------------
 MULTICYCLE FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst.CLK1" 2 X ;
 MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "s_PLL_CLK20M" 2 X ;
 
 #----------------------------------------------------------------------------
 # Section 4: BLOCK PATH - s_PLL_CLK20M <-> 100MHz Communication Clocks
-#   - s_PLL_CLK20M (20MHz) and CLKCOM_OUT/CLK2A (100MHz) are different
-#     PLL outputs with no direct data transfer between these domains.
-#     All CDC between slv_com_top_inst and the rest of the design is
-#     handled through DCFIFO IP blocks (rx/tx CDC FIFOs).
-#   - Impact: Prevents over-constraining of DCFIFO-bridged paths.
+#   No direct data transfer. All CDC via DCFIFO IP blocks.
 #----------------------------------------------------------------------------
-BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst.CLKCOM_OUT" ;
-BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst/CLK2A" ;
-BLOCK PATH FROM CLKNET "slv_com_top_inst.CLKCOM_OUT" TO CLKNET "s_PLL_CLK20M" ;
-BLOCK PATH FROM CLKNET "slv_com_top_inst/CLK2A" TO CLKNET "s_PLL_CLK20M" ;
+BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst.CLK2" ;
+BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst.CLK2A" ;
+BLOCK PATH FROM CLKNET "slv_com_top_inst.CLK2" TO CLKNET "s_PLL_CLK20M" ;
+BLOCK PATH FROM CLKNET "slv_com_top_inst.CLK2A" TO CLKNET "s_PLL_CLK20M" ;
 
 #----------------------------------------------------------------------------
-# Section 5: MULTICYCLE_PATH - CLK1 (10MHz) <-> CLKCOM_OUT (100MHz)
-#   - CLK1 (10MHz, CLKOS3) -> CLKCOM_OUT (100MHz, CLKOP): 59 transfers
-#     Same PLL, 10:1 frequency ratio. Data from CLK1 is stable for 100ns,
-#     so 10 CLKCOM_OUT cycles are available for transfer.
-#     Targets: DCFIFO gray-pointer crossings and CDC sync chains.
-#   - CLKCOM_OUT (100MHz) -> CLK1 (10MHz): 23 transfers
-#     Fast-to-slow domain. Default uses 10ns constraint (CLKCOM_OUT period).
-#     Data is stable for multiple CLKCOM_OUT cycles before CLK1 capture.
-#     2X relaxation is safe for CDC control signals (e.g., CRC_ERR).
-#   - Impact: Frees 82 cross-domain paths from CLKCOM_OUT 100MHz analysis,
-#     allowing router to focus on intra-domain critical path
-#     (TX DCFIFO Block RAM -> UP_TXD MGIOL, current slack 0.244ns).
+# Section 5: MULTICYCLE_PATH - CLK1 (10MHz) <-> CLK2 (100MHz)
+#   Same PLL, 10:1 frequency ratio.
+#   CLK1->CLK2: Data stable for 10 CLK2 cycles. DCFIFO gray pointers.
+#   CLK2->CLK1: 2X relaxation for CDC sync chains (CRC_ERR etc.)
 #----------------------------------------------------------------------------
-MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "slv_com_top_inst.CLKCOM_OUT" 10 X ;
-MULTICYCLE FROM CLKNET "slv_com_top_inst.CLKCOM_OUT" TO CLKNET "slv_com_top_inst.CLK1" 2 X ;
+MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "slv_com_top_inst.CLK2" 10 X ;
+MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK2" TO CLKNET "slv_com_top_inst.CLK1" 2 X ;
 
 #----------------------------------------------------------------------------
-# Section 6: MULTICYCLE_PATH - CLK1 (10MHz) <-> CLK2A (100MHz)
-#   - Same PLL, 10:1 frequency ratio. CLK1 <-> CLK2A CDC paths are
-#     internal to slv_com_top (cds.vhd synchronizer chains, rst_cnt).
-#   - Impact: Additional cross-domain path relaxation for 100MHz domains.
+# Section 6: MULTICYCLE_PATH - CLK1 (10MHz) <-> CLK2A (100MHz, 90deg)
+#   Same as Section 5 but for CLK2A domain.
+#   Internal to slv_com_top (rst_cnt sync chains).
 #----------------------------------------------------------------------------
-MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "slv_com_top_inst/CLK2A" 10 X ;
-MULTICYCLE FROM CLKNET "slv_com_top_inst/CLK2A" TO CLKNET "slv_com_top_inst.CLK1" 2 X ;
+MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "slv_com_top_inst.CLK2A" 10 X ;
+MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK2A" TO CLKNET "slv_com_top_inst.CLK1" 2 X ;
 
 #----------------------------------------------------------------------------
 # Section 7: UP_CLK Input Clock Port Constraint
-#   - Adds port-level frequency constraint in addition to NET constraint.
-#     Ensures input clock timing is properly analyzed at the pad level.
-#   - PLL (PLL_BL0) is placed adjacent to pin M1 (route 0.383ns) - OK.
+#   Port-level frequency constraint at the pad level.
 #----------------------------------------------------------------------------
 FREQUENCY PORT "UP_CLK" 20.000000 MHz ;
