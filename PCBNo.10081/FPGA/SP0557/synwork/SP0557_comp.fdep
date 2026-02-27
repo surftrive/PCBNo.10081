@@ -1,199 +1,199 @@
-#OPTIONS:"|-layerid|0|-orig_srs|C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\SP0557\\synwork\\SP0557_comp.srs|-top|SP0557|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-work_is_curlib|0|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
-#CUR:"C:\\lscc\\diamond\\3.13\\synpbase\\bin64\\c_vhdl.exe":1693449690
-#CUR:"C:\\lscc\\diamond\\3.13\\synpbase\\lib\\vhd2008\\location.map":1693378802
-#CUR:"C:\\lscc\\diamond\\3.13\\synpbase\\lib\\vhd2008\\std.vhd":1691627532
-#CUR:"C:\\lscc\\diamond\\3.13\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1691627532
-#CUR:"C:\\lscc\\diamond\\3.13\\synpbase\\lib\\vhd2008\\std1164.vhd":1691627532
-#CUR:"C:\\lscc\\diamond\\3.13\\synpbase\\lib\\vhd2008\\std_textio.vhd":1691627532
-#CUR:"C:\\lscc\\diamond\\3.13\\synpbase\\lib\\vhd2008\\numeric.vhd":1691628924
-#CUR:"C:\\lscc\\diamond\\3.13\\synpbase\\lib\\vhd\\umr_capim.vhd":1691627532
-#CUR:"C:\\lscc\\diamond\\3.13\\synpbase\\lib\\vhd2008\\arith.vhd":1691627532
-#CUR:"C:\\lscc\\diamond\\3.13\\synpbase\\lib\\vhd2008\\unsigned.vhd":1691627532
-#CUR:"C:\\lscc\\diamond\\3.13\\synpbase\\lib\\vhd\\hyperents.vhd":1691627532
-#CUR:"C:\\lscc\\diamond\\3.13\\cae_library\\synthesis\\vhdl\\ecp5u.vhd":1614181094
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\com\\fc_dec.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\com\\fc_sel.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\com\\w_pack.vhd":1770970684
-#CUR:"C:\\lscc\\diamond\\3.13\\synpbase\\lib\\vhd2008\\misc.vhd":1691627532
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_clk_gen.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\ad_ctrl\\adc_reg.vhd":1771568135
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\ad_ctrl\\adclk_gen.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\ad_ctrl\\adif_seq.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\ad_ctrl\\shiftreg12bit.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_acc_tim_gen.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_cmdchk.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_ctrl.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_dec.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_enblr_S118M.vhd":1771568135
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_id.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_phgen.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_pls_cnt.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_rgstr.vhd":1771568135
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_speed_cnt.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_timer_cnt.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_u_step_ext.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\DAC43608\\CTRL_32CH.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\DAC43608\\DAC_CTRL_1CH.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\DAC43608\\i2c_master_bit_ctrl.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\DAC43608\\i2c_master_byte_ctrl.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\DAC43608\\i2c_master_registers.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\EFUSE_CTRL\\EFUSE_CTRL.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\encoder\\enc_lmt.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\encoder\\encoder_2bit.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\gpio\\gpio_id.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\gpio\\gpio_ip_reg.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\gpio\\gpio_op_reg.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\LEDLT\\TLC5916_CTRL.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\LEDLT\\AD8402_CTRL\\ad8402.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\pls_sens\\pls_sens.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slaveid_top\\slaveid_id.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\rx_com\\crc_check.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\rx_com\\dec4b_3b.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\rx_com\\dec6b_5b.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\rx_com\\rx_ctl_1st.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\rx_com\\rx_ctl_3rd.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\slv_ctrl\\adr_sel.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\slv_ctrl\\nd_sel.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\slv_ctrl\\node_sel.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\slv_ctrl\\slv_rx_ctrl.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\slv_ctrl\\slv_tx_ctrl.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\tx_com\\crc_gen.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\tx_com\\enc3b_4b.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\tx_com\\enc5b_6b.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\tx_com\\tx_ctl_1st.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\tx_com\\tx_ctl_3rd.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\cds.vhd":1771568135
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\rst_cnt.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\slvadr_cnv.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\sp_conv\\SPI_master2.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\IPcore\\dcfifo_rx_b1\\dcfifo_rx_b1.vhd":1770970684
-#CUR:"C:\\lscc\\diamond\\3.13\\synpbase\\lib\\lucent\\ecp5u.vhd":1691636200
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\IPcore\\dcfifo_rx_b2\\dcfifo_rx_b2.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\IPcore\\dcfifo_tx_b1\\dcfifo_tx_b1.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\IPcore\\dcfifo_tx_b2\\dcfifo_tx_b2.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\IPcore\\pll_gen\\pll_gen.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\ad_ctrl\\ad_ctrl.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_plsgen.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_reg_S118M.vhd":1771568135
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\compactppmc\\ppmc_top_S118M.vhd":1771568135
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\DAC43608\\i2c_master_wb_top.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\DAC43608\\DAC43608_top.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\encoder\\enc_top.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\encoder\\enc_func_top.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\gpio\\gpio_reg.vhd":1771568135
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\gpio\\gpio_top.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\LEDLT\\AD8402_CTRL\\AD8402_CTRL.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\LEDLT\\LEDLT_TOP.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\rx_com\\dec8b10b_new.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\rx_com\\dec8b10b_wrapper.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\rx_com\\rx_cont_b1.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\rx_com\\rx_cont_b2.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\tx_com\\enc8b_10b.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\tx_com\\enc8b10b_new.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\tx_com\\enc8b10b_wrapper.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\tx_com\\tx_cont_b1.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\tx_com\\tx_cont_b2.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\CLK_gen_S124M.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\rx_com.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\slv_ctrl_top.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\tx_com.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slv_com\\slv_com_top.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\sp_conv\\SIO_ctrl2.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\sp_conv\\sp_conv.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\IPcore\\IPcore.vhd":1770970684
-#CUR:"C:\\work\\S127M\\PCBNo_10081\\SP0557_rev02_00_AI\\RTL\\SP0557\\slaveid_top\\slaveid_top.vhd":1770970684
-0			"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd" vhdl
-1			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557.vhd" vhdl
-2			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\com\fc_dec.vhd" vhdl
-3			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\com\fc_sel.vhd" vhdl
-4			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\com\w_pack.vhd" vhdl
-5			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd" vhdl
-6			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd" vhdl
-7			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd" vhdl
-8			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd" vhdl
-9			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\pll_gen\pll_gen.vhd" vhdl
-10			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\IPcore\IPcore.vhd" vhdl
-11			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_clk_gen.vhd" vhdl
-12			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\ad_ctrl.vhd" vhdl
-13			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adc_reg.vhd" vhdl
-14			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adclk_gen.vhd" vhdl
-15			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\adif_seq.vhd" vhdl
-16			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\ad_ctrl\shiftreg12bit.vhd" vhdl
-17			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_acc_tim_gen.vhd" vhdl
-18			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd" vhdl
-19			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_ctrl.vhd" vhdl
-20			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_dec.vhd" vhdl
-21			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd" vhdl
-22			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_id.vhd" vhdl
-23			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_phgen.vhd" vhdl
-24			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd" vhdl
-25			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_plsgen.vhd" vhdl
-26			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_reg_S118M.vhd" vhdl
-27			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_rgstr.vhd" vhdl
-28			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd" vhdl
-29			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_timer_cnt.vhd" vhdl
-30			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_top_S118M.vhd" vhdl
-31			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd" vhdl
-32			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\CTRL_32CH.vhd" vhdl
-33			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd" vhdl
-34			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\DAC43608_top.vhd" vhdl
-35			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd" vhdl
-36			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd" vhdl
-37			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_registers.vhd" vhdl
-38			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\DAC43608\i2c_master_wb_top.vhd" vhdl
-39			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd" vhdl
-40			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\enc_func_top.vhd" vhdl
-41			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\enc_lmt.vhd" vhdl
-42			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\enc_top.vhd" vhdl
-43			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\encoder\encoder_2bit.vhd" vhdl
-44			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_id.vhd" vhdl
-45			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_ip_reg.vhd" vhdl
-46			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_op_reg.vhd" vhdl
-47			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_reg.vhd" vhdl
-48			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\gpio\gpio_top.vhd" vhdl
-49			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\LEDLT_TOP.vhd" vhdl
-50			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd" vhdl
-51			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd" vhdl
-52			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd" vhdl
-53			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\pls_sens\pls_sens.vhd" vhdl
-54			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slaveid_top\slaveid_id.vhd" vhdl
-55			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slaveid_top\slaveid_top.vhd" vhdl
-56			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\crc_check.vhd" vhdl
-57			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\dec4b_3b.vhd" vhdl
-58			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd" vhdl
-59			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\dec8b10b_new.vhd" vhdl
-60			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\dec8b10b_wrapper.vhd" vhdl
-61			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_cont_b1.vhd" vhdl
-62			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_cont_b2.vhd" vhdl
-63			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd" vhdl
-64			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd" vhdl
-65			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\adr_sel.vhd" vhdl
-66			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\nd_sel.vhd" vhdl
-67			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\node_sel.vhd" vhdl
-68			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd" vhdl
-69			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd" vhdl
-70			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\crc_gen.vhd" vhdl
-71			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd" vhdl
-72			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc5b_6b.vhd" vhdl
-73			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc8b_10b.vhd" vhdl
-74			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc8b10b_new.vhd" vhdl
-75			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\enc8b10b_wrapper.vhd" vhdl
-76			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\tx_cont_b1.vhd" vhdl
-77			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\tx_cont_b2.vhd" vhdl
-78			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\tx_ctl_1st.vhd" vhdl
-79			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com\tx_ctl_3rd.vhd" vhdl
-80			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\cds.vhd" vhdl
-81			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\CLK_gen_S124M.vhd" vhdl
-82			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rst_cnt.vhd" vhdl
-83			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\rx_com.vhd" vhdl
-84			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_com_top.vhd" vhdl
-85			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slv_ctrl_top.vhd" vhdl
-86			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\slvadr_cnv.vhd" vhdl
-87			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\slv_com\tx_com.vhd" vhdl
-88			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\SIO_ctrl2.vhd" vhdl
-89			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\sp_conv.vhd" vhdl
-90			"C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\RTL\SP0557\sp_conv\SPI_master2.vhd" vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\SP0557\\synwork\\SP0557_comp.srs|-top|SP0557|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-lattice|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-vhdl2008|-work_is_curlib|0|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.14\\synpbase\\bin64\\c_vhdl.exe":1727134361
+#CUR:"C:\\lscc\\diamond\\3.14\\synpbase\\lib\\vhd2008\\location.map":1727134414
+#CUR:"C:\\lscc\\diamond\\3.14\\synpbase\\lib\\vhd2008\\std.vhd":1727134414
+#CUR:"C:\\lscc\\diamond\\3.14\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1727134414
+#CUR:"C:\\lscc\\diamond\\3.14\\synpbase\\lib\\vhd2008\\std1164.vhd":1727134414
+#CUR:"C:\\lscc\\diamond\\3.14\\synpbase\\lib\\vhd2008\\std_textio.vhd":1727134414
+#CUR:"C:\\lscc\\diamond\\3.14\\synpbase\\lib\\vhd2008\\numeric.vhd":1727134414
+#CUR:"C:\\lscc\\diamond\\3.14\\synpbase\\lib\\vhd\\umr_capim.vhd":1727134414
+#CUR:"C:\\lscc\\diamond\\3.14\\synpbase\\lib\\vhd2008\\arith.vhd":1727134414
+#CUR:"C:\\lscc\\diamond\\3.14\\synpbase\\lib\\vhd2008\\unsigned.vhd":1727134414
+#CUR:"C:\\lscc\\diamond\\3.14\\synpbase\\lib\\vhd\\hyperents.vhd":1727134414
+#CUR:"C:\\lscc\\diamond\\3.14\\cae_library\\synthesis\\vhdl\\ecp5u.vhd":1614238694
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\com\\fc_dec.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\com\\fc_sel.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\com\\w_pack.vhd":1772208003
+#CUR:"C:\\lscc\\diamond\\3.14\\synpbase\\lib\\vhd2008\\misc.vhd":1727134414
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_clk_gen.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\ad_ctrl\\adc_reg.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\ad_ctrl\\adclk_gen.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\ad_ctrl\\adif_seq.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\ad_ctrl\\shiftreg12bit.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_acc_tim_gen.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_cmdchk.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_ctrl.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_dec.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_enblr_S118M.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_id.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_phgen.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_pls_cnt.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_rgstr.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_speed_cnt.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_timer_cnt.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_u_step_ext.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\DAC43608\\CTRL_32CH.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\DAC43608\\DAC_CTRL_1CH.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\DAC43608\\i2c_master_bit_ctrl.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\DAC43608\\i2c_master_byte_ctrl.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\DAC43608\\i2c_master_registers.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\EFUSE_CTRL\\EFUSE_CTRL.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\encoder\\enc_lmt.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\encoder\\encoder_2bit.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\gpio\\gpio_id.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\gpio\\gpio_ip_reg.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\gpio\\gpio_op_reg.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\LEDLT\\TLC5916_CTRL.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\LEDLT\\AD8402_CTRL\\ad8402.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\pls_sens\\pls_sens.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slaveid_top\\slaveid_id.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\rx_com\\crc_check.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\rx_com\\dec4b_3b.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\rx_com\\dec6b_5b.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\rx_com\\rx_ctl_1st.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\rx_com\\rx_ctl_3rd.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\slv_ctrl\\adr_sel.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\slv_ctrl\\nd_sel.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\slv_ctrl\\node_sel.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\slv_ctrl\\slv_rx_ctrl.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\slv_ctrl\\slv_tx_ctrl.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\tx_com\\crc_gen.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\tx_com\\enc3b_4b.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\tx_com\\enc5b_6b.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\tx_com\\tx_ctl_1st.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\tx_com\\tx_ctl_3rd.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\cds.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\rst_cnt.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\slvadr_cnv.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\sp_conv\\SPI_master2.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\IPcore\\dcfifo_rx_b1\\dcfifo_rx_b1.vhd":1772208003
+#CUR:"C:\\lscc\\diamond\\3.14\\synpbase\\lib\\lucent\\ecp5u.vhd":1724359699
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\IPcore\\dcfifo_rx_b2\\dcfifo_rx_b2.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\IPcore\\dcfifo_tx_b1\\dcfifo_tx_b1.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\IPcore\\dcfifo_tx_b2\\dcfifo_tx_b2.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\IPcore\\pll_gen\\pll_gen.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\ad_ctrl\\ad_ctrl.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_plsgen.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_reg_S118M.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\compactppmc\\ppmc_top_S118M.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\DAC43608\\i2c_master_wb_top.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\DAC43608\\DAC43608_top.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\encoder\\enc_top.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\encoder\\enc_func_top.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\gpio\\gpio_reg.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\gpio\\gpio_top.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\LEDLT\\AD8402_CTRL\\AD8402_CTRL.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\LEDLT\\LEDLT_TOP.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\rx_com\\dec8b10b_new.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\rx_com\\dec8b10b_wrapper.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\rx_com\\rx_cont_b1.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\rx_com\\rx_cont_b2.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\tx_com\\enc8b_10b.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\tx_com\\enc8b10b_new.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\tx_com\\enc8b10b_wrapper.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\tx_com\\tx_cont_b1.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\tx_com\\tx_cont_b2.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\CLK_gen_S124M.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\rx_com.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\slv_ctrl_top.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\tx_com.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slv_com\\slv_com_top.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\sp_conv\\SIO_ctrl2.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\sp_conv\\sp_conv.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\IPcore\\IPcore.vhd":1772208003
+#CUR:"C:\\FPGA work\\PCBNo.10081\\PCBNo.10081\\RTL\\SP0557\\slaveid_top\\slaveid_top.vhd":1772208003
+0			"C:\lscc\diamond\3.14\cae_library\synthesis\vhdl\ecp5u.vhd" vhdl
+1			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557.vhd" vhdl
+2			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\com\fc_dec.vhd" vhdl
+3			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\com\fc_sel.vhd" vhdl
+4			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\com\w_pack.vhd" vhdl
+5			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd" vhdl
+6			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd" vhdl
+7			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd" vhdl
+8			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd" vhdl
+9			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\IPcore\pll_gen\pll_gen.vhd" vhdl
+10			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\IPcore\IPcore.vhd" vhdl
+11			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_clk_gen.vhd" vhdl
+12			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\ad_ctrl\ad_ctrl.vhd" vhdl
+13			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\ad_ctrl\adc_reg.vhd" vhdl
+14			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\ad_ctrl\adclk_gen.vhd" vhdl
+15			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\ad_ctrl\adif_seq.vhd" vhdl
+16			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\ad_ctrl\shiftreg12bit.vhd" vhdl
+17			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_acc_tim_gen.vhd" vhdl
+18			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd" vhdl
+19			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_ctrl.vhd" vhdl
+20			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_dec.vhd" vhdl
+21			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd" vhdl
+22			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_id.vhd" vhdl
+23			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_phgen.vhd" vhdl
+24			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd" vhdl
+25			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_plsgen.vhd" vhdl
+26			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_reg_S118M.vhd" vhdl
+27			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_rgstr.vhd" vhdl
+28			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd" vhdl
+29			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_timer_cnt.vhd" vhdl
+30			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_top_S118M.vhd" vhdl
+31			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd" vhdl
+32			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\DAC43608\CTRL_32CH.vhd" vhdl
+33			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd" vhdl
+34			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\DAC43608\DAC43608_top.vhd" vhdl
+35			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd" vhdl
+36			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd" vhdl
+37			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\DAC43608\i2c_master_registers.vhd" vhdl
+38			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\DAC43608\i2c_master_wb_top.vhd" vhdl
+39			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd" vhdl
+40			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\encoder\enc_func_top.vhd" vhdl
+41			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\encoder\enc_lmt.vhd" vhdl
+42			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\encoder\enc_top.vhd" vhdl
+43			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\encoder\encoder_2bit.vhd" vhdl
+44			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\gpio\gpio_id.vhd" vhdl
+45			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\gpio\gpio_ip_reg.vhd" vhdl
+46			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\gpio\gpio_op_reg.vhd" vhdl
+47			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\gpio\gpio_reg.vhd" vhdl
+48			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\gpio\gpio_top.vhd" vhdl
+49			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\LEDLT\LEDLT_TOP.vhd" vhdl
+50			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd" vhdl
+51			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd" vhdl
+52			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd" vhdl
+53			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\pls_sens\pls_sens.vhd" vhdl
+54			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slaveid_top\slaveid_id.vhd" vhdl
+55			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slaveid_top\slaveid_top.vhd" vhdl
+56			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\rx_com\crc_check.vhd" vhdl
+57			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\rx_com\dec4b_3b.vhd" vhdl
+58			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd" vhdl
+59			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\rx_com\dec8b10b_new.vhd" vhdl
+60			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\rx_com\dec8b10b_wrapper.vhd" vhdl
+61			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\rx_com\rx_cont_b1.vhd" vhdl
+62			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\rx_com\rx_cont_b2.vhd" vhdl
+63			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd" vhdl
+64			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd" vhdl
+65			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\slv_ctrl\adr_sel.vhd" vhdl
+66			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\slv_ctrl\nd_sel.vhd" vhdl
+67			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\slv_ctrl\node_sel.vhd" vhdl
+68			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd" vhdl
+69			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd" vhdl
+70			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\tx_com\crc_gen.vhd" vhdl
+71			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd" vhdl
+72			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\tx_com\enc5b_6b.vhd" vhdl
+73			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\tx_com\enc8b_10b.vhd" vhdl
+74			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\tx_com\enc8b10b_new.vhd" vhdl
+75			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\tx_com\enc8b10b_wrapper.vhd" vhdl
+76			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\tx_com\tx_cont_b1.vhd" vhdl
+77			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\tx_com\tx_cont_b2.vhd" vhdl
+78			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\tx_com\tx_ctl_1st.vhd" vhdl
+79			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\tx_com\tx_ctl_3rd.vhd" vhdl
+80			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\cds.vhd" vhdl
+81			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\CLK_gen_S124M.vhd" vhdl
+82			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\rst_cnt.vhd" vhdl
+83			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\rx_com.vhd" vhdl
+84			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\slv_com_top.vhd" vhdl
+85			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\slv_ctrl_top.vhd" vhdl
+86			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\slvadr_cnv.vhd" vhdl
+87			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\slv_com\tx_com.vhd" vhdl
+88			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\sp_conv\SIO_ctrl2.vhd" vhdl
+89			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\sp_conv\sp_conv.vhd" vhdl
+90			"C:\FPGA work\PCBNo.10081\PCBNo.10081\RTL\SP0557\sp_conv\SPI_master2.vhd" vhdl
 #Dependency Lists(Uses List)
 0 -1
 1 4 48 30 53 40 49 12 34 39 89 11 84

@@ -7,7 +7,7 @@ The file contains the optimization information from mapper to be displayed as pa
 <parameter tooltip="Non-gated/non-generated clock trees / Gated/generated clock trees" name="Combined Clock Conversion">
 <data>5 / 0</data>
 <report_link name="more">
-<data>C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\synlog\report\SP0557_premap_combined_clk.rpt</data>
+<data>C:\FPGA work\PCBNo.10081\PCBNo.10081\SP0557\synlog\report\SP0557_premap_combined_clk.rpt</data>
 <title>START OF CLOCK OPTIMIZATION REPORT</title>
 </report_link>
 </parameter>

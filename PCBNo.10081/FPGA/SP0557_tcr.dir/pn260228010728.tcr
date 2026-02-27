@@ -1,0 +1,5 @@
+#Start recording tcl command: 2/28/2026 01:04:43
+#Project Location: C:/FPGA work/PCBNo.10081/PCBNo.10081; Project name: SP0557
+prj_project open "C:/FPGA work/PCBNo.10081/PCBNo.10081/SP0557.ldf"
+launch_synplify_prj SP0557
+#Stop recording: 2/28/2026 01:07:28
