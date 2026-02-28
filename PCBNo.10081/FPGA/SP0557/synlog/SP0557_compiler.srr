@@ -213,10 +213,9 @@ File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slaveid_top\slaveid_top.vhd change
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\IPcore.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slaveid_top\slaveid_top.vhd'.
 VHDL syntax check successful!
-File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd changed - recompiling
-File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_lmt.vhd changed - recompiling
-File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd changed - recompiling
-File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd changed - recompiling
+
+Compiler output is up to date.  No re-compile necessary
+
 @N: CD231 :"C:\lscc\diamond\3.14\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557.vhd":19:7:19:12|Synthesizing work.sp0557.rtl.
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_top.vhd":20:7:20:14|Synthesizing work.gpio_top.rtl.
@@ -1168,12 +1167,12 @@ For a summary of runtime per design unit, please see file:
 
 
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:22s; Memory used current: 141MB peak: 157MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 108MB)
 
-Process took 0h:00m:22s realtime, 0h:00m:22s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Feb 28 20:11:36 2026
+# Sat Feb 28 20:58:08 2026
 
 ###########################################################]
 ###########################################################[
@@ -1193,14 +1192,16 @@ Implementation : SP0557
 Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
 
 @N|Running in 64-bit mode
-File C:\FPGA work\PCBNo.10081\FPGA\SP0557\synwork\layer0.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 103MB)
+Linker output is up to date. No re-linking necessary
+
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Feb 28 20:11:36 2026
+# Sat Feb 28 20:58:08 2026
 
 ###########################################################]
 
@@ -1210,11 +1211,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:22s; Memory used current: 24MB peak: 25MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 24MB peak: 24MB)
 
-Process took 0h:00m:23s realtime, 0h:00m:22s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Feb 28 20:11:37 2026
+# Sat Feb 28 20:58:08 2026
 
 ###########################################################]

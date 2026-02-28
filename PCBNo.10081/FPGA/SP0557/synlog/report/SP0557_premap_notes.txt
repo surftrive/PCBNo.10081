@@ -5,19 +5,6 @@
 @N: FX493 |Applying initial value "0" on instance s_LEDPTN[0].
 @N: FX493 |Applying initial value "0" on instance s_LEDPTN[10].
 @N: FX493 |Applying initial value "0" on instance s_LEDPTN[8].
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_rgstr.vhd":389:8:389:9|Removing sequential instance DOWNDELAY_REG_O[7:0] (in view: work.ppmc_rgstr_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_rgstr.vhd":389:8:389:9|Removing sequential instance DOWNDELAY_REG_O[7:0] (in view: work.ppmc_rgstr_1(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_rgstr.vhd":389:8:389:9|Removing sequential instance DOWNDELAY_REG_O[7:0] (in view: work.ppmc_rgstr_2(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_rgstr.vhd":389:8:389:9|Removing sequential instance DOWNDELAY_REG_O[7:0] (in view: work.ppmc_rgstr_3(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_rgstr.vhd":389:8:389:9|Removing sequential instance DOWNDELAY_REG_O[7:0] (in view: work.ppmc_rgstr_4(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_rgstr.vhd":389:8:389:9|Removing sequential instance DOWNDELAY_REG_O[7:0] (in view: work.ppmc_rgstr_5(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_rgstr.vhd":389:8:389:9|Removing sequential instance DOWNDELAY_REG_O[7:0] (in view: work.ppmc_rgstr_6(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_rgstr.vhd":389:8:389:9|Removing sequential instance DOWNDELAY_REG_O[7:0] (in view: work.ppmc_rgstr_7(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_rgstr.vhd":389:8:389:9|Removing sequential instance DOWNDELAY_REG_O[7:0] (in view: work.ppmc_rgstr_8(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_rgstr.vhd":389:8:389:9|Removing sequential instance DOWNDELAY_REG_O[7:0] (in view: work.ppmc_rgstr_9(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_rgstr.vhd":389:8:389:9|Removing sequential instance DOWNDELAY_REG_O[7:0] (in view: work.ppmc_rgstr_10(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_rgstr.vhd":389:8:389:9|Removing sequential instance DOWNDELAY_REG_O[7:0] (in view: work.ppmc_rgstr_11(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_rgstr.vhd":389:8:389:9|Removing sequential instance DOWNDELAY_REG_O[7:0] (in view: work.ppmc_rgstr_12(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\tx_com\enc8b10b_wrapper.vhd":58:6:58:7|Removing sequential instance rdout (in view: work.enc8b10b_wrapper(wrapper)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec8b10b_wrapper.vhd":67:6:67:7|Removing sequential instance rdout (in view: work.dec8b10b_wrapper(wrapper)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\sp_conv\sio_ctrl2.vhd":139:2:139:3|Removing sequential instance SPI_UPDATE (in view: work.SIO_ctrl2(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
@@ -60,5 +47,6 @@
 @N: MO225 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_ctrl.vhd":288:8:288:9|There are no possible illegal states for state machine STATE[0:3] (in view: work.ppmc_ctrl_10(rtl)); safe FSM implementation is not required.
 @N: MO225 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_ctrl.vhd":288:8:288:9|There are no possible illegal states for state machine STATE[0:3] (in view: work.ppmc_ctrl_11(rtl)); safe FSM implementation is not required.
 @N: MO225 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_ctrl.vhd":288:8:288:9|There are no possible illegal states for state machine STATE[0:3] (in view: work.ppmc_ctrl_12(rtl)); safe FSM implementation is not required.
+@N: MF578 |Incompatible asynchronous control logic preventing generated clock conversion.
 @N: FX1184 |Applying syn_allowed_resources blockrams=56 on top level netlist SP0557 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.

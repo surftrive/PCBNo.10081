@@ -1,5 +1,5 @@
 <html><body><samp><pre>
-<!@TC:1772277073>
+<!@TC:1772279887>
 
 Copyright (C) 1994-2023 Synopsys, Inc.
 This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
@@ -14,19 +14,20 @@ Hostname: TSURUMI
 
 Implementation : SP0557
 
-# Written on Sat Feb 28 20:11:43 2026
+# Written on Sat Feb 28 20:58:13 2026
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "SP0557"
-Constraint File(s):      (none)
+Constraint File(s):      "C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\pll_gen\pll_gen.fdc"
+                         "C:\FPGA work\PCBNo.10081\FPGA\SP0557\SP0557.fdc"
 
 
 
 
 ##### SUMMARY ############################################################
 
-Found 0 issues in 0 out of 0 constraints
+Found 178 issues in 114 out of 123 constraints
 
 
 ##### DETAILS ############################################################
@@ -38,17 +39,17 @@ Clock Relationships
 
 Starting                          Ending                            |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                            CLK20M_ext                        |     50.000           |     No paths         |     No paths         |     No paths                         
 System                            pll_gen|CLKOS2_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
-System                            SP0557|CLK20M                     |     10.000           |     No paths         |     No paths         |     No paths                         
 System                            pll_gen|CLKOS_inferred_clock      |     10.000           |     No paths         |     10.000           |     No paths                         
 System                            pll_gen|CLKOP_inferred_clock      |     10.000           |     No paths         |     10.000           |     No paths                         
 System                            pll_gen|CLKOS3_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
+CLK20M_ext                        System                            |     50.000           |     No paths         |     No paths         |     No paths                         
+CLK20M_ext                        CLK20M_ext                        |     50.000           |     No paths         |     No paths         |     No paths                         
+CLK20M_ext                        pll_gen|CLKOP_inferred_clock      |     Diff grp         |     No paths         |     No paths         |     No paths                         
+CLK20M_ext                        pll_gen|CLKOS3_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 pll_gen|CLKOS2_inferred_clock     pll_gen|CLKOS2_inferred_clock     |     10.000           |     No paths         |     No paths         |     No paths                         
 pll_gen|CLKOS2_inferred_clock     pll_gen|CLKOS3_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
-SP0557|CLK20M                     System                            |     10.000           |     No paths         |     No paths         |     No paths                         
-SP0557|CLK20M                     SP0557|CLK20M                     |     10.000           |     No paths         |     No paths         |     No paths                         
-SP0557|CLK20M                     pll_gen|CLKOP_inferred_clock      |     Diff grp         |     No paths         |     No paths         |     No paths                         
-SP0557|CLK20M                     pll_gen|CLKOS3_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 pll_gen|CLKOS_inferred_clock      pll_gen|CLKOS_inferred_clock      |     10.000           |     10.000           |     No paths         |     No paths                         
 pll_gen|CLKOS_inferred_clock      pll_gen|CLKOP_inferred_clock      |     Diff grp         |     Diff grp         |     No paths         |     No paths                         
 pll_gen|CLKOP_inferred_clock      System                            |     10.000           |     No paths         |     No paths         |     No paths                         
@@ -56,8 +57,8 @@ pll_gen|CLKOP_inferred_clock      pll_gen|CLKOS_inferred_clock      |     No pat
 pll_gen|CLKOP_inferred_clock      pll_gen|CLKOP_inferred_clock      |     10.000           |     10.000           |     No paths         |     No paths                         
 pll_gen|CLKOP_inferred_clock      pll_gen|CLKOS3_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 pll_gen|CLKOS3_inferred_clock     System                            |     10.000           |     No paths         |     No paths         |     No paths                         
+pll_gen|CLKOS3_inferred_clock     CLK20M_ext                        |     Diff grp         |     No paths         |     No paths         |     No paths                         
 pll_gen|CLKOS3_inferred_clock     pll_gen|CLKOS2_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
-pll_gen|CLKOS3_inferred_clock     SP0557|CLK20M                     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 pll_gen|CLKOS3_inferred_clock     pll_gen|CLKOP_inferred_clock      |     Diff grp         |     No paths         |     No paths         |     No paths                         
 pll_gen|CLKOS3_inferred_clock     pll_gen|CLKOS3_inferred_clock     |     10.000           |     No paths         |     5.000            |     5.000                            
 ===============================================================================================================================================================================
@@ -65,7 +66,7 @@ pll_gen|CLKOS3_inferred_clock     pll_gen|CLKOS3_inferred_clock     |     10.000
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
 
-<a name=UnconstrainedStartEndPointsCCK53></a>Unconstrained Start/End Points</a>
+<a name=UnconstrainedStartEndPointsCCK63></a>Unconstrained Start/End Points</a>
 ******************************
 
 p:ACTb[1]
@@ -199,25 +200,313 @@ p:UP_RXD
 p:UP_TXD
 
 
-<a name=InapplicableconstraintsCCK54></a>Inapplicable constraints</a>
+<a name=InapplicableconstraintsCCK64></a>Inapplicable constraints</a>
 ************************
 
-(none)
+define_clock -name CLKOP_100M n:CLKOP_t -freq 100.000 -rise 0.000 -fall 5.000 -clockgroup pll_clks
+	@E:MT548:"c:/fpga work/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":33:0:33:0|Source for clock CLKOP_100M not found in netlist.
+define_clock -name CLKOS2_20M n:CLKOS2_t -freq 20.000 -rise 0.000 -fall 25.000 -clockgroup pll_clks
+	@E:MT548:"c:/fpga work/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":52:0:52:0|Source for clock CLKOS2_20M not found in netlist.
+define_clock -name CLKOS3_10M n:CLKOS3_t -freq 10.000 -rise 0.000 -fall 50.000 -clockgroup pll_clks
+	@E:MT548:"c:/fpga work/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":60:0:60:0|Source for clock CLKOS3_10M not found in netlist.
+define_clock -name CLKOS_100M_90 n:CLKOS_t -freq 100.000 -rise 2.500 -fall 7.500 -clockgroup pll_clks
+	@E:MT548:"c:/fpga work/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":44:0:44:0|Source for clock CLKOS_100M_90 not found in netlist.
+define_false_path -from CLK20M_ext -to CLKOP_100M
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":32:0:32:0|Object "CLKOP_100M" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":32:0:32:0|Timing constraint (from CLK20M_ext to CLKOP_100M) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":32:0:32:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":32:0:32:0|object "CLKOP_100M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLK20M_ext -to CLKOS2_20M
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":34:0:34:0|Object "CLKOS2_20M" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":34:0:34:0|Timing constraint (from CLK20M_ext to CLKOS2_20M) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":34:0:34:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":34:0:34:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLK20M_ext -to CLKOS3_10M
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":35:0:35:0|Object "CLKOS3_10M" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":35:0:35:0|Timing constraint (from CLK20M_ext to CLKOS3_10M) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":35:0:35:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":35:0:35:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLK20M_ext -to CLKOS_100M_90
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":33:0:33:0|Object "CLKOS_100M_90" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":33:0:33:0|Timing constraint (from CLK20M_ext to CLKOS_100M_90) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":33:0:33:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":33:0:33:0|object "CLKOS_100M_90" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOP_100M -to CLK20M_ext
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":36:0:36:0|Object "CLKOP_100M" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":36:0:36:0|Timing constraint (from CLKOP_100M to CLK20M_ext) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":36:0:36:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":36:0:36:0|object "CLKOP_100M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOP_100M -to CLKOS2_20M
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":78:0:78:0|Object "CLKOP_100M" does not exist
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":78:0:78:0|Object "CLKOS2_20M" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":78:0:78:0|Timing constraint (from CLKOP_100M to CLKOS2_20M) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":78:0:78:0|object "CLKOP_100M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":78:0:78:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOS2_20M -to CLK20M_ext
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":38:0:38:0|Object "CLKOS2_20M" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":38:0:38:0|Timing constraint (from CLKOS2_20M to CLK20M_ext) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":38:0:38:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":38:0:38:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOS2_20M -to CLKOP_100M
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":77:0:77:0|Object "CLKOP_100M" does not exist
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":77:0:77:0|Object "CLKOS2_20M" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":77:0:77:0|Timing constraint (from CLKOS2_20M to CLKOP_100M) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":77:0:77:0|object "CLKOP_100M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":77:0:77:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOS2_20M -to CLKOS_100M_90
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":79:0:79:0|Object "CLKOS2_20M" does not exist
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":79:0:79:0|Object "CLKOS_100M_90" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":79:0:79:0|Timing constraint (from CLKOS2_20M to CLKOS_100M_90) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":79:0:79:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":79:0:79:0|object "CLKOS_100M_90" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOS3_10M -to CLK20M_ext
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":39:0:39:0|Object "CLKOS3_10M" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":39:0:39:0|Timing constraint (from CLKOS3_10M to CLK20M_ext) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":39:0:39:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":39:0:39:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOS_100M_90 -to CLK20M_ext
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":37:0:37:0|Object "CLKOS_100M_90" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":37:0:37:0|Timing constraint (from CLKOS_100M_90 to CLK20M_ext) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":37:0:37:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":37:0:37:0|object "CLKOS_100M_90" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOS_100M_90 -to CLKOS2_20M
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":80:0:80:0|Object "CLKOS2_20M" does not exist
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":80:0:80:0|Object "CLKOS_100M_90" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":80:0:80:0|Timing constraint (from CLKOS_100M_90 to CLKOS2_20M) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":80:0:80:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":80:0:80:0|object "CLKOS_100M_90" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_multicycle_path -from CLKOP_100M -to CLKOS3_10M 2
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":60:0:60:0|Object "CLKOP_100M" does not exist
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":60:0:60:0|Object "CLKOS3_10M" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":60:0:60:0|Timing constraint (from CLKOP_100M to CLKOS3_10M) (multi path 2) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":60:0:60:0|object "CLKOP_100M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":60:0:60:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_multicycle_path -from CLKOS2_20M -to CLKOS3_10M 2
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":48:0:48:0|Object "CLKOS2_20M" does not exist
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":48:0:48:0|Object "CLKOS3_10M" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":48:0:48:0|Timing constraint (from CLKOS2_20M to CLKOS3_10M) (multi path 2) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":48:0:48:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":48:0:48:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_multicycle_path -from CLKOS3_10M -to CLKOP_100M 10
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":59:0:59:0|Object "CLKOP_100M" does not exist
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":59:0:59:0|Object "CLKOS3_10M" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":59:0:59:0|Timing constraint (from CLKOS3_10M to CLKOP_100M) (multi path 10) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":59:0:59:0|object "CLKOP_100M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":59:0:59:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_multicycle_path -from CLKOS3_10M -to CLKOS2_20M 2
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":49:0:49:0|Object "CLKOS2_20M" does not exist
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":49:0:49:0|Object "CLKOS3_10M" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":49:0:49:0|Timing constraint (from CLKOS3_10M to CLKOS2_20M) (multi path 2) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":49:0:49:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":49:0:49:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_multicycle_path -from CLKOS3_10M -to CLKOS_100M_90 10
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":68:0:68:0|Object "CLKOS3_10M" does not exist
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":68:0:68:0|Object "CLKOS_100M_90" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":68:0:68:0|Timing constraint (from CLKOS3_10M to CLKOS_100M_90) (multi path 10) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":68:0:68:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":68:0:68:0|object "CLKOS_100M_90" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_multicycle_path -from CLKOS_100M_90 -to CLKOS3_10M 2
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":69:0:69:0|Object "CLKOS3_10M" does not exist
+	@E:MF896:"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":69:0:69:0|Object "CLKOS_100M_90" does not exist
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":69:0:69:0|Timing constraint (from CLKOS_100M_90 to CLKOS3_10M) (multi path 2) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":69:0:69:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":69:0:69:0|object "CLKOS_100M_90" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
 
-
-<a name=ApplicableConstraintsWithIssuesCCK55></a>Applicable constraints with issues</a>
+<a name=ApplicableConstraintsWithIssuesCCK65></a>Applicable constraints with issues</a>
 **********************************
 
-(none)
+define_attribute EFUSE_CTRL_inst.s_PW_ENC_EN syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":115:0:115:0|object "EFUSE_CTRL_inst.s_PW_ENC_EN" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute EFUSE_CTRL_inst.s_PW_LEDLT_EN syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":120:0:120:0|object "EFUSE_CTRL_inst.s_PW_LEDLT_EN" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute EFUSE_CTRL_inst.s_PW_LEDSH_EN syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":119:0:119:0|object "EFUSE_CTRL_inst.s_PW_LEDSH_EN" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute EFUSE_CTRL_inst.s_PW_LMT_EN syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":114:0:114:0|object "EFUSE_CTRL_inst.s_PW_LMT_EN" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute EFUSE_CTRL_inst.s_PW_PLSSNS_EN syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":118:0:118:0|object "EFUSE_CTRL_inst.s_PW_PLSSNS_EN" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute EFUSE_CTRL_inst.s_PW_PLS_EN syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":113:0:113:0|object "EFUSE_CTRL_inst.s_PW_PLS_EN" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute EFUSE_CTRL_inst.s_PW_PUMP_EN syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":112:0:112:0|object "EFUSE_CTRL_inst.s_PW_PUMP_EN" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute EFUSE_CTRL_inst.s_PW_SNSLED_EN syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":117:0:117:0|object "EFUSE_CTRL_inst.s_PW_SNSLED_EN" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute EFUSE_CTRL_inst.s_PW_SNS_EN syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":116:0:116:0|object "EFUSE_CTRL_inst.s_PW_SNS_EN" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute EFUSE_CTRL_inst.s_PW_SV_EN syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":111:0:111:0|object "EFUSE_CTRL_inst.s_PW_SV_EN" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute slv_com_top_inst.rx_com_inst.rx_ctl_1st_inst.sp_dt syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":241:0:241:0|object "slv_com_top_inst.rx_com_inst.rx_ctl_1st_inst.sp_dt" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute slv_com_top_inst.rx_com_inst.rx_ctl_1st_inst.sp_dt_1q syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":242:0:242:0|object "slv_com_top_inst.rx_com_inst.rx_ctl_1st_inst.sp_dt_1q" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm01.s_LCCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":131:0:131:0|object "stm01.s_LCCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm01.s_LCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":130:0:130:0|object "stm01.s_LCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm02.s_LCCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":133:0:133:0|object "stm02.s_LCCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm02.s_LCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":132:0:132:0|object "stm02.s_LCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm03.s_LCCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":135:0:135:0|object "stm03.s_LCCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm03.s_LCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":134:0:134:0|object "stm03.s_LCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm04.s_LCCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":137:0:137:0|object "stm04.s_LCCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm04.s_LCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":136:0:136:0|object "stm04.s_LCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm05.s_LCCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":139:0:139:0|object "stm05.s_LCCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm05.s_LCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":138:0:138:0|object "stm05.s_LCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm06.s_LCCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":141:0:141:0|object "stm06.s_LCCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm06.s_LCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":140:0:140:0|object "stm06.s_LCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm07.s_LCCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":143:0:143:0|object "stm07.s_LCCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm07.s_LCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":142:0:142:0|object "stm07.s_LCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm08.s_LCCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":145:0:145:0|object "stm08.s_LCCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm08.s_LCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":144:0:144:0|object "stm08.s_LCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm09.s_LCCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":147:0:147:0|object "stm09.s_LCCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm09.s_LCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":146:0:146:0|object "stm09.s_LCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm10.s_LCCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":149:0:149:0|object "stm10.s_LCCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm10.s_LCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":148:0:148:0|object "stm10.s_LCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm11.s_LCCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":151:0:151:0|object "stm11.s_LCCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm11.s_LCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":150:0:150:0|object "stm11.s_LCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm12.s_LCCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":153:0:153:0|object "stm12.s_LCCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm12.s_LCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":152:0:152:0|object "stm12.s_LCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm13.s_LCCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":155:0:155:0|object "stm13.s_LCCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute stm13.s_LCW syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":154:0:154:0|object "stm13.s_LCW" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {EFUSE_CTRL_inst.s_MODE[1]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":126:0:126:0|object "EFUSE_CTRL_inst.s_MODE[1]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {EFUSE_CTRL_inst.s_MODE[2]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":125:0:125:0|object "EFUSE_CTRL_inst.s_MODE[2]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {EFUSE_CTRL_inst.s_MODE[3]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":124:0:124:0|object "EFUSE_CTRL_inst.s_MODE[3]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {LEDLT.s_LEDPTN[1]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":225:0:225:0|object "LEDLT.s_LEDPTN[1]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {LEDLT.s_LEDPTN[2]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":224:0:224:0|object "LEDLT.s_LEDPTN[2]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {LEDLT.s_LEDPTN[3]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":223:0:223:0|object "LEDLT.s_LEDPTN[3]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {LEDLT.s_LEDPTN[4]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":222:0:222:0|object "LEDLT.s_LEDPTN[4]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {LEDLT.s_LEDPTN[5]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":221:0:221:0|object "LEDLT.s_LEDPTN[5]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {LEDLT.s_LEDPTN[6]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":220:0:220:0|object "LEDLT.s_LEDPTN[6]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {LEDLT.s_LEDPTN[7]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":219:0:219:0|object "LEDLT.s_LEDPTN[7]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {LEDLT.s_LEDPTN[9]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":218:0:218:0|object "LEDLT.s_LEDPTN[9]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {LEDLT.s_LEDPTN[11]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":217:0:217:0|object "LEDLT.s_LEDPTN[11]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {LEDLT.s_LEDPTN[12]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":216:0:216:0|object "LEDLT.s_LEDPTN[12]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {LEDLT.s_LEDPTN[13]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":215:0:215:0|object "LEDLT.s_LEDPTN[13]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {LEDLT.s_LEDPTN[14]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":214:0:214:0|object "LEDLT.s_LEDPTN[14]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {LEDLT.s_LEDPTN[15]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":213:0:213:0|object "LEDLT.s_LEDPTN[15]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {gpio01.gpio_reg_inst.gpio_ip_reg_inst3.REG1[2]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":198:0:198:0|object "gpio01.gpio_reg_inst.gpio_ip_reg_inst3.REG1[2]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {gpio01.gpio_reg_inst.gpio_ip_reg_inst31.REG1[5]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":197:0:197:0|object "gpio01.gpio_reg_inst.gpio_ip_reg_inst31.REG1[5]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst6.REG1[2]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":203:0:203:0|object "gpio02.gpio_reg_inst.gpio_ip_reg_inst6.REG1[2]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst8.REG1[4]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":204:0:204:0|object "gpio02.gpio_reg_inst.gpio_ip_reg_inst8.REG1[4]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst10.REG1[4]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":201:0:201:0|object "gpio02.gpio_reg_inst.gpio_ip_reg_inst10.REG1[4]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst12.REG1[5]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":202:0:202:0|object "gpio02.gpio_reg_inst.gpio_ip_reg_inst12.REG1[5]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst14.REG1[3]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":199:0:199:0|object "gpio02.gpio_reg_inst.gpio_ip_reg_inst14.REG1[3]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst17.REG1[1]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":200:0:200:0|object "gpio02.gpio_reg_inst.gpio_ip_reg_inst17.REG1[1]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":166:0:166:0|object "slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[1]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":167:0:167:0|object "slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[1]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[2]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":168:0:168:0|object "slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[2]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[3]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":169:0:169:0|object "slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[3]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[4]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":170:0:170:0|object "slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[4]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[5]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":171:0:171:0|object "slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[5]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[1]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":234:0:234:0|object "slv_com_top_inst.slv_ctrl_top_inst.s_prpty[1]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[2]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":233:0:233:0|object "slv_com_top_inst.slv_ctrl_top_inst.s_prpty[2]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[4]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":232:0:232:0|object "slv_com_top_inst.slv_ctrl_top_inst.s_prpty[4]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[5]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":231:0:231:0|object "slv_com_top_inst.slv_ctrl_top_inst.s_prpty[5]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[6]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":230:0:230:0|object "slv_com_top_inst.slv_ctrl_top_inst.s_prpty[6]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[7]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":229:0:229:0|object "slv_com_top_inst.slv_ctrl_top_inst.s_prpty[7]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":159:0:159:0|object "slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[1]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":160:0:160:0|object "slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[1]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[2]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":161:0:161:0|object "slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[2]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[3]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":162:0:162:0|object "slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[3]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.byte_cnt[2]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":237:0:237:0|object "slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.byte_cnt[2]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {stm01.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":180:0:180:0|object "stm01.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {stm02.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":181:0:181:0|object "stm02.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {stm03.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":182:0:182:0|object "stm03.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {stm04.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":183:0:183:0|object "stm04.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {stm05.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":184:0:184:0|object "stm05.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {stm06.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":185:0:185:0|object "stm06.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {stm07.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":186:0:186:0|object "stm07.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {stm08.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":187:0:187:0|object "stm08.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {stm09.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":188:0:188:0|object "stm09.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {stm10.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":189:0:189:0|object "stm10.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {stm11.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":190:0:190:0|object "stm11.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {stm12.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":191:0:191:0|object "stm12.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
+define_attribute {stm13.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]} syn_preserve 1
+	@W::"c:/fpga work/pcbno.10081/fpga/sp0557/sp0557.fdc":192:0:192:0|object "stm13.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]" is missing qualifier which may result in undesired results; objects must be of type cell (x:), view (v:), clock (c:), port (p:), inst (i:), pin (t:), or net (n:)
 
-
-<a name=ConstraintsWithMatchingWildcardExpressionsCCK56></a>Constraints with matching wildcard expressions</a>
+<a name=ConstraintsWithMatchingWildcardExpressionsCCK66></a>Constraints with matching wildcard expressions</a>
 **********************************************
 
 (none)
 
 
-<a name=LibraryReportCCK57></a>Library Report</a>
+<a name=LibraryReportCCK67></a>Library Report</a>
 **************
 
 

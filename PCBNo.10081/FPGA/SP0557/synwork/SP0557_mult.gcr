@@ -1,6 +1,6 @@
 i slv_com_top_inst.clk_gen_inst2.PLL_inst.CLKOS2_i
 m 0 0
-u 1741 9076
+u 1773 9332
 p {t:slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2}{t:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLKOS2_inferred_clock.I[0]}{t:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLKOS2_inferred_clock.OUT[0]}{p:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLKOS2}{t:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLKOS2}{p:slv_com_top_inst.clk_gen_inst2.CLK_PLL_20M}{t:slv_com_top_inst.clk_gen_inst2.CLK_PLL_20M}{t:slv_com_top_inst.slvadr_cnv_inst.CLK}{p:slv_com_top_inst.slvadr_cnv_inst.CLK}{t:slv_com_top_inst.slvadr_cnv_inst.s_HEX_OUT[5:0].C}
 e ckid0_0 {t:slv_com_top_inst.slvadr_cnv_inst.s_HEX_OUT[5:0].C} dffr
 c ckid0_0 {t:slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2} EHXPLLL Unsupported/too complex instance on clock path
@@ -29,6 +29,111 @@ p {p:CLK20M}{t:slv_com_top_inst.CLKSLV}{p:slv_com_top_inst.CLKSLV}{t:slv_com_top
 e ckid0_4 {t:slv_com_top_inst.ck_state[1].C} dffr
 c ckid0_4 {p:CLK20M} port Unsupported/too complex instance on clock path
 i slv_com_top_inst.clk_gen_inst2.PLL_inst.LOCK
+m 0 0
+u 0 0
+i EFUSE_CTRL_inst.s_PW_SV_EN
+m 0 0
+u 0 0
+i EFUSE_CTRL_inst.s_PW_PUMP_EN
+m 0 0
+u 0 0
+i EFUSE_CTRL_inst.s_PW_PLS_EN
+m 0 0
+u 0 0
+i EFUSE_CTRL_inst.s_PW_LMT_EN
+m 0 0
+u 0 0
+i EFUSE_CTRL_inst.s_PW_ENC_EN
+m 0 0
+u 0 0
+i EFUSE_CTRL_inst.s_PW_SNS_EN
+m 0 0
+u 0 0
+i EFUSE_CTRL_inst.s_PW_SNSLED_EN
+m 0 0
+u 0 0
+i EFUSE_CTRL_inst.s_PW_LEDSH_EN
+m 0 0
+u 0 0
+i EFUSE_CTRL_inst.s_PW_LEDLT_EN
+m 0 0
+u 0 0
+i stm01.s_LCW
+m 0 0
+u 0 0
+i stm01.s_LCCW
+m 0 0
+u 0 0
+i stm02.s_LCW
+m 0 0
+u 0 0
+i stm02.s_LCCW
+m 0 0
+u 0 0
+i stm03.s_LCW
+m 0 0
+u 0 0
+i stm03.s_LCCW
+m 0 0
+u 0 0
+i stm04.s_LCW
+m 0 0
+u 0 0
+i stm04.s_LCCW
+m 0 0
+u 0 0
+i stm05.s_LCW
+m 0 0
+u 0 0
+i stm05.s_LCCW
+m 0 0
+u 0 0
+i stm06.s_LCW
+m 0 0
+u 0 0
+i stm06.s_LCCW
+m 0 0
+u 0 0
+i stm07.s_LCW
+m 0 0
+u 0 0
+i stm07.s_LCCW
+m 0 0
+u 0 0
+i stm08.s_LCW
+m 0 0
+u 0 0
+i stm08.s_LCCW
+m 0 0
+u 0 0
+i stm09.s_LCW
+m 0 0
+u 0 0
+i stm09.s_LCCW
+m 0 0
+u 0 0
+i stm10.s_LCW
+m 0 0
+u 0 0
+i stm10.s_LCCW
+m 0 0
+u 0 0
+i stm11.s_LCW
+m 0 0
+u 0 0
+i stm11.s_LCCW
+m 0 0
+u 0 0
+i stm12.s_LCW
+m 0 0
+u 0 0
+i stm12.s_LCCW
+m 0 0
+u 0 0
+i stm13.s_LCW
+m 0 0
+u 0 0
+i stm13.s_LCCW
 m 0 0
 u 0 0
 l 0 0 0 0 0 0

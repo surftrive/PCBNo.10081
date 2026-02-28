@@ -13,13 +13,13 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>760</data>
+<data>869</data>
 <report_link name="more">
 <data>C:\FPGA work\PCBNo.10081\FPGA\SP0557\synlog\report\SP0557_fpga_mapper_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
-<data>15037</data>
+<data>15056</data>
 <report_link name="more">
 <data>C:\FPGA work\PCBNo.10081\FPGA\SP0557\synlog\report\SP0557_fpga_mapper_warnings.txt</data>
 </report_link>
@@ -31,16 +31,16 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:01m:39s</data>
+<data>0h:01m:16s</data>
 </info>
 <info name="Real Time">
-<data>0h:01m:40s</data>
+<data>0h:01m:17s</data>
 </info>
 <info name="Peak Memory">
-<data>530MB</data>
+<data>519MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1772277204</data>
+<data type="timestamp">1772279971</data>
 </info>
 </job_info>
 </job_run_status>
