@@ -16,14 +16,22 @@
 #           Synplify timing analysis on cross-domain paths (especially
 #           CLK2 <-> CLK2A in cds.vhd CDR module).
 #
-# Date   : 2026-02-27
+# NOTE: Use {n:SIGNAL_t} (internal net) syntax instead of {p:PORT}.
+#       Synplify infers clocks from EHXPLLL primitive output signals
+#       (CLKOP_t, CLKOS_t, etc.) declared at pll_gen.vhd lines 27-30.
+#       Using {p:PORT} caused FDC constraints to be silently ignored
+#       because the inferred clock names (pll_gen|CLKOP_inferred_clock)
+#       did not match the port references, resulting in MT420/MT529
+#       warnings and all PLL clocks defaulting to project frequency.
+#
+# Date   : 2026-02-28
 # Target : LFE5U-25F-6 CABGA256
 #----------------------------------------------------------------------
 
 # CLKOP: 100MHz serial communication clock (0 deg phase)
 # Used by: cds.vhd (domain A,C), rx_ctl_1st, tx_com, dcfifo_rx/tx
 define_clock -name {CLKOP_100M} \
-    {p:CLKOP} \
+    {n:CLKOP_t} \
     -freq 100.000 \
     -rise 0.000 -fall 5.000 \
     -clockgroup pll_clks
@@ -34,7 +42,7 @@ define_clock -name {CLKOP_100M} \
 # Synplify, enabling correct setup/hold analysis for cds.vhd
 # mesochronous CDC paths (bz, cz, dz signal crossings).
 define_clock -name {CLKOS_100M_90} \
-    {p:CLKOS} \
+    {n:CLKOS_t} \
     -freq 100.000 \
     -rise 2.500 -fall 7.500 \
     -clockgroup pll_clks
@@ -42,7 +50,7 @@ define_clock -name {CLKOS_100M_90} \
 # CLKOS2: 20MHz system clock (0 deg phase)
 # Used by: GPIO, encoder, ADC, DAC, motor control, sp_conv
 define_clock -name {CLKOS2_20M} \
-    {p:CLKOS2} \
+    {n:CLKOS2_t} \
     -freq 20.000 \
     -rise 0.000 -fall 25.000 \
     -clockgroup pll_clks
@@ -50,7 +58,7 @@ define_clock -name {CLKOS2_20M} \
 # CLKOS3: 10MHz slave control clock (0 deg phase)
 # Used by: slv_ctrl, 8b10b enc/dec, rx/tx control state machines
 define_clock -name {CLKOS3_10M} \
-    {p:CLKOS3} \
+    {n:CLKOS3_t} \
     -freq 10.000 \
     -rise 0.000 -fall 50.000 \
     -clockgroup pll_clks

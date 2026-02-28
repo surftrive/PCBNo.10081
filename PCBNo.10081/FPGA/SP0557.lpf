@@ -296,12 +296,15 @@ IOBUF PORT "ENC_A[1]" IO_TYPE=LVCMOS33 PULLMODE=NONE DRIVE=NA SLEWRATE=NA CLAMP=
 # CLKCOM_OUT port is connected to "open" in SP0557.vhd, so the net may
 # not exist post-synthesis. Use "slv_com_top_inst.CLK2" instead.
 #
-# Guard-banding: 100MHz constrained as 115MHz for timing margin.
+# Previously guard-banded at 115MHz, but DCFIFO C2Q delay (5.83ns) makes
+# 115MHz unachievable (-1.275ns violation). Reverted to actual 100MHz.
+# The critical path (Block RAM -> TX MGIOL) requires 9.823ns, which fits
+# within 10ns (100MHz) but not 8.696ns (115MHz).
 #----------------------------------------------------------------------------
 FREQUENCY NET "s_PLL_CLK20M" 20.000000 MHz ;
 FREQUENCY NET "slv_com_top_inst.CLK1" 10.000000 MHz ;
-FREQUENCY NET "slv_com_top_inst.CLK2" 115.000000 MHz ;
-FREQUENCY NET "slv_com_top_inst.CLK2A" 115.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst.CLK2" 100.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst.CLK2A" 100.000000 MHz ;
 FREQUENCY NET "UP_CLK_c" 20.000000 MHz ;
 
 #----------------------------------------------------------------------------

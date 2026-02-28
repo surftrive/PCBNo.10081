@@ -130,10 +130,10 @@ architecture RTL of ppmc_ctrl is
 
     signal s_pls_ld         : std_logic;
 
--- Prevent register sharing of s_pls_ld and ENB_START (separate timing functions)
+-- Prevent register sharing of s_pls_ld (internal signal)
 attribute syn_preserve : boolean;
 attribute syn_preserve of s_pls_ld  : signal is true;
-attribute syn_preserve of ENB_START : signal is true;
+-- ENB_START preservation handled by SP0557.fdc (Section 7N)
 
 begin
 

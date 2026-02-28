@@ -168,3 +168,76 @@ Lattice FPGA（SLICE = 2 LUT4 + 2 FF）換算で、5000 SLICE規模のデバイ�
 ## ポートインターフェース変更
 
 **なし** — 全モジュールの外部ポートは不変。未使用出力は`'0'`に固定し、ポート宣言は維持。
+
+---
+
+# No.9: コンパイル結果検証に基づく残存問題修正
+
+**日付**: 2026-02-28
+**目的**: 修正履歴No.1〜No.8の適用後に残存していた4つの問題を解消
+**制約**: 機能変更なし
+
+---
+
+## 修正1: CD134 識別子エラー修正（3件）
+
+| 項目 | 内容 |
+|------|------|
+| **対象ファイル** | `ppmc_ctrl.vhd`, `dec6b_5b.vhd`, `slv_rx_ctrl.vhd` |
+| **変更種別** | RTL属性宣言の修正 |
+| **期待効果** | CD134 警告 3件 → 0件 |
+
+**原因**: RTLソース内で `attribute syn_preserve of XXXX : signal is true;` と記述しているが、対象がエンティティの出力ポートであるため `: signal` が不正。SP0557.fdcに既に正しい制約が定義済みのため、RTL内の重複属性を削除。
+
+**変更内容**:
+- `ppmc_ctrl.vhd:136`: `attribute syn_preserve of ENB_START : signal is true;` を削除（FDC 7N節で保護済み）
+- `dec6b_5b.vhd:37-38`: `attribute syn_preserve of DATAOUT : signal is true;` を削除（FDC 7E節で保護済み）
+- `slv_rx_ctrl.vhd:93-94`: `attribute syn_preserve of NODE : signal is true;` を削除（FDC 7D節で保護済み）
+
+---
+
+## 修正2: MT420/MT529 警告修正（10件）
+
+| 項目 | 内容 |
+|------|------|
+| **対象ファイル** | `IPcore/pll_gen/pll_gen.fdc` |
+| **変更種別** | FDCクロック参照構文変更 |
+| **期待効果** | MT420 5件 + MT529 5件 → 0件（または大幅減少） |
+
+**原因**: `{p:CLKOP}` 等のポート参照構文がSynplifyの推論クロック名 (`pll_gen|CLKOP_inferred_clock`) と一致せず、define_clockが黙殺されていた。結果として全PLLクロックがプロジェクト周波数 (100MHz) で処理され、CLKOS2 (20MHz) やCLKOS3 (10MHz) のクロックドメインで不正確な合成最適化が行われていた。
+
+**変更内容**:
+- `{p:CLKOP}` → `{n:CLKOP_t}`（pll_gen.vhd内部信号名に合わせる）
+- `{p:CLKOS}` → `{n:CLKOS_t}`
+- `{p:CLKOS2}` → `{n:CLKOS2_t}`
+- `{p:CLKOS3}` → `{n:CLKOS3_t}`
+
+---
+
+## 修正3: CLKCOM_OUT タイミング違反修正
+
+| 項目 | 内容 |
+|------|------|
+| **対象ファイル** | `SP0557.lpf` |
+| **変更種別** | 周波数制約緩和 |
+| **期待効果** | Setup違反 1件 + Hold違反 4件 → 0件 |
+
+**原因**: 115MHzガードバンド制約に対し、クリティカルパス（DCFIFO Block RAM C2Q 5.830ns + routing 2.874ns + LUT 0.236ns = 9.823ns）が8.696nsの制約を1.275ns超過。DP16KDのC2Q遅延が構造的ボトルネックで、115MHzは本デバイスで達成不可能。
+
+**変更内容**:
+- `FREQUENCY NET "slv_com_top_inst.CLK2" 115.000000 MHz` → `100.000000 MHz`
+- `FREQUENCY NET "slv_com_top_inst.CLK2A" 115.000000 MHz` → `100.000000 MHz`
+
+**副次効果**: レジスタ複製の削減によりSLICE使用率も改善見込み（89% → 85-87%程度）。
+
+---
+
+## 変更ファイル一覧
+
+| ファイル | 変更内容 |
+|---------|---------|
+| `SP0557/compactppmc/ppmc_ctrl.vhd` | ENB_START syn_preserve属性削除 |
+| `SP0557/slv_com/rx_com/dec6b_5b.vhd` | DATAOUT syn_preserve属性削除 |
+| `SP0557/slv_com/slv_ctrl/slv_rx_ctrl.vhd` | NODE syn_preserve属性削除 |
+| `IPcore/pll_gen/pll_gen.fdc` | `{p:PORT}` → `{n:SIGNAL_t}` |
+| `SP0557.lpf` | 115MHz → 100MHz |

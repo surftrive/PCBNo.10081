@@ -87,11 +87,10 @@ architecture RTL of slv_rx_ctrl is
 	signal slv_flg		: std_logic;
 	--signal s_sync		: std_logic_vector( 7 downto 0);
 
--- Prevent pruning of byte counter bits (bus width for protocol) and NODE register merging
+-- Prevent pruning of byte counter bits (bus width for protocol)
 attribute syn_keep : boolean;
 attribute syn_keep of byte_cnt : signal is true;
-attribute syn_preserve : boolean;
-attribute syn_preserve of NODE : signal is true;
+-- NODE preservation handled by SP0557.fdc (Section 7D)
 
 begin
 	err_flg <= CRC_ERR or RX_ERR;
