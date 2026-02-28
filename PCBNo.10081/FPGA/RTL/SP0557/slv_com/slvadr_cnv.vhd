@@ -33,9 +33,11 @@ signal  s_HEX_OUT   : std_logic_vector(7 downto 0);     --
 signal  s_DEC_H_FLAG    : std_logic;        --
 signal  s_DEC_L_FLAG    : std_logic;        --
 signal  S3      : std_logic_vector(7 downto 0);     --
--- Prevent pruning of upper bits (bus width matches address interface spec)
+-- Prevent pruning and constant optimization of address bits
 attribute syn_keep : boolean;
 attribute syn_keep of s_HEX_OUT : signal is true;
+attribute syn_preserve : boolean;
+attribute syn_preserve of s_HEX_OUT : signal is true;
 ---------------constant--------------------------------------
 ---------------begin-----------------------------------------
 begin

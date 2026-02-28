@@ -84,8 +84,13 @@ signal s_wb_stb_i		: std_logic;
 
 signal s_wb_ack_o		: std_logic;
 signal s_INI			: std_logic;		--s_INI=1の時,初期化済み--
+-- Consume unused WISHBONE data bits to suppress CL246/CL247 (8-bit bus width required by I2C core)
+signal s_unused_wbdat	: std_logic;
+attribute syn_keep : boolean;
+attribute syn_keep of s_unused_wbdat : signal is true;
 
 begin
+	s_unused_wbdat <= WB_DAT_O(5) or WB_DAT_O(4) or WB_DAT_O(3) or WB_DAT_O(2) or WB_DAT_O(0);
 
 	-----------------------------------------------------------------
 	-----------------------------------------------------------------

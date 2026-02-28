@@ -130,12 +130,16 @@ architecture RTL of ppmc_ctrl is
 
     signal s_pls_ld         : std_logic;
 
--- Prevent register sharing of s_pls_ld and ENB_START (separate timing functions)
+-- Prevent register sharing of s_pls_ld (ENB_START preserved via FDC view-level attribute)
 attribute syn_preserve : boolean;
-attribute syn_preserve of s_pls_ld  : signal is true;
-attribute syn_preserve of ENB_START : signal is true;
+attribute syn_preserve of s_pls_ld : signal is true;
+-- Consume unused command_reg bits to suppress CL246 (8-bit register bus width)
+signal s_unused_cmdreg : std_logic;
+attribute syn_keep : boolean;
+attribute syn_keep of s_unused_cmdreg : signal is true;
 
 begin
+    s_unused_cmdreg <= command_reg(6) or command_reg(5) or command_reg(4);
 
     STATE_OUT   <= STATE;
     DIR         <= dir_o;

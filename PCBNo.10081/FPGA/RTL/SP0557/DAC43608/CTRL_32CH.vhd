@@ -81,7 +81,7 @@ type STATE is (
 ---------------signal-----------------------------------------
 signal s_state					: STATE;												--ステート--
 --signal s_LATCH					: std_logic_vector(2 downto 0) := "000";	--データ変化の有無を示す信号--
-signal s_LATCH					: std_logic_vector(31 downto 0) := (others =>'0');	--データ変化の有無を示す信号--
+signal s_LATCH					: std_logic_vector(31 downto 0);	--データ変化の有無を示す信号 (ECP5 GSR初期化='0')--
 
 signal s_ch_slave				: std_logic_vector(4 downto 0);
 signal s_data					: std_logic_vector(7 downto 0);		    --出力信号--

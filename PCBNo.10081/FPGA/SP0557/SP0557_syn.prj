@@ -130,6 +130,7 @@ set_option -rtl_xmr_naming 0
 # mapper_without_write_options
 set_option -frequency 100.0
 set_option -srs_instrumentation 1
+set_option -resolve_mixed_drivers 1
 
 # mapper_options
 set_option -write_verilog 0

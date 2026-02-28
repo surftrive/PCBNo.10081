@@ -33,9 +33,7 @@ architecture RTL of dec6b_5b is
 signal ERR_NEG : std_logic;
 signal ERR_POS : std_logic;
 
--- Prevent merging of DATAOUT register with input register (8b10b decode pipeline)
-attribute syn_preserve : boolean;
-attribute syn_preserve of DATAOUT : signal is true;
+-- DATAOUT register preserved via FDC view-level attribute (v:work.dec6b_5b)
 
 begin
 

@@ -42,9 +42,14 @@ architecture RTL of ppmc_u_step_ext is
 ---------------type------------------------------------------
 ---------------signal----------------------------------------
 signal s_POUT           : std_logic;
+-- Consume unused init_reg_in bits to suppress CL246/CL247 (8-bit register bus width)
+signal s_unused_initreg : std_logic;
+attribute syn_keep : boolean;
+attribute syn_keep of s_unused_initreg : signal is true;
 ---------------constant--------------------------------------
 ---------------begin-----------------------------------------
 begin
+    s_unused_initreg <= init_reg_in(7) or init_reg_in(5) or init_reg_in(4) or init_reg_in(3) or init_reg_in(2) or init_reg_in(1) or init_reg_in(0);
     POUT <= s_POUT;
 --================ MSEL to M ================================
     --------------process------------------------------------

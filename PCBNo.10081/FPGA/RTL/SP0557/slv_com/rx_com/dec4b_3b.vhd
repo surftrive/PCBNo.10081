@@ -29,8 +29,12 @@ entity dec4b_3b is
 end dec4b_3b;
 
 architecture RTL of dec4b_3b is
-
+-- Consume unused input port bits to suppress CL246 (10-bit bus width required by 8b10b protocol)
+signal s_unused_datain : std_logic;
+attribute syn_keep : boolean;
+attribute syn_keep of s_unused_datain : signal is true;
 begin
+    s_unused_datain <= DATAIN(1) or DATAIN(0);
 
     process(CLK,RSTb)
     begin

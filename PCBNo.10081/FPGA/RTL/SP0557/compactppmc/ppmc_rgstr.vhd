@@ -124,14 +124,15 @@ architecture RTL of ppmc_rgstr is
     signal nRST                 : std_logic;
     signal com_cng              : std_logic;
 
--- Synthesis attributes: prevent pruning of register bits (bus width matches register map spec)
+-- Synthesis attributes: prevent pruning and constant optimization of register bits
 attribute syn_keep : boolean;
 attribute syn_keep of LIMIT_IN_A          : signal is true;
 attribute syn_keep of LIMIT_MONITOR_REG_O : signal is true;
 attribute syn_keep of INIT_REG_O          : signal is true;
--- Prevent register-to-combinational reduction
 attribute syn_preserve : boolean;
-attribute syn_preserve of MPI_A : signal is true;
+attribute syn_preserve of LIMIT_IN_A          : signal is true;
+attribute syn_preserve of LIMIT_MONITOR_REG_O : signal is true;
+attribute syn_preserve of MPI_A               : signal is true;
 
 begin
 
