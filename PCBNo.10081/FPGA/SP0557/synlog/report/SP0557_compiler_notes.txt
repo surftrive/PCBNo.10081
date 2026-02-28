@@ -307,11 +307,11 @@
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\adr_sel.vhd":20:7:20:13|Synthesizing work.adr_sel.rtl.
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\node_sel.vhd":20:7:20:14|Synthesizing work.node_sel.rtl.
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":26:7:26:17|Synthesizing work.slv_rx_ctrl.rtl.
-@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":438:3:438:16|OTHERS clause is not synthesized.
+@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":437:3:437:16|OTHERS clause is not synthesized.
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":25:7:25:17|Synthesizing work.slv_tx_ctrl.rtl.
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rst_cnt.vhd":20:7:20:13|Synthesizing work.rst_cnt.rtl.
 @N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Trying to extract state machine for register STATE.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Trying to extract state machine for register STATE.
+@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Trying to extract state machine for register STATE.
 @N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd":132:2:132:3|Trying to extract state machine for register state_count.
 @N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd":25:2:25:9|Input RX_EMPTY is unused.
 @N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com.vhd":28:8:28:12|Input CLK2A is unused.

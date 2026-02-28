@@ -6,17 +6,17 @@
 -->
 </STYLE>
 </HEAD>
-<PRE><A name="Par"></A>PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
+<PRE><A name="Par"></A>PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Feb 26 10:47:24 2026
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Sat Feb 28 20:15:03 2026
 
-C:/lscc/diamond/3.13/ispfpga\bin\nt64\par -f SP0557_SP0557.p2t
+C:/lscc/diamond/3.14/ispfpga\bin\nt64\par -f SP0557_SP0557.p2t
 SP0557_SP0557_map.ncd SP0557_SP0557.dir SP0557_SP0557.prf -gui -msgset
-C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3/promote.xml
+C:/FPGA work/PCBNo.10081/FPGA/promote.xml
 
 
 Preference file: SP0557_SP0557.prf.
@@ -25,22 +25,22 @@ Preference file: SP0557_SP0557.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-<span style="background-color:red">5_1   *      0            -1.275       1275         -0.571       1698         04:10        Completed</span>
+<span style="background-color:red">5_1   *      0            -0.154       154          -0.321       492          03:09        Completed</span>
 * : Design saved.
 
-Total (real) run time for 1-seed: 4 mins 11 secs 
+Total (real) run time for 1-seed: 3 mins 10 secs 
 
 par done!
 
 Note: user must run &apos;Trace&apos; for timing closure signoff.
 
 Lattice Place and Route Report for Design &quot;SP0557_SP0557_map.ncd&quot;
-Thu Feb 26 10:47:24 2026
+Sat Feb 28 20:15:03 2026
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
-PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
-Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1:par_low_skew_clock_net=0 SP0557_SP0557_map.ncd SP0557_SP0557.dir/5_1.ncd SP0557_SP0557.prf
+PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset &quot;C:/FPGA work/PCBNo.10081/FPGA/promote.xml&quot; -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1:par_low_skew_clock_net=0 SP0557_SP0557_map.ncd SP0557_SP0557.dir/5_1.ncd SP0557_SP0557.prf
 Preference file: SP0557_SP0557.prf.
 Placement level-cost: 5-1.
 Routing Iterations: 6
@@ -52,7 +52,7 @@ Vendor:      LATTICE
 Device:      LFE5U-25F
 Package:     CABGA256
 Performance: 6
-Loading device for application par from file &apos;sa5p25.nph&apos; in environment: C:/lscc/diamond/3.13/ispfpga.
+Loading device for application par from file &apos;sa5p25.nph&apos; in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.44.
 Performance Hardware Data Status:   Final          Version 55.1.
 License checked out.
@@ -66,53 +66,52 @@ Ignore Preference Error(s):  True
                     127/197          64% bonded
    IOLOGIC           83/199          41% used
 
-   SLICE          10843/12144        89% used
+   SLICE          10335/12144        85% used
 
    GSR                1/1           100% used
    EBR                4/56            7% used
    PLL                1/2            50% used
 
 
-WARNING - par: Input and feedback clock frequencies do not match their divider settings for slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0. If you desire to change the PLL frequency settings, you can do so by regenerating your PLL module.
-Number of Signals: 25279
-Number of Connections: 70183
+Number of Signals: 24384
+Number of Connections: 68126
 
 Pin Constraint Summary:
    127 out of 127 pins locked (100% locked).
 
 The following 16 signals are selected to use the primary clock routing resources:
-    slv_com_top_inst.CLKCOM_OUT (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 172/0/0)
+    slv_com_top_inst.CLKCOM_OUT (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 173/0/0)
     slv_com_top_inst/CLK2A (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 16/0/0)
-    s_PLL_CLK20M (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 5136/0/0)
-    slv_com_top_inst.CLK1 (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 364/0/0)
+    s_PLL_CLK20M (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 5165/0/0)
+    slv_com_top_inst.CLK1 (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 368/0/0)
     CLK20M_c (driver: CLK20M, clk/ce/sr load #: 9/0/0)
-    slv_com_top_inst.s_RSTb1_i (driver: slv_com_top_inst/slv_ctrl_top_inst/SLICE_10863, clk/ce/sr load #: 0/0/242)
-    stm11/ppmc_reg_S118M_inst/nMRST_i_1 (driver: stm11/ppmc_reg_S118M_inst/SLICE_10497, clk/ce/sr load #: 0/0/151)
-    gpio01/N_346_i_2 (driver: gpio01/fc_dec_inst/SLICE_10890, clk/ce/sr load #: 0/61/0)
-    gpio01/N_346_i_1 (driver: gpio01/fc_dec_inst/SLICE_10419, clk/ce/sr load #: 0/60/0)
-    gpio01/N_346_i (driver: gpio01/fc_dec_inst/SLICE_10419, clk/ce/sr load #: 0/57/0)
-    gpio02/N_345_i_2 (driver: gpio02/fc_dec_inst/SLICE_10396, clk/ce/sr load #: 0/55/0)
-    gpio02/N_345_i (driver: SLICE_10888, clk/ce/sr load #: 0/55/0)
-    gpio02/N_345_i_1 (driver: gpio02/fc_dec_inst/SLICE_10396, clk/ce/sr load #: 0/53/0)
-    slv_com_top_inst/TX_RSTb_i_r4 (driver: slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/SLICE_10222, clk/ce/sr load #: 0/0/41)
-    N_36_i (driver: gpio02/fc_dec_inst/SLICE_10395, clk/ce/sr load #: 0/39/0)
-    slv_com_top_inst/TX_RSTb_i_r12 (driver: slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/SLICE_10220, clk/ce/sr load #: 0/0/30)
+    s_RSTb1_i_o2 (driver: slv_com_top_inst/SLICE_4664, clk/ce/sr load #: 0/0/243)
+    stm11/ppmc_reg_S118M_inst/nMRST_i_1 (driver: stm11/ppmc_reg_S118M_inst/SLICE_10016, clk/ce/sr load #: 0/0/158)
+    gpio02/LOAD_L_i_i_a2 (driver: SLICE_9712, clk/ce/sr load #: 0/60/0)
+    gpio02/N_761_1 (driver: gpio02/fc_dec_inst/SLICE_9909, clk/ce/sr load #: 0/59/0)
+    gpio02/N_761_2 (driver: gpio02/fc_dec_inst/SLICE_9909, clk/ce/sr load #: 0/55/0)
+    gpio01/N_759_2 (driver: SLICE_10512, clk/ce/sr load #: 0/54/0)
+    gpio01/LOAD_L_i_i_a2_0 (driver: SLICE_9712, clk/ce/sr load #: 0/52/0)
+    gpio01/N_759_1 (driver: SLICE_10511, clk/ce/sr load #: 0/49/0)
+    LATCH_L_i_i_a2 (driver: SLICE_7918, clk/ce/sr load #: 0/39/0)
+    slv_com_top_inst/TX_RSTb_i_r11 (driver: slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/SLICE_9706, clk/ce/sr load #: 0/0/30)
+    slv_com_top_inst/LOCKED (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 0/0/30)
 
 
-Signal s_LRSTb_r46 is selected as Global Set/Reset.
+Signal s_LRSTb_r45 is selected as Global Set/Reset.
 Starting Placer Phase 0.
 ..........
-Finished Placer Phase 0.  REAL time: 57 secs 
+Finished Placer Phase 0.  REAL time: 49 secs 
 
 Starting Placer Phase 1.
-......................................
-Placer score = 7173197.
-Finished Placer Phase 1.  REAL time: 2 mins 10 secs 
+..................................
+Placer score = 6946808.
+Finished Placer Phase 1.  REAL time: 1 mins 36 secs 
 
 Starting Placer Phase 2.
-..
-Placer score =  6946977
-Finished Placer Phase 2.  REAL time: 2 mins 25 secs 
+.
+Placer score =  6730681
+Finished Placer Phase 2.  REAL time: 1 mins 45 secs 
 
 
 
@@ -127,57 +126,61 @@ Global Clock Resources:
   CLKDIV     : 0 out of 4 (0%)
 
 Quadrant TL Clocks:
-  PRIMARY &quot;s_PLL_CLK20M&quot; from CLKOS2 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 1433
-  PRIMARY &quot;slv_com_top_inst.CLK1&quot; from CLKOS3 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 3
-  PRIMARY &quot;slv_com_top_inst.s_RSTb1_i&quot; from F1 on comp &quot;slv_com_top_inst/slv_ctrl_top_inst/SLICE_10863&quot; on site &quot;R31C60C&quot;, CLK/CE/SR load = 3
-  PRIMARY &quot;gpio01/N_346_i_2&quot; from F1 on comp &quot;gpio01/fc_dec_inst/SLICE_10890&quot; on site &quot;R20C46B&quot;, CLK/CE/SR load = 37
-  PRIMARY &quot;gpio01/N_346_i_1&quot; from F1 on comp &quot;gpio01/fc_dec_inst/SLICE_10419&quot; on site &quot;R34C40B&quot;, CLK/CE/SR load = 30
-  PRIMARY &quot;gpio01/N_346_i&quot; from F0 on comp &quot;gpio01/fc_dec_inst/SLICE_10419&quot; on site &quot;R34C40B&quot;, CLK/CE/SR load = 35
-  PRIMARY &quot;gpio02/N_345_i_2&quot; from F1 on comp &quot;gpio02/fc_dec_inst/SLICE_10396&quot; on site &quot;R31C40A&quot;, CLK/CE/SR load = 42
-  PRIMARY &quot;gpio02/N_345_i&quot; from F0 on comp &quot;SLICE_10888&quot; on site &quot;R16C21B&quot;, CLK/CE/SR load = 32
-  PRIMARY &quot;gpio02/N_345_i_1&quot; from F0 on comp &quot;gpio02/fc_dec_inst/SLICE_10396&quot; on site &quot;R31C40A&quot;, CLK/CE/SR load = 38
+  PRIMARY &quot;s_PLL_CLK20M&quot; from CLKOS2 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 1451
+  PRIMARY &quot;slv_com_top_inst.CLK1&quot; from CLKOS3 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 4
+  PRIMARY &quot;s_RSTb1_i_o2&quot; from F1 on comp &quot;slv_com_top_inst/SLICE_4664&quot; on site &quot;R24C69A&quot;, CLK/CE/SR load = 4
+  PRIMARY &quot;stm11/ppmc_reg_S118M_inst/nMRST_i_1&quot; from F1 on comp &quot;stm11/ppmc_reg_S118M_inst/SLICE_10016&quot; on site &quot;R44C22B&quot;, CLK/CE/SR load = 2
+  PRIMARY &quot;gpio02/LOAD_L_i_i_a2&quot; from F0 on comp &quot;SLICE_9712&quot; on site &quot;R34C40D&quot;, CLK/CE/SR load = 45
+  PRIMARY &quot;gpio02/N_761_1&quot; from F0 on comp &quot;gpio02/fc_dec_inst/SLICE_9909&quot; on site &quot;R30C33C&quot;, CLK/CE/SR load = 42
+  PRIMARY &quot;gpio02/N_761_2&quot; from F1 on comp &quot;gpio02/fc_dec_inst/SLICE_9909&quot; on site &quot;R30C33C&quot;, CLK/CE/SR load = 35
+  PRIMARY &quot;gpio01/N_759_2&quot; from F0 on comp &quot;SLICE_10512&quot; on site &quot;R38C28A&quot;, CLK/CE/SR load = 34
+  PRIMARY &quot;gpio01/LOAD_L_i_i_a2_0&quot; from F1 on comp &quot;SLICE_9712&quot; on site &quot;R34C40D&quot;, CLK/CE/SR load = 23
+  PRIMARY &quot;gpio01/N_759_1&quot; from F0 on comp &quot;SLICE_10511&quot; on site &quot;R36C26C&quot;, CLK/CE/SR load = 34
 
-  PRIMARY  : 9 out of 16 (56%)
+  PRIMARY  : 10 out of 16 (62%)
 
 Quadrant TR Clocks:
-  PRIMARY &quot;slv_com_top_inst.CLKCOM_OUT&quot; from CLKOP on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 117
-  PRIMARY &quot;slv_com_top_inst/CLK2A&quot; from CLKOS on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 16
-  PRIMARY &quot;s_PLL_CLK20M&quot; from CLKOS2 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 1237
-  PRIMARY &quot;slv_com_top_inst.CLK1&quot; from CLKOS3 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 200
-  PRIMARY &quot;CLK20M_c&quot; from comp &quot;CLK20M&quot; on CLK_PIN site &quot;J16 (PR23A)&quot;, CLK/CE/SR load = 8
-  PRIMARY &quot;slv_com_top_inst.s_RSTb1_i&quot; from F1 on comp &quot;slv_com_top_inst/slv_ctrl_top_inst/SLICE_10863&quot; on site &quot;R31C60C&quot;, CLK/CE/SR load = 127
-  PRIMARY &quot;gpio01/N_346_i_2&quot; from F1 on comp &quot;gpio01/fc_dec_inst/SLICE_10890&quot; on site &quot;R20C46B&quot;, CLK/CE/SR load = 24
-  PRIMARY &quot;gpio01/N_346_i_1&quot; from F1 on comp &quot;gpio01/fc_dec_inst/SLICE_10419&quot; on site &quot;R34C40B&quot;, CLK/CE/SR load = 30
-  PRIMARY &quot;gpio01/N_346_i&quot; from F0 on comp &quot;gpio01/fc_dec_inst/SLICE_10419&quot; on site &quot;R34C40B&quot;, CLK/CE/SR load = 22
-  PRIMARY &quot;gpio02/N_345_i_2&quot; from F1 on comp &quot;gpio02/fc_dec_inst/SLICE_10396&quot; on site &quot;R31C40A&quot;, CLK/CE/SR load = 12
-  PRIMARY &quot;gpio02/N_345_i&quot; from F0 on comp &quot;SLICE_10888&quot; on site &quot;R16C21B&quot;, CLK/CE/SR load = 23
-  PRIMARY &quot;gpio02/N_345_i_1&quot; from F0 on comp &quot;gpio02/fc_dec_inst/SLICE_10396&quot; on site &quot;R31C40A&quot;, CLK/CE/SR load = 15
-  PRIMARY &quot;slv_com_top_inst/TX_RSTb_i_r4&quot; from F1 on comp &quot;slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/SLICE_10222&quot; on site &quot;R18C67B&quot;, CLK/CE/SR load = 41
-  PRIMARY &quot;N_36_i&quot; from F0 on comp &quot;gpio02/fc_dec_inst/SLICE_10395&quot; on site &quot;R12C33B&quot;, CLK/CE/SR load = 39
-  PRIMARY &quot;slv_com_top_inst/TX_RSTb_i_r12&quot; from F0 on comp &quot;slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/SLICE_10220&quot; on site &quot;R16C65B&quot;, CLK/CE/SR load = 7
+  PRIMARY &quot;slv_com_top_inst.CLKCOM_OUT&quot; from CLKOP on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 32
+  PRIMARY &quot;s_PLL_CLK20M&quot; from CLKOS2 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 1529
+  PRIMARY &quot;slv_com_top_inst.CLK1&quot; from CLKOS3 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 20
+  PRIMARY &quot;CLK20M_c&quot; from comp &quot;CLK20M&quot; on CLK_PIN site &quot;J16 (PR23A)&quot;, CLK/CE/SR load = 6
+  PRIMARY &quot;s_RSTb1_i_o2&quot; from F1 on comp &quot;slv_com_top_inst/SLICE_4664&quot; on site &quot;R24C69A&quot;, CLK/CE/SR load = 14
+  PRIMARY &quot;stm11/ppmc_reg_S118M_inst/nMRST_i_1&quot; from F1 on comp &quot;stm11/ppmc_reg_S118M_inst/SLICE_10016&quot; on site &quot;R44C22B&quot;, CLK/CE/SR load = 1
+  PRIMARY &quot;gpio02/LOAD_L_i_i_a2&quot; from F0 on comp &quot;SLICE_9712&quot; on site &quot;R34C40D&quot;, CLK/CE/SR load = 15
+  PRIMARY &quot;gpio02/N_761_1&quot; from F0 on comp &quot;gpio02/fc_dec_inst/SLICE_9909&quot; on site &quot;R30C33C&quot;, CLK/CE/SR load = 16
+  PRIMARY &quot;gpio02/N_761_2&quot; from F1 on comp &quot;gpio02/fc_dec_inst/SLICE_9909&quot; on site &quot;R30C33C&quot;, CLK/CE/SR load = 20
+  PRIMARY &quot;gpio01/N_759_2&quot; from F0 on comp &quot;SLICE_10512&quot; on site &quot;R38C28A&quot;, CLK/CE/SR load = 20
+  PRIMARY &quot;gpio01/LOAD_L_i_i_a2_0&quot; from F1 on comp &quot;SLICE_9712&quot; on site &quot;R34C40D&quot;, CLK/CE/SR load = 29
+  PRIMARY &quot;gpio01/N_759_1&quot; from F0 on comp &quot;SLICE_10511&quot; on site &quot;R36C26C&quot;, CLK/CE/SR load = 15
+  PRIMARY &quot;LATCH_L_i_i_a2&quot; from F0 on comp &quot;SLICE_7918&quot; on site &quot;R32C42B&quot;, CLK/CE/SR load = 36
+  PRIMARY &quot;slv_com_top_inst/TX_RSTb_i_r11&quot; from F0 on comp &quot;slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/SLICE_9706&quot; on site &quot;R26C59A&quot;, CLK/CE/SR load = 2
+  PRIMARY &quot;slv_com_top_inst/LOCKED&quot; from LOCK on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 12
 
   PRIMARY  : 15 out of 16 (93%)
 
 Quadrant BL Clocks:
-  PRIMARY &quot;slv_com_top_inst.CLKCOM_OUT&quot; from CLKOP on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 3
-  PRIMARY &quot;s_PLL_CLK20M&quot; from CLKOS2 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 1136
-  PRIMARY &quot;slv_com_top_inst.CLK1&quot; from CLKOS3 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 14
-  PRIMARY &quot;slv_com_top_inst.s_RSTb1_i&quot; from F1 on comp &quot;slv_com_top_inst/slv_ctrl_top_inst/SLICE_10863&quot; on site &quot;R31C60C&quot;, CLK/CE/SR load = 14
-  PRIMARY &quot;stm11/ppmc_reg_S118M_inst/nMRST_i_1&quot; from F1 on comp &quot;stm11/ppmc_reg_S118M_inst/SLICE_10497&quot; on site &quot;R41C32B&quot;, CLK/CE/SR load = 55
-  PRIMARY &quot;gpio02/N_345_i_2&quot; from F1 on comp &quot;gpio02/fc_dec_inst/SLICE_10396&quot; on site &quot;R31C40A&quot;, CLK/CE/SR load = 1
+  PRIMARY &quot;slv_com_top_inst.CLKCOM_OUT&quot; from CLKOP on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 26
+  PRIMARY &quot;s_PLL_CLK20M&quot; from CLKOS2 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 1068
+  PRIMARY &quot;slv_com_top_inst.CLK1&quot; from CLKOS3 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 96
+  PRIMARY &quot;s_RSTb1_i_o2&quot; from F1 on comp &quot;slv_com_top_inst/SLICE_4664&quot; on site &quot;R24C69A&quot;, CLK/CE/SR load = 79
+  PRIMARY &quot;stm11/ppmc_reg_S118M_inst/nMRST_i_1&quot; from F1 on comp &quot;stm11/ppmc_reg_S118M_inst/SLICE_10016&quot; on site &quot;R44C22B&quot;, CLK/CE/SR load = 147
 
-  PRIMARY  : 6 out of 16 (37%)
+  PRIMARY  : 5 out of 16 (31%)
 
 Quadrant BR Clocks:
-  PRIMARY &quot;slv_com_top_inst.CLKCOM_OUT&quot; from CLKOP on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 52
-  PRIMARY &quot;s_PLL_CLK20M&quot; from CLKOS2 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 1330
-  PRIMARY &quot;slv_com_top_inst.CLK1&quot; from CLKOS3 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 147
-  PRIMARY &quot;CLK20M_c&quot; from comp &quot;CLK20M&quot; on CLK_PIN site &quot;J16 (PR23A)&quot;, CLK/CE/SR load = 1
-  PRIMARY &quot;slv_com_top_inst.s_RSTb1_i&quot; from F1 on comp &quot;slv_com_top_inst/slv_ctrl_top_inst/SLICE_10863&quot; on site &quot;R31C60C&quot;, CLK/CE/SR load = 98
-  PRIMARY &quot;stm11/ppmc_reg_S118M_inst/nMRST_i_1&quot; from F1 on comp &quot;stm11/ppmc_reg_S118M_inst/SLICE_10497&quot; on site &quot;R41C32B&quot;, CLK/CE/SR load = 96
-  PRIMARY &quot;slv_com_top_inst/TX_RSTb_i_r12&quot; from F0 on comp &quot;slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/SLICE_10220&quot; on site &quot;R16C65B&quot;, CLK/CE/SR load = 23
+  PRIMARY &quot;slv_com_top_inst.CLKCOM_OUT&quot; from CLKOP on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 115
+  PRIMARY &quot;slv_com_top_inst/CLK2A&quot; from CLKOS on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 16
+  PRIMARY &quot;s_PLL_CLK20M&quot; from CLKOS2 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 1117
+  PRIMARY &quot;slv_com_top_inst.CLK1&quot; from CLKOS3 on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 248
+  PRIMARY &quot;CLK20M_c&quot; from comp &quot;CLK20M&quot; on CLK_PIN site &quot;J16 (PR23A)&quot;, CLK/CE/SR load = 3
+  PRIMARY &quot;s_RSTb1_i_o2&quot; from F1 on comp &quot;slv_com_top_inst/SLICE_4664&quot; on site &quot;R24C69A&quot;, CLK/CE/SR load = 146
+  PRIMARY &quot;stm11/ppmc_reg_S118M_inst/nMRST_i_1&quot; from F1 on comp &quot;stm11/ppmc_reg_S118M_inst/SLICE_10016&quot; on site &quot;R44C22B&quot;, CLK/CE/SR load = 8
+  PRIMARY &quot;gpio02/N_761_1&quot; from F0 on comp &quot;gpio02/fc_dec_inst/SLICE_9909&quot; on site &quot;R30C33C&quot;, CLK/CE/SR load = 1
+  PRIMARY &quot;LATCH_L_i_i_a2&quot; from F0 on comp &quot;SLICE_7918&quot; on site &quot;R32C42B&quot;, CLK/CE/SR load = 3
+  PRIMARY &quot;slv_com_top_inst/TX_RSTb_i_r11&quot; from F0 on comp &quot;slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/SLICE_9706&quot; on site &quot;R26C59A&quot;, CLK/CE/SR load = 28
+  PRIMARY &quot;slv_com_top_inst/LOCKED&quot; from LOCK on comp &quot;slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0&quot; on PLL site &quot;PLL_BL0&quot;, CLK/CE/SR load = 18
 
-  PRIMARY  : 7 out of 16 (43%)
+  PRIMARY  : 11 out of 16 (68%)
 
 Edge Clocks:
 
@@ -207,16 +210,16 @@ I/O Bank Usage Summary:
 | 8        | 0 / 13 (  0%)  | -          | -          | -          |
 +----------+----------------+------------+------------+------------+
 
-Total placer CPU time: 1 mins 25 secs 
+Total placer CPU time: 1 mins 32 secs 
 
 Dumping design to file SP0557_SP0557.dir/5_1.ncd.
 
-0 connections routed; 70183 unrouted.
+0 connections routed; 68126 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 2 mins 42 secs 
+Completed router resource preassignment. Real time: 1 mins 55 secs 
 
-Start NBR router at 10:50:08 02/26/26
+Start NBR router at 20:16:59 02/28/26
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -231,77 +234,77 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 10:50:11 02/26/26
+Start NBR special constraint process at 20:17:01 02/28/26
 
-Start NBR section for initial routing at 10:50:13 02/26/26
+Start NBR section for initial routing at 20:17:03 02/28/26
 Level 1, iteration 1
-0(0.00%) conflict; 56922(81.11%) untouched conns; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 2 mins 53 secs 
+0(0.00%) conflict; 54785(80.42%) untouched conns; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 4 secs 
 Level 2, iteration 1
-0(0.00%) conflict; 56909(81.09%) untouched conns; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 2 mins 56 secs 
+0(0.00%) conflict; 54772(80.40%) untouched conns; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 6 secs 
 Level 3, iteration 1
-0(0.00%) conflict; 56739(80.84%) untouched conns; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 2 mins 58 secs 
+1(0.00%) conflict; 54671(80.25%) untouched conns; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 9 secs 
 Level 4, iteration 1
-3796(0.33%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 10 secs 
+3491(0.30%) conflicts; 0(0.00%) untouched conn; 755963 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -11.470ns/-755.963ns; real time: 2 mins 18 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 10:50:35 02/26/26
-Level 1, iteration 1
-4(0.00%) conflicts; 5908(8.42%) untouched conns; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 13 secs 
-Level 2, iteration 1
-0(0.00%) conflict; 5914(8.43%) untouched conns; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 16 secs 
-Level 3, iteration 1
-0(0.00%) conflict; 5914(8.43%) untouched conns; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 16 secs 
+Start NBR section for normal routing at 20:17:21 02/28/26
 Level 4, iteration 1
-2017(0.17%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 21 secs 
+2325(0.20%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 26 secs 
 Level 4, iteration 2
-1044(0.09%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 26 secs 
+1295(0.11%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 30 secs 
 Level 4, iteration 3
-496(0.04%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 29 secs 
+655(0.06%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 33 secs 
 Level 4, iteration 4
-236(0.02%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 30 secs 
+331(0.03%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 34 secs 
 Level 4, iteration 5
-90(0.01%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 33 secs 
+172(0.01%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 36 secs 
 Level 4, iteration 6
-27(0.00%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 33 secs 
+94(0.01%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 37 secs 
 Level 4, iteration 7
-12(0.00%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 36 secs 
+54(0.00%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 39 secs 
 Level 4, iteration 8
-3(0.00%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 36 secs 
+25(0.00%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 39 secs 
 Level 4, iteration 9
-2(0.00%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 38 secs 
+12(0.00%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 41 secs 
 Level 4, iteration 10
-0(0.00%) conflict; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 38 secs 
+4(0.00%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 41 secs 
+Level 4, iteration 11
+3(0.00%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 43 secs 
+Level 4, iteration 12
+1(0.00%) conflict; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 43 secs 
+Level 4, iteration 13
+0(0.00%) conflict; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 45 secs 
 
-Start NBR section for performance tuning (iteration 1) at 10:51:02 02/26/26
+Start NBR section for performance tuning (iteration 1) at 20:17:48 02/28/26
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 38 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 45 secs 
 
-Start NBR section for re-routing at 10:51:02 02/26/26
+Start NBR section for re-routing at 20:17:48 02/28/26
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: -1.275ns/-2.550ns; real time: 3 mins 39 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: -0.154ns/-0.308ns; real time: 2 mins 46 secs 
 
-Start NBR section for post-routing at 10:51:03 02/26/26
+Start NBR section for post-routing at 20:17:49 02/28/26
 
 End NBR router with 0 unrouted connection
 
@@ -309,21 +312,21 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 2 (0.00%)
-  Estimated worst slack&lt;setup&gt; : -1.275ns
-  Timing score&lt;setup&gt; : 1275
+  Estimated worst slack&lt;setup&gt; : -0.154ns
+  Timing score&lt;setup&gt; : 154
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-Total CPU time 2 mins 9 secs 
-Total REAL time: 4 mins 7 secs 
+Total CPU time 2 mins 42 secs 
+Total REAL time: 3 mins 7 secs 
 Completely routed.
-End of route.  70183 routed (100.00%); 0 unrouted.
+End of route.  68126 routed (100.00%); 0 unrouted.
 
-Hold time timing score: 1, hold timing errors: 4
+Hold time timing score: 0, hold timing errors: 2
 
-Timing score: 1275 
+Timing score: 154 
 
 Dumping design to file SP0557_SP0557.dir/5_1.ncd.
 
@@ -333,14 +336,14 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack&lt;setup/&lt;ns&gt;&gt; = -1.275
-PAR_SUMMARY::Timing score&lt;setup/&lt;ns&gt;&gt; = 1.275
-PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = -0.571
-PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = 1.698
+PAR_SUMMARY::Worst  slack&lt;setup/&lt;ns&gt;&gt; = -0.154
+PAR_SUMMARY::Timing score&lt;setup/&lt;ns&gt;&gt; = 0.154
+PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = -0.321
+PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = 0.492
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 2 mins 11 secs 
-Total REAL time to completion: 4 mins 11 secs 
+Total CPU  time to completion: 2 mins 45 secs 
+Total REAL time to completion: 3 mins 10 secs 
 
 par done!
 
@@ -350,7 +353,7 @@ Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&amp;T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
 
 

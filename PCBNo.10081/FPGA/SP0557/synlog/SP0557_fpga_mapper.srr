@@ -1,4 +1,4 @@
-# Sat Feb 28 01:53:29 2026
+# Sat Feb 28 20:11:44 2026
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -170,25 +170,25 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00
 @N: MO231 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rst_cnt.vhd":72:2:72:3|Found counter in view:work.slv_com_top(rtl) instance rst_cnt_inst.clk2p_cntr[8:0] 
 @N: MO231 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rst_cnt.vhd":60:2:60:3|Found counter in view:work.slv_com_top(rtl) instance rst_cnt_inst.clk_cntr[8:0] 
 @N: MO231 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Found counter in view:work.slv_tx_ctrl(rtl) instance LA[4:0] 
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance prpty_data[7] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
-@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Boundary register prpty_data[7] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance prpty_data[5] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
-@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Boundary register prpty_data[5] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance prpty_data[4] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
-@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Boundary register prpty_data[4] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance prpty_data[3] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
-@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Boundary register prpty_data[3] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance prpty_data[2] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
-@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Boundary register prpty_data[2] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance prpty_data[1] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
-@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Boundary register prpty_data[1] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance prpty_data[0] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
-@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Boundary register prpty_data[0] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[0] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[1] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[2] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[3] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@N: MO231 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Found counter in view:work.slv_rx_ctrl(rtl) instance LA[4:0] 
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance prpty_data[7] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
+@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Boundary register prpty_data[7] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance prpty_data[5] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
+@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Boundary register prpty_data[5] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance prpty_data[4] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
+@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Boundary register prpty_data[4] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance prpty_data[3] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
+@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Boundary register prpty_data[3] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance prpty_data[2] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
+@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Boundary register prpty_data[2] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance prpty_data[1] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
+@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Boundary register prpty_data[1] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance prpty_data[0] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
+@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Boundary register prpty_data[0] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[0] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[1] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[2] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[3] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: MO231 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Found counter in view:work.slv_rx_ctrl(rtl) instance LA[4:0] 
 @N: MO231 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\tx_com\tx_ctl_1st.vhd":80:2:80:3|Found counter in view:work.tx_ctl_1st(rtl) instance txdt_count[3:0] 
 @N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec8b10b_new.vhd":82:8:82:9|Removing sequential instance DATAIN_BUF[1] (in view: work.dec8b10b_new(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec8b10b_new.vhd":82:8:82:9|Removing sequential instance DATAIN_BUF[0] (in view: work.dec8b10b_new(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
@@ -608,10 +608,10 @@ Only the first 100 messages of id 'MO231' are reported. To see all messages use 
 @N: MO230 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_speed_cnt.vhd":57:8:57:9|Found up-down counter in view:work.ppmc_speed_cnt_12(rtl) instance reg[15:0]  
 @N: MF179 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_pls_cnt.vhd":69:50:69:64|Found 16 by 16 bit equality operator ('==') un4_o_slow (in view: work.ppmc_pls_cnt_12(rtl))
 
-Starting factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 318MB peak: 351MB)
+Starting factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 319MB peak: 351MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 331MB peak: 351MB)
+Finished factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 331MB peak: 351MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -686,83 +686,83 @@ NConnInternalConnection caching is on
 
 Only the first 100 messages of id 'BN161' are reported. To see all messages use 'report_messages -log C:\FPGA work\PCBNo.10081\FPGA\SP0557\synlog\SP0557_fpga_mapper.srr -id BN161' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN161} -count unlimited' in the Tcl shell.
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 396MB peak: 436MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 397MB peak: 436MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:19s; Memory used current: 400MB peak: 436MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 400MB peak: 436MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:55s; CPU Time elapsed 0h:00m:54s; Memory used current: 443MB peak: 464MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:52s; CPU Time elapsed 0h:00m:51s; Memory used current: 443MB peak: 463MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:56s; CPU Time elapsed 0h:00m:55s; Memory used current: 445MB peak: 464MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:53s; CPU Time elapsed 0h:00m:53s; Memory used current: 445MB peak: 463MB)
 
-@N: FX214 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":59:16:59:19|Generating ROM slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0[5:0] (in view: work.SP0557(rtl)).
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":59:16:59:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[0] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":59:16:59:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[1] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":59:16:59:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[2] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":59:16:59:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[3] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":59:16:59:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[4] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":59:16:59:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[5] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: FX214 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Generating ROM slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0[5:0] (in view: work.SP0557(rtl)).
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[0] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[1] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[2] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[3] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[4] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[5] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Finished preparing to map (Real Time elapsed 0h:01m:04s; CPU Time elapsed 0h:01m:03s; Memory used current: 446MB peak: 464MB)
+Finished preparing to map (Real Time elapsed 0h:01m:01s; CPU Time elapsed 0h:01m:00s; Memory used current: 446MB peak: 463MB)
 
 @N: FX1019 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":144:3:144:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.cz[2] (in view: work.SP0557(rtl)).
 @N: FX1019 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":113:3:113:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.bz[1] (in view: work.SP0557(rtl)).
 
-Finished technology mapping (Real Time elapsed 0h:01m:11s; CPU Time elapsed 0h:01m:10s; Memory used current: 523MB peak: 523MB)
+Finished technology mapping (Real Time elapsed 0h:01m:09s; CPU Time elapsed 0h:01m:08s; Memory used current: 523MB peak: 523MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:01m:11s		    -1.15ns		8372 /      9227
-   2		0h:01m:12s		    -1.15ns		8288 /      9227
-   3		0h:01m:12s		    -0.97ns		8289 /      9227
-   4		0h:01m:12s		    -0.97ns		8288 /      9227
-   5		0h:01m:12s		    -0.97ns		8288 /      9227
-   6		0h:01m:12s		    -0.97ns		8290 /      9227
-   7		0h:01m:13s		    -0.97ns		8290 /      9227
+   1		0h:01m:09s		    -1.15ns		8372 /      9227
+   2		0h:01m:10s		    -1.15ns		8288 /      9227
+   3		0h:01m:10s		    -0.97ns		8289 /      9227
+   4		0h:01m:10s		    -0.97ns		8288 /      9227
+   5		0h:01m:10s		    -0.97ns		8288 /      9227
+   6		0h:01m:10s		    -0.97ns		8290 /      9227
+   7		0h:01m:11s		    -0.97ns		8290 /      9227
 @N: FX1019 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":144:3:144:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.cz[2] (in view: work.SP0557(rtl)).
 @N: FX1019 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":113:3:113:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.bz[1] (in view: work.SP0557(rtl)).
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[2] (in view: work.SP0557(rtl)) with 17 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[1] (in view: work.SP0557(rtl)) with 15 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.RX_F (in view: work.SP0557(rtl)) with 39 loads 3 times to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[4] (in view: work.SP0557(rtl)) with 11 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[2] (in view: work.SP0557(rtl)) with 17 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[1] (in view: work.SP0557(rtl)) with 15 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.RX_F (in view: work.SP0557(rtl)) with 39 loads 3 times to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[4] (in view: work.SP0557(rtl)) with 11 loads 1 time to improve timing.
 @N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_tx_ctrl_inst.LA[4] (in view: work.SP0557(rtl)) with 8 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[3] (in view: work.SP0557(rtl)) with 18 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[0] (in view: work.SP0557(rtl)) with 16 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[4] (in view: work.SP0557(rtl)) with 8 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[5] (in view: work.SP0557(rtl)) with 8 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[0] (in view: work.SP0557(rtl)) with 33 loads 2 times to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.prpty_data[6] (in view: work.SP0557(rtl)) with 32 loads 2 times to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[3] (in view: work.SP0557(rtl)) with 18 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[0] (in view: work.SP0557(rtl)) with 16 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[4] (in view: work.SP0557(rtl)) with 8 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[5] (in view: work.SP0557(rtl)) with 8 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[0] (in view: work.SP0557(rtl)) with 33 loads 2 times to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.prpty_data[6] (in view: work.SP0557(rtl)) with 32 loads 2 times to improve timing.
 Timing driven replication report
 Added 15 Registers via timing driven replication
 Added 0 LUTs via timing driven replication
 
-   8		0h:01m:20s		    -0.67ns		8297 /      9242
-   9		0h:01m:20s		    -0.49ns		8303 /      9242
-  10		0h:01m:21s		    -0.67ns		8305 /      9242
-  11		0h:01m:21s		    -0.59ns		8312 /      9242
-  12		0h:01m:21s		    -0.59ns		8312 /      9242
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[1] (in view: work.SP0557(rtl)) with 23 loads 2 times to improve timing.
+   8		0h:01m:18s		    -0.67ns		8297 /      9242
+   9		0h:01m:18s		    -0.49ns		8303 /      9242
+  10		0h:01m:19s		    -0.67ns		8305 /      9242
+  11		0h:01m:19s		    -0.59ns		8312 /      9242
+  12		0h:01m:19s		    -0.59ns		8312 /      9242
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[1] (in view: work.SP0557(rtl)) with 23 loads 2 times to improve timing.
 @N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_tx_ctrl_inst.LA[1] (in view: work.SP0557(rtl)) with 16 loads 1 time to improve timing.
 @N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_tx_ctrl_inst.LA[0] (in view: work.SP0557(rtl)) with 18 loads 1 time to improve timing.
 Added 4 Registers via timing driven replication
 Added 0 LUTs via timing driven replication
 
 
-  13		0h:01m:22s		    -0.00ns		8323 /      9246
-  14		0h:01m:22s		    -0.30ns		8327 /      9246
-  15		0h:01m:22s		    -0.19ns		8328 /      9246
-  16		0h:01m:22s		    -0.13ns		8329 /      9246
-  17		0h:01m:22s		    -0.17ns		8334 /      9246
-@N: FX104 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":405:2:405:5|Inserting 3 buffers on net s_LWEb (with fanout of 277) because of a soft fanout limit of 100.
+  13		0h:01m:20s		    -0.00ns		8323 /      9246
+  14		0h:01m:20s		    -0.30ns		8327 /      9246
+  15		0h:01m:20s		    -0.19ns		8328 /      9246
+  16		0h:01m:20s		    -0.13ns		8329 /      9246
+  17		0h:01m:21s		    -0.17ns		8334 /      9246
+@N: FX104 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":404:2:404:5|Inserting 3 buffers on net s_LWEb (with fanout of 277) because of a soft fanout limit of 100.
 Net buffering Report for view:work.SP0557(rtl):
 Added 3 Buffers
 Added 19 Registers via replication
 Added 32 LUTs via replication
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:25s; CPU Time elapsed 0h:01m:24s; Memory used current: 483MB peak: 529MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:23s; CPU Time elapsed 0h:01m:22s; Memory used current: 483MB peak: 530MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 Replicating slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.TX_RSTb_i, loads=185, segments=16
@@ -787,32 +787,32 @@ Replicating gpio01.fc_dec_inst.LATCH_L_i_i_a2_1, loads=108, segments=15
 Replicating slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LRSTb, loads=340, segments=47
 replication done = 2
 
-Finished restoring hierarchy (Real Time elapsed 0h:01m:34s; CPU Time elapsed 0h:01m:32s; Memory used current: 497MB peak: 529MB)
+Finished restoring hierarchy (Real Time elapsed 0h:01m:32s; CPU Time elapsed 0h:01m:31s; Memory used current: 495MB peak: 530MB)
 
 
-Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:01m:34s; CPU Time elapsed 0h:01m:33s; Memory used current: 497MB peak: 529MB)
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:01m:32s; CPU Time elapsed 0h:01m:31s; Memory used current: 495MB peak: 530MB)
 
 
-Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:01m:34s; CPU Time elapsed 0h:01m:33s; Memory used current: 497MB peak: 529MB)
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:01m:32s; CPU Time elapsed 0h:01m:31s; Memory used current: 495MB peak: 530MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:01m:35s; CPU Time elapsed 0h:01m:33s; Memory used current: 340MB peak: 529MB)
+Start Writing Netlists (Real Time elapsed 0h:01m:33s; CPU Time elapsed 0h:01m:32s; Memory used current: 340MB peak: 530MB)
 
 Writing Analyst data base C:\FPGA work\PCBNo.10081\FPGA\SP0557\synwork\SP0557_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:01m:36s; CPU Time elapsed 0h:01m:35s; Memory used current: 456MB peak: 529MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:01m:35s; CPU Time elapsed 0h:01m:34s; Memory used current: 456MB peak: 530MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\FPGA work\PCBNo.10081\FPGA\SP0557\SP0557.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:01m:39s; CPU Time elapsed 0h:01m:38s; Memory used current: 475MB peak: 529MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:01m:37s; CPU Time elapsed 0h:01m:36s; Memory used current: 475MB peak: 530MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:01m:39s; CPU Time elapsed 0h:01m:38s; Memory used current: 475MB peak: 529MB)
+Finished Writing Netlists (Real Time elapsed 0h:01m:37s; CPU Time elapsed 0h:01m:36s; Memory used current: 475MB peak: 530MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:01m:40s; CPU Time elapsed 0h:01m:38s; Memory used current: 452MB peak: 529MB)
+Start final timing analysis (Real Time elapsed 0h:01m:38s; CPU Time elapsed 0h:01m:37s; Memory used current: 451MB peak: 530MB)
 
 @W: MT246 :"c:\fpga work\pcbno.10081\fpga\rtl\ipcore\pll_gen\pll_gen.vhd":60:4:60:12|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock pll_gen|CLKOS2_inferred_clock with period 10.00ns. Please declare a user-defined clock on net slv_com_top_inst.clk_gen_inst2.PLL_inst.s_PLL_CLK20M.
@@ -823,7 +823,7 @@ Start final timing analysis (Real Time elapsed 0h:01m:40s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Sat Feb 28 01:55:10 2026
+# Timing report written on Sat Feb 28 20:13:23 2026
 #
 
 
@@ -1830,10 +1830,10 @@ stm07.ppmc_reg_S118M_inst.inst_ppmc_rgstr.COMMAND_REG_O[0]                    FD
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:01m:40s; CPU Time elapsed 0h:01m:39s; Memory used current: 459MB peak: 529MB)
+Finished final timing analysis (Real Time elapsed 0h:01m:38s; CPU Time elapsed 0h:01m:37s; Memory used current: 459MB peak: 530MB)
 
 
-Finished timing report (Real Time elapsed 0h:01m:40s; CPU Time elapsed 0h:01m:39s; Memory used current: 459MB peak: 529MB)
+Finished timing report (Real Time elapsed 0h:01m:38s; CPU Time elapsed 0h:01m:37s; Memory used current: 459MB peak: 530MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -1882,9 +1882,9 @@ VLO:            405
 XOR2:           48
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:01m:42s; CPU Time elapsed 0h:01m:41s; Memory used current: 202MB peak: 529MB)
+At Mapper Exit (Real Time elapsed 0h:01m:40s; CPU Time elapsed 0h:01m:39s; Memory used current: 201MB peak: 530MB)
 
-Process took 0h:01m:42s realtime, 0h:01m:41s cputime
-# Sat Feb 28 01:55:12 2026
+Process took 0h:01m:40s realtime, 0h:01m:39s cputime
+# Sat Feb 28 20:13:24 2026
 
 ###########################################################]

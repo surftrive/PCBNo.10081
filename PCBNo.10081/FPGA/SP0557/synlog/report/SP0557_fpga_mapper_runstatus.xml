@@ -31,16 +31,16 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:01m:41s</data>
+<data>0h:01m:39s</data>
 </info>
 <info name="Real Time">
-<data>0h:01m:42s</data>
+<data>0h:01m:40s</data>
 </info>
 <info name="Peak Memory">
-<data>529MB</data>
+<data>530MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1772211312</data>
+<data type="timestamp">1772277204</data>
 </info>
 </job_info>
 </job_run_status>

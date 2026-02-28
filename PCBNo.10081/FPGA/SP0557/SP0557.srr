@@ -3,7 +3,7 @@
 #OS: Windows 10 or later
 #Hostname: TSURUMI
 
-# Sat Feb 28 01:52:50 2026
+# Sat Feb 28 20:11:13 2026
 
 #Implementation: SP0557
 
@@ -41,7 +41,95 @@ Synopsys VHDL Compiler, Version comp202309synp1, Build 349R, Built Sep 17 2024 0
 
 @N|Running in 64-bit mode
 @N:"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557.vhd":19:7:19:12|Top entity is set to SP0557.
-Options changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\com\fc_dec.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\com\fc_sel.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\com\w_pack.vhd changed - recompiling
+File C:\lscc\diamond\3.14\synpbase\lib\vhd2008\misc.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_clk_gen.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adc_reg.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adclk_gen.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\shiftreg12bit.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_acc_tim_gen.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_dec.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_id.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_phgen.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_timer_cnt.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_registers.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_lmt.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_id.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_ip_reg.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_op_reg.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\pls_sens\pls_sens.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slaveid_top\slaveid_id.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\crc_check.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec4b_3b.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\adr_sel.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\nd_sel.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\node_sel.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\crc_gen.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc5b_6b.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_ctl_1st.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_ctl_3rd.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\cds.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rst_cnt.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slvadr_cnv.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SPI_master2.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd changed - recompiling
+File C:\lscc\diamond\3.14\synpbase\lib\lucent\ecp5u.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\pll_gen\pll_gen.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\ad_ctrl.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_plsgen.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_reg_S118M.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_top_S118M.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_wb_top.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC43608_top.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_top.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_func_top.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_reg.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_top.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec8b10b_new.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec8b10b_wrapper.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_cont_b1.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_cont_b2.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b_10b.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b10b_new.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b10b_wrapper.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_cont_b1.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_cont_b2.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\CLK_gen_S124M.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\IPcore.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slaveid_top\slaveid_top.vhd changed - recompiling
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\lscc\diamond\3.14\cae_library\synthesis\vhdl\ecp5u.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\com\fc_dec.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\com\fc_sel.vhd'.
@@ -54,7 +142,6 @@ Options changed - recompiling
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_acc_tim_gen.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd'.
-@W: CD134 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":136:26:136:34|No such identifier, enb_start, of proper type in current declarative region
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_dec.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_id.vhd'.
@@ -82,14 +169,12 @@ Options changed - recompiling
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\crc_check.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec4b_3b.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd'.
-@W: CD134 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd":38:26:38:32|No such identifier, dataout, of proper type in current declarative region
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\adr_sel.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\nd_sel.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\node_sel.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd'.
-@W: CD134 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":94:26:94:29|No such identifier, node, of proper type in current declarative region
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\crc_gen.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd'.
@@ -137,7 +222,10 @@ Options changed - recompiling
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\IPcore.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slaveid_top\slaveid_top.vhd'.
 VHDL syntax check successful!
-Options changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_lmt.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd changed - recompiling
 @N: CD231 :"C:\lscc\diamond\3.14\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557.vhd":19:7:19:12|Synthesizing work.sp0557.rtl.
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_top.vhd":20:7:20:14|Synthesizing work.gpio_top.rtl.
@@ -149,25 +237,25 @@ Finished optimization stage 1 on gpio_ip_reg (CPU Time 0h:00m:00s, Memory Used c
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_op_reg.vhd":20:7:20:17|Synthesizing work.gpio_op_reg.rtl.
 Post processing for work.gpio_op_reg.rtl
 Running optimization stage 1 on gpio_op_reg .......
-Finished optimization stage 1 on gpio_op_reg (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 112MB)
+Finished optimization stage 1 on gpio_op_reg (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
 Post processing for work.gpio_reg.rtl
 Running optimization stage 1 on gpio_reg .......
-Finished optimization stage 1 on gpio_reg (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 112MB)
+Finished optimization stage 1 on gpio_reg (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_id.vhd":20:7:20:13|Synthesizing work.gpio_id.rtl.
 Post processing for work.gpio_id.rtl
 Running optimization stage 1 on gpio_id .......
-Finished optimization stage 1 on gpio_id (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on gpio_id (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\com\fc_sel.vhd":20:7:20:12|Synthesizing work.fc_sel.rtl.
 Post processing for work.fc_sel.rtl
 Running optimization stage 1 on fc_sel .......
-Finished optimization stage 1 on fc_sel (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on fc_sel (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\com\fc_dec.vhd":20:7:20:12|Synthesizing work.fc_dec.rtl.
 Post processing for work.fc_dec.rtl
 Running optimization stage 1 on fc_dec .......
-Finished optimization stage 1 on fc_dec (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on fc_dec (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 Post processing for work.gpio_top.rtl
 Running optimization stage 1 on gpio_top .......
-Finished optimization stage 1 on gpio_top (CPU Time 0h:00m:00s, Memory Used current: 112MB peak: 113MB)
+Finished optimization stage 1 on gpio_top (CPU Time 0h:00m:00s, Memory Used current: 113MB peak: 113MB)
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_top_S118M.vhd":48:7:48:20|Synthesizing work.ppmc_top_s118m.rtl.
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_reg_S118M.vhd":53:7:53:20|Synthesizing work.ppmc_reg_s118m.rtl.
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":25:7:25:17|Synthesizing work.ppmc_cmdchk.rtl.
@@ -208,7 +296,7 @@ Finished optimization stage 1 on ppmc_rgstr (CPU Time 0h:00m:00s, Memory Used cu
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_dec.vhd":34:7:34:14|Synthesizing work.ppmc_dec.rtl.
 Post processing for work.ppmc_dec.rtl
 Running optimization stage 1 on ppmc_dec .......
-Finished optimization stage 1 on ppmc_dec (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 116MB)
+Finished optimization stage 1 on ppmc_dec (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 117MB)
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_plsgen.vhd":19:7:19:17|Synthesizing work.ppmc_plsgen.rtl.
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":26:7:26:18|Synthesizing work.ppmc_pls_cnt.rtl.
 @N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":74:10:74:15|Removing redundant assignment.
@@ -637,11 +725,11 @@ Post processing for work.node_sel.rtl
 Running optimization stage 1 on node_sel .......
 Finished optimization stage 1 on node_sel (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 134MB)
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":26:7:26:17|Synthesizing work.slv_rx_ctrl.rtl.
-@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":438:3:438:16|OTHERS clause is not synthesized.
+@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":437:3:437:16|OTHERS clause is not synthesized.
 Post processing for work.slv_rx_ctrl.rtl
 Running optimization stage 1 on slv_rx_ctrl .......
-@A: CL282 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Feedback mux created for signal LD[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Feedback mux created for signal prpty_data[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Feedback mux created for signal LD[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Feedback mux created for signal prpty_data[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 Finished optimization stage 1 on slv_rx_ctrl (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 135MB)
 @N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":25:7:25:17|Synthesizing work.slv_tx_ctrl.rtl.
 Post processing for work.slv_tx_ctrl.rtl
@@ -686,7 +774,7 @@ State machine has 10 reachable states with original encodings of:
    1000000000
 Finished optimization stage 2 on slv_tx_ctrl (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 136MB)
 Running optimization stage 2 on slv_rx_ctrl .......
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Trying to extract state machine for register STATE.
+@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Trying to extract state machine for register STATE.
 Extracted state machine for register STATE
 State machine has 15 reachable states with original encodings of:
    00000000000001
@@ -805,7 +893,7 @@ State machine has 5 reachable states with original encodings of:
    00100
    01000
    10000
-Finished optimization stage 2 on SPI_master2 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 156MB)
+Finished optimization stage 2 on SPI_master2 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 157MB)
 Running optimization stage 2 on SIO_ctrl2 .......
 @N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SIO_ctrl2.vhd":156:2:156:3|Trying to extract state machine for register s_state.
 Extracted state machine for register s_state
@@ -814,11 +902,11 @@ State machine has 4 reachable states with original encodings of:
    01
    10
    11
-Finished optimization stage 2 on SIO_ctrl2 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 156MB)
+Finished optimization stage 2 on SIO_ctrl2 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 157MB)
 Running optimization stage 2 on sp_conv .......
-Finished optimization stage 2 on sp_conv (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 156MB)
+Finished optimization stage 2 on sp_conv (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 157MB)
 Running optimization stage 2 on EFUSE_CTRL .......
-Finished optimization stage 2 on EFUSE_CTRL (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 156MB)
+Finished optimization stage 2 on EFUSE_CTRL (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 157MB)
 Running optimization stage 2 on i2c_master_byte_ctrl .......
 @N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd":177:1:177:2|Trying to extract state machine for register c_state.
 Extracted state machine for register c_state
@@ -830,7 +918,7 @@ State machine has 6 reachable states with original encodings of:
    01000
    10000
 @N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd":85:8:85:14|Input clk_cnt is unused.
-Finished optimization stage 2 on i2c_master_byte_ctrl (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 156MB)
+Finished optimization stage 2 on i2c_master_byte_ctrl (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 157MB)
 Running optimization stage 2 on i2c_master_bit_ctrl .......
 @N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd":357:1:357:2|Trying to extract state machine for register c_state.
 Extracted state machine for register c_state
@@ -853,11 +941,11 @@ State machine has 18 reachable states with original encodings of:
    00100000000000000
    01000000000000000
    10000000000000000
-Finished optimization stage 2 on i2c_master_bit_ctrl (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 156MB)
+Finished optimization stage 2 on i2c_master_bit_ctrl (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 157MB)
 Running optimization stage 2 on i2c_master_registers .......
-Finished optimization stage 2 on i2c_master_registers (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 156MB)
+Finished optimization stage 2 on i2c_master_registers (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 157MB)
 Running optimization stage 2 on i2c_master_wb_top .......
-Finished optimization stage 2 on i2c_master_wb_top (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 156MB)
+Finished optimization stage 2 on i2c_master_wb_top (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 157MB)
 Running optimization stage 2 on DAC_CTRL_1CH .......
 @N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":103:2:103:3|Trying to extract state machine for register st.
 Extracted state machine for register st
@@ -946,7 +1034,7 @@ State machine has 81 reachable states with original encodings of:
 @W: CL246 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":37:2:37:9|Input port bits 5 to 2 of wb_dat_o(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
 @W: CL247 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":37:2:37:9|Input port bit 0 of wb_dat_o(7 downto 0) is unused 
 @N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":42:2:42:10|Input WB_INTA_O is unused.
-Finished optimization stage 2 on DAC_CTRL_1CH (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 156MB)
+Finished optimization stage 2 on DAC_CTRL_1CH (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 157MB)
 Running optimization stage 2 on CTRL_32CH .......
 @N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":551:2:551:3|Trying to extract state machine for register s_state.
 Extracted state machine for register s_state
@@ -954,19 +1042,19 @@ State machine has 3 reachable states with original encodings of:
    00
    01
    10
-Finished optimization stage 2 on CTRL_32CH (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on CTRL_32CH (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on DAC43608_top .......
-Finished optimization stage 2 on DAC43608_top (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on DAC43608_top (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on adclk_gen .......
-Finished optimization stage 2 on adclk_gen (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 156MB)
+Finished optimization stage 2 on adclk_gen (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 157MB)
 Running optimization stage 2 on adif_seq .......
-Finished optimization stage 2 on adif_seq (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Finished optimization stage 2 on adif_seq (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 157MB)
 Running optimization stage 2 on shiftreg12bit .......
-Finished optimization stage 2 on shiftreg12bit (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Finished optimization stage 2 on shiftreg12bit (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 157MB)
 Running optimization stage 2 on adc_reg .......
-Finished optimization stage 2 on adc_reg (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Finished optimization stage 2 on adc_reg (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 157MB)
 Running optimization stage 2 on ad_ctrl .......
-Finished optimization stage 2 on ad_ctrl (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Finished optimization stage 2 on ad_ctrl (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 157MB)
 Running optimization stage 2 on TLC5916_CTRL .......
 @N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":68:2:68:3|Trying to extract state machine for register s_state.
 Extracted state machine for register s_state
@@ -974,7 +1062,7 @@ State machine has 3 reachable states with original encodings of:
    00
    01
    10
-Finished optimization stage 2 on TLC5916_CTRL (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Finished optimization stage 2 on TLC5916_CTRL (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 157MB)
 Running optimization stage 2 on ad8402 .......
 @N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd":78:2:78:3|Trying to extract state machine for register st.
 Extracted state machine for register st
@@ -985,7 +1073,7 @@ State machine has 6 reachable states with original encodings of:
    0011
    0100
    1001
-Finished optimization stage 2 on ad8402 (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Finished optimization stage 2 on ad8402 (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 157MB)
 Running optimization stage 2 on AD8402_CTRL .......
 @N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd":172:2:172:3|Trying to extract state machine for register s_sta.
 Extracted state machine for register s_sta
@@ -994,30 +1082,30 @@ State machine has 4 reachable states with original encodings of:
    01
    10
    11
-Finished optimization stage 2 on AD8402_CTRL (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Finished optimization stage 2 on AD8402_CTRL (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 157MB)
 Running optimization stage 2 on LEDLT_TOP .......
 @W: CL279 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":103:2:103:3|Pruning register bits 12 to 11 of s_LEDPTN(12 downto 8). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL260 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":103:2:103:3|Pruning register bit 9 of s_LEDPTN(12 downto 8). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @W: CL279 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":103:2:103:3|Pruning register bits 4 to 1 of s_LEDPTN(4 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-Finished optimization stage 2 on LEDLT_TOP (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 156MB)
+Finished optimization stage 2 on LEDLT_TOP (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 157MB)
 Running optimization stage 2 on encoder_2bit .......
-Finished optimization stage 2 on encoder_2bit (CPU Time 0h:00m:00s, Memory Used current: 139MB peak: 156MB)
+Finished optimization stage 2 on encoder_2bit (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 157MB)
 Running optimization stage 2 on enc_lmt .......
-Finished optimization stage 2 on enc_lmt (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 156MB)
+Finished optimization stage 2 on enc_lmt (CPU Time 0h:00m:00s, Memory Used current: 139MB peak: 157MB)
 Running optimization stage 2 on enc_top .......
-Finished optimization stage 2 on enc_top (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 156MB)
+Finished optimization stage 2 on enc_top (CPU Time 0h:00m:00s, Memory Used current: 139MB peak: 157MB)
 Running optimization stage 2 on enc_func_top .......
-Finished optimization stage 2 on enc_func_top (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 156MB)
+Finished optimization stage 2 on enc_func_top (CPU Time 0h:00m:00s, Memory Used current: 139MB peak: 157MB)
 Running optimization stage 2 on pls_sens .......
-Finished optimization stage 2 on pls_sens (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 156MB)
+Finished optimization stage 2 on pls_sens (CPU Time 0h:00m:00s, Memory Used current: 139MB peak: 157MB)
 Running optimization stage 2 on ppmc_id .......
-Finished optimization stage 2 on ppmc_id (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 156MB)
+Finished optimization stage 2 on ppmc_id (CPU Time 0h:00m:00s, Memory Used current: 139MB peak: 157MB)
 Running optimization stage 2 on ppmc_u_step_ext .......
 @W: CL247 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd":33:8:33:18|Input port bit 7 of init_reg_in(7 downto 0) is unused 
 @W: CL246 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd":33:8:33:18|Input port bits 5 to 0 of init_reg_in(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
-Finished optimization stage 2 on ppmc_u_step_ext (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 156MB)
+Finished optimization stage 2 on ppmc_u_step_ext (CPU Time 0h:00m:00s, Memory Used current: 139MB peak: 157MB)
 Running optimization stage 2 on ppmc_acc_tim_gen .......
-Finished optimization stage 2 on ppmc_acc_tim_gen (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 156MB)
+Finished optimization stage 2 on ppmc_acc_tim_gen (CPU Time 0h:00m:00s, Memory Used current: 139MB peak: 157MB)
 Running optimization stage 2 on ppmc_speed_cnt .......
 @N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd":57:8:57:9|Trying to extract state machine for register visual_STOP_ST_current.
 Extracted state machine for register visual_STOP_ST_current
@@ -1027,21 +1115,21 @@ State machine has 5 reachable states with original encodings of:
    00100
    01000
    10000
-Finished optimization stage 2 on ppmc_speed_cnt (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on ppmc_speed_cnt (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on ppmc_timer_cnt .......
-Finished optimization stage 2 on ppmc_timer_cnt (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on ppmc_timer_cnt (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on ppmc_pls_cnt .......
-Finished optimization stage 2 on ppmc_pls_cnt (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on ppmc_pls_cnt (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on ppmc_plsgen .......
-Finished optimization stage 2 on ppmc_plsgen (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on ppmc_plsgen (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on ppmc_dec .......
-Finished optimization stage 2 on ppmc_dec (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on ppmc_dec (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on ppmc_rgstr .......
-Finished optimization stage 2 on ppmc_rgstr (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on ppmc_rgstr (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on ppmc_enblr_S118M .......
 @N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd":53:8:53:11|Input KCLK is unused.
 @N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd":56:2:56:10|Input DOWNDELAY is unused.
-Finished optimization stage 2 on ppmc_enblr_S118M (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on ppmc_enblr_S118M (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on ppmc_ctrl .......
 @N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":288:8:288:9|Trying to extract state machine for register STATE.
 Extracted state machine for register STATE
@@ -1052,7 +1140,7 @@ State machine has 4 reachable states with original encodings of:
    1000
 @W: CL246 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":41:8:41:18|Input port bits 6 to 4 of command_reg(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
 @N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":42:8:42:16|Input PULSE_REG is unused.
-Finished optimization stage 2 on ppmc_ctrl (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on ppmc_ctrl (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on ppmc_cmdchk .......
 @N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":29:8:29:14|Input UP_DOWN is unused.
 @N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":30:8:30:14|Input ACC_ENB is unused.
@@ -1060,28 +1148,28 @@ Running optimization stage 2 on ppmc_cmdchk .......
 @N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":35:8:35:16|Input HIGH_FREQ is unused.
 @N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":36:8:36:16|Input PULSE_REG is unused.
 @N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":39:8:39:12|Input SPEED is unused.
-Finished optimization stage 2 on ppmc_cmdchk (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on ppmc_cmdchk (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on ppmc_reg_S118M .......
-Finished optimization stage 2 on ppmc_reg_S118M (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on ppmc_reg_S118M (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on ppmc_top_S118M .......
-Finished optimization stage 2 on ppmc_top_S118M (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on ppmc_top_S118M (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on fc_dec .......
-Finished optimization stage 2 on fc_dec (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on fc_dec (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on fc_sel .......
-Finished optimization stage 2 on fc_sel (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on fc_sel (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on gpio_id .......
-Finished optimization stage 2 on gpio_id (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on gpio_id (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on gpio_op_reg .......
-Finished optimization stage 2 on gpio_op_reg (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on gpio_op_reg (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on gpio_ip_reg .......
-Finished optimization stage 2 on gpio_ip_reg (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on gpio_ip_reg (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on gpio_reg .......
-Finished optimization stage 2 on gpio_reg (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on gpio_reg (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on gpio_top .......
-Finished optimization stage 2 on gpio_top (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on gpio_top (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 Running optimization stage 2 on SP0557 .......
 @N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557.vhd":53:2:53:11|Input LEDSH_MISO is unused.
-Finished optimization stage 2 on SP0557 (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 156MB)
+Finished optimization stage 2 on SP0557 (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 157MB)
 
 For a summary of runtime per design unit, please see file:
 ==========================================================
@@ -1089,12 +1177,12 @@ For a summary of runtime per design unit, please see file:
 
 
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:30s; Memory used current: 142MB peak: 156MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:22s; Memory used current: 141MB peak: 157MB)
 
-Process took 0h:00m:30s realtime, 0h:00m:30s cputime
+Process took 0h:00m:22s realtime, 0h:00m:22s cputime
 
 Process completed successfully.
-# Sat Feb 28 01:53:21 2026
+# Sat Feb 28 20:11:36 2026
 
 ###########################################################]
 ###########################################################[
@@ -1114,15 +1202,14 @@ Implementation : SP0557
 Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
 
 @N|Running in 64-bit mode
-File C:\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe changed - recompiling
-File C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI3\SP0557\synwork\layer0.srs changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\SP0557\synwork\layer0.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 103MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Feb 28 01:53:21 2026
+# Sat Feb 28 20:11:36 2026
 
 ###########################################################]
 
@@ -1132,12 +1219,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:30s; Memory used current: 24MB peak: 24MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:22s; Memory used current: 24MB peak: 25MB)
 
-Process took 0h:00m:31s realtime, 0h:00m:30s cputime
+Process took 0h:00m:23s realtime, 0h:00m:22s cputime
 
 Process completed successfully.
-# Sat Feb 28 01:53:22 2026
+# Sat Feb 28 20:11:37 2026
 
 ###########################################################]
 ###########################################################[
@@ -1157,20 +1244,17 @@ Implementation : SP0557
 Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
 
 @N|Running in 64-bit mode
-File C:\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe changed - recompiling
-File C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI3\SP0557\synwork\SP0557_comp.srs changed - recompiling
+File C:\FPGA work\PCBNo.10081\FPGA\SP0557\synwork\SP0557_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 108MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Feb 28 01:53:23 2026
+# Sat Feb 28 20:11:38 2026
 
 ###########################################################]
-Premap Report
-
-# Sat Feb 28 01:53:24 2026
+# Sat Feb 28 20:11:39 2026
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -1221,7 +1305,7 @@ NConnInternalConnection caching is on
 Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 305MB peak: 305MB)
 
 
-Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 305MB peak: 306MB)
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 305MB peak: 306MB)
 
 
 Started DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 305MB peak: 306MB)
@@ -1256,7 +1340,7 @@ Finished DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:0
 @N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\tx_com\tx_ctl_1st.vhd":306:2:306:3|Removing sequential instance TX_END (in view: work.tx_ctl_1st(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\rx_ctl_3rd.vhd":305:2:305:3|Removing sequential instance RX_START (in view: work.rx_ctl_3rd(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\sp_conv\spi_master2.vhd":289:2:289:3|Removing sequential instance s_CS (in view: work.SPI_master2(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance BANK[6:0] (in view: work.slv_rx_ctrl(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance BANK[6:0] (in view: work.slv_rx_ctrl(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\gpio\gpio_op_reg.vhd":44:2:44:3|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_2_1(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\gpio\gpio_op_reg.vhd":44:2:44:3|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_1_1(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\gpio\gpio_op_reg.vhd":44:2:44:3|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_2_1(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
@@ -1656,11 +1740,11 @@ Finished clock optimization phase (Real Time elapsed 0h:00m:02s; CPU Time elapse
 Starting clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 323MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 323MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 324MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=56 on top level netlist SP0557 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 323MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 324MB)
 
 
 
@@ -1745,7 +1829,7 @@ Summary of user generated gated clocks:
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 310MB peak: 324MB)
+Starting constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 309MB peak: 324MB)
 
 
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 319MB peak: 324MB)
@@ -1758,12 +1842,10 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 228MB peak: 327MB)
 
 Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Sat Feb 28 01:53:28 2026
+# Sat Feb 28 20:11:43 2026
 
 ###########################################################]
-Map & Optimize Report
-
-# Sat Feb 28 01:53:29 2026
+# Sat Feb 28 20:11:44 2026
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -1935,25 +2017,25 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00
 @N: MO231 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rst_cnt.vhd":72:2:72:3|Found counter in view:work.slv_com_top(rtl) instance rst_cnt_inst.clk2p_cntr[8:0] 
 @N: MO231 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rst_cnt.vhd":60:2:60:3|Found counter in view:work.slv_com_top(rtl) instance rst_cnt_inst.clk_cntr[8:0] 
 @N: MO231 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Found counter in view:work.slv_tx_ctrl(rtl) instance LA[4:0] 
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance prpty_data[7] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
-@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Boundary register prpty_data[7] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance prpty_data[5] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
-@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Boundary register prpty_data[5] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance prpty_data[4] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
-@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Boundary register prpty_data[4] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance prpty_data[3] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
-@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Boundary register prpty_data[3] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance prpty_data[2] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
-@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Boundary register prpty_data[2] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance prpty_data[1] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
-@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Boundary register prpty_data[1] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing sequential instance prpty_data[0] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
-@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Boundary register prpty_data[0] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[0] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[1] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[2] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[3] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@N: MO231 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Found counter in view:work.slv_rx_ctrl(rtl) instance LA[4:0] 
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance prpty_data[7] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
+@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Boundary register prpty_data[7] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance prpty_data[5] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
+@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Boundary register prpty_data[5] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance prpty_data[4] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
+@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Boundary register prpty_data[4] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance prpty_data[3] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
+@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Boundary register prpty_data[3] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance prpty_data[2] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
+@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Boundary register prpty_data[2] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance prpty_data[1] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
+@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Boundary register prpty_data[1] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing sequential instance prpty_data[0] (in view: work.slv_rx_ctrl(rtl)) because it does not drive other instances.
+@A: BN291 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Boundary register prpty_data[0] (in view: work.slv_rx_ctrl(rtl)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[0] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[1] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[2] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Removing instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[3] because it is equivalent to instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: MO231 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Found counter in view:work.slv_rx_ctrl(rtl) instance LA[4:0] 
 @N: MO231 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\tx_com\tx_ctl_1st.vhd":80:2:80:3|Found counter in view:work.tx_ctl_1st(rtl) instance txdt_count[3:0] 
 @N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec8b10b_new.vhd":82:8:82:9|Removing sequential instance DATAIN_BUF[1] (in view: work.dec8b10b_new(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec8b10b_new.vhd":82:8:82:9|Removing sequential instance DATAIN_BUF[0] (in view: work.dec8b10b_new(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
@@ -2373,10 +2455,10 @@ Only the first 100 messages of id 'MO231' are reported. To see all messages use 
 @N: MO230 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_speed_cnt.vhd":57:8:57:9|Found up-down counter in view:work.ppmc_speed_cnt_12(rtl) instance reg[15:0]  
 @N: MF179 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_pls_cnt.vhd":69:50:69:64|Found 16 by 16 bit equality operator ('==') un4_o_slow (in view: work.ppmc_pls_cnt_12(rtl))
 
-Starting factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 318MB peak: 351MB)
+Starting factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 319MB peak: 351MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 331MB peak: 351MB)
+Finished factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 331MB peak: 351MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -2451,83 +2533,83 @@ NConnInternalConnection caching is on
 
 Only the first 100 messages of id 'BN161' are reported. To see all messages use 'report_messages -log C:\FPGA work\PCBNo.10081\FPGA\SP0557\synlog\SP0557_fpga_mapper.srr -id BN161' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN161} -count unlimited' in the Tcl shell.
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 396MB peak: 436MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 397MB peak: 436MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:19s; Memory used current: 400MB peak: 436MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 400MB peak: 436MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:55s; CPU Time elapsed 0h:00m:54s; Memory used current: 443MB peak: 464MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:52s; CPU Time elapsed 0h:00m:51s; Memory used current: 443MB peak: 463MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:56s; CPU Time elapsed 0h:00m:55s; Memory used current: 445MB peak: 464MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:53s; CPU Time elapsed 0h:00m:53s; Memory used current: 445MB peak: 463MB)
 
-@N: FX214 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":59:16:59:19|Generating ROM slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0[5:0] (in view: work.SP0557(rtl)).
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":59:16:59:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[0] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":59:16:59:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[1] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":59:16:59:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[2] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":59:16:59:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[3] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":59:16:59:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[4] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":59:16:59:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[5] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: FX214 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Generating ROM slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0[5:0] (in view: work.SP0557(rtl)).
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[0] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[1] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[2] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[3] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[4] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[5] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Finished preparing to map (Real Time elapsed 0h:01m:04s; CPU Time elapsed 0h:01m:03s; Memory used current: 446MB peak: 464MB)
+Finished preparing to map (Real Time elapsed 0h:01m:01s; CPU Time elapsed 0h:01m:00s; Memory used current: 446MB peak: 463MB)
 
 @N: FX1019 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":144:3:144:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.cz[2] (in view: work.SP0557(rtl)).
 @N: FX1019 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":113:3:113:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.bz[1] (in view: work.SP0557(rtl)).
 
-Finished technology mapping (Real Time elapsed 0h:01m:11s; CPU Time elapsed 0h:01m:10s; Memory used current: 523MB peak: 523MB)
+Finished technology mapping (Real Time elapsed 0h:01m:09s; CPU Time elapsed 0h:01m:08s; Memory used current: 523MB peak: 523MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:01m:11s		    -1.15ns		8372 /      9227
-   2		0h:01m:12s		    -1.15ns		8288 /      9227
-   3		0h:01m:12s		    -0.97ns		8289 /      9227
-   4		0h:01m:12s		    -0.97ns		8288 /      9227
-   5		0h:01m:12s		    -0.97ns		8288 /      9227
-   6		0h:01m:12s		    -0.97ns		8290 /      9227
-   7		0h:01m:13s		    -0.97ns		8290 /      9227
+   1		0h:01m:09s		    -1.15ns		8372 /      9227
+   2		0h:01m:10s		    -1.15ns		8288 /      9227
+   3		0h:01m:10s		    -0.97ns		8289 /      9227
+   4		0h:01m:10s		    -0.97ns		8288 /      9227
+   5		0h:01m:10s		    -0.97ns		8288 /      9227
+   6		0h:01m:10s		    -0.97ns		8290 /      9227
+   7		0h:01m:11s		    -0.97ns		8290 /      9227
 @N: FX1019 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":144:3:144:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.cz[2] (in view: work.SP0557(rtl)).
 @N: FX1019 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":113:3:113:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.bz[1] (in view: work.SP0557(rtl)).
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[2] (in view: work.SP0557(rtl)) with 17 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[1] (in view: work.SP0557(rtl)) with 15 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.RX_F (in view: work.SP0557(rtl)) with 39 loads 3 times to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[4] (in view: work.SP0557(rtl)) with 11 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[2] (in view: work.SP0557(rtl)) with 17 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[1] (in view: work.SP0557(rtl)) with 15 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.RX_F (in view: work.SP0557(rtl)) with 39 loads 3 times to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[4] (in view: work.SP0557(rtl)) with 11 loads 1 time to improve timing.
 @N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_tx_ctrl_inst.LA[4] (in view: work.SP0557(rtl)) with 8 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[3] (in view: work.SP0557(rtl)) with 18 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[0] (in view: work.SP0557(rtl)) with 16 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[4] (in view: work.SP0557(rtl)) with 8 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[5] (in view: work.SP0557(rtl)) with 8 loads 1 time to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[0] (in view: work.SP0557(rtl)) with 33 loads 2 times to improve timing.
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.prpty_data[6] (in view: work.SP0557(rtl)) with 32 loads 2 times to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[3] (in view: work.SP0557(rtl)) with 18 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[0] (in view: work.SP0557(rtl)) with 16 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[4] (in view: work.SP0557(rtl)) with 8 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.ADR2[5] (in view: work.SP0557(rtl)) with 8 loads 1 time to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[0] (in view: work.SP0557(rtl)) with 33 loads 2 times to improve timing.
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.prpty_data[6] (in view: work.SP0557(rtl)) with 32 loads 2 times to improve timing.
 Timing driven replication report
 Added 15 Registers via timing driven replication
 Added 0 LUTs via timing driven replication
 
-   8		0h:01m:20s		    -0.67ns		8297 /      9242
-   9		0h:01m:20s		    -0.49ns		8303 /      9242
-  10		0h:01m:21s		    -0.67ns		8305 /      9242
-  11		0h:01m:21s		    -0.59ns		8312 /      9242
-  12		0h:01m:21s		    -0.59ns		8312 /      9242
-@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[1] (in view: work.SP0557(rtl)) with 23 loads 2 times to improve timing.
+   8		0h:01m:18s		    -0.67ns		8297 /      9242
+   9		0h:01m:18s		    -0.49ns		8303 /      9242
+  10		0h:01m:19s		    -0.67ns		8305 /      9242
+  11		0h:01m:19s		    -0.59ns		8312 /      9242
+  12		0h:01m:19s		    -0.59ns		8312 /      9242
+@N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":113:2:113:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[1] (in view: work.SP0557(rtl)) with 23 loads 2 times to improve timing.
 @N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_tx_ctrl_inst.LA[1] (in view: work.SP0557(rtl)) with 16 loads 1 time to improve timing.
 @N: FX271 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_tx_ctrl_inst.LA[0] (in view: work.SP0557(rtl)) with 18 loads 1 time to improve timing.
 Added 4 Registers via timing driven replication
 Added 0 LUTs via timing driven replication
 
 
-  13		0h:01m:22s		    -0.00ns		8323 /      9246
-  14		0h:01m:22s		    -0.30ns		8327 /      9246
-  15		0h:01m:22s		    -0.19ns		8328 /      9246
-  16		0h:01m:22s		    -0.13ns		8329 /      9246
-  17		0h:01m:22s		    -0.17ns		8334 /      9246
-@N: FX104 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":405:2:405:5|Inserting 3 buffers on net s_LWEb (with fanout of 277) because of a soft fanout limit of 100.
+  13		0h:01m:20s		    -0.00ns		8323 /      9246
+  14		0h:01m:20s		    -0.30ns		8327 /      9246
+  15		0h:01m:20s		    -0.19ns		8328 /      9246
+  16		0h:01m:20s		    -0.13ns		8329 /      9246
+  17		0h:01m:21s		    -0.17ns		8334 /      9246
+@N: FX104 :"c:\fpga work\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":404:2:404:5|Inserting 3 buffers on net s_LWEb (with fanout of 277) because of a soft fanout limit of 100.
 Net buffering Report for view:work.SP0557(rtl):
 Added 3 Buffers
 Added 19 Registers via replication
 Added 32 LUTs via replication
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:25s; CPU Time elapsed 0h:01m:24s; Memory used current: 483MB peak: 529MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:23s; CPU Time elapsed 0h:01m:22s; Memory used current: 483MB peak: 530MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 Replicating slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.TX_RSTb_i, loads=185, segments=16
@@ -2552,32 +2634,32 @@ Replicating gpio01.fc_dec_inst.LATCH_L_i_i_a2_1, loads=108, segments=15
 Replicating slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LRSTb, loads=340, segments=47
 replication done = 2
 
-Finished restoring hierarchy (Real Time elapsed 0h:01m:34s; CPU Time elapsed 0h:01m:32s; Memory used current: 497MB peak: 529MB)
+Finished restoring hierarchy (Real Time elapsed 0h:01m:32s; CPU Time elapsed 0h:01m:31s; Memory used current: 495MB peak: 530MB)
 
 
-Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:01m:34s; CPU Time elapsed 0h:01m:33s; Memory used current: 497MB peak: 529MB)
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:01m:32s; CPU Time elapsed 0h:01m:31s; Memory used current: 495MB peak: 530MB)
 
 
-Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:01m:34s; CPU Time elapsed 0h:01m:33s; Memory used current: 497MB peak: 529MB)
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:01m:32s; CPU Time elapsed 0h:01m:31s; Memory used current: 495MB peak: 530MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:01m:35s; CPU Time elapsed 0h:01m:33s; Memory used current: 340MB peak: 529MB)
+Start Writing Netlists (Real Time elapsed 0h:01m:33s; CPU Time elapsed 0h:01m:32s; Memory used current: 340MB peak: 530MB)
 
 Writing Analyst data base C:\FPGA work\PCBNo.10081\FPGA\SP0557\synwork\SP0557_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:01m:36s; CPU Time elapsed 0h:01m:35s; Memory used current: 456MB peak: 529MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:01m:35s; CPU Time elapsed 0h:01m:34s; Memory used current: 456MB peak: 530MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\FPGA work\PCBNo.10081\FPGA\SP0557\SP0557.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:01m:39s; CPU Time elapsed 0h:01m:38s; Memory used current: 475MB peak: 529MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:01m:37s; CPU Time elapsed 0h:01m:36s; Memory used current: 475MB peak: 530MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:01m:39s; CPU Time elapsed 0h:01m:38s; Memory used current: 475MB peak: 529MB)
+Finished Writing Netlists (Real Time elapsed 0h:01m:37s; CPU Time elapsed 0h:01m:36s; Memory used current: 475MB peak: 530MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:01m:40s; CPU Time elapsed 0h:01m:38s; Memory used current: 452MB peak: 529MB)
+Start final timing analysis (Real Time elapsed 0h:01m:38s; CPU Time elapsed 0h:01m:37s; Memory used current: 451MB peak: 530MB)
 
 @W: MT246 :"c:\fpga work\pcbno.10081\fpga\rtl\ipcore\pll_gen\pll_gen.vhd":60:4:60:12|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock pll_gen|CLKOS2_inferred_clock with period 10.00ns. Please declare a user-defined clock on net slv_com_top_inst.clk_gen_inst2.PLL_inst.s_PLL_CLK20M.
@@ -2588,7 +2670,7 @@ Start final timing analysis (Real Time elapsed 0h:01m:40s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Sat Feb 28 01:55:10 2026
+# Timing report written on Sat Feb 28 20:13:23 2026
 #
 
 
@@ -3595,10 +3677,10 @@ stm07.ppmc_reg_S118M_inst.inst_ppmc_rgstr.COMMAND_REG_O[0]                    FD
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:01m:40s; CPU Time elapsed 0h:01m:39s; Memory used current: 459MB peak: 529MB)
+Finished final timing analysis (Real Time elapsed 0h:01m:38s; CPU Time elapsed 0h:01m:37s; Memory used current: 459MB peak: 530MB)
 
 
-Finished timing report (Real Time elapsed 0h:01m:40s; CPU Time elapsed 0h:01m:39s; Memory used current: 459MB peak: 529MB)
+Finished timing report (Real Time elapsed 0h:01m:38s; CPU Time elapsed 0h:01m:37s; Memory used current: 459MB peak: 530MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -3647,9 +3729,9 @@ VLO:            405
 XOR2:           48
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:01m:42s; CPU Time elapsed 0h:01m:41s; Memory used current: 202MB peak: 529MB)
+At Mapper Exit (Real Time elapsed 0h:01m:40s; CPU Time elapsed 0h:01m:39s; Memory used current: 201MB peak: 530MB)
 
-Process took 0h:01m:42s realtime, 0h:01m:41s cputime
-# Sat Feb 28 01:55:12 2026
+Process took 0h:01m:40s realtime, 0h:01m:39s cputime
+# Sat Feb 28 20:13:24 2026
 
 ###########################################################]

@@ -1,12 +1,12 @@
 
-edif2ngd  -l "ECP5U" -d LFE5U-25F -path "C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3/SP0557" -path "C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3"   "C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3/SP0557/SP0557_SP0557.edi" "SP0557_SP0557.ngo"   
-edif2ngd:  version Diamond (64-bit) 3.13.0.56.2
+edif2ngd  -l "ECP5U" -d LFE5U-25F -path "C:/FPGA work/PCBNo.10081/FPGA/SP0557" -path "C:/FPGA work/PCBNo.10081/FPGA"   "C:/FPGA work/PCBNo.10081/FPGA/SP0557/SP0557_SP0557.edi" "SP0557_SP0557.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.14.0.75.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
     <postMsg mid="1121027" type="Warning" dynamic="1" navigation="0" arg0="MEM_INIT_FILE"  />
     <postMsg mid="1121027" type="Warning" dynamic="1" navigation="0" arg0="MEM_INIT_FILE"  />
     <postMsg mid="1121027" type="Warning" dynamic="1" navigation="0" arg0="MEM_INIT_FILE"  />
@@ -18,23 +18,23 @@ Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
 Writing the design to SP0557_SP0557.ngo...
 
 Total CPU Time: 2 secs  
-Total REAL Time: 3 secs  
-Peak Memory Usage: 111 MB
+Total REAL Time: 2 secs  
+Peak Memory Usage: 110 MB
 
 
-ngdbuild  -a "ECP5U" -d LFE5U-25F  -p "C:/lscc/diamond/3.13/ispfpga/sa5p00/data"  -p "C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3/SP0557" -p "C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3"  "SP0557_SP0557.ngo" "SP0557_SP0557.ngd"  	
-ngdbuild:  version Diamond (64-bit) 3.13.0.56.2
+ngdbuild  -a "ECP5U" -d LFE5U-25F  -p "C:/lscc/diamond/3.14/ispfpga/sa5p00/data"  -p "C:/FPGA work/PCBNo.10081/FPGA/SP0557" -p "C:/FPGA work/PCBNo.10081/FPGA"  "SP0557_SP0557.ngo" "SP0557_SP0557.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.14.0.75.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 Reading 'SP0557_SP0557.ngo' ...
-Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/sa5p00/data/sa5plib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
-Loading NGL library 'C:/lscc/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 
 
 Running DRC...
@@ -43,22 +43,22 @@ Running DRC...
     <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="1"  />
 
 Design Results:
-  23645 blocks expanded
+  22560 blocks expanded
 Complete the first expansion.
 Writing 'SP0557_SP0557.ngd' ...
-Total CPU Time: 3 secs 
-Total REAL Time: 4 secs 
-Peak Memory Usage: 156 MB
+Total CPU Time: 2 secs 
+Total REAL Time: 3 secs 
+Peak Memory Usage: 154 MB
 
 
-map -a "ECP5U" -p LFE5U-25F -t CABGA256 -s 6 -oc Commercial   "SP0557_SP0557.ngd" -o "SP0557_SP0557_map.ncd" -pr "SP0557_SP0557.prf" -mp "SP0557_SP0557.mrp" -lpf "C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3/SP0557/SP0557_SP0557_synplify.lpf" -lpf "C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3/SP0557.lpf"             
-map:  version Diamond (64-bit) 3.13.0.56.2
+map -a "ECP5U" -p LFE5U-25F -t CABGA256 -s 6 -oc Commercial   "SP0557_SP0557.ngd" -o "SP0557_SP0557_map.ncd" -pr "SP0557_SP0557.prf" -mp "SP0557_SP0557.mrp" -lpf "C:/FPGA work/PCBNo.10081/FPGA/SP0557/SP0557_SP0557_synplify.lpf" -lpf "C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf"             
+map:  version Diamond (64-bit) 3.14.0.75.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
    Process the file: SP0557_SP0557.ngd
    Picdevice="LFE5U-25F"
 
@@ -72,7 +72,21 @@ Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
 
 Part used: LFE5U-25FCABGA256, Performance used: 6.
 
-Loading device for application map from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.13/ispfpga.
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(306): Semantic error in &quot;FREQUENCY NET &quot;slv_com_top_inst.CLK2&quot; 100.000000 MHz ;&quot;: " arg1="slv_com_top_inst.CLK2 matches no clock nets in the design. " arg2="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf" arg3="306"  />
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(307): Semantic error in &quot;FREQUENCY NET &quot;slv_com_top_inst.CLK2A&quot; 100.000000 MHz ;&quot;: " arg1="slv_com_top_inst.CLK2A matches no clock nets in the design. " arg2="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf" arg3="307"  />
+    <postMsg mid="1100087" type="Warning" dynamic="2" navigation="2" arg0="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(318): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;CLK20M_c&quot; TO CLKNET &quot;slv_com_top_inst.CLK2&quot; ;&quot;: " arg1="slv_com_top_inst.CLK2 matches no clock nets in the design. " arg2="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf" arg3="318"  />
+    <postMsg mid="1100087" type="Warning" dynamic="2" navigation="2" arg0="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(319): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;CLK20M_c&quot; TO CLKNET &quot;slv_com_top_inst.CLK2A&quot; ;&quot;: " arg1="slv_com_top_inst.CLK2A matches no clock nets in the design. " arg2="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf" arg3="319"  />
+    <postMsg mid="1100087" type="Warning" dynamic="2" navigation="2" arg0="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(322): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;slv_com_top_inst.CLK2&quot; TO CLKNET &quot;CLK20M_c&quot; ;&quot;: " arg1="slv_com_top_inst.CLK2 matches no clock nets in the design. " arg2="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf" arg3="322"  />
+    <postMsg mid="1100087" type="Warning" dynamic="2" navigation="2" arg0="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(323): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;slv_com_top_inst.CLK2A&quot; TO CLKNET &quot;CLK20M_c&quot; ;&quot;: " arg1="slv_com_top_inst.CLK2A matches no clock nets in the design. " arg2="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf" arg3="323"  />
+    <postMsg mid="1100087" type="Warning" dynamic="2" navigation="2" arg0="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(336): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;s_PLL_CLK20M&quot; TO CLKNET &quot;slv_com_top_inst.CLK2&quot; ;&quot;: " arg1="slv_com_top_inst.CLK2 matches no clock nets in the design. " arg2="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf" arg3="336"  />
+    <postMsg mid="1100087" type="Warning" dynamic="2" navigation="2" arg0="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(337): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;s_PLL_CLK20M&quot; TO CLKNET &quot;slv_com_top_inst.CLK2A&quot; ;&quot;: " arg1="slv_com_top_inst.CLK2A matches no clock nets in the design. " arg2="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf" arg3="337"  />
+    <postMsg mid="1100087" type="Warning" dynamic="2" navigation="2" arg0="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(338): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;slv_com_top_inst.CLK2&quot; TO CLKNET &quot;s_PLL_CLK20M&quot; ;&quot;: " arg1="slv_com_top_inst.CLK2 matches no clock nets in the design. " arg2="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf" arg3="338"  />
+    <postMsg mid="1100087" type="Warning" dynamic="2" navigation="2" arg0="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(339): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;slv_com_top_inst.CLK2A&quot; TO CLKNET &quot;s_PLL_CLK20M&quot; ;&quot;: " arg1="slv_com_top_inst.CLK2A matches no clock nets in the design. " arg2="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf" arg3="339"  />
+    <postMsg mid="1100990" type="Warning" dynamic="2" navigation="2" arg0="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(347): Semantic error in &quot;MULTICYCLE FROM CLKNET &quot;slv_com_top_inst.CLK1&quot; TO CLKNET &quot;slv_com_top_inst.CLK2&quot; 10.000000 X ;&quot;: " arg1="&quot;slv_com_top_inst.CLK2&quot; matches no clknets in the design. " arg2="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf" arg3="347"  />
+    <postMsg mid="1100990" type="Warning" dynamic="2" navigation="2" arg0="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(348): Semantic error in &quot;MULTICYCLE FROM CLKNET &quot;slv_com_top_inst.CLK2&quot; TO CLKNET &quot;slv_com_top_inst.CLK1&quot; 2.000000 X ;&quot;: " arg1="&quot;slv_com_top_inst.CLK2&quot; matches no clknets in the design. " arg2="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf" arg3="348"  />
+    <postMsg mid="1100990" type="Warning" dynamic="2" navigation="2" arg0="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(355): Semantic error in &quot;MULTICYCLE FROM CLKNET &quot;slv_com_top_inst.CLK1&quot; TO CLKNET &quot;slv_com_top_inst.CLK2A&quot; 10.000000 X ;&quot;: " arg1="&quot;slv_com_top_inst.CLK2A&quot; matches no clknets in the design. " arg2="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf" arg3="355"  />
+    <postMsg mid="1100990" type="Warning" dynamic="2" navigation="2" arg0="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(356): Semantic error in &quot;MULTICYCLE FROM CLKNET &quot;slv_com_top_inst.CLK2A&quot; TO CLKNET &quot;slv_com_top_inst.CLK1&quot; 2.000000 X ;&quot;: " arg1="&quot;slv_com_top_inst.CLK2A&quot; matches no clknets in the design. " arg2="C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf" arg3="356"  />
+Loading device for application map from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.44.
 
 Running general design DRC...
@@ -83,23 +97,23 @@ Optimizing...
 
 152 CCU2 constant inputs absorbed.
 
-    <postMsg mid="51001030" type="Warning" dynamic="1" navigation="0" arg0="s_LRSTb_r46"  />
+    <postMsg mid="51001030" type="Warning" dynamic="1" navigation="0" arg0="s_LRSTb_r45"  />
     <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="LEDSH_MISO"  />
 
 
 
 Design Summary:
-   Number of registers:   9639 out of 24879 (39%)
-      PFU registers:         9556 out of 24288 (39%)
+   Number of registers:   9650 out of 24879 (39%)
+      PFU registers:         9567 out of 24288 (39%)
       PIO registers:           83 out of   591 (14%)
-   Number of SLICEs:     10843 out of 12144 (89%)
-      SLICEs as Logic/ROM:  10843 out of 12144 (89%)
+   Number of SLICEs:     10335 out of 12144 (85%)
+      SLICEs as Logic/ROM:  10335 out of 12144 (85%)
       SLICEs as RAM:            0 out of  9108 (0%)
-      SLICEs as Carry:       2989 out of 12144 (25%)
-   Number of LUT4s:        16119 out of 24288 (66%)
-      Number used as logic LUTs:        10141
+      SLICEs as Carry:       3054 out of 12144 (25%)
+   Number of LUT4s:        15128 out of 24288 (62%)
+      Number used as logic LUTs:        9020
       Number used as distributed RAM:     0
-      Number used as ripple logic:      5978
+      Number used as ripple logic:      6108
       Number used as shift registers:     0
    Number of PIO sites used: 127 out of 197 (64%)
    Number of block RAMs:  4 out of 56 (7%)
@@ -136,23 +150,23 @@ Design Summary:
    Number of Used DSP PRADD Sites:  0 out of 56 (0 %)
    Number of clocks:  6
      Net CLK20M_c: 9 loads, 9 rising, 0 falling (Driver: PIO CLK20M )
-     Net s_PLL_CLK20M: 5136 loads, 5136 rising, 0 falling (Driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0 )
-     Net slv_com_top_inst.CLK1: 364 loads, 354 rising, 10 falling (Driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0 )
-     Net slv_com_top_inst.CLKCOM_OUT: 172 loads, 164 rising, 8 falling (Driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0 )
+     Net s_PLL_CLK20M: 5165 loads, 5165 rising, 0 falling (Driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0 )
+     Net slv_com_top_inst.CLK1: 368 loads, 358 rising, 10 falling (Driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0 )
+     Net slv_com_top_inst.CLKCOM_OUT: 173 loads, 165 rising, 8 falling (Driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0 )
      Net slv_com_top_inst/CLK2A: 16 loads, 9 rising, 7 falling (Driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0 )
      Net UP_CLK_c: 1 loads, 1 rising, 0 falling (Driver: PIO UP_CLK )
    Number of Clock Enables:  756
      Net LEDLT.AD8402.s_CE: 4 loads, 3 LSLICEs
      Net slv_com_top_inst.CLK_RSTb_OUT_i: 5 loads, 5 LSLICEs
      Net ADC_CONT.shiftreg12bit_inst.reg_0_sqmuxa: 7 loads, 6 LSLICEs
-     Net ADC_CONT.s_FALL: 6 loads, 4 LSLICEs
-     Net gpio02/N_345_i_1: 53 loads, 53 LSLICEs
-     Net gpio02/N_345_i_2: 55 loads, 55 LSLICEs
-     Net gpio02/N_345_i: 55 loads, 55 LSLICEs
+     Net ADC_CONT.s_FALL: 7 loads, 5 LSLICEs
+     Net gpio02/N_761_2: 55 loads, 55 LSLICEs
+     Net gpio02/LOAD_L_i_i_a2: 60 loads, 60 LSLICEs
+     Net gpio02/N_761_1: 59 loads, 59 LSLICEs
      Net gpio02/gpio_reg_inst/gpio_op_reg_inst19/WRITEENB: 2 loads, 2 LSLICEs
-     Net gpio02/N_36_i_1: 35 loads, 35 LSLICEs
+     Net gpio02/N_760_1: 34 loads, 34 LSLICEs
      Net gpio02/gpio_reg_inst/gpio_op_reg_inst16/WRITEENB: 4 loads, 4 LSLICEs
-     Net N_36_i: 39 loads, 31 LSLICEs
+     Net LATCH_L_i_i_a2: 39 loads, 31 LSLICEs
      Net gpio02/gpio_reg_inst/gpio_op_reg_inst15/WRITEENB: 3 loads, 3 LSLICEs
      Net gpio02/gpio_reg_inst/gpio_op_reg_inst14/WRITEENB: 4 loads, 4 LSLICEs
      Net gpio02/gpio_reg_inst/gpio_op_reg_inst13/WRITEENB: 4 loads, 4 LSLICEs
@@ -169,551 +183,552 @@ Design Summary:
      Net gpio02/gpio_reg_inst/gpio_op_reg_inst2/WRITEENB: 4 loads, 4 LSLICEs
      Net gpio02/gpio_reg_inst/gpio_op_reg_inst1/WRITEENB: 4 loads, 4 LSLICEs
      Net gpio02/gpio_reg_inst/gpio_op_reg_inst0/WRITEENB: 4 loads, 4 LSLICEs
-     Net gpio01/N_346_i_1: 60 loads, 60 LSLICEs
-     Net gpio01/N_346_i_2: 61 loads, 61 LSLICEs
-     Net gpio01/N_346_i: 57 loads, 57 LSLICEs
+     Net gpio01/LOAD_L_i_i_a2_0: 52 loads, 52 LSLICEs
+     Net gpio01/N_759_1: 49 loads, 49 LSLICEs
+     Net gpio01/N_759_2: 54 loads, 54 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst19/WRITEENB: 4 loads, 4 LSLICEs
-     Net gpio01/N_40_i_1_r13: 4 loads, 4 LSLICEs
+     Net gpio01/LATCH_L_i_i_a2_0: 37 loads, 37 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst18/WRITEENB: 4 loads, 4 LSLICEs
-     Net gpio01/N_40_i: 38 loads, 38 LSLICEs
+     Net gpio01/N_758_1_r14: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst17/WRITEENB: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst16/WRITEENB: 4 loads, 4 LSLICEs
+     Net gpio01/N_758_1_r13: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst15/WRITEENB: 4 loads, 4 LSLICEs
-     Net gpio01/N_40_i_1_r12: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst14/WRITEENB: 4 loads, 4 LSLICEs
-     Net gpio01/N_40_i_1_r11: 4 loads, 4 LSLICEs
+     Net gpio01/N_758_1_r12: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst13/WRITEENB: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst12/WRITEENB: 4 loads, 4 LSLICEs
+     Net gpio01/N_758_1_r11: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst11/WRITEENB: 4 loads, 4 LSLICEs
-     Net gpio01/N_40_i_1_r10: 4 loads, 4 LSLICEs
+     Net gpio01/N_758_1_r10: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst10/WRITEENB: 4 loads, 4 LSLICEs
-     Net gpio01/N_40_i_1_r9: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst9/WRITEENB: 4 loads, 4 LSLICEs
-     Net gpio01/N_40_i_1_r8: 4 loads, 4 LSLICEs
+     Net gpio01/N_758_1_r9: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst8/WRITEENB: 4 loads, 4 LSLICEs
-     Net gpio01/N_40_i_1_r0: 3 loads, 3 LSLICEs
+     Net gpio01/N_758_1_r8: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst7/WRITEENB: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst6/WRITEENB: 3 loads, 3 LSLICEs
+     Net gpio01/N_758_1_r7: 3 loads, 3 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst5/WRITEENB: 4 loads, 4 LSLICEs
-     Net gpio01/N_40_i_1_r7: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst4/WRITEENB: 3 loads, 3 LSLICEs
-     Net gpio01/N_40_i_1_r6: 3 loads, 3 LSLICEs
+     Net gpio01/N_758_1_r6: 3 loads, 3 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst3/WRITEENB: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst2/WRITEENB: 3 loads, 3 LSLICEs
+     Net gpio01/N_758_1_r5: 3 loads, 3 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst1/WRITEENB: 4 loads, 4 LSLICEs
-     Net gpio01/N_40_i_1_r5: 4 loads, 4 LSLICEs
-     Net gpio01/N_40_i_1_r1: 2 loads, 2 LSLICEs
-     Net gpio01/N_40_i_1_r2: 4 loads, 4 LSLICEs
-     Net gpio01/N_40_i_1_r3: 4 loads, 4 LSLICEs
-     Net gpio01/N_40_i_1_r4: 4 loads, 4 LSLICEs
+     Net gpio01/N_758_1_r0: 3 loads, 3 LSLICEs
+     Net gpio01/N_758_1_r1: 4 loads, 4 LSLICEs
+     Net gpio01/N_758_1_r2: 4 loads, 4 LSLICEs
+     Net gpio01/N_758_1_r3: 4 loads, 4 LSLICEs
+     Net gpio01/N_758_1_r4: 4 loads, 4 LSLICEs
      Net gpio01/gpio_reg_inst/gpio_op_reg_inst0/WRITEENB: 1 loads, 1 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/N_380_i: 18 loads, 18 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/stop_1_sqmuxa_1_i_0_11: 1 loads, 1 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_25: 1 loads, 1 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/l_const_0_sqmuxa_i_0_11: 1 loads, 1 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/high_low_0_sqmuxa_2_i_0_11: 1 loads, 1 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/COMMAND_HIT: 1 loads, 1 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/const_0_sqmuxa_i_0_11: 1 loads, 1 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/N_287_1_i: 32 loads, 32 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/N_287_i: 15 loads, 15 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0_9: 1 loads, 1 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_ctrl/up_down_RNO_0_10: 1 loads, 1 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 1 loads, 1 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_277_i: 8 loads, 8 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/N_380_1_i: 28 loads, 28 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng_11: 1 loads, 1 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0_11: 1 loads, 1 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_ctrl/up_down_RNO_0_11: 1 loads, 1 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 1 loads, 1 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_31_i: 9 loads, 9 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_enblr/un7_enb_wait_1280us_11: 1 loads, 1 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 8 loads, 8 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_9: 1 loads, 1 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 9 loads, 9 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_10: 1 loads, 1 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 4 loads, 4 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_254_i: 4 loads, 4 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 4 loads, 4 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_11: 2 loads, 2 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 1 loads, 1 LSLICEs
-     Net stm13/N_59_i: 4 loads, 4 LSLICEs
-     Net stm13/N_57_i: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_241_i: 5 loads, 5 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 2 loads, 2 LSLICEs
+     Net stm13/LATCH_L_i_i_a2_1: 4 loads, 4 LSLICEs
+     Net stm13/LOAD_L_i_i_a2_1: 5 loads, 5 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 4 loads, 4 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 4 loads, 4 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 6 loads, 6 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 5 loads, 5 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_50_i: 5 loads, 5 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_11: 5 loads, 5 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 8 loads, 8 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 9 loads, 9 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulsee: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un1_pls_ld_2_i: 1 loads, 1 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg: 1 loads, 1 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un1_tm_clr_1_sqmuxa_11: 1 loads, 1 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/N_380_i: 19 loads, 19 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/stop_1_sqmuxa_1_i_0_10: 1 loads, 1 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_25: 1 loads, 1 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/l_const_0_sqmuxa_i_0_10: 1 loads, 1 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/high_low_0_sqmuxa_2_i_0_10: 1 loads, 1 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/COMMAND_HIT: 1 loads, 1 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/const_0_sqmuxa_i_0_10: 1 loads, 1 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/N_287_1_i: 32 loads, 32 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/N_287_i: 14 loads, 14 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/N_380_1_i: 28 loads, 28 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng_10: 1 loads, 1 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_STATE_5_0: 1 loads, 1 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0_10: 1 loads, 1 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_ctrl/up_down_RNO_0_10: 1 loads, 1 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 1 loads, 1 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_277_i: 8 loads, 8 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_up_down_0_sqmuxa_1_0_1: 1 loads, 1 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_31_i: 9 loads, 9 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_enblr/un7_enb_wait_1280us_10: 1 loads, 1 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 8 loads, 8 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_8: 1 loads, 1 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 9 loads, 9 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 1 loads, 1 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_9: 1 loads, 1 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_254_i: 4 loads, 4 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 4 loads, 4 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_10: 2 loads, 2 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 2 loads, 2 LSLICEs
-     Net stm12/N_83_i: 4 loads, 4 LSLICEs
-     Net stm12/N_79_i: 5 loads, 5 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_241_i: 5 loads, 5 LSLICEs
+     Net stm12/N_725: 4 loads, 4 LSLICEs
+     Net stm12/N_726: 5 loads, 5 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 5 loads, 5 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 4 loads, 4 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 5 loads, 5 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 4 loads, 4 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_50_i: 5 loads, 5 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_10: 5 loads, 5 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 4 loads, 4 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 4 loads, 4 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 9 loads, 9 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulsee: 5 loads, 5 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un1_pls_ld_2_i: 1 loads, 1 LSLICEs
-     Net s_CKEN500k_3: 16 loads, 14 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg: 1 loads, 1 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un1_tm_clr_1_sqmuxa_10: 1 loads, 1 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/N_380_i: 19 loads, 19 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/stop_1_sqmuxa_1_i_0_9: 1 loads, 1 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_25: 1 loads, 1 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/l_const_0_sqmuxa_i_0_9: 1 loads, 1 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/high_low_0_sqmuxa_2_i_0_9: 1 loads, 1 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/COMMAND_HIT: 2 loads, 2 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/const_0_sqmuxa_i_0_9: 1 loads, 1 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/N_287_1_i: 32 loads, 32 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/N_287_i: 15 loads, 15 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/N_380_1_i: 28 loads, 28 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng_9: 1 loads, 1 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0_8: 1 loads, 1 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0_9: 1 loads, 1 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_ctrl/up_down_RNO_0_9: 1 loads, 1 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 2 loads, 2 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_277_i: 8 loads, 8 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 1 loads, 1 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_31_i: 9 loads, 9 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_enblr/un7_enb_wait_1280us_9: 1 loads, 1 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 8 loads, 8 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_7: 1 loads, 1 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 4 loads, 4 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 4 loads, 4 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 9 loads, 9 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 5 loads, 5 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 4 loads, 4 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 4 loads, 4 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_8: 1 loads, 1 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_254_i: 4 loads, 4 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_9: 2 loads, 2 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 1 loads, 1 LSLICEs
-     Net stm11/N_349_i: 4 loads, 4 LSLICEs
-     Net stm11/N_348_i: 4 loads, 4 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_241_i: 4 loads, 4 LSLICEs
+     Net stm11/N_714: 4 loads, 4 LSLICEs
+     Net stm11/N_715: 5 loads, 5 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 5 loads, 5 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 5 loads, 5 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 4 loads, 4 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_50_i: 5 loads, 5 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_9: 5 loads, 5 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 4 loads, 4 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 8 loads, 8 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 9 loads, 9 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulsee: 5 loads, 5 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un1_pls_ld_2_i: 1 loads, 1 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg: 1 loads, 1 LSLICEs
+     Net s_CKEN500k_3: 16 loads, 14 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un1_tm_clr_1_sqmuxa_9: 1 loads, 1 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/N_380_i: 19 loads, 19 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/stop_1_sqmuxa_1_i_0_8: 1 loads, 1 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_25: 1 loads, 1 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/l_const_0_sqmuxa_i_0_8: 1 loads, 1 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/high_low_0_sqmuxa_2_i_0_8: 1 loads, 1 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/COMMAND_HIT: 1 loads, 1 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/const_0_sqmuxa_i_0_8: 1 loads, 1 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/N_287_1_i: 32 loads, 32 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/N_287_i: 14 loads, 14 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/N_380_1_i: 28 loads, 28 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng_8: 1 loads, 1 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0_8: 1 loads, 1 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_ctrl/up_down_RNO_0_8: 1 loads, 1 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 1 loads, 1 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_277_i: 8 loads, 8 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng_8: 1 loads, 1 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_up_down_0_sqmuxa_1_0: 1 loads, 1 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_31_i: 9 loads, 9 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_enblr/un7_enb_wait_1280us_8: 1 loads, 1 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 8 loads, 8 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/com_cng_RNO_0: 1 loads, 1 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_8: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 9 loads, 9 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 4 loads, 4 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 4 loads, 4 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 4 loads, 4 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_7: 1 loads, 1 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_254_i: 4 loads, 4 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_8: 2 loads, 2 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 1 loads, 1 LSLICEs
-     Net stm10/N_146_i: 4 loads, 4 LSLICEs
-     Net stm10/N_144_i: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_241_i: 5 loads, 5 LSLICEs
+     Net stm10/N_704: 4 loads, 4 LSLICEs
+     Net stm10/N_705: 5 loads, 5 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 5 loads, 5 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 5 loads, 5 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_50_i: 5 loads, 5 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_8: 5 loads, 5 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 4 loads, 4 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 8 loads, 8 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 9 loads, 9 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulsee: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un1_pls_ld_2_i: 1 loads, 1 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg: 1 loads, 1 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un1_tm_clr_1_sqmuxa_8: 1 loads, 1 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/N_380_i: 19 loads, 19 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/stop_1_sqmuxa_1_i_0_7: 1 loads, 1 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_25: 1 loads, 1 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/l_const_0_sqmuxa_i_0_7: 1 loads, 1 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/high_low_0_sqmuxa_2_i_0_7: 1 loads, 1 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/COMMAND_HIT: 1 loads, 1 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/const_0_sqmuxa_i_0_7: 1 loads, 1 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/N_287_1_i: 32 loads, 32 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/N_287_i: 15 loads, 15 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/N_380_1_i: 28 loads, 28 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng_7: 1 loads, 1 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0_7: 1 loads, 1 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_ctrl/up_down_RNO_0_7: 1 loads, 1 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 1 loads, 1 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_277_i: 8 loads, 8 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_31_i: 9 loads, 9 LSLICEs
+     Net stm09/N_693: 4 loads, 4 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_enblr/un7_enb_wait_1280us_7: 1 loads, 1 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 8 loads, 8 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_7: 5 loads, 5 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 9 loads, 9 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/com_cng_RNO: 1 loads, 1 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_7: 5 loads, 5 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_254_i: 4 loads, 4 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 4 loads, 4 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 4 loads, 4 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_7: 2 loads, 2 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 2 loads, 2 LSLICEs
-     Net stm09/N_359_i: 4 loads, 4 LSLICEs
-     Net stm09/N_358_i: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_241_i: 4 loads, 4 LSLICEs
+     Net stm09/N_694: 5 loads, 5 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 4 loads, 4 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 5 loads, 5 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 4 loads, 4 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 5 loads, 5 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_50_i: 5 loads, 5 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 9 loads, 9 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulsee: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un1_pls_ld_2_i: 1 loads, 1 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg: 1 loads, 1 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un1_tm_clr_1_sqmuxa_7: 1 loads, 1 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/N_380_i: 19 loads, 19 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/stop_1_sqmuxa_1_i_0_6: 1 loads, 1 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_25: 1 loads, 1 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/l_const_0_sqmuxa_i_0_6: 1 loads, 1 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/high_low_0_sqmuxa_2_i_0_6: 1 loads, 1 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/COMMAND_HIT: 2 loads, 2 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/COMMAND_HIT: 1 loads, 1 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/const_0_sqmuxa_i_0_6: 1 loads, 1 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/N_287_1_i: 32 loads, 32 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/N_287_i: 15 loads, 15 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/N_380_1_i: 28 loads, 28 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng_6: 1 loads, 1 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0_6: 1 loads, 1 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_ctrl/up_down_RNO_0_6: 1 loads, 1 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 2 loads, 2 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_277_i: 8 loads, 8 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 1 loads, 1 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_31_i: 9 loads, 9 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_enblr/un7_enb_wait_1280us_6: 1 loads, 1 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 8 loads, 8 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 9 loads, 9 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_6: 1 loads, 1 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 4 loads, 4 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 4 loads, 4 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 4 loads, 4 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_254_i: 4 loads, 4 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 4 loads, 4 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_6: 2 loads, 2 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 2 loads, 2 LSLICEs
-     Net stm08/N_365_i: 4 loads, 4 LSLICEs
-     Net stm08/N_364_i: 4 loads, 4 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_241_i: 5 loads, 5 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
+     Net stm08/N_682: 4 loads, 4 LSLICEs
+     Net stm08/N_683: 5 loads, 5 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 4 loads, 4 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 4 loads, 4 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 5 loads, 5 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 4 loads, 4 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 6 loads, 6 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 5 loads, 5 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 5 loads, 5 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 5 loads, 5 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 4 loads, 4 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_50_i: 5 loads, 5 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_6: 5 loads, 5 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 4 loads, 4 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 9 loads, 9 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulsee: 5 loads, 5 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un1_pls_ld_2_i: 1 loads, 1 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg: 1 loads, 1 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un1_tm_clr_1_sqmuxa_6: 1 loads, 1 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/N_380_i: 18 loads, 18 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/stop_1_sqmuxa_1_i_0_5: 1 loads, 1 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_25: 1 loads, 1 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/l_const_0_sqmuxa_i_0_5: 1 loads, 1 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/high_low_0_sqmuxa_2_i_0_5: 1 loads, 1 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/COMMAND_HIT: 2 loads, 2 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/COMMAND_HIT: 1 loads, 1 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/const_0_sqmuxa_i_0_5: 1 loads, 1 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/N_287_1_i: 32 loads, 32 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/N_287_i: 15 loads, 15 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/N_380_1_i: 28 loads, 28 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng_5: 1 loads, 1 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0_5: 1 loads, 1 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/inst_ppmc_ctrl/up_down_RNO_0_5: 1 loads, 1 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 2 loads, 2 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_277_i: 8 loads, 8 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 1 loads, 1 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_31_i: 9 loads, 9 LSLICEs
+     Net stm07/N_671: 4 loads, 4 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/inst_ppmc_enblr/un7_enb_wait_1280us_5: 1 loads, 1 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 8 loads, 8 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_5: 1 loads, 1 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_5: 2 loads, 2 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 2 loads, 2 LSLICEs
-     Net stm07/N_203_i: 4 loads, 4 LSLICEs
-     Net stm07/N_201_i: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_241_i: 4 loads, 4 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 4 loads, 4 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 4 loads, 4 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 9 loads, 9 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 4 loads, 4 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 5 loads, 5 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 2 loads, 2 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_5: 1 loads, 1 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_254_i: 4 loads, 4 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_5: 2 loads, 2 LSLICEs
+     Net stm07/N_672: 5 loads, 5 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 4 loads, 4 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 5 loads, 5 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 5 loads, 5 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_50_i: 5 loads, 5 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_5: 5 loads, 5 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 8 loads, 8 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 9 loads, 9 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulsee: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un1_pls_ld_2_i: 1 loads, 1 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg: 1 loads, 1 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un1_tm_clr_1_sqmuxa_5: 1 loads, 1 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/N_380_i: 18 loads, 18 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/stop_1_sqmuxa_1_i_0_4: 1 loads, 1 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_25: 1 loads, 1 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/l_const_0_sqmuxa_i_0_4: 1 loads, 1 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/high_low_0_sqmuxa_2_i_0_4: 1 loads, 1 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/COMMAND_HIT: 2 loads, 2 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/COMMAND_HIT: 1 loads, 1 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/const_0_sqmuxa_i_0_4: 1 loads, 1 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/N_287_1_i: 31 loads, 31 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/N_287_i: 15 loads, 15 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/N_380_1_i: 28 loads, 28 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng_4: 1 loads, 1 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0_4: 1 loads, 1 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_ctrl/up_down_RNO_0_4: 1 loads, 1 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 1 loads, 1 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_277_i: 8 loads, 8 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_31_i: 9 loads, 9 LSLICEs
+     Net stm06/N_661: 4 loads, 4 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_enblr/un7_enb_wait_1280us_4: 1 loads, 1 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 8 loads, 8 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 9 loads, 9 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_4: 1 loads, 1 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 4 loads, 4 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_254_i: 4 loads, 4 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_4: 2 loads, 2 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 2 loads, 2 LSLICEs
-     Net stm06/N_222_i: 4 loads, 4 LSLICEs
-     Net stm06/N_220_i: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_241_i: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_4: 2 loads, 2 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 1 loads, 1 LSLICEs
+     Net stm06/N_662: 4 loads, 4 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 4 loads, 4 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 4 loads, 4 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 5 loads, 5 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 4 loads, 4 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 5 loads, 5 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_50_i: 5 loads, 5 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_4: 5 loads, 5 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 4 loads, 4 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 8 loads, 8 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 9 loads, 9 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulsee: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un1_pls_ld_2_i: 1 loads, 1 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg: 1 loads, 1 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un1_tm_clr_1_sqmuxa_4: 1 loads, 1 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/N_380_i: 19 loads, 19 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/stop_1_sqmuxa_1_i_0_3: 1 loads, 1 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_25: 1 loads, 1 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/l_const_0_sqmuxa_i_0_3: 1 loads, 1 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/high_low_0_sqmuxa_2_i_0_3: 1 loads, 1 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/COMMAND_HIT: 2 loads, 2 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/COMMAND_HIT: 1 loads, 1 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/const_0_sqmuxa_i_0_3: 1 loads, 1 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/N_287_1_i: 32 loads, 32 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/N_287_i: 14 loads, 14 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/N_380_1_i: 28 loads, 28 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng_3: 1 loads, 1 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0_3: 1 loads, 1 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_ctrl/up_down_RNO_0_3: 1 loads, 1 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 1 loads, 1 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_277_i: 8 loads, 8 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_31_i: 9 loads, 9 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_enblr/un7_enb_wait_1280us_3: 1 loads, 1 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 8 loads, 8 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_3: 1 loads, 1 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 4 loads, 4 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_3: 2 loads, 2 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 1 loads, 1 LSLICEs
-     Net stm05/N_241_i: 4 loads, 4 LSLICEs
-     Net stm05/N_239_i: 5 loads, 5 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_241_i_0: 5 loads, 5 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 4 loads, 4 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 4 loads, 4 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 9 loads, 9 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 5 loads, 5 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 5 loads, 5 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_3: 1 loads, 1 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_254_i: 4 loads, 4 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_3: 2 loads, 2 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 2 loads, 2 LSLICEs
+     Net stm05/N_652: 4 loads, 4 LSLICEs
+     Net stm05/N_653: 5 loads, 5 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 5 loads, 5 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 5 loads, 5 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_50_i: 5 loads, 5 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_3: 5 loads, 5 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 4 loads, 4 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 4 loads, 4 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 9 loads, 9 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulsee: 5 loads, 5 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un1_pls_ld_2_i: 1 loads, 1 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg: 1 loads, 1 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un1_tm_clr_1_sqmuxa_3: 1 loads, 1 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/N_380_i: 19 loads, 19 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/stop_1_sqmuxa_1_i_0_2: 1 loads, 1 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_25: 1 loads, 1 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/l_const_0_sqmuxa_i_0_2: 1 loads, 1 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/high_low_0_sqmuxa_2_i_0_2: 1 loads, 1 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/COMMAND_HIT: 1 loads, 1 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/const_0_sqmuxa_i_0_2: 1 loads, 1 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/N_287_1_i: 32 loads, 32 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/N_287_i: 14 loads, 14 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/N_380_1_i: 27 loads, 27 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng_2: 1 loads, 1 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0_2: 1 loads, 1 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_ctrl/up_down_RNO_0_2: 1 loads, 1 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 1 loads, 1 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_277_i: 8 loads, 8 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_31_i: 9 loads, 9 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_enblr/un7_enb_wait_1280us_2: 1 loads, 1 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 8 loads, 8 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 9 loads, 9 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_254_i: 4 loads, 4 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_2: 1 loads, 1 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 4 loads, 4 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 4 loads, 4 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 4 loads, 4 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_2: 2 loads, 2 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 2 loads, 2 LSLICEs
-     Net stm04/N_260_i: 4 loads, 4 LSLICEs
-     Net stm04/N_258_i: 5 loads, 5 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_241_i: 5 loads, 5 LSLICEs
+     Net stm04/N_641: 4 loads, 4 LSLICEs
+     Net stm04/N_642: 5 loads, 5 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 4 loads, 4 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 4 loads, 4 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 4 loads, 4 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 5 loads, 5 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 4 loads, 4 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 5 loads, 5 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 5 loads, 5 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 5 loads, 5 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_50_i: 5 loads, 5 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_2: 5 loads, 5 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 4 loads, 4 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 8 loads, 8 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 9 loads, 9 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulsee: 5 loads, 5 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un1_pls_ld_2_i: 1 loads, 1 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg: 1 loads, 1 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un1_tm_clr_1_sqmuxa_2: 1 loads, 1 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/N_380_i: 18 loads, 18 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/stop_1_sqmuxa_1_i_0_1: 1 loads, 1 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_25: 1 loads, 1 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/l_const_0_sqmuxa_i_0_1: 1 loads, 1 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/high_low_0_sqmuxa_2_i_0_1: 1 loads, 1 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/COMMAND_HIT: 1 loads, 1 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/const_0_sqmuxa_i_0_1: 1 loads, 1 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/N_287_1_i: 32 loads, 32 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/N_287_i: 15 loads, 15 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/N_380_1_i: 28 loads, 28 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng_1: 1 loads, 1 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0_1: 1 loads, 1 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_ctrl/up_down_RNO_0_1: 1 loads, 1 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 1 loads, 1 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_277_i: 8 loads, 8 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_31_i: 9 loads, 9 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_enblr/un7_enb_wait_1280us_1: 1 loads, 1 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 8 loads, 8 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 9 loads, 9 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_1: 1 loads, 1 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 4 loads, 4 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_254_i: 4 loads, 4 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 4 loads, 4 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 4 loads, 4 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_1: 2 loads, 2 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 1 loads, 1 LSLICEs
-     Net stm03/N_279_i: 4 loads, 4 LSLICEs
-     Net stm03/N_277_i: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_241_i: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
+     Net stm03/N_630: 4 loads, 4 LSLICEs
+     Net stm03/N_631: 5 loads, 5 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 4 loads, 4 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 4 loads, 4 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 4 loads, 4 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 4 loads, 4 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 5 loads, 5 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 5 loads, 5 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_50_i: 5 loads, 5 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_1: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 8 loads, 8 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 4 loads, 4 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 4 loads, 4 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 9 loads, 9 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulsee: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un1_pls_ld_2_i: 1 loads, 1 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg: 1 loads, 1 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un1_tm_clr_1_sqmuxa_1: 1 loads, 1 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/N_380_i: 18 loads, 18 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/stop_1_sqmuxa_1_i_0_0: 1 loads, 1 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_25: 1 loads, 1 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/l_const_0_sqmuxa_i_0_0: 1 loads, 1 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/high_low_0_sqmuxa_2_i_0_0: 1 loads, 1 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/COMMAND_HIT: 2 loads, 2 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/COMMAND_HIT: 1 loads, 1 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/const_0_sqmuxa_i_0_0: 1 loads, 1 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/N_287_1_i: 32 loads, 32 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/N_287_i: 14 loads, 14 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng_0: 1 loads, 1 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/N_380_1_i: 28 loads, 28 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0_0: 1 loads, 1 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/inst_ppmc_ctrl/up_down_RNO_0_0: 1 loads, 1 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 1 loads, 1 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_277_i: 8 loads, 8 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_31_i: 9 loads, 9 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng_0: 1 loads, 1 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/inst_ppmc_enblr/un7_enb_wait_1280us_0: 1 loads, 1 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 8 loads, 8 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_0: 1 loads, 1 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 9 loads, 9 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_0: 2 loads, 2 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 2 loads, 2 LSLICEs
-     Net stm02/N_298_i: 4 loads, 4 LSLICEs
-     Net stm02/N_296_i: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_241_i: 5 loads, 5 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 4 loads, 4 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_50_i: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_0: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 2 loads, 2 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0_0: 1 loads, 1 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 8 loads, 8 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_254_i: 4 loads, 4 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_0: 2 loads, 2 LSLICEs
+     Net stm02/N_619: 4 loads, 4 LSLICEs
+     Net stm02/N_620: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 4 loads, 4 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3_0: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 9 loads, 9 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulsee: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un1_pls_ld_2_i: 1 loads, 1 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg: 1 loads, 1 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un1_tm_clr_1_sqmuxa_0: 1 loads, 1 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/N_380_i: 18 loads, 18 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/stop_1_sqmuxa_1_i_0: 1 loads, 1 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_25: 1 loads, 1 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/l_const_0_sqmuxa_i_0: 1 loads, 1 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/high_low_0_sqmuxa_2_i_0: 1 loads, 1 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/COMMAND_HIT: 1 loads, 1 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/const_0_sqmuxa_i_0: 1 loads, 1 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/N_287_1_i: 31 loads, 31 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/N_287_i: 15 loads, 15 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/N_380_1_i: 28 loads, 28 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng: 1 loads, 1 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/acc_enb_RNO_0: 1 loads, 1 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/up_down_RNO_0: 1 loads, 1 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_59_i: 1 loads, 1 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_277_i: 8 loads, 8 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_31_i: 9 loads, 9 LSLICEs
+     Net stm01/N_608: 4 loads, 4 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_enblr/un7_enb_wait_1280us: 1 loads, 1 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 8 loads, 8 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0: 1 loads, 1 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 4 loads, 4 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 4 loads, 4 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b: 2 loads, 2 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 2 loads, 2 LSLICEs
-     Net stm01/N_317_i: 4 loads, 4 LSLICEs
-     Net stm01/N_315_i: 5 loads, 5 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_241_i: 4 loads, 4 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 5 loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_enblr/enb_wait_cnte: 9 loads, 9 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_252_i: 5 loads, 5 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_248_i: 5 loads, 5 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 6 loads, 6 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 4 loads, 4 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 5 loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_243_i: 5 loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_242_i: 5 loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_52_i: 5 loads, 5 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_50_i: 5 loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_48_i: 2 loads, 2 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0: 1 loads, 1 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_245_i: 5 loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_254_i: 4 loads, 4 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_253_i: 4 loads, 4 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b: 2 loads, 2 LSLICEs
+     Net stm01/N_609: 5 loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_250_i: 5 loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_249_i: 5 loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_244_i: 5 loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_251_i: 5 loads, 5 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a3: 5 loads, 5 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_247_i: 5 loads, 5 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/N_246_i: 5 loads, 5 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 8 loads, 8 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 9 loads, 9 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulsee: 5 loads, 5 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un1_pls_ld_2_i: 1 loads, 1 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg: 1 loads, 1 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un1_tm_clr_1_sqmuxa: 1 loads, 1 LSLICEs
      Net pls_sens_inst/s_SNS_SIGce[0]: 1 loads, 1 LSLICEs
      Net pls_sens_inst/s_SNS_SIGce[1]: 1 loads, 1 LSLICEs
@@ -789,17 +804,19 @@ Design Summary:
      Net ENC_inst/enc_func.1.enc_top_inst/encoder_inst/s_ph_b_RNO: 1 loads, 1 LSLICEs
      Net ENC_inst/enc_func.1.enc_top_inst/encoder_inst/N_17_i: 5 loads, 5 LSLICEs
      Net ENC_inst/enc_func.1.enc_top_inst/encoder_inst/s_ph_a_RNO: 1 loads, 1 LSLICEs
+     Net LEDLT/N_26_i: 5 loads, 5 LSLICEs
      Net s_CKEN5M: 6 loads, 6 LSLICEs
-     Net LEDLT/N_26_i: 4 loads, 4 LSLICEs
+     Net LEDLT/N_27_i: 5 loads, 5 LSLICEs
      Net LEDLT/TLC5916/s_cnte: 3 loads, 3 LSLICEs
-     Net LEDLT/N_27_i: 4 loads, 4 LSLICEs
      Net LEDLT/un1_s_tlc5916_fin: 1 loads, 1 LSLICEs
      Net LEDLT/un1_s_ad8402_fin_0: 1 loads, 1 LSLICEs
      Net ADC_CONT/adc_reg_inst/s_REG2_1_sqmuxa: 6 loads, 6 LSLICEs
      Net ADC_CONT/adc_reg_inst/s_REG1_0_sqmuxa: 6 loads, 6 LSLICEs
-     Net ADC_CONT/adif_seq_inst/s_CH_1_sqmuxa: 1 loads, 1 LSLICEs
-     Net U_DAC43608_top/U03/N_768: 1 loads, 1 LSLICEs
-     Net U_DAC43608_top/U03/un1_s_ch_slave_0_sqmuxa_i: 7 loads, 7 LSLICEs
+     Net ADC_CONT/adif_seq_inst/un1_adcsb5_i: 2 loads, 2 LSLICEs
+     Net U_DAC43608_top/U03/s_LATCH_1[9]: 4 loads, 4 LSLICEs
+     Net U_DAC43608_top/U03/s_LATCH_1[8]: 4 loads, 4 LSLICEs
+     Net U_DAC43608_top/U03/N_752: 1 loads, 1 LSLICEs
+     Net U_DAC43608_top/U03/un1_s_ch_slave_0_sqmuxa_i: 8 loads, 8 LSLICEs
      Net U_DAC43608_top/U03/s_LATCH_1[0]: 4 loads, 4 LSLICEs
      Net U_DAC43608_top/U03/s_LATCH_1[1]: 4 loads, 4 LSLICEs
      Net U_DAC43608_top/U03/s_LATCH_1[2]: 4 loads, 4 LSLICEs
@@ -808,50 +825,48 @@ Design Summary:
      Net U_DAC43608_top/U03/s_LATCH_1[5]: 4 loads, 4 LSLICEs
      Net U_DAC43608_top/U03/s_LATCH_1[6]: 4 loads, 4 LSLICEs
      Net U_DAC43608_top/U03/s_LATCH_1[7]: 4 loads, 4 LSLICEs
-     Net U_DAC43608_top/U03/s_LATCH_1[8]: 4 loads, 4 LSLICEs
-     Net U_DAC43608_top/U03/s_LATCH_1[9]: 4 loads, 4 LSLICEs
      Net U_DAC43608_top/U03/s_LATCH_1[10]: 4 loads, 4 LSLICEs
      Net U_DAC43608_top/U03/s_LATCH_1[11]: 4 loads, 4 LSLICEs
      Net U_DAC43608_top/U03/s_LATCH_1[12]: 4 loads, 4 LSLICEs
      Net U_DAC43608_top/U02/N_248_i: 1 loads, 1 LSLICEs
      Net U_DAC43608_top/U02/N_246_i: 1 loads, 1 LSLICEs
-     Net U_DAC43608_top/U02/un1_st_13_0_0: 4 loads, 4 LSLICEs
-     Net U_DAC43608_top/U02/un1_st_15_0_0_0: 2 loads, 2 LSLICEs
+     Net U_DAC43608_top/U02/un1_st_13_0_0_0: 4 loads, 4 LSLICEs
+     Net U_DAC43608_top/U02/un1_st_15_0_0: 2 loads, 2 LSLICEs
      Net U_DAC43608_top/U02/un1_st_9_0_0_0: 1 loads, 1 LSLICEs
-     Net U_DAC43608_top/U01/registers/un1_prer12_i_a2_0_a3: 4 loads, 4 LSLICEs
+     Net U_DAC43608_top/U01/registers/un1_prer12_i_a2_0_a2_0_a3: 4 loads, 4 LSLICEs
      Net U_DAC43608_top/U01/registers/prerce[0]: 4 loads, 4 LSLICEs
      Net U_DAC43608_top/U01/registers/prerce[8]: 4 loads, 4 LSLICEs
-     Net U_DAC43608_top/U01/registers/un1_prer12_1_i_a2_0_a3: 2 loads, 2 LSLICEs
+     Net U_DAC43608_top/U01/registers/un1_prer12_1_i_a2_0_a2_0_a3: 2 loads, 2 LSLICEs
      Net U_DAC43608_top/U01/registers/cr_int_1_sqmuxa_i_0_0: 3 loads, 3 LSLICEs
      Net U_DAC43608_top/U01/registers/cr_intce[3]: 1 loads, 1 LSLICEs
      Net U_DAC43608_top/U01/bit_controller/un1_sda_oen_int_0_sqmuxa_0_0_0: 1 loads, 1 LSLICEs
-     Net U_DAC43608_top/U01/bit_controller/N_211_i: 1 loads, 1 LSLICEs
+     Net U_DAC43608_top/U01/bit_controller/N_208_i: 1 loads, 1 LSLICEs
      Net U_DAC43608_top/U01/bit_controller/un1_scl_oen_int_0_sqmuxa_0_0_0: 1 loads, 1 LSLICEs
-     Net U_DAC43608_top/U01/bit_controller/N_1175_i: 8 loads, 8 LSLICEs
+     Net U_DAC43608_top/U01/bit_controller/N_1175_i: 9 loads, 9 LSLICEs
      Net U_DAC43608_top/U01/bit_controller/clk_en: 1 loads, 1 LSLICEs
      Net un5_scl_i: 1 loads, 0 LSLICEs
      Net U_DAC43608_top/U01/byte_controller/un1_rst_1_i: 5 loads, 5 LSLICEs
-     Net U_DAC43608_top/U01/byte_controller/core_cmd_4_sqmuxa_0_a2_i_0: 2 loads, 2 LSLICEs
-     Net U_DAC43608_top/U01/byte_controller/N_11: 1 loads, 1 LSLICEs
+     Net U_DAC43608_top/U01/byte_controller/N_17: 2 loads, 2 LSLICEs
+     Net U_DAC43608_top/U01/byte_controller/N_16: 1 loads, 1 LSLICEs
      Net EFUSE_CTRL_inst/un1_mode_com_2_0_a3: 5 loads, 5 LSLICEs
-     Net sp_conv_inst/SIO_inst1/U_SPI_master/s_cnte_1: 31 loads, 31 LSLICEs
-     Net sp_conv_inst/SIO_inst1/U_SPI_master/s_cnte: 31 loads, 31 LSLICEs
+     Net sp_conv_inst/SIO_inst1/U_SPI_master/s_cnte: 32 loads, 32 LSLICEs
+     Net sp_conv_inst/SIO_inst1/U_SPI_master/s_cnte_1: 30 loads, 30 LSLICEs
      Net sp_conv_inst/SIO_inst1/U_SPI_master/un1_s_CLR_1_i_0: 1 loads, 1 LSLICEs
      Net sp_conv_inst/SIO_inst1/U_SPI_master/un1_s_CS_0_sqmuxa_1_0: 1 loads, 1 LSLICEs
      Net sp_conv_inst.SIO_inst1.U_SPI_master.N_123_i: 1 loads, 0 LSLICEs
      Net sp_conv_inst.SIO_inst1.U_SPI_master.s_latch_en: 1 loads, 0 LSLICEs
-     Net sp_conv_inst/SIO_inst1/N_551_i: 26 loads, 26 LSLICEs
+     Net sp_conv_inst/SIO_inst1/N_546_i: 26 loads, 26 LSLICEs
      Net CLK_gen_inst/s_CKEN10k: 2 loads, 2 LSLICEs
-     Net slv_com_top_inst/m4_e: 1 loads, 1 LSLICEs
+     Net slv_com_top_inst/N_56_i: 1 loads, 1 LSLICEs
      Net slv_com_top_inst/cds_inst/N_4: 1 loads, 1 LSLICEs
      Net slv_com_top_inst/clk2An_cntr[8]: 5 loads, 5 LSLICEs
      Net slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/crc_en_RNO: 1 loads, 1 LSLICEs
      Net slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/kerr_RNO: 1 loads, 1 LSLICEs
      Net slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/rxdt_counte: 2 loads, 2 LSLICEs
      Net slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/un1_valid: 1 loads, 1 LSLICEs
-     Net slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/DATA_LD: 1 loads, 1 LSLICEs
+     Net slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/N_72: 1 loads, 1 LSLICEs
      Net slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/crc_check_inst/un1_crcck_en_0: 8 loads, 8 LSLICEs
-     Net slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/crc_check_inst/un2_crc_init: 1 loads, 1 LSLICEs
+     Net slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/crc_check_inst/N_131_i: 1 loads, 1 LSLICEs
      Net slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/wren_i: 14 loads, 12 LSLICEs
      Net slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/rden_i: 14 loads, 12 LSLICEs
      Net slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/wren_i: 14 loads, 12 LSLICEs
@@ -873,256 +888,255 @@ Design Summary:
      Net slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/wren_i: 14 loads, 12 LSLICEs
      Net slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/rden_i: 14 loads, 12 LSLICEs
      Net slv_com_top_inst/TX_FULL: 3 loads, 3 LSLICEs
-     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_157_i: 12 loads, 12 LSLICEs
+     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/LD_1_sqmuxa: 12 loads, 12 LSLICEs
      Net un1_STATE_12_0: 25 loads, 24 LSLICEs
-     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/un1_STATE_13_0_0: 8 loads, 8 LSLICEs
-     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/STATE[4]: 4 loads, 4 LSLICEs
-     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/byte_cnt_1_RNICMRB1_0[2]: 4 loads, 4 LSLICEs
-     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/rst_flg_RNO_0: 1 loads, 1 LSLICEs
+     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/un1_STATE_13_0: 8 loads, 8 LSLICEs
+     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/byte_cnt_1_RNICMRBB[2]: 4 loads, 4 LSLICEs
+     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_170_i: 3 loads, 3 LSLICEs
+     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/un1_rx_empty_2_i[0]: 1 loads, 1 LSLICEs
      Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_317_i: 1 loads, 1 LSLICEs
-     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_156_i: 6 loads, 6 LSLICEs
+     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_369: 4 loads, 4 LSLICEs
+     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/LAe: 7 loads, 7 LSLICEs
      Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/wren_dce[0]: 4 loads, 4 LSLICEs
      Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/wren_dce[16]: 4 loads, 4 LSLICEs
-     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_369: 2 loads, 2 LSLICEs
-     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/prpty_data_1_sqmuxa: 1 loads, 1 LSLICEs
-     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/un1_STATE_20_i_0: 1 loads, 1 LSLICEs
+     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/un1_STATE_20_i: 1 loads, 1 LSLICEs
      Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_362_i: 4 loads, 4 LSLICEs
-     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/STATE[9]: 5 loads, 5 LSLICEs
-     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/STATE[6]: 6 loads, 6 LSLICEs
+     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/STATE[9]: 6 loads, 6 LSLICEs
+     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/STATE[6]: 7 loads, 7 LSLICEs
      Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/STATE[8]: 4 loads, 4 LSLICEs
      Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_320_i: 1 loads, 1 LSLICEs
-     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/un1_STATE_14_0_0: 1 loads, 1 LSLICEs
-     Net slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/N_266_i: 4 loads, 4 LSLICEs
+     Net slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/un1_STATE_14_0: 1 loads, 1 LSLICEs
+     Net slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/LAe: 5 loads, 5 LSLICEs
      Net slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/TX_WRENB_O_1: 4 loads, 4 LSLICEs
-     Net slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/un1_STATE_15_0_0: 1 loads, 1 LSLICEs
+     Net slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/un1_STATE_15_0: 1 loads, 1 LSLICEs
      Net slv_com_top_inst/rst_cnt_inst/clk2Ap_cntr[8]: 5 loads, 5 LSLICEs
      Net slv_com_top_inst/rst_cnt_inst/clk2n_cntr[8]: 5 loads, 5 LSLICEs
      Net slv_com_top_inst/rst_cnt_inst/clk2p_cntr[8]: 5 loads, 5 LSLICEs
-   Number of local set/reset loads for net s_LRSTb_r46 merged into GSR:  4977
-   Number of LSRs:  344
+   Number of local set/reset loads for net s_LRSTb_r45 merged into GSR:  4985
+   Number of LSRs:  345
      Net PORb_c: 6 loads, 6 LSLICEs
      Net slv_com_top_inst.CLK_RSTb_OUT_i: 1 loads, 0 LSLICEs
      Net slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.reset_n_reg: 15 loads, 15 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r0: 4 loads, 4 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r1: 3 loads, 3 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r3: 8 loads, 8 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r2: 7 loads, 7 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r22: 10 loads, 10 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r21: 8 loads, 8 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r20: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r6: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r23: 4 loads, 4 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r19: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r18: 4 loads, 4 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r17: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r16: 10 loads, 10 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r15: 9 loads, 9 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r14: 5 loads, 5 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r23: 8 loads, 8 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r2: 8 loads, 8 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r21: 9 loads, 9 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r20: 8 loads, 8 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r19: 4 loads, 4 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r3: 6 loads, 6 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r22: 4 loads, 4 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r18: 5 loads, 5 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r17: 4 loads, 4 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r16: 5 loads, 5 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r15: 10 loads, 10 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r14: 8 loads, 8 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r13: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r12: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r11: 10 loads, 10 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r10: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r9: 10 loads, 10 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_11: 5 loads, 5 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r4: 8 loads, 8 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r12: 6 loads, 6 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r11: 5 loads, 5 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r10: 9 loads, 9 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r9: 5 loads, 5 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r8: 10 loads, 10 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r7: 3 loads, 3 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_11: 5 loads, 5 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r4: 9 loads, 9 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r6: 3 loads, 3 LSLICEs
      Net stm13/ppmc_reg_S118M_inst/nMRST_i_1_r5: 8 loads, 8 LSLICEs
-     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 9 loads, 9 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r1: 6 loads, 6 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r0: 3 loads, 3 LSLICEs
+     Net stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 10 loads, 10 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r0: 4 loads, 4 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r1: 3 loads, 3 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r23: 8 loads, 8 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r2: 4 loads, 4 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r3: 7 loads, 7 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r2: 8 loads, 8 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r21: 10 loads, 10 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r20: 8 loads, 8 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r19: 5 loads, 5 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r19: 4 loads, 4 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r3: 5 loads, 5 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r22: 4 loads, 4 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r18: 5 loads, 5 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r17: 4 loads, 4 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r16: 5 loads, 5 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r15: 10 loads, 10 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r14: 9 loads, 9 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r13: 5 loads, 5 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r13: 4 loads, 4 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r12: 5 loads, 5 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r11: 5 loads, 5 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r10: 9 loads, 9 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r9: 5 loads, 5 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r8: 8 loads, 8 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r8: 10 loads, 10 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_10: 5 loads, 5 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r4: 9 loads, 9 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r6: 3 loads, 3 LSLICEs
      Net stm12/ppmc_reg_S118M_inst/nMRST_i_1_r5: 8 loads, 8 LSLICEs
-     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 9 loads, 9 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/nMRST_i_1: 151 loads, 151 LSLICEs
+     Net stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 10 loads, 10 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/nMRST_i_1: 158 loads, 158 LSLICEs
      Net stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_9: 5 loads, 5 LSLICEs
-     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 9 loads, 9 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r0: 4 loads, 4 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r1: 3 loads, 3 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r23: 7 loads, 7 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r2: 7 loads, 7 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r21: 10 loads, 10 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r20: 8 loads, 8 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r19: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r3: 6 loads, 6 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r22: 4 loads, 4 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r18: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r17: 4 loads, 4 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r16: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r15: 10 loads, 10 LSLICEs
+     Net stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 10 loads, 10 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r0: 6 loads, 6 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r18: 6 loads, 6 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r1: 4 loads, 4 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r2: 8 loads, 8 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r22: 9 loads, 9 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r21: 8 loads, 8 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r20: 5 loads, 5 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r19: 4 loads, 4 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r17: 5 loads, 5 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r16: 4 loads, 4 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r15: 5 loads, 5 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r14: 10 loads, 10 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r13: 4 loads, 4 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r12: 5 loads, 5 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r13: 8 loads, 8 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r12: 4 loads, 4 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r11: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r10: 10 loads, 10 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r9: 5 loads, 5 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r8: 10 loads, 10 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r23: 4 loads, 4 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r10: 5 loads, 5 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r9: 10 loads, 10 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r8: 5 loads, 5 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r7: 9 loads, 9 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_8: 5 loads, 5 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r3: 9 loads, 9 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r6: 10 loads, 10 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r5: 3 loads, 3 LSLICEs
      Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r4: 8 loads, 8 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r6: 3 loads, 3 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/nMRST_i_1_r5: 8 loads, 8 LSLICEs
-     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 9 loads, 9 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r0: 4 loads, 4 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r1: 3 loads, 3 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r23: 8 loads, 8 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r2: 7 loads, 7 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r21: 9 loads, 9 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r20: 8 loads, 8 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r19: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r3: 6 loads, 6 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r22: 4 loads, 4 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r18: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r17: 4 loads, 4 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r16: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r15: 9 loads, 9 LSLICEs
+     Net stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 10 loads, 10 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r0: 5 loads, 5 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r18: 6 loads, 6 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r1: 4 loads, 4 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r2: 8 loads, 8 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r22: 10 loads, 10 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r21: 8 loads, 8 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r20: 5 loads, 5 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r23: 4 loads, 4 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r19: 6 loads, 6 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r17: 5 loads, 5 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r16: 4 loads, 4 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r15: 5 loads, 5 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r14: 10 loads, 10 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r13: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r12: 5 loads, 5 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r13: 9 loads, 9 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r12: 4 loads, 4 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r11: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r10: 9 loads, 9 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r9: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r8: 10 loads, 10 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_7: 5 loads, 5 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r4: 9 loads, 9 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r10: 5 loads, 5 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r9: 9 loads, 9 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r8: 5 loads, 5 LSLICEs
      Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r6: 3 loads, 3 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r5: 8 loads, 8 LSLICEs
-     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 9 loads, 9 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_7: 5 loads, 5 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r3: 9 loads, 9 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r6: 10 loads, 10 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r5: 3 loads, 3 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/nMRST_i_1_r4: 8 loads, 8 LSLICEs
+     Net stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 10 loads, 10 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r0: 4 loads, 4 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r1: 4 loads, 4 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r23: 8 loads, 8 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r2: 7 loads, 7 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r1: 3 loads, 3 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r19: 7 loads, 7 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r2: 8 loads, 8 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r22: 9 loads, 9 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r21: 8 loads, 8 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r20: 8 loads, 8 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r19: 4 loads, 4 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r3: 6 loads, 6 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r22: 4 loads, 4 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r18: 4 loads, 4 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r20: 5 loads, 5 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r3: 7 loads, 7 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r23: 4 loads, 4 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r18: 5 loads, 5 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r17: 4 loads, 4 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r16: 5 loads, 5 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r15: 10 loads, 10 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r15: 9 loads, 9 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r14: 9 loads, 9 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r13: 5 loads, 5 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r12: 6 loads, 6 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r12: 5 loads, 5 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r11: 5 loads, 5 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r10: 10 loads, 10 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r10: 9 loads, 9 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r9: 5 loads, 5 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r8: 10 loads, 10 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r8: 9 loads, 9 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_6: 5 loads, 5 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r4: 9 loads, 9 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r6: 3 loads, 3 LSLICEs
      Net stm08/ppmc_reg_S118M_inst/nMRST_i_1_r5: 8 loads, 8 LSLICEs
-     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 9 loads, 9 LSLICEs
+     Net s_LRSTb_r45: 6 loads, 5 LSLICEs
+     Net stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 10 loads, 10 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r0: 4 loads, 4 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r1: 3 loads, 3 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r23: 8 loads, 8 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r1: 7 loads, 7 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r2: 8 loads, 8 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r21: 10 loads, 10 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r20: 8 loads, 8 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r19: 5 loads, 5 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r3: 6 loads, 6 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r22: 4 loads, 4 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r18: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r17: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r16: 4 loads, 4 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r15: 5 loads, 5 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r17: 4 loads, 4 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r16: 5 loads, 5 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r15: 10 loads, 10 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r14: 9 loads, 9 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r13: 8 loads, 8 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r12: 4 loads, 4 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r13: 5 loads, 5 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r12: 5 loads, 5 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r11: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r4: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r10: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r9: 9 loads, 9 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r8: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r10: 9 loads, 9 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r9: 5 loads, 5 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r8: 10 loads, 10 LSLICEs
      Net stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_5: 5 loads, 5 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r2: 8 loads, 8 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r6: 10 loads, 10 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r5: 3 loads, 3 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r3: 8 loads, 8 LSLICEs
-     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 9 loads, 9 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r2: 6 loads, 6 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r18: 7 loads, 7 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r4: 9 loads, 9 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r6: 3 loads, 3 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/nMRST_i_1_r5: 8 loads, 8 LSLICEs
+     Net stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 10 loads, 10 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r0: 4 loads, 4 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r1: 7 loads, 7 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r22: 10 loads, 10 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r1: 3 loads, 3 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r6: 8 loads, 8 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r2: 8 loads, 8 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r22: 9 loads, 9 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r21: 8 loads, 8 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r20: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r23: 4 loads, 4 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r19: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r17: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r16: 4 loads, 4 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r15: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r14: 10 loads, 10 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r13: 10 loads, 10 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r23: 4 loads, 4 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r18: 4 loads, 4 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r17: 4 loads, 4 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r16: 5 loads, 5 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r15: 9 loads, 9 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r14: 9 loads, 9 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r13: 4 loads, 4 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r12: 5 loads, 5 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r11: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r10: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r9: 9 loads, 9 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r8: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r10: 8 loads, 8 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r9: 5 loads, 5 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r8: 9 loads, 9 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_4: 5 loads, 5 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r3: 8 loads, 8 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r6: 10 loads, 10 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r3: 9 loads, 9 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r5: 3 loads, 3 LSLICEs
      Net stm06/ppmc_reg_S118M_inst/nMRST_i_1_r4: 8 loads, 8 LSLICEs
-     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 9 loads, 9 LSLICEs
+     Net stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 10 loads, 10 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r0: 4 loads, 4 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r1: 4 loads, 4 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r1: 3 loads, 3 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r23: 8 loads, 8 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r2: 7 loads, 7 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r21: 9 loads, 9 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r2: 8 loads, 8 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r21: 10 loads, 10 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r20: 8 loads, 8 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r19: 5 loads, 5 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r3: 5 loads, 5 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r3: 6 loads, 6 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r22: 4 loads, 4 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r18: 5 loads, 5 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r17: 4 loads, 4 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r16: 5 loads, 5 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r15: 10 loads, 10 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r14: 9 loads, 9 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r14: 10 loads, 10 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r13: 5 loads, 5 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r12: 4 loads, 4 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r12: 5 loads, 5 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r11: 5 loads, 5 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r10: 10 loads, 10 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r9: 5 loads, 5 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r8: 10 loads, 10 LSLICEs
-     Net s_LRSTb_r46: 6 loads, 5 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r8: 8 loads, 8 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_3: 5 loads, 5 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r4: 9 loads, 9 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r6: 3 loads, 3 LSLICEs
      Net stm05/ppmc_reg_S118M_inst/nMRST_i_1_r5: 8 loads, 8 LSLICEs
-     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 9 loads, 9 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r1: 6 loads, 6 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r0: 3 loads, 3 LSLICEs
+     Net stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 10 loads, 10 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r0: 4 loads, 4 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r1: 3 loads, 3 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r23: 8 loads, 8 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r2: 4 loads, 4 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r3: 7 loads, 7 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r21: 8 loads, 8 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r2: 8 loads, 8 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r21: 9 loads, 9 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r20: 8 loads, 8 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r19: 4 loads, 4 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r19: 5 loads, 5 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r3: 6 loads, 6 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r22: 4 loads, 4 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r18: 5 loads, 5 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r17: 4 loads, 4 LSLICEs
@@ -1130,52 +1144,52 @@ Design Summary:
      Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r15: 10 loads, 10 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r14: 9 loads, 9 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r13: 5 loads, 5 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r12: 4 loads, 4 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r12: 5 loads, 5 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r11: 5 loads, 5 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r10: 9 loads, 9 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r10: 10 loads, 10 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r9: 5 loads, 5 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r8: 9 loads, 9 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r8: 10 loads, 10 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_2: 5 loads, 5 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r4: 8 loads, 8 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r4: 9 loads, 9 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r6: 3 loads, 3 LSLICEs
      Net stm04/ppmc_reg_S118M_inst/nMRST_i_1_r5: 8 loads, 8 LSLICEs
-     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 9 loads, 9 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r0: 6 loads, 6 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r23: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r1: 4 loads, 4 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r2: 7 loads, 7 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r21: 10 loads, 10 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r20: 8 loads, 8 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r19: 4 loads, 4 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r22: 4 loads, 4 LSLICEs
+     Net stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 10 loads, 10 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r0: 4 loads, 4 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r1: 3 loads, 3 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r5: 8 loads, 8 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r2: 8 loads, 8 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r22: 9 loads, 9 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r21: 8 loads, 8 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r20: 4 loads, 4 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r23: 4 loads, 4 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r19: 5 loads, 5 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r18: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r17: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r16: 4 loads, 4 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r15: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r14: 10 loads, 10 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r13: 10 loads, 10 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r12: 5 loads, 5 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r17: 4 loads, 4 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r16: 5 loads, 5 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r15: 8 loads, 8 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r14: 9 loads, 9 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r13: 5 loads, 5 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r12: 4 loads, 4 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r11: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r10: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r9: 10 loads, 10 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r8: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r10: 10 loads, 10 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r9: 5 loads, 5 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r8: 8 loads, 8 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_1: 5 loads, 5 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r3: 8 loads, 8 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r6: 10 loads, 10 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r5: 3 loads, 3 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r3: 9 loads, 9 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r6: 3 loads, 3 LSLICEs
      Net stm03/ppmc_reg_S118M_inst/nMRST_i_1_r4: 8 loads, 8 LSLICEs
-     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 9 loads, 9 LSLICEs
+     Net stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 10 loads, 10 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r0: 4 loads, 4 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r1: 4 loads, 4 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r23: 8 loads, 8 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r2: 7 loads, 7 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r21: 10 loads, 10 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r20: 8 loads, 8 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r19: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r3: 6 loads, 6 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r22: 4 loads, 4 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r11: 6 loads, 6 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r1: 8 loads, 8 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r22: 10 loads, 10 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r21: 8 loads, 8 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r20: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r23: 4 loads, 4 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r2: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r19: 6 loads, 6 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r18: 5 loads, 5 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r17: 4 loads, 4 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r16: 5 loads, 5 LSLICEs
@@ -1183,62 +1197,63 @@ Design Summary:
      Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r14: 10 loads, 10 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r13: 5 loads, 5 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r12: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r11: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r10: 9 loads, 9 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r9: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r8: 10 loads, 10 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_0: 5 loads, 5 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r4: 8 loads, 8 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r10: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r9: 9 loads, 9 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r8: 5 loads, 5 LSLICEs
      Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r6: 3 loads, 3 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r5: 8 loads, 8 LSLICEs
-     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 9 loads, 9 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld_0: 5 loads, 5 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r3: 9 loads, 9 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r6: 10 loads, 10 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r5: 3 loads, 3 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/nMRST_i_1_r4: 8 loads, 8 LSLICEs
+     Net stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 10 loads, 10 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r0: 4 loads, 4 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r1: 3 loads, 3 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r23: 8 loads, 8 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r2: 7 loads, 7 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r21: 9 loads, 9 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r2: 6 loads, 6 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r3: 8 loads, 8 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r21: 10 loads, 10 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r20: 8 loads, 8 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r19: 5 loads, 5 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r3: 6 loads, 6 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r22: 4 loads, 4 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r18: 5 loads, 5 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r17: 4 loads, 4 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r16: 5 loads, 5 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r15: 9 loads, 9 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r15: 10 loads, 10 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r14: 10 loads, 10 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r13: 4 loads, 4 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r12: 6 loads, 6 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r13: 5 loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r12: 5 loads, 5 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r11: 5 loads, 5 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r10: 9 loads, 9 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r10: 10 loads, 10 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r9: 5 loads, 5 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r8: 10 loads, 10 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_pls_ld: 5 loads, 5 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r4: 8 loads, 8 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r4: 9 loads, 9 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r7: 10 loads, 10 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r6: 3 loads, 3 LSLICEs
      Net stm01/ppmc_reg_S118M_inst/nMRST_i_1_r5: 8 loads, 8 LSLICEs
-     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 9 loads, 9 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_acc_enb: 10 loads, 10 LSLICEs
      Net U_DAC43608_top/s_wb_ack_o: 1 loads, 1 LSLICEs
      Net slv_com_top_inst.s_RSTb3_2p_i: 21 loads, 20 LSLICEs
      Net slv_com_top_inst/cds_inst/s_RSTb3_2An_i: 1 loads, 1 LSLICEs
      Net slv_com_top_inst/s_RSTb3_2n_i: 2 loads, 2 LSLICEs
      Net slv_com_top_inst/s_RSTb3_2Ap_i: 3 loads, 3 LSLICEs
-     Net slv_com_top_inst.s_RSTb1_i: 242 loads, 237 LSLICEs
+     Net s_RSTb1_i_o2: 243 loads, 238 LSLICEs
      Net slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/rx_data_c[10]: 1 loads, 1 LSLICEs
-     Net slv_com_top_inst/TX_RSTb_i_r14: 6 loads, 6 LSLICEs
-     Net slv_com_top_inst.TX_RSTb_i_r7: 7 loads, 4 LSLICEs
+     Net slv_com_top_inst.TX_RSTb_i_r15: 7 loads, 6 LSLICEs
+     Net slv_com_top_inst/TX_RSTb_i_r14: 5 loads, 5 LSLICEs
      Net slv_com_top_inst/TX_RSTb_i_r13: 5 loads, 5 LSLICEs
-     Net slv_com_top_inst/TX_RSTb_i_r12: 30 loads, 28 LSLICEs
-     Net slv_com_top_inst/TX_RSTb_i_r11: 13 loads, 13 LSLICEs
+     Net slv_com_top_inst/TX_RSTb_i_r11: 30 loads, 28 LSLICEs
+     Net slv_com_top_inst/TX_RSTb_i_r12: 12 loads, 12 LSLICEs
+     Net slv_com_top_inst/TX_RSTb_i_r4: 23 loads, 23 LSLICEs
      Net slv_com_top_inst/TX_RSTb_i_r6: 5 loads, 5 LSLICEs
-     Net slv_com_top_inst/TX_RSTb_i_r4: 41 loads, 41 LSLICEs
-     Net slv_com_top_inst/TX_RSTb_i_r5: 5 loads, 5 LSLICEs
+     Net slv_com_top_inst/TX_RSTb_i_r5: 3 loads, 3 LSLICEs
      Net slv_com_top_inst/TX_RSTb_i_r3: 5 loads, 5 LSLICEs
      Net slv_com_top_inst/TX_RSTb_i_r2: 5 loads, 5 LSLICEs
      Net slv_com_top_inst/TX_RSTb_i_r1: 8 loads, 8 LSLICEs
      Net slv_com_top_inst/TX_RSTb_i_r0: 4 loads, 4 LSLICEs
-     Net slv_com_top_inst/TX_RSTb_i_r8: 8 loads, 8 LSLICEs
+     Net slv_com_top_inst/TX_RSTb_i_r8: 25 loads, 23 LSLICEs
+     Net slv_com_top_inst/TX_RSTb_i_r7: 6 loads, 6 LSLICEs
      Net slv_com_top_inst/TX_RSTb_i_r10: 4 loads, 4 LSLICEs
      Net slv_com_top_inst/TX_RSTb_i_r9: 4 loads, 4 LSLICEs
      Net slv_com_top_inst/tx_com_inst/enc8b10b_wrapper_inst/reset_n_reg: 9 loads, 9 LSLICEs
@@ -1246,37 +1261,37 @@ Design Summary:
      Net slv_com_top_inst/LOCKED: 30 loads, 30 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net slv_com_top_inst.s_RSTb1_i: 242 loads
-     Net stm11/ppmc_reg_S118M_inst/nMRST_i_1: 151 loads
-     Net sp_conv_inst/SIO_inst1/s_START: 122 loads
-     Net sp_conv_inst/SIO_inst1/s_SPI_start: 116 loads
-     Net gpio01.gpio_reg_inst.LWEb_i_1: 98 loads
-     Net gpio01.gpio_reg_inst.LWEb_i_1_1: 98 loads
-     Net ENC_inst/un16_p_enc_stm_2: 96 loads
-     Net ENC_inst.enc_func.1.un16_p_enc_stm_1: 95 loads
-     Net ENC_inst/un16_p_enc_stm_4: 95 loads
-     Net s_LA[2]: 93 loads
+     Net s_LWEb: 370 loads
+     Net s_RSTb1_i_o2: 243 loads
+     Net stm11/ppmc_reg_S118M_inst/nMRST_i_1: 158 loads
+     Net sp_conv_inst/SIO_inst1/s_START: 120 loads
+     Net sp_conv_inst/SIO_inst1/s_SPI_start: 114 loads
+     Net s_LRDb: 98 loads
+     Net s_LA[1]: 96 loads
+     Net s_CKEN500k: 95 loads
+     Net s_LDI[0]: 91 loads
+     Net s_LDI[2]: 91 loads
  
 
-   Number of warnings:  2
+   Number of warnings:  16
    Number of errors:    0
 
 
 
-Total CPU Time: 12 secs  
-Total REAL Time: 16 secs  
-Peak Memory Usage: 262 MB
+Total CPU Time: 9 secs  
+Total REAL Time: 10 secs  
+Peak Memory Usage: 259 MB
 
 Dumping design to file SP0557_SP0557_map.ncd.
 
 trce -f "SP0557_SP0557.mt" -o "SP0557_SP0557.tw1" "SP0557_SP0557_map.ncd" "SP0557_SP0557.prf"
-trce:  version Diamond (64-bit) 3.13.0.56.2
+trce:  version Diamond (64-bit) 3.14.0.75.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
 Loading design for application trce from file sp0557_sp0557_map.ncd.
 Design name: SP0557
@@ -1285,31 +1300,30 @@ Vendor:      LATTICE
 Device:      LFE5U-25F
 Package:     CABGA256
 Performance: 6
-Loading device for application trce from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.13/ispfpga.
+Loading device for application trce from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.44.
 Performance Hardware Data Status:   Final          Version 55.1.
 Setup and Hold Report
 
 --------------------------------------------------------------------------------
-Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
-Thu Feb 26 10:47:18 2026
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
+Sat Feb 28 20:15:00 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
-Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o SP0557_SP0557.tw1 -gui -msgset C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3/promote.xml SP0557_SP0557_map.ncd SP0557_SP0557.prf 
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o SP0557_SP0557.tw1 -gui -msgset C:/FPGA work/PCBNo.10081/FPGA/promote.xml SP0557_SP0557_map.ncd SP0557_SP0557.prf 
 Design file:     sp0557_sp0557_map.ncd
 Preference file: sp0557_sp0557.prf
 Device,speed:    LFE5U-25F,6
 Report level:    verbose report, limited to 1 item per preference
 --------------------------------------------------------------------------------
 
-    <postMsg mid="70121017" type="Warning" dynamic="1" navigation="0" arg0="slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0"  />
 BLOCK ASYNCPATHS
 BLOCK RESETPATHS
 --------------------------------------------------------------------------------
@@ -1322,21 +1336,21 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 1451240 paths, 437 nets, and 66056 connections (94.12% coverage)
+Constraints cover 1647471 paths, 427 nets, and 63969 connections (93.90% coverage)
 
 --------------------------------------------------------------------------------
-Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
-Thu Feb 26 10:47:20 2026
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
+Sat Feb 28 20:15:01 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
-Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o SP0557_SP0557.tw1 -gui -msgset C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3/promote.xml SP0557_SP0557_map.ncd SP0557_SP0557.prf 
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o SP0557_SP0557.tw1 -gui -msgset C:/FPGA work/PCBNo.10081/FPGA/promote.xml SP0557_SP0557_map.ncd SP0557_SP0557.prf 
 Design file:     sp0557_sp0557_map.ncd
 Preference file: sp0557_sp0557.prf
 Device,speed:    LFE5U-25F,M
@@ -1355,7 +1369,7 @@ Timing summary (Hold):
 Timing errors: 8  Score: 5172
 Cumulative negative slack: 5172
 
-Constraints cover 1451240 paths, 437 nets, and 68402 connections (97.46% coverage)
+Constraints cover 1647471 paths, 427 nets, and 66590 connections (97.75% coverage)
 
 
 
@@ -1369,8 +1383,8 @@ Cumulative negative slack: 5172 (0+5172)
 
 --------------------------------------------------------------------------------
 
-Total CPU Time: 2 secs 
-Total REAL Time: 6 secs 
+Total CPU Time: 3 secs 
+Total REAL Time: 4 secs 
 Peak Memory Usage: 288 MB
 
 
@@ -1378,13 +1392,14 @@ mpartrce -p "SP0557_SP0557.p2t" -f "SP0557_SP0557.p3t" -tf "SP0557_SP0557.pt" "S
 
 ---- MParTrce Tool ----
 Removing old design directory at request of -rem command line option to this program.
+    <postMsg mid="2030012" type="Warning" dynamic="0" navigation="0"  />
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "SP0557_SP0557_map.ncd"
-Thu Feb 26 10:47:24 2026
+Sat Feb 28 20:15:03 2026
 
-PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
-Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1:par_low_skew_clock_net=0 SP0557_SP0557_map.ncd SP0557_SP0557.dir/5_1.ncd SP0557_SP0557.prf
+PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset "C:/FPGA work/PCBNo.10081/FPGA/promote.xml" -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1:par_low_skew_clock_net=0 SP0557_SP0557_map.ncd SP0557_SP0557.dir/5_1.ncd SP0557_SP0557.prf
 Preference file: SP0557_SP0557.prf.
 Placement level-cost: 5-1.
 Routing Iterations: 6
@@ -1396,7 +1411,7 @@ Vendor:      LATTICE
 Device:      LFE5U-25F
 Package:     CABGA256
 Performance: 6
-Loading device for application par from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.13/ispfpga.
+Loading device for application par from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.44.
 Performance Hardware Data Status:   Final          Version 55.1.
 License checked out.
@@ -1409,53 +1424,52 @@ Device utilization summary:
                     127/197          64% bonded
    IOLOGIC           83/199          41% used
 
-   SLICE          10843/12144        89% used
+   SLICE          10335/12144        85% used
 
    GSR                1/1           100% used
    EBR                4/56            7% used
    PLL                1/2            50% used
 
 
-    <postMsg mid="70121017" type="Warning" dynamic="1" navigation="0" arg0="slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0"  />
-Number of Signals: 25279
-Number of Connections: 70183
+Number of Signals: 24384
+Number of Connections: 68126
 
 Pin Constraint Summary:
    127 out of 127 pins locked (100% locked).
 
 The following 16 signals are selected to use the primary clock routing resources:
-    slv_com_top_inst.CLKCOM_OUT (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 172/0/0)
+    slv_com_top_inst.CLKCOM_OUT (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 173/0/0)
     slv_com_top_inst/CLK2A (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 16/0/0)
-    s_PLL_CLK20M (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 5136/0/0)
-    slv_com_top_inst.CLK1 (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 364/0/0)
+    s_PLL_CLK20M (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 5165/0/0)
+    slv_com_top_inst.CLK1 (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 368/0/0)
     CLK20M_c (driver: CLK20M, clk/ce/sr load #: 9/0/0)
-    slv_com_top_inst.s_RSTb1_i (driver: slv_com_top_inst/slv_ctrl_top_inst/SLICE_10863, clk/ce/sr load #: 0/0/242)
-    stm11/ppmc_reg_S118M_inst/nMRST_i_1 (driver: stm11/ppmc_reg_S118M_inst/SLICE_10497, clk/ce/sr load #: 0/0/151)
-    gpio01/N_346_i_2 (driver: gpio01/fc_dec_inst/SLICE_10890, clk/ce/sr load #: 0/61/0)
-    gpio01/N_346_i_1 (driver: gpio01/fc_dec_inst/SLICE_10419, clk/ce/sr load #: 0/60/0)
-    gpio01/N_346_i (driver: gpio01/fc_dec_inst/SLICE_10419, clk/ce/sr load #: 0/57/0)
-    gpio02/N_345_i_2 (driver: gpio02/fc_dec_inst/SLICE_10396, clk/ce/sr load #: 0/55/0)
-    gpio02/N_345_i (driver: SLICE_10888, clk/ce/sr load #: 0/55/0)
-    gpio02/N_345_i_1 (driver: gpio02/fc_dec_inst/SLICE_10396, clk/ce/sr load #: 0/53/0)
-    slv_com_top_inst/TX_RSTb_i_r4 (driver: slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/SLICE_10222, clk/ce/sr load #: 0/0/41)
-    N_36_i (driver: gpio02/fc_dec_inst/SLICE_10395, clk/ce/sr load #: 0/39/0)
-    slv_com_top_inst/TX_RSTb_i_r12 (driver: slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/SLICE_10220, clk/ce/sr load #: 0/0/30)
+    s_RSTb1_i_o2 (driver: slv_com_top_inst/SLICE_4664, clk/ce/sr load #: 0/0/243)
+    stm11/ppmc_reg_S118M_inst/nMRST_i_1 (driver: stm11/ppmc_reg_S118M_inst/SLICE_10016, clk/ce/sr load #: 0/0/158)
+    gpio02/LOAD_L_i_i_a2 (driver: SLICE_9712, clk/ce/sr load #: 0/60/0)
+    gpio02/N_761_1 (driver: gpio02/fc_dec_inst/SLICE_9909, clk/ce/sr load #: 0/59/0)
+    gpio02/N_761_2 (driver: gpio02/fc_dec_inst/SLICE_9909, clk/ce/sr load #: 0/55/0)
+    gpio01/N_759_2 (driver: SLICE_10512, clk/ce/sr load #: 0/54/0)
+    gpio01/LOAD_L_i_i_a2_0 (driver: SLICE_9712, clk/ce/sr load #: 0/52/0)
+    gpio01/N_759_1 (driver: SLICE_10511, clk/ce/sr load #: 0/49/0)
+    LATCH_L_i_i_a2 (driver: SLICE_7918, clk/ce/sr load #: 0/39/0)
+    slv_com_top_inst/TX_RSTb_i_r11 (driver: slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/SLICE_9706, clk/ce/sr load #: 0/0/30)
+    slv_com_top_inst/LOCKED (driver: slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0, clk/ce/sr load #: 0/0/30)
 
 
-Signal s_LRSTb_r46 is selected as Global Set/Reset.
+Signal s_LRSTb_r45 is selected as Global Set/Reset.
 Starting Placer Phase 0.
 ..........
-Finished Placer Phase 0.  REAL time: 57 secs 
+Finished Placer Phase 0.  REAL time: 49 secs 
 
 Starting Placer Phase 1.
-......................................
-Placer score = 7173197.
-Finished Placer Phase 1.  REAL time: 2 mins 10 secs 
+..................................
+Placer score = 6946808.
+Finished Placer Phase 1.  REAL time: 1 mins 36 secs 
 
 Starting Placer Phase 2.
-..
-Placer score =  6946977
-Finished Placer Phase 2.  REAL time: 2 mins 25 secs 
+.
+Placer score =  6730681
+Finished Placer Phase 2.  REAL time: 1 mins 45 secs 
 
 
 ------------------ Clock Report ------------------
@@ -1469,57 +1483,61 @@ Global Clock Resources:
   CLKDIV     : 0 out of 4 (0%)
 
 Quadrant TL Clocks:
-  PRIMARY "s_PLL_CLK20M" from CLKOS2 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 1433
-  PRIMARY "slv_com_top_inst.CLK1" from CLKOS3 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 3
-  PRIMARY "slv_com_top_inst.s_RSTb1_i" from F1 on comp "slv_com_top_inst/slv_ctrl_top_inst/SLICE_10863" on site "R31C60C", CLK/CE/SR load = 3
-  PRIMARY "gpio01/N_346_i_2" from F1 on comp "gpio01/fc_dec_inst/SLICE_10890" on site "R20C46B", CLK/CE/SR load = 37
-  PRIMARY "gpio01/N_346_i_1" from F1 on comp "gpio01/fc_dec_inst/SLICE_10419" on site "R34C40B", CLK/CE/SR load = 30
-  PRIMARY "gpio01/N_346_i" from F0 on comp "gpio01/fc_dec_inst/SLICE_10419" on site "R34C40B", CLK/CE/SR load = 35
-  PRIMARY "gpio02/N_345_i_2" from F1 on comp "gpio02/fc_dec_inst/SLICE_10396" on site "R31C40A", CLK/CE/SR load = 42
-  PRIMARY "gpio02/N_345_i" from F0 on comp "SLICE_10888" on site "R16C21B", CLK/CE/SR load = 32
-  PRIMARY "gpio02/N_345_i_1" from F0 on comp "gpio02/fc_dec_inst/SLICE_10396" on site "R31C40A", CLK/CE/SR load = 38
+  PRIMARY "s_PLL_CLK20M" from CLKOS2 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 1451
+  PRIMARY "slv_com_top_inst.CLK1" from CLKOS3 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 4
+  PRIMARY "s_RSTb1_i_o2" from F1 on comp "slv_com_top_inst/SLICE_4664" on site "R24C69A", CLK/CE/SR load = 4
+  PRIMARY "stm11/ppmc_reg_S118M_inst/nMRST_i_1" from F1 on comp "stm11/ppmc_reg_S118M_inst/SLICE_10016" on site "R44C22B", CLK/CE/SR load = 2
+  PRIMARY "gpio02/LOAD_L_i_i_a2" from F0 on comp "SLICE_9712" on site "R34C40D", CLK/CE/SR load = 45
+  PRIMARY "gpio02/N_761_1" from F0 on comp "gpio02/fc_dec_inst/SLICE_9909" on site "R30C33C", CLK/CE/SR load = 42
+  PRIMARY "gpio02/N_761_2" from F1 on comp "gpio02/fc_dec_inst/SLICE_9909" on site "R30C33C", CLK/CE/SR load = 35
+  PRIMARY "gpio01/N_759_2" from F0 on comp "SLICE_10512" on site "R38C28A", CLK/CE/SR load = 34
+  PRIMARY "gpio01/LOAD_L_i_i_a2_0" from F1 on comp "SLICE_9712" on site "R34C40D", CLK/CE/SR load = 23
+  PRIMARY "gpio01/N_759_1" from F0 on comp "SLICE_10511" on site "R36C26C", CLK/CE/SR load = 34
 
-  PRIMARY  : 9 out of 16 (56%)
+  PRIMARY  : 10 out of 16 (62%)
 
 Quadrant TR Clocks:
-  PRIMARY "slv_com_top_inst.CLKCOM_OUT" from CLKOP on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 117
-  PRIMARY "slv_com_top_inst/CLK2A" from CLKOS on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 16
-  PRIMARY "s_PLL_CLK20M" from CLKOS2 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 1237
-  PRIMARY "slv_com_top_inst.CLK1" from CLKOS3 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 200
-  PRIMARY "CLK20M_c" from comp "CLK20M" on CLK_PIN site "J16 (PR23A)", CLK/CE/SR load = 8
-  PRIMARY "slv_com_top_inst.s_RSTb1_i" from F1 on comp "slv_com_top_inst/slv_ctrl_top_inst/SLICE_10863" on site "R31C60C", CLK/CE/SR load = 127
-  PRIMARY "gpio01/N_346_i_2" from F1 on comp "gpio01/fc_dec_inst/SLICE_10890" on site "R20C46B", CLK/CE/SR load = 24
-  PRIMARY "gpio01/N_346_i_1" from F1 on comp "gpio01/fc_dec_inst/SLICE_10419" on site "R34C40B", CLK/CE/SR load = 30
-  PRIMARY "gpio01/N_346_i" from F0 on comp "gpio01/fc_dec_inst/SLICE_10419" on site "R34C40B", CLK/CE/SR load = 22
-  PRIMARY "gpio02/N_345_i_2" from F1 on comp "gpio02/fc_dec_inst/SLICE_10396" on site "R31C40A", CLK/CE/SR load = 12
-  PRIMARY "gpio02/N_345_i" from F0 on comp "SLICE_10888" on site "R16C21B", CLK/CE/SR load = 23
-  PRIMARY "gpio02/N_345_i_1" from F0 on comp "gpio02/fc_dec_inst/SLICE_10396" on site "R31C40A", CLK/CE/SR load = 15
-  PRIMARY "slv_com_top_inst/TX_RSTb_i_r4" from F1 on comp "slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/SLICE_10222" on site "R18C67B", CLK/CE/SR load = 41
-  PRIMARY "N_36_i" from F0 on comp "gpio02/fc_dec_inst/SLICE_10395" on site "R12C33B", CLK/CE/SR load = 39
-  PRIMARY "slv_com_top_inst/TX_RSTb_i_r12" from F0 on comp "slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/SLICE_10220" on site "R16C65B", CLK/CE/SR load = 7
+  PRIMARY "slv_com_top_inst.CLKCOM_OUT" from CLKOP on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 32
+  PRIMARY "s_PLL_CLK20M" from CLKOS2 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 1529
+  PRIMARY "slv_com_top_inst.CLK1" from CLKOS3 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 20
+  PRIMARY "CLK20M_c" from comp "CLK20M" on CLK_PIN site "J16 (PR23A)", CLK/CE/SR load = 6
+  PRIMARY "s_RSTb1_i_o2" from F1 on comp "slv_com_top_inst/SLICE_4664" on site "R24C69A", CLK/CE/SR load = 14
+  PRIMARY "stm11/ppmc_reg_S118M_inst/nMRST_i_1" from F1 on comp "stm11/ppmc_reg_S118M_inst/SLICE_10016" on site "R44C22B", CLK/CE/SR load = 1
+  PRIMARY "gpio02/LOAD_L_i_i_a2" from F0 on comp "SLICE_9712" on site "R34C40D", CLK/CE/SR load = 15
+  PRIMARY "gpio02/N_761_1" from F0 on comp "gpio02/fc_dec_inst/SLICE_9909" on site "R30C33C", CLK/CE/SR load = 16
+  PRIMARY "gpio02/N_761_2" from F1 on comp "gpio02/fc_dec_inst/SLICE_9909" on site "R30C33C", CLK/CE/SR load = 20
+  PRIMARY "gpio01/N_759_2" from F0 on comp "SLICE_10512" on site "R38C28A", CLK/CE/SR load = 20
+  PRIMARY "gpio01/LOAD_L_i_i_a2_0" from F1 on comp "SLICE_9712" on site "R34C40D", CLK/CE/SR load = 29
+  PRIMARY "gpio01/N_759_1" from F0 on comp "SLICE_10511" on site "R36C26C", CLK/CE/SR load = 15
+  PRIMARY "LATCH_L_i_i_a2" from F0 on comp "SLICE_7918" on site "R32C42B", CLK/CE/SR load = 36
+  PRIMARY "slv_com_top_inst/TX_RSTb_i_r11" from F0 on comp "slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/SLICE_9706" on site "R26C59A", CLK/CE/SR load = 2
+  PRIMARY "slv_com_top_inst/LOCKED" from LOCK on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 12
 
   PRIMARY  : 15 out of 16 (93%)
 
 Quadrant BL Clocks:
-  PRIMARY "slv_com_top_inst.CLKCOM_OUT" from CLKOP on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 3
-  PRIMARY "s_PLL_CLK20M" from CLKOS2 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 1136
-  PRIMARY "slv_com_top_inst.CLK1" from CLKOS3 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 14
-  PRIMARY "slv_com_top_inst.s_RSTb1_i" from F1 on comp "slv_com_top_inst/slv_ctrl_top_inst/SLICE_10863" on site "R31C60C", CLK/CE/SR load = 14
-  PRIMARY "stm11/ppmc_reg_S118M_inst/nMRST_i_1" from F1 on comp "stm11/ppmc_reg_S118M_inst/SLICE_10497" on site "R41C32B", CLK/CE/SR load = 55
-  PRIMARY "gpio02/N_345_i_2" from F1 on comp "gpio02/fc_dec_inst/SLICE_10396" on site "R31C40A", CLK/CE/SR load = 1
+  PRIMARY "slv_com_top_inst.CLKCOM_OUT" from CLKOP on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 26
+  PRIMARY "s_PLL_CLK20M" from CLKOS2 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 1068
+  PRIMARY "slv_com_top_inst.CLK1" from CLKOS3 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 96
+  PRIMARY "s_RSTb1_i_o2" from F1 on comp "slv_com_top_inst/SLICE_4664" on site "R24C69A", CLK/CE/SR load = 79
+  PRIMARY "stm11/ppmc_reg_S118M_inst/nMRST_i_1" from F1 on comp "stm11/ppmc_reg_S118M_inst/SLICE_10016" on site "R44C22B", CLK/CE/SR load = 147
 
-  PRIMARY  : 6 out of 16 (37%)
+  PRIMARY  : 5 out of 16 (31%)
 
 Quadrant BR Clocks:
-  PRIMARY "slv_com_top_inst.CLKCOM_OUT" from CLKOP on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 52
-  PRIMARY "s_PLL_CLK20M" from CLKOS2 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 1330
-  PRIMARY "slv_com_top_inst.CLK1" from CLKOS3 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 147
-  PRIMARY "CLK20M_c" from comp "CLK20M" on CLK_PIN site "J16 (PR23A)", CLK/CE/SR load = 1
-  PRIMARY "slv_com_top_inst.s_RSTb1_i" from F1 on comp "slv_com_top_inst/slv_ctrl_top_inst/SLICE_10863" on site "R31C60C", CLK/CE/SR load = 98
-  PRIMARY "stm11/ppmc_reg_S118M_inst/nMRST_i_1" from F1 on comp "stm11/ppmc_reg_S118M_inst/SLICE_10497" on site "R41C32B", CLK/CE/SR load = 96
-  PRIMARY "slv_com_top_inst/TX_RSTb_i_r12" from F0 on comp "slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/SLICE_10220" on site "R16C65B", CLK/CE/SR load = 23
+  PRIMARY "slv_com_top_inst.CLKCOM_OUT" from CLKOP on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 115
+  PRIMARY "slv_com_top_inst/CLK2A" from CLKOS on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 16
+  PRIMARY "s_PLL_CLK20M" from CLKOS2 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 1117
+  PRIMARY "slv_com_top_inst.CLK1" from CLKOS3 on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 248
+  PRIMARY "CLK20M_c" from comp "CLK20M" on CLK_PIN site "J16 (PR23A)", CLK/CE/SR load = 3
+  PRIMARY "s_RSTb1_i_o2" from F1 on comp "slv_com_top_inst/SLICE_4664" on site "R24C69A", CLK/CE/SR load = 146
+  PRIMARY "stm11/ppmc_reg_S118M_inst/nMRST_i_1" from F1 on comp "stm11/ppmc_reg_S118M_inst/SLICE_10016" on site "R44C22B", CLK/CE/SR load = 8
+  PRIMARY "gpio02/N_761_1" from F0 on comp "gpio02/fc_dec_inst/SLICE_9909" on site "R30C33C", CLK/CE/SR load = 1
+  PRIMARY "LATCH_L_i_i_a2" from F0 on comp "SLICE_7918" on site "R32C42B", CLK/CE/SR load = 3
+  PRIMARY "slv_com_top_inst/TX_RSTb_i_r11" from F0 on comp "slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/SLICE_9706" on site "R26C59A", CLK/CE/SR load = 28
+  PRIMARY "slv_com_top_inst/LOCKED" from LOCK on comp "slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 18
 
-  PRIMARY  : 7 out of 16 (43%)
+  PRIMARY  : 11 out of 16 (68%)
 
 Edge Clocks:
 
@@ -1549,16 +1567,16 @@ I/O Bank Usage Summary:
 | 8        | 0 / 13 (  0%)  | -          | -          | -          |
 +----------+----------------+------------+------------+------------+
 
-Total placer CPU time: 1 mins 25 secs 
+Total placer CPU time: 1 mins 32 secs 
 
 Dumping design to file SP0557_SP0557.dir/5_1.ncd.
 
-0 connections routed; 70183 unrouted.
+0 connections routed; 68126 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 2 mins 42 secs 
+Completed router resource preassignment. Real time: 1 mins 55 secs 
 
-Start NBR router at 10:50:08 02/26/26
+Start NBR router at 20:16:59 02/28/26
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -1573,77 +1591,77 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 10:50:11 02/26/26
+Start NBR special constraint process at 20:17:01 02/28/26
 
-Start NBR section for initial routing at 10:50:13 02/26/26
+Start NBR section for initial routing at 20:17:03 02/28/26
 Level 1, iteration 1
-0(0.00%) conflict; 56922(81.11%) untouched conns; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 2 mins 53 secs 
+0(0.00%) conflict; 54785(80.42%) untouched conns; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 4 secs 
 Level 2, iteration 1
-0(0.00%) conflict; 56909(81.09%) untouched conns; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 2 mins 56 secs 
+0(0.00%) conflict; 54772(80.40%) untouched conns; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 6 secs 
 Level 3, iteration 1
-0(0.00%) conflict; 56739(80.84%) untouched conns; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 2 mins 58 secs 
+1(0.00%) conflict; 54671(80.25%) untouched conns; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 9 secs 
 Level 4, iteration 1
-3796(0.33%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 10 secs 
+3491(0.30%) conflicts; 0(0.00%) untouched conn; 755963 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -11.470ns/-755.963ns; real time: 2 mins 18 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 10:50:35 02/26/26
-Level 1, iteration 1
-4(0.00%) conflicts; 5908(8.42%) untouched conns; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 13 secs 
-Level 2, iteration 1
-0(0.00%) conflict; 5914(8.43%) untouched conns; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 16 secs 
-Level 3, iteration 1
-0(0.00%) conflict; 5914(8.43%) untouched conns; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 16 secs 
+Start NBR section for normal routing at 20:17:21 02/28/26
 Level 4, iteration 1
-2017(0.17%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 21 secs 
+2325(0.20%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 26 secs 
 Level 4, iteration 2
-1044(0.09%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 26 secs 
+1295(0.11%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 30 secs 
 Level 4, iteration 3
-496(0.04%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 29 secs 
+655(0.06%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 33 secs 
 Level 4, iteration 4
-236(0.02%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 30 secs 
+331(0.03%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 34 secs 
 Level 4, iteration 5
-90(0.01%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 33 secs 
+172(0.01%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 36 secs 
 Level 4, iteration 6
-27(0.00%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 33 secs 
+94(0.01%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 37 secs 
 Level 4, iteration 7
-12(0.00%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 36 secs 
+54(0.00%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 39 secs 
 Level 4, iteration 8
-3(0.00%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 36 secs 
+25(0.00%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 39 secs 
 Level 4, iteration 9
-2(0.00%) conflicts; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 38 secs 
+12(0.00%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 41 secs 
 Level 4, iteration 10
-0(0.00%) conflict; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 38 secs 
+4(0.00%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 41 secs 
+Level 4, iteration 11
+3(0.00%) conflicts; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 43 secs 
+Level 4, iteration 12
+1(0.00%) conflict; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 43 secs 
+Level 4, iteration 13
+0(0.00%) conflict; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 45 secs 
 
-Start NBR section for performance tuning (iteration 1) at 10:51:02 02/26/26
+Start NBR section for performance tuning (iteration 1) at 20:17:48 02/28/26
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 38 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 45 secs 
 
-Start NBR section for re-routing at 10:51:02 02/26/26
+Start NBR section for re-routing at 20:17:48 02/28/26
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 2550 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: -1.275ns/-2.550ns; real time: 3 mins 39 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 308 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -0.154ns/-0.308ns; real time: 2 mins 46 secs 
 
-Start NBR section for post-routing at 10:51:03 02/26/26
+Start NBR section for post-routing at 20:17:49 02/28/26
 
 End NBR router with 0 unrouted connection
 
@@ -1651,35 +1669,35 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 2 (0.00%)
-  Estimated worst slack<setup> : -1.275ns
-  Timing score<setup> : 1275
+  Estimated worst slack<setup> : -0.154ns
+  Timing score<setup> : 154
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-Total CPU time 2 mins 9 secs 
-Total REAL time: 4 mins 7 secs 
+Total CPU time 2 mins 42 secs 
+Total REAL time: 3 mins 7 secs 
 Completely routed.
-End of route.  70183 routed (100.00%); 0 unrouted.
+End of route.  68126 routed (100.00%); 0 unrouted.
 
-Hold time timing score: 1, hold timing errors: 4
+Hold time timing score: 0, hold timing errors: 2
 
-Timing score: 1275 
+Timing score: 154 
 
 Dumping design to file SP0557_SP0557.dir/5_1.ncd.
 
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = -1.275
-PAR_SUMMARY::Timing score<setup/<ns>> = 1.275
-PAR_SUMMARY::Worst  slack<hold /<ns>> = -0.571
-PAR_SUMMARY::Timing score<hold /<ns>> = 1.698
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -0.154
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.154
+PAR_SUMMARY::Worst  slack<hold /<ns>> = -0.321
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.492
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 2 mins 11 secs 
-Total REAL time to completion: 4 mins 11 secs 
+Total CPU  time to completion: 2 mins 45 secs 
+Total REAL time to completion: 3 mins 10 secs 
 
 par done!
 
@@ -1689,18 +1707,18 @@ Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 Exiting par with exit code 0
 Exiting mpartrce with exit code 0
 
 trce -f "SP0557_SP0557.pt" -o "SP0557_SP0557.twr" "SP0557_SP0557.ncd" "SP0557_SP0557.prf"
-trce:  version Diamond (64-bit) 3.13.0.56.2
+trce:  version Diamond (64-bit) 3.14.0.75.2
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
 Loading design for application trce from file sp0557_sp0557.ncd.
 Design name: SP0557
@@ -1709,31 +1727,30 @@ Vendor:      LATTICE
 Device:      LFE5U-25F
 Package:     CABGA256
 Performance: 6
-Loading device for application trce from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.13/ispfpga.
+Loading device for application trce from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.44.
 Performance Hardware Data Status:   Final          Version 55.1.
 Setup and Hold Report
 
 --------------------------------------------------------------------------------
-Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
-Thu Feb 26 10:51:38 2026
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
+Sat Feb 28 20:18:15 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
-Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o SP0557_SP0557.twr -gui -msgset C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3/promote.xml SP0557_SP0557.ncd SP0557_SP0557.prf 
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o SP0557_SP0557.twr -gui -msgset C:/FPGA work/PCBNo.10081/FPGA/promote.xml SP0557_SP0557.ncd SP0557_SP0557.prf 
 Design file:     sp0557_sp0557.ncd
 Preference file: sp0557_sp0557.prf
 Device,speed:    LFE5U-25F,6
 Report level:    verbose report, limited to 10 items per preference
 --------------------------------------------------------------------------------
 
-    <postMsg mid="70121017" type="Warning" dynamic="1" navigation="0" arg0="slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0"  />
 BLOCK ASYNCPATHS
 BLOCK RESETPATHS
 --------------------------------------------------------------------------------
@@ -1743,24 +1760,24 @@ BLOCK RESETPATHS
 Timing summary (Setup):
 ---------------
 
-Timing errors: 1  Score: 1275
-Cumulative negative slack: 1275
+Timing errors: 1  Score: 154
+Cumulative negative slack: 154
 
-Constraints cover 1451240 paths, 437 nets, and 69506 connections (99.04% coverage)
+Constraints cover 1647471 paths, 427 nets, and 67450 connections (99.01% coverage)
 
 --------------------------------------------------------------------------------
-Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
-Thu Feb 26 10:51:41 2026
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
+Sat Feb 28 20:18:17 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
-Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o SP0557_SP0557.twr -gui -msgset C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3/promote.xml SP0557_SP0557.ncd SP0557_SP0557.prf 
+Command line:    trce -v 10 -gt -sethld -sp 6 -sphld m -o SP0557_SP0557.twr -gui -msgset C:/FPGA work/PCBNo.10081/FPGA/promote.xml SP0557_SP0557.ncd SP0557_SP0557.prf 
 Design file:     sp0557_sp0557.ncd
 Preference file: sp0557_sp0557.prf
 Device,speed:    LFE5U-25F,m
@@ -1776,39 +1793,39 @@ BLOCK RESETPATHS
 Timing summary (Hold):
 ---------------
 
-Timing errors: 4  Score: 1698
-Cumulative negative slack: 1698
+Timing errors: 2  Score: 492
+Cumulative negative slack: 492
 
-Constraints cover 1451240 paths, 437 nets, and 69506 connections (99.04% coverage)
+Constraints cover 1647471 paths, 427 nets, and 67450 connections (99.01% coverage)
 
 
 
 Timing summary (Setup and Hold):
 ---------------
 
-Timing errors: 1 (setup), 4 (hold)
-Score: 1275 (setup), 1698 (hold)
-Cumulative negative slack: 2973 (1275+1698)
+Timing errors: 1 (setup), 2 (hold)
+Score: 154 (setup), 492 (hold)
+Cumulative negative slack: 646 (154+492)
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
 
-Total CPU Time: 4 secs 
-Total REAL Time: 9 secs 
-Peak Memory Usage: 302 MB
+Total CPU Time: 6 secs 
+Total REAL Time: 7 secs 
+Peak Memory Usage: 300 MB
 
 
 tmcheck -par "SP0557_SP0557.par" 
 
-bitgen -w "SP0557_SP0557.ncd" -f "SP0557_SP0557.t2b" -e -s "C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3/SP0557.sec" -k "C:/work/S127M/PCBNo_10081/SP0557_rev02_00_AI3/SP0557.bek" "SP0557_SP0557.prf"
+bitgen -w "SP0557_SP0557.ncd" -f "SP0557_SP0557.t2b" -e -s "C:/FPGA work/PCBNo.10081/FPGA/SP0557.sec" -k "C:/FPGA work/PCBNo.10081/FPGA/SP0557.bek" "SP0557_SP0557.prf"
 
 
-BITGEN: Bitstream Generator Diamond (64-bit) 3.13.0.56.2
+BITGEN: Bitstream Generator Diamond (64-bit) 3.14.0.75.2
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
 
 Loading design for application Bitgen from file SP0557_SP0557.ncd.
@@ -1818,7 +1835,7 @@ Vendor:      LATTICE
 Device:      LFE5U-25F
 Package:     CABGA256
 Performance: 6
-Loading device for application Bitgen from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.13/ispfpga.
+Loading device for application Bitgen from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.44.
 Performance Hardware Data Status:   Final          Version 55.1.
 
@@ -1880,5 +1897,5 @@ Bitstream Status: Final           Version 10.27.
  
 Saving bit stream in "SP0557_SP0557.bit".
 Total CPU Time: 5 secs 
-Total REAL Time: 8 secs 
-Peak Memory Usage: 362 MB
+Total REAL Time: 5 secs 
+Peak Memory Usage: 361 MB

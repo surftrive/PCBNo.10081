@@ -5,22 +5,22 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1772070721"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1772278022"/>
             <Task name="Promgen" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1772070436">
-            <Task name="Map" build_result="2" update_result="0" update_time="1772070436"/>
-            <Task name="MapTrace" build_result="2" update_result="0" update_time="1772070443"/>
+        <Milestone name="Map" build_result="2" build_time="1772277299">
+            <Task name="Map" build_result="2" update_result="0" update_time="1772277299"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1772277303"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1772070695">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1772070695"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1772070704"/>
+        <Milestone name="PAR" build_result="2" build_time="1772277493">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1772277493"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1772277500"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1772070359">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1772070359"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1772277201">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1772277201"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="0" update_result="2" update_time="1772070189"/>
@@ -29,17 +29,16 @@
             <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Translate" build_result="2" build_time="1772070419">
-            <Task name="Translate" build_result="2" update_result="0" update_time="1772070419"/>
+        <Milestone name="Translate" build_result="2" build_time="1772277289">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1772277289"/>
         </Milestone>
-        <Report name="SP0557_SP0557.bgn" last_build_time="1772070720" last_build_size="4606"/>
-        <Report name="SP0557_SP0557.bit" last_build_time="1772070720" last_build_size="582673"/>
-        <Report name="SP0557_SP0557.edi" last_build_time="1772070359" last_build_size="19005246"/>
-        <Report name="SP0557_SP0557.ncd" last_build_time="1772070695" last_build_size="18971987"/>
-        <Report name="SP0557_SP0557.ngd" last_build_time="1772070419" last_build_size="13960666"/>
-        <Report name="SP0557_SP0557.tw1" last_build_time="1772070443" last_build_size="73730"/>
-        <Report name="SP0557_SP0557.twr" last_build_time="1772070704" last_build_size="627624"/>
-        <Report name="SP0557_SP0557_map.ncd" last_build_time="1772070436" last_build_size="13220790"/>
+        <Report name="SP0557_SP0557.bgn" last_build_time="1772278022" last_build_size="4558"/>
+        <Report name="SP0557_SP0557.bit" last_build_time="1772278022" last_build_size="582673"/>
+        <Report name="SP0557_SP0557.edi" last_build_time="1772277201" last_build_size="18648451"/>
+        <Report name="SP0557_SP0557.ncd" last_build_time="1772277493" last_build_size="18224297"/>
+        <Report name="SP0557_SP0557.ngd" last_build_time="1772277289" last_build_size="13564219"/>
+        <Report name="SP0557_SP0557.tw1" last_build_time="1772277303" last_build_size="50946"/>
+        <Report name="SP0557_SP0557.twr" last_build_time="1772277500" last_build_size="450372"/>
+        <Report name="SP0557_SP0557_map.ncd" last_build_time="1772277299" last_build_size="12681089"/>
     </Strategy>
 </BuildStatus>
-                                                 

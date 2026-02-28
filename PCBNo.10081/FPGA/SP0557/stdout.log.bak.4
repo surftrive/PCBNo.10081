@@ -20,19 +20,91 @@ Running in Lattice mode
             Inclusivity and Diversity" (Refer to article 000036315 at
                         https://solvnetplus.synopsys.com)
 
-Starting:    C:\lscc\diamond\3.13\synpbase\bin64\mbin\synplify.exe
+Starting:    C:\lscc\diamond\3.13\synpbase\bin64\mbin\synbatch.exe
 Install:     C:\lscc\diamond\3.13\synpbase
 Hostname:    SCPP006598
-Date:        Wed Jan 28 15:06:44 2026
+Date:        Tue Feb 24 10:29:38 2026
 Version:     U-2023.03L-SP1
 
-Arguments:   -product synplify_base -tcl C:/work/S127M/PCBNo_10081/SP0557_rev02_00/SP0557/launch_synplify.tcl
+Arguments:   -product synplify_base -batch SP0557_SP0557_synplify.tcl
 ProductType: synplify_pro
 
 
 
 
+log file: "C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\SP0557_SP0557.srr"
+Running: hdl_info_gen in foreground
 
-No project opened.
-TCL script complete: "C:/work/S127M/PCBNo_10081/SP0557_rev02_00/SP0557/launch_synplify.tcl"
+Generating HDL info...
+Copied C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\SP0557_SP0557.srr to C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\SP0557_SP0557.srf
+
+hdl_info_gen completed
+# Tue Feb 24 10:29:40 2026
+
+Return Code: 0
+Run Time:00h:00m:02s
+log file: "C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\SP0557_SP0557.srr"
+Running: SP0557 in foreground
+
+Running proj_1|SP0557
+
+Running Flow: compile (Compile) on proj_1|SP0557
+# Tue Feb 24 10:29:40 2026
+
+Running Flow: compile_flow (Compile Process) on proj_1|SP0557
+# Tue Feb 24 10:29:40 2026
+
+Running: compiler (Compile Input) on proj_1|SP0557
+# Tue Feb 24 10:29:40 2026
+Copied C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\synwork\SP0557_SP0557_comp.srs to C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\SP0557_SP0557.srs
+
+compiler completed
+# Tue Feb 24 10:30:17 2026
+
+Return Code: 0
+Run Time:00h:00m:36s
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|SP0557
+# Tue Feb 24 10:30:17 2026
+
+multi_srs_gen completed
+# Tue Feb 24 10:30:17 2026
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\synwork\SP0557_SP0557_mult.srs to C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\SP0557_SP0557.srs
+Copied C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\SP0557_SP0557.srr to C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\SP0557_SP0557.srf
+Complete: Compile Process on proj_1|SP0557
+
+Running: premap (Premap) on proj_1|SP0557
+# Tue Feb 24 10:30:17 2026
+
+premap completed with warnings
+# Tue Feb 24 10:30:25 2026
+
+Return Code: 1
+Run Time:00h:00m:08s
+Complete: Compile on proj_1|SP0557
+
+Running Flow: map (Map) on proj_1|SP0557
+# Tue Feb 24 10:30:26 2026
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on proj_1|SP0557
+# Tue Feb 24 10:30:26 2026
+Copied C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\synwork\SP0557_SP0557_m.srm to C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\SP0557_SP0557.srm
+
+fpga_mapper completed with warnings
+# Tue Feb 24 10:33:43 2026
+
+Return Code: 1
+Run Time:00h:03m:16s
+Complete: Map on proj_1|SP0557
+Copied C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\SP0557_SP0557.srr to C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\SP0557_SP0557.srf
+Complete: Logic Synthesis on proj_1|SP0557
+TCL script complete: "SP0557_SP0557_synplify.tcl"
 exit status=0
+exit status=0
+Save changes for project:
+C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\proj_1.prj
+batch mode default:no

@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version V-2023.09L-2
 #--  Project file C:\FPGA work\PCBNo.10081\FPGA\SP0557\SP0557_syn.prj
-#--  Written on Sat Feb 28 01:52:44 2026
+#--  Written on Sat Feb 28 20:11:04 2026
 
 
 #project files
@@ -97,9 +97,6 @@ add_file -vhdl -lib work "../RTL/SP0557/sp_conv/SIO_ctrl2.vhd"
 add_file -vhdl -lib work "../RTL/SP0557/sp_conv/sp_conv.vhd"
 add_file -vhdl -lib work "../RTL/SP0557/sp_conv/SPI_master2.vhd"
 
-#constraint files (pll_gen.fdc defines clock names, SP0557.fdc references them)
-add_file -constraint "../RTL/IPcore/pll_gen/pll_gen.fdc"
-add_file -constraint "SP0557.fdc"
 
 #implementation: "SP0557"
 impl -add SP0557 -type fpga

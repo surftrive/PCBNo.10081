@@ -12,18 +12,123 @@
             <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
         </Message>
     </Task>
-    <Task name="PARTrace">
-        <Message>
-            <ID>70121017</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0</Dynamic>
-        </Message>
-    </Task>
     <Task name="Map">
+        <Message>
+            <ID>1100523</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(306): Semantic error in &quot;FREQUENCY NET &quot;slv_com_top_inst.CLK2&quot; 100.000000 MHz ;&quot;: </Dynamic>
+            <Dynamic>slv_com_top_inst.CLK2 matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf</Navigation>
+            <Navigation>306</Navigation>
+        </Message>
+        <Message>
+            <ID>1100523</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(307): Semantic error in &quot;FREQUENCY NET &quot;slv_com_top_inst.CLK2A&quot; 100.000000 MHz ;&quot;: </Dynamic>
+            <Dynamic>slv_com_top_inst.CLK2A matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf</Navigation>
+            <Navigation>307</Navigation>
+        </Message>
+        <Message>
+            <ID>1100087</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(318): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;CLK20M_c&quot; TO CLKNET &quot;slv_com_top_inst.CLK2&quot; ;&quot;: </Dynamic>
+            <Dynamic>slv_com_top_inst.CLK2 matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf</Navigation>
+            <Navigation>318</Navigation>
+        </Message>
+        <Message>
+            <ID>1100087</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(319): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;CLK20M_c&quot; TO CLKNET &quot;slv_com_top_inst.CLK2A&quot; ;&quot;: </Dynamic>
+            <Dynamic>slv_com_top_inst.CLK2A matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf</Navigation>
+            <Navigation>319</Navigation>
+        </Message>
+        <Message>
+            <ID>1100087</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(322): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;slv_com_top_inst.CLK2&quot; TO CLKNET &quot;CLK20M_c&quot; ;&quot;: </Dynamic>
+            <Dynamic>slv_com_top_inst.CLK2 matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf</Navigation>
+            <Navigation>322</Navigation>
+        </Message>
+        <Message>
+            <ID>1100087</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(323): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;slv_com_top_inst.CLK2A&quot; TO CLKNET &quot;CLK20M_c&quot; ;&quot;: </Dynamic>
+            <Dynamic>slv_com_top_inst.CLK2A matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf</Navigation>
+            <Navigation>323</Navigation>
+        </Message>
+        <Message>
+            <ID>1100087</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(336): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;s_PLL_CLK20M&quot; TO CLKNET &quot;slv_com_top_inst.CLK2&quot; ;&quot;: </Dynamic>
+            <Dynamic>slv_com_top_inst.CLK2 matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf</Navigation>
+            <Navigation>336</Navigation>
+        </Message>
+        <Message>
+            <ID>1100087</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(337): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;s_PLL_CLK20M&quot; TO CLKNET &quot;slv_com_top_inst.CLK2A&quot; ;&quot;: </Dynamic>
+            <Dynamic>slv_com_top_inst.CLK2A matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf</Navigation>
+            <Navigation>337</Navigation>
+        </Message>
+        <Message>
+            <ID>1100087</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(338): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;slv_com_top_inst.CLK2&quot; TO CLKNET &quot;s_PLL_CLK20M&quot; ;&quot;: </Dynamic>
+            <Dynamic>slv_com_top_inst.CLK2 matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf</Navigation>
+            <Navigation>338</Navigation>
+        </Message>
+        <Message>
+            <ID>1100087</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(339): Semantic error in &quot;BLOCK PATH FROM CLKNET &quot;slv_com_top_inst.CLK2A&quot; TO CLKNET &quot;s_PLL_CLK20M&quot; ;&quot;: </Dynamic>
+            <Dynamic>slv_com_top_inst.CLK2A matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf</Navigation>
+            <Navigation>339</Navigation>
+        </Message>
+        <Message>
+            <ID>1100990</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(347): Semantic error in &quot;MULTICYCLE FROM CLKNET &quot;slv_com_top_inst.CLK1&quot; TO CLKNET &quot;slv_com_top_inst.CLK2&quot; 10.000000 X ;&quot;: </Dynamic>
+            <Dynamic>&quot;slv_com_top_inst.CLK2&quot; matches no clknets in the design. </Dynamic>
+            <Navigation>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf</Navigation>
+            <Navigation>347</Navigation>
+        </Message>
+        <Message>
+            <ID>1100990</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(348): Semantic error in &quot;MULTICYCLE FROM CLKNET &quot;slv_com_top_inst.CLK2&quot; TO CLKNET &quot;slv_com_top_inst.CLK1&quot; 2.000000 X ;&quot;: </Dynamic>
+            <Dynamic>&quot;slv_com_top_inst.CLK2&quot; matches no clknets in the design. </Dynamic>
+            <Navigation>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf</Navigation>
+            <Navigation>348</Navigation>
+        </Message>
+        <Message>
+            <ID>1100990</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(355): Semantic error in &quot;MULTICYCLE FROM CLKNET &quot;slv_com_top_inst.CLK1&quot; TO CLKNET &quot;slv_com_top_inst.CLK2A&quot; 10.000000 X ;&quot;: </Dynamic>
+            <Dynamic>&quot;slv_com_top_inst.CLK2A&quot; matches no clknets in the design. </Dynamic>
+            <Navigation>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf</Navigation>
+            <Navigation>355</Navigation>
+        </Message>
+        <Message>
+            <ID>1100990</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf(356): Semantic error in &quot;MULTICYCLE FROM CLKNET &quot;slv_com_top_inst.CLK2A&quot; TO CLKNET &quot;slv_com_top_inst.CLK1&quot; 2.000000 X ;&quot;: </Dynamic>
+            <Dynamic>&quot;slv_com_top_inst.CLK2A&quot; matches no clknets in the design. </Dynamic>
+            <Navigation>C:/FPGA work/PCBNo.10081/FPGA/SP0557.lpf</Navigation>
+            <Navigation>356</Navigation>
+        </Message>
         <Message>
             <ID>51001030</ID>
             <Severity>Warning</Severity>
-            <Dynamic>s_LRSTb_r46</Dynamic>
+            <Dynamic>s_LRSTb_r45</Dynamic>
         </Message>
         <Message>
             <ID>51001046</ID>
@@ -31,18 +136,10 @@
             <Dynamic>LEDSH_MISO</Dynamic>
         </Message>
     </Task>
-    <Task name="MapTrace">
-        <Message>
-            <ID>70121017</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0</Dynamic>
-        </Message>
-    </Task>
     <Task name="PAR">
         <Message>
-            <ID>70121017</ID>
+            <ID>2030012</ID>
             <Severity>Warning</Severity>
-            <Dynamic>slv_com_top_inst/clk_gen_inst2/PLL_inst/PLLInst_0</Dynamic>
         </Message>
     </Task>
     <Task name="Translate">
