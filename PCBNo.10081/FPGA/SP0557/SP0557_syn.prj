@@ -97,6 +97,9 @@ add_file -vhdl -lib work "../RTL/SP0557/sp_conv/SIO_ctrl2.vhd"
 add_file -vhdl -lib work "../RTL/SP0557/sp_conv/sp_conv.vhd"
 add_file -vhdl -lib work "../RTL/SP0557/sp_conv/SPI_master2.vhd"
 
+#constraint files (pll_gen.fdc defines clock names, SP0557.fdc references them)
+add_file -constraint "../RTL/IPcore/pll_gen/pll_gen.fdc"
+add_file -constraint "SP0557.fdc"
 
 #implementation: "SP0557"
 impl -add SP0557 -type fpga

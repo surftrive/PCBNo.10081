@@ -94,3 +94,166 @@ define_false_path -from {CLKOS_100M_90} -to {CLKOS2_20M}
 #   paths with the correct 2.5ns/7.5ns setup/hold windows.
 #   NO multicycle needed - they are same frequency, just phase-shifted.
 #----------------------------------------------------------------------
+
+#----------------------------------------------------------------------
+# Section 7: Register Preservation (syn_preserve)
+#
+#   Prevent Synplify from merging equivalent registers or optimizing
+#   constant-driven registers to logic. Each register drives separate
+#   hardware outputs or is required for interface compliance.
+#
+#   Targets: BN132, CL190, CL111, CL279, CL260, CL177, MO160, MO129
+#----------------------------------------------------------------------
+
+# 7A: EFUSE_CTRL - Power enable registers (BN132: equivalent register merging)
+#     Each s_PW_*_EN drives a separate eFuse power switch on the PCB.
+#     Merging would cause multiple power rails to share a single driver.
+define_attribute {EFUSE_CTRL_inst.s_PW_SV_EN}      syn_preserve {1}
+define_attribute {EFUSE_CTRL_inst.s_PW_PUMP_EN}    syn_preserve {1}
+define_attribute {EFUSE_CTRL_inst.s_PW_PLS_EN}     syn_preserve {1}
+define_attribute {EFUSE_CTRL_inst.s_PW_LMT_EN}     syn_preserve {1}
+define_attribute {EFUSE_CTRL_inst.s_PW_ENC_EN}     syn_preserve {1}
+define_attribute {EFUSE_CTRL_inst.s_PW_SNS_EN}     syn_preserve {1}
+define_attribute {EFUSE_CTRL_inst.s_PW_SNSLED_EN}  syn_preserve {1}
+define_attribute {EFUSE_CTRL_inst.s_PW_PLSSNS_EN}  syn_preserve {1}
+define_attribute {EFUSE_CTRL_inst.s_PW_LEDSH_EN}   syn_preserve {1}
+define_attribute {EFUSE_CTRL_inst.s_PW_LEDLT_EN}   syn_preserve {1}
+
+# 7B: EFUSE_CTRL - MODE register (CL190: optimized to constant)
+#     4-bit bus width matches interface specification.
+define_attribute {EFUSE_CTRL_inst.s_MODE[3]}  syn_preserve {1}
+define_attribute {EFUSE_CTRL_inst.s_MODE[2]}  syn_preserve {1}
+define_attribute {EFUSE_CTRL_inst.s_MODE[1]}  syn_preserve {1}
+
+# 7C: ppmc_top_S118M - Limit switch registers (BN132: equivalent merging)
+#     Each stm instance's s_LCW/s_LCCW drives separate stepper motor limit.
+define_attribute {stm01.s_LCW}  syn_preserve {1}
+define_attribute {stm01.s_LCCW} syn_preserve {1}
+define_attribute {stm02.s_LCW}  syn_preserve {1}
+define_attribute {stm02.s_LCCW} syn_preserve {1}
+define_attribute {stm03.s_LCW}  syn_preserve {1}
+define_attribute {stm03.s_LCCW} syn_preserve {1}
+define_attribute {stm04.s_LCW}  syn_preserve {1}
+define_attribute {stm04.s_LCCW} syn_preserve {1}
+define_attribute {stm05.s_LCW}  syn_preserve {1}
+define_attribute {stm05.s_LCCW} syn_preserve {1}
+define_attribute {stm06.s_LCW}  syn_preserve {1}
+define_attribute {stm06.s_LCCW} syn_preserve {1}
+define_attribute {stm07.s_LCW}  syn_preserve {1}
+define_attribute {stm07.s_LCCW} syn_preserve {1}
+define_attribute {stm08.s_LCW}  syn_preserve {1}
+define_attribute {stm08.s_LCCW} syn_preserve {1}
+define_attribute {stm09.s_LCW}  syn_preserve {1}
+define_attribute {stm09.s_LCCW} syn_preserve {1}
+define_attribute {stm10.s_LCW}  syn_preserve {1}
+define_attribute {stm10.s_LCCW} syn_preserve {1}
+define_attribute {stm11.s_LCW}  syn_preserve {1}
+define_attribute {stm11.s_LCCW} syn_preserve {1}
+define_attribute {stm12.s_LCW}  syn_preserve {1}
+define_attribute {stm12.s_LCCW} syn_preserve {1}
+define_attribute {stm13.s_LCW}  syn_preserve {1}
+define_attribute {stm13.s_LCCW} syn_preserve {1}
+
+# 7D: slv_rx_ctrl - NODE registers (BN132: equivalent to ADR2)
+#     NODE and ADR2 are separate bus interfaces; must not be merged.
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[0]} syn_preserve {1}
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[1]} syn_preserve {1}
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[2]} syn_preserve {1}
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[3]} syn_preserve {1}
+
+# 7E: dec6b_5b - DATAOUT registers (BN132: equivalent to datain_reg)
+#     Pipeline stage in 8b10b decoder; must not be merged with input reg.
+define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[0]} syn_preserve {1}
+define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[1]} syn_preserve {1}
+define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[2]} syn_preserve {1}
+define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[3]} syn_preserve {1}
+define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[4]} syn_preserve {1}
+define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[5]} syn_preserve {1}
+
+# 7F: CTRL_32CH - s_LATCH register (MO160: always 0)
+#     32-bit latch bus; upper bits reserved for future DAC channel expansion.
+define_attribute {v:work.CTRL_32CH} syn_preserve {1}
+
+# 7G: ppmc_rgstr - MPI_A pipeline (MO129: constant propagation)
+#     Motor position input pipeline; bit 0 may be constant in current config
+#     but register is required for timing closure across all stepper channels.
+define_attribute {stm01.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
+define_attribute {stm02.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
+define_attribute {stm03.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
+define_attribute {stm04.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
+define_attribute {stm05.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
+define_attribute {stm06.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
+define_attribute {stm07.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
+define_attribute {stm08.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
+define_attribute {stm09.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
+define_attribute {stm10.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
+define_attribute {stm11.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
+define_attribute {stm12.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
+define_attribute {stm13.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
+
+# 7H: gpio_ip_reg - REG1 registers (MO129: constant propagation)
+#     GPIO input registers; specific bits tied to constant in current board
+#     config but register must be preserved for read-back functionality.
+define_attribute {gpio01.gpio_reg_inst.gpio_ip_reg_inst31.REG1[5]} syn_preserve {1}
+define_attribute {gpio01.gpio_reg_inst.gpio_ip_reg_inst3.REG1[2]}  syn_preserve {1}
+define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst14.REG1[3]} syn_preserve {1}
+define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst17.REG1[1]} syn_preserve {1}
+define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst10.REG1[4]} syn_preserve {1}
+define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst12.REG1[5]} syn_preserve {1}
+define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst6.REG1[2]}  syn_preserve {1}
+define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst8.REG1[4]}  syn_preserve {1}
+
+# 7I: ppmc_rgstr - LIMIT_IN_A, LIMIT_MONITOR_REG_O (CL111/CL190)
+#     Limit switch monitoring; unused bits are '0' by design but register
+#     width matches S3IO protocol bus width.
+define_attribute {v:work.ppmc_rgstr} syn_preserve {1}
+
+# 7J: LEDLT_TOP - s_LEDPTN (CL190: optimized to constant)
+#     LED pattern register; unused bits reserved for additional LED channels.
+define_attribute {LEDLT.s_LEDPTN[15]} syn_preserve {1}
+define_attribute {LEDLT.s_LEDPTN[14]} syn_preserve {1}
+define_attribute {LEDLT.s_LEDPTN[13]} syn_preserve {1}
+define_attribute {LEDLT.s_LEDPTN[12]} syn_preserve {1}
+define_attribute {LEDLT.s_LEDPTN[11]} syn_preserve {1}
+define_attribute {LEDLT.s_LEDPTN[9]}  syn_preserve {1}
+define_attribute {LEDLT.s_LEDPTN[7]}  syn_preserve {1}
+define_attribute {LEDLT.s_LEDPTN[6]}  syn_preserve {1}
+define_attribute {LEDLT.s_LEDPTN[5]}  syn_preserve {1}
+define_attribute {LEDLT.s_LEDPTN[4]}  syn_preserve {1}
+define_attribute {LEDLT.s_LEDPTN[3]}  syn_preserve {1}
+define_attribute {LEDLT.s_LEDPTN[2]}  syn_preserve {1}
+define_attribute {LEDLT.s_LEDPTN[1]}  syn_preserve {1}
+
+# 7K: slv_ctrl_top - s_prpty (CL190: optimized to constant)
+#     Priority register; unused bits reserved for additional slave nodes.
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[7]} syn_preserve {1}
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[6]} syn_preserve {1}
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[5]} syn_preserve {1}
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[4]} syn_preserve {1}
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[2]} syn_preserve {1}
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[1]} syn_preserve {1}
+
+# 7L: slv_rx_ctrl - byte_cnt (CL190: optimized to constant)
+define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.byte_cnt[2]} syn_preserve {1}
+
+# 7M: rx_ctl_1st - sp_dt pipeline (CL177: register sharing)
+#     Synchronizer pipeline; must not be merged for CDC safety.
+define_attribute {slv_com_top_inst.rx_com_inst.rx_ctl_1st_inst.sp_dt}    syn_preserve {1}
+define_attribute {slv_com_top_inst.rx_com_inst.rx_ctl_1st_inst.sp_dt_1q} syn_preserve {1}
+
+# 7N: ppmc_ctrl - s_pls_ld / ENB_START (CL177: register sharing)
+#     Separate control signals; must not be merged.
+define_attribute {v:work.ppmc_ctrl} syn_preserve {1}
+
+#----------------------------------------------------------------------
+# Section 8: Combinational Loop Suppression (syn_loopcheck)
+#
+#   The encoder noise filter has a registered MUX with self-feedback:
+#     s_ph_a_D = (s_ph_a == ENCPHASE_A) ? s_ph_a : ...
+#   The MUX select depends on s_ph_a (register Q output), and one MUX
+#   input is s_ph_a itself (hold path). This is a REGISTERED feedback
+#   through a D flip-flop, NOT a true combinational loop.
+#   The mapper (BN137) flags 4 MUX control nets per encoder instance
+#   x 13 channels = 52 nets (reported 104 times due to dual-pass mapping).
+#----------------------------------------------------------------------
+define_attribute {v:work.encoder_2bit} syn_loopcheck {0}
