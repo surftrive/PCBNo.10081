@@ -58,6 +58,13 @@ architecture RTL of encoder_2bit is	--******************
 	signal	plus_cnd	: std_logic;	-- count up condition;		[ph_b,ph_a] move 00->01->11->10
 	signal	minus_cnd	: std_logic;	-- count down condition;	[ph_b,ph_a] move 00->10->11->01
 
+-- Suppress false combinational loop warnings (BN137/BN161).
+-- The noise filter MUX has registered self-feedback (s_ph_a <= s_ph_a when
+-- s_ph_a=ENCPHASE_A), which is a hold path through a D-FF, not a true
+-- combinational loop.
+attribute syn_loopcheck : boolean;
+attribute syn_loopcheck of RTL : architecture is false;
+
 begin	--**************************************************
 
 	ENCDATA	<= encdat;
