@@ -1,14 +1,18 @@
 #----------------------------------------------------------------------
 # SP0557 Synplify Forward Declaration Constraint (FDC) File
-# Purpose: Define cross-domain timing constraints for PLL-derived clocks.
+# Purpose: Define cross-domain timing constraints for PLL-derived clocks
+#          and view-level synthesis attributes.
 #
-# Clock definitions are duplicated here (from pll_gen.fdc) using
-# hierarchical net references {n:...} for Diamond 3.14 compatibility.
-# pll_gen.fdc uses {p:PORT} syntax which works in Diamond 3.13 but
-# may not resolve in Diamond 3.14 (Synplify V-2023.09L-2).
+# IMPORTANT: Do NOT use instance-level paths like {inst.signal} in this
+# file. Diamond 3.14 (Synplify V-2023.09L-2) cannot resolve them.
+# Use view-level {v:work.module} or VHDL source-level attributes instead.
+#
+# Clock definitions use hierarchical net references {n:...} confirmed
+# from MT420 messages in the synthesis report. These override pll_gen.fdc
+# {p:PORT} syntax which may not resolve in Diamond 3.14.
 #
 # Clock Name Reference:
-#   CLKOP_100M    : 100MHz, 0 deg   (CLK2  - serial comm)
+#   CLKOP_100M    : 100MHz, 0 deg   (CLKCOM_OUT - serial comm)
 #   CLKOS_100M_90 : 100MHz, 90 deg  (CLK2A - CDR sampling)
 #   CLKOS2_20M    : 20MHz,  0 deg   (s_PLL_CLK20M - system)
 #   CLKOS3_10M    : 10MHz,  0 deg   (CLK1  - slave control)
@@ -20,9 +24,11 @@
 #----------------------------------------------------------------------
 # Section 0: PLL Output Clock Definitions (hierarchical net references)
 #
-#   These override pll_gen.fdc {p:PORT} definitions using the actual
-#   hierarchical net names reported by Synplify. This ensures clock
-#   constraints are applied regardless of Diamond/Synplify version.
+#   Net names confirmed from MT420 inferred clock warnings in SP0557.srr:
+#     pll_gen|CLKOP_inferred_clock  -> ...PLL_inst.CLKCOM_OUT
+#     pll_gen|CLKOS_inferred_clock  -> ...PLL_inst.CLK2A
+#     pll_gen|CLKOS2_inferred_clock -> ...PLL_inst.s_PLL_CLK20M
+#     pll_gen|CLKOS3_inferred_clock -> ...PLL_inst.CLK1
 #----------------------------------------------------------------------
 define_clock -name {CLKOP_100M} \
     {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLKCOM_OUT} \
@@ -51,10 +57,9 @@ define_clock -name {CLKOS3_10M} \
 #----------------------------------------------------------------------
 # Section 1: External Clock Domain Isolation
 #
-#   CLK20M (external 20MHz input, p:CLK20M) feeds CLKSLV in slv_com_top.
-#   It drives only rst_cnt LOCAL_CLK counter and ck_state FSM.
-#   No direct functional data transfer between CLK20M domain and
-#   PLL output domains. All are physically isolated.
+#   CLK20M (external 20MHz input) feeds only rst_cnt LOCAL_CLK counter
+#   and ck_state FSM. No direct functional data transfer between
+#   CLK20M domain and PLL output domains.
 #----------------------------------------------------------------------
 define_clock -name {CLK20M_ext} \
     {p:CLK20M} \
@@ -76,7 +81,6 @@ define_false_path -from {CLKOS3_10M}    -to {CLK20M_ext}
 #
 #   Same PLL, 2:1 frequency ratio.
 #   Data from 20MHz is stable for 2 CLKOS3 periods before capture.
-#   ~2,478 paths between these domains.
 #----------------------------------------------------------------------
 define_multicycle_path -from {CLKOS2_20M} -to {CLKOS3_10M} 2
 define_multicycle_path -from {CLKOS3_10M} -to {CLKOS2_20M} 2
@@ -85,8 +89,7 @@ define_multicycle_path -from {CLKOS3_10M} -to {CLKOS2_20M} 2
 # Section 3: CLKOS3 (10MHz) <-> CLKOP (100MHz) Multicycle
 #
 #   Same PLL, 1:10 frequency ratio.
-#   CLK1 -> CLK2: Data from 10MHz is stable for 10 CLK2 periods (100ns).
-#   Targets: DCFIFO gray-pointer crossings in rx_cont_b1, tx_cont_b1.
+#   CLK1 -> CLK2: Data from 10MHz is stable for 10 CLK2 periods.
 #   CLK2 -> CLK1: Fast-to-slow. 2x relaxation for CDC sync chains.
 #----------------------------------------------------------------------
 define_multicycle_path -from {CLKOS3_10M} -to {CLKOP_100M} 10
@@ -96,7 +99,6 @@ define_multicycle_path -from {CLKOP_100M} -to {CLKOS3_10M} 2
 # Section 4: CLKOS3 (10MHz) <-> CLKOS (100MHz, 90deg) Multicycle
 #
 #   Same as Section 3 but for CLK2A domain.
-#   CLK1 <-> CLK2A paths: internal to slv_com_top (rst_cnt sync).
 #----------------------------------------------------------------------
 define_multicycle_path -from {CLKOS3_10M}    -to {CLKOS_100M_90} 10
 define_multicycle_path -from {CLKOS_100M_90} -to {CLKOS3_10M} 2
@@ -115,198 +117,59 @@ define_false_path -from {CLKOS_100M_90} -to {CLKOS2_20M}
 #----------------------------------------------------------------------
 # Section 6: CLKOP (100MHz, 0deg) <-> CLKOS (100MHz, 90deg)
 #
-#   SAME frequency, 90-degree phase offset. These are the CRITICAL
-#   mesochronous CDC paths in cds.vhd (CDR module):
-#     - bz(0) on CLK2A posedge -> bz(1) on CLK2 posedge
-#     - cz(0) on CLK2 negedge  -> cz(1) on CLK2A posedge
-#     - dz(0) on CLK2A negedge -> dz(1) on CLK2 negedge
-#     - dz(1) on CLK2 negedge  -> dz(2) on CLK2A posedge
-#
-#   With both clocks in the same group "pll_clks" and the 90-degree
-#   phase offset defined in pll_gen.fdc, Synplify will analyze these
-#   paths with the correct 2.5ns/7.5ns setup/hold windows.
-#   NO multicycle needed - they are same frequency, just phase-shifted.
+#   SAME frequency, 90-degree phase offset. Mesochronous CDC paths
+#   in cds.vhd (CDR module). Synplify analyzes these with the correct
+#   2.5ns/7.5ns setup/hold windows from the clock group definition.
+#   NO multicycle needed - same frequency, just phase-shifted.
 #----------------------------------------------------------------------
 
 #----------------------------------------------------------------------
-# Section 7: Register Preservation (syn_preserve)
+# Section 7: View-level Register Preservation (syn_preserve)
 #
-#   Prevent Synplify from merging equivalent registers or optimizing
-#   constant-driven registers to logic. Each register drives separate
-#   hardware outputs or is required for interface compliance.
+#   All signal-level syn_preserve attributes are in the VHDL source.
+#   View-level attributes below cover modules where output port
+#   preservation is needed (Diamond 3.14 does not support
+#   "attribute syn_preserve of PORT : signal" on output ports).
 #
-#   Targets: BN132, CL190, CL111, CL279, CL260, CL177, MO160, MO129
+#   Module-specific VHDL source attributes:
+#     EFUSE_CTRL.vhd    : s_PW_*_EN, s_MODE (BN132, CL190)
+#     ppmc_top_S118M.vhd: s_LCW, s_LCCW (BN132)
+#     ppmc_rgstr.vhd    : LIMIT_IN_A, LIMIT_MONITOR_REG_O, MPI_A (CL111, CL190)
+#     gpio_ip_reg.vhd   : REG1 (MO129)
+#     LEDLT_TOP.vhd     : s_LEDPTN (CL190)
+#     slv_ctrl_top.vhd  : s_prpty (CL190)
+#     slvadr_cnv.vhd    : s_HEX_OUT (CL279)
+#     slv_rx_ctrl.vhd   : byte_cnt (CL190)
+#     rx_ctl_1st.vhd    : sp_dt, sp_dt_1q, sp_dt_2q (CL177)
 #----------------------------------------------------------------------
 
-# 7A: EFUSE_CTRL - Power enable registers (BN132: equivalent register merging)
-#     Each s_PW_*_EN drives a separate eFuse power switch on the PCB.
-#     Merging would cause multiple power rails to share a single driver.
-define_attribute {EFUSE_CTRL_inst.s_PW_SV_EN}      syn_preserve {1}
-define_attribute {EFUSE_CTRL_inst.s_PW_PUMP_EN}    syn_preserve {1}
-define_attribute {EFUSE_CTRL_inst.s_PW_PLS_EN}     syn_preserve {1}
-define_attribute {EFUSE_CTRL_inst.s_PW_LMT_EN}     syn_preserve {1}
-define_attribute {EFUSE_CTRL_inst.s_PW_ENC_EN}     syn_preserve {1}
-define_attribute {EFUSE_CTRL_inst.s_PW_SNS_EN}     syn_preserve {1}
-define_attribute {EFUSE_CTRL_inst.s_PW_SNSLED_EN}  syn_preserve {1}
-define_attribute {EFUSE_CTRL_inst.s_PW_PLSSNS_EN}  syn_preserve {1}
-define_attribute {EFUSE_CTRL_inst.s_PW_LEDSH_EN}   syn_preserve {1}
-define_attribute {EFUSE_CTRL_inst.s_PW_LEDLT_EN}   syn_preserve {1}
-
-# 7B: EFUSE_CTRL - MODE register (CL190: optimized to constant)
-#     4-bit bus width matches interface specification.
-define_attribute {EFUSE_CTRL_inst.s_MODE[3]}  syn_preserve {1}
-define_attribute {EFUSE_CTRL_inst.s_MODE[2]}  syn_preserve {1}
-define_attribute {EFUSE_CTRL_inst.s_MODE[1]}  syn_preserve {1}
-
-# 7C: ppmc_top_S118M - Limit switch registers (BN132: equivalent merging)
-#     Each stm instance's s_LCW/s_LCCW drives separate stepper motor limit.
-define_attribute {stm01.s_LCW}  syn_preserve {1}
-define_attribute {stm01.s_LCCW} syn_preserve {1}
-define_attribute {stm02.s_LCW}  syn_preserve {1}
-define_attribute {stm02.s_LCCW} syn_preserve {1}
-define_attribute {stm03.s_LCW}  syn_preserve {1}
-define_attribute {stm03.s_LCCW} syn_preserve {1}
-define_attribute {stm04.s_LCW}  syn_preserve {1}
-define_attribute {stm04.s_LCCW} syn_preserve {1}
-define_attribute {stm05.s_LCW}  syn_preserve {1}
-define_attribute {stm05.s_LCCW} syn_preserve {1}
-define_attribute {stm06.s_LCW}  syn_preserve {1}
-define_attribute {stm06.s_LCCW} syn_preserve {1}
-define_attribute {stm07.s_LCW}  syn_preserve {1}
-define_attribute {stm07.s_LCCW} syn_preserve {1}
-define_attribute {stm08.s_LCW}  syn_preserve {1}
-define_attribute {stm08.s_LCCW} syn_preserve {1}
-define_attribute {stm09.s_LCW}  syn_preserve {1}
-define_attribute {stm09.s_LCCW} syn_preserve {1}
-define_attribute {stm10.s_LCW}  syn_preserve {1}
-define_attribute {stm10.s_LCCW} syn_preserve {1}
-define_attribute {stm11.s_LCW}  syn_preserve {1}
-define_attribute {stm11.s_LCCW} syn_preserve {1}
-define_attribute {stm12.s_LCW}  syn_preserve {1}
-define_attribute {stm12.s_LCCW} syn_preserve {1}
-define_attribute {stm13.s_LCW}  syn_preserve {1}
-define_attribute {stm13.s_LCCW} syn_preserve {1}
-
-# 7D: slv_rx_ctrl - NODE registers (BN132: equivalent to ADR2)
-#     NODE and ADR2 are separate bus interfaces; must not be merged.
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[0]} syn_preserve {1}
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[1]} syn_preserve {1}
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[2]} syn_preserve {1}
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[3]} syn_preserve {1}
-
-# 7E: dec6b_5b - DATAOUT registers (BN132: equivalent to datain_reg)
-#     Pipeline stage in 8b10b decoder; must not be merged with input reg.
-define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[0]} syn_preserve {1}
-define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[1]} syn_preserve {1}
-define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[2]} syn_preserve {1}
-define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[3]} syn_preserve {1}
-define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[4]} syn_preserve {1}
-define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[5]} syn_preserve {1}
-
-# 7F: CTRL_32CH - s_LATCH register (MO160: always 0)
-#     32-bit latch bus; upper bits reserved for future DAC channel expansion.
+# 7A: CTRL_32CH - preserve s_LATCH register (upper bits reserved for future DAC expansion)
 define_attribute {v:work.CTRL_32CH} syn_preserve {1}
 
-# 7G: ppmc_rgstr - MPI_A pipeline (MO129: constant propagation)
-#     Motor position input pipeline; bit 0 may be constant in current config
-#     but register is required for timing closure across all stepper channels.
-define_attribute {stm01.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
-define_attribute {stm02.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
-define_attribute {stm03.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
-define_attribute {stm04.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
-define_attribute {stm05.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
-define_attribute {stm06.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
-define_attribute {stm07.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
-define_attribute {stm08.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
-define_attribute {stm09.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
-define_attribute {stm10.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
-define_attribute {stm11.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
-define_attribute {stm12.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
-define_attribute {stm13.ppmc_reg_S118M_inst.inst_ppmc_rgstr.MPI_A[0]}  syn_preserve {1}
-
-# 7H: gpio_ip_reg - REG1 registers (MO129: constant propagation)
-#     GPIO input registers; specific bits tied to constant in current board
-#     config but register must be preserved for read-back functionality.
-define_attribute {gpio01.gpio_reg_inst.gpio_ip_reg_inst31.REG1[5]} syn_preserve {1}
-define_attribute {gpio01.gpio_reg_inst.gpio_ip_reg_inst3.REG1[2]}  syn_preserve {1}
-define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst14.REG1[3]} syn_preserve {1}
-define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst17.REG1[1]} syn_preserve {1}
-define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst10.REG1[4]} syn_preserve {1}
-define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst12.REG1[5]} syn_preserve {1}
-define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst6.REG1[2]}  syn_preserve {1}
-define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst8.REG1[4]}  syn_preserve {1}
-
-# 7I: ppmc_rgstr - LIMIT_IN_A, LIMIT_MONITOR_REG_O (CL111/CL190)
-#     Limit switch monitoring; unused bits are '0' by design but register
-#     width matches S3IO protocol bus width.
+# 7B: ppmc_rgstr - preserve all registers (LIMIT_IN_A, LIMIT_MONITOR_REG_O, MPI_A)
 define_attribute {v:work.ppmc_rgstr} syn_preserve {1}
 
-# 7J: LEDLT_TOP - s_LEDPTN (CL190: optimized to constant)
-#     LED pattern register; unused bits reserved for additional LED channels.
-define_attribute {LEDLT.s_LEDPTN[15]} syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[14]} syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[13]} syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[12]} syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[11]} syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[9]}  syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[7]}  syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[6]}  syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[5]}  syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[4]}  syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[3]}  syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[2]}  syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[1]}  syn_preserve {1}
-
-# 7K: slv_ctrl_top - s_prpty (CL190: optimized to constant)
-#     Priority register; unused bits reserved for additional slave nodes.
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[7]} syn_preserve {1}
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[6]} syn_preserve {1}
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[5]} syn_preserve {1}
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[4]} syn_preserve {1}
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[2]} syn_preserve {1}
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[1]} syn_preserve {1}
-
-# 7L: slv_rx_ctrl - byte_cnt (CL190: optimized to constant)
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.byte_cnt[2]} syn_preserve {1}
-
-# 7M: rx_ctl_1st - sp_dt pipeline (CL177: register sharing)
-#     Synchronizer pipeline; must not be merged for CDC safety.
-define_attribute {slv_com_top_inst.rx_com_inst.rx_ctl_1st_inst.sp_dt}    syn_preserve {1}
-define_attribute {slv_com_top_inst.rx_com_inst.rx_ctl_1st_inst.sp_dt_1q} syn_preserve {1}
-
-# 7N: ppmc_ctrl - s_pls_ld / ENB_START (CL177: register sharing)
-#     Separate control signals; must not be merged.
+# 7C: ppmc_ctrl - preserve s_pls_ld / ENB_START separate control signals
 define_attribute {v:work.ppmc_ctrl} syn_preserve {1}
 
-#----------------------------------------------------------------------
-# Section 8: View-level Preservation for Output Port Registers
-#
-#   Diamond 3.14 (Synplify V-2023.09L-2) does not support
-#   "attribute syn_preserve of PORT : signal is true;" on output ports
-#   (compiler error CD134). Use FDC view-level preservation instead.
-#----------------------------------------------------------------------
-
-# 8A: dec6b_5b - Prevent DATAOUT register from merging with datain_reg (BN132)
+# 7D: dec6b_5b - preserve DATAOUT register (output port, CD134 workaround)
 define_attribute {v:work.dec6b_5b} syn_preserve {1}
 
-# 8B: slv_rx_ctrl - Prevent NODE register from merging with ADR2 (BN132)
+# 7E: slv_rx_ctrl - preserve NODE register (output port, CD134 workaround)
 define_attribute {v:work.slv_rx_ctrl} syn_preserve {1}
 
 #----------------------------------------------------------------------
-# Section 9: Combinational Loop Suppression (syn_loopcheck)
+# Section 8: Combinational Loop Suppression (syn_loopcheck)
 #
-#   The encoder noise filter has a registered MUX with self-feedback:
+#   encoder_2bit has a registered MUX with self-feedback:
 #     s_ph_a_D = (s_ph_a == ENCPHASE_A) ? s_ph_a : ...
-#   The MUX select depends on s_ph_a (register Q output), and one MUX
-#   input is s_ph_a itself (hold path). This is a REGISTERED feedback
-#   through a D flip-flop, NOT a true combinational loop.
-#   The mapper (BN137) flags 4 MUX control nets per encoder instance
-#   x 13 channels = 52 nets (reported 104 times due to dual-pass mapping).
+#   This is a REGISTERED feedback through a D flip-flop, NOT a true
+#   combinational loop. Suppresses BN161/BN137 for encoder instances.
 #----------------------------------------------------------------------
 define_attribute {v:work.encoder_2bit} syn_loopcheck {0}
 
 #----------------------------------------------------------------------
-# Section 10: IP Core Instance Preservation (syn_noprune)
+# Section 9: IP Core Instance Preservation (syn_noprune)
 #
 #   Prevent removal of pll_gen internal utility instances (CL168).
 #   scuba_vhi_inst (VHI) and scuba_vlo_inst (VLO) are generated by

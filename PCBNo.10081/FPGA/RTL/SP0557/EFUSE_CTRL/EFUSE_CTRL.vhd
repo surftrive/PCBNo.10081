@@ -68,9 +68,10 @@ attribute syn_preserve of s_PW_SNSLED_EN : signal is true;
 attribute syn_preserve of s_PW_PLSSNS_EN : signal is true;
 attribute syn_preserve of s_PW_LEDSH_EN  : signal is true;
 attribute syn_preserve of s_PW_LEDLT_EN  : signal is true;
--- Prevent pruning of unused MODE bits (bus width matches interface specification)
+-- Prevent pruning and constant optimization of MODE bits (bus width matches interface specification)
 attribute syn_keep : boolean;
 attribute syn_keep of s_MODE : signal is true;
+attribute syn_preserve of s_MODE : signal is true;
 
 ---------------component----------------------------------------------------------------------------
 
