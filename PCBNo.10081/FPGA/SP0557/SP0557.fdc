@@ -1,19 +1,77 @@
 #----------------------------------------------------------------------
 # SP0557 Synplify Forward Declaration Constraint (FDC) File
-# Purpose: Define cross-domain timing constraints for PLL-derived clocks.
+# Purpose: Define PLL clock constraints and cross-domain timing constraints.
 #
-# Clock definitions are in pll_gen.fdc (PLL module-level FDC).
-# This file defines multicycle/false paths referencing those clocks.
+# Clock definitions moved here from pll_gen.fdc because Diamond 3.14
+# Synplify cannot resolve {n:CLKOP_t} style net references within the
+# EHXPLLL black box. Using full hierarchical net names from top level.
 #
-# Clock Name Reference (defined in pll_gen.fdc):
+# PLL Configuration (EHXPLLL):
+#   Input:  CLKI  = 20MHz (UP_CLK external)
+#   VCO:    20MHz x 5 = 100MHz, CLKFB_DIV=5, CLKI_DIV=1
+#   CLKOP:  100MHz, 0 deg   (CLKOP_DIV=6)  -> CLKCOM_OUT
+#   CLKOS:  100MHz, 90 deg  (CLKOS_DIV=6)  -> CLK2A
+#   CLKOS2: 20MHz,  0 deg   (CLKOS2_DIV=30) -> s_PLL_CLK20M
+#   CLKOS3: 10MHz,  0 deg   (CLKOS3_DIV=60) -> CLK1
+#
+# Clock Name Reference:
 #   CLKOP_100M    : 100MHz, 0 deg   (CLK2  - serial comm)
 #   CLKOS_100M_90 : 100MHz, 90 deg  (CLK2A - CDR sampling)
 #   CLKOS2_20M    : 20MHz,  0 deg   (s_PLL_CLK20M - system)
 #   CLKOS3_10M    : 10MHz,  0 deg   (CLK1  - slave control)
 #
-# Date   : 2026-02-27
+# Date   : 2026-02-28
 # Target : LFE5U-25F-6 CABGA256
 #----------------------------------------------------------------------
+
+#----------------------------------------------------------------------
+# Section 0: PLL Output Clock Definitions
+#
+#   All PLL outputs MUST be in the SAME clock group to enable
+#   Synplify timing analysis on cross-domain paths (especially
+#   CLK2 <-> CLK2A in cds.vhd CDR module).
+#
+#   Net names from MT420 messages in Synplify V-2023.09L-2:
+#     CLKOP  -> slv_com_top_inst.clk_gen_inst2.PLL_inst.CLKCOM_OUT
+#     CLKOS  -> slv_com_top_inst.clk_gen_inst2.PLL_inst.CLK2A
+#     CLKOS2 -> slv_com_top_inst.clk_gen_inst2.PLL_inst.s_PLL_CLK20M
+#     CLKOS3 -> slv_com_top_inst.clk_gen_inst2.PLL_inst.CLK1
+#----------------------------------------------------------------------
+
+# CLKOP: 100MHz serial communication clock (0 deg phase)
+# Used by: cds.vhd (domain A,C), rx_ctl_1st, tx_com, dcfifo_rx/tx
+define_clock -name {CLKOP_100M} \
+    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLKCOM_OUT} \
+    -freq 100.000 \
+    -rise 0.000 -fall 5.000 \
+    -clockgroup pll_clks
+
+# CLKOS: 100MHz CDR sampling clock (90 deg phase = 2.5ns offset)
+# Used by: cds.vhd (domain B,D), rst_cnt
+# CRITICAL: -rise 2.500 communicates the 90-degree phase shift to
+# Synplify, enabling correct setup/hold analysis for cds.vhd
+# mesochronous CDC paths (bz, cz, dz signal crossings).
+define_clock -name {CLKOS_100M_90} \
+    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLK2A} \
+    -freq 100.000 \
+    -rise 2.500 -fall 7.500 \
+    -clockgroup pll_clks
+
+# CLKOS2: 20MHz system clock (0 deg phase)
+# Used by: GPIO, encoder, ADC, DAC, motor control, sp_conv
+define_clock -name {CLKOS2_20M} \
+    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.s_PLL_CLK20M} \
+    -freq 20.000 \
+    -rise 0.000 -fall 25.000 \
+    -clockgroup pll_clks
+
+# CLKOS3: 10MHz slave control clock (0 deg phase)
+# Used by: slv_ctrl, 8b10b enc/dec, rx/tx control state machines
+define_clock -name {CLKOS3_10M} \
+    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLK1} \
+    -freq 10.000 \
+    -rise 0.000 -fall 50.000 \
+    -clockgroup pll_clks
 
 #----------------------------------------------------------------------
 # Section 1: External Clock Domain Isolation
@@ -83,15 +141,10 @@ define_false_path -from {CLKOS_100M_90} -to {CLKOS2_20M}
 # Section 6: CLKOP (100MHz, 0deg) <-> CLKOS (100MHz, 90deg)
 #
 #   SAME frequency, 90-degree phase offset. These are the CRITICAL
-#   mesochronous CDC paths in cds.vhd (CDR module):
-#     - bz(0) on CLK2A posedge -> bz(1) on CLK2 posedge
-#     - cz(0) on CLK2 negedge  -> cz(1) on CLK2A posedge
-#     - dz(0) on CLK2A negedge -> dz(1) on CLK2 negedge
-#     - dz(1) on CLK2 negedge  -> dz(2) on CLK2A posedge
-#
+#   mesochronous CDC paths in cds.vhd (CDR module).
 #   With both clocks in the same group "pll_clks" and the 90-degree
-#   phase offset defined in pll_gen.fdc, Synplify will analyze these
-#   paths with the correct 2.5ns/7.5ns setup/hold windows.
+#   phase offset defined above, Synplify will analyze these paths
+#   with the correct 2.5ns/7.5ns setup/hold windows.
 #   NO multicycle needed - they are same frequency, just phase-shifted.
 #----------------------------------------------------------------------
 
@@ -102,7 +155,14 @@ define_false_path -from {CLKOS_100M_90} -to {CLKOS2_20M}
 #   constant-driven registers to logic. Each register drives separate
 #   hardware outputs or is required for interface compliance.
 #
-#   Targets: BN132, CL190, CL111, CL279, CL260, CL177, MO160, MO129
+#   NOTE: Registers subject to CL190 (constant optimization) or CL177
+#   (register sharing) at the COMPILER phase must use RTL-level
+#   attributes, because FDC syn_preserve is applied at MAPPER phase
+#   (too late). The following registers are now handled in RTL:
+#     - s_LEDPTN (LEDLT_TOP.vhd)      -> RTL syn_preserve
+#     - s_prpty (slv_ctrl_top.vhd)     -> RTL syn_preserve
+#     - sp_dt/sp_dt_1q (rx_ctl_1st.vhd) -> RTL syn_preserve
+#     - DATAOUT (dec6b_5b.vhd)         -> RTL syn_preserve
 #----------------------------------------------------------------------
 
 # 7A: EFUSE_CTRL - Power enable registers (BN132: equivalent register merging)
@@ -161,15 +221,6 @@ define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[1]} s
 define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[2]} syn_preserve {1}
 define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.NODE[3]} syn_preserve {1}
 
-# 7E: dec6b_5b - DATAOUT registers (BN132: equivalent to datain_reg)
-#     Pipeline stage in 8b10b decoder; must not be merged with input reg.
-define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[0]} syn_preserve {1}
-define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[1]} syn_preserve {1}
-define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[2]} syn_preserve {1}
-define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[3]} syn_preserve {1}
-define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[4]} syn_preserve {1}
-define_attribute {slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[5]} syn_preserve {1}
-
 # 7F: CTRL_32CH - s_LATCH register (MO160: always 0)
 #     32-bit latch bus; upper bits reserved for future DAC channel expansion.
 define_attribute {v:work.CTRL_32CH} syn_preserve {1}
@@ -208,38 +259,8 @@ define_attribute {gpio02.gpio_reg_inst.gpio_ip_reg_inst8.REG1[4]}  syn_preserve 
 #     width matches S3IO protocol bus width.
 define_attribute {v:work.ppmc_rgstr} syn_preserve {1}
 
-# 7J: LEDLT_TOP - s_LEDPTN (CL190: optimized to constant)
-#     LED pattern register; unused bits reserved for additional LED channels.
-define_attribute {LEDLT.s_LEDPTN[15]} syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[14]} syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[13]} syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[12]} syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[11]} syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[9]}  syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[7]}  syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[6]}  syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[5]}  syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[4]}  syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[3]}  syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[2]}  syn_preserve {1}
-define_attribute {LEDLT.s_LEDPTN[1]}  syn_preserve {1}
-
-# 7K: slv_ctrl_top - s_prpty (CL190: optimized to constant)
-#     Priority register; unused bits reserved for additional slave nodes.
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[7]} syn_preserve {1}
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[6]} syn_preserve {1}
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[5]} syn_preserve {1}
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[4]} syn_preserve {1}
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[2]} syn_preserve {1}
-define_attribute {slv_com_top_inst.slv_ctrl_top_inst.s_prpty[1]} syn_preserve {1}
-
 # 7L: slv_rx_ctrl - byte_cnt (CL190: optimized to constant)
 define_attribute {slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.byte_cnt[2]} syn_preserve {1}
-
-# 7M: rx_ctl_1st - sp_dt pipeline (CL177: register sharing)
-#     Synchronizer pipeline; must not be merged for CDC safety.
-define_attribute {slv_com_top_inst.rx_com_inst.rx_ctl_1st_inst.sp_dt}    syn_preserve {1}
-define_attribute {slv_com_top_inst.rx_com_inst.rx_ctl_1st_inst.sp_dt_1q} syn_preserve {1}
 
 # 7N: ppmc_ctrl - s_pls_ld / ENB_START (CL177: register sharing)
 #     Separate control signals; must not be merged.
@@ -253,7 +274,7 @@ define_attribute {v:work.ppmc_ctrl} syn_preserve {1}
 #   The MUX select depends on s_ph_a (register Q output), and one MUX
 #   input is s_ph_a itself (hold path). This is a REGISTERED feedback
 #   through a D flip-flop, NOT a true combinational loop.
-#   The mapper (BN137) flags 4 MUX control nets per encoder instance
-#   x 13 channels = 52 nets (reported 104 times due to dual-pass mapping).
+#   The mapper (BN137/BN161) flags 4 MUX control nets per encoder instance
+#   x 13 channels = 52 nets (reported ~100 times due to dual-pass mapping).
 #----------------------------------------------------------------------
 define_attribute {v:work.encoder_2bit} syn_loopcheck {0}

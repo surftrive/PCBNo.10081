@@ -80,9 +80,9 @@ signal reset    : std_logic;
 signal start    : std_logic;
 
 signal s_prpty	: std_logic_vector(7 downto 0);
--- Prevent pruning of unused error code bits (bus width matches protocol spec)
-attribute syn_keep : boolean;
-attribute syn_keep of s_prpty : signal is true;
+-- Prevent constant optimization of error code bits (bus width matches protocol spec)
+attribute syn_preserve : boolean;
+attribute syn_preserve of s_prpty : signal is true;
 
 component slv_tx_ctrl
     port(

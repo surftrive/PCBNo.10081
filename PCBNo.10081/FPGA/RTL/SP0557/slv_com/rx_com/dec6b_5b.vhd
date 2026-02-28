@@ -33,7 +33,10 @@ architecture RTL of dec6b_5b is
 signal ERR_NEG : std_logic;
 signal ERR_POS : std_logic;
 
--- DATAOUT preservation handled by SP0557.fdc (Section 7E)
+-- Prevent register merging of DATAOUT with datain_reg (BN132)
+-- Using ': port' syntax because DATAOUT is an entity output port.
+attribute syn_preserve : boolean;
+attribute syn_preserve of DATAOUT : port is true;
 
 begin
 

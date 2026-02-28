@@ -44,9 +44,9 @@ constant	c_wait_time			: std_logic_vector( 7 downto 0)		:= X"0A";
 
 ---------------signal-------------------------------------------------------------------------------
 signal		s_LEDPTN		: std_logic_vector(15 downto 0) := (others => '0');
--- Prevent pruning of unused LED pattern bits (full 16-bit width for future patterns)
-attribute syn_keep : boolean;
-attribute syn_keep of s_LEDPTN : signal is true;
+-- Prevent constant optimization of unused LED pattern bits (full 16-bit bus width)
+attribute syn_preserve : boolean;
+attribute syn_preserve of s_LEDPTN : signal is true;
 
 signal		s_TLC5916_START		: std_logic;
 signal		s_TLC5916_BUSY		: std_logic;
