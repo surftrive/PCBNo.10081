@@ -134,13 +134,13 @@ begin
   end process;
 
   -- compare
-  process (CLK, LRSTb,s_lmt_ngt) begin
+  process (CLK, LRSTb) begin
     if (LRSTb = '0') then
-      s_enc_lmt <= s_lmt_ngt;
+      s_enc_lmt <= '0';
     elsif (CLK'event and CLK='1') then
       if(ENCLMT_EN = '0') then
         s_enc_lmt <=s_lmt_ngt;
-      elsif(STM_ST <= '0') then
+      elsif(STM_ST = '0') then
         s_enc_lmt <= s_lmt_ngt;   
       elsif(s_encerr < s_enc_thl  or  s_encerr > s_enc_thh) then
         s_enc_lmt <= s_lmt_ast;
