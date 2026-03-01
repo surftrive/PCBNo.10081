@@ -20,92 +20,118 @@ Running in Lattice mode
             Inclusivity and Diversity" (Refer to article 000036315 at
                         https://solvnetplus.synopsys.com)
 
-Starting:    C:\lscc\diamond\3.14\synpbase\bin64\mbin\synbatch.exe
+Starting:    C:\lscc\diamond\3.14\synpbase\bin64\mbin\synplify.exe
 Install:     C:\lscc\diamond\3.14\synpbase
 Hostname:    TSURUMI
-Date:        Sun Mar  1 01:20:13 2026
+Date:        Sun Mar  1 11:25:54 2026
 Version:     V-2023.09L-2
 
-Arguments:   -product synplify_base -batch SP0557_SP0557_synplify.tcl
+Arguments:   -product synplify_base -tcl C:/FPGAwork/PCBNo.10081/FPGA/SP0557/launch_synplify.tcl
 ProductType: synplify_pro
 
 
 
 
 
-log file: "C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557.srr"
-Running: hdl_info_gen in foreground
 
-Generating HDL info...
-Copied C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557.srr to C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557.srf
-
-hdl_info_gen completed
-# Sun Mar  1 01:20:14 2026
-
-Return Code: 0
-Run Time:00h:00m:00s
-log file: "C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557.srr"
-Running: SP0557 in foreground
-
-Running proj_1|SP0557
-
-Running Flow: compile (Compile) on proj_1|SP0557
-# Sun Mar  1 01:20:14 2026
-
-Running Flow: compile_flow (Compile Process) on proj_1|SP0557
-# Sun Mar  1 01:20:14 2026
-
-Running: compiler (Compile Input) on proj_1|SP0557
-# Sun Mar  1 01:20:14 2026
-Copied C:\FPGAwork\PCBNo.10081\FPGA\SP0557\synwork\SP0557_SP0557_comp.srs to C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557.srs
-
-compiler completed
-# Sun Mar  1 01:20:35 2026
-
-Return Code: 0
-Run Time:00h:00m:20s
-
-Running: multi_srs_gen (Multi-srs Generator) on proj_1|SP0557
-# Sun Mar  1 01:20:35 2026
-
-multi_srs_gen completed
-# Sun Mar  1 01:20:35 2026
-
-Return Code: 0
-Run Time:00h:00m:00s
-Copied C:\FPGAwork\PCBNo.10081\FPGA\SP0557\synwork\SP0557_SP0557_mult.srs to C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557.srs
-Copied C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557.srr to C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557.srf
-Complete: Compile Process on proj_1|SP0557
-
-Running: premap (Premap) on proj_1|SP0557
-# Sun Mar  1 01:20:35 2026
-
-premap completed with warnings
-# Sun Mar  1 01:20:45 2026
-
-Return Code: 1
-Run Time:00h:00m:10s
-Complete: Compile on proj_1|SP0557
-
-Running Flow: map (Map) on proj_1|SP0557
-# Sun Mar  1 01:20:45 2026
-License granted for 4 parallel jobs
-
-Running: fpga_mapper (Map & Optimize) on proj_1|SP0557
-# Sun Mar  1 01:20:45 2026
-Copied C:\FPGAwork\PCBNo.10081\FPGA\SP0557\synwork\SP0557_SP0557_m.srm to C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557.srm
-
-fpga_mapper completed with warnings
-# Sun Mar  1 01:23:33 2026
-
-Return Code: 1
-Run Time:00h:02m:48s
-Complete: Map on proj_1|SP0557
-Copied C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557.srr to C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557.srf
-Complete: Logic Synthesis on proj_1|SP0557
-TCL script complete: "SP0557_SP0557_synplify.tcl"
-exit status=0
-exit status=0
-Save changes for project:
-C:\FPGAwork\PCBNo.10081\FPGA\SP0557\proj_1.prj
-batch mode default:no
+% run_tcl -fg C:/FPGAwork/PCBNo.10081/FPGA/SP0557/launch_synplify.tcl
+No project opened.
+scm2hydra_preserve_rtl_sig is not supported in current product.
+"resolve_mixed_drivers" is unrecognized option for current device
+add_dut_hierarchy is not supported in current product.
+prepare_readback is not supported in current product.
+auto_infer_blackbox is not supported in current product.
+Removed file: C:\lscc\diamond\3.14\cae_library\synthesis\vhdl\ecp5u.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\com\fc_dec.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\com\fc_sel.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\com\w_pack.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\pll_gen\pll_gen.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\IPcore.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_clk_gen.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\ad_ctrl.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adc_reg.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adclk_gen.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\shiftreg12bit.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_acc_tim_gen.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_dec.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_id.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_phgen.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_plsgen.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_reg_S118M.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_timer_cnt.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_top_S118M.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC43608_top.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_registers.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_wb_top.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_func_top.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_lmt.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_top.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_id.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_ip_reg.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_op_reg.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_reg.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_top.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\pls_sens\pls_sens.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slaveid_top\slaveid_id.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slaveid_top\slaveid_top.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\crc_check.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec4b_3b.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec8b10b_new.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec8b10b_wrapper.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_cont_b1.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_cont_b2.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\adr_sel.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\nd_sel.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\node_sel.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\crc_gen.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc5b_6b.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b_10b.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b10b_new.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b10b_wrapper.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_cont_b1.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_cont_b2.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_ctl_1st.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_ctl_3rd.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\cds.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\CLK_gen_S124M.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rst_cnt.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl_top.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slvadr_cnv.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SIO_ctrl2.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\sp_conv.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SPI_master2.vhd
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\pll_gen\pll_gen.fdc
+Removed file: C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557.fdc
+TCL script complete: "C:/FPGAwork/PCBNo.10081/FPGA/SP0557/launch_synplify.tcl"

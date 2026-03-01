@@ -537,6 +537,7 @@ Report for cell gpio_reg_0
                                 PFUREG	        776         8.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
+                       gpio_ip_reg_2_7	          1         0.1
                       gpio_ip_reg_2_11	          1         0.1
                        gpio_ip_reg_2_1	          1         0.0
                          gpio_ip_reg_1	          1         0.1
@@ -588,7 +589,6 @@ SUB MODULES
                       gpio_ip_reg_2_15	          1         0.1
                       gpio_ip_reg_2_13	          1         0.1
                       gpio_ip_reg_2_10	          1         0.1
-                       gpio_ip_reg_2_7	          1         0.1
 ---------------------------------------------------
 Report for cell gpio_ip_reg_3
    Instance path: SP0557/gpio01/gpio_reg_inst/gpio_ip_reg_inst31
@@ -2943,8 +2943,8 @@ Report for cell enc_top_23
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                         enc_lmt_12_11	          1         0.7
                     encoder_2bit_12_11	          1         0.3
+                         enc_lmt_12_11	          1         0.7
 ---------------------------------------------------
 Report for cell enc_lmt_12_11
    Instance path: SP0557/ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt
@@ -2974,8 +2974,8 @@ Report for cell enc_top_22
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                         enc_lmt_12_10	          1         0.7
                     encoder_2bit_12_10	          1         0.3
+                         enc_lmt_12_10	          1         0.7
 ---------------------------------------------------
 Report for cell enc_lmt_12_10
    Instance path: SP0557/ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt
@@ -3005,8 +3005,8 @@ Report for cell enc_top_21
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          enc_lmt_12_9	          1         0.7
                      encoder_2bit_12_9	          1         0.3
+                          enc_lmt_12_9	          1         0.7
 ---------------------------------------------------
 Report for cell enc_lmt_12_9
    Instance path: SP0557/ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt
@@ -3036,8 +3036,8 @@ Report for cell enc_top_20
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          enc_lmt_12_8	          1         0.7
                      encoder_2bit_12_8	          1         0.3
+                          enc_lmt_12_8	          1         0.7
 ---------------------------------------------------
 Report for cell enc_lmt_12_8
    Instance path: SP0557/ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt
@@ -3067,8 +3067,8 @@ Report for cell enc_top_19
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          enc_lmt_12_7	          1         0.7
                      encoder_2bit_12_7	          1         0.3
+                          enc_lmt_12_7	          1         0.7
 ---------------------------------------------------
 Report for cell enc_lmt_12_7
    Instance path: SP0557/ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt
@@ -3098,8 +3098,8 @@ Report for cell enc_top_18
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          enc_lmt_12_6	          1         0.7
                      encoder_2bit_12_6	          1         0.3
+                          enc_lmt_12_6	          1         0.7
 ---------------------------------------------------
 Report for cell enc_lmt_12_6
    Instance path: SP0557/ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt
@@ -3129,8 +3129,8 @@ Report for cell enc_top_17
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          enc_lmt_12_5	          1         0.7
                      encoder_2bit_12_5	          1         0.3
+                          enc_lmt_12_5	          1         0.7
 ---------------------------------------------------
 Report for cell enc_lmt_12_5
    Instance path: SP0557/ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt
@@ -3160,8 +3160,8 @@ Report for cell enc_top_16
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          enc_lmt_12_4	          1         0.8
                      encoder_2bit_12_4	          1         0.3
+                          enc_lmt_12_4	          1         0.8
 ---------------------------------------------------
 Report for cell enc_lmt_12_4
    Instance path: SP0557/ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt
@@ -3191,8 +3191,8 @@ Report for cell enc_top_15
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          enc_lmt_12_3	          1         0.7
                      encoder_2bit_12_3	          1         0.3
+                          enc_lmt_12_3	          1         0.7
 ---------------------------------------------------
 Report for cell enc_lmt_12_3
    Instance path: SP0557/ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt
@@ -3222,8 +3222,8 @@ Report for cell enc_top_14
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          enc_lmt_12_2	          1         0.7
                      encoder_2bit_12_2	          1         0.3
+                          enc_lmt_12_2	          1         0.7
 ---------------------------------------------------
 Report for cell enc_lmt_12_2
    Instance path: SP0557/ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt
@@ -3253,8 +3253,8 @@ Report for cell enc_top_13
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          enc_lmt_12_1	          1         0.8
                      encoder_2bit_12_1	          1         0.3
+                          enc_lmt_12_1	          1         0.8
 ---------------------------------------------------
 Report for cell enc_lmt_12_1
    Instance path: SP0557/ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt
@@ -3284,8 +3284,8 @@ Report for cell enc_top_12
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          enc_lmt_12_0	          1         0.7
                      encoder_2bit_12_0	          1         0.3
+                          enc_lmt_12_0	          1         0.7
 ---------------------------------------------------
 Report for cell enc_lmt_12_0
    Instance path: SP0557/ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt
@@ -3315,8 +3315,8 @@ Report for cell enc_top
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                            enc_lmt_12	          1         0.7
                        encoder_2bit_12	          1         0.3
+                            enc_lmt_12	          1         0.7
 ---------------------------------------------------
 Report for cell enc_lmt_12
    Instance path: SP0557/ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt

@@ -10,7 +10,7 @@ Lattice Diamond Version 3.14.0.75.2
 #OS: Windows 10 or later
 #Hostname: TSURUMI
 
-# Sun Mar  1 11:55:11 2026
+# Sun Mar  1 12:33:39 2026
 
 #Implementation: SP0557
 
@@ -1162,7 +1162,7 @@ At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memor
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Mar  1 11:55:12 2026
+# Sun Mar  1 12:33:40 2026
 
 ###########################################################]
 ###########################################################[
@@ -1191,7 +1191,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Mar  1 11:55:12 2026
+# Sun Mar  1 12:33:40 2026
 
 ###########################################################]
 
@@ -1206,7 +1206,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Mar  1 11:55:12 2026
+# Sun Mar  1 12:33:40 2026
 
 ###########################################################]
 
@@ -1217,7 +1217,7 @@ Multi-srs Generator Report
 @R:"C:\FPGAwork\PCBNo.10081\FPGA\SP0557\synlog\SP0557_SP0557_multi_srs_gen.srr"
 Premap Report
 
-# Sun Mar  1 11:55:13 2026
+# Sun Mar  1 12:33:41 2026
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -1242,14 +1242,6 @@ Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 Reading constraint file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\pll_gen\pll_gen.fdc
 Reading constraint file: C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557.fdc
-@W: MT476 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":33:0:33:0|Duplicate clock definition found for clock CLKOP_100M. Remove the redundant clock constraint from the FDC file.
-@N: BN630 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":25:0:25:0|Clock "CLKOP_100M" previously defined at this location.
-@W: MT476 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":39:0:39:0|Duplicate clock definition found for clock CLKOS_100M_90. Remove the redundant clock constraint from the FDC file.
-@N: BN630 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":36:0:36:0|Clock "CLKOS_100M_90" previously defined at this location.
-@W: MT476 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":45:0:45:0|Duplicate clock definition found for clock CLKOS2_20M. Remove the redundant clock constraint from the FDC file.
-@N: BN630 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":44:0:44:0|Clock "CLKOS2_20M" previously defined at this location.
-@W: MT476 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":51:0:51:0|Duplicate clock definition found for clock CLKOS3_10M. Remove the redundant clock constraint from the FDC file.
-@N: BN630 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":52:0:52:0|Clock "CLKOS3_10M" previously defined at this location.
 @L: C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557_scck.rpt 
 See clock summary report "C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557_scck.rpt"
 @N: MF916 |Option synthesis_strategy=base is enabled. 
@@ -1272,13 +1264,13 @@ NConnInternalConnection caching is on
 Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 306MB peak: 306MB)
 
 
-Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 306MB peak: 307MB)
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 306MB peak: 307MB)
 
 
 Started DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 306MB peak: 307MB)
 
 
-Finished DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 307MB peak: 307MB)
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 306MB peak: 307MB)
 
 @N: BN362 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\tx_com\enc8b10b_wrapper.vhd":58:6:58:7|Removing sequential instance rdout (in view: work.enc8b10b_wrapper(wrapper)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec8b10b_wrapper.vhd":67:6:67:7|Removing sequential instance rdout (in view: work.dec8b10b_wrapper(wrapper)) of type view:PrimLib.dff(prim) because it does not drive other instances.
@@ -1695,10 +1687,6 @@ Finished clock optimization phase (Real Time elapsed 0h:00m:02s; CPU Time elapse
 @W: MT548 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":39:0:39:0|Source for clock CLKOS_100M_90 not found in netlist.
 @W: MT548 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":45:0:45:0|Source for clock CLKOS2_20M not found in netlist.
 @W: MT548 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":51:0:51:0|Source for clock CLKOS3_10M not found in netlist.
-@W: MT548 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":25:0:25:0|Source for clock CLKOP_100M not found in netlist.
-@W: MT548 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":36:0:36:0|Source for clock CLKOS_100M_90 not found in netlist.
-@W: MT548 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":44:0:44:0|Source for clock CLKOS2_20M not found in netlist.
-@W: MT548 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":52:0:52:0|Source for clock CLKOS3_10M not found in netlist.
 
 Starting clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 324MB)
 
@@ -1801,12 +1789,12 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 229MB peak: 329MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Sun Mar  1 11:55:16 2026
+# Sun Mar  1 12:33:45 2026
 
 ###########################################################]
 Map & Optimize Report
 
-# Sun Mar  1 11:55:17 2026
+# Sun Mar  1 12:33:45 2026
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -2380,7 +2368,7 @@ Only the first 100 messages of id 'MO231' are reported. To see all messages use 
 Starting factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 321MB peak: 353MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 332MB peak: 353MB)
+Finished factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 332MB peak: 353MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -2458,13 +2446,13 @@ Only the first 100 messages of id 'BN161' are reported. To see all messages use 
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 398MB peak: 437MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 401MB peak: 437MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 401MB peak: 437MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:01m:02s; CPU Time elapsed 0h:01m:01s; Memory used current: 509MB peak: 509MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:59s; CPU Time elapsed 0h:00m:58s; Memory used current: 508MB peak: 508MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:01m:03s; CPU Time elapsed 0h:01m:02s; Memory used current: 510MB peak: 511MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:01m:00s; CPU Time elapsed 0h:01m:00s; Memory used current: 509MB peak: 511MB)
 
 @N: FX214 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Generating ROM slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0[5:0] (in view: work.SP0557(rtl)).
 @W: BN132 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[0] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
@@ -2474,22 +2462,22 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:01m:03s; CP
 @W: BN132 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[4] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Removing instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0_areg[5] because it is equivalent to instance slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.datain_reg[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Finished preparing to map (Real Time elapsed 0h:01m:11s; CPU Time elapsed 0h:01m:10s; Memory used current: 511MB peak: 512MB)
+Finished preparing to map (Real Time elapsed 0h:01m:08s; CPU Time elapsed 0h:01m:07s; Memory used current: 511MB peak: 512MB)
 
 @N: FX1019 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":144:3:144:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.cz[2] (in view: work.SP0557(rtl)).
 @N: FX1019 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":113:3:113:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.bz[1] (in view: work.SP0557(rtl)).
 
-Finished technology mapping (Real Time elapsed 0h:01m:19s; CPU Time elapsed 0h:01m:18s; Memory used current: 523MB peak: 568MB)
+Finished technology mapping (Real Time elapsed 0h:01m:16s; CPU Time elapsed 0h:01m:15s; Memory used current: 524MB peak: 568MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:01m:19s		    -7.02ns		9053 /      9482
-   2		0h:01m:20s		    -7.02ns		8930 /      9482
-   3		0h:01m:20s		    -6.78ns		8929 /      9482
-   4		0h:01m:20s		    -6.74ns		8933 /      9482
-   5		0h:01m:21s		    -6.70ns		8936 /      9482
-   6		0h:01m:21s		    -6.71ns		8938 /      9482
-   7		0h:01m:21s		    -6.72ns		8938 /      9482
+   1		0h:01m:16s		    -7.02ns		9053 /      9482
+   2		0h:01m:16s		    -7.02ns		8930 /      9482
+   3		0h:01m:17s		    -6.78ns		8929 /      9482
+   4		0h:01m:17s		    -6.74ns		8933 /      9482
+   5		0h:01m:17s		    -6.70ns		8936 /      9482
+   6		0h:01m:17s		    -6.71ns		8938 /      9482
+   7		0h:01m:17s		    -6.72ns		8938 /      9482
 @N: FX1019 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":144:3:144:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.cz[2] (in view: work.SP0557(rtl)).
 @N: FX1019 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":113:3:113:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.bz[1] (in view: work.SP0557(rtl)).
 @N: FX271 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":115:2:115:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.RX_F (in view: work.SP0557(rtl)) with 39 loads 2 times to improve timing.
@@ -2508,53 +2496,53 @@ Timing driven replication report
 Added 15 Registers via timing driven replication
 Added 0 LUTs via timing driven replication
 
-   8		0h:01m:28s		    -6.24ns		8948 /      9497
-   9		0h:01m:28s		    -6.15ns		8950 /      9497
-  10		0h:01m:28s		    -6.29ns		8960 /      9497
-  11		0h:01m:28s		    -6.19ns		8966 /      9497
-  12		0h:01m:28s		    -6.15ns		8970 /      9497
-  13		0h:01m:29s		    -6.15ns		8971 /      9497
+   8		0h:01m:24s		    -6.24ns		8948 /      9497
+   9		0h:01m:24s		    -6.15ns		8950 /      9497
+  10		0h:01m:24s		    -6.29ns		8960 /      9497
+  11		0h:01m:24s		    -6.19ns		8966 /      9497
+  12		0h:01m:24s		    -6.15ns		8970 /      9497
+  13		0h:01m:24s		    -6.15ns		8971 /      9497
 
 
-  14		0h:01m:31s		    -5.51ns		9032 /      9497
-  15		0h:01m:31s		    -5.70ns		9036 /      9497
-  16		0h:01m:32s		    -5.51ns		9047 /      9497
-  17		0h:01m:32s		    -5.42ns		9055 /      9497
-  18		0h:01m:32s		    -5.53ns		9061 /      9497
-  19		0h:01m:32s		    -5.61ns		9066 /      9497
-  20		0h:01m:32s		    -5.44ns		9067 /      9497
-  21		0h:01m:32s		    -5.45ns		9069 /      9497
+  14		0h:01m:27s		    -5.51ns		9032 /      9497
+  15		0h:01m:27s		    -5.70ns		9036 /      9497
+  16		0h:01m:27s		    -5.51ns		9047 /      9497
+  17		0h:01m:27s		    -5.42ns		9055 /      9497
+  18		0h:01m:28s		    -5.53ns		9061 /      9497
+  19		0h:01m:28s		    -5.61ns		9066 /      9497
+  20		0h:01m:28s		    -5.44ns		9067 /      9497
+  21		0h:01m:28s		    -5.45ns		9069 /      9497
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:35s; CPU Time elapsed 0h:01m:34s; Memory used current: 536MB peak: 568MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:30s; CPU Time elapsed 0h:01m:29s; Memory used current: 537MB peak: 568MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
-Finished restoring hierarchy (Real Time elapsed 0h:01m:43s; CPU Time elapsed 0h:01m:42s; Memory used current: 545MB peak: 568MB)
+Finished restoring hierarchy (Real Time elapsed 0h:01m:38s; CPU Time elapsed 0h:01m:37s; Memory used current: 546MB peak: 568MB)
 
 
-Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:01m:44s; CPU Time elapsed 0h:01m:42s; Memory used current: 545MB peak: 568MB)
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:01m:38s; CPU Time elapsed 0h:01m:37s; Memory used current: 546MB peak: 568MB)
 
 
-Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:01m:44s; CPU Time elapsed 0h:01m:42s; Memory used current: 545MB peak: 568MB)
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:01m:38s; CPU Time elapsed 0h:01m:37s; Memory used current: 546MB peak: 568MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:01m:44s; CPU Time elapsed 0h:01m:43s; Memory used current: 361MB peak: 568MB)
+Start Writing Netlists (Real Time elapsed 0h:01m:39s; CPU Time elapsed 0h:01m:38s; Memory used current: 361MB peak: 568MB)
 
 Writing Analyst data base C:\FPGAwork\PCBNo.10081\FPGA\SP0557\synwork\SP0557_SP0557_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:01m:46s; CPU Time elapsed 0h:01m:45s; Memory used current: 476MB peak: 568MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:01m:41s; CPU Time elapsed 0h:01m:40s; Memory used current: 477MB peak: 568MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:01m:49s; CPU Time elapsed 0h:01m:48s; Memory used current: 494MB peak: 568MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:01m:44s; CPU Time elapsed 0h:01m:43s; Memory used current: 495MB peak: 568MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:01m:49s; CPU Time elapsed 0h:01m:48s; Memory used current: 494MB peak: 568MB)
+Finished Writing Netlists (Real Time elapsed 0h:01m:44s; CPU Time elapsed 0h:01m:43s; Memory used current: 495MB peak: 568MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:01m:50s; CPU Time elapsed 0h:01m:49s; Memory used current: 472MB peak: 568MB)
+Start final timing analysis (Real Time elapsed 0h:01m:45s; CPU Time elapsed 0h:01m:44s; Memory used current: 472MB peak: 568MB)
 
 @W: MT246 :"c:\fpgawork\pcbno.10081\fpga\rtl\ipcore\pll_gen\pll_gen.vhd":60:4:60:12|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @N: MT615 |Found clock CLK20M_ext with period 50.00ns 
@@ -2565,7 +2553,7 @@ Start final timing analysis (Real Time elapsed 0h:01m:50s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Sun Mar  1 11:57:08 2026
+# Timing report written on Sun Mar  1 12:35:31 2026
 #
 
 
@@ -3876,10 +3864,10 @@ Timing exceptions that could not be applied
 @W: MT447 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":115:0:115:0|Timing constraint (from CLKOS_100M_90 to CLKOS2_20M) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design 
 None
 
-Finished final timing analysis (Real Time elapsed 0h:01m:50s; CPU Time elapsed 0h:01m:49s; Memory used current: 479MB peak: 568MB)
+Finished final timing analysis (Real Time elapsed 0h:01m:45s; CPU Time elapsed 0h:01m:44s; Memory used current: 480MB peak: 568MB)
 
 
-Finished timing report (Real Time elapsed 0h:01m:50s; CPU Time elapsed 0h:01m:49s; Memory used current: 479MB peak: 568MB)
+Finished timing report (Real Time elapsed 0h:01m:45s; CPU Time elapsed 0h:01m:44s; Memory used current: 480MB peak: 568MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -3928,10 +3916,10 @@ VLO:            405
 XOR2:           48
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:01m:52s; CPU Time elapsed 0h:01m:51s; Memory used current: 206MB peak: 568MB)
+At Mapper Exit (Real Time elapsed 0h:01m:47s; CPU Time elapsed 0h:01m:46s; Memory used current: 206MB peak: 568MB)
 
-Process took 0h:01m:52s realtime, 0h:01m:51s cputime
-# Sun Mar  1 11:57:10 2026
+Process took 0h:01m:47s realtime, 0h:01m:46s cputime
+# Sun Mar  1 12:35:33 2026
 
 ###########################################################]
 
@@ -3957,7 +3945,7 @@ Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 Writing the design to SP0557_SP0557.ngo...
 
 Total CPU Time: 2 secs  
-Total REAL Time: 3 secs  
+Total REAL Time: 2 secs  
 Peak Memory Usage: 109 MB
 
 
@@ -4895,8 +4883,8 @@ Design Summary:
 
 
 Total CPU Time: 10 secs  
-Total REAL Time: 10 secs  
-Peak Memory Usage: 260 MB
+Total REAL Time: 11 secs  
+Peak Memory Usage: 262 MB
 
 Dumping design to file SP0557_SP0557_map.ncd.
 
@@ -4923,7 +4911,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
-Sun Mar 01 11:57:31 2026
+Sun Mar 01 12:35:54 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -4956,7 +4944,7 @@ Constraints cover 1411258 paths, 418 nets, and 65708 connections (94.22% coverag
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
-Sun Mar 01 11:57:33 2026
+Sun Mar 01 12:35:56 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -5012,7 +5000,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "SP0557_SP0557_map.ncd"
-Sun Mar 01 11:57:35 2026
+Sun Mar 01 12:35:58 2026
 
 PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/FPGAwork/PCBNo.10081/FPGA/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1:par_low_skew_clock_net=0 SP0557_SP0557_map.ncd SP0557_SP0557.dir/5_1.ncd SP0557_SP0557.prf
@@ -5075,7 +5063,7 @@ The following 16 signals are selected to use the primary clock routing resources
 Signal s_LRSTb is selected as Global Set/Reset.
 Starting Placer Phase 0.
 ..........
-Finished Placer Phase 0.  REAL time: 45 secs 
+Finished Placer Phase 0.  REAL time: 44 secs 
 
 Starting Placer Phase 1.
 ....................................
@@ -5190,7 +5178,7 @@ Starting router resource preassignment
 
 Completed router resource preassignment. Real time: 1 mins 51 secs 
 
-Start NBR router at 11:59:28 03/01/26
+Start NBR router at 12:37:51 03/01/26
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -5205,9 +5193,9 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 11:59:30 03/01/26
+Start NBR special constraint process at 12:37:52 03/01/26
 
-Start NBR section for initial routing at 11:59:32 03/01/26
+Start NBR section for initial routing at 12:37:55 03/01/26
 Level 1, iteration 1
 0(0.00%) conflict; 55480(79.56%) untouched conns; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 1.188ns/0.000ns; real time: 1 mins 59 secs 
@@ -5219,70 +5207,70 @@ Level 3, iteration 1
 Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 3 secs 
 Level 4, iteration 1
 3156(0.27%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 13 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 12 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 11:59:48 03/01/26
+Start NBR section for normal routing at 12:38:10 03/01/26
 Level 1, iteration 1
 2(0.00%) conflicts; 4843(6.94%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 15 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 14 secs 
 Level 2, iteration 1
 0(0.00%) conflict; 4845(6.95%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 17 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 16 secs 
 Level 3, iteration 1
 0(0.00%) conflict; 4845(6.95%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 17 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 16 secs 
 Level 4, iteration 1
 1563(0.13%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 21 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 20 secs 
 Level 4, iteration 2
 706(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 24 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 23 secs 
 Level 4, iteration 3
 330(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 27 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 26 secs 
 Level 4, iteration 4
 135(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 27 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 26 secs 
 Level 4, iteration 5
 57(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 29 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 28 secs 
 Level 4, iteration 6
 21(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 30 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 29 secs 
 Level 4, iteration 7
 10(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 31 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 30 secs 
 Level 4, iteration 8
 4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 32 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 30 secs 
 Level 4, iteration 9
 1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 33 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 32 secs 
 Level 4, iteration 10
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 33 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 2 mins 32 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 12:00:08 03/01/26
+Start NBR section for setup/hold timing optimization with effort level 3 at 12:38:30 03/01/26
 Level 4, iteration 0
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<hold >: 0.169ns/0.000ns; real time: 4 mins 10 secs 
+Estimated worst slack/total negative slack<hold >: 0.169ns/0.000ns; real time: 4 mins 8 secs 
 Level 4, iteration 0
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.408ns/0.000ns; real time: 4 mins 13 secs 
+Estimated worst slack/total negative slack<setup>: 1.408ns/0.000ns; real time: 4 mins 11 secs 
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.408ns/0.000ns; real time: 4 mins 13 secs 
+Estimated worst slack/total negative slack<setup>: 1.408ns/0.000ns; real time: 4 mins 11 secs 
 
-Start NBR section for re-routing at 12:01:54 03/01/26
+Start NBR section for re-routing at 12:40:15 03/01/26
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 4 mins 19 secs 
+Estimated worst slack/total negative slack<setup>: 1.428ns/0.000ns; real time: 4 mins 17 secs 
 
-Start NBR section for post-routing at 12:01:54 03/01/26
+Start NBR section for post-routing at 12:40:15 03/01/26
 
 End NBR router with 0 unrouted connection
 
@@ -5297,8 +5285,8 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 
-Total CPU time 3 mins 53 secs 
-Total REAL time: 4 mins 39 secs 
+Total CPU time 3 mins 51 secs 
+Total REAL time: 4 mins 37 secs 
 Completely routed.
 End of route.  69736 routed (100.00%); 0 unrouted.
 
@@ -5317,8 +5305,8 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.174
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 3 mins 56 secs 
-Total REAL time to completion: 4 mins 42 secs 
+Total CPU  time to completion: 3 mins 53 secs 
+Total REAL time to completion: 4 mins 40 secs 
 
 par done!
 
@@ -5355,7 +5343,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
-Sun Mar 01 12:02:19 2026
+Sun Mar 01 12:40:40 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -5388,7 +5376,7 @@ Constraints cover 1411258 paths, 418 nets, and 69153 connections (99.16% coverag
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
-Sun Mar 01 12:02:21 2026
+Sun Mar 01 12:40:42 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -5432,7 +5420,7 @@ Cumulative negative slack: 0 (0+0)
 --------------------------------------------------------------------------------
 
 Total CPU Time: 5 secs 
-Total REAL Time: 7 secs 
+Total REAL Time: 6 secs 
 Peak Memory Usage: 302 MB
 
 
@@ -5518,5 +5506,5 @@ Bitstream Status: Final           Version 10.27.
  
 Saving bit stream in "SP0557_SP0557.bit".
 Total CPU Time: 5 secs 
-Total REAL Time: 6 secs 
+Total REAL Time: 5 secs 
 Peak Memory Usage: 362 MB

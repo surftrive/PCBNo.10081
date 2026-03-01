@@ -1,4 +1,4 @@
-# Sun Mar  1 11:55:13 2026
+# Sun Mar  1 12:33:41 2026
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -23,14 +23,6 @@ Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 Reading constraint file: C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\pll_gen\pll_gen.fdc
 Reading constraint file: C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557.fdc
-@W: MT476 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":33:0:33:0|Duplicate clock definition found for clock CLKOP_100M. Remove the redundant clock constraint from the FDC file.
-@N: BN630 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":25:0:25:0|Clock "CLKOP_100M" previously defined at this location.
-@W: MT476 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":39:0:39:0|Duplicate clock definition found for clock CLKOS_100M_90. Remove the redundant clock constraint from the FDC file.
-@N: BN630 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":36:0:36:0|Clock "CLKOS_100M_90" previously defined at this location.
-@W: MT476 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":45:0:45:0|Duplicate clock definition found for clock CLKOS2_20M. Remove the redundant clock constraint from the FDC file.
-@N: BN630 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":44:0:44:0|Clock "CLKOS2_20M" previously defined at this location.
-@W: MT476 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":51:0:51:0|Duplicate clock definition found for clock CLKOS3_10M. Remove the redundant clock constraint from the FDC file.
-@N: BN630 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":52:0:52:0|Clock "CLKOS3_10M" previously defined at this location.
 @L: C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557_scck.rpt 
 See clock summary report "C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557_scck.rpt"
 @N: MF916 |Option synthesis_strategy=base is enabled. 
@@ -53,13 +45,13 @@ NConnInternalConnection caching is on
 Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 306MB peak: 306MB)
 
 
-Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 306MB peak: 307MB)
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 306MB peak: 307MB)
 
 
 Started DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 306MB peak: 307MB)
 
 
-Finished DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 307MB peak: 307MB)
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 306MB peak: 307MB)
 
 @N: BN362 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\tx_com\enc8b10b_wrapper.vhd":58:6:58:7|Removing sequential instance rdout (in view: work.enc8b10b_wrapper(wrapper)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec8b10b_wrapper.vhd":67:6:67:7|Removing sequential instance rdout (in view: work.dec8b10b_wrapper(wrapper)) of type view:PrimLib.dff(prim) because it does not drive other instances.
@@ -476,10 +468,6 @@ Finished clock optimization phase (Real Time elapsed 0h:00m:02s; CPU Time elapse
 @W: MT548 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":39:0:39:0|Source for clock CLKOS_100M_90 not found in netlist.
 @W: MT548 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":45:0:45:0|Source for clock CLKOS2_20M not found in netlist.
 @W: MT548 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":51:0:51:0|Source for clock CLKOS3_10M not found in netlist.
-@W: MT548 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":25:0:25:0|Source for clock CLKOP_100M not found in netlist.
-@W: MT548 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":36:0:36:0|Source for clock CLKOS_100M_90 not found in netlist.
-@W: MT548 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":44:0:44:0|Source for clock CLKOS2_20M not found in netlist.
-@W: MT548 :"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":52:0:52:0|Source for clock CLKOS3_10M not found in netlist.
 
 Starting clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 324MB)
 
@@ -582,6 +570,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 229MB peak: 329MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Sun Mar  1 11:55:16 2026
+# Sun Mar  1 12:33:45 2026
 
 ###########################################################]

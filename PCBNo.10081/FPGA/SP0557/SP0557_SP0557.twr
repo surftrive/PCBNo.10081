@@ -13,7 +13,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
-Sun Mar 01 12:02:19 2026
+Sun Mar 01 12:40:40 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -5029,7 +5029,7 @@ Constraints cover 1411258 paths, 418 nets, and 69153 connections (99.16% coverag
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
-Sun Mar 01 12:02:21 2026
+Sun Mar 01 12:40:42 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.

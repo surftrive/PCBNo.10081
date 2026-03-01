@@ -478,54 +478,6 @@
             <Navigation>Input port bits 6 to 4 of command_reg(7 downto 0) are unused. Assign logic for all port bits or change the input port size.</Navigation>
         </Message>
         <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT476 :&quot;c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc&quot;:33:0:33:0|Duplicate clock definition found for clock CLKOP_100M. Remove the redundant clock constraint from the FDC file.</Dynamic>
-            <Navigation>MT476</Navigation>
-            <Navigation>c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc</Navigation>
-            <Navigation>33</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>33</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>Duplicate clock definition found for clock CLKOP_100M. Remove the redundant clock constraint from the FDC file.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT476 :&quot;c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc&quot;:39:0:39:0|Duplicate clock definition found for clock CLKOS_100M_90. Remove the redundant clock constraint from the FDC file.</Dynamic>
-            <Navigation>MT476</Navigation>
-            <Navigation>c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>Duplicate clock definition found for clock CLKOS_100M_90. Remove the redundant clock constraint from the FDC file.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT476 :&quot;c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc&quot;:45:0:45:0|Duplicate clock definition found for clock CLKOS2_20M. Remove the redundant clock constraint from the FDC file.</Dynamic>
-            <Navigation>MT476</Navigation>
-            <Navigation>c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc</Navigation>
-            <Navigation>45</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>45</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>Duplicate clock definition found for clock CLKOS2_20M. Remove the redundant clock constraint from the FDC file.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT476 :&quot;c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc&quot;:51:0:51:0|Duplicate clock definition found for clock CLKOS3_10M. Remove the redundant clock constraint from the FDC file.</Dynamic>
-            <Navigation>MT476</Navigation>
-            <Navigation>c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc</Navigation>
-            <Navigation>51</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>51</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>Duplicate clock definition found for clock CLKOS3_10M. Remove the redundant clock constraint from the FDC file.</Navigation>
-        </Message>
-        <Message>
             <ID>2019993</ID>
             <Severity>Warning</Severity>
             <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
@@ -577,54 +529,6 @@
             <Navigation>51</Navigation>
             <Navigation>0</Navigation>
             <Navigation>51</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>Source for clock CLKOS3_10M not found in netlist.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT548 :&quot;c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc&quot;:25:0:25:0|Source for clock CLKOP_100M not found in netlist.</Dynamic>
-            <Navigation>MT548</Navigation>
-            <Navigation>c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>Source for clock CLKOP_100M not found in netlist.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT548 :&quot;c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc&quot;:36:0:36:0|Source for clock CLKOS_100M_90 not found in netlist.</Dynamic>
-            <Navigation>MT548</Navigation>
-            <Navigation>c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc</Navigation>
-            <Navigation>36</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>36</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>Source for clock CLKOS_100M_90 not found in netlist.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT548 :&quot;c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc&quot;:44:0:44:0|Source for clock CLKOS2_20M not found in netlist.</Dynamic>
-            <Navigation>MT548</Navigation>
-            <Navigation>c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc</Navigation>
-            <Navigation>44</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>44</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>Source for clock CLKOS2_20M not found in netlist.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT548 :&quot;c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc&quot;:52:0:52:0|Source for clock CLKOS3_10M not found in netlist.</Dynamic>
-            <Navigation>MT548</Navigation>
-            <Navigation>c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc</Navigation>
-            <Navigation>52</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>52</Navigation>
             <Navigation>0</Navigation>
             <Navigation>Source for clock CLKOS3_10M not found in netlist.</Navigation>
         </Message>
