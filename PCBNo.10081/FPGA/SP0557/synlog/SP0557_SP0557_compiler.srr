@@ -32,7 +32,95 @@ Synopsys VHDL Compiler, Version comp202309synp1, Build 349R, Built Sep 17 2024 0
 
 @N|Running in 64-bit mode
 @N:"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557.vhd":19:7:19:12|Top entity is set to SP0557.
-Options changed - recompiling
+File C:\lscc\diamond\3.14\synpbase\lib\vhd2008\misc.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_clk_gen.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adc_reg.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adclk_gen.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\shiftreg12bit.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_acc_tim_gen.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_dec.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_id.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_phgen.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_timer_cnt.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_registers.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_lmt.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_id.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_ip_reg.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_op_reg.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\pls_sens\pls_sens.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slaveid_top\slaveid_id.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\crc_check.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec4b_3b.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\adr_sel.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\nd_sel.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\node_sel.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\crc_gen.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc5b_6b.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_ctl_1st.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_ctl_3rd.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\cds.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rst_cnt.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slvadr_cnv.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SPI_master2.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd changed - recompiling
+File C:\lscc\diamond\3.14\synpbase\lib\lucent\ecp5u.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\pll_gen\pll_gen.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\ad_ctrl.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_plsgen.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_reg_S118M.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_top_S118M.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_wb_top.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC43608_top.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_top.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_func_top.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_reg.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_top.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec8b10b_new.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec8b10b_wrapper.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_cont_b1.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_cont_b2.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b_10b.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b10b_new.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b10b_wrapper.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_cont_b1.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_cont_b2.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\CLK_gen_S124M.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl_top.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SIO_ctrl2.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\sp_conv.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\IPcore.vhd changed - recompiling
+File C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slaveid_top\slaveid_top.vhd changed - recompiling
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\lscc\diamond\3.14\cae_library\synthesis\vhdl\ecp5u.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\com\fc_dec.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\com\fc_sel.vhd'.
@@ -125,7 +213,9 @@ Options changed - recompiling
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\IPcore.vhd'.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slaveid_top\slaveid_top.vhd'.
 VHDL syntax check successful!
-Options changed - recompiling
+
+Compiler output is up to date.  No re-compile necessary
+
 @N: CD231 :"C:\lscc\diamond\3.14\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
 @N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557.vhd":19:7:19:12|Synthesizing work.sp0557.rtl.
 @N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_top.vhd":20:7:20:14|Synthesizing work.gpio_top.rtl.
@@ -1051,12 +1141,12 @@ For a summary of runtime per design unit, please see file:
 
 
 
-At c_vhdl Exit (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 142MB peak: 180MB)
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 108MB)
 
-Process took 0h:00m:16s realtime, 0h:00m:16s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Mar  1 01:20:31 2026
+# Sun Mar  1 11:55:12 2026
 
 ###########################################################]
 ###########################################################[
@@ -1076,15 +1166,16 @@ Implementation : SP0557
 Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
 
 @N|Running in 64-bit mode
-File C:\lscc\diamond\3.13\synpbase\bin64\syn_nfilter.exe changed - recompiling
-File C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\synwork\layer0.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 102MB peak: 103MB)
+Linker output is up to date. No re-linking necessary
+
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Mar  1 01:20:34 2026
+# Sun Mar  1 11:55:12 2026
 
 ###########################################################]
 
@@ -1094,11 +1185,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:17s; Memory used current: 24MB peak: 24MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 24MB peak: 24MB)
 
-Process took 0h:00m:19s realtime, 0h:00m:17s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Mar  1 01:20:34 2026
+# Sun Mar  1 11:55:12 2026
 
 ###########################################################]

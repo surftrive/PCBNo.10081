@@ -3,51 +3,51 @@ Report for cell SP0557
    Instance path: SP0557
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	   10500.00        100.0
+                                  SLIC	   10529.00        100.0
                                  IOLGC	      83.00        100.0
-                                  LUT4	    9561.00        100.0
+                                  LUT4	    9634.00        100.0
                                  IOREG	         83        100.0
                                  IOBUF	        127        100.0
-                                PFUREG	       9551        100.0
+                                PFUREG	       9702        100.0
                                 RIPPLE	       2989        100.0
                                    EBR	          4        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                               sp_conv	          1         1.2
                            slv_clk_gen	          1         0.2
                            slv_com_top	          1         7.8
-                     ppmc_top_S118M_16	          1         4.8
-                     ppmc_top_S118M_20	          1         4.8
-                     ppmc_top_S118M_22	          1         4.6
-                     ppmc_top_S118M_23	          1         4.4
-                     ppmc_top_S118M_21	          1         4.8
+                               sp_conv	          1         1.1
+                     ppmc_top_S118M_16	          1         4.6
+                     ppmc_top_S118M_20	          1         4.6
+                     ppmc_top_S118M_22	          1         4.8
+                     ppmc_top_S118M_23	          1         4.5
+                     ppmc_top_S118M_21	          1         4.7
                      ppmc_top_S118M_18	          1         4.7
-                     ppmc_top_S118M_19	          1         4.9
+                     ppmc_top_S118M_19	          1         4.7
                      ppmc_top_S118M_17	          1         4.7
-                     ppmc_top_S118M_12	          1         4.9
+                     ppmc_top_S118M_12	          1         4.7
                      ppmc_top_S118M_14	          1         4.8
                      ppmc_top_S118M_15	          1         4.7
-                     ppmc_top_S118M_13	          1         4.8
-                        ppmc_top_S118M	          1         5.0
-                            gpio_top_0	          1         4.7
+                     ppmc_top_S118M_13	          1         4.7
+                        ppmc_top_S118M	          1         4.9
                               pls_sens	          1         0.3
                             gpio_top_1	          1         4.9
-                          enc_func_top	          1        14.1
+                            gpio_top_0	          1         4.6
+                          enc_func_top	          1        13.9
                                ad_ctrl	          1         0.3
                              LEDLT_TOP	          1         0.7
+                          DAC43608_top	          1         4.9
                             EFUSE_CTRL	          1         0.1
-                          DAC43608_top	          1         3.9
 ---------------------------------------------------
 Report for cell gpio_top_0
    Instance path: SP0557/gpio02
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     489.67         4.7
-                                  LUT4	     248.00         2.6
-                                PFUREG	        752         7.9
+                                  SLIC	     486.83         4.6
+                                  LUT4	     242.00         2.5
+                                PFUREG	        752         7.8
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                            gpio_reg_1	          1         4.4
+                            gpio_reg_1	          1         4.3
                              fc_sel_13	          1         0.3
                              fc_dec_13	          1         0.0
 ---------------------------------------------------
@@ -55,51 +55,19 @@ Report for cell gpio_reg_1
    Instance path: SP0557/gpio02/gpio_reg_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     458.00         4.4
-                                  LUT4	     183.00         1.9
-                                PFUREG	        752         7.9
+                                  SLIC	     455.33         4.3
+                                  LUT4	     177.00         1.8
+                                PFUREG	        752         7.8
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                      gpio_op_reg_0_18	          1         0.1
-                       gpio_op_reg_4_1	          1         0.1
-                      gpio_op_reg_0_24	          1         0.1
-                      gpio_op_reg_0_31	          1         0.1
-                      gpio_op_reg_0_30	          1         0.1
-                      gpio_op_reg_0_28	          1         0.1
-                      gpio_op_reg_0_29	          1         0.0
-                      gpio_op_reg_0_26	          1         0.1
-                      gpio_op_reg_0_27	          1         0.1
-                      gpio_op_reg_0_25	          1         0.1
-                      gpio_op_reg_0_21	          1         0.1
-                      gpio_op_reg_0_23	          1         0.1
-                      gpio_op_reg_0_22	          1         0.1
-                      gpio_op_reg_0_20	          1         0.1
-                      gpio_op_reg_0_19	          1         0.1
-                      gpio_op_reg_0_16	          1         0.1
-                      gpio_op_reg_0_17	          1         0.1
-                       gpio_op_reg_0_1	          1         0.0
-                      gpio_ip_reg_2_35	          1         0.1
-                       gpio_ip_reg_3_0	          1         0.1
-                         gpio_ip_reg_4	          1         0.1
-                         gpio_ip_reg_5	          1         0.1
-                      gpio_ip_reg_2_37	          1         0.1
-                      gpio_ip_reg_2_38	          1         0.1
-                      gpio_ip_reg_2_36	          1         0.1
-                      gpio_ip_reg_2_29	          1         0.1
-                      gpio_ip_reg_2_31	          1         0.1
-                      gpio_ip_reg_2_33	          1         0.0
-                      gpio_ip_reg_2_34	          1         0.0
-                      gpio_ip_reg_2_32	          1         0.0
-                      gpio_ip_reg_2_30	          1         0.1
-                       gpio_ip_reg_0_7	          1         0.1
-                       gpio_ip_reg_0_9	          1         0.1
-                      gpio_ip_reg_17_1	          1         0.1
                        gpio_ip_reg_1_0	          1         0.1
-                       gpio_ip_reg_0_8	          1         0.1
+                      gpio_ip_reg_17_1	          1         0.1
+                       gpio_ip_reg_0_9	          1         0.1
                        gpio_ip_reg_0_1	          1         0.1
                        gpio_ip_reg_0_2	          1         0.1
                        gpio_ip_reg_0_4	          1         0.1
                        gpio_ip_reg_0_6	          1         0.1
+                       gpio_ip_reg_0_7	          1         0.1
                        gpio_ip_reg_0_5	          1         0.1
                        gpio_ip_reg_0_3	          1         0.1
                       gpio_ip_reg_0_12	          1         0.1
@@ -110,6 +78,38 @@ SUB MODULES
                            gpio_ip_reg	          1         0.1
                        gpio_ip_reg_0_0	          1         0.1
                          gpio_ip_reg_0	          1         0.1
+                      gpio_op_reg_0_25	          1         0.1
+                      gpio_op_reg_0_31	          1         0.1
+                       gpio_op_reg_4_1	          1         0.1
+                      gpio_op_reg_0_29	          1         0.0
+                      gpio_op_reg_0_30	          1         0.1
+                      gpio_op_reg_0_27	          1         0.1
+                      gpio_op_reg_0_28	          1         0.1
+                      gpio_op_reg_0_26	          1         0.1
+                      gpio_op_reg_0_19	          1         0.1
+                      gpio_op_reg_0_21	          1         0.1
+                      gpio_op_reg_0_23	          1         0.1
+                      gpio_op_reg_0_24	          1         0.1
+                      gpio_op_reg_0_22	          1         0.1
+                      gpio_op_reg_0_20	          1         0.1
+                      gpio_op_reg_0_16	          1         0.1
+                      gpio_op_reg_0_17	          1         0.1
+                      gpio_op_reg_0_18	          1         0.1
+                       gpio_op_reg_0_1	          1         0.0
+                       gpio_ip_reg_3_0	          1         0.1
+                         gpio_ip_reg_4	          1         0.1
+                         gpio_ip_reg_5	          1         0.1
+                       gpio_ip_reg_0_8	          1         0.1
+                      gpio_ip_reg_2_29	          1         0.1
+                      gpio_ip_reg_2_34	          1         0.0
+                      gpio_ip_reg_2_38	          1         0.1
+                      gpio_ip_reg_2_36	          1         0.1
+                      gpio_ip_reg_2_37	          1         0.1
+                      gpio_ip_reg_2_35	          1         0.1
+                      gpio_ip_reg_2_30	          1         0.1
+                      gpio_ip_reg_2_32	          1         0.0
+                      gpio_ip_reg_2_33	          1         0.0
+                      gpio_ip_reg_2_31	          1         0.1
 ---------------------------------------------------
 Report for cell gpio_ip_reg_0_14
    Instance path: SP0557/gpio02/gpio_reg_inst/gpio_ip_reg_inst31
@@ -291,7 +291,7 @@ Report for cell gpio_ip_reg_2_38
    Instance path: SP0557/gpio02/gpio_reg_inst/gpio_ip_reg_inst13
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       7.83         0.1
+                                  SLIC	       8.00         0.1
                                 PFUREG	         16         0.2
 ---------------------------------------------------
 Report for cell gpio_op_reg_0_29
@@ -399,7 +399,7 @@ Report for cell gpio_ip_reg_1_0
    Instance path: SP0557/gpio02/gpio_reg_inst/gpio_ip_reg_inst6
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       6.83         0.1
+                                  SLIC	       7.00         0.1
                                   LUT4	       1.00         0.0
                                 PFUREG	         14         0.1
 ---------------------------------------------------
@@ -415,7 +415,7 @@ Report for cell gpio_ip_reg_2_34
    Instance path: SP0557/gpio02/gpio_reg_inst/gpio_ip_reg_inst5
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       4.00         0.0
+                                  SLIC	       3.83         0.0
                                 PFUREG	          8         0.1
 ---------------------------------------------------
 Report for cell gpio_op_reg_0_21
@@ -430,7 +430,7 @@ Report for cell gpio_ip_reg_2_33
    Instance path: SP0557/gpio02/gpio_reg_inst/gpio_ip_reg_inst4
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       4.00         0.0
+                                  SLIC	       3.83         0.0
                                 PFUREG	          8         0.1
 ---------------------------------------------------
 Report for cell gpio_op_reg_0_20
@@ -505,7 +505,7 @@ Report for cell fc_sel_13
    Instance path: SP0557/gpio02/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      31.00         0.3
+                                  SLIC	      30.83         0.3
                                   LUT4	      63.00         0.7
 ---------------------------------------------------
 Report for cell fc_dec_13
@@ -519,12 +519,12 @@ Report for cell gpio_top_1
    Instance path: SP0557/gpio01
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     514.67         4.9
-                                  LUT4	     252.00         2.6
-                                PFUREG	        776         8.1
+                                  SLIC	     511.83         4.9
+                                  LUT4	     247.00         2.6
+                                PFUREG	        776         8.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                            gpio_reg_0	          1         4.7
+                            gpio_reg_0	          1         4.6
                              fc_sel_12	          1         0.2
                              fc_dec_12	          1         0.0
 ---------------------------------------------------
@@ -532,63 +532,63 @@ Report for cell gpio_reg_0
    Instance path: SP0557/gpio01/gpio_reg_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     489.67         4.7
-                                  LUT4	     200.00         2.1
-                                PFUREG	        776         8.1
+                                  SLIC	     486.67         4.6
+                                  LUT4	     195.00         2.0
+                                PFUREG	        776         8.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                       gpio_op_reg_0_7	          1         0.1
+                      gpio_ip_reg_2_11	          1         0.1
+                       gpio_ip_reg_2_1	          1         0.0
+                         gpio_ip_reg_1	          1         0.1
+                         gpio_ip_reg_2	          1         0.0
+                           gpio_op_reg	          1         0.1
                       gpio_op_reg_19_0	          1         0.0
                          gpio_op_reg_2	          1         0.1
+                       gpio_op_reg_0_7	          1         0.1
                        gpio_op_reg_0_9	          1         0.1
                          gpio_op_reg_1	          1         0.1
                        gpio_op_reg_0_8	          1         0.1
-                       gpio_op_reg_0_3	          1         0.1
                        gpio_op_reg_0_5	          1         0.1
                        gpio_op_reg_0_6	          1         0.1
                        gpio_op_reg_0_4	          1         0.1
+                       gpio_op_reg_0_3	          1         0.1
+                      gpio_op_reg_0_13	          1         0.1
                        gpio_op_reg_0_2	          1         0.1
-                           gpio_op_reg	          1         0.1
-                      gpio_op_reg_0_12	          1         0.1
                       gpio_op_reg_0_14	          1         0.1
                       gpio_op_reg_0_15	          1         0.1
-                      gpio_op_reg_0_13	          1         0.1
-                      gpio_op_reg_0_10	          1         0.1
                       gpio_op_reg_0_11	          1         0.1
-                       gpio_op_reg_0_0	          1         0.1
+                      gpio_op_reg_0_12	          1         0.1
+                      gpio_op_reg_0_10	          1         0.1
                          gpio_op_reg_0	          1         0.1
-                      gpio_ip_reg_2_19	          1         0.1
-                       gpio_ip_reg_2_8	          1         0.1
+                       gpio_op_reg_0_0	          1         0.1
                        gpio_ip_reg_2_9	          1         0.1
                          gpio_ip_reg_3	          1         0.1
-                       gpio_ip_reg_2_4	          1         0.1
-                       gpio_ip_reg_2_6	          1         0.1
-                       gpio_ip_reg_2_7	          1         0.1
+                       gpio_ip_reg_2_8	          1         0.1
+                      gpio_ip_reg_2_23	          1         0.1
                        gpio_ip_reg_2_5	          1         0.1
-                      gpio_ip_reg_2_24	          1         0.1
+                       gpio_ip_reg_2_6	          1         0.1
+                       gpio_ip_reg_2_4	          1         0.1
                        gpio_ip_reg_2_3	          1         0.1
-                      gpio_ip_reg_2_26	          1         0.1
                       gpio_ip_reg_2_27	          1         0.1
                       gpio_ip_reg_2_28	          1         0.1
                       gpio_ip_reg_2_25	          1         0.1
-                      gpio_ip_reg_2_20	          1         0.1
-                      gpio_ip_reg_2_22	          1         0.1
-                      gpio_ip_reg_2_23	          1         0.1
-                      gpio_ip_reg_2_21	          1         0.1
-                       gpio_ip_reg_2_2	          1         0.1
-                         gpio_ip_reg_2	          1         0.0
-                      gpio_ip_reg_2_13	          1         0.1
-                      gpio_ip_reg_2_17	          1         0.1
-                      gpio_ip_reg_2_18	          1         0.1
-                      gpio_ip_reg_2_15	          1         0.1
-                      gpio_ip_reg_2_16	          1         0.1
-                      gpio_ip_reg_2_14	          1         0.1
-                       gpio_ip_reg_2_1	          1         0.0
-                      gpio_ip_reg_2_11	          1         0.1
-                      gpio_ip_reg_2_12	          1         0.1
-                      gpio_ip_reg_2_10	          1         0.1
+                      gpio_ip_reg_2_26	          1         0.1
+                      gpio_ip_reg_2_24	          1         0.1
                        gpio_ip_reg_2_0	          1         0.0
-                         gpio_ip_reg_1	          1         0.1
+                      gpio_ip_reg_2_16	          1         0.1
+                       gpio_ip_reg_2_2	          1         0.1
+                      gpio_ip_reg_2_21	          1         0.1
+                      gpio_ip_reg_2_22	          1         0.1
+                      gpio_ip_reg_2_20	          1         0.1
+                      gpio_ip_reg_2_18	          1         0.1
+                      gpio_ip_reg_2_19	          1         0.1
+                      gpio_ip_reg_2_17	          1         0.1
+                      gpio_ip_reg_2_12	          1         0.1
+                      gpio_ip_reg_2_14	          1         0.1
+                      gpio_ip_reg_2_15	          1         0.1
+                      gpio_ip_reg_2_13	          1         0.1
+                      gpio_ip_reg_2_10	          1         0.1
+                       gpio_ip_reg_2_7	          1         0.1
 ---------------------------------------------------
 Report for cell gpio_ip_reg_3
    Instance path: SP0557/gpio01/gpio_reg_inst/gpio_ip_reg_inst31
@@ -769,7 +769,7 @@ Report for cell gpio_ip_reg_2_11
    Instance path: SP0557/gpio01/gpio_reg_inst/gpio_ip_reg_inst13
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       7.83         0.1
+                                  SLIC	       8.00         0.1
                                 PFUREG	         16         0.2
 ---------------------------------------------------
 Report for cell gpio_op_reg_0_9
@@ -806,8 +806,8 @@ Report for cell gpio_op_reg_0_7
    Instance path: SP0557/gpio01/gpio_reg_inst/gpio_op_reg_inst11
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       8.50         0.1
-                                  LUT4	       1.00         0.0
+                                  SLIC	       9.50         0.1
+                                  LUT4	       3.00         0.0
                                 PFUREG	         16         0.2
 ---------------------------------------------------
 Report for cell gpio_ip_reg_2_8
@@ -836,7 +836,7 @@ Report for cell gpio_op_reg_0_5
    Instance path: SP0557/gpio01/gpio_reg_inst/gpio_op_reg_inst9
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       8.50         0.1
+                                  SLIC	       8.33         0.1
                                   LUT4	       1.00         0.0
                                 PFUREG	         16         0.2
 ---------------------------------------------------
@@ -874,7 +874,7 @@ Report for cell gpio_ip_reg_2_4
    Instance path: SP0557/gpio01/gpio_reg_inst/gpio_ip_reg_inst6
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       7.83         0.1
+                                  SLIC	       8.00         0.1
                                 PFUREG	         16         0.2
 ---------------------------------------------------
 Report for cell gpio_op_reg_2
@@ -889,7 +889,7 @@ Report for cell gpio_ip_reg_2_3
    Instance path: SP0557/gpio01/gpio_reg_inst/gpio_ip_reg_inst5
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       8.00         0.1
+                                  SLIC	       7.83         0.1
                                 PFUREG	         16         0.2
 ---------------------------------------------------
 Report for cell gpio_op_reg_0_2
@@ -904,7 +904,7 @@ Report for cell gpio_ip_reg_2_2
    Instance path: SP0557/gpio01/gpio_reg_inst/gpio_ip_reg_inst4
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       8.00         0.1
+                                  SLIC	       7.83         0.1
                                 PFUREG	         16         0.2
 ---------------------------------------------------
 Report for cell gpio_op_reg_1
@@ -980,7 +980,7 @@ Report for cell fc_sel_12
    Instance path: SP0557/gpio01/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      24.33         0.2
+                                  SLIC	      24.50         0.2
                                   LUT4	      50.00         0.5
 ---------------------------------------------------
 Report for cell fc_dec_12
@@ -994,39 +994,39 @@ Report for cell ppmc_top_S118M_23
    Instance path: SP0557/stm13
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     459.67         4.4
-                                  LUT4	     425.50         4.5
-                                PFUREG	        431         4.5
+                                  SLIC	     471.08         4.5
+                                  LUT4	     456.50         4.7
+                                PFUREG	        431         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                  ppmc_reg_S118M_12_11	          1         3.9
-                             fc_sel_11	          1         0.4
+                  ppmc_reg_S118M_12_11	          1         4.0
+                             fc_sel_11	          1         0.5
                              fc_dec_11	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_reg_S118M_12_11
    Instance path: SP0557/stm13/ppmc_reg_S118M_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     413.67         3.9
-                                  LUT4	     329.50         3.4
-                                PFUREG	        429         4.5
+                                  SLIC	     420.33         4.0
+                                  LUT4	     352.50         3.7
+                                PFUREG	        429         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                 ppmc_u_step_ext_12_11	          1         0.0
-                      ppmc_rgstr_12_11	          1         1.2
+                      ppmc_rgstr_12_11	          1         1.3
                      ppmc_plsgen_12_11	          1         1.4
                 ppmc_enblr_S118M_12_11	          1         0.1
                            ppmc_dec_11	          1         0.1
                           ppmc_ctrl_11	          1         0.8
                         ppmc_cmdchk_11	          1         0.2
+                 ppmc_u_step_ext_12_11	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_cmdchk_11
    Instance path: SP0557/stm13/ppmc_reg_S118M_inst/inst_ppmc_cmdchk
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      22.33         0.2
+                                  SLIC	      23.50         0.2
                                   LUT4	      29.00         0.3
                                 PFUREG	          6         0.1
                                 RIPPLE	          9         0.3
@@ -1035,9 +1035,9 @@ Report for cell ppmc_ctrl_11
    Instance path: SP0557/stm13/ppmc_reg_S118M_inst/inst_ppmc_ctrl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      87.50         0.8
-                                  LUT4	      63.00         0.7
-                                PFUREG	        129         1.4
+                                  SLIC	      86.00         0.8
+                                  LUT4	      62.50         0.6
+                                PFUREG	        129         1.3
                                 RIPPLE	         28         0.9
 ---------------------------------------------------
 Report for cell ppmc_enblr_S118M_12_11
@@ -1053,37 +1053,37 @@ Report for cell ppmc_rgstr_12_11
    Instance path: SP0557/stm13/ppmc_reg_S118M_inst/inst_ppmc_rgstr
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     129.83         1.2
-                                  LUT4	     117.50         1.2
-                                PFUREG	        187         2.0
+                                  SLIC	     134.50         1.3
+                                  LUT4	     137.00         1.4
+                                PFUREG	        187         1.9
 ---------------------------------------------------
 Report for cell ppmc_dec_11
    Instance path: SP0557/stm13/ppmc_reg_S118M_inst/inst_ppmc_dec
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       6.83         0.1
-                                  LUT4	      14.00         0.1
+                                  SLIC	       9.00         0.1
+                                  LUT4	      18.00         0.2
 ---------------------------------------------------
 Report for cell ppmc_plsgen_12_11
    Instance path: SP0557/stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     149.00         1.4
+                                  SLIC	     149.17         1.4
                                   LUT4	      89.00         0.9
                                 PFUREG	         85         0.9
                                 RIPPLE	        105         3.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                    ppmc_pls_cnt_12_11	          1         0.5
-                  ppmc_timer_cnt_12_11	          1         0.3
                   ppmc_speed_cnt_12_11	          1         0.4
+                    ppmc_pls_cnt_12_11	          1         0.5
                 ppmc_acc_tim_gen_12_11	          1         0.1
+                  ppmc_timer_cnt_12_11	          1         0.3
 ---------------------------------------------------
 Report for cell ppmc_pls_cnt_12_11
    Instance path: SP0557/stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      54.25         0.5
+                                  SLIC	      54.33         0.5
                                   LUT4	      42.00         0.4
                                 PFUREG	         26         0.3
                                 RIPPLE	         33         1.1
@@ -1092,7 +1092,7 @@ Report for cell ppmc_timer_cnt_12_11
    Instance path: SP0557/stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      35.92         0.3
+                                  SLIC	      36.00         0.3
                                   LUT4	      11.00         0.1
                                 PFUREG	         20         0.2
                                 RIPPLE	         31         1.0
@@ -1127,53 +1127,53 @@ Report for cell fc_sel_11
    Instance path: SP0557/stm13/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      44.17         0.4
-                                  LUT4	      93.00         1.0
+                                  SLIC	      49.33         0.5
+                                  LUT4	     102.00         1.1
 ---------------------------------------------------
 Report for cell fc_dec_11
    Instance path: SP0557/stm13/fc_dec_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       1.17         0.0
-                                  LUT4	       3.00         0.0
+                                  SLIC	       0.75         0.0
+                                  LUT4	       2.00         0.0
 ---------------------------------------------------
 Report for cell ppmc_top_S118M_22
    Instance path: SP0557/stm12
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     487.08         4.6
-                                  LUT4	     417.00         4.4
-                                PFUREG	        431         4.5
+                                  SLIC	     504.67         4.8
+                                  LUT4	     446.00         4.6
+                                PFUREG	        431         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                  ppmc_reg_S118M_12_10	          1         4.2
-                             fc_sel_10	          1         0.4
+                  ppmc_reg_S118M_12_10	          1         4.4
                              fc_dec_10	          1         0.0
+                             fc_sel_10	          1         0.4
 ---------------------------------------------------
 Report for cell ppmc_reg_S118M_12_10
    Instance path: SP0557/stm12/ppmc_reg_S118M_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     439.08         4.2
-                                  LUT4	     314.50         3.3
-                                PFUREG	        429         4.5
+                                  SLIC	     458.50         4.4
+                                  LUT4	     349.00         3.6
+                                PFUREG	        429         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                 ppmc_u_step_ext_12_10	          1         0.0
-                      ppmc_rgstr_12_10	          1         1.3
-                     ppmc_plsgen_12_10	          1         1.4
+                      ppmc_rgstr_12_10	          1         1.5
                 ppmc_enblr_S118M_12_10	          1         0.1
+                     ppmc_plsgen_12_10	          1         1.4
                            ppmc_dec_10	          1         0.1
                           ppmc_ctrl_10	          1         1.0
                         ppmc_cmdchk_10	          1         0.2
+                 ppmc_u_step_ext_12_10	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_cmdchk_10
    Instance path: SP0557/stm12/ppmc_reg_S118M_inst/inst_ppmc_cmdchk
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      22.58         0.2
+                                  SLIC	      22.75         0.2
                                   LUT4	      29.00         0.3
                                 PFUREG	          6         0.1
                                 RIPPLE	          9         0.3
@@ -1182,9 +1182,9 @@ Report for cell ppmc_ctrl_10
    Instance path: SP0557/stm12/ppmc_reg_S118M_inst/inst_ppmc_ctrl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     107.58         1.0
+                                  SLIC	     106.75         1.0
                                   LUT4	      63.00         0.7
-                                PFUREG	        129         1.4
+                                PFUREG	        129         1.3
                                 RIPPLE	         28         0.9
 ---------------------------------------------------
 Report for cell ppmc_enblr_S118M_12_10
@@ -1200,38 +1200,38 @@ Report for cell ppmc_rgstr_12_10
    Instance path: SP0557/stm12/ppmc_reg_S118M_inst/inst_ppmc_rgstr
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     135.67         1.3
-                                  LUT4	     103.00         1.1
-                                PFUREG	        187         2.0
+                                  SLIC	     153.33         1.5
+                                  LUT4	     132.00         1.4
+                                PFUREG	        187         1.9
 ---------------------------------------------------
 Report for cell ppmc_dec_10
    Instance path: SP0557/stm12/ppmc_reg_S118M_inst/inst_ppmc_dec
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       6.17         0.1
-                                  LUT4	      13.00         0.1
+                                  SLIC	       9.50         0.1
+                                  LUT4	      19.00         0.2
 ---------------------------------------------------
 Report for cell ppmc_plsgen_12_10
    Instance path: SP0557/stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     149.25         1.4
-                                  LUT4	      89.50         0.9
+                                  SLIC	     148.33         1.4
+                                  LUT4	      89.00         0.9
                                 PFUREG	         85         0.9
                                 RIPPLE	        105         3.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                  ppmc_timer_cnt_12_10	          1         0.3
                   ppmc_speed_cnt_12_10	          1         0.4
                     ppmc_pls_cnt_12_10	          1         0.5
                 ppmc_acc_tim_gen_12_10	          1         0.1
+                  ppmc_timer_cnt_12_10	          1         0.3
 ---------------------------------------------------
 Report for cell ppmc_pls_cnt_12_10
    Instance path: SP0557/stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      54.42         0.5
-                                  LUT4	      42.50         0.4
+                                  SLIC	      54.17         0.5
+                                  LUT4	      42.00         0.4
                                 PFUREG	         26         0.3
                                 RIPPLE	         33         1.1
 ---------------------------------------------------
@@ -1248,7 +1248,7 @@ Report for cell ppmc_speed_cnt_12_10
    Instance path: SP0557/stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      44.33         0.4
+                                  SLIC	      43.67         0.4
                                   LUT4	      35.00         0.4
                                 PFUREG	         22         0.2
                                 RIPPLE	         27         0.9
@@ -1274,23 +1274,23 @@ Report for cell fc_sel_10
    Instance path: SP0557/stm12/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      46.00         0.4
-                                  LUT4	      99.50         1.0
+                                  SLIC	      44.67         0.4
+                                  LUT4	      95.00         1.0
 ---------------------------------------------------
 Report for cell fc_dec_10
    Instance path: SP0557/stm12/fc_dec_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       1.33         0.0
-                                  LUT4	       3.00         0.0
+                                  SLIC	       0.83         0.0
+                                  LUT4	       2.00         0.0
 ---------------------------------------------------
 Report for cell ppmc_top_S118M_21
    Instance path: SP0557/stm11
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     501.08         4.8
-                                  LUT4	     447.50         4.7
-                                PFUREG	        431         4.5
+                                  SLIC	     498.17         4.7
+                                  LUT4	     437.00         4.5
+                                PFUREG	        431         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
@@ -1302,25 +1302,25 @@ Report for cell ppmc_reg_S118M_12_9
    Instance path: SP0557/stm11/ppmc_reg_S118M_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     456.67         4.3
-                                  LUT4	     354.50         3.7
-                                PFUREG	        429         4.5
+                                  SLIC	     452.00         4.3
+                                  LUT4	     339.00         3.5
+                                PFUREG	        429         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                  ppmc_u_step_ext_12_9	          1         0.0
                        ppmc_rgstr_12_9	          1         1.4
                       ppmc_plsgen_12_9	          1         1.4
                  ppmc_enblr_S118M_12_9	          1         0.1
                             ppmc_dec_9	          1         0.1
                            ppmc_ctrl_9	          1         1.0
                          ppmc_cmdchk_9	          1         0.2
+                  ppmc_u_step_ext_12_9	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_cmdchk_9
    Instance path: SP0557/stm11/ppmc_reg_S118M_inst/inst_ppmc_cmdchk
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      23.50         0.2
+                                  SLIC	      23.08         0.2
                                   LUT4	      29.00         0.3
                                 PFUREG	          6         0.1
                                 RIPPLE	          9         0.3
@@ -1329,9 +1329,9 @@ Report for cell ppmc_ctrl_9
    Instance path: SP0557/stm11/ppmc_reg_S118M_inst/inst_ppmc_ctrl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     108.50         1.0
-                                  LUT4	      65.00         0.7
-                                PFUREG	        129         1.4
+                                  SLIC	     107.17         1.0
+                                  LUT4	      64.00         0.7
+                                PFUREG	        129         1.3
                                 RIPPLE	         28         0.9
 ---------------------------------------------------
 Report for cell ppmc_enblr_S118M_12_9
@@ -1347,38 +1347,38 @@ Report for cell ppmc_rgstr_12_9
    Instance path: SP0557/stm11/ppmc_reg_S118M_inst/inst_ppmc_rgstr
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     148.33         1.4
-                                  LUT4	     133.50         1.4
-                                PFUREG	        187         2.0
+                                  SLIC	     142.92         1.4
+                                  LUT4	     114.50         1.2
+                                PFUREG	        187         1.9
 ---------------------------------------------------
 Report for cell ppmc_dec_9
    Instance path: SP0557/stm11/ppmc_reg_S118M_inst/inst_ppmc_dec
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      10.67         0.1
-                                  LUT4	      22.00         0.2
+                                  SLIC	      12.17         0.1
+                                  LUT4	      25.00         0.3
 ---------------------------------------------------
 Report for cell ppmc_plsgen_12_9
    Instance path: SP0557/stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     147.83         1.4
-                                  LUT4	      88.00         0.9
+                                  SLIC	     148.83         1.4
+                                  LUT4	      89.50         0.9
                                 PFUREG	         85         0.9
                                 RIPPLE	        105         3.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_timer_cnt_12_9	          1         0.3
                    ppmc_speed_cnt_12_9	          1         0.4
                      ppmc_pls_cnt_12_9	          1         0.5
                  ppmc_acc_tim_gen_12_9	          1         0.1
+                   ppmc_timer_cnt_12_9	          1         0.3
 ---------------------------------------------------
 Report for cell ppmc_pls_cnt_12_9
    Instance path: SP0557/stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      54.00         0.5
-                                  LUT4	      42.00         0.4
+                                  SLIC	      54.42         0.5
+                                  LUT4	      42.50         0.4
                                 PFUREG	         26         0.3
                                 RIPPLE	         33         1.1
 ---------------------------------------------------
@@ -1386,8 +1386,8 @@ Report for cell ppmc_timer_cnt_12_9
    Instance path: SP0557/stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      35.42         0.3
-                                  LUT4	      10.00         0.1
+                                  SLIC	      35.92         0.3
+                                  LUT4	      11.00         0.1
                                 PFUREG	         20         0.2
                                 RIPPLE	         31         1.0
 ---------------------------------------------------
@@ -1395,7 +1395,7 @@ Report for cell ppmc_speed_cnt_12_9
    Instance path: SP0557/stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      43.92         0.4
+                                  SLIC	      44.00         0.4
                                   LUT4	      35.00         0.4
                                 PFUREG	         22         0.2
                                 RIPPLE	         27         0.9
@@ -1421,27 +1421,27 @@ Report for cell fc_sel_9
    Instance path: SP0557/stm11/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      42.75         0.4
-                                  LUT4	      91.00         1.0
+                                  SLIC	      44.83         0.4
+                                  LUT4	      96.00         1.0
 ---------------------------------------------------
 Report for cell fc_dec_9
    Instance path: SP0557/stm11/fc_dec_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       1.00         0.0
+                                  SLIC	       0.67         0.0
                                   LUT4	       2.00         0.0
 ---------------------------------------------------
 Report for cell ppmc_top_S118M_20
    Instance path: SP0557/stm10
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     500.33         4.8
-                                  LUT4	     447.00         4.7
-                                PFUREG	        431         4.5
+                                  SLIC	     483.92         4.6
+                                  LUT4	     411.00         4.3
+                                PFUREG	        431         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_reg_S118M_12_8	          1         4.3
+                   ppmc_reg_S118M_12_8	          1         4.2
                               fc_sel_8	          1         0.4
                               fc_dec_8	          1         0.0
 ---------------------------------------------------
@@ -1449,25 +1449,25 @@ Report for cell ppmc_reg_S118M_12_8
    Instance path: SP0557/stm10/ppmc_reg_S118M_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     452.67         4.3
-                                  LUT4	     348.00         3.6
-                                PFUREG	        429         4.5
+                                  SLIC	     438.08         4.2
+                                  LUT4	     314.00         3.3
+                                PFUREG	        429         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                  ppmc_u_step_ext_12_8	          1         0.0
-                       ppmc_rgstr_12_8	          1         1.4
+                       ppmc_rgstr_12_8	          1         1.3
                       ppmc_plsgen_12_8	          1         1.4
                  ppmc_enblr_S118M_12_8	          1         0.1
                             ppmc_dec_8	          1         0.1
                            ppmc_ctrl_8	          1         1.0
                          ppmc_cmdchk_8	          1         0.2
+                  ppmc_u_step_ext_12_8	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_cmdchk_8
    Instance path: SP0557/stm10/ppmc_reg_S118M_inst/inst_ppmc_cmdchk
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      22.50         0.2
+                                  SLIC	      22.42         0.2
                                   LUT4	      29.00         0.3
                                 PFUREG	          6         0.1
                                 RIPPLE	          9         0.3
@@ -1476,9 +1476,9 @@ Report for cell ppmc_ctrl_8
    Instance path: SP0557/stm10/ppmc_reg_S118M_inst/inst_ppmc_ctrl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     104.83         1.0
-                                  LUT4	      59.00         0.6
-                                PFUREG	        129         1.4
+                                  SLIC	     107.25         1.0
+                                  LUT4	      63.00         0.7
+                                PFUREG	        129         1.3
                                 RIPPLE	         28         0.9
 ---------------------------------------------------
 Report for cell ppmc_enblr_S118M_12_8
@@ -1494,38 +1494,38 @@ Report for cell ppmc_rgstr_12_8
    Instance path: SP0557/stm10/ppmc_reg_S118M_inst/inst_ppmc_rgstr
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     145.17         1.4
-                                  LUT4	     125.00         1.3
-                                PFUREG	        187         2.0
+                                  SLIC	     135.33         1.3
+                                  LUT4	     101.00         1.0
+                                PFUREG	        187         1.9
 ---------------------------------------------------
 Report for cell ppmc_dec_8
    Instance path: SP0557/stm10/ppmc_reg_S118M_inst/inst_ppmc_dec
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      12.00         0.1
-                                  LUT4	      24.00         0.3
+                                  SLIC	       7.33         0.1
+                                  LUT4	      15.00         0.2
 ---------------------------------------------------
 Report for cell ppmc_plsgen_12_8
    Instance path: SP0557/stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     150.33         1.4
-                                  LUT4	      94.00         1.0
+                                  SLIC	     147.92         1.4
+                                  LUT4	      89.00         0.9
                                 PFUREG	         85         0.9
                                 RIPPLE	        105         3.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_timer_cnt_12_8	          1         0.3
                    ppmc_speed_cnt_12_8	          1         0.4
                      ppmc_pls_cnt_12_8	          1         0.5
                  ppmc_acc_tim_gen_12_8	          1         0.1
+                   ppmc_timer_cnt_12_8	          1         0.3
 ---------------------------------------------------
 Report for cell ppmc_pls_cnt_12_8
    Instance path: SP0557/stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      56.33         0.5
-                                  LUT4	      47.00         0.5
+                                  SLIC	      53.58         0.5
+                                  LUT4	      42.00         0.4
                                 PFUREG	         26         0.3
                                 RIPPLE	         33         1.1
 ---------------------------------------------------
@@ -1533,7 +1533,7 @@ Report for cell ppmc_timer_cnt_12_8
    Instance path: SP0557/stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      35.58         0.3
+                                  SLIC	      35.92         0.3
                                   LUT4	      11.00         0.1
                                 PFUREG	         20         0.2
                                 RIPPLE	         31         1.0
@@ -1568,53 +1568,53 @@ Report for cell fc_sel_8
    Instance path: SP0557/stm10/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      45.17         0.4
-                                  LUT4	      96.00         1.0
+                                  SLIC	      43.83         0.4
+                                  LUT4	      94.00         1.0
 ---------------------------------------------------
 Report for cell fc_dec_8
    Instance path: SP0557/stm10/fc_dec_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       1.17         0.0
+                                  SLIC	       1.33         0.0
                                   LUT4	       3.00         0.0
 ---------------------------------------------------
 Report for cell ppmc_top_S118M_19
    Instance path: SP0557/stm09
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     510.08         4.9
-                                  LUT4	     459.00         4.8
-                                PFUREG	        431         4.5
+                                  SLIC	     494.58         4.7
+                                  LUT4	     432.00         4.5
+                                PFUREG	        431         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_reg_S118M_12_7	          1         4.5
-                              fc_sel_7	          1         0.4
+                   ppmc_reg_S118M_12_7	          1         4.2
+                              fc_sel_7	          1         0.5
                               fc_dec_7	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_reg_S118M_12_7
    Instance path: SP0557/stm09/ppmc_reg_S118M_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     468.00         4.5
-                                  LUT4	     372.00         3.9
-                                PFUREG	        429         4.5
+                                  SLIC	     437.25         4.2
+                                  LUT4	     312.00         3.2
+                                PFUREG	        429         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                  ppmc_u_step_ext_12_7	          1         0.0
-                       ppmc_rgstr_12_7	          1         1.5
+                       ppmc_rgstr_12_7	          1         1.3
                       ppmc_plsgen_12_7	          1         1.4
                  ppmc_enblr_S118M_12_7	          1         0.1
                             ppmc_dec_7	          1         0.1
                            ppmc_ctrl_7	          1         1.0
                          ppmc_cmdchk_7	          1         0.2
+                  ppmc_u_step_ext_12_7	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_cmdchk_7
    Instance path: SP0557/stm09/ppmc_reg_S118M_inst/inst_ppmc_cmdchk
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      23.17         0.2
+                                  SLIC	      23.08         0.2
                                   LUT4	      29.00         0.3
                                 PFUREG	          6         0.1
                                 RIPPLE	          9         0.3
@@ -1623,9 +1623,9 @@ Report for cell ppmc_ctrl_7
    Instance path: SP0557/stm09/ppmc_reg_S118M_inst/inst_ppmc_ctrl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     108.33         1.0
+                                  SLIC	     107.50         1.0
                                   LUT4	      63.00         0.7
-                                PFUREG	        129         1.4
+                                PFUREG	        129         1.3
                                 RIPPLE	         28         0.9
 ---------------------------------------------------
 Report for cell ppmc_enblr_S118M_12_7
@@ -1641,37 +1641,37 @@ Report for cell ppmc_rgstr_12_7
    Instance path: SP0557/stm09/ppmc_reg_S118M_inst/inst_ppmc_rgstr
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     160.00         1.5
-                                  LUT4	     153.00         1.6
-                                PFUREG	        187         2.0
+                                  SLIC	     132.17         1.3
+                                  LUT4	      97.00         1.0
+                                PFUREG	        187         1.9
 ---------------------------------------------------
 Report for cell ppmc_dec_7
    Instance path: SP0557/stm09/ppmc_reg_S118M_inst/inst_ppmc_dec
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      10.33         0.1
-                                  LUT4	      21.00         0.2
+                                  SLIC	       8.50         0.1
+                                  LUT4	      17.00         0.2
 ---------------------------------------------------
 Report for cell ppmc_plsgen_12_7
    Instance path: SP0557/stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     148.33         1.4
+                                  SLIC	     148.17         1.4
                                   LUT4	      89.00         0.9
                                 PFUREG	         85         0.9
                                 RIPPLE	        105         3.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_timer_cnt_12_7	          1         0.3
                    ppmc_speed_cnt_12_7	          1         0.4
                      ppmc_pls_cnt_12_7	          1         0.5
                  ppmc_acc_tim_gen_12_7	          1         0.1
+                   ppmc_timer_cnt_12_7	          1         0.3
 ---------------------------------------------------
 Report for cell ppmc_pls_cnt_12_7
    Instance path: SP0557/stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      54.17         0.5
+                                  SLIC	      53.67         0.5
                                   LUT4	      42.00         0.4
                                 PFUREG	         26         0.3
                                 RIPPLE	         33         1.1
@@ -1689,7 +1689,7 @@ Report for cell ppmc_speed_cnt_12_7
    Instance path: SP0557/stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      43.67         0.4
+                                  SLIC	      44.00         0.4
                                   LUT4	      35.00         0.4
                                 PFUREG	         22         0.2
                                 RIPPLE	         27         0.9
@@ -1715,54 +1715,54 @@ Report for cell fc_sel_7
    Instance path: SP0557/stm09/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      40.25         0.4
-                                  LUT4	      84.00         0.9
+                                  SLIC	      54.17         0.5
+                                  LUT4	     116.00         1.2
 ---------------------------------------------------
 Report for cell fc_dec_7
    Instance path: SP0557/stm09/fc_dec_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       1.17         0.0
-                                  LUT4	       3.00         0.0
+                                  SLIC	       1.83         0.0
+                                  LUT4	       4.00         0.0
 ---------------------------------------------------
 Report for cell ppmc_top_S118M_18
    Instance path: SP0557/stm08
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     495.75         4.7
-                                  LUT4	     433.00         4.5
-                                PFUREG	        431         4.5
+                                  SLIC	     498.50         4.7
+                                  LUT4	     439.00         4.6
+                                PFUREG	        431         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_reg_S118M_12_6	          1         4.2
-                              fc_sel_6	          1         0.5
+                   ppmc_reg_S118M_12_6	          1         4.3
+                              fc_sel_6	          1         0.4
                               fc_dec_6	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_reg_S118M_12_6
    Instance path: SP0557/stm08/ppmc_reg_S118M_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     445.50         4.2
-                                  LUT4	     327.00         3.4
-                                PFUREG	        429         4.5
+                                  SLIC	     451.17         4.3
+                                  LUT4	     339.00         3.5
+                                PFUREG	        429         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                  ppmc_u_step_ext_12_6	          1         0.0
-                       ppmc_rgstr_12_6	          1         1.3
+                       ppmc_rgstr_12_6	          1         1.4
                       ppmc_plsgen_12_6	          1         1.4
-                           ppmc_ctrl_6	          1         1.0
                  ppmc_enblr_S118M_12_6	          1         0.1
+                           ppmc_ctrl_6	          1         1.0
                             ppmc_dec_6	          1         0.1
                          ppmc_cmdchk_6	          1         0.2
+                  ppmc_u_step_ext_12_6	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_cmdchk_6
    Instance path: SP0557/stm08/ppmc_reg_S118M_inst/inst_ppmc_cmdchk
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      23.00         0.2
-                                  LUT4	      29.00         0.3
+                                  SLIC	      23.33         0.2
+                                  LUT4	      30.00         0.3
                                 PFUREG	          6         0.1
                                 RIPPLE	          9         0.3
 ---------------------------------------------------
@@ -1770,9 +1770,9 @@ Report for cell ppmc_ctrl_6
    Instance path: SP0557/stm08/ppmc_reg_S118M_inst/inst_ppmc_ctrl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     107.42         1.0
-                                  LUT4	      63.00         0.7
-                                PFUREG	        129         1.4
+                                  SLIC	     107.67         1.0
+                                  LUT4	      64.00         0.7
+                                PFUREG	        129         1.3
                                 RIPPLE	         28         0.9
 ---------------------------------------------------
 Report for cell ppmc_enblr_S118M_12_6
@@ -1788,37 +1788,37 @@ Report for cell ppmc_rgstr_12_6
    Instance path: SP0557/stm08/ppmc_reg_S118M_inst/inst_ppmc_rgstr
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     137.00         1.3
-                                  LUT4	     105.00         1.1
-                                PFUREG	        187         2.0
+                                  SLIC	     143.17         1.4
+                                  LUT4	     117.00         1.2
+                                PFUREG	        187         1.9
 ---------------------------------------------------
 Report for cell ppmc_dec_6
    Instance path: SP0557/stm08/ppmc_reg_S118M_inst/inst_ppmc_dec
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      12.00         0.1
-                                  LUT4	      24.00         0.3
+                                  SLIC	      10.67         0.1
+                                  LUT4	      22.00         0.2
 ---------------------------------------------------
 Report for cell ppmc_plsgen_12_6
    Instance path: SP0557/stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     148.25         1.4
+                                  SLIC	     148.50         1.4
                                   LUT4	      89.00         0.9
                                 PFUREG	         85         0.9
                                 RIPPLE	        105         3.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_timer_cnt_12_6	          1         0.3
                    ppmc_speed_cnt_12_6	          1         0.4
                      ppmc_pls_cnt_12_6	          1         0.5
                  ppmc_acc_tim_gen_12_6	          1         0.1
+                   ppmc_timer_cnt_12_6	          1         0.3
 ---------------------------------------------------
 Report for cell ppmc_pls_cnt_12_6
    Instance path: SP0557/stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      53.92         0.5
+                                  SLIC	      54.00         0.5
                                   LUT4	      42.00         0.4
                                 PFUREG	         26         0.3
                                 RIPPLE	         33         1.1
@@ -1827,7 +1827,7 @@ Report for cell ppmc_timer_cnt_12_6
    Instance path: SP0557/stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      35.92         0.3
+                                  SLIC	      36.00         0.3
                                   LUT4	      11.00         0.1
                                 PFUREG	         20         0.2
                                 RIPPLE	         31         1.0
@@ -1836,7 +1836,7 @@ Report for cell ppmc_speed_cnt_12_6
    Instance path: SP0557/stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      43.92         0.4
+                                  SLIC	      44.00         0.4
                                   LUT4	      35.00         0.4
                                 PFUREG	         22         0.2
                                 RIPPLE	         27         0.9
@@ -1862,8 +1862,8 @@ Report for cell fc_sel_6
    Instance path: SP0557/stm08/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      48.92         0.5
-                                  LUT4	     104.00         1.1
+                                  SLIC	      46.00         0.4
+                                  LUT4	      98.00         1.0
 ---------------------------------------------------
 Report for cell fc_dec_6
    Instance path: SP0557/stm08/fc_dec_inst
@@ -1876,9 +1876,9 @@ Report for cell ppmc_top_S118M_17
    Instance path: SP0557/stm07
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     498.17         4.7
-                                  LUT4	     442.00         4.6
-                                PFUREG	        431         4.5
+                                  SLIC	     494.08         4.7
+                                  LUT4	     430.00         4.5
+                                PFUREG	        431         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
@@ -1890,25 +1890,25 @@ Report for cell ppmc_reg_S118M_12_5
    Instance path: SP0557/stm07/ppmc_reg_S118M_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     452.58         4.3
-                                  LUT4	     343.00         3.6
-                                PFUREG	        429         4.5
+                                  SLIC	     449.58         4.3
+                                  LUT4	     335.00         3.5
+                                PFUREG	        429         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                  ppmc_u_step_ext_12_5	          1         0.0
-                       ppmc_rgstr_12_5	          1         1.4
                       ppmc_plsgen_12_5	          1         1.4
+                       ppmc_rgstr_12_5	          1         1.4
                  ppmc_enblr_S118M_12_5	          1         0.1
                             ppmc_dec_5	          1         0.1
                            ppmc_ctrl_5	          1         1.0
                          ppmc_cmdchk_5	          1         0.2
+                  ppmc_u_step_ext_12_5	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_cmdchk_5
    Instance path: SP0557/stm07/ppmc_reg_S118M_inst/inst_ppmc_cmdchk
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      22.67         0.2
+                                  SLIC	      22.50         0.2
                                   LUT4	      29.00         0.3
                                 PFUREG	          6         0.1
                                 RIPPLE	          9         0.3
@@ -1917,9 +1917,9 @@ Report for cell ppmc_ctrl_5
    Instance path: SP0557/stm07/ppmc_reg_S118M_inst/inst_ppmc_ctrl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     108.58         1.0
-                                  LUT4	      65.00         0.7
-                                PFUREG	        129         1.4
+                                  SLIC	     107.67         1.0
+                                  LUT4	      64.00         0.7
+                                PFUREG	        129         1.3
                                 RIPPLE	         28         0.9
 ---------------------------------------------------
 Report for cell ppmc_enblr_S118M_12_5
@@ -1935,38 +1935,38 @@ Report for cell ppmc_rgstr_12_5
    Instance path: SP0557/stm07/ppmc_reg_S118M_inst/inst_ppmc_rgstr
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     146.17         1.4
-                                  LUT4	     124.00         1.3
-                                PFUREG	        187         2.0
+                                  SLIC	     144.50         1.4
+                                  LUT4	     117.00         1.2
+                                PFUREG	        187         1.9
 ---------------------------------------------------
 Report for cell ppmc_dec_5
    Instance path: SP0557/stm07/ppmc_reg_S118M_inst/inst_ppmc_dec
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       9.50         0.1
-                                  LUT4	      20.00         0.2
+                                  SLIC	       8.67         0.1
+                                  LUT4	      18.00         0.2
 ---------------------------------------------------
 Report for cell ppmc_plsgen_12_5
    Instance path: SP0557/stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     147.83         1.4
-                                  LUT4	      88.00         0.9
+                                  SLIC	     148.42         1.4
+                                  LUT4	      90.00         0.9
                                 PFUREG	         85         0.9
                                 RIPPLE	        105         3.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_timer_cnt_12_5	          1         0.3
                    ppmc_speed_cnt_12_5	          1         0.4
                      ppmc_pls_cnt_12_5	          1         0.5
                  ppmc_acc_tim_gen_12_5	          1         0.1
+                   ppmc_timer_cnt_12_5	          1         0.3
 ---------------------------------------------------
 Report for cell ppmc_pls_cnt_12_5
    Instance path: SP0557/stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      54.00         0.5
-                                  LUT4	      42.00         0.4
+                                  SLIC	      54.50         0.5
+                                  LUT4	      43.00         0.4
                                 PFUREG	         26         0.3
                                 RIPPLE	         33         1.1
 ---------------------------------------------------
@@ -1974,8 +1974,8 @@ Report for cell ppmc_timer_cnt_12_5
    Instance path: SP0557/stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      35.42         0.3
-                                  LUT4	      10.00         0.1
+                                  SLIC	      35.50         0.3
+                                  LUT4	      11.00         0.1
                                 PFUREG	         20         0.2
                                 RIPPLE	         31         1.0
 ---------------------------------------------------
@@ -2009,27 +2009,27 @@ Report for cell fc_sel_5
    Instance path: SP0557/stm07/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      44.25         0.4
-                                  LUT4	      97.00         1.0
+                                  SLIC	      42.67         0.4
+                                  LUT4	      92.00         1.0
 ---------------------------------------------------
 Report for cell fc_dec_5
    Instance path: SP0557/stm07/fc_dec_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       0.67         0.0
-                                  LUT4	       2.00         0.0
+                                  SLIC	       1.17         0.0
+                                  LUT4	       3.00         0.0
 ---------------------------------------------------
 Report for cell ppmc_top_S118M_16
    Instance path: SP0557/stm06
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     503.00         4.8
-                                  LUT4	     449.00         4.7
-                                PFUREG	        431         4.5
+                                  SLIC	     488.25         4.6
+                                  LUT4	     417.00         4.3
+                                PFUREG	        431         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_reg_S118M_12_4	          1         4.3
+                   ppmc_reg_S118M_12_4	          1         4.2
                               fc_sel_4	          1         0.4
                               fc_dec_4	          1         0.0
 ---------------------------------------------------
@@ -2037,26 +2037,26 @@ Report for cell ppmc_reg_S118M_12_4
    Instance path: SP0557/stm06/ppmc_reg_S118M_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     455.33         4.3
-                                  LUT4	     349.00         3.7
-                                PFUREG	        429         4.5
+                                  SLIC	     442.75         4.2
+                                  LUT4	     322.00         3.3
+                                PFUREG	        429         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                  ppmc_u_step_ext_12_4	          1         0.0
-                       ppmc_rgstr_12_4	          1         1.4
+                         ppmc_cmdchk_4	          1         0.2
+                       ppmc_rgstr_12_4	          1         1.3
                       ppmc_plsgen_12_4	          1         1.4
                  ppmc_enblr_S118M_12_4	          1         0.1
                             ppmc_dec_4	          1         0.1
-                         ppmc_cmdchk_4	          1         0.2
                            ppmc_ctrl_4	          1         1.0
+                  ppmc_u_step_ext_12_4	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_cmdchk_4
    Instance path: SP0557/stm06/ppmc_reg_S118M_inst/inst_ppmc_cmdchk
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      23.00         0.2
-                                  LUT4	      29.00         0.3
+                                  SLIC	      23.58         0.2
+                                  LUT4	      30.00         0.3
                                 PFUREG	          6         0.1
                                 RIPPLE	          9         0.3
 ---------------------------------------------------
@@ -2064,9 +2064,9 @@ Report for cell ppmc_ctrl_4
    Instance path: SP0557/stm06/ppmc_reg_S118M_inst/inst_ppmc_ctrl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     107.08         1.0
-                                  LUT4	      63.00         0.7
-                                PFUREG	        129         1.4
+                                  SLIC	     105.00         1.0
+                                  LUT4	      58.00         0.6
+                                PFUREG	        129         1.3
                                 RIPPLE	         28         0.9
 ---------------------------------------------------
 Report for cell ppmc_enblr_S118M_12_4
@@ -2082,38 +2082,38 @@ Report for cell ppmc_rgstr_12_4
    Instance path: SP0557/stm06/ppmc_reg_S118M_inst/inst_ppmc_rgstr
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     151.08         1.4
-                                  LUT4	     134.50         1.4
-                                PFUREG	        187         2.0
+                                  SLIC	     139.50         1.3
+                                  LUT4	     109.00         1.1
+                                PFUREG	        187         1.9
 ---------------------------------------------------
 Report for cell ppmc_dec_4
    Instance path: SP0557/stm06/ppmc_reg_S118M_inst/inst_ppmc_dec
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       8.25         0.1
-                                  LUT4	      16.50         0.2
+                                  SLIC	       6.17         0.1
+                                  LUT4	      13.00         0.1
 ---------------------------------------------------
 Report for cell ppmc_plsgen_12_4
    Instance path: SP0557/stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     148.08         1.4
-                                  LUT4	      89.00         0.9
+                                  SLIC	     150.67         1.4
+                                  LUT4	      95.00         1.0
                                 PFUREG	         85         0.9
                                 RIPPLE	        105         3.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_timer_cnt_12_4	          1         0.3
                    ppmc_speed_cnt_12_4	          1         0.4
                      ppmc_pls_cnt_12_4	          1         0.5
                  ppmc_acc_tim_gen_12_4	          1         0.1
+                   ppmc_timer_cnt_12_4	          1         0.3
 ---------------------------------------------------
 Report for cell ppmc_pls_cnt_12_4
    Instance path: SP0557/stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      53.75         0.5
-                                  LUT4	      42.00         0.4
+                                  SLIC	      56.83         0.5
+                                  LUT4	      48.00         0.5
                                 PFUREG	         26         0.3
                                 RIPPLE	         33         1.1
 ---------------------------------------------------
@@ -2121,7 +2121,7 @@ Report for cell ppmc_timer_cnt_12_4
    Instance path: SP0557/stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      35.92         0.3
+                                  SLIC	      35.42         0.3
                                   LUT4	      11.00         0.1
                                 PFUREG	         20         0.2
                                 RIPPLE	         31         1.0
@@ -2156,53 +2156,53 @@ Report for cell fc_sel_4
    Instance path: SP0557/stm06/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      46.17         0.4
-                                  LUT4	      98.00         1.0
+                                  SLIC	      42.67         0.4
+                                  LUT4	      92.00         1.0
 ---------------------------------------------------
 Report for cell fc_dec_4
    Instance path: SP0557/stm06/fc_dec_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       0.83         0.0
-                                  LUT4	       2.00         0.0
+                                  SLIC	       1.50         0.0
+                                  LUT4	       3.00         0.0
 ---------------------------------------------------
 Report for cell ppmc_top_S118M_15
    Instance path: SP0557/stm05
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     495.50         4.7
-                                  LUT4	     432.50         4.5
-                                PFUREG	        431         4.5
+                                  SLIC	     496.92         4.7
+                                  LUT4	     436.00         4.5
+                                PFUREG	        431         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_reg_S118M_12_3	          1         4.2
-                              fc_sel_3	          1         0.5
+                   ppmc_reg_S118M_12_3	          1         4.3
+                              fc_sel_3	          1         0.4
                               fc_dec_3	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_reg_S118M_12_3
    Instance path: SP0557/stm05/ppmc_reg_S118M_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     440.83         4.2
-                                  LUT4	     316.50         3.3
-                                PFUREG	        429         4.5
+                                  SLIC	     449.50         4.3
+                                  LUT4	     337.00         3.5
+                                PFUREG	        429         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                  ppmc_u_step_ext_12_3	          1         0.0
                        ppmc_rgstr_12_3	          1         1.3
                       ppmc_plsgen_12_3	          1         1.4
                  ppmc_enblr_S118M_12_3	          1         0.1
                             ppmc_dec_3	          1         0.1
                            ppmc_ctrl_3	          1         1.0
                          ppmc_cmdchk_3	          1         0.2
+                  ppmc_u_step_ext_12_3	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_cmdchk_3
    Instance path: SP0557/stm05/ppmc_reg_S118M_inst/inst_ppmc_cmdchk
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      22.83         0.2
+                                  SLIC	      22.75         0.2
                                   LUT4	      29.00         0.3
                                 PFUREG	          6         0.1
                                 RIPPLE	          9         0.3
@@ -2211,9 +2211,9 @@ Report for cell ppmc_ctrl_3
    Instance path: SP0557/stm05/ppmc_reg_S118M_inst/inst_ppmc_ctrl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     107.17         1.0
-                                  LUT4	      62.50         0.7
-                                PFUREG	        129         1.4
+                                  SLIC	     107.83         1.0
+                                  LUT4	      63.00         0.7
+                                PFUREG	        129         1.3
                                 RIPPLE	         28         0.9
 ---------------------------------------------------
 Report for cell ppmc_enblr_S118M_12_3
@@ -2229,37 +2229,37 @@ Report for cell ppmc_rgstr_12_3
    Instance path: SP0557/stm05/ppmc_reg_S118M_inst/inst_ppmc_rgstr
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     136.00         1.3
-                                  LUT4	     102.00         1.1
-                                PFUREG	        187         2.0
+                                  SLIC	     141.17         1.3
+                                  LUT4	     115.00         1.2
+                                PFUREG	        187         1.9
 ---------------------------------------------------
 Report for cell ppmc_dec_3
    Instance path: SP0557/stm05/ppmc_reg_S118M_inst/inst_ppmc_dec
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       8.33         0.1
-                                  LUT4	      17.00         0.2
+                                  SLIC	      11.67         0.1
+                                  LUT4	      24.00         0.2
 ---------------------------------------------------
 Report for cell ppmc_plsgen_12_3
    Instance path: SP0557/stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     148.67         1.4
+                                  SLIC	     148.25         1.4
                                   LUT4	      89.00         0.9
                                 PFUREG	         85         0.9
                                 RIPPLE	        105         3.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_timer_cnt_12_3	          1         0.3
                    ppmc_speed_cnt_12_3	          1         0.4
                      ppmc_pls_cnt_12_3	          1         0.5
                  ppmc_acc_tim_gen_12_3	          1         0.1
+                   ppmc_timer_cnt_12_3	          1         0.3
 ---------------------------------------------------
 Report for cell ppmc_pls_cnt_12_3
    Instance path: SP0557/stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      54.33         0.5
+                                  SLIC	      53.92         0.5
                                   LUT4	      42.00         0.4
                                 PFUREG	         26         0.3
                                 RIPPLE	         33         1.1
@@ -2303,23 +2303,23 @@ Report for cell fc_sel_3
    Instance path: SP0557/stm05/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      52.25         0.5
-                                  LUT4	     112.00         1.2
+                                  SLIC	      45.42         0.4
+                                  LUT4	      96.00         1.0
 ---------------------------------------------------
 Report for cell fc_dec_3
    Instance path: SP0557/stm05/fc_dec_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       1.75         0.0
-                                  LUT4	       4.00         0.0
+                                  SLIC	       1.33         0.0
+                                  LUT4	       3.00         0.0
 ---------------------------------------------------
 Report for cell ppmc_top_S118M_14
    Instance path: SP0557/stm04
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     505.83         4.8
-                                  LUT4	     451.00         4.7
-                                PFUREG	        431         4.5
+                                  SLIC	     505.08         4.8
+                                  LUT4	     447.00         4.6
+                                PFUREG	        431         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
@@ -2331,25 +2331,25 @@ Report for cell ppmc_reg_S118M_12_2
    Instance path: SP0557/stm04/ppmc_reg_S118M_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     453.17         4.3
-                                  LUT4	     340.00         3.6
-                                PFUREG	        429         4.5
+                                  SLIC	     454.25         4.3
+                                  LUT4	     343.00         3.6
+                                PFUREG	        429         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                  ppmc_u_step_ext_12_2	          1         0.0
                        ppmc_rgstr_12_2	          1         1.4
                       ppmc_plsgen_12_2	          1         1.4
                  ppmc_enblr_S118M_12_2	          1         0.1
                             ppmc_dec_2	          1         0.1
                            ppmc_ctrl_2	          1         1.0
                          ppmc_cmdchk_2	          1         0.2
+                  ppmc_u_step_ext_12_2	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_cmdchk_2
    Instance path: SP0557/stm04/ppmc_reg_S118M_inst/inst_ppmc_cmdchk
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      23.00         0.2
+                                  SLIC	      22.75         0.2
                                   LUT4	      29.00         0.3
                                 PFUREG	          6         0.1
                                 RIPPLE	          9         0.3
@@ -2358,9 +2358,9 @@ Report for cell ppmc_ctrl_2
    Instance path: SP0557/stm04/ppmc_reg_S118M_inst/inst_ppmc_ctrl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     107.33         1.0
-                                  LUT4	      63.00         0.7
-                                PFUREG	        129         1.4
+                                  SLIC	     107.00         1.0
+                                  LUT4	      62.50         0.6
+                                PFUREG	        129         1.3
                                 RIPPLE	         28         0.9
 ---------------------------------------------------
 Report for cell ppmc_enblr_S118M_12_2
@@ -2376,38 +2376,38 @@ Report for cell ppmc_rgstr_12_2
    Instance path: SP0557/stm04/ppmc_reg_S118M_inst/inst_ppmc_rgstr
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     144.50         1.4
-                                  LUT4	     117.00         1.2
-                                PFUREG	        187         2.0
+                                  SLIC	     146.67         1.4
+                                  LUT4	     122.00         1.3
+                                PFUREG	        187         1.9
 ---------------------------------------------------
 Report for cell ppmc_dec_2
    Instance path: SP0557/stm04/ppmc_reg_S118M_inst/inst_ppmc_dec
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      12.33         0.1
-                                  LUT4	      25.00         0.3
+                                  SLIC	      11.50         0.1
+                                  LUT4	      23.00         0.2
 ---------------------------------------------------
 Report for cell ppmc_plsgen_12_2
    Instance path: SP0557/stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     148.17         1.4
-                                  LUT4	      89.00         0.9
+                                  SLIC	     148.50         1.4
+                                  LUT4	      89.50         0.9
                                 PFUREG	         85         0.9
                                 RIPPLE	        105         3.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_timer_cnt_12_2	          1         0.3
                    ppmc_speed_cnt_12_2	          1         0.4
                      ppmc_pls_cnt_12_2	          1         0.5
                  ppmc_acc_tim_gen_12_2	          1         0.1
+                   ppmc_timer_cnt_12_2	          1         0.3
 ---------------------------------------------------
 Report for cell ppmc_pls_cnt_12_2
    Instance path: SP0557/stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      53.83         0.5
-                                  LUT4	      42.00         0.4
+                                  SLIC	      54.42         0.5
+                                  LUT4	      42.50         0.4
                                 PFUREG	         26         0.3
                                 RIPPLE	         33         1.1
 ---------------------------------------------------
@@ -2424,7 +2424,7 @@ Report for cell ppmc_speed_cnt_12_2
    Instance path: SP0557/stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      43.92         0.4
+                                  SLIC	      43.67         0.4
                                   LUT4	      35.00         0.4
                                 PFUREG	         22         0.2
                                 RIPPLE	         27         0.9
@@ -2450,27 +2450,27 @@ Report for cell fc_sel_2
    Instance path: SP0557/stm04/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      51.33         0.5
-                                  LUT4	     109.00         1.1
+                                  SLIC	      48.00         0.5
+                                  LUT4	     102.00         1.1
 ---------------------------------------------------
 Report for cell fc_dec_2
    Instance path: SP0557/stm04/fc_dec_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       0.67         0.0
+                                  SLIC	       0.83         0.0
                                   LUT4	       2.00         0.0
 ---------------------------------------------------
 Report for cell ppmc_top_S118M_13
    Instance path: SP0557/stm03
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     506.42         4.8
-                                  LUT4	     455.50         4.8
-                                PFUREG	        431         4.5
+                                  SLIC	     490.00         4.7
+                                  LUT4	     420.00         4.4
+                                PFUREG	        431         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_reg_S118M_12_1	          1         4.4
+                   ppmc_reg_S118M_12_1	          1         4.2
                               fc_sel_1	          1         0.4
                               fc_dec_1	          1         0.0
 ---------------------------------------------------
@@ -2478,25 +2478,25 @@ Report for cell ppmc_reg_S118M_12_1
    Instance path: SP0557/stm03/ppmc_reg_S118M_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     458.83         4.4
-                                  LUT4	     355.00         3.7
-                                PFUREG	        429         4.5
+                                  SLIC	     441.58         4.2
+                                  LUT4	     316.00         3.3
+                                PFUREG	        429         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                  ppmc_u_step_ext_12_1	          1         0.0
-                       ppmc_rgstr_12_1	          1         1.4
+                       ppmc_rgstr_12_1	          1         1.3
                       ppmc_plsgen_12_1	          1         1.4
                             ppmc_dec_1	          1         0.1
                  ppmc_enblr_S118M_12_1	          1         0.1
                            ppmc_ctrl_1	          1         1.0
                          ppmc_cmdchk_1	          1         0.2
+                  ppmc_u_step_ext_12_1	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_cmdchk_1
    Instance path: SP0557/stm03/ppmc_reg_S118M_inst/inst_ppmc_cmdchk
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      22.50         0.2
+                                  SLIC	      22.33         0.2
                                   LUT4	      29.00         0.3
                                 PFUREG	          6         0.1
                                 RIPPLE	          9         0.3
@@ -2505,9 +2505,9 @@ Report for cell ppmc_ctrl_1
    Instance path: SP0557/stm03/ppmc_reg_S118M_inst/inst_ppmc_ctrl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     106.92         1.0
-                                  LUT4	      63.00         0.7
-                                PFUREG	        129         1.4
+                                  SLIC	     105.42         1.0
+                                  LUT4	      59.00         0.6
+                                PFUREG	        129         1.3
                                 RIPPLE	         28         0.9
 ---------------------------------------------------
 Report for cell ppmc_enblr_S118M_12_1
@@ -2523,38 +2523,38 @@ Report for cell ppmc_rgstr_12_1
    Instance path: SP0557/stm03/ppmc_reg_S118M_inst/inst_ppmc_rgstr
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     151.67         1.4
-                                  LUT4	     132.00         1.4
-                                PFUREG	        187         2.0
+                                  SLIC	     133.67         1.3
+                                  LUT4	      93.00         1.0
+                                PFUREG	        187         1.9
 ---------------------------------------------------
 Report for cell ppmc_dec_1
    Instance path: SP0557/stm03/ppmc_reg_S118M_inst/inst_ppmc_dec
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      11.83         0.1
-                                  LUT4	      25.00         0.3
+                                  SLIC	      11.50         0.1
+                                  LUT4	      23.00         0.2
 ---------------------------------------------------
 Report for cell ppmc_plsgen_12_1
    Instance path: SP0557/stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     148.08         1.4
-                                  LUT4	      89.00         0.9
+                                  SLIC	     150.83         1.4
+                                  LUT4	      95.00         1.0
                                 PFUREG	         85         0.9
                                 RIPPLE	        105         3.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_timer_cnt_12_1	          1         0.3
                    ppmc_speed_cnt_12_1	          1         0.4
                      ppmc_pls_cnt_12_1	          1         0.5
                  ppmc_acc_tim_gen_12_1	          1         0.1
+                   ppmc_timer_cnt_12_1	          1         0.3
 ---------------------------------------------------
 Report for cell ppmc_pls_cnt_12_1
    Instance path: SP0557/stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      53.75         0.5
-                                  LUT4	      42.00         0.4
+                                  SLIC	      56.92         0.5
+                                  LUT4	      48.00         0.5
                                 PFUREG	         26         0.3
                                 RIPPLE	         33         1.1
 ---------------------------------------------------
@@ -2562,7 +2562,7 @@ Report for cell ppmc_timer_cnt_12_1
    Instance path: SP0557/stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      35.92         0.3
+                                  SLIC	      35.42         0.3
                                   LUT4	      11.00         0.1
                                 PFUREG	         20         0.2
                                 RIPPLE	         31         1.0
@@ -2571,7 +2571,7 @@ Report for cell ppmc_speed_cnt_12_1
    Instance path: SP0557/stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      43.92         0.4
+                                  SLIC	      44.00         0.4
                                   LUT4	      35.00         0.4
                                 PFUREG	         22         0.2
                                 RIPPLE	         27         0.9
@@ -2597,27 +2597,27 @@ Report for cell fc_sel_1
    Instance path: SP0557/stm03/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      45.42         0.4
-                                  LUT4	      97.50         1.0
+                                  SLIC	      46.42         0.4
+                                  LUT4	     101.00         1.0
 ---------------------------------------------------
 Report for cell fc_dec_1
    Instance path: SP0557/stm03/fc_dec_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       1.50         0.0
+                                  SLIC	       1.33         0.0
                                   LUT4	       3.00         0.0
 ---------------------------------------------------
 Report for cell ppmc_top_S118M_12
    Instance path: SP0557/stm02
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     511.08         4.9
-                                  LUT4	     466.00         4.9
-                                PFUREG	        431         4.5
+                                  SLIC	     495.75         4.7
+                                  LUT4	     435.00         4.5
+                                PFUREG	        431         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_reg_S118M_12_0	          1         4.4
+                   ppmc_reg_S118M_12_0	          1         4.3
                               fc_sel_0	          1         0.4
                               fc_dec_0	          1         0.0
 ---------------------------------------------------
@@ -2625,25 +2625,25 @@ Report for cell ppmc_reg_S118M_12_0
    Instance path: SP0557/stm02/ppmc_reg_S118M_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     461.92         4.4
-                                  LUT4	     364.00         3.8
-                                PFUREG	        429         4.5
+                                  SLIC	     450.75         4.3
+                                  LUT4	     341.00         3.5
+                                PFUREG	        429         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                  ppmc_u_step_ext_12_0	          1         0.0
-                       ppmc_rgstr_12_0	          1         1.5
+                       ppmc_rgstr_12_0	          1         1.4
                       ppmc_plsgen_12_0	          1         1.4
                  ppmc_enblr_S118M_12_0	          1         0.1
                             ppmc_dec_0	          1         0.1
                            ppmc_ctrl_0	          1         1.0
                          ppmc_cmdchk_0	          1         0.2
+                  ppmc_u_step_ext_12_0	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_cmdchk_0
    Instance path: SP0557/stm02/ppmc_reg_S118M_inst/inst_ppmc_cmdchk
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      23.33         0.2
+                                  SLIC	      22.33         0.2
                                   LUT4	      29.00         0.3
                                 PFUREG	          6         0.1
                                 RIPPLE	          9         0.3
@@ -2652,9 +2652,9 @@ Report for cell ppmc_ctrl_0
    Instance path: SP0557/stm02/ppmc_reg_S118M_inst/inst_ppmc_ctrl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     108.33         1.0
-                                  LUT4	      65.00         0.7
-                                PFUREG	        129         1.4
+                                  SLIC	     106.75         1.0
+                                  LUT4	      63.00         0.7
+                                PFUREG	        129         1.3
                                 RIPPLE	         28         0.9
 ---------------------------------------------------
 Report for cell ppmc_enblr_S118M_12_0
@@ -2670,37 +2670,37 @@ Report for cell ppmc_rgstr_12_0
    Instance path: SP0557/stm02/ppmc_reg_S118M_inst/inst_ppmc_rgstr
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     152.33         1.5
-                                  LUT4	     139.00         1.5
-                                PFUREG	        187         2.0
+                                  SLIC	     146.67         1.4
+                                  LUT4	     125.00         1.3
+                                PFUREG	        187         1.9
 ---------------------------------------------------
 Report for cell ppmc_dec_0
    Instance path: SP0557/stm02/ppmc_reg_S118M_inst/inst_ppmc_dec
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      12.83         0.1
-                                  LUT4	      26.00         0.3
+                                  SLIC	       9.00         0.1
+                                  LUT4	      18.00         0.2
 ---------------------------------------------------
 Report for cell ppmc_plsgen_12_0
    Instance path: SP0557/stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     147.25         1.4
-                                  LUT4	      88.00         0.9
+                                  SLIC	     148.17         1.4
+                                  LUT4	      89.00         0.9
                                 PFUREG	         85         0.9
                                 RIPPLE	        105         3.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                   ppmc_timer_cnt_12_0	          1         0.3
                    ppmc_speed_cnt_12_0	          1         0.4
                      ppmc_pls_cnt_12_0	          1         0.5
                  ppmc_acc_tim_gen_12_0	          1         0.1
+                   ppmc_timer_cnt_12_0	          1         0.3
 ---------------------------------------------------
 Report for cell ppmc_pls_cnt_12_0
    Instance path: SP0557/stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      53.67         0.5
+                                  SLIC	      53.75         0.5
                                   LUT4	      42.00         0.4
                                 PFUREG	         26         0.3
                                 RIPPLE	         33         1.1
@@ -2709,8 +2709,8 @@ Report for cell ppmc_timer_cnt_12_0
    Instance path: SP0557/stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      35.50         0.3
-                                  LUT4	      10.00         0.1
+                                  SLIC	      36.00         0.3
+                                  LUT4	      11.00         0.1
                                 PFUREG	         20         0.2
                                 RIPPLE	         31         1.0
 ---------------------------------------------------
@@ -2718,7 +2718,7 @@ Report for cell ppmc_speed_cnt_12_0
    Instance path: SP0557/stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      43.58         0.4
+                                  SLIC	      43.92         0.4
                                   LUT4	      35.00         0.4
                                 PFUREG	         22         0.2
                                 RIPPLE	         27         0.9
@@ -2744,53 +2744,53 @@ Report for cell fc_sel_0
    Instance path: SP0557/stm02/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      47.17         0.4
-                                  LUT4	      99.00         1.0
+                                  SLIC	      43.00         0.4
+                                  LUT4	      92.00         1.0
 ---------------------------------------------------
 Report for cell fc_dec_0
    Instance path: SP0557/stm02/fc_dec_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       1.33         0.0
-                                  LUT4	       3.00         0.0
+                                  SLIC	       0.67         0.0
+                                  LUT4	       2.00         0.0
 ---------------------------------------------------
 Report for cell ppmc_top_S118M
    Instance path: SP0557/stm01
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     522.83         5.0
-                                  LUT4	     489.50         5.1
-                                PFUREG	        431         4.5
+                                  SLIC	     512.42         4.9
+                                  LUT4	     469.00         4.9
+                                PFUREG	        431         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                     ppmc_reg_S118M_12	          1         4.4
-                                fc_sel	          1         0.6
+                     ppmc_reg_S118M_12	          1         4.3
+                                fc_sel	          1         0.5
                                 fc_dec	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_reg_S118M_12
    Instance path: SP0557/stm01/ppmc_reg_S118M_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     460.83         4.4
-                                  LUT4	     360.00         3.8
-                                PFUREG	        429         4.5
+                                  SLIC	     457.58         4.3
+                                  LUT4	     352.00         3.7
+                                PFUREG	        429         4.4
                                 RIPPLE	        150         5.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                    ppmc_u_step_ext_12	          1         0.0
-                         ppmc_rgstr_12	          1         1.5
+                         ppmc_rgstr_12	          1         1.4
                         ppmc_plsgen_12	          1         1.4
                    ppmc_enblr_S118M_12	          1         0.1
                               ppmc_dec	          1         0.1
                              ppmc_ctrl	          1         1.0
                            ppmc_cmdchk	          1         0.2
+                    ppmc_u_step_ext_12	          1         0.0
 ---------------------------------------------------
 Report for cell ppmc_cmdchk
    Instance path: SP0557/stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      22.42         0.2
+                                  SLIC	      22.67         0.2
                                   LUT4	      29.00         0.3
                                 PFUREG	          6         0.1
                                 RIPPLE	          9         0.3
@@ -2799,9 +2799,9 @@ Report for cell ppmc_ctrl
    Instance path: SP0557/stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     107.83         1.0
-                                  LUT4	      65.00         0.7
-                                PFUREG	        129         1.4
+                                  SLIC	     107.42         1.0
+                                  LUT4	      64.00         0.7
+                                PFUREG	        129         1.3
                                 RIPPLE	         28         0.9
 ---------------------------------------------------
 Report for cell ppmc_enblr_S118M_12
@@ -2817,38 +2817,38 @@ Report for cell ppmc_rgstr_12
    Instance path: SP0557/stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     154.67         1.5
-                                  LUT4	     140.50         1.5
-                                PFUREG	        187         2.0
+                                  SLIC	     150.67         1.4
+                                  LUT4	     132.50         1.4
+                                PFUREG	        187         1.9
 ---------------------------------------------------
 Report for cell ppmc_dec
    Instance path: SP0557/stm01/ppmc_reg_S118M_inst/inst_ppmc_dec
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      10.33         0.1
-                                  LUT4	      20.50         0.2
+                                  SLIC	      10.00         0.1
+                                  LUT4	      20.00         0.2
 ---------------------------------------------------
 Report for cell ppmc_plsgen_12
    Instance path: SP0557/stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     147.75         1.4
-                                  LUT4	      88.00         0.9
+                                  SLIC	     149.00         1.4
+                                  LUT4	      89.50         0.9
                                 PFUREG	         85         0.9
                                 RIPPLE	        105         3.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                     ppmc_timer_cnt_12	          1         0.3
                      ppmc_speed_cnt_12	          1         0.4
                        ppmc_pls_cnt_12	          1         0.5
                    ppmc_acc_tim_gen_12	          1         0.1
+                     ppmc_timer_cnt_12	          1         0.3
 ---------------------------------------------------
 Report for cell ppmc_pls_cnt_12
    Instance path: SP0557/stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      53.83         0.5
-                                  LUT4	      42.00         0.4
+                                  SLIC	      54.25         0.5
+                                  LUT4	      42.50         0.4
                                 PFUREG	         26         0.3
                                 RIPPLE	         33         1.1
 ---------------------------------------------------
@@ -2856,8 +2856,8 @@ Report for cell ppmc_timer_cnt_12
    Instance path: SP0557/stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      35.50         0.3
-                                  LUT4	      10.00         0.1
+                                  SLIC	      36.00         0.3
+                                  LUT4	      11.00         0.1
                                 PFUREG	         20         0.2
                                 RIPPLE	         31         1.0
 ---------------------------------------------------
@@ -2865,7 +2865,7 @@ Report for cell ppmc_speed_cnt_12
    Instance path: SP0557/stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      43.92         0.4
+                                  SLIC	      44.25         0.4
                                   LUT4	      35.00         0.4
                                 PFUREG	         22         0.2
                                 RIPPLE	         27         0.9
@@ -2891,15 +2891,15 @@ Report for cell fc_sel
    Instance path: SP0557/stm01/fc_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      60.17         0.6
-                                  LUT4	     126.50         1.3
+                                  SLIC	      52.00         0.5
+                                  LUT4	     112.00         1.2
 ---------------------------------------------------
 Report for cell fc_dec
    Instance path: SP0557/stm01/fc_dec_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       1.17         0.0
-                                  LUT4	       3.00         0.0
+                                  SLIC	       2.17         0.0
+                                  LUT4	       5.00         0.1
 ---------------------------------------------------
 Report for cell pls_sens
    Instance path: SP0557/pls_sens_inst
@@ -2913,45 +2913,45 @@ Report for cell enc_func_top
    Instance path: SP0557/ENC_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	    1483.92        14.1
-                                  LUT4	    1263.00        13.2
-                                PFUREG	        884         9.3
+                                  SLIC	    1465.75        13.9
+                                  LUT4	    1243.00        12.9
+                                PFUREG	        884         9.1
                                 RIPPLE	        767        25.7
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                            enc_top_17	          1         1.1
                             enc_top_21	          1         1.1
-                            enc_top_23	          1         1.1
+                            enc_top_23	          1         1.0
                             enc_top_22	          1         1.1
-                            enc_top_19	          1         1.1
-                            enc_top_20	          1         1.1
-                            enc_top_18	          1         1.1
-                               enc_top	          1         1.1
                             enc_top_13	          1         1.1
+                            enc_top_17	          1         1.1
+                            enc_top_19	          1         1.1
+                            enc_top_20	          1         1.0
+                            enc_top_18	          1         1.1
                             enc_top_15	          1         1.1
                             enc_top_16	          1         1.1
                             enc_top_14	          1         1.1
+                               enc_top	          1         1.1
                             enc_top_12	          1         1.1
 ---------------------------------------------------
 Report for cell enc_top_23
    Instance path: SP0557/ENC_inst/enc_func.4.enc_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     112.92         1.1
-                                  LUT4	      94.50         1.0
+                                  SLIC	     108.17         1.0
+                                  LUT4	      85.50         0.9
                                 PFUREG	         68         0.7
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                    encoder_2bit_12_11	          1         0.3
                          enc_lmt_12_11	          1         0.7
+                    encoder_2bit_12_11	          1         0.3
 ---------------------------------------------------
 Report for cell enc_lmt_12_11
    Instance path: SP0557/ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      77.67         0.7
-                                  LUT4	      69.50         0.7
+                                  SLIC	      73.83         0.7
+                                  LUT4	      61.50         0.6
                                 PFUREG	         26         0.3
                                 RIPPLE	         40         1.3
 ---------------------------------------------------
@@ -2959,7 +2959,7 @@ Report for cell encoder_2bit_12_11
    Instance path: SP0557/ENC_inst/enc_func.4.enc_top_inst/encoder_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      33.25         0.3
+                                  SLIC	      33.17         0.3
                                   LUT4	      21.00         0.2
                                 PFUREG	         42         0.4
                                 RIPPLE	         19         0.6
@@ -2968,21 +2968,21 @@ Report for cell enc_top_22
    Instance path: SP0557/ENC_inst/enc_func.7.enc_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     113.08         1.1
+                                  SLIC	     113.00         1.1
                                   LUT4	      94.50         1.0
                                 PFUREG	         68         0.7
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                    encoder_2bit_12_10	          1         0.3
                          enc_lmt_12_10	          1         0.7
+                    encoder_2bit_12_10	          1         0.3
 ---------------------------------------------------
 Report for cell enc_lmt_12_10
    Instance path: SP0557/ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      77.83         0.7
-                                  LUT4	      69.50         0.7
+                                  SLIC	      78.50         0.7
+                                  LUT4	      70.50         0.7
                                 PFUREG	         26         0.3
                                 RIPPLE	         40         1.3
 ---------------------------------------------------
@@ -2990,7 +2990,7 @@ Report for cell encoder_2bit_12_10
    Instance path: SP0557/ENC_inst/enc_func.7.enc_top_inst/encoder_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      33.25         0.3
+                                  SLIC	      33.33         0.3
                                   LUT4	      21.00         0.2
                                 PFUREG	         42         0.4
                                 RIPPLE	         19         0.6
@@ -2999,21 +2999,21 @@ Report for cell enc_top_21
    Instance path: SP0557/ENC_inst/enc_func.10.enc_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     113.08         1.1
-                                  LUT4	      94.50         1.0
+                                  SLIC	     110.75         1.1
+                                  LUT4	      91.50         0.9
                                 PFUREG	         68         0.7
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                     encoder_2bit_12_9	          1         0.3
                           enc_lmt_12_9	          1         0.7
+                     encoder_2bit_12_9	          1         0.3
 ---------------------------------------------------
 Report for cell enc_lmt_12_9
    Instance path: SP0557/ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      77.83         0.7
-                                  LUT4	      69.50         0.7
+                                  SLIC	      76.50         0.7
+                                  LUT4	      67.50         0.7
                                 PFUREG	         26         0.3
                                 RIPPLE	         40         1.3
 ---------------------------------------------------
@@ -3021,7 +3021,7 @@ Report for cell encoder_2bit_12_9
    Instance path: SP0557/ENC_inst/enc_func.10.enc_top_inst/encoder_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      33.25         0.3
+                                  SLIC	      33.08         0.3
                                   LUT4	      21.00         0.2
                                 PFUREG	         42         0.4
                                 RIPPLE	         19         0.6
@@ -3030,21 +3030,21 @@ Report for cell enc_top_20
    Instance path: SP0557/ENC_inst/enc_func.13.enc_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     113.42         1.1
-                                  LUT4	      94.50         1.0
+                                  SLIC	     109.00         1.0
+                                  LUT4	      87.50         0.9
                                 PFUREG	         68         0.7
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                     encoder_2bit_12_8	          1         0.3
                           enc_lmt_12_8	          1         0.7
+                     encoder_2bit_12_8	          1         0.3
 ---------------------------------------------------
 Report for cell enc_lmt_12_8
    Instance path: SP0557/ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      78.50         0.7
-                                  LUT4	      69.50         0.7
+                                  SLIC	      75.08         0.7
+                                  LUT4	      63.50         0.7
                                 PFUREG	         26         0.3
                                 RIPPLE	         40         1.3
 ---------------------------------------------------
@@ -3052,7 +3052,7 @@ Report for cell encoder_2bit_12_8
    Instance path: SP0557/ENC_inst/enc_func.13.enc_top_inst/encoder_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      33.25         0.3
+                                  SLIC	      32.75         0.3
                                   LUT4	      21.00         0.2
                                 PFUREG	         42         0.4
                                 RIPPLE	         19         0.6
@@ -3061,20 +3061,20 @@ Report for cell enc_top_19
    Instance path: SP0557/ENC_inst/enc_func.3.enc_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     113.00         1.1
-                                  LUT4	      94.50         1.0
+                                  SLIC	     111.92         1.1
+                                  LUT4	      93.50         1.0
                                 PFUREG	         68         0.7
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                     encoder_2bit_12_7	          1         0.3
                           enc_lmt_12_7	          1         0.7
+                     encoder_2bit_12_7	          1         0.3
 ---------------------------------------------------
 Report for cell enc_lmt_12_7
    Instance path: SP0557/ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      77.75         0.7
+                                  SLIC	      77.67         0.7
                                   LUT4	      69.50         0.7
                                 PFUREG	         26         0.3
                                 RIPPLE	         40         1.3
@@ -3083,7 +3083,7 @@ Report for cell encoder_2bit_12_7
    Instance path: SP0557/ENC_inst/enc_func.3.enc_top_inst/encoder_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      33.25         0.3
+                                  SLIC	      33.08         0.3
                                   LUT4	      21.00         0.2
                                 PFUREG	         42         0.4
                                 RIPPLE	         19         0.6
@@ -3092,21 +3092,21 @@ Report for cell enc_top_18
    Instance path: SP0557/ENC_inst/enc_func.6.enc_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     114.75         1.1
-                                  LUT4	      97.50         1.0
+                                  SLIC	     113.08         1.1
+                                  LUT4	      95.50         1.0
                                 PFUREG	         68         0.7
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
+                          enc_lmt_12_6	          1         0.7
                      encoder_2bit_12_6	          1         0.3
-                          enc_lmt_12_6	          1         0.8
 ---------------------------------------------------
 Report for cell enc_lmt_12_6
    Instance path: SP0557/ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      79.50         0.8
-                                  LUT4	      72.50         0.8
+                                  SLIC	      78.83         0.7
+                                  LUT4	      71.50         0.7
                                 PFUREG	         26         0.3
                                 RIPPLE	         40         1.3
 ---------------------------------------------------
@@ -3114,7 +3114,7 @@ Report for cell encoder_2bit_12_6
    Instance path: SP0557/ENC_inst/enc_func.6.enc_top_inst/encoder_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      33.25         0.3
+                                  SLIC	      33.08         0.3
                                   LUT4	      21.00         0.2
                                 PFUREG	         42         0.4
                                 RIPPLE	         19         0.6
@@ -3123,21 +3123,21 @@ Report for cell enc_top_17
    Instance path: SP0557/ENC_inst/enc_func.9.enc_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     113.33         1.1
-                                  LUT4	      94.50         1.0
+                                  SLIC	     113.00         1.1
+                                  LUT4	      95.50         1.0
                                 PFUREG	         68         0.7
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                     encoder_2bit_12_5	          1         0.3
                           enc_lmt_12_5	          1         0.7
+                     encoder_2bit_12_5	          1         0.3
 ---------------------------------------------------
 Report for cell enc_lmt_12_5
    Instance path: SP0557/ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      78.00         0.7
-                                  LUT4	      69.50         0.7
+                                  SLIC	      78.75         0.7
+                                  LUT4	      71.50         0.7
                                 PFUREG	         26         0.3
                                 RIPPLE	         40         1.3
 ---------------------------------------------------
@@ -3145,7 +3145,7 @@ Report for cell encoder_2bit_12_5
    Instance path: SP0557/ENC_inst/enc_func.9.enc_top_inst/encoder_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      33.33         0.3
+                                  SLIC	      33.08         0.3
                                   LUT4	      21.00         0.2
                                 PFUREG	         42         0.4
                                 RIPPLE	         19         0.6
@@ -3154,21 +3154,21 @@ Report for cell enc_top_16
    Instance path: SP0557/ENC_inst/enc_func.12.enc_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     113.00         1.1
-                                  LUT4	      93.50         1.0
+                                  SLIC	     114.00         1.1
+                                  LUT4	      97.50         1.0
                                 PFUREG	         68         0.7
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
+                          enc_lmt_12_4	          1         0.8
                      encoder_2bit_12_4	          1         0.3
-                          enc_lmt_12_4	          1         0.7
 ---------------------------------------------------
 Report for cell enc_lmt_12_4
    Instance path: SP0557/ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      77.50         0.7
-                                  LUT4	      68.50         0.7
+                                  SLIC	      79.75         0.8
+                                  LUT4	      73.50         0.8
                                 PFUREG	         26         0.3
                                 RIPPLE	         40         1.3
 ---------------------------------------------------
@@ -3176,7 +3176,7 @@ Report for cell encoder_2bit_12_4
    Instance path: SP0557/ENC_inst/enc_func.12.enc_top_inst/encoder_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      33.50         0.3
+                                  SLIC	      33.08         0.3
                                   LUT4	      21.00         0.2
                                 PFUREG	         42         0.4
                                 RIPPLE	         19         0.6
@@ -3185,21 +3185,21 @@ Report for cell enc_top_15
    Instance path: SP0557/ENC_inst/enc_func.2.enc_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     113.25         1.1
-                                  LUT4	      94.50         1.0
+                                  SLIC	     110.92         1.1
+                                  LUT4	      90.50         0.9
                                 PFUREG	         68         0.7
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                     encoder_2bit_12_3	          1         0.3
                           enc_lmt_12_3	          1         0.7
+                     encoder_2bit_12_3	          1         0.3
 ---------------------------------------------------
 Report for cell enc_lmt_12_3
    Instance path: SP0557/ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      78.00         0.7
-                                  LUT4	      69.50         0.7
+                                  SLIC	      76.50         0.7
+                                  LUT4	      66.50         0.7
                                 PFUREG	         26         0.3
                                 RIPPLE	         40         1.3
 ---------------------------------------------------
@@ -3216,21 +3216,21 @@ Report for cell enc_top_14
    Instance path: SP0557/ENC_inst/enc_func.5.enc_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     112.75         1.1
-                                  LUT4	      93.50         1.0
+                                  SLIC	     111.17         1.1
+                                  LUT4	      91.50         0.9
                                 PFUREG	         68         0.7
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                     encoder_2bit_12_2	          1         0.3
                           enc_lmt_12_2	          1         0.7
+                     encoder_2bit_12_2	          1         0.3
 ---------------------------------------------------
 Report for cell enc_lmt_12_2
    Instance path: SP0557/ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      77.50         0.7
-                                  LUT4	      68.50         0.7
+                                  SLIC	      76.83         0.7
+                                  LUT4	      67.50         0.7
                                 PFUREG	         26         0.3
                                 RIPPLE	         40         1.3
 ---------------------------------------------------
@@ -3238,7 +3238,7 @@ Report for cell encoder_2bit_12_2
    Instance path: SP0557/ENC_inst/enc_func.5.enc_top_inst/encoder_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      33.25         0.3
+                                  SLIC	      33.17         0.3
                                   LUT4	      21.00         0.2
                                 PFUREG	         42         0.4
                                 RIPPLE	         19         0.6
@@ -3247,21 +3247,21 @@ Report for cell enc_top_13
    Instance path: SP0557/ENC_inst/enc_func.8.enc_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     113.25         1.1
-                                  LUT4	      94.50         1.0
+                                  SLIC	     114.17         1.1
+                                  LUT4	      97.50         1.0
                                 PFUREG	         68         0.7
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
+                          enc_lmt_12_1	          1         0.8
                      encoder_2bit_12_1	          1         0.3
-                          enc_lmt_12_1	          1         0.7
 ---------------------------------------------------
 Report for cell enc_lmt_12_1
    Instance path: SP0557/ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      78.00         0.7
-                                  LUT4	      69.50         0.7
+                                  SLIC	      79.75         0.8
+                                  LUT4	      73.50         0.8
                                 PFUREG	         26         0.3
                                 RIPPLE	         40         1.3
 ---------------------------------------------------
@@ -3278,20 +3278,20 @@ Report for cell enc_top_12
    Instance path: SP0557/ENC_inst/enc_func.11.enc_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     114.25         1.1
-                                  LUT4	      95.50         1.0
+                                  SLIC	     112.50         1.1
+                                  LUT4	      94.50         1.0
                                 PFUREG	         68         0.7
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                     encoder_2bit_12_0	          1         0.3
                           enc_lmt_12_0	          1         0.7
+                     encoder_2bit_12_0	          1         0.3
 ---------------------------------------------------
 Report for cell enc_lmt_12_0
    Instance path: SP0557/ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      78.50         0.7
+                                  SLIC	      78.25         0.7
                                   LUT4	      70.50         0.7
                                 PFUREG	         26         0.3
                                 RIPPLE	         40         1.3
@@ -3300,7 +3300,7 @@ Report for cell encoder_2bit_12_0
    Instance path: SP0557/ENC_inst/enc_func.11.enc_top_inst/encoder_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      33.75         0.3
+                                  SLIC	      33.08         0.3
                                   LUT4	      21.00         0.2
                                 PFUREG	         42         0.4
                                 RIPPLE	         19         0.6
@@ -3309,21 +3309,21 @@ Report for cell enc_top
    Instance path: SP0557/ENC_inst/enc_func.1.enc_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     112.50         1.1
-                                  LUT4	      93.50         1.0
+                                  SLIC	     112.75         1.1
+                                  LUT4	      94.50         1.0
                                 PFUREG	         68         0.7
                                 RIPPLE	         59         2.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                       encoder_2bit_12	          1         0.3
                             enc_lmt_12	          1         0.7
+                       encoder_2bit_12	          1         0.3
 ---------------------------------------------------
 Report for cell enc_lmt_12
    Instance path: SP0557/ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      77.25         0.7
-                                  LUT4	      68.50         0.7
+                                  SLIC	      78.50         0.7
+                                  LUT4	      70.50         0.7
                                 PFUREG	         26         0.3
                                 RIPPLE	         40         1.3
 ---------------------------------------------------
@@ -3331,7 +3331,7 @@ Report for cell encoder_2bit_12
    Instance path: SP0557/ENC_inst/enc_func.1.enc_top_inst/encoder_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      33.25         0.3
+                                  SLIC	      33.08         0.3
                                   LUT4	      21.00         0.2
                                 PFUREG	         42         0.4
                                 RIPPLE	         19         0.6
@@ -3375,29 +3375,29 @@ Report for cell TLC5916_CTRL
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	      14.75         0.1
-                                  LUT4	      24.00         0.3
-                                PFUREG	         24         0.3
+                                  LUT4	      24.00         0.2
+                                PFUREG	         24         0.2
                                 RIPPLE	          3         0.1
 ---------------------------------------------------
 Report for cell ad_ctrl
    Instance path: SP0557/ADC_CONT
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      35.67         0.3
-                                  LUT4	      31.00         0.3
+                                  SLIC	      35.25         0.3
+                                  LUT4	      30.00         0.3
                                 PFUREG	         51         0.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
                          shiftreg12bit	          1         0.1
+                               adc_reg	          1         0.1
                              adclk_gen	          1         0.0
                               adif_seq	          1         0.1
-                               adc_reg	          1         0.1
 ---------------------------------------------------
 Report for cell adc_reg
    Instance path: SP0557/ADC_CONT/adc_reg_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      13.33         0.1
+                                  SLIC	      13.67         0.1
                                   LUT4	       3.00         0.0
                                 PFUREG	         25         0.3
 ---------------------------------------------------
@@ -3405,7 +3405,7 @@ Report for cell shiftreg12bit
    Instance path: SP0557/ADC_CONT/shiftreg12bit_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       6.33         0.1
+                                  SLIC	       6.25         0.1
                                   LUT4	       1.00         0.0
                                 PFUREG	         11         0.1
 ---------------------------------------------------
@@ -3413,8 +3413,8 @@ Report for cell adif_seq
    Instance path: SP0557/ADC_CONT/adif_seq_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      11.00         0.1
-                                  LUT4	      22.00         0.2
+                                  SLIC	      10.33         0.1
+                                  LUT4	      21.00         0.2
                                 PFUREG	         10         0.1
 ---------------------------------------------------
 Report for cell adclk_gen
@@ -3429,60 +3429,60 @@ Report for cell DAC43608_top
    Instance path: SP0557/U_DAC43608_top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     409.67         3.9
-                                  LUT4	     580.00         6.1
-                                PFUREG	        287         3.0
+                                  SLIC	     519.25         4.9
+                                  LUT4	     808.00         8.4
+                                PFUREG	        439         4.5
                                 RIPPLE	         48         1.6
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                     i2c_master_wb_top	          1         0.9
-                          DAC_CTRL_1CH	          1         1.3
-                             CTRL_32CH	          1         1.7
+                     i2c_master_wb_top	          1         1.0
+                          DAC_CTRL_1CH	          1         1.4
+                             CTRL_32CH	          1         2.6
 ---------------------------------------------------
 Report for cell CTRL_32CH
    Instance path: SP0557/U_DAC43608_top/U03
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     176.00         1.7
-                                  LUT4	     169.00         1.8
-                                PFUREG	        152         1.6
+                                  SLIC	     276.17         2.6
+                                  LUT4	     379.00         3.9
+                                PFUREG	        304         3.1
                                 RIPPLE	         39         1.3
 ---------------------------------------------------
 Report for cell DAC_CTRL_1CH
    Instance path: SP0557/U_DAC43608_top/U02
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     134.33         1.3
-                                  LUT4	     269.00         2.8
+                                  SLIC	     142.33         1.4
+                                  LUT4	     285.00         3.0
                                 PFUREG	         22         0.2
 ---------------------------------------------------
 Report for cell i2c_master_wb_top
    Instance path: SP0557/U_DAC43608_top/U01
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      99.33         0.9
-                                  LUT4	     142.00         1.5
+                                  SLIC	     100.75         1.0
+                                  LUT4	     144.00         1.5
                                 PFUREG	        113         1.2
                                 RIPPLE	          9         0.3
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                  i2c_master_byte_ctrl	          1         0.3
-                  i2c_master_registers	          1         0.2
                    i2c_master_bit_ctrl	          1         0.4
+                  i2c_master_registers	          1         0.2
+                  i2c_master_byte_ctrl	          1         0.3
 ---------------------------------------------------
 Report for cell i2c_master_registers
    Instance path: SP0557/U_DAC43608_top/U01/registers
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      22.50         0.2
-                                  LUT4	      15.00         0.2
+                                  SLIC	      24.83         0.2
+                                  LUT4	      17.00         0.2
                                 PFUREG	         35         0.4
 ---------------------------------------------------
 Report for cell i2c_master_bit_ctrl
    Instance path: SP0557/U_DAC43608_top/U01/bit_controller
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      41.58         0.4
+                                  SLIC	      41.08         0.4
                                   LUT4	      59.00         0.6
                                 PFUREG	         48         0.5
                                 RIPPLE	          9         0.3
@@ -3507,7 +3507,7 @@ Report for cell sp_conv
    Instance path: SP0557/sp_conv_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     120.83         1.2
+                                  SLIC	     121.00         1.1
                                   LUT4	     180.00         1.9
                                 PFUREG	        173         1.8
                                 RIPPLE	          4         0.1
@@ -3519,7 +3519,7 @@ Report for cell SIO_ctrl2
    Instance path: SP0557/sp_conv_inst/SIO_inst1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     101.58         1.0
+                                  SLIC	     101.50         1.0
                                   LUT4	     141.00         1.5
                                 PFUREG	        173         1.8
                                 RIPPLE	          4         0.1
@@ -3531,16 +3531,16 @@ Report for cell SPI_master2
    Instance path: SP0557/sp_conv_inst/SIO_inst1/U_SPI_master
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      72.58         0.7
+                                  SLIC	      72.50         0.7
                                   LUT4	     136.00         1.4
-                                PFUREG	        129         1.4
+                                PFUREG	        129         1.3
                                 RIPPLE	          4         0.1
 ---------------------------------------------------
 Report for cell slv_clk_gen
    Instance path: SP0557/CLK_gen_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      16.00         0.2
+                                  SLIC	      16.33         0.2
                                   LUT4	      27.00         0.3
                                 PFUREG	         21         0.2
 ---------------------------------------------------
@@ -3548,9 +3548,9 @@ Report for cell slv_com_top
    Instance path: SP0557/slv_com_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     818.08         7.8
-                                  LUT4	     747.50         7.8
-                                PFUREG	        866         9.1
+                                  SLIC	     824.67         7.8
+                                  LUT4	     763.50         7.9
+                                PFUREG	        865         8.9
                                 RIPPLE	        204         6.8
                                    EBR	          4        100.0
 SUB MODULES
@@ -3575,9 +3575,9 @@ Report for cell rx_com
    Instance path: SP0557/slv_com_top_inst/rx_com_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     270.33         2.6
-                                  LUT4	     264.00         2.8
-                                PFUREG	        311         3.3
+                                  SLIC	     270.58         2.6
+                                  LUT4	     264.00         2.7
+                                PFUREG	        311         3.2
                                 RIPPLE	         49         1.6
                                    EBR	          2        50.0
 SUB MODULES
@@ -3590,7 +3590,7 @@ Report for cell rx_cont_b2
    Instance path: SP0557/slv_com_top_inst/rx_com_inst/rx_cont_b2_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     114.17         1.1
+                                  SLIC	     114.25         1.1
                                   LUT4	     115.00         1.2
                                 PFUREG	        134         1.4
                                 RIPPLE	         27         0.9
@@ -3598,14 +3598,14 @@ Report for cell rx_cont_b2
 SUB MODULES
                                   cell	      count    SLC Usage(%)
                             rx_ctl_3rd	          1         0.3
-                             crc_check	          1         0.2
                           dcfifo_rx_b2	          1         0.6
+                             crc_check	          1         0.2
 ---------------------------------------------------
 Report for cell rx_ctl_3rd
    Instance path: SP0557/slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      35.00         0.3
+                                  SLIC	      35.08         0.3
                                   LUT4	      53.00         0.6
                                 PFUREG	         29         0.3
                                 RIPPLE	          5         0.2
@@ -3624,7 +3624,7 @@ Report for cell dcfifo_rx_b2
                                   cell	      count    Res Usage(%)
                                   SLIC	      58.58         0.6
                                   LUT4	      30.00         0.3
-                                PFUREG	         72         0.8
+                                PFUREG	         72         0.7
                                 RIPPLE	         22         0.7
                                    EBR	          1        25.0
 ---------------------------------------------------
@@ -3648,7 +3648,7 @@ Report for cell rx_ctl_1st
                                   cell	      count    Res Usage(%)
                                   SLIC	      32.25         0.3
                                   LUT4	      35.00         0.4
-                                PFUREG	         43         0.5
+                                PFUREG	         43         0.4
 ---------------------------------------------------
 Report for cell dcfifo_rx_b1
    Instance path: SP0557/slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst
@@ -3656,7 +3656,7 @@ Report for cell dcfifo_rx_b1
                                   cell	      count    Res Usage(%)
                                   SLIC	      58.92         0.6
                                   LUT4	      31.00         0.3
-                                PFUREG	         72         0.8
+                                PFUREG	         72         0.7
                                 RIPPLE	         22         0.7
                                    EBR	          1        25.0
 ---------------------------------------------------
@@ -3680,8 +3680,8 @@ Report for cell dec8b10b_new
                                 PFUREG	         37         0.4
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                              dec6b_5b	          1         0.3
                               dec4b_3b	          1         0.1
+                              dec6b_5b	          1         0.3
 ---------------------------------------------------
 Report for cell dec4b_3b
    Instance path: SP0557/slv_com_top_inst/rx_com_inst/dec8b10b_wrapper_inst/dec8b10b_new_inst/dec4b_3b_inst
@@ -3703,9 +3703,9 @@ Report for cell tx_com
    Instance path: SP0557/slv_com_top_inst/tx_com_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     245.42         2.3
+                                  SLIC	     245.67         2.3
                                   LUT4	     223.00         2.3
-                                PFUREG	        311         3.3
+                                PFUREG	        311         3.2
                                 RIPPLE	         49         1.6
                                    EBR	          2        50.0
 SUB MODULES
@@ -3720,7 +3720,7 @@ Report for cell tx_cont_b2
                                   cell	      count    Res Usage(%)
                                   SLIC	      72.50         0.7
                                   LUT4	      55.00         0.6
-                                PFUREG	         92         1.0
+                                PFUREG	         92         0.9
                                 RIPPLE	         22         0.7
                                    EBR	          1        25.0
 SUB MODULES
@@ -3733,7 +3733,7 @@ Report for cell tx_ctl_3rd
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	      13.58         0.1
-                                  LUT4	      24.00         0.3
+                                  LUT4	      24.00         0.2
                                 PFUREG	         20         0.2
 ---------------------------------------------------
 Report for cell dcfifo_tx_b2
@@ -3742,7 +3742,7 @@ Report for cell dcfifo_tx_b2
                                   cell	      count    Res Usage(%)
                                   SLIC	      58.92         0.6
                                   LUT4	      31.00         0.3
-                                PFUREG	         72         0.8
+                                PFUREG	         72         0.7
                                 RIPPLE	         22         0.7
                                    EBR	          1        25.0
 ---------------------------------------------------
@@ -3750,7 +3750,7 @@ Report for cell tx_cont_b1
    Instance path: SP0557/slv_com_top_inst/tx_com_inst/tx_cont_b1_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     118.25         1.1
+                                  SLIC	     118.50         1.1
                                   LUT4	     107.00         1.1
                                 PFUREG	        156         1.6
                                 RIPPLE	         27         0.9
@@ -3758,14 +3758,14 @@ Report for cell tx_cont_b1
 SUB MODULES
                                   cell	      count    SLC Usage(%)
                             tx_ctl_1st	          1         0.3
-                               crc_gen	          1         0.2
                           dcfifo_tx_b1	          1         0.6
+                               crc_gen	          1         0.2
 ---------------------------------------------------
 Report for cell tx_ctl_1st
    Instance path: SP0557/slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      28.92         0.3
+                                  SLIC	      29.00         0.3
                                   LUT4	      42.00         0.4
                                 PFUREG	         28         0.3
                                 RIPPLE	          5         0.2
@@ -3782,9 +3782,9 @@ Report for cell dcfifo_tx_b1
    Instance path: SP0557/slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      59.33         0.6
+                                  SLIC	      59.50         0.6
                                   LUT4	      31.00         0.3
-                                PFUREG	         72         0.8
+                                PFUREG	         72         0.7
                                 RIPPLE	         22         0.7
                                    EBR	          1        25.0
 ---------------------------------------------------
@@ -3794,7 +3794,7 @@ Report for cell enc8b10b_wrapper
                                   cell	      count    Res Usage(%)
                                   SLIC	      54.67         0.5
                                   LUT4	      61.00         0.6
-                                PFUREG	         63         0.7
+                                PFUREG	         63         0.6
 SUB MODULES
                                   cell	      count    SLC Usage(%)
                           enc8b10b_new	          1         0.4
@@ -3819,8 +3819,8 @@ Report for cell enc8b_10b
                                 PFUREG	         30         0.3
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                              enc5b_6b	          1         0.3
                               enc3b_4b	          1         0.0
+                              enc5b_6b	          1         0.3
 ---------------------------------------------------
 Report for cell enc3b_4b
    Instance path: SP0557/slv_com_top_inst/tx_com_inst/enc8b10b_wrapper_inst/enc8b10b_new_inst/enc8b_10b_inst/enc3b_4b_inst
@@ -3868,14 +3868,14 @@ Report for cell slv_ctrl_top
    Instance path: SP0557/slv_com_top_inst/slv_ctrl_top_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     227.58         2.2
-                                  LUT4	     211.50         2.2
-                                PFUREG	        153         1.6
+                                  SLIC	     234.00         2.2
+                                  LUT4	     227.50         2.4
+                                PFUREG	        152         1.6
                                 RIPPLE	         78         2.6
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                           slv_tx_ctrl	          1         0.4
                            slv_rx_ctrl	          1         0.9
+                           slv_tx_ctrl	          1         0.4
                               node_sel	          1         0.1
                                 nd_sel	          1         0.7
                                adr_sel	          1         0.0
@@ -3898,32 +3898,32 @@ Report for cell node_sel
    Instance path: SP0557/slv_com_top_inst/slv_ctrl_top_inst/node_sel_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      11.58         0.1
-                                  LUT4	      23.50         0.2
+                                  SLIC	      13.08         0.1
+                                  LUT4	      27.50         0.3
 ---------------------------------------------------
 Report for cell slv_rx_ctrl
    Instance path: SP0557/slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      92.75         0.9
-                                  LUT4	     104.00         1.1
-                                PFUREG	        110         1.2
+                                  SLIC	      99.58         0.9
+                                  LUT4	     117.00         1.2
+                                PFUREG	        115         1.2
                                 RIPPLE	          3         0.1
 ---------------------------------------------------
 Report for cell slv_tx_ctrl
    Instance path: SP0557/slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      45.00         0.4
-                                  LUT4	      75.50         0.8
-                                PFUREG	         35         0.4
+                                  SLIC	      43.33         0.4
+                                  LUT4	      75.00         0.8
+                                PFUREG	         29         0.3
                                 RIPPLE	          3         0.1
 ---------------------------------------------------
 Report for cell rst_cnt
    Instance path: SP0557/slv_com_top_inst/rst_cnt_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      30.17         0.3
+                                  SLIC	      29.83         0.3
                                   LUT4	       8.00         0.1
                                 PFUREG	         45         0.5
                                 RIPPLE	         25         0.8

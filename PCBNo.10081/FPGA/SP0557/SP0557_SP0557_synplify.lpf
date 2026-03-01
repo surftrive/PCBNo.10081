@@ -3,8 +3,8 @@
 #
 
 # Period Constraints 
+FREQUENCY PORT "CLK20M" 20.0 MHz;
 #FREQUENCY NET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M" 200.0 MHz;
-#FREQUENCY PORT "CLK20M" 200.0 MHz;
 #FREQUENCY NET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A" 200.0 MHz;
 #FREQUENCY NET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT" 200.0 MHz;
 #FREQUENCY NET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1" 200.0 MHz;
@@ -21,44 +21,36 @@
 # Block Path Constraints 
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A";
-#BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1" TO CLKNET "CLK20M_c";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M";
+#BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1" TO CLKNET "CLK20M_c";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A";
-#BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT" TO CLKNET "CLK20M_c";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M";
+#BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT" TO CLKNET "CLK20M_c";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT";
-#BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A" TO CLKNET "CLK20M_c";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M";
-#BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1";
-#BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT";
-#BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A";
-#BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M";
+#BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A" TO CLKNET "CLK20M_c";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M" TO CLKNET "CLK20M_c";
+#BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1";
+#BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT";
+#BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A";
+#BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A";
-#BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1" TO CLKNET "CLK20M_c";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A";
-#BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT" TO CLKNET "CLK20M_c";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT";
-#BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A" TO CLKNET "CLK20M_c";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M";
-#BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1";
-#BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT";
-#BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A";
-#BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK1";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLKCOM_OUT";
 #BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M" TO CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/CLK2A";
-#BLOCK PATH FROM CLKNET "slv_com_top_inst/clk_gen_inst2/PLL_inst/s_PLL_CLK20M" TO CLKNET "CLK20M_c";
 
 BLOCK ASYNCPATHS;
 

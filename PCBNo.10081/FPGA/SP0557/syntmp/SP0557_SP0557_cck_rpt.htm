@@ -1,5 +1,5 @@
 <html><body><samp><pre>
-<!@TC:1772295614>
+<!@TC:1772333711>
 
 Copyright (C) 1994-2023 Synopsys, Inc.
 This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
@@ -14,19 +14,20 @@ Hostname: TSURUMI
 
 Implementation : SP0557
 
-# Written on Sun Mar  1 01:20:45 2026
+# Written on Sun Mar  1 11:55:16 2026
 
 ##### DESIGN INFO #######################################################
 
 Top View:                "SP0557"
-Constraint File(s):      (none)
+Constraint File(s):      "C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\pll_gen\pll_gen.fdc"
+                         "C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557.fdc"
 
 
 
 
 ##### SUMMARY ############################################################
 
-Found 0 issues in 0 out of 0 constraints
+Found 90 issues in 26 out of 41 constraints
 
 
 ##### DETAILS ############################################################
@@ -38,17 +39,17 @@ Clock Relationships
 
 Starting                          Ending                            |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                            CLK20M_ext                        |     50.000           |     No paths         |     No paths         |     No paths                         
 System                            pll_gen|CLKOS2_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
-System                            SP0557|CLK20M                     |     5.000            |     No paths         |     No paths         |     No paths                         
 System                            pll_gen|CLKOS_inferred_clock      |     5.000            |     No paths         |     5.000            |     No paths                         
 System                            pll_gen|CLKOP_inferred_clock      |     5.000            |     No paths         |     5.000            |     No paths                         
 System                            pll_gen|CLKOS3_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
+CLK20M_ext                        System                            |     50.000           |     No paths         |     No paths         |     No paths                         
+CLK20M_ext                        CLK20M_ext                        |     50.000           |     No paths         |     No paths         |     No paths                         
+CLK20M_ext                        pll_gen|CLKOP_inferred_clock      |     Diff grp         |     No paths         |     No paths         |     No paths                         
+CLK20M_ext                        pll_gen|CLKOS3_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 pll_gen|CLKOS2_inferred_clock     pll_gen|CLKOS2_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
 pll_gen|CLKOS2_inferred_clock     pll_gen|CLKOS3_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
-SP0557|CLK20M                     System                            |     5.000            |     No paths         |     No paths         |     No paths                         
-SP0557|CLK20M                     SP0557|CLK20M                     |     5.000            |     No paths         |     No paths         |     No paths                         
-SP0557|CLK20M                     pll_gen|CLKOP_inferred_clock      |     Diff grp         |     No paths         |     No paths         |     No paths                         
-SP0557|CLK20M                     pll_gen|CLKOS3_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 pll_gen|CLKOS_inferred_clock      pll_gen|CLKOS_inferred_clock      |     5.000            |     5.000            |     No paths         |     No paths                         
 pll_gen|CLKOS_inferred_clock      pll_gen|CLKOP_inferred_clock      |     Diff grp         |     Diff grp         |     No paths         |     No paths                         
 pll_gen|CLKOP_inferred_clock      System                            |     5.000            |     No paths         |     No paths         |     No paths                         
@@ -56,8 +57,8 @@ pll_gen|CLKOP_inferred_clock      pll_gen|CLKOS_inferred_clock      |     No pat
 pll_gen|CLKOP_inferred_clock      pll_gen|CLKOP_inferred_clock      |     5.000            |     5.000            |     No paths         |     No paths                         
 pll_gen|CLKOP_inferred_clock      pll_gen|CLKOS3_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 pll_gen|CLKOS3_inferred_clock     System                            |     5.000            |     No paths         |     No paths         |     No paths                         
+pll_gen|CLKOS3_inferred_clock     CLK20M_ext                        |     Diff grp         |     No paths         |     No paths         |     No paths                         
 pll_gen|CLKOS3_inferred_clock     pll_gen|CLKOS2_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
-pll_gen|CLKOS3_inferred_clock     SP0557|CLK20M                     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 pll_gen|CLKOS3_inferred_clock     pll_gen|CLKOP_inferred_clock      |     Diff grp         |     No paths         |     No paths         |     No paths                         
 pll_gen|CLKOS3_inferred_clock     pll_gen|CLKOS3_inferred_clock     |     5.000            |     No paths         |     2.500            |     2.500                            
 ===============================================================================================================================================================================
@@ -202,8 +203,122 @@ p:UP_TXD
 <a name=InapplicableconstraintsCCK64></a>Inapplicable constraints</a>
 ************************
 
-(none)
-
+define_clock -name CLKOP_100M n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLKCOM_OUT -freq 100.000 -rise 0.000 -fall 5.000 -clockgroup pll_clks
+	@E:MT548:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":33:0:33:0|Source for clock CLKOP_100M not found in netlist.
+define_clock -name CLKOP_100M p:CLKOP -freq 100.000 -rise 0.000 -fall 5.000 -clockgroup pll_clks
+	@E:MT548:"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":25:0:25:0|Source for clock CLKOP_100M not found in netlist.
+define_clock -name CLKOS2_20M n:slv_com_top_inst.clk_gen_inst2.PLL_inst.s_PLL_CLK20M -freq 20.000 -rise 0.000 -fall 25.000 -clockgroup pll_clks
+	@E:MT548:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":45:0:45:0|Source for clock CLKOS2_20M not found in netlist.
+define_clock -name CLKOS2_20M p:CLKOS2 -freq 20.000 -rise 0.000 -fall 25.000 -clockgroup pll_clks
+	@E:MT548:"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":44:0:44:0|Source for clock CLKOS2_20M not found in netlist.
+define_clock -name CLKOS3_10M n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLK1 -freq 10.000 -rise 0.000 -fall 50.000 -clockgroup pll_clks
+	@E:MT548:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":51:0:51:0|Source for clock CLKOS3_10M not found in netlist.
+define_clock -name CLKOS3_10M p:CLKOS3 -freq 10.000 -rise 0.000 -fall 50.000 -clockgroup pll_clks
+	@E:MT548:"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":52:0:52:0|Source for clock CLKOS3_10M not found in netlist.
+define_clock -name CLKOS_100M_90 n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLK2A -freq 100.000 -rise 2.500 -fall 7.500 -clockgroup pll_clks
+	@E:MT548:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":39:0:39:0|Source for clock CLKOS_100M_90 not found in netlist.
+define_clock -name CLKOS_100M_90 p:CLKOS -freq 100.000 -rise 2.500 -fall 7.500 -clockgroup pll_clks
+	@E:MT548:"c:/fpgawork/pcbno.10081/fpga/rtl/ipcore/pll_gen/pll_gen.fdc":36:0:36:0|Source for clock CLKOS_100M_90 not found in netlist.
+define_false_path -from CLK20M_ext -to CLKOP_100M
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":70:0:70:0|Object "CLKOP_100M" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":70:0:70:0|Timing constraint (from CLK20M_ext to CLKOP_100M) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":70:0:70:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":70:0:70:0|object "CLKOP_100M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLK20M_ext -to CLKOS2_20M
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":72:0:72:0|Object "CLKOS2_20M" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":72:0:72:0|Timing constraint (from CLK20M_ext to CLKOS2_20M) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":72:0:72:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":72:0:72:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLK20M_ext -to CLKOS3_10M
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":73:0:73:0|Object "CLKOS3_10M" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":73:0:73:0|Timing constraint (from CLK20M_ext to CLKOS3_10M) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":73:0:73:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":73:0:73:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLK20M_ext -to CLKOS_100M_90
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":71:0:71:0|Object "CLKOS_100M_90" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":71:0:71:0|Timing constraint (from CLK20M_ext to CLKOS_100M_90) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":71:0:71:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":71:0:71:0|object "CLKOS_100M_90" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOP_100M -to CLK20M_ext
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":74:0:74:0|Object "CLKOP_100M" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":74:0:74:0|Timing constraint (from CLKOP_100M to CLK20M_ext) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":74:0:74:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":74:0:74:0|object "CLKOP_100M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOP_100M -to CLKOS2_20M
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":113:0:113:0|Object "CLKOP_100M" does not exist
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":113:0:113:0|Object "CLKOS2_20M" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":113:0:113:0|Timing constraint (from CLKOP_100M to CLKOS2_20M) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":113:0:113:0|object "CLKOP_100M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":113:0:113:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOS2_20M -to CLK20M_ext
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":76:0:76:0|Object "CLKOS2_20M" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":76:0:76:0|Timing constraint (from CLKOS2_20M to CLK20M_ext) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":76:0:76:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":76:0:76:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOS2_20M -to CLKOP_100M
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":112:0:112:0|Object "CLKOP_100M" does not exist
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":112:0:112:0|Object "CLKOS2_20M" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":112:0:112:0|Timing constraint (from CLKOS2_20M to CLKOP_100M) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":112:0:112:0|object "CLKOP_100M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":112:0:112:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOS2_20M -to CLKOS_100M_90
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":114:0:114:0|Object "CLKOS2_20M" does not exist
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":114:0:114:0|Object "CLKOS_100M_90" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":114:0:114:0|Timing constraint (from CLKOS2_20M to CLKOS_100M_90) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":114:0:114:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":114:0:114:0|object "CLKOS_100M_90" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOS3_10M -to CLK20M_ext
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":77:0:77:0|Object "CLKOS3_10M" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":77:0:77:0|Timing constraint (from CLKOS3_10M to CLK20M_ext) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":77:0:77:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":77:0:77:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOS_100M_90 -to CLK20M_ext
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":75:0:75:0|Object "CLKOS_100M_90" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":75:0:75:0|Timing constraint (from CLKOS_100M_90 to CLK20M_ext) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":75:0:75:0|object "CLK20M_ext" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":75:0:75:0|object "CLKOS_100M_90" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_false_path -from CLKOS_100M_90 -to CLKOS2_20M
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":115:0:115:0|Object "CLKOS2_20M" does not exist
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":115:0:115:0|Object "CLKOS_100M_90" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":115:0:115:0|Timing constraint (from CLKOS_100M_90 to CLKOS2_20M) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":115:0:115:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":115:0:115:0|object "CLKOS_100M_90" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_multicycle_path -from CLKOP_100M -to CLKOS3_10M 2
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":96:0:96:0|Object "CLKOP_100M" does not exist
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":96:0:96:0|Object "CLKOS3_10M" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":96:0:96:0|Timing constraint (from CLKOP_100M to CLKOS3_10M) (multi path 2) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":96:0:96:0|object "CLKOP_100M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":96:0:96:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_multicycle_path -from CLKOS2_20M -to CLKOS3_10M 2
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":85:0:85:0|Object "CLKOS2_20M" does not exist
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":85:0:85:0|Object "CLKOS3_10M" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":85:0:85:0|Timing constraint (from CLKOS2_20M to CLKOS3_10M) (multi path 2) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":85:0:85:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":85:0:85:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_multicycle_path -from CLKOS3_10M -to CLKOP_100M 10
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":95:0:95:0|Object "CLKOP_100M" does not exist
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":95:0:95:0|Object "CLKOS3_10M" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":95:0:95:0|Timing constraint (from CLKOS3_10M to CLKOP_100M) (multi path 10) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":95:0:95:0|object "CLKOP_100M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":95:0:95:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_multicycle_path -from CLKOS3_10M -to CLKOS2_20M 2
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":86:0:86:0|Object "CLKOS2_20M" does not exist
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":86:0:86:0|Object "CLKOS3_10M" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":86:0:86:0|Timing constraint (from CLKOS3_10M to CLKOS2_20M) (multi path 2) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":86:0:86:0|object "CLKOS2_20M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":86:0:86:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_multicycle_path -from CLKOS3_10M -to CLKOS_100M_90 10
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":103:0:103:0|Object "CLKOS3_10M" does not exist
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":103:0:103:0|Object "CLKOS_100M_90" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":103:0:103:0|Timing constraint (from CLKOS3_10M to CLKOS_100M_90) (multi path 10) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":103:0:103:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":103:0:103:0|object "CLKOS_100M_90" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+define_multicycle_path -from CLKOS_100M_90 -to CLKOS3_10M 2
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":104:0:104:0|Object "CLKOS3_10M" does not exist
+	@E:MF896:"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":104:0:104:0|Object "CLKOS_100M_90" does not exist
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":104:0:104:0|Timing constraint (from CLKOS_100M_90 to CLKOS3_10M) (multi path 2) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":104:0:104:0|object "CLKOS3_10M" is missing qualifier which may result in undesired results; "-to" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
+	@E::"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":104:0:104:0|object "CLKOS_100M_90" is missing qualifier which may result in undesired results; "-from" objects must be of type clock (c:), port (p:), inst (i:), or pin (t:)
 
 <a name=ApplicableConstraintsWithIssuesCCK65></a>Applicable constraints with issues</a>
 **********************************

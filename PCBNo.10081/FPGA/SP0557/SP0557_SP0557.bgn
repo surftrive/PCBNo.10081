@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Mar 01 01:29:22 2026
+Sun Mar 01 12:02:24 2026
 
 
 Command: bitgen -w -g CfgMode:Disable -g RamCfg:Reset -g DisableUES:FALSE -g ES:No -e -s C:/FPGAwork/PCBNo.10081/FPGA/SP0557.sec -k C:/FPGAwork/PCBNo.10081/FPGA/SP0557.bek -gui -msgset C:/FPGAwork/PCBNo.10081/FPGA/promote.xml SP0557_SP0557.ncd SP0557_SP0557.prf 

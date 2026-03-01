@@ -6,14 +6,14 @@
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-5 non-gated/non-generated clock tree(s) driving 10031 clock pin(s) of sequential element(s)
+5 non-gated/non-generated clock tree(s) driving 10287 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 ================================================================ Non-Gated/Non-Generated Clocks ================================================================
 Clock Tree ID     Driving Element                                              Drive Element Type     Fanout     Sample Instance                                
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_0       slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2     EHXPLLL                9169       slv_com_top_inst.slvadr_cnv_inst.s_HEX_OUT[7:0]
+@KP:ckid0_0       slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2     EHXPLLL                9425       slv_com_top_inst.slvadr_cnv_inst.s_HEX_OUT[7:0]
 @KP:ckid0_1       slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOP      EHXPLLL                276        slv_com_top_inst.cds_inst.data_sel[1:0]        
 @KP:ckid0_2       slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS      EHXPLLL                22         slv_com_top_inst.cds_inst.dz[2]                
 @KP:ckid0_3       slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3     EHXPLLL                552        slv_com_top_inst.slv_ctrl_top_inst.s_prpty[7:0]

@@ -1,9 +1,5 @@
 [ START MERGED ]
 s_LRSTb_i s_LRSTb
-slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/rRst slv_com_top_inst.TX_RSTb_i
-slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/invout_1 slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/Full
-slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/invout_0 slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/TXCF_RDEMPTY
-slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/rRst slv_com_top_inst.TX_RSTb_i
 U_DAC43608_top/U03/s_LATCH_1_i[8] U_DAC43608_top/U03/s_LATCH_1[8]
 U_DAC43608_top/U03/s_LATCH_1_i[7] U_DAC43608_top/U03/s_LATCH_1[7]
 U_DAC43608_top/U03/s_LATCH_1_i[6] U_DAC43608_top/U03/s_LATCH_1[6]
@@ -20,8 +16,7 @@ U_DAC43608_top/U03/s_LATCH_1_i[9] U_DAC43608_top/U03/s_LATCH_1[9]
 PORb_c_i PORb_c
 slv_com_top_inst/CN slv_com_top_inst/CLK2A
 slv_com_top_inst/CN_0 slv_com_top_inst.CLKCOM_OUT
-slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/rRst slv_com_top_inst.s_RSTb1_i
-slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/rRst slv_com_top_inst.s_RSTb1_i
+slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/rRst TX_RSTb_i_o3
 slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/invout_1 slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/Full
 slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/invout_0 slv_com_top_inst/RX_EMPTY
 slv_com_top_inst/rx_com_inst/rx_data_c_i[10] slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/rx_data_c[10]
@@ -29,6 +24,11 @@ slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/invout_1 slv_
 slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/invout_0 slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/RXCF_RDEMPTY
 slv_com_top_inst/CN_1 slv_com_top_inst.CLK1
 slv_com_top_inst/rx_com_inst/dec8b10b_wrapper_inst/reset_n_reg_i slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.reset_n_reg
+slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/rRst TX_RSTb_i_o3
+slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/rRst TX_RSTb_i
+slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/invout_1 slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/Full
+slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/invout_0 slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/TXCF_RDEMPTY
+slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/rRst TX_RSTb_i
 slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/invout_0 slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/TX_WREMPTY
 slv_com_top_inst/TX_FULL_i slv_com_top_inst/TX_FULL
 slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/invout_1 slv_com_top_inst/TX_FULL
@@ -196,7 +196,7 @@ slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/LA_cry_0_S0[0]
 slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/N_11
 slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/LA_cry_0_COUT_0[3]
 slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/LA_cry_0_S0_0[0]
-slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_23
+slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_24
 slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_0_0_S1
 slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_0_0_COUT
 slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_0_0_S1
@@ -686,35 +686,35 @@ U_DAC43608_top/U03/un1_da_send_7ch_0_I_9_0_S1
 U_DAC43608_top/U03/un1_da_send_7ch_0_I_9_0_S0
 U_DAC43608_top/U03/un1_da_send_7ch_0_I_1_0_S1
 U_DAC43608_top/U03/un1_da_send_7ch_0_I_1_0_S0
-U_DAC43608_top/U03/N_9
+U_DAC43608_top/U03/N_10
 U_DAC43608_top/U03/un1_da_send_8ch_0_I_21_0_S0
 U_DAC43608_top/U03/un1_da_send_8ch_0_I_21_0_COUT
 U_DAC43608_top/U03/un1_da_send_8ch_0_I_9_0_S1
 U_DAC43608_top/U03/un1_da_send_8ch_0_I_9_0_S0
 U_DAC43608_top/U03/un1_da_send_8ch_0_I_1_0_S1
 U_DAC43608_top/U03/un1_da_send_8ch_0_I_1_0_S0
-U_DAC43608_top/U03/N_10
+U_DAC43608_top/U03/N_11
 U_DAC43608_top/U03/un1_da_send_9ch_0_I_21_0_S0
 U_DAC43608_top/U03/un1_da_send_9ch_0_I_21_0_COUT
 U_DAC43608_top/U03/un1_da_send_9ch_0_I_9_0_S1
 U_DAC43608_top/U03/un1_da_send_9ch_0_I_9_0_S0
 U_DAC43608_top/U03/un1_da_send_9ch_0_I_1_0_S1
 U_DAC43608_top/U03/un1_da_send_9ch_0_I_1_0_S0
-U_DAC43608_top/U03/N_11
+U_DAC43608_top/U03/N_12
 U_DAC43608_top/U03/un1_da_send_10ch_0_I_21_0_S0
 U_DAC43608_top/U03/un1_da_send_10ch_0_I_21_0_COUT
 U_DAC43608_top/U03/un1_da_send_10ch_0_I_9_0_S1
 U_DAC43608_top/U03/un1_da_send_10ch_0_I_9_0_S0
 U_DAC43608_top/U03/un1_da_send_10ch_0_I_1_0_S1
 U_DAC43608_top/U03/un1_da_send_10ch_0_I_1_0_S0
-U_DAC43608_top/U03/N_12
+U_DAC43608_top/U03/N_13
 U_DAC43608_top/U03/un1_da_send_11ch_0_I_21_0_S0
 U_DAC43608_top/U03/un1_da_send_11ch_0_I_21_0_COUT
 U_DAC43608_top/U03/un1_da_send_11ch_0_I_9_0_S1
 U_DAC43608_top/U03/un1_da_send_11ch_0_I_9_0_S0
 U_DAC43608_top/U03/un1_da_send_11ch_0_I_1_0_S1
 U_DAC43608_top/U03/un1_da_send_11ch_0_I_1_0_S0
-U_DAC43608_top/U03/N_13
+U_DAC43608_top/U03/N_14
 LEDLT/s_AD8402_wait_cnt_cry_0_S0[0]
 LEDLT/N_1
 LEDLT/s_TLC5916_wait_cnt_s_0_S1[7]
@@ -788,7 +788,7 @@ ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_0_S1
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_0_COUT
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_0_S1
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_0_S0
-ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/N_6
+ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/N_5
 ENC_inst/enc_func.11.enc_top_inst/encoder_inst/encdat_cry_0_COUT_0[14]
 ENC_inst/enc_func.11.enc_top_inst/encoder_inst/encdat_lcry_0_S1_0
 ENC_inst/enc_func.11.enc_top_inst/encoder_inst/encdat_lcry_0_S0_0
@@ -846,7 +846,7 @@ ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_0
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_0
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_0
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_0
-ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/N_6
+ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/N_5
 ENC_inst/enc_func.8.enc_top_inst/encoder_inst/encdat_cry_0_COUT_1[14]
 ENC_inst/enc_func.8.enc_top_inst/encoder_inst/encdat_lcry_0_S1_1
 ENC_inst/enc_func.8.enc_top_inst/encoder_inst/encdat_lcry_0_S0_1
@@ -904,7 +904,7 @@ ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_1
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_1
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_1
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_1
-ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/N_6
+ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/N_5
 ENC_inst/enc_func.5.enc_top_inst/encoder_inst/encdat_cry_0_COUT_2[14]
 ENC_inst/enc_func.5.enc_top_inst/encoder_inst/encdat_lcry_0_S1_2
 ENC_inst/enc_func.5.enc_top_inst/encoder_inst/encdat_lcry_0_S0_2
@@ -1020,7 +1020,7 @@ ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_3
-ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/N_6
+ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/N_5
 ENC_inst/enc_func.12.enc_top_inst/encoder_inst/encdat_cry_0_COUT_4[14]
 ENC_inst/enc_func.12.enc_top_inst/encoder_inst/encdat_lcry_0_S1_4
 ENC_inst/enc_func.12.enc_top_inst/encoder_inst/encdat_lcry_0_S0_4
@@ -1078,7 +1078,7 @@ ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_4
-ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/N_5
+ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/N_6
 ENC_inst/enc_func.9.enc_top_inst/encoder_inst/encdat_cry_0_COUT_5[14]
 ENC_inst/enc_func.9.enc_top_inst/encoder_inst/encdat_lcry_0_S1_5
 ENC_inst/enc_func.9.enc_top_inst/encoder_inst/encdat_lcry_0_S0_5
@@ -1136,7 +1136,7 @@ ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_5
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_5
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_5
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_5
-ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/N_6
+ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/N_5
 ENC_inst/enc_func.6.enc_top_inst/encoder_inst/encdat_cry_0_COUT_6[14]
 ENC_inst/enc_func.6.enc_top_inst/encoder_inst/encdat_lcry_0_S1_6
 ENC_inst/enc_func.6.enc_top_inst/encoder_inst/encdat_lcry_0_S0_6
@@ -1194,7 +1194,7 @@ ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_6
-ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/N_6
+ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/N_5
 ENC_inst/enc_func.3.enc_top_inst/encoder_inst/encdat_cry_0_COUT_7[14]
 ENC_inst/enc_func.3.enc_top_inst/encoder_inst/encdat_lcry_0_S1_7
 ENC_inst/enc_func.3.enc_top_inst/encoder_inst/encdat_lcry_0_S0_7
@@ -1310,7 +1310,7 @@ ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_8
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_8
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_8
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_8
-ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/N_6
+ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/N_5
 ENC_inst/enc_func.10.enc_top_inst/encoder_inst/encdat_cry_0_COUT_9[14]
 ENC_inst/enc_func.10.enc_top_inst/encoder_inst/encdat_lcry_0_S1_9
 ENC_inst/enc_func.10.enc_top_inst/encoder_inst/encdat_lcry_0_S0_9
@@ -4153,7 +4153,7 @@ stm13/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_1
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Sun Mar 01 01:24:08 2026
+# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Sun Mar 01 11:57:29 2026
 
 SYSCONFIG SLAVE_SPI_PORT=DISABLE MASTER_SPI_PORT=DISABLE SLAVE_PARALLEL_PORT=DISABLE BACKGROUND_RECONFIG=OFF DONE_EX=OFF DONE_OD=ON DONE_PULL=ON MCCLK_FREQ=2.4 TRANSFR=OFF CONFIG_IOVOLTAGE=2.5 CONFIG_SECURE=OFF WAKE_UP=21 COMPRESS_CONFIG=OFF CONFIG_MODE=JTAG INBUF=OFF ;
 LOCATE COMP "STMVREF_SCL" SITE "L14" ;
@@ -4285,6 +4285,7 @@ LOCATE COMP "SLVADR[0]" SITE "N3" ;
 LOCATE COMP "PORb" SITE "L16" ;
 FREQUENCY NET "slv_com_top_inst.CLKCOM_OUT" 100.000000 MHz ;
 FREQUENCY NET "slv_com_top_inst/CLK2A" 100.000000 MHz ;
+FREQUENCY PORT "CLK20M" 20.000000 MHz ;
 FREQUENCY NET "s_PLL_CLK20M" 20.000000 MHz ;
 FREQUENCY NET "slv_com_top_inst.CLK1" 10.000000 MHz ;
 FREQUENCY NET "UP_CLK_c" 20.000000 MHz ;
