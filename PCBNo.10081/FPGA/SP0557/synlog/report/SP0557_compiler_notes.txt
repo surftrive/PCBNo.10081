@@ -1,268 +1,268 @@
 @N|Running in 64-bit mode
 @N|Running in 64-bit mode
-@N:"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557.vhd":19:7:19:12|Top entity is set to SP0557.
+@N:"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557.vhd":19:7:19:12|Top entity is set to SP0557.
 @N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\lscc\diamond\3.14\cae_library\synthesis\vhdl\ecp5u.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\com\fc_dec.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\com\fc_sel.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\com\w_pack.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_clk_gen.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adc_reg.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adclk_gen.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\shiftreg12bit.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_acc_tim_gen.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_dec.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_id.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_phgen.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_timer_cnt.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_registers.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_lmt.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_id.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_ip_reg.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_op_reg.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\pls_sens\pls_sens.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slaveid_top\slaveid_id.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\crc_check.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec4b_3b.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\adr_sel.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\nd_sel.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\node_sel.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\crc_gen.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc5b_6b.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_ctl_1st.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_ctl_3rd.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\cds.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rst_cnt.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slvadr_cnv.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SPI_master2.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\pll_gen\pll_gen.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\ad_ctrl.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_plsgen.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_reg_S118M.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_top_S118M.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_wb_top.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC43608_top.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_top.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_func_top.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_reg.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_top.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec8b10b_new.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec8b10b_wrapper.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_cont_b1.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_cont_b2.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b_10b.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b10b_new.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b10b_wrapper.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_cont_b1.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_cont_b2.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\CLK_gen_S124M.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl_top.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SIO_ctrl2.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\sp_conv.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\IPcore.vhd'.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slaveid_top\slaveid_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\com\fc_dec.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\com\fc_sel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\com\w_pack.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_clk_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adc_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adclk_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\shiftreg12bit.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_acc_tim_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_dec.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_id.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_phgen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_timer_cnt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_registers.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_lmt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_id.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_ip_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_op_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\pls_sens\pls_sens.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slaveid_top\slaveid_id.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\crc_check.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec4b_3b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\adr_sel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\nd_sel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\node_sel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\crc_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc5b_6b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_ctl_1st.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_ctl_3rd.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\cds.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rst_cnt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slvadr_cnv.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SPI_master2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\pll_gen\pll_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\ad_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_plsgen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_reg_S118M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_top_S118M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_wb_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC43608_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_func_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec8b10b_new.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec8b10b_wrapper.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_cont_b1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_cont_b2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b_10b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b10b_new.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b10b_wrapper.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_cont_b1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_cont_b2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\CLK_gen_S124M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SIO_ctrl2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\sp_conv.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\IPcore.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slaveid_top\slaveid_top.vhd'.
 @N: CD231 :"C:\lscc\diamond\3.14\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557.vhd":19:7:19:12|Synthesizing work.sp0557.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_top.vhd":20:7:20:14|Synthesizing work.gpio_top.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_reg.vhd":20:7:20:14|Synthesizing work.gpio_reg.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_ip_reg.vhd":20:7:20:17|Synthesizing work.gpio_ip_reg.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_op_reg.vhd":20:7:20:17|Synthesizing work.gpio_op_reg.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_id.vhd":20:7:20:13|Synthesizing work.gpio_id.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\com\fc_sel.vhd":20:7:20:12|Synthesizing work.fc_sel.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\com\fc_dec.vhd":20:7:20:12|Synthesizing work.fc_dec.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_top_S118M.vhd":48:7:48:20|Synthesizing work.ppmc_top_s118m.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_reg_S118M.vhd":53:7:53:20|Synthesizing work.ppmc_reg_s118m.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":25:7:25:17|Synthesizing work.ppmc_cmdchk.rtl.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":152:16:152:25|Removing redundant assignment.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":36:7:36:15|Synthesizing work.ppmc_ctrl.rtl.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":172:16:172:22|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":222:20:222:27|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":351:24:351:32|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":358:20:358:24|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":392:20:392:24|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":411:20:411:24|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":425:24:425:28|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":428:24:428:31|Removing redundant assignment.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd":49:7:49:22|Synthesizing work.ppmc_enblr_s118m.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":34:7:34:16|Synthesizing work.ppmc_rgstr.rtl.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":345:16:345:34|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":431:16:431:22|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":456:16:456:22|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":483:16:483:20|Removing redundant assignment.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_dec.vhd":34:7:34:14|Synthesizing work.ppmc_dec.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_plsgen.vhd":19:7:19:17|Synthesizing work.ppmc_plsgen.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":26:7:26:18|Synthesizing work.ppmc_pls_cnt.rtl.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":74:10:74:15|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":76:10:76:12|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":77:10:77:15|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":97:20:97:28|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":100:16:100:24|Removing redundant assignment.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_timer_cnt.vhd":20:7:20:20|Synthesizing work.ppmc_timer_cnt.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd":25:7:25:20|Synthesizing work.ppmc_speed_cnt.rtl.
-@N: CD231 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd":47:31:47:32|Using onehot encoding for type visual_stop_st_states. For example, enumeration stop_st is mapped to "10000".
-@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd":125:16:125:29|OTHERS clause is not synthesized.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_acc_tim_gen.vhd":20:7:20:22|Synthesizing work.ppmc_acc_tim_gen.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd":27:7:27:21|Synthesizing work.ppmc_u_step_ext.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_id.vhd":19:7:19:13|Synthesizing work.ppmc_id.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\pls_sens\pls_sens.vhd":21:7:21:14|Synthesizing work.pls_sens.rtl.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\pls_sens\pls_sens.vhd":80:4:80:12|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\pls_sens\pls_sens.vhd":96:6:96:14|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\pls_sens\pls_sens.vhd":100:4:100:12|Removing redundant assignment.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_func_top.vhd":24:7:24:18|Synthesizing work.enc_func_top.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_top.vhd":24:7:24:13|Synthesizing work.enc_top.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_lmt.vhd":25:8:25:14|Synthesizing work.enc_lmt.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd":26:8:26:19|Synthesizing work.encoder_2bit.rtl.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd":77:4:77:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd":80:4:80:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd":82:4:82:13|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd":111:4:111:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd":114:4:114:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd":116:4:116:13|Removing redundant assignment.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":16:7:16:15|Synthesizing work.ledlt_top.rtl.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":127:6:127:23|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":147:4:147:18|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":177:6:177:22|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":197:4:197:17|Removing redundant assignment.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd":26:7:26:17|Synthesizing work.ad8402_ctrl.rtl.
-@N: CD233 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd":62:13:62:14|Using sequential encoding for type ty_sta.
-@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd":208:4:208:17|OTHERS clause is not synthesized.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd":28:7:28:12|Synthesizing work.ad8402.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":16:7:16:18|Synthesizing work.tlc5916_ctrl.rtl.
-@N: CD233 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":40:15:40:16|Using sequential encoding for type ty_state.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":95:7:95:11|Removing redundant assignment.
-@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":110:5:110:18|OTHERS clause is not synthesized.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\ad_ctrl.vhd":19:7:19:13|Synthesizing work.ad_ctrl.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adc_reg.vhd":26:7:26:13|Synthesizing work.adc_reg.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\shiftreg12bit.vhd":18:7:18:19|Synthesizing work.shiftreg12bit.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":19:7:19:14|Synthesizing work.adif_seq.rtl.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":79:6:79:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":86:6:86:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":93:6:93:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":100:6:100:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":107:6:107:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":114:6:114:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":121:6:121:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":128:6:128:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":135:6:135:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":142:6:142:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":149:6:149:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":156:6:156:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":163:6:163:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":170:6:170:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":177:6:177:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":184:6:184:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":191:6:191:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":198:6:198:9|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":205:6:205:9|Removing redundant assignment.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adclk_gen.vhd":19:7:19:15|Synthesizing work.adclk_gen.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC43608_top.vhd":23:7:23:18|Synthesizing work.dac43608_top.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":21:7:21:15|Synthesizing work.ctrl_32ch.rtl.
-@N: CD233 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":75:11:75:12|Using sequential encoding for type state.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":180:4:180:20|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":186:4:186:20|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":192:4:192:20|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":198:4:198:20|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":204:4:204:20|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":210:4:210:20|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":216:4:216:20|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":222:4:222:20|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":228:4:228:20|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":234:4:234:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":240:4:240:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":246:4:246:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":252:4:252:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":258:4:258:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":264:4:264:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":270:4:270:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":276:4:276:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":282:4:282:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":288:4:288:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":294:4:294:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":300:4:300:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":306:4:306:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":312:4:312:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":318:4:318:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":324:4:324:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":330:4:330:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":336:4:336:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":342:4:342:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":348:4:348:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":354:4:354:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":360:4:360:21|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":366:4:366:21|Removing redundant assignment.
-@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":542:5:542:19|OTHERS clause is not synthesized.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":807:6:807:15|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":808:6:808:11|Removing redundant assignment.
-@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":820:4:820:18|OTHERS clause is not synthesized.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":19:7:19:18|Synthesizing work.dac_ctrl_1ch.rtl.
-@N: CD232 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":51:11:51:12|Using gray code encoding for type state.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":133:6:133:10|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":150:5:150:14|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":151:5:151:14|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":152:5:152:13|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":157:5:157:14|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":158:5:158:14|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":165:6:165:14|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":166:6:166:15|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":178:5:178:14|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":179:5:179:14|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":180:5:180:13|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":186:5:186:14|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":187:5:187:14|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":194:6:194:14|Removing redundant assignment.
-@N: CD364 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":195:6:195:15|Removing redundant assignment.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_wb_top.vhd":81:7:81:23|Synthesizing work.i2c_master_wb_top.arch.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_registers.vhd":81:7:81:26|Synthesizing work.i2c_master_registers.arch.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd":122:7:122:25|Synthesizing work.i2c_master_bit_ctrl.arch.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd":80:7:80:26|Synthesizing work.i2c_master_byte_ctrl.arch.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd":16:7:16:16|Synthesizing work.efuse_ctrl.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\sp_conv.vhd":24:7:24:13|Synthesizing work.sp_conv.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SIO_ctrl2.vhd":35:7:35:15|Synthesizing work.sio_ctrl2.rtl.
-@N: CD233 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SIO_ctrl2.vhd":120:16:120:17|Using sequential encoding for type ty_state.
-@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SIO_ctrl2.vhd":188:3:188:16|OTHERS clause is not synthesized.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SPI_master2.vhd":35:7:35:17|Synthesizing work.spi_master2.rtl.
-@N: CD231 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SPI_master2.vhd":65:13:65:14|Using onehot encoding for type ty_sta. For example, enumeration st_idle is mapped to "10000".
-@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SPI_master2.vhd":344:5:344:18|OTHERS clause is not synthesized.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_clk_gen.vhd":19:7:19:17|Synthesizing work.slv_clk_gen.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd":30:7:30:17|Synthesizing work.slv_com_top.rtl.
-@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd":315:4:315:17|OTHERS clause is not synthesized.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\cds.vhd":25:7:25:9|Synthesizing work.cds.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com.vhd":24:7:24:12|Synthesizing work.rx_com.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_cont_b2.vhd":20:7:20:16|Synthesizing work.rx_cont_b2.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd":19:7:19:16|Synthesizing work.rx_ctl_3rd.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\crc_check.vhd":19:7:19:15|Synthesizing work.crc_check.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd":12:7:12:18|Synthesizing work.dcfifo_rx_b2.structure.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557.vhd":19:7:19:12|Synthesizing work.sp0557.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_top.vhd":20:7:20:14|Synthesizing work.gpio_top.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_reg.vhd":20:7:20:14|Synthesizing work.gpio_reg.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_ip_reg.vhd":20:7:20:17|Synthesizing work.gpio_ip_reg.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_op_reg.vhd":20:7:20:17|Synthesizing work.gpio_op_reg.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\gpio\gpio_id.vhd":20:7:20:13|Synthesizing work.gpio_id.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\com\fc_sel.vhd":20:7:20:12|Synthesizing work.fc_sel.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\com\fc_dec.vhd":20:7:20:12|Synthesizing work.fc_dec.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_top_S118M.vhd":48:7:48:20|Synthesizing work.ppmc_top_s118m.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_reg_S118M.vhd":53:7:53:20|Synthesizing work.ppmc_reg_s118m.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":25:7:25:17|Synthesizing work.ppmc_cmdchk.rtl.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":152:16:152:25|Removing redundant assignment.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":36:7:36:15|Synthesizing work.ppmc_ctrl.rtl.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":176:16:176:22|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":226:20:226:27|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":355:24:355:32|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":362:20:362:24|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":396:20:396:24|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":415:20:415:24|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":429:24:429:28|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":432:24:432:31|Removing redundant assignment.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd":49:7:49:22|Synthesizing work.ppmc_enblr_s118m.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":34:7:34:16|Synthesizing work.ppmc_rgstr.rtl.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":346:16:346:34|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":432:16:432:22|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":457:16:457:22|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":484:16:484:20|Removing redundant assignment.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_dec.vhd":34:7:34:14|Synthesizing work.ppmc_dec.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_plsgen.vhd":19:7:19:17|Synthesizing work.ppmc_plsgen.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":26:7:26:18|Synthesizing work.ppmc_pls_cnt.rtl.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":74:10:74:15|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":76:10:76:12|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":77:10:77:15|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":97:20:97:28|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_pls_cnt.vhd":100:16:100:24|Removing redundant assignment.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_timer_cnt.vhd":20:7:20:20|Synthesizing work.ppmc_timer_cnt.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd":25:7:25:20|Synthesizing work.ppmc_speed_cnt.rtl.
+@N: CD231 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd":47:31:47:32|Using onehot encoding for type visual_stop_st_states. For example, enumeration stop_st is mapped to "10000".
+@N: CD604 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd":125:16:125:29|OTHERS clause is not synthesized.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_acc_tim_gen.vhd":20:7:20:22|Synthesizing work.ppmc_acc_tim_gen.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_u_step_ext.vhd":27:7:27:21|Synthesizing work.ppmc_u_step_ext.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_id.vhd":19:7:19:13|Synthesizing work.ppmc_id.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\pls_sens\pls_sens.vhd":21:7:21:14|Synthesizing work.pls_sens.rtl.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\pls_sens\pls_sens.vhd":80:4:80:12|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\pls_sens\pls_sens.vhd":96:6:96:14|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\pls_sens\pls_sens.vhd":100:4:100:12|Removing redundant assignment.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_func_top.vhd":24:7:24:18|Synthesizing work.enc_func_top.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_top.vhd":24:7:24:13|Synthesizing work.enc_top.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\enc_lmt.vhd":25:8:25:14|Synthesizing work.enc_lmt.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd":26:8:26:19|Synthesizing work.encoder_2bit.rtl.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd":77:4:77:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd":80:4:80:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd":82:4:82:13|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd":111:4:111:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd":114:4:114:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\encoder\encoder_2bit.vhd":116:4:116:13|Removing redundant assignment.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":16:7:16:15|Synthesizing work.ledlt_top.rtl.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":129:6:129:23|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":149:4:149:18|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":179:6:179:22|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\LEDLT_TOP.vhd":199:4:199:17|Removing redundant assignment.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd":26:7:26:17|Synthesizing work.ad8402_ctrl.rtl.
+@N: CD233 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd":62:13:62:14|Using sequential encoding for type ty_sta.
+@N: CD604 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd":208:4:208:17|OTHERS clause is not synthesized.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd":28:7:28:12|Synthesizing work.ad8402.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":16:7:16:18|Synthesizing work.tlc5916_ctrl.rtl.
+@N: CD233 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":40:15:40:16|Using sequential encoding for type ty_state.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":95:7:95:11|Removing redundant assignment.
+@N: CD604 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":110:5:110:18|OTHERS clause is not synthesized.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\ad_ctrl.vhd":19:7:19:13|Synthesizing work.ad_ctrl.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adc_reg.vhd":26:7:26:13|Synthesizing work.adc_reg.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\shiftreg12bit.vhd":18:7:18:19|Synthesizing work.shiftreg12bit.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":19:7:19:14|Synthesizing work.adif_seq.rtl.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":79:6:79:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":86:6:86:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":93:6:93:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":100:6:100:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":107:6:107:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":114:6:114:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":121:6:121:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":128:6:128:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":135:6:135:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":142:6:142:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":149:6:149:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":156:6:156:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":163:6:163:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":170:6:170:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":177:6:177:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":184:6:184:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":191:6:191:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":198:6:198:9|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adif_seq.vhd":205:6:205:9|Removing redundant assignment.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\ad_ctrl\adclk_gen.vhd":19:7:19:15|Synthesizing work.adclk_gen.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC43608_top.vhd":23:7:23:18|Synthesizing work.dac43608_top.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":21:7:21:15|Synthesizing work.ctrl_32ch.rtl.
+@N: CD233 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":75:11:75:12|Using sequential encoding for type state.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":180:4:180:20|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":186:4:186:20|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":192:4:192:20|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":198:4:198:20|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":204:4:204:20|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":210:4:210:20|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":216:4:216:20|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":222:4:222:20|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":228:4:228:20|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":234:4:234:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":240:4:240:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":246:4:246:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":252:4:252:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":258:4:258:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":264:4:264:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":270:4:270:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":276:4:276:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":282:4:282:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":288:4:288:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":294:4:294:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":300:4:300:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":306:4:306:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":312:4:312:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":318:4:318:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":324:4:324:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":330:4:330:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":336:4:336:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":342:4:342:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":348:4:348:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":354:4:354:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":360:4:360:21|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":366:4:366:21|Removing redundant assignment.
+@N: CD604 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":542:5:542:19|OTHERS clause is not synthesized.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":807:6:807:15|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":808:6:808:11|Removing redundant assignment.
+@N: CD604 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":820:4:820:18|OTHERS clause is not synthesized.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":19:7:19:18|Synthesizing work.dac_ctrl_1ch.rtl.
+@N: CD232 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":51:11:51:12|Using gray code encoding for type state.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":138:6:138:10|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":155:5:155:14|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":156:5:156:14|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":157:5:157:13|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":162:5:162:14|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":163:5:163:14|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":170:6:170:14|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":171:6:171:15|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":183:5:183:14|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":184:5:184:14|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":185:5:185:13|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":191:5:191:14|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":192:5:192:14|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":199:6:199:14|Removing redundant assignment.
+@N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":200:6:200:15|Removing redundant assignment.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_wb_top.vhd":81:7:81:23|Synthesizing work.i2c_master_wb_top.arch.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_registers.vhd":81:7:81:26|Synthesizing work.i2c_master_registers.arch.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd":122:7:122:25|Synthesizing work.i2c_master_bit_ctrl.arch.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd":80:7:80:26|Synthesizing work.i2c_master_byte_ctrl.arch.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\EFUSE_CTRL\EFUSE_CTRL.vhd":16:7:16:16|Synthesizing work.efuse_ctrl.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\sp_conv.vhd":24:7:24:13|Synthesizing work.sp_conv.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SIO_ctrl2.vhd":35:7:35:15|Synthesizing work.sio_ctrl2.rtl.
+@N: CD233 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SIO_ctrl2.vhd":120:16:120:17|Using sequential encoding for type ty_state.
+@N: CD604 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SIO_ctrl2.vhd":188:3:188:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SPI_master2.vhd":35:7:35:17|Synthesizing work.spi_master2.rtl.
+@N: CD231 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SPI_master2.vhd":65:13:65:14|Using onehot encoding for type ty_sta. For example, enumeration st_idle is mapped to "10000".
+@N: CD604 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SPI_master2.vhd":344:5:344:18|OTHERS clause is not synthesized.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_clk_gen.vhd":19:7:19:17|Synthesizing work.slv_clk_gen.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd":30:7:30:17|Synthesizing work.slv_com_top.rtl.
+@N: CD604 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd":315:4:315:17|OTHERS clause is not synthesized.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\cds.vhd":25:7:25:9|Synthesizing work.cds.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com.vhd":24:7:24:12|Synthesizing work.rx_com.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_cont_b2.vhd":20:7:20:16|Synthesizing work.rx_cont_b2.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd":19:7:19:16|Synthesizing work.rx_ctl_3rd.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\crc_check.vhd":19:7:19:15|Synthesizing work.crc_check.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd":12:7:12:18|Synthesizing work.dcfifo_rx_b2.structure.
 @N: CD630 :"C:\lscc\diamond\3.14\cae_library\synthesis\vhdl\ecp5u.vhd":768:10:768:17|Synthesizing work.rom16x1a.syn_black_box.
 @N: CD630 :"C:\lscc\diamond\3.14\cae_library\synthesis\vhdl\ecp5u.vhd":1128:10:1128:15|Synthesizing work.dp16kd.syn_black_box.
 @N: CD630 :"C:\lscc\diamond\3.14\cae_library\synthesis\vhdl\ecp5u.vhd":118:10:118:16|Synthesizing work.fd1p3bx.syn_black_box.
@@ -276,69 +276,69 @@
 @N: CD630 :"C:\lscc\diamond\3.14\cae_library\synthesis\vhdl\ecp5u.vhd":716:10:716:12|Synthesizing work.or2.syn_black_box.
 @N: CD630 :"C:\lscc\diamond\3.14\cae_library\synthesis\vhdl\ecp5u.vhd":362:10:362:12|Synthesizing work.inv.syn_black_box.
 @N: CD630 :"C:\lscc\diamond\3.14\cae_library\synthesis\vhdl\ecp5u.vhd":54:10:54:13|Synthesizing work.and2.syn_black_box.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_cont_b1.vhd":21:7:21:16|Synthesizing work.rx_cont_b1.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd":20:7:20:16|Synthesizing work.rx_ctl_1st.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd":12:7:12:18|Synthesizing work.dcfifo_rx_b1.structure.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec8b10b_wrapper.vhd":5:7:5:22|Synthesizing work.dec8b10b_wrapper.wrapper.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec8b10b_new.vhd":15:7:15:18|Synthesizing work.dec8b10b_new.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec4b_3b.vhd":15:7:15:14|Synthesizing work.dec4b_3b.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd":15:7:15:14|Synthesizing work.dec6b_5b.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com.vhd":25:7:25:12|Synthesizing work.tx_com.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_cont_b2.vhd":20:7:20:16|Synthesizing work.tx_cont_b2.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_ctl_3rd.vhd":20:7:20:16|Synthesizing work.tx_ctl_3rd.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd":12:7:12:18|Synthesizing work.dcfifo_tx_b2.structure.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_cont_b1.vhd":20:7:20:16|Synthesizing work.tx_cont_b1.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_ctl_1st.vhd":20:7:20:16|Synthesizing work.tx_ctl_1st.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\crc_gen.vhd":20:7:20:13|Synthesizing work.crc_gen.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd":12:7:12:18|Synthesizing work.dcfifo_tx_b1.structure.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b10b_wrapper.vhd":5:7:5:22|Synthesizing work.enc8b10b_wrapper.wrapper.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b10b_new.vhd":15:7:15:18|Synthesizing work.enc8b10b_new.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b_10b.vhd":15:7:15:15|Synthesizing work.enc8b_10b.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd":15:7:15:14|Synthesizing work.enc3b_4b.rtl.
-@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd":99:20:99:33|OTHERS clause is not synthesized.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc5b_6b.vhd":15:7:15:14|Synthesizing work.enc5b_6b.rtl.
-@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc5b_6b.vhd":226:20:226:33|OTHERS clause is not synthesized.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\CLK_gen_S124M.vhd":17:7:17:19|Synthesizing work.clk_gen_s124m.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\IPcore\pll_gen\pll_gen.vhd":12:7:12:13|Synthesizing work.pll_gen.structure.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_cont_b1.vhd":21:7:21:16|Synthesizing work.rx_cont_b1.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd":20:7:20:16|Synthesizing work.rx_ctl_1st.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd":12:7:12:18|Synthesizing work.dcfifo_rx_b1.structure.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec8b10b_wrapper.vhd":5:7:5:22|Synthesizing work.dec8b10b_wrapper.wrapper.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec8b10b_new.vhd":15:7:15:18|Synthesizing work.dec8b10b_new.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec4b_3b.vhd":15:7:15:14|Synthesizing work.dec4b_3b.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec6b_5b.vhd":15:7:15:14|Synthesizing work.dec6b_5b.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com.vhd":25:7:25:12|Synthesizing work.tx_com.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_cont_b2.vhd":20:7:20:16|Synthesizing work.tx_cont_b2.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_ctl_3rd.vhd":20:7:20:16|Synthesizing work.tx_ctl_3rd.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd":12:7:12:18|Synthesizing work.dcfifo_tx_b2.structure.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_cont_b1.vhd":20:7:20:16|Synthesizing work.tx_cont_b1.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\tx_ctl_1st.vhd":20:7:20:16|Synthesizing work.tx_ctl_1st.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\crc_gen.vhd":20:7:20:13|Synthesizing work.crc_gen.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd":12:7:12:18|Synthesizing work.dcfifo_tx_b1.structure.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b10b_wrapper.vhd":5:7:5:22|Synthesizing work.enc8b10b_wrapper.wrapper.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b10b_new.vhd":15:7:15:18|Synthesizing work.enc8b10b_new.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc8b_10b.vhd":15:7:15:15|Synthesizing work.enc8b_10b.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd":15:7:15:14|Synthesizing work.enc3b_4b.rtl.
+@N: CD604 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc3b_4b.vhd":99:20:99:33|OTHERS clause is not synthesized.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc5b_6b.vhd":15:7:15:14|Synthesizing work.enc5b_6b.rtl.
+@N: CD604 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\tx_com\enc5b_6b.vhd":226:20:226:33|OTHERS clause is not synthesized.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\CLK_gen_S124M.vhd":17:7:17:19|Synthesizing work.clk_gen_s124m.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\pll_gen\pll_gen.vhd":12:7:12:13|Synthesizing work.pll_gen.structure.
 @N: CD630 :"C:\lscc\diamond\3.14\cae_library\synthesis\vhdl\ecp5u.vhd":2081:10:2081:16|Synthesizing work.ehxplll.syn_black_box.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slvadr_cnv.vhd":19:7:19:16|Synthesizing work.slvadr_cnv.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl_top.vhd":20:7:20:18|Synthesizing work.slv_ctrl_top.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\nd_sel.vhd":20:7:20:12|Synthesizing work.nd_sel.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\adr_sel.vhd":20:7:20:13|Synthesizing work.adr_sel.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\node_sel.vhd":20:7:20:14|Synthesizing work.node_sel.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":26:7:26:17|Synthesizing work.slv_rx_ctrl.rtl.
-@N: CD604 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":438:3:438:16|OTHERS clause is not synthesized.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":25:7:25:17|Synthesizing work.slv_tx_ctrl.rtl.
-@N: CD630 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rst_cnt.vhd":20:7:20:13|Synthesizing work.rst_cnt.rtl.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Trying to extract state machine for register STATE.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":114:2:114:3|Trying to extract state machine for register STATE.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd":132:2:132:3|Trying to extract state machine for register state_count.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd":25:2:25:9|Input RX_EMPTY is unused.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com.vhd":28:8:28:12|Input CLK2A is unused.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd":286:2:286:3|Trying to extract state machine for register ck_state.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd":41:2:41:9|Input LVCLK_Ip is unused.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SPI_master2.vhd":289:2:289:3|Trying to extract state machine for register s_sta.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SIO_ctrl2.vhd":156:2:156:3|Trying to extract state machine for register s_state.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd":177:1:177:2|Trying to extract state machine for register c_state.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd":85:8:85:14|Input clk_cnt is unused.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd":357:1:357:2|Trying to extract state machine for register c_state.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":103:2:103:3|Trying to extract state machine for register st.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":42:2:42:10|Input WB_INTA_O is unused.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":551:2:551:3|Trying to extract state machine for register s_state.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":68:2:68:3|Trying to extract state machine for register s_state.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd":78:2:78:3|Trying to extract state machine for register st.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd":172:2:172:3|Trying to extract state machine for register s_sta.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd":57:8:57:9|Trying to extract state machine for register visual_STOP_ST_current.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd":53:8:53:11|Input KCLK is unused.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd":56:2:56:10|Input DOWNDELAY is unused.
-@N: CL201 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":288:8:288:9|Trying to extract state machine for register STATE.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":42:8:42:16|Input PULSE_REG is unused.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":29:8:29:14|Input UP_DOWN is unused.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":30:8:30:14|Input ACC_ENB is unused.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":34:8:34:15|Input LOW_FREQ is unused.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":35:8:35:16|Input HIGH_FREQ is unused.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":36:8:36:16|Input PULSE_REG is unused.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":39:8:39:12|Input SPEED is unused.
-@N: CL159 :"C:\FPGA work\PCBNo.10081\FPGA\RTL\SP0557.vhd":53:2:53:11|Input LEDSH_MISO is unused.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slvadr_cnv.vhd":19:7:19:16|Synthesizing work.slvadr_cnv.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl_top.vhd":20:7:20:18|Synthesizing work.slv_ctrl_top.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\nd_sel.vhd":20:7:20:12|Synthesizing work.nd_sel.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\adr_sel.vhd":20:7:20:13|Synthesizing work.adr_sel.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\node_sel.vhd":20:7:20:14|Synthesizing work.node_sel.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":26:7:26:17|Synthesizing work.slv_rx_ctrl.rtl.
+@N: CD604 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":439:3:439:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":25:7:25:17|Synthesizing work.slv_tx_ctrl.rtl.
+@N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rst_cnt.vhd":20:7:20:13|Synthesizing work.rst_cnt.rtl.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Trying to extract state machine for register STATE.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":115:2:115:3|Trying to extract state machine for register STATE.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd":132:2:132:3|Trying to extract state machine for register state_count.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd":25:2:25:9|Input RX_EMPTY is unused.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com.vhd":28:8:28:12|Input CLK2A is unused.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd":286:2:286:3|Trying to extract state machine for register ck_state.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd":41:2:41:9|Input LVCLK_Ip is unused.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SPI_master2.vhd":289:2:289:3|Trying to extract state machine for register s_sta.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SIO_ctrl2.vhd":156:2:156:3|Trying to extract state machine for register s_state.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd":177:1:177:2|Trying to extract state machine for register c_state.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_byte_ctrl.vhd":85:8:85:14|Input clk_cnt is unused.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\i2c_master_bit_ctrl.vhd":357:1:357:2|Trying to extract state machine for register c_state.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":108:2:108:3|Trying to extract state machine for register st.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\DAC_CTRL_1CH.vhd":42:2:42:10|Input WB_INTA_O is unused.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\DAC43608\CTRL_32CH.vhd":551:2:551:3|Trying to extract state machine for register s_state.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":68:2:68:3|Trying to extract state machine for register s_state.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd":78:2:78:3|Trying to extract state machine for register st.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd":172:2:172:3|Trying to extract state machine for register s_sta.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_speed_cnt.vhd":57:8:57:9|Trying to extract state machine for register visual_STOP_ST_current.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd":53:8:53:11|Input KCLK is unused.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_enblr_S118M.vhd":56:2:56:10|Input DOWNDELAY is unused.
+@N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":292:8:292:9|Trying to extract state machine for register STATE.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":42:8:42:16|Input PULSE_REG is unused.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":29:8:29:14|Input UP_DOWN is unused.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":30:8:30:14|Input ACC_ENB is unused.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":34:8:34:15|Input LOW_FREQ is unused.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":35:8:35:16|Input HIGH_FREQ is unused.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":36:8:36:16|Input PULSE_REG is unused.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":39:8:39:12|Input SPEED is unused.
+@N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557.vhd":53:2:53:11|Input LEDSH_MISO is unused.
 @N|Running in 64-bit mode
 

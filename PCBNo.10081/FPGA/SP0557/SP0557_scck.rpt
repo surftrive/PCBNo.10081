@@ -12,10 +12,11 @@ Hostname: TSURUMI
 
 Implementation : SP0557
 
-# Written on Sat Feb 28 01:53:24 2026
+# Written on Sun Mar  1 22:03:39 2026
 
 ##### FILES SYNTAX CHECKED ##############################################
-Constraint File(s):      (none)
+Constraint File(s):      "C:\FPGAwork\PCBNo.10081\FPGA\RTL\IPcore\pll_gen\pll_gen.fdc"
+                         "C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557.fdc"
 
 #Run constraint checker to find more issues with constraints.
 #########################################################################
@@ -29,21 +30,19 @@ No issues found in constraint syntax.
 Clock Summary
 *************
 
-          Start                             Requested     Requested     Clock        Clock               Clock
-Level     Clock                             Frequency     Period        Type         Group               Load 
---------------------------------------------------------------------------------------------------------------
-0 -       System                            100.0 MHz     10.000        system       system_clkgroup     0    
-                                                                                                              
-0 -       pll_gen|CLKOS2_inferred_clock     100.0 MHz     10.000        inferred     (multiple)          9076 
-                                                                                                              
-0 -       pll_gen|CLKOS3_inferred_clock     100.0 MHz     10.000        inferred     (multiple)          546  
-                                                                                                              
-0 -       pll_gen|CLKOP_inferred_clock      100.0 MHz     10.000        inferred     (multiple)          276  
-                                                                                                              
-0 -       pll_gen|CLKOS_inferred_clock      100.0 MHz     10.000        inferred     (multiple)          22   
-                                                                                                              
-0 -       SP0557|CLK20M                     100.0 MHz     10.000        inferred     (multiple)          12   
-==============================================================================================================
+          Start                             Requested     Requested     Clock        Clock          Clock
+Level     Clock                             Frequency     Period        Type         Group          Load 
+---------------------------------------------------------------------------------------------------------
+0 -       CLK20M_ext                        20.0 MHz      50.000        declared     ext_clks       12   
+                                                                                                         
+0 -       pll_gen|CLKOS2_inferred_clock     100.0 MHz     10.000        inferred     (multiple)     9425 
+                                                                                                         
+0 -       pll_gen|CLKOS3_inferred_clock     100.0 MHz     10.000        inferred     (multiple)     552  
+                                                                                                         
+0 -       pll_gen|CLKOP_inferred_clock      100.0 MHz     10.000        inferred     (multiple)     276  
+                                                                                                         
+0 -       pll_gen|CLKOS_inferred_clock      100.0 MHz     10.000        inferred     (multiple)     22   
+=========================================================================================================
 
 
 Clock Load Summary
@@ -52,15 +51,13 @@ Clock Load Summary
                                   Clock     Source                                                                Clock Pin                                                      Non-clock Pin                                          Non-clock Pin                                                 
 Clock                             Load      Pin                                                                   Seq Example                                                    Seq Example                                            Comb Example                                                  
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                            0         -                                                                     -                                                              -                                                      -                                                             
+CLK20M_ext                        12        CLK20M(port)                                                          slv_com_top_inst.ckgen_rstb.C                                  -                                                      -                                                             
                                                                                                                                                                                                                                                                                                       
-pll_gen|CLKOS2_inferred_clock     9076      slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2(EHXPLLL)     gpio02.gpio_reg_inst.gpio_ip_reg_inst31.REG1[7:0].C            -                                                      -                                                             
+pll_gen|CLKOS2_inferred_clock     9425      slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2(EHXPLLL)     gpio02.gpio_reg_inst.gpio_ip_reg_inst31.REG1[7:0].C            -                                                      -                                                             
                                                                                                                                                                                                                                                                                                       
-pll_gen|CLKOS3_inferred_clock     546       slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3(EHXPLLL)     slv_com_top_inst.rx_com_inst.rx_cont_b2_inst.rxd_1q[7:0].C     gpio02.gpio_reg_inst.gpio_op_reg_inst19.REG[7:0].E     gpio02.gpio_reg_inst.gpio_op_reg_inst19.un1_writeenb.I[0](inv)
+pll_gen|CLKOS3_inferred_clock     552       slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3(EHXPLLL)     slv_com_top_inst.rx_com_inst.rx_cont_b2_inst.rxd_1q[7:0].C     gpio02.gpio_reg_inst.gpio_op_reg_inst19.REG[7:0].E     gpio02.gpio_reg_inst.gpio_op_reg_inst19.un1_writeenb.I[0](inv)
                                                                                                                                                                                                                                                                                                       
 pll_gen|CLKOP_inferred_clock      276       slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOP(EHXPLLL)      slv_com_top_inst.cds_inst.cz[0].C                              -                                                      slv_com_top_inst.cds_inst.un1_clk2.I[0](inv)                  
                                                                                                                                                                                                                                                                                                       
 pll_gen|CLKOS_inferred_clock      22        slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS(EHXPLLL)      slv_com_top_inst.cds_inst.bz[0].C                              -                                                      slv_com_top_inst.cds_inst.un1_clk2a.I[0](inv)                 
-                                                                                                                                                                                                                                                                                                      
-SP0557|CLK20M                     12        CLK20M(port)                                                          slv_com_top_inst.ckgen_rstb.C                                  -                                                      -                                                             
 ======================================================================================================================================================================================================================================================================================================

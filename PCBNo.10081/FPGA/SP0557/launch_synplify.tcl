@@ -1,6 +1,6 @@
 #-- Lattice Semiconductor Corporation Ltd.
 #-- Synplify OEM project file C:/FPGAwork/PCBNo.10081/FPGA/SP0557/launch_synplify.tcl
-#-- Written on Sun Mar  1 12:05:14 2026
+#-- Written on Sun Mar  1 22:03:08 2026
 
 project -close
 set filename "C:/FPGAwork/PCBNo.10081/FPGA/SP0557/SP0557_syn.prj"
