@@ -5,11 +5,11 @@ The file contains the area information from mapper to be displayed as part of th
 *******************************************************************************************-->
 <report_table display_priority="1" name="Area Summary">
 <report_link name="Detailed report">
-<data>C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\synlog\report\SP0557_SP0557_fpga_mapper_resourceusage.rpt</data>
+<data>C:\FPGAwork\PCBNo.10081\FPGA\SP0557\synlog\report\SP0557_SP0557_fpga_mapper_resourceusage.rpt</data>
 <title>Resource Usage</title>
 </report_link>
 <parameter tooltip="Total Register bits used" name="Register bits">
-<data>8760</data>
+<data>9634</data>
 </parameter>
 <parameter tooltip="Total I/O cells used" name="I/O cells">
 <data>127</data>
@@ -21,6 +21,6 @@ The file contains the area information from mapper to be displayed as part of th
 <data>0</data>
 </parameter>
 <parameter tcl_name="total_luts" tooltip="Total ORCA LUTs used" name="ORCA LUTs">
-<data>8698</data>
+<data>9049</data>
 </parameter>
 </report_table>

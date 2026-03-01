@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>C:\work\S127M\PCBNo_10081\SP0557_rev02_00_AI\SP0557\synlog\SP0557_SP0557_fpga_mapper.srr</data>
+<data>C:\FPGAwork\PCBNo.10081\FPGA\SP0557\synlog\SP0557_SP0557_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -29,14 +29,14 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>pll_gen|CLKOS2_inferred_clock</data>
 <data>200.0 MHz</data>
-<data>110.4 MHz</data>
-<data>-4.054</data>
+<data>145.1 MHz</data>
+<data>-1.891</data>
 </row>
 <row>
 <data>pll_gen|CLKOS3_inferred_clock</data>
 <data>200.0 MHz</data>
-<data>94.9 MHz</data>
-<data>-5.533</data>
+<data>99.2 MHz</data>
+<data>-5.082</data>
 </row>
 <row>
 <data>pll_gen|CLKOS_inferred_clock</data>
@@ -47,7 +47,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>System</data>
 <data>200.0 MHz</data>
-<data>510.9 MHz</data>
-<data>3.042</data>
+<data>262.5 MHz</data>
+<data>1.191</data>
 </row>
 </report_table>
