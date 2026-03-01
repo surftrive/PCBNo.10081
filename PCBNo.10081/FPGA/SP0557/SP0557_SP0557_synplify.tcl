@@ -24,6 +24,8 @@ set_option -force_gsr false
 set_option -compiler_compatible 0
 set_option -dup false
 
+add_file -constraint {C:/FPGAwork/PCBNo.10081/FPGA/RTL/IPcore/pll_gen/pll_gen.fdc}
+add_file -constraint {C:/FPGAwork/PCBNo.10081/FPGA/SP0557/SP0557.fdc}
 set_option -default_enum_encoding default
 
 #simulation options

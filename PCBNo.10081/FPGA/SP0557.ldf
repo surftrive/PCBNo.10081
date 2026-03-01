@@ -258,6 +258,9 @@
         <Source name="RTL/SP0557/sp_conv/SPI_master2.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
+        <Source name="RTL/IPcore/pll_gen/pll_gen.fdc" type="Synplify Design Constraints File" type_short="FDC">
+            <Options/>
+        </Source>
         <Source name="SP0557/SP0557.fdc" type="Synplify Design Constraints File" type_short="FDC">
             <Options/>
         </Source>

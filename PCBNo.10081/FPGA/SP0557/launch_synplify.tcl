@@ -1,6 +1,6 @@
 #-- Lattice Semiconductor Corporation Ltd.
 #-- Synplify OEM project file C:/FPGAwork/PCBNo.10081/FPGA/SP0557/launch_synplify.tcl
-#-- Written on Sun Mar  1 11:25:52 2026
+#-- Written on Sun Mar  1 12:05:14 2026
 
 project -close
 set filename "C:/FPGAwork/PCBNo.10081/FPGA/SP0557/SP0557_syn.prj"
@@ -46,6 +46,8 @@ if {$create_new == 1} {
 	
 }
 #-- add_file options
+add_file -constraint {C:/FPGAwork/PCBNo.10081/FPGA/RTL/IPcore/pll_gen/pll_gen.fdc}
+add_file -constraint {C:/FPGAwork/PCBNo.10081/FPGA/SP0557/SP0557.fdc}
 add_file -vhdl "C:/lscc/diamond/3.14/cae_library/synthesis/vhdl/ecp5u.vhd"
 add_file -vhdl -lib "work" "C:/FPGAwork/PCBNo.10081/FPGA/RTL/SP0557.vhd"
 add_file -vhdl -lib "work" "C:/FPGAwork/PCBNo.10081/FPGA/RTL/com/fc_dec.vhd"
