@@ -284,24 +284,23 @@ IOBUF PORT "ENC_A[1]" IO_TYPE=LVCMOS33 PULLMODE=NONE DRIVE=NA SLEWRATE=NA CLAMP=
 #----------------------------------------------------------------------------
 # Section 1: Explicit Clock Frequency Constraints
 #
-# Net name conventions (VHDL hierarchy, "." separator):
-#   s_PLL_CLK20M             : Top-level signal in SP0557.vhd (CLKOS2 output)
-#   slv_com_top_inst.CLK2    : 100MHz serial comm clock (CLKOP output)
-#   slv_com_top_inst.CLK2A   : 100MHz CDR clock, 90deg (CLKOS output)
-#   slv_com_top_inst.CLK1    : 10MHz slave control clock (CLKOS3 output)
-#   CLK20M_c                 : External 20MHz input (PLL reference)
-#   UP_CLK_c                 : External 20MHz input (alias for PLL ref)
+# Net names confirmed from SP0557_SP0557.par clock report:
+#   s_PLL_CLK20M                 : Top-level signal (CLKOS2, 20MHz)
+#   slv_com_top_inst.CLKCOM_OUT  : 100MHz, 0deg (CLKOP -> port CLKCOM_OUT)
+#   slv_com_top_inst/CLK2A       : 100MHz, 90deg (CLKOS -> internal signal)
+#   slv_com_top_inst.CLK1        : 10MHz (CLKOS3 -> port CLK1)
+#   CLK20M_c                     : External 20MHz input (PLL reference)
+#   UP_CLK_c                     : External 20MHz input (alias)
 #
-# Note: "slv_com_top_inst.CLKCOM_OUT" was previously used but is WRONG -
-# CLKCOM_OUT port is connected to "open" in SP0557.vhd, so the net may
-# not exist post-synthesis. Use "slv_com_top_inst.CLK2" instead.
+# Note: CLK2A uses "/" separator because it is an internal signal of
+# slv_com_top, not a port. CLKCOM_OUT uses "." because it is a port.
 #
 # Guard-banding: 100MHz constrained as 115MHz for timing margin.
 #----------------------------------------------------------------------------
 FREQUENCY NET "s_PLL_CLK20M" 20.000000 MHz ;
 FREQUENCY NET "slv_com_top_inst.CLK1" 10.000000 MHz ;
-FREQUENCY NET "slv_com_top_inst.CLK2" 115.000000 MHz ;
-FREQUENCY NET "slv_com_top_inst.CLK2A" 115.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst.CLKCOM_OUT" 115.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst/CLK2A" 115.000000 MHz ;
 FREQUENCY NET "UP_CLK_c" 20.000000 MHz ;
 
 #----------------------------------------------------------------------------
@@ -312,12 +311,12 @@ FREQUENCY NET "UP_CLK_c" 20.000000 MHz ;
 #----------------------------------------------------------------------------
 BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "s_PLL_CLK20M" ;
 BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst.CLK1" ;
-BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst.CLK2" ;
-BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst.CLK2A" ;
+BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst.CLKCOM_OUT" ;
+BLOCK PATH FROM CLKNET "CLK20M_c" TO CLKNET "slv_com_top_inst/CLK2A" ;
 BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "CLK20M_c" ;
 BLOCK PATH FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "CLK20M_c" ;
-BLOCK PATH FROM CLKNET "slv_com_top_inst.CLK2" TO CLKNET "CLK20M_c" ;
-BLOCK PATH FROM CLKNET "slv_com_top_inst.CLK2A" TO CLKNET "CLK20M_c" ;
+BLOCK PATH FROM CLKNET "slv_com_top_inst.CLKCOM_OUT" TO CLKNET "CLK20M_c" ;
+BLOCK PATH FROM CLKNET "slv_com_top_inst/CLK2A" TO CLKNET "CLK20M_c" ;
 
 #----------------------------------------------------------------------------
 # Section 3: MULTICYCLE_PATH - s_PLL_CLK20M (20MHz) <-> CLK1 (10MHz)
@@ -330,27 +329,27 @@ MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "s_PLL_CLK20M" 2 X ;
 # Section 4: BLOCK PATH - s_PLL_CLK20M <-> 100MHz Communication Clocks
 #   No direct data transfer. All CDC via DCFIFO IP blocks.
 #----------------------------------------------------------------------------
-BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst.CLK2" ;
-BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst.CLK2A" ;
-BLOCK PATH FROM CLKNET "slv_com_top_inst.CLK2" TO CLKNET "s_PLL_CLK20M" ;
-BLOCK PATH FROM CLKNET "slv_com_top_inst.CLK2A" TO CLKNET "s_PLL_CLK20M" ;
+BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst.CLKCOM_OUT" ;
+BLOCK PATH FROM CLKNET "s_PLL_CLK20M" TO CLKNET "slv_com_top_inst/CLK2A" ;
+BLOCK PATH FROM CLKNET "slv_com_top_inst.CLKCOM_OUT" TO CLKNET "s_PLL_CLK20M" ;
+BLOCK PATH FROM CLKNET "slv_com_top_inst/CLK2A" TO CLKNET "s_PLL_CLK20M" ;
 
 #----------------------------------------------------------------------------
-# Section 5: MULTICYCLE_PATH - CLK1 (10MHz) <-> CLK2 (100MHz)
+# Section 5: MULTICYCLE_PATH - CLK1 (10MHz) <-> CLKCOM_OUT (100MHz)
 #   Same PLL, 10:1 frequency ratio.
-#   CLK1->CLK2: Data stable for 10 CLK2 cycles. DCFIFO gray pointers.
-#   CLK2->CLK1: 2X relaxation for CDC sync chains (CRC_ERR etc.)
+#   CLK1->CLKCOM_OUT: Data stable for 10 cycles. DCFIFO gray pointers.
+#   CLKCOM_OUT->CLK1: 2X relaxation for CDC sync chains (CRC_ERR etc.)
 #----------------------------------------------------------------------------
-MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "slv_com_top_inst.CLK2" 10 X ;
-MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK2" TO CLKNET "slv_com_top_inst.CLK1" 2 X ;
+MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "slv_com_top_inst.CLKCOM_OUT" 10 X ;
+MULTICYCLE FROM CLKNET "slv_com_top_inst.CLKCOM_OUT" TO CLKNET "slv_com_top_inst.CLK1" 2 X ;
 
 #----------------------------------------------------------------------------
 # Section 6: MULTICYCLE_PATH - CLK1 (10MHz) <-> CLK2A (100MHz, 90deg)
 #   Same as Section 5 but for CLK2A domain.
 #   Internal to slv_com_top (rst_cnt sync chains).
 #----------------------------------------------------------------------------
-MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "slv_com_top_inst.CLK2A" 10 X ;
-MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK2A" TO CLKNET "slv_com_top_inst.CLK1" 2 X ;
+MULTICYCLE FROM CLKNET "slv_com_top_inst.CLK1" TO CLKNET "slv_com_top_inst/CLK2A" 10 X ;
+MULTICYCLE FROM CLKNET "slv_com_top_inst/CLK2A" TO CLKNET "slv_com_top_inst.CLK1" 2 X ;
 
 #----------------------------------------------------------------------------
 # Section 7: UP_CLK Input Clock Port Constraint
