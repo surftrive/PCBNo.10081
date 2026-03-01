@@ -3,53 +3,52 @@
 # Purpose: Define cross-domain timing constraints for PLL-derived clocks
 #          and view-level synthesis attributes.
 #
-# IMPORTANT: Do NOT use instance-level paths like {inst.signal} in this
-# file. Diamond 3.14 (Synplify V-2023.09L-2) cannot resolve them.
-# Use view-level {v:work.module} or VHDL source-level attributes instead.
+# Clock definitions use hierarchical net references {n:...} pointing to
+# the EHXPLLL primitive output ports inside pll_gen. The path must
+# reach PLLInst_0 (the EHXPLLL instance), NOT the pll_gen wrapper ports.
 #
-# Clock definitions use hierarchical net references {n:...} confirmed
-# from MT420 messages in the synthesis report. These override pll_gen.fdc
-# {p:PORT} syntax which may not resolve in Diamond 3.14.
+# Confirmed from SP0557_SP0557.srr inferred clock source paths:
+#   pll_gen|CLKOP_inferred_clock  source: ...PLLInst_0.CLKOP(EHXPLLL)
+#   pll_gen|CLKOS_inferred_clock  source: ...PLLInst_0.CLKOS(EHXPLLL)
+#   pll_gen|CLKOS2_inferred_clock source: ...PLLInst_0.CLKOS2(EHXPLLL)
+#   pll_gen|CLKOS3_inferred_clock source: ...PLLInst_0.CLKOS3(EHXPLLL)
 #
 # Clock Name Reference:
-#   CLKOP_100M    : 100MHz, 0 deg   (CLKCOM_OUT - serial comm)
-#   CLKOS_100M_90 : 100MHz, 90 deg  (CLK2A - CDR sampling)
-#   CLKOS2_20M    : 20MHz,  0 deg   (s_PLL_CLK20M - system)
-#   CLKOS3_10M    : 10MHz,  0 deg   (CLK1  - slave control)
+#   CLKOP_100M    : 100MHz, 0 deg   (CLKOP  -> CLKCOM_OUT -> serial comm)
+#   CLKOS_100M_90 : 100MHz, 90 deg  (CLKOS  -> CLK2A -> CDR sampling)
+#   CLKOS2_20M    : 20MHz,  0 deg   (CLKOS2 -> s_PLL_CLK20M -> system)
+#   CLKOS3_10M    : 10MHz,  0 deg   (CLKOS3 -> CLK1 -> slave control)
 #
-# Date   : 2026-02-28
+# Date   : 2026-03-01
 # Target : LFE5U-25F-6 CABGA256
 #----------------------------------------------------------------------
 
 #----------------------------------------------------------------------
-# Section 0: PLL Output Clock Definitions (hierarchical net references)
+# Section 0: PLL Output Clock Definitions (EHXPLLL primitive outputs)
 #
-#   Net names confirmed from MT420 inferred clock warnings in SP0557.srr:
-#     pll_gen|CLKOP_inferred_clock  -> ...PLL_inst.CLKCOM_OUT
-#     pll_gen|CLKOS_inferred_clock  -> ...PLL_inst.CLK2A
-#     pll_gen|CLKOS2_inferred_clock -> ...PLL_inst.s_PLL_CLK20M
-#     pll_gen|CLKOS3_inferred_clock -> ...PLL_inst.CLK1
+#   Hierarchy: SP0557 -> slv_com_top_inst -> clk_gen_inst2 -> PLL_inst
+#              -> PLLInst_0 (EHXPLLL primitive)
 #----------------------------------------------------------------------
 define_clock -name {CLKOP_100M} \
-    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLKCOM_OUT} \
+    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOP} \
     -freq 100.000 \
     -rise 0.000 -fall 5.000 \
     -clockgroup pll_clks
 
 define_clock -name {CLKOS_100M_90} \
-    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLK2A} \
+    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS} \
     -freq 100.000 \
     -rise 2.500 -fall 7.500 \
     -clockgroup pll_clks
 
 define_clock -name {CLKOS2_20M} \
-    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.s_PLL_CLK20M} \
+    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2} \
     -freq 20.000 \
     -rise 0.000 -fall 25.000 \
     -clockgroup pll_clks
 
 define_clock -name {CLKOS3_10M} \
-    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.CLK1} \
+    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3} \
     -freq 10.000 \
     -rise 0.000 -fall 50.000 \
     -clockgroup pll_clks
