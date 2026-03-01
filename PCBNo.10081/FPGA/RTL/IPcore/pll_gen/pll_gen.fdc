@@ -20,37 +20,39 @@
 # Target : LFE5U-25F-6 CABGA256
 #----------------------------------------------------------------------
 
+# Clock definitions DISABLED (No.11 Fix1).
+# SP0557.fdc Section 0 provides the correct definitions using
+# hierarchical net references {n:...} instead of {p:PORT} syntax.
+# The {p:PORT} syntax may not resolve in Diamond 3.14.
+#
 # CLKOP: 100MHz serial communication clock (0 deg phase)
 # Used by: cds.vhd (domain A,C), rx_ctl_1st, tx_com, dcfifo_rx/tx
-define_clock -name {CLKOP_100M} \
-    {p:CLKOP} \
-    -freq 100.000 \
-    -rise 0.000 -fall 5.000 \
-    -clockgroup pll_clks
+#define_clock -name {CLKOP_100M} \
+#    {p:CLKOP} \
+#    -freq 100.000 \
+#    -rise 0.000 -fall 5.000 \
+#    -clockgroup pll_clks
 
 # CLKOS: 100MHz CDR sampling clock (90 deg phase = 2.5ns offset)
 # Used by: cds.vhd (domain B,D), rst_cnt
-# CRITICAL: -rise 2.500 communicates the 90-degree phase shift to
-# Synplify, enabling correct setup/hold analysis for cds.vhd
-# mesochronous CDC paths (bz, cz, dz signal crossings).
-define_clock -name {CLKOS_100M_90} \
-    {p:CLKOS} \
-    -freq 100.000 \
-    -rise 2.500 -fall 7.500 \
-    -clockgroup pll_clks
+#define_clock -name {CLKOS_100M_90} \
+#    {p:CLKOS} \
+#    -freq 100.000 \
+#    -rise 2.500 -fall 7.500 \
+#    -clockgroup pll_clks
 
 # CLKOS2: 20MHz system clock (0 deg phase)
 # Used by: GPIO, encoder, ADC, DAC, motor control, sp_conv
-define_clock -name {CLKOS2_20M} \
-    {p:CLKOS2} \
-    -freq 20.000 \
-    -rise 0.000 -fall 25.000 \
-    -clockgroup pll_clks
+#define_clock -name {CLKOS2_20M} \
+#    {p:CLKOS2} \
+#    -freq 20.000 \
+#    -rise 0.000 -fall 25.000 \
+#    -clockgroup pll_clks
 
 # CLKOS3: 10MHz slave control clock (0 deg phase)
 # Used by: slv_ctrl, 8b10b enc/dec, rx/tx control state machines
-define_clock -name {CLKOS3_10M} \
-    {p:CLKOS3} \
-    -freq 10.000 \
-    -rise 0.000 -fall 50.000 \
-    -clockgroup pll_clks
+#define_clock -name {CLKOS3_10M} \
+#    {p:CLKOS3} \
+#    -freq 10.000 \
+#    -rise 0.000 -fall 50.000 \
+#    -clockgroup pll_clks
