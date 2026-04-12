@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version U-2023.03L-SP1
+#--  Project file C:\work\S127M\PCBNo_10089\SP0565_rev02_00\SP0565\SP0565_syn.prd
+#--  Written on Tue Feb  3 10:35:06 2026
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

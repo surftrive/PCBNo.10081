@@ -1,0 +1,97 @@
+{
+"Synplify Pro (R) Job Log" : {
+	"Date" : "18:26:37    09-Apr-2026",
+	"Working Directory" : "C:/work/S127M/PCBNo_10089/SP0565_rev00_00/SP0565",
+	"Install" : "C:/lscc/diamond/3.13/synpbase"
+},
+"hdl_info_gen" :{
+   "Start Time" : "18:24:28",
+   "Runtime" : "01s",
+   "Executable Run Time" : "01s",
+   "hdl_info_gen" : {
+      "executable" : "bin64/c_vhdl.exe",
+      "Run Directory" : "C:/work/S127M/PCBNo_10089/SP0565_rev00_00/SP0565",
+      "Run State" : "Complete",
+      "Return Code" : "0",
+      "Has Errors" : "no",
+      "Run Start Time" : "18:24:28",
+      "Run Time" : "01s",
+      "Exe Run Time" : "01s",
+      "Memory Usage" : "-",
+      "Up-to-date (run skipped)" : "no"
+   }
+},
+"SP0565" :{
+   "Start Time" : "18:24:29",
+   "Runtime" : "02m:08s",
+   "Executable Run Time" : "02m:07s",
+   "synthesis" : {
+      "Start Time" : "18:24:29",
+      "Runtime" : "02m:08s",
+      "Executable Run Time" : "02m:07s",
+      "compile" : {
+         "Start Time" : "18:24:29",
+         "Runtime" : "01m:31s",
+         "Executable Run Time" : "01m:30s",
+         "compile_flow" : {
+            "Start Time" : "18:24:29",
+            "Runtime" : "01m:26s",
+            "Executable Run Time" : "01m:25s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/work/S127M/PCBNo_10089/SP0565_rev00_00/SP0565",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "18:24:29",
+               "Run Time" : "01m:25s",
+               "Exe Run Time" : "01m:24s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/work/S127M/PCBNo_10089/SP0565_rev00_00/SP0565",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "18:25:54",
+               "Run Time" : "01s",
+               "Exe Run Time" : "01s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/work/S127M/PCBNo_10089/SP0565_rev00_00/SP0565",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "18:25:55",
+            "Run Time" : "05s",
+            "Exe Run Time" : "05s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Start Time" : "18:26:00",
+         "Runtime" : "37s",
+         "Executable Run Time" : "37s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/work/S127M/PCBNo_10089/SP0565_rev00_00/SP0565",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "18:26:00",
+            "Run Time" : "37s",
+            "Exe Run Time" : "37s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+}
+}

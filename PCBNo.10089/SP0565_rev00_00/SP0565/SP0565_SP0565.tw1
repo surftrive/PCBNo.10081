@@ -1,0 +1,604 @@
+
+Loading design for application trce from file sp0565_sp0565_map.ncd.
+Design name: SP0565
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5U-25F
+Package:     CABGA256
+Performance: 6
+Loading device for application trce from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 55.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Thu Apr 09 18:26:49 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o SP0565_SP0565.tw1 -gui -msgset C:/work/S127M/PCBNo_10089/SP0565_rev00_00/promote.xml SP0565_SP0565_map.ncd SP0565_SP0565.prf 
+Design file:     sp0565_sp0565_map.ncd
+Preference file: sp0565_sp0565.prf
+Device,speed:    LFE5U-25F,6
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+12 potential circuit loops found in timing analysis.
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "slv_com.CLK1" 10.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 8.220ns (weighted slack = 82.200ns)
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              slv_com/rx_com_inst/rx_cont_b2_inst/crc_check_inst/crc_error  (from slv_com.CLKCOM_OUT +)
+   Destination:    FF         Data in        slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/rst_flg  (to slv_com.CLK1 +)
+
+   Delay:               1.907ns  (39.9% logic, 60.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.907ns physical path delay slv_com/rx_com_inst/rx_cont_b2_inst/crc_check_inst/SLICE_912 to slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/SLICE_1135 meets
+     10.000ns delay constraint less
+     -0.127ns CE_SET requirement (totaling 10.127ns) by 8.220ns
+
+ Physical Path Details:
+
+      Data path slv_com/rx_com_inst/rx_cont_b2_inst/crc_check_inst/SLICE_912 to slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/SLICE_1135:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.525 *SLICE_912.CLK to */SLICE_912.Q0 slv_com/rx_com_inst/rx_cont_b2_inst/crc_check_inst/SLICE_912 (from slv_com.CLKCOM_OUT)
+ROUTE        13   e 0.573 */SLICE_912.Q0 to *SLICE_3044.A0 slv_com/CRC_ERR
+CTOF_DEL    ---     0.236 *SLICE_3044.A0 to *SLICE_3044.F0 slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/SLICE_3044
+ROUTE         1   e 0.573 *SLICE_3044.F0 to *SLICE_1135.CE slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/un1_rx_empty_2_i[0] (to slv_com.CLK1)
+                  --------
+                    1.907   (39.9% logic, 60.1% route), 2 logic levels.
+
+Report:   56.180MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "s_PLL_CLK20M" 20.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 41.488ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              gpio01/gpio_reg_inst/gpio_op_reg_inst21/GPO[0]  (from s_PLL_CLK20M +)
+   Destination:    FF         Data in        ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/s_encerr[13]  (to s_PLL_CLK20M +)
+
+   Delay:               8.778ns  (49.5% logic, 50.5% route), 17 logic levels.
+
+ Constraint Details:
+
+      8.778ns physical path delay SLICE_2585 to ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/SLICE_507 meets
+     50.000ns delay constraint less
+     -0.266ns DIN_SET requirement (totaling 50.266ns) by 41.488ns
+
+ Physical Path Details:
+
+      Data path SLICE_2585 to ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/SLICE_507:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.525 SLICE_2585.CLK to  SLICE_2585.Q0 SLICE_2585 (from s_PLL_CLK20M)
+ROUTE        11   e 0.573  SLICE_2585.Q0 to *SLICE_1994.B0 s_ENC_INV[1]
+CTOF_DEL    ---     0.236 *SLICE_1994.B0 to *SLICE_1994.F0 ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/SLICE_1994
+ROUTE         5   e 0.573 *SLICE_1994.F0 to *SLICE_1997.B0 ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/un1_lrstb_1
+CTOF_DEL    ---     0.236 *SLICE_1997.B0 to *SLICE_1997.F0 ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/SLICE_1997
+ROUTE         2   e 0.208 *SLICE_1997.F0 to *SLICE_1997.C1 ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/ctrl_3
+CTOF_DEL    ---     0.236 *SLICE_1997.C1 to *SLICE_1997.F1 ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/SLICE_1997
+ROUTE         4   e 0.573 *SLICE_1997.F1 to *SLICE_2584.A1 ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/s_ph_a_fast
+CTOF_DEL    ---     0.236 *SLICE_2584.A1 to *SLICE_2584.F1 ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/SLICE_2584
+ROUTE         1   e 0.573 *SLICE_2584.F1 to *SLICE_2364.D1 ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/N_5_0
+CTOF_DEL    ---     0.236 *SLICE_2364.D1 to *SLICE_2364.F1 ENC_inst/\enc_func(1).enc_top_inst\/SLICE_2364
+ROUTE         2   e 0.208 *SLICE_2364.F1 to *SLICE_2364.C0 ENC_inst/\enc_func(1).enc_top_inst\/s_ENCCNTDWN
+CTOF_DEL    ---     0.236 *SLICE_2364.C0 to *SLICE_2364.F0 ENC_inst/\enc_func(1).enc_top_inst\/SLICE_2364
+ROUTE         1   e 0.573 *SLICE_2364.F0 to */SLICE_192.B0 ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/s_ENC_CNT_UP_ST
+C0TOFCO_DE  ---     0.447 */SLICE_192.B0 to *SLICE_192.FCO ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/SLICE_192
+ROUTE         1   e 0.001 *SLICE_192.FCO to *SLICE_193.FCI ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_6_cry_0
+FCITOFCO_D  ---     0.071 *SLICE_193.FCI to *SLICE_193.FCO ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/SLICE_193
+ROUTE         1   e 0.001 *SLICE_193.FCO to *SLICE_194.FCI ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_6_cry_2
+FCITOFCO_D  ---     0.071 *SLICE_194.FCI to *SLICE_194.FCO ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/SLICE_194
+ROUTE         1   e 0.001 *SLICE_194.FCO to *SLICE_195.FCI ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_6_cry_4
+FCITOFCO_D  ---     0.071 *SLICE_195.FCI to *SLICE_195.FCO ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/SLICE_195
+ROUTE         1   e 0.001 *SLICE_195.FCO to *SLICE_196.FCI ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_6_cry_6
+FCITOFCO_D  ---     0.071 *SLICE_196.FCI to *SLICE_196.FCO ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/SLICE_196
+ROUTE         1   e 0.001 *SLICE_196.FCO to *SLICE_197.FCI ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_6_cry_8
+FCITOFCO_D  ---     0.071 *SLICE_197.FCI to *SLICE_197.FCO ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/SLICE_197
+ROUTE         1   e 0.001 *SLICE_197.FCO to *SLICE_198.FCI ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_6_cry_10
+FCITOF1_DE  ---     0.474 *SLICE_198.FCI to */SLICE_198.F1 ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/SLICE_198
+ROUTE         1   e 0.573 */SLICE_198.F1 to */SLICE_190.B1 ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_6[12]
+C1TOFCO_DE  ---     0.447 */SLICE_190.B1 to *SLICE_190.FCO ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/SLICE_190
+ROUTE         1   e 0.001 *SLICE_190.FCO to *SLICE_191.FCI ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_cry_12
+FCITOF0_DE  ---     0.443 *SLICE_191.FCI to */SLICE_191.F0 ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/SLICE_191
+ROUTE         1   e 0.573 */SLICE_191.F0 to */SLICE_507.A1 ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_s_13_0_S0
+CTOF_DEL    ---     0.236 */SLICE_507.A1 to */SLICE_507.F1 ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/SLICE_507
+ROUTE         1   e 0.001 */SLICE_507.F1 to *SLICE_507.DI1 ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/s_encerr_5[13] (to s_PLL_CLK20M)
+                  --------
+                    8.778   (49.5% logic, 50.5% route), 17 logic levels.
+
+Report:  117.481MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "slv_com/CLK2A" 100.000000 MHz ;
+            108 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 7.293ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              slv_com/rst_cnt_inst/clk2Ap_cntr[8]  (from slv_com/CLK2A +)
+   Destination:    FF         Data in        slv_com/cds_inst/bz[0]  (to slv_com/CLK2A +)
+
+   Delay:               1.907ns  (39.9% logic, 60.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.907ns physical path delay slv_com/rst_cnt_inst/SLICE_956 to slv_com/cds_inst/SLICE_934 meets
+     10.000ns delay constraint less
+      0.800ns LSRREC_SET requirement (totaling 9.200ns) by 7.293ns
+
+ Physical Path Details:
+
+      Data path slv_com/rst_cnt_inst/SLICE_956 to slv_com/cds_inst/SLICE_934:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.525 *SLICE_956.CLK to */SLICE_956.Q0 slv_com/rst_cnt_inst/SLICE_956 (from slv_com/CLK2A)
+ROUTE         8   e 0.573 */SLICE_956.Q0 to *SLICE_2985.B0 slv_com/rst_cnt_inst/clk2Ap_cntr[8]
+CTOF_DEL    ---     0.236 *SLICE_2985.B0 to *SLICE_2985.F0 slv_com/rst_cnt_inst/SLICE_2985
+ROUTE         3   e 0.573 *SLICE_2985.F0 to *SLICE_934.LSR slv_com/s_RSTb3_2Ap_i (to slv_com/CLK2A)
+                  --------
+                    1.907   (39.9% logic, 60.1% route), 2 logic levels.
+
+Report:  369.413MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "slv_com.CLKCOM_OUT" 100.000000 MHz ;
+            1427 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 2.640ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP16KD     Port           slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0(ASIC)  (from slv_com.CLKCOM_OUT +)
+   Destination:    FF         Data in        slv_com_tx_com_inst_tx_cont_b2_inst_tx_ctl_3rd_inst_ps_dtio[0]  (to slv_com.CLKCOM_OUT +)
+
+   Delay:               7.212ns  (84.1% logic, 15.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      7.212ns physical path delay slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0 to UP_TXD_MGIOL meets
+     10.000ns delay constraint less
+      0.148ns DO_SET requirement (totaling 9.852ns) by 2.640ns
+
+ Physical Path Details:
+
+      Data path slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0 to UP_TXD_MGIOL:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     5.830 *am_0_0_0.CLKB to *am_0_0_0.DOB0 slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0 (from slv_com.CLKCOM_OUT)
+ROUTE         1   e 0.573 *am_0_0_0.DOB0 to *SLICE_2927.A0 slv_com/tx_com_inst/tx_cont_b2_inst/TXEN_B[0]
+CTOF_DEL    ---     0.236 *SLICE_2927.A0 to *SLICE_2927.F0 slv_com/tx_com_inst/tx_cont_b2_inst/tx_ctl_3rd_inst/SLICE_2927
+ROUTE         1   e 0.573 *SLICE_2927.F0 to *MGIOL.TXDATA0 slv_com.tx_com_inst.tx_cont_b2_inst.tx_ctl_3rd_inst.ps_dt_13[0] (to slv_com.CLKCOM_OUT)
+                  --------
+                    7.212   (84.1% logic, 15.9% route), 2 logic levels.
+
+Report:  135.870MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "UP_CLK_c" 20.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "slv_com.CLK1" 10.000000  |             |             |
+MHz ;                                   |   10.000 MHz|   56.180 MHz|   2  
+                                        |             |             |
+FREQUENCY NET "s_PLL_CLK20M" 20.000000  |             |             |
+MHz ;                                   |   20.000 MHz|  117.481 MHz|  17  
+                                        |             |             |
+FREQUENCY NET "slv_com/CLK2A"           |             |             |
+100.000000 MHz ;                        |  100.000 MHz|  369.413 MHz|   2  
+                                        |             |             |
+FREQUENCY NET "slv_com.CLKCOM_OUT"      |             |             |
+100.000000 MHz ;                        |  100.000 MHz|  135.870 MHz|   2  
+                                        |             |             |
+FREQUENCY NET "UP_CLK_c" 20.000000 MHz  |             |             |
+;                                       |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 7 clocks:
+
+Clock Domain: slv_com/CLK2A   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOS   Loads: 16
+   Covered under: FREQUENCY NET "slv_com/CLK2A" 100.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: slv_com.CLKCOM_OUT   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOP
+      Covered under: FREQUENCY NET "slv_com/CLK2A" 100.000000 MHz ;   Transfers: 2
+
+   Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK
+
+Clock Domain: slv_com.CLKCOM_OUT   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOP   Loads: 163
+   Covered under: FREQUENCY NET "slv_com.CLKCOM_OUT" 100.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: slv_com/CLK2A   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOS
+      Covered under: FREQUENCY NET "slv_com.CLKCOM_OUT" 100.000000 MHz ;   Transfers: 4
+
+   Clock Domain: slv_com.CLK1   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOS3
+      Covered under: FREQUENCY NET "slv_com.CLKCOM_OUT" 100.000000 MHz ;   Transfers: 59
+
+   Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK
+
+   Clock Domain: CLK20M_c   Source: CLK20M.PAD
+      Not reported because source and destination domains are unrelated.
+
+Clock Domain: slv_com.CLK1   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOS3   Loads: 329
+   Covered under: FREQUENCY NET "slv_com.CLK1" 10.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: slv_com.CLKCOM_OUT   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOP
+      Covered under: FREQUENCY NET "slv_com.CLK1" 10.000000 MHz ;   Transfers: 23
+
+   Clock Domain: s_PLL_CLK20M   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOS2
+      Covered under: FREQUENCY NET "slv_com.CLK1" 10.000000 MHz ;   Transfers: 480
+
+   Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK
+
+   Clock Domain: CLK20M_c   Source: CLK20M.PAD
+      Not reported because source and destination domains are unrelated.
+
+Clock Domain: s_PLL_CLK20M   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOS2   Loads: 922
+   Covered under: FREQUENCY NET "s_PLL_CLK20M" 20.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: slv_com.CLK1   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOS3
+      Covered under: FREQUENCY NET "s_PLL_CLK20M" 20.000000 MHz ;   Transfers: 79
+
+   Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK
+
+Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK   Loads: 138
+   No transfer within this clock domain is found
+
+Clock Domain: UP_CLK_c   Source: UP_CLK.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: CLK20M_c   Source: CLK20M.PAD   Loads: 118
+   No transfer within this clock domain is found
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 111281 paths, 72 nets, and 15930 connections (87.73% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Thu Apr 09 18:26:49 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o SP0565_SP0565.tw1 -gui -msgset C:/work/S127M/PCBNo_10089/SP0565_rev00_00/promote.xml SP0565_SP0565_map.ncd SP0565_SP0565.prf 
+Design file:     sp0565_sp0565_map.ncd
+Preference file: sp0565_sp0565.prf
+Device,speed:    LFE5U-25F,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+12 potential circuit loops found in timing analysis.
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "slv_com.CLK1" 10.000000 MHz ;
+            4096 items scored, 6 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 0.665ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/sync_f  (from slv_com.CLK1 +)
+   Destination:    DP16KD     Port           slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0(ASIC)  (to slv_com.CLK1 +)
+
+   Delay:               0.638ns  (37.6% logic, 62.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.638ns physical path delay slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/SLICE_918 to slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0 exceeds
+      1.303ns RST_HLD and
+      0.000ns delay constraint requirement (totaling 1.303ns) by 0.665ns
+
+ Physical Path Details:
+
+      Data path slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/SLICE_918 to slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164 *SLICE_918.CLK to */SLICE_918.Q0 slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/SLICE_918 (from slv_com.CLK1)
+ROUTE         2   e 0.199 */SLICE_918.Q0 to *SLICE_1203.D1 slv_com/SYNC_FLG
+CTOF_DEL    ---     0.076 *SLICE_1203.D1 to *SLICE_1203.F1 slv_com/SLICE_1203
+ROUTE       150   e 0.199 *SLICE_1203.F1 to *am_0_0_0.RSTB slv_com.TX_RSTb_i (to slv_com.CLK1)
+                  --------
+                    0.638   (37.6% logic, 62.4% route), 2 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "s_PLL_CLK20M" 20.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.103ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ad5270_5271_ctrl_inst_ch0/s_state[29]  (from s_PLL_CLK20M +)
+   Destination:    FF         Data in        ad5270_5271_ctrl_inst_ch0/s_state[28]  (to s_PLL_CLK20M +)
+
+   Delay:               0.221ns  (73.8% logic, 26.2% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.221ns physical path delay ad5270_5271_ctrl_inst_ch0/SLICE_571 to ad5270_5271_ctrl_inst_ch0/SLICE_571 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint requirement (totaling 0.118ns) by 0.103ns
+
+ Physical Path Details:
+
+      Data path ad5270_5271_ctrl_inst_ch0/SLICE_571 to ad5270_5271_ctrl_inst_ch0/SLICE_571:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.163 *SLICE_571.CLK to */SLICE_571.Q1 ad5270_5271_ctrl_inst_ch0/SLICE_571 (from s_PLL_CLK20M)
+ROUTE         2   e 0.058 */SLICE_571.Q1 to */SLICE_571.M0 ad5270_5271_ctrl_inst_ch0/s_state[29] (to s_PLL_CLK20M)
+                  --------
+                    0.221   (73.8% logic, 26.2% route), 1 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "slv_com/CLK2A" 100.000000 MHz ;
+            108 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.170ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              slv_com/rst_cnt_inst/clk2An_cntr[6]  (from slv_com/CLK2A -)
+   Destination:    FF         Data in        slv_com/rst_cnt_inst/clk2An_cntr[6]  (to slv_com/CLK2A -)
+
+   Delay:               0.288ns  (79.5% logic, 20.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.288ns physical path delay slv_com/rst_cnt_inst/SLICE_384 to slv_com/rst_cnt_inst/SLICE_384 meets
+      0.118ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling 0.118ns) by 0.170ns
+
+ Physical Path Details:
+
+      Data path slv_com/rst_cnt_inst/SLICE_384 to slv_com/rst_cnt_inst/SLICE_384:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.153 *SLICE_384.CLK to */SLICE_384.Q1 slv_com/rst_cnt_inst/SLICE_384 (from slv_com/CLK2A)
+ROUTE         1   e 0.058 */SLICE_384.Q1 to */SLICE_384.A1 slv_com/rst_cnt_inst/clk2An_cntr[6]
+CTOF_DEL    ---     0.076 */SLICE_384.A1 to */SLICE_384.F1 slv_com/rst_cnt_inst/SLICE_384
+ROUTE         1   e 0.001 */SLICE_384.F1 to *SLICE_384.DI1 slv_com/rst_cnt_inst/clk2An_cntr_s[6] (to slv_com/CLK2A)
+                  --------
+                    0.288   (79.5% logic, 20.5% route), 2 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "slv_com.CLKCOM_OUT" 100.000000 MHz ;
+            1427 items scored, 2 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 0.665ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/sync_f  (from slv_com.CLK1 +)
+   Destination:    DP16KD     Port           slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0(ASIC)  (to slv_com.CLKCOM_OUT +)
+
+   Delay:               0.638ns  (37.6% logic, 62.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.638ns physical path delay slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/SLICE_918 to slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0 exceeds
+      1.303ns RST_HLD and
+      0.000ns delay constraint requirement (totaling 1.303ns) by 0.665ns
+
+ Physical Path Details:
+
+      Data path slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/SLICE_918 to slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164 *SLICE_918.CLK to */SLICE_918.Q0 slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/SLICE_918 (from slv_com.CLK1)
+ROUTE         2   e 0.199 */SLICE_918.Q0 to *SLICE_1203.D1 slv_com/SYNC_FLG
+CTOF_DEL    ---     0.076 *SLICE_1203.D1 to *SLICE_1203.F1 slv_com/SLICE_1203
+ROUTE       150   e 0.199 *SLICE_1203.F1 to *am_0_0_0.RSTB slv_com.TX_RSTb_i (to slv_com.CLKCOM_OUT)
+                  --------
+                    0.638   (37.6% logic, 62.4% route), 2 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "UP_CLK_c" 20.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "slv_com.CLK1" 10.000000  |             |             |
+MHz ;                                   |     0.000 ns|    -0.665 ns|   2 *
+                                        |             |             |
+FREQUENCY NET "s_PLL_CLK20M" 20.000000  |             |             |
+MHz ;                                   |     0.000 ns|     0.103 ns|   1  
+                                        |             |             |
+FREQUENCY NET "slv_com/CLK2A"           |             |             |
+100.000000 MHz ;                        |     0.000 ns|     0.170 ns|   2  
+                                        |             |             |
+FREQUENCY NET "slv_com.CLKCOM_OUT"      |             |             |
+100.000000 MHz ;                        |     0.000 ns|    -0.665 ns|   2 *
+                                        |             |             |
+FREQUENCY NET "UP_CLK_c" 20.000000 MHz  |             |             |
+;                                       |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+2 preferences(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+slv_com.TX_RSTb_i                       |     150|       8|    100.00%
+                                        |        |        |
+slv_com/SYNC_FLG                        |       2|       4|     50.00%
+                                        |        |        |
+s_LRSTb                                 |      43|       4|     50.00%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 7 clocks:
+
+Clock Domain: slv_com/CLK2A   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOS   Loads: 16
+   Covered under: FREQUENCY NET "slv_com/CLK2A" 100.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: slv_com.CLKCOM_OUT   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOP
+      Covered under: FREQUENCY NET "slv_com/CLK2A" 100.000000 MHz ;   Transfers: 2
+
+   Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK
+
+Clock Domain: slv_com.CLKCOM_OUT   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOP   Loads: 163
+   Covered under: FREQUENCY NET "slv_com.CLKCOM_OUT" 100.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: slv_com/CLK2A   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOS
+      Covered under: FREQUENCY NET "slv_com.CLKCOM_OUT" 100.000000 MHz ;   Transfers: 4
+
+   Clock Domain: slv_com.CLK1   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOS3
+      Covered under: FREQUENCY NET "slv_com.CLKCOM_OUT" 100.000000 MHz ;   Transfers: 59
+
+   Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK
+
+   Clock Domain: CLK20M_c   Source: CLK20M.PAD
+      Not reported because source and destination domains are unrelated.
+
+Clock Domain: slv_com.CLK1   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOS3   Loads: 329
+   Covered under: FREQUENCY NET "slv_com.CLK1" 10.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: slv_com.CLKCOM_OUT   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOP
+      Covered under: FREQUENCY NET "slv_com.CLK1" 10.000000 MHz ;   Transfers: 23
+
+   Clock Domain: s_PLL_CLK20M   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOS2
+      Covered under: FREQUENCY NET "slv_com.CLK1" 10.000000 MHz ;   Transfers: 480
+
+   Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK
+
+   Clock Domain: CLK20M_c   Source: CLK20M.PAD
+      Not reported because source and destination domains are unrelated.
+
+Clock Domain: s_PLL_CLK20M   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOS2   Loads: 922
+   Covered under: FREQUENCY NET "s_PLL_CLK20M" 20.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: slv_com.CLK1   Source: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0.CLKOS3
+      Covered under: FREQUENCY NET "s_PLL_CLK20M" 20.000000 MHz ;   Transfers: 79
+
+   Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK
+
+Clock Domain: jtaghub16_jtck   Source: sa5phub/genblk8.jtagg_u.JTCK   Loads: 138
+   No transfer within this clock domain is found
+
+Clock Domain: UP_CLK_c   Source: UP_CLK.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: CLK20M_c   Source: CLK20M.PAD   Loads: 118
+   No transfer within this clock domain is found
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 8  Score: 5172
+Cumulative negative slack: 5172
+
+Constraints cover 111281 paths, 72 nets, and 16790 connections (92.47% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 8 (hold)
+Score: 0 (setup), 5172 (hold)
+Cumulative negative slack: 5172 (0+5172)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

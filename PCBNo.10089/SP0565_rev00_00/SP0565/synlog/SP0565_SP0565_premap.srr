@@ -1,0 +1,566 @@
+# Thu Apr  9 18:25:56 2026
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: SCPP006598
+
+Implementation : SP0565
+Synopsys Lattice Technology Pre-mapping, Version map202303lat, Build 132R, Built Aug 31 2023 04:16:35, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 123MB peak: 123MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 137MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\SP0565_SP0565_scck.rpt 
+See clock summary report "C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\SP0565_SP0565_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 154MB peak: 154MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 154MB peak: 155MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 166MB peak: 166MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 166MB peak: 168MB)
+
+NConnInternalConnection caching is on
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_4s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_4s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_4s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":95:0:95:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":172:0:172:3|Instance tm_u of partition view:work.rvl_tm_Z3_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":95:0:95:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":172:0:172:3|Instance tm_u of partition view:work.rvl_tm_Z3_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":95:0:95:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":172:0:172:3|Instance tm_u of partition view:work.rvl_tm_Z3_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_4s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_4s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_4s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_4s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_4s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":95:0:95:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":172:0:172:3|Instance tm_u of partition view:work.rvl_tm_Z3_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":95:0:95:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":172:0:172:3|Instance tm_u of partition view:work.rvl_tm_Z3_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":95:0:95:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":172:0:172:3|Instance tm_u of partition view:work.rvl_tm_Z3_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":95:0:95:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":172:0:172:3|Instance tm_u of partition view:work.rvl_tm_Z3_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":95:0:95:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":172:0:172:3|Instance tm_u of partition view:work.rvl_tm_Z3_layer1(verilog) has no references to its outputs; instance not removed. 
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 219MB peak: 219MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 219MB peak: 220MB)
+
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 220MB peak: 220MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 220MB peak: 220MB)
+
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":330:8:330:9|Removing sequential instance DOWNDELAY_REG_O[7:0] (in view: work.ppmc_rgstr_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd":102:8:102:9|Removing sequential instance dsb_wait_cnt[7:0] (in view: work.ppmc_enblr_S118M_uniq_0(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":433:32:433:55|Removing instance gpio_ip_reg_inst14 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":449:32:449:55|Removing instance gpio_ip_reg_inst15 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":625:32:625:55|Removing instance gpio_ip_reg_inst26 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":641:32:641:55|Removing instance gpio_ip_reg_inst27 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":657:32:657:55|Removing instance gpio_ip_reg_inst28 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":673:32:673:55|Removing instance gpio_ip_reg_inst29 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":689:32:689:55|Removing instance gpio_ip_reg_inst30 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":705:32:705:55|Removing instance gpio_ip_reg_inst31 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_cut_ref_reg_uniq_0.vhd":30:8:30:9|Removing sequential instance regh[3:0] (in view: work.temp_cut_ref_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_0.vhd":101:34:101:59|Removing instance temp_dly_2term_inst3 (in view: work.temp_plsmod_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_0.vhd":107:30:107:52|Removing instance temp_dlysel_inst (in view: work.temp_plsmod_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_1.vhd":107:30:107:52|Removing instance temp_dlysel_inst (in view: work.temp_plsmod_uniq_1(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_2.vhd":101:34:101:59|Removing instance temp_dly_2term_inst3 (in view: work.temp_plsmod_uniq_2(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_2.vhd":107:30:107:52|Removing instance temp_dlysel_inst (in view: work.temp_plsmod_uniq_2(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_3.vhd":107:30:107:52|Removing instance temp_dlysel_inst (in view: work.temp_plsmod_uniq_3(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\enc8b10b_wrapper_uniq_0.vhd":47:8:47:9|Removing sequential instance rdout (in view: work.enc8b10b_wrapper_uniq_0(wrapper)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\dec8b10b_wrapper_uniq_0.vhd":55:8:55:9|Removing sequential instance rdout (in view: work.dec8b10b_wrapper_uniq_0(wrapper)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_2.vhd":19:8:19:9|Removing sequential instance preg (in view: work.temp_dly_2term_uniq_2(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_8.vhd":19:8:19:9|Removing sequential instance preg (in view: work.temp_dly_2term_uniq_8(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_1.vhd":39:8:39:9|Removing sequential instance tcreg (in view: work.temp_plsdrv_uniq_1(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_2.vhd":19:8:19:9|Removing sequential instance PLSD (in view: work.temp_dly_2term_uniq_2(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_3.vhd":39:8:39:9|Removing sequential instance tcreg (in view: work.temp_plsdrv_uniq_3(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_5.vhd":39:8:39:9|Removing sequential instance tcreg (in view: work.temp_plsdrv_uniq_5(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_8.vhd":19:8:19:9|Removing sequential instance PLSD (in view: work.temp_dly_2term_uniq_8(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_7.vhd":39:8:39:9|Removing sequential instance tcreg (in view: work.temp_plsdrv_uniq_7(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\adc_reg_uniq_0.vhd":54:8:54:9|Removing sequential instance s_REG5[11:0] (in view: work.adc_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\adc_reg_uniq_0.vhd":54:8:54:9|Removing sequential instance s_REG6[11:0] (in view: work.adc_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\adc_reg_uniq_0.vhd":54:8:54:9|Removing sequential instance s_REG7[11:0] (in view: work.adc_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\adc_reg_uniq_0.vhd":54:8:54:9|Removing sequential instance s_REG8[11:0] (in view: work.adc_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\ppmc_reg_s118m_uniq_0.vhd":541:29:541:50|Removing instance inst_ppmc_phgen (in view: work.ppmc_reg_S118M_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":201:31:201:53|Removing instance gpio_op_reg_inst0 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":217:31:217:53|Removing instance gpio_op_reg_inst1 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":233:31:233:53|Removing instance gpio_op_reg_inst2 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":249:31:249:53|Removing instance gpio_op_reg_inst3 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":265:31:265:53|Removing instance gpio_op_reg_inst4 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":281:31:281:53|Removing instance gpio_op_reg_inst5 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":297:31:297:53|Removing instance gpio_op_reg_inst6 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":313:31:313:53|Removing instance gpio_op_reg_inst7 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":329:31:329:53|Removing instance gpio_op_reg_inst8 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":345:31:345:53|Removing instance gpio_op_reg_inst9 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":361:32:361:55|Removing instance gpio_op_reg_inst10 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":377:32:377:55|Removing instance gpio_op_reg_inst11 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":393:32:393:55|Removing instance gpio_op_reg_inst12 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":409:32:409:55|Removing instance gpio_op_reg_inst13 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":425:32:425:55|Removing instance gpio_op_reg_inst14 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":441:32:441:55|Removing instance gpio_op_reg_inst15 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":617:32:617:55|Removing instance gpio_op_reg_inst26 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":633:32:633:55|Removing instance gpio_op_reg_inst27 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":649:32:649:55|Removing instance gpio_op_reg_inst28 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":665:32:665:55|Removing instance gpio_op_reg_inst29 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":681:32:681:55|Removing instance gpio_op_reg_inst30 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":697:32:697:55|Removing instance gpio_op_reg_inst31 (in view: work.gpio_reg_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\tmpctrl_4ch_reg_s127m_uniq_0.vhd":559:31:559:53|Removing instance temp_plsmod_inst0 (in view: work.tmpctrl_4ch_reg_S127M_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\tmpctrl_4ch_reg_s127m_uniq_0.vhd":578:31:578:53|Removing instance temp_plsmod_inst1 (in view: work.tmpctrl_4ch_reg_S127M_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\tmpctrl_4ch_reg_s127m_uniq_0.vhd":597:31:597:53|Removing instance temp_plsmod_inst2 (in view: work.tmpctrl_4ch_reg_S127M_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\tmpctrl_4ch_reg_s127m_uniq_0.vhd":616:31:616:53|Removing instance temp_plsmod_inst3 (in view: work.tmpctrl_4ch_reg_S127M_uniq_0(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\enc8b10b_new_uniq_0.vhd":34:8:34:9|Removing sequential instance RD_OUT (in view: work.enc8b10b_new_uniq_0(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\dec8b10b_new_uniq_0.vhd":63:8:63:9|Removing sequential instance RD_OUT (in view: work.dec8b10b_new_uniq_0(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\tx_ctl_1st_uniq_0.vhd":248:8:248:9|Removing sequential instance TX_END (in view: work.tx_ctl_1st_uniq_0(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\rx_ctl_3rd_uniq_0.vhd":250:8:250:9|Removing sequential instance RX_START (in view: work.rx_ctl_3rd_uniq_0(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\slv_rx_ctrl_uniq_0.vhd":72:8:72:9|Removing sequential instance BANK[6:0] (in view: work.slv_rx_ctrl_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\ppmc_phgen_uniq_0.vhd":46:8:46:9|Removing sequential instance SOUT[3:0] (in view: work.ppmc_phgen_uniq_0(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_0.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_1.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_1(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_2.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_2(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_3.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_3(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_4.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_4(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_5.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_5(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_6.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_6(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_7.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_7(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_8.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_8(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_9.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_9(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_10.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_10(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_11.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_11(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_12.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_12(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_13.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_13(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_14.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_14(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_15.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_15(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_26.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_26(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_27.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_27(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_28.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_28(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_29.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_29(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_30.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_30(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_31.vhd":22:8:22:9|Removing sequential instance GPO[7:0] (in view: work.gpio_op_reg_uniq_31(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_0.vhd":115:30:115:52|Removing instance temp_plsdrv_inst (in view: work.temp_plsmod_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_0.vhd":127:31:127:53|Removing instance temp_plsdrv_inst1 (in view: work.temp_plsmod_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_1.vhd":115:30:115:52|Removing instance temp_plsdrv_inst (in view: work.temp_plsmod_uniq_1(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_1.vhd":127:31:127:53|Removing instance temp_plsdrv_inst1 (in view: work.temp_plsmod_uniq_1(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_2.vhd":115:30:115:52|Removing instance temp_plsdrv_inst (in view: work.temp_plsmod_uniq_2(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_2.vhd":127:31:127:53|Removing instance temp_plsdrv_inst1 (in view: work.temp_plsmod_uniq_2(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_3.vhd":115:30:115:52|Removing instance temp_plsdrv_inst (in view: work.temp_plsmod_uniq_3(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_3.vhd":127:31:127:53|Removing instance temp_plsdrv_inst1 (in view: work.temp_plsmod_uniq_3(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_0.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_1.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_1(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_2.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_2(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_3.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_3(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_4.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_4(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_5.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_5(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_6.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_6(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_7.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_7(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_8.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_8(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_9.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_9(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_10.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_10(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_11.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_11(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_12.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_12(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_13.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_13(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_14.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_14(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_15.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_15(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_26.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_26(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_27.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_27(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_28.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_28(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_29.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_29(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_30.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_30(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_31.vhd":22:8:22:9|Removing sequential instance REG[7:0] (in view: work.gpio_op_reg_uniq_31(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_0.vhd":95:34:95:59|Removing instance temp_dly_2term_inst2 (in view: work.temp_plsmod_uniq_0(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_idlm_reg_uniq_0.vhd":57:8:57:9|Removing sequential instance CH0IDLM[7:0] (in view: work.temp_idlm_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_idlm_reg_uniq_0.vhd":57:8:57:9|Removing sequential instance CH1IDLM[7:0] (in view: work.temp_idlm_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_idlm_reg_uniq_0.vhd":57:8:57:9|Removing sequential instance CH2IDLM[7:0] (in view: work.temp_idlm_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_idlm_reg_uniq_0.vhd":57:8:57:9|Removing sequential instance CH3IDLM[7:0] (in view: work.temp_idlm_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":97:8:97:9|Removing sequential instance ch0ctlatch[5:4] (in view: work.temp_ctst_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":97:8:97:9|Removing sequential instance ch1ctlatch[5:4] (in view: work.temp_ctst_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":97:8:97:9|Removing sequential instance ch2ctlatch[5:4] (in view: work.temp_ctst_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":97:8:97:9|Removing sequential instance ch3ctlatch[5:4] (in view: work.temp_ctst_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsnum_reg_uniq_0.vhd":79:8:79:9|Removing sequential instance CH0COOL (in view: work.temp_plsnum_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsnum_reg_uniq_0.vhd":79:8:79:9|Removing sequential instance CH1COOL (in view: work.temp_plsnum_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsnum_reg_uniq_0.vhd":79:8:79:9|Removing sequential instance CH2NEG (in view: work.temp_plsnum_reg_uniq_0(rtl)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsnum_reg_uniq_0.vhd":118:8:118:9|Removing sequential instance CH2ENB (in view: work.temp_plsnum_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsnum_reg_uniq_0.vhd":79:8:79:9|Removing sequential instance CH2COOL (in view: work.temp_plsnum_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsnum_reg_uniq_0.vhd":79:8:79:9|Removing sequential instance CH3NEG (in view: work.temp_plsnum_reg_uniq_0(rtl)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsnum_reg_uniq_0.vhd":118:8:118:9|Removing sequential instance CH3ENB (in view: work.temp_plsnum_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsnum_reg_uniq_0.vhd":79:8:79:9|Removing sequential instance CH3COOL (in view: work.temp_plsnum_reg_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_1.vhd":101:34:101:59|Removing instance temp_dly_2term_inst3 (in view: work.temp_plsmod_uniq_1(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_2.vhd":95:34:95:59|Removing instance temp_dly_2term_inst2 (in view: work.temp_plsmod_uniq_2(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_3.vhd":101:34:101:60|Removing instance temp_dly_2term_inst3 (in view: work.temp_plsmod_uniq_3(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsgen_uniq_0.vhd":51:8:51:9|Removing sequential instance PLS_1[6:0] (in view: work.temp_plsgen_uniq_0(rtl)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\enc8b_10b_uniq_0.vhd":54:8:54:9|Removing sequential instance RD_OUT (in view: work.enc8b_10b_uniq_0(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\ppmc_phgen_uniq_0.vhd":46:8:46:9|Removing sequential instance STATE[0:7] (in view: work.ppmc_phgen_uniq_0(rtl)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_0.vhd":39:8:39:9|Removing sequential instance tcreg (in view: work.temp_plsdrv_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_0.vhd":39:8:39:9|Removing sequential instance plsreg (in view: work.temp_plsdrv_uniq_0(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_1.vhd":39:8:39:9|Removing sequential instance plsreg (in view: work.temp_plsdrv_uniq_1(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_1.vhd":19:8:19:9|Removing sequential instance preg (in view: work.temp_dly_2term_uniq_1(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_0.vhd":89:34:89:59|Removing instance temp_dly_2term_inst1 (in view: work.temp_plsmod_uniq_0(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_2.vhd":39:8:39:9|Removing sequential instance tcreg (in view: work.temp_plsdrv_uniq_2(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_2.vhd":39:8:39:9|Removing sequential instance plsreg (in view: work.temp_plsdrv_uniq_2(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_3.vhd":39:8:39:9|Removing sequential instance plsreg (in view: work.temp_plsdrv_uniq_3(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_5.vhd":19:8:19:9|Removing sequential instance preg (in view: work.temp_dly_2term_uniq_5(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_1.vhd":95:34:95:59|Removing instance temp_dly_2term_inst2 (in view: work.temp_plsmod_uniq_1(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_4.vhd":39:8:39:9|Removing sequential instance tcreg (in view: work.temp_plsdrv_uniq_4(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_4.vhd":39:8:39:9|Removing sequential instance plsreg (in view: work.temp_plsdrv_uniq_4(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_7.vhd":19:8:19:9|Removing sequential instance preg (in view: work.temp_dly_2term_uniq_7(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_2.vhd":89:34:89:59|Removing instance temp_dly_2term_inst1 (in view: work.temp_plsmod_uniq_2(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_5.vhd":39:8:39:9|Removing sequential instance plsreg (in view: work.temp_plsdrv_uniq_5(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_6.vhd":39:8:39:9|Removing sequential instance tcreg (in view: work.temp_plsdrv_uniq_6(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_6.vhd":39:8:39:9|Removing sequential instance plsreg (in view: work.temp_plsdrv_uniq_6(rtl)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+
+Only the first 100 messages of id 'BN362' are reported. To see all messages use 'report_messages -log C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\synlog\SP0565_SP0565_premap.srr -id BN362' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN362} -count unlimited' in the Tcl shell.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_3.vhd":95:34:95:60|Removing instance temp_dly_2term_inst2 (in view: work.temp_plsmod_uniq_3(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_0.vhd":78:30:78:52|Removing instance temp_plssel_inst (in view: work.temp_plsmod_uniq_0(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_1.vhd":89:34:89:59|Removing instance temp_dly_2term_inst1 (in view: work.temp_plsmod_uniq_1(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_2.vhd":78:30:78:52|Removing instance temp_plssel_inst (in view: work.temp_plsmod_uniq_2(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_3.vhd":89:34:89:59|Removing instance temp_dly_2term_inst1 (in view: work.temp_plsmod_uniq_3(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_1.vhd":78:30:78:52|Removing instance temp_plssel_inst (in view: work.temp_plsmod_uniq_1(rtl)) because it does not drive other instances.
+@N: BN115 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_3.vhd":78:30:78:52|Removing instance temp_plssel_inst (in view: work.temp_plsmod_uniq_3(rtl)) because it does not drive other instances.
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":95:0:95:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":172:0:172:3|Instance tm_u of partition view:work.rvl_tm_Z3_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_4s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":95:0:95:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":172:0:172:3|Instance tm_u of partition view:work.rvl_tm_Z3_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_4s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+Encoding state machine STATE[0:9] (in view: work.slv_tx_ctrl_uniq_0(rtl))
+original code -> new code
+   0000000001 -> 0000000001
+   0000000010 -> 0000000010
+   0000000100 -> 0000000100
+   0000001000 -> 0000001000
+   0000010000 -> 0000010000
+   0000100000 -> 0000100000
+   0001000000 -> 0001000000
+   0010000000 -> 0010000000
+   0100000000 -> 0100000000
+   1000000000 -> 1000000000
+Encoding state machine STATE[0:14] (in view: work.slv_rx_ctrl_uniq_0(rtl))
+original code -> new code
+   00000000000001 -> 000000000000001
+   00000000000010 -> 000000000000010
+   00000000000011 -> 000000000000100
+   00000000000100 -> 000000000001000
+   00000000000110 -> 000000000010000
+   00000000001000 -> 000000000100000
+   00000000001100 -> 000000001000000
+   00000000010000 -> 000000010000000
+   00000000011000 -> 000000100000000
+   00000000100000 -> 000001000000000
+   00000000110000 -> 000010000000000
+   00000001000000 -> 000100000000000
+   00000001100000 -> 001000000000000
+   00000010000000 -> 010000000000000
+   00000011000000 -> 100000000000000
+Encoding state machine state_count[0:5] (in view: work.rx_ctl_1st_uniq_0(rtl))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   100 -> 010000
+   101 -> 100000
+Encoding state machine ck_state[0:3] (in view: work.slv_com_top_uniq_0(rtl))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\slv_com_top_uniq_0.vhd":213:8:213:9|There are no possible illegal states for state machine ck_state[0:3] (in view: work.slv_com_top_uniq_0(rtl)); safe FSM implementation is not required.
+Encoding state machine st[0:17] (in view: work.log_ca_DACif_seq_uniq_0(rtl))
+original code -> new code
+   00000 -> 000000000000000001
+   00001 -> 000000000000000010
+   00010 -> 000000000000000100
+   00011 -> 000000000000001000
+   00100 -> 000000000000010000
+   00101 -> 000000000000100000
+   00110 -> 000000000001000000
+   00111 -> 000000000010000000
+   01000 -> 000000000100000000
+   01001 -> 000000001000000000
+   01010 -> 000000010000000000
+   01011 -> 000000100000000000
+   01100 -> 000001000000000000
+   01101 -> 000010000000000000
+   01110 -> 000100000000000000
+   01111 -> 001000000000000000
+   11000 -> 010000000000000000
+   11001 -> 100000000000000000
+Encoding state machine st[0:19] (in view: work.adif_seq_uniq_0(rtl))
+original code -> new code
+   00000 -> 00000
+   00001 -> 00001
+   00010 -> 00010
+   00011 -> 00011
+   00100 -> 00100
+   00101 -> 00101
+   00110 -> 00110
+   00111 -> 00111
+   01000 -> 01000
+   01001 -> 01001
+   01010 -> 01010
+   01011 -> 01011
+   01100 -> 01100
+   01101 -> 01101
+   01110 -> 01110
+   01111 -> 01111
+   10000 -> 10000
+   10001 -> 10001
+   10010 -> 10010
+   10011 -> 10011
+Encoding state machine s_state[0:33] (in view: work.ad5270_5271_ctrl_uniq_0(rtl))
+original code -> new code
+   0000000000000000000000000000000001 -> 0000000000000000000000000000000001
+   0000000000000000000000000000000010 -> 0000000000000000000000000000000010
+   0000000000000000000000000000000100 -> 0000000000000000000000000000000100
+   0000000000000000000000000000001000 -> 0000000000000000000000000000001000
+   0000000000000000000000000000010000 -> 0000000000000000000000000000010000
+   0000000000000000000000000000100000 -> 0000000000000000000000000000100000
+   0000000000000000000000000001000000 -> 0000000000000000000000000001000000
+   0000000000000000000000000010000000 -> 0000000000000000000000000010000000
+   0000000000000000000000000100000000 -> 0000000000000000000000000100000000
+   0000000000000000000000001000000000 -> 0000000000000000000000001000000000
+   0000000000000000000000010000000000 -> 0000000000000000000000010000000000
+   0000000000000000000000100000000000 -> 0000000000000000000000100000000000
+   0000000000000000000001000000000000 -> 0000000000000000000001000000000000
+   0000000000000000000010000000000000 -> 0000000000000000000010000000000000
+   0000000000000000000100000000000000 -> 0000000000000000000100000000000000
+   0000000000000000001000000000000000 -> 0000000000000000001000000000000000
+   0000000000000000010000000000000000 -> 0000000000000000010000000000000000
+   0000000000000000100000000000000000 -> 0000000000000000100000000000000000
+   0000000000000001000000000000000000 -> 0000000000000001000000000000000000
+   0000000000000010000000000000000000 -> 0000000000000010000000000000000000
+   0000000000000100000000000000000000 -> 0000000000000100000000000000000000
+   0000000000001000000000000000000000 -> 0000000000001000000000000000000000
+   0000000000010000000000000000000000 -> 0000000000010000000000000000000000
+   0000000000100000000000000000000000 -> 0000000000100000000000000000000000
+   0000000001000000000000000000000000 -> 0000000001000000000000000000000000
+   0000000010000000000000000000000000 -> 0000000010000000000000000000000000
+   0000000100000000000000000000000000 -> 0000000100000000000000000000000000
+   0000001000000000000000000000000000 -> 0000001000000000000000000000000000
+   0000010000000000000000000000000000 -> 0000010000000000000000000000000000
+   0000100000000000000000000000000000 -> 0000100000000000000000000000000000
+   0001000000000000000000000000000000 -> 0001000000000000000000000000000000
+   0010000000000000000000000000000000 -> 0010000000000000000000000000000000
+   0100000000000000000000000000000000 -> 0100000000000000000000000000000000
+   1000000000000000000000000000000000 -> 1000000000000000000000000000000000
+Encoding state machine visual_STOP_ST_current[0:4] (in view: work.ppmc_speed_cnt_uniq_0(rtl))
+original code -> new code
+   00001 -> 00001
+   00010 -> 00010
+   00100 -> 00100
+   01000 -> 01000
+   10000 -> 10000
+Encoding state machine STATE[0:3] (in view: work.ppmc_ctrl_uniq_0(rtl))
+original code -> new code
+   0001 -> 00
+   0010 -> 01
+   0100 -> 10
+   1000 -> 11
+@N: MO225 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd":195:8:195:9|There are no possible illegal states for state machine STATE[0:3] (in view: work.ppmc_ctrl_uniq_0(rtl)); safe FSM implementation is not required.
+Encoding state machine st[0:7] (in view: work.temp_ctrl_uniq_0(rtl))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 228MB peak: 228MB)
+
+
+mixed edge conversion for GCC is OFF
+@W: BZ204 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\pll_gen_uniq_0.vhd":46:4:46:12|GCC unable to propagate clocks through gate slv_com.clk_gen_inst2.PLL_inst.PLLInst_0; all outputs will be treated as enables regardless of whether any inputs are clocks
+@W: BZ240 :|GCC encountered Inferred Clock constraint on net GCC considers to be data slv_com.clk_gen_inst2.PLL_inst.CLKOS2; this will likely lead to failure to convert
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 229MB peak: 229MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 230MB peak: 230MB)
+
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":95:0:95:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":172:0:172:3|Instance tm_u of partition view:work.rvl_tm_Z3_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_4s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":95:0:95:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":172:0:172:3|Instance tm_u of partition view:work.rvl_tm_Z3_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":96:0:96:7|Instance decode_u of partition view:work.rvl_decode_1s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":110:0:110:3|Instance tu_0 of partition view:work.rvl_tu_4s_0s_0s_0s_1s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":130:0:130:3|Instance te_0 of partition view:work.rvl_te_Z1_layer1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":162:0:162:5|Instance tcnt_0 of partition view:work.rvl_tcnt_1s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 230MB peak: 230MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=56 on top level netlist SP0565 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 230MB peak: 230MB)
+
+Some data will not be shown as it is part of encrypted module
+
+
+Clock Summary
+******************
+
+          Start                                     Requested     Requested     Clock        Clock               Clock
+Level     Clock                                     Frequency     Period        Type         Group               Load 
+----------------------------------------------------------------------------------------------------------------------
+0 -       System                                    200.0 MHz     5.000         system       system_clkgroup     0    
+                                                                                                                      
+0 -       pll_gen_uniq_0|CLKOS2_inferred_clock      200.0 MHz     5.000         inferred     (multiple)          1766 
+                                                                                                                      
+0 -       pll_gen_uniq_0|CLKOS3_inferred_clock      200.0 MHz     5.000         inferred     (multiple)          545  
+                                                                                                                      
+0 -       pll_gen_uniq_0|CLKOP_inferred_clock       200.0 MHz     5.000         inferred     (multiple)          258  
+                                                                                                                      
+0 -       reveal_coretop|jtck_inferred_clock[0]     200.0 MHz     5.000         inferred     (multiple)          203  
+                                                                                                                      
+0 -       SP0565|CLK20M                             200.0 MHz     5.000         inferred     (multiple)          187  
+                                                                                                                      
+0 -       pll_gen_uniq_0|CLKOS_inferred_clock       200.0 MHz     5.000         inferred     (multiple)          22   
+======================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                          Clock     Source                                                       Clock Pin                                                Non-clock Pin                                                          Non-clock Pin                                                        
+Clock                                     Load      Pin                                                          Seq Example                                              Seq Example                                                            Comb Example                                                         
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                    0         -                                                            -                                                        -                                                                      -                                                                    
+                                                                                                                                                                                                                                                                                                                      
+pll_gen_uniq_0|CLKOS2_inferred_clock      1766      slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2(EHXPLLL)     tmpctrl_4ch.tmpctrl_4ch_reg_inst.s_COUNT_TEMP[1:0].C     -                                                                      -                                                                    
+                                                                                                                                                                                                                                                                                                                      
+pll_gen_uniq_0|CLKOS3_inferred_clock      545       slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3(EHXPLLL)     slv_com.rx_com_inst.rx_cont_b2_inst.rxd_1q[7:0].C        tmpctrl_4ch.tmpctrl_4ch_reg_inst.temp_idlm_reg_inst.CH0ILDO[7:0].E     tmpctrl_4ch.tmpctrl_4ch_reg_inst.temp_idlm_reg_inst.WRP[3:0].SEL(mux)
+                                                                                                                                                                                                                                                                                                                      
+pll_gen_uniq_0|CLKOP_inferred_clock       258       slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOP(EHXPLLL)      slv_com.cds_inst.cz[0].C                                 -                                                                      slv_com.cds_inst.un1_clk2.I[0](inv)                                  
+                                                                                                                                                                                                                                                                                                                      
+reveal_coretop|jtck_inferred_clock[0]     203       sp0565_reveal_coretop_instance.jtag0.jtck(jtagconn16)        -                                                        -                                                                      -                                                                    
+                                                                                                                                                                                                                                                                                                                      
+SP0565|CLK20M                             187       CLK20M(port)                                                 slv_com.ckgen_rstb.C                                     -                                                                      -                                                                    
+                                                                                                                                                                                                                                                                                                                      
+pll_gen_uniq_0|CLKOS_inferred_clock       22        slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS(EHXPLLL)      slv_com.cds_inst.bz[0].C                                 -                                                                      slv_com.cds_inst.un1_clk2a.I[0](inv)                                 
+======================================================================================================================================================================================================================================================================================================================
+
+@W: MT529 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\rst_cnt_uniq_0.vhd":31:8:31:9|Found inferred clock SP0565|CLK20M which controls 187 sequential elements including slv_com.rst_cnt_inst.clk_cntr[8:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\slvadr_cnv_uniq_0.vhd":24:8:24:9|Found inferred clock pll_gen_uniq_0|CLKOS2_inferred_clock which controls 1766 sequential elements including slv_com.slvadr_cnv_inst.s_HEX_OUT[5:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\rst_cnt_uniq_0.vhd":71:8:71:9|Found inferred clock pll_gen_uniq_0|CLKOS_inferred_clock which controls 22 sequential elements including slv_com.rst_cnt_inst.clk2An_cntr[8:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\rst_cnt_uniq_0.vhd":51:8:51:9|Found inferred clock pll_gen_uniq_0|CLKOP_inferred_clock which controls 258 sequential elements including slv_com.rst_cnt_inst.clk2n_cntr[8:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\work\s127m\pcbno_10089\sp0565_rev00_00\sp0565\reveal_workspace\tmpreveal\slv_tx_ctrl_uniq_0.vhd":44:8:44:9|Found inferred clock pll_gen_uniq_0|CLKOS3_inferred_clock which controls 545 sequential elements including slv_com.slv_ctrl_top_inst.slv_tx_ctrl_inst.STATE[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+3 non-gated/non-generated clock tree(s) driving 412 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 2569 clock pin(s) of sequential element(s)
+0 instances converted, 2569 sequential instances remain driven by gated/generated clocks
+
+============================================== Non-Gated/Non-Generated Clocks ===============================================
+Clock Tree ID     Driving Element                                    Drive Element Type     Fanout     Sample Instance       
+-----------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       CLK20M                                             port                   187        slv_com.ck_state[1]   
+@KP:ckid0_1       sp0565_reveal_coretop_instance.jtag0.jtck          jtagconn16             203        ENCRYPTED             
+@KP:ckid0_5       slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS     EHXPLLL                22         slv_com.cds_inst.dz[2]
+=============================================================================================================================
+============================================================================================================================ Gated/Generated Clocks =============================================================================================================================
+Clock Tree ID     Driving Element                                     Drive Element Type     Unconverted Fanout     Sample Instance                                                             Explanation                                                                      
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_3       slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2     EHXPLLL                1766                   slv_com.slvadr_cnv_inst.s_HEX_OUT[5:0]                                      Clock source is invalid for GCC                                                  
+@KP:ckid0_4       slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOP      EHXPLLL                258                    slv_com.rx_com_inst.rx_cont_b1_inst.rx_ck_dcfifo1_48_inst.pdp_ram_0_0_0     Synplify Pro Clock optimization on technology cells not supported in this product
+@KP:ckid0_6       slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3     EHXPLLL                545                    slv_com.rx_com_inst.rx_cont_b2_inst.rx_dcfifo1_48_inst.pdp_ram_0_0_0        Synplify Pro Clock optimization on technology cells not supported in this product
+=================================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+
+Summary of user generated gated clocks:
+0 user generated gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 226MB peak: 230MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 228MB peak: 230MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 230MB peak: 230MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 135MB peak: 231MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:03s cputime
+# Thu Apr  9 18:26:00 2026
+
+###########################################################]

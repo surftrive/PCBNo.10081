@@ -1,0 +1,27 @@
+Runtime Summary:
+================
+
+	The following design units have negligible CPU times:
+	=====================================================
+		* Library: work, DesignUnit: sp0565_la0
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rvl_tm_Z3_layer1
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: sp0565_la0_trig
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rvl_tcnt_1s_3s_1_0s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rvl_te_Z1_layer1
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rvl_tu_4s_0s_0s_0s_1s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rvl_decode_1s_1s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: pmi_ram_dp_Z4_layer1
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: pmi_ram_dp_Z2_layer1
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: jtagconn16
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time

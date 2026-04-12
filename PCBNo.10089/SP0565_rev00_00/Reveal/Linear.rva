@@ -1,0 +1,69 @@
+<!DOCTYPE ispTLA>
+<ispTLA>
+ <CreationDate>?? 2 5 17:31:02 2026</CreationDate>
+ <XCFFileName/>
+ <CableSetting>
+  <IsTRSTConnected val="false"/>
+  <TRSTSetting val="0"/>
+  <IsBSCANConnected val="false"/>
+  <BSCANSetting val="0"/>
+  <CableType val="USB2"/>
+  <PortAddress val="1"/>
+  <PortSetting val="0"/>
+  <TCKDelay val="1"/>
+ </CableSetting>
+ <DeviceCount>1</DeviceCount>
+ <Device>
+  <DeviceIndex>0</DeviceIndex>
+  <DeviceName>1. LFE5U-25F</DeviceName>
+  <DeviceID>0x41111043</DeviceID>
+  <HasIspTRACY>true</HasIspTRACY>
+  <HasJTAG2WB>false</HasJTAG2WB>
+  <SERDES/>
+  <IRBypassLen>8</IRBypassLen>
+  <RVLFileName>linear.rvl</RVLFileName>
+  <RVSFileName>linear.rvs</RVSFileName>
+  <LACoreCount>1</LACoreCount>
+  <WinUI CoreIndex="0">
+   <TraceSigTreeData>
+    <TraceSignal IsHidden="false" Name="TU1" NodeType="1" PortIndex="20">
+     <BusRadix Radix="0"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/command:0" NodeType="2" PortIndex="20"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/command:1" NodeType="2" PortIndex="21"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/command:2" NodeType="2" PortIndex="22"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/command:3" NodeType="2" PortIndex="23"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/const_f" NodeType="0" PortIndex="0"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/enb_start" NodeType="0" PortIndex="1"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/start_stop" NodeType="0" PortIndex="2"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/p_stop" NodeType="0" PortIndex="3"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_1280us" NodeType="0" PortIndex="4"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/ph_flag" NodeType="0" PortIndex="5"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt" NodeType="1" PortIndex="6">
+     <BusRadix Radix="0"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:0" NodeType="2" PortIndex="6"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:1" NodeType="2" PortIndex="7"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:2" NodeType="2" PortIndex="8"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:3" NodeType="2" PortIndex="9"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:4" NodeType="2" PortIndex="10"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:5" NodeType="2" PortIndex="11"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:6" NodeType="2" PortIndex="12"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:7" NodeType="2" PortIndex="13"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:8" NodeType="2" PortIndex="14"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:9" NodeType="2" PortIndex="15"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:10" NodeType="2" PortIndex="16"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:11" NodeType="2" PortIndex="17"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:12" NodeType="2" PortIndex="18"/>
+    <TraceSignal IsHidden="false" Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:13" NodeType="2" PortIndex="19"/>
+   </TraceSigTreeData>
+   <TriggerUI UserSelect="0" PreSelectType="0" PreSelect="1" UserSelectPos="0"/>
+   <CoreRun Run="true"/>
+   <CoreWndUIData>
+    <ClockFrequency Unit="ns" Frequency="-1.0"/>
+   </CoreWndUIData>
+  </WinUI>
+ </Device>
+</ispTLA>

@@ -1,0 +1,657 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\sp0565.vhd":6:7:6:12|Top entity is set to SP0565.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\reveal_coretop.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\w_pack.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rst_cnt_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_tx_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_rx_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\node_sel_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\adr_sel_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\nd_sel_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slvadr_cnv_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\pll_gen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc5b_6b_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc3b_4b_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_tx_b1_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\crc_gen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tx_ctl_1st_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_tx_b2_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tx_ctl_3rd_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dec6b_5b_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dec4b_3b_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_rx_b1_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_ctl_1st_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_rx_b2_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\crc_check_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_ctl_3rd_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\cds_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_clk_gen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\log_ca_dacclk_gen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\log_ca_dacif_seq_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\adclk_gen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\adif_seq_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\shiftreg12bit_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\adc_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\encoder_2bit_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc_lmt_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ring_counter_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\linear_signal_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_dec_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_sel_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_id_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_u_step_ext_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_acc_tim_gen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_speed_cnt_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_timer_cnt_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_pls_cnt_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_dec_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_phgen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_cmdchk_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_dec_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_sel_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_id_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_4.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_4.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_5.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_5.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_6.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_6.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_7.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_7.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_8.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_8.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_9.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_9.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_10.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_10.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_11.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_11.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_12.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_12.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_13.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_13.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_14.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_14.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_15.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_15.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_16.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_16.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_17.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_17.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_18.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_18.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_19.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_19.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_20.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_20.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_21.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_21.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_22.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_22.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_23.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_23.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_24.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_24.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_25.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_25.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_26.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_26.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_27.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_27.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_28.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_28.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_29.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_29.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_30.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_30.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_31.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_31.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_dec_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_sel_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_id_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dec_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_meas_reg_s127m_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ref_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ajst_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_cut_ref_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_idlm_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_prm_sel_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_edge_dtct_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_rng_chk_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsnum_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_4.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_5.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_6.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_7.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_8.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_4.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_5.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_9.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_10.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_11.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_6.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_7.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsgen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_dec_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_sel_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slaveid_id_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_ctrl_top_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\clk_gen_s124m_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc8b_10b_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc8b10b_new_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc8b10b_wrapper_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tx_cont_b1_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tx_cont_b2_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tx_com_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dec8b10b_new_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dec8b10b_wrapper_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_cont_b1_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_cont_b2_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_com_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_com_top_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\log_ca_dac_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dac081s101_top_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc_top_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc_func_top_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\pulse_sens_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_plsgen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_reg_s118m_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_top_s118m_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_top_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_reg_s127m_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_top_s127m_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slaveid_top_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\sp0565.vhd'.
+@N: CD231 :"C:\lscc\diamond\3.13\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N|Running in 64-bit mode
+@N:"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\sp0565.vhd":6:7:6:12|Top entity is set to SP0565.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\reveal_coretop.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\w_pack.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rst_cnt_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_tx_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_rx_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\node_sel_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\adr_sel_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\nd_sel_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slvadr_cnv_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\pll_gen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc5b_6b_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc3b_4b_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_tx_b1_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\crc_gen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tx_ctl_1st_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_tx_b2_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tx_ctl_3rd_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dec6b_5b_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dec4b_3b_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_rx_b1_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_ctl_1st_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_rx_b2_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\crc_check_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_ctl_3rd_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\cds_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_clk_gen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\log_ca_dacclk_gen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\log_ca_dacif_seq_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\adclk_gen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\adif_seq_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\shiftreg12bit_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\adc_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\encoder_2bit_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc_lmt_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ring_counter_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\linear_signal_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_dec_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_sel_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_id_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_u_step_ext_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_acc_tim_gen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_speed_cnt_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_timer_cnt_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_pls_cnt_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_dec_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_phgen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_cmdchk_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_dec_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_sel_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_id_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_4.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_4.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_5.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_5.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_6.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_6.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_7.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_7.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_8.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_8.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_9.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_9.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_10.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_10.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_11.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_11.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_12.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_12.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_13.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_13.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_14.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_14.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_15.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_15.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_16.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_16.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_17.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_17.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_18.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_18.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_19.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_19.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_20.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_20.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_21.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_21.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_22.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_22.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_23.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_23.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_24.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_24.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_25.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_25.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_26.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_26.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_27.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_27.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_28.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_28.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_29.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_29.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_30.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_30.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_31.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_31.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_dec_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_sel_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_id_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dec_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_meas_reg_s127m_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ref_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ajst_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_cut_ref_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_idlm_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_prm_sel_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_edge_dtct_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_rng_chk_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsnum_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_4.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_5.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_6.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_7.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_8.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_4.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_5.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_9.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_10.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_11.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_6.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_7.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsgen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_dec_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_sel_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slaveid_id_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_ctrl_top_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\clk_gen_s124m_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc8b_10b_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc8b10b_new_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc8b10b_wrapper_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tx_cont_b1_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tx_cont_b2_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tx_com_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dec8b10b_new_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dec8b10b_wrapper_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_cont_b1_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_cont_b2_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_com_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_com_top_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\log_ca_dac_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dac081s101_top_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad_ctrl_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc_top_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc_func_top_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\pulse_sens_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_plsgen_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_reg_s118m_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_top_s118m_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_top_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_3.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_reg_s127m_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_top_s127m_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slaveid_top_uniq_0.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\sp0565.vhd'.
+@N: CD231 :"C:\lscc\diamond\3.13\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\sp0565.vhd":6:7:6:12|Synthesizing work.sp0565.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\reveal_coretop.vhd":4:7:4:20|Synthesizing work.reveal_coretop.one.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slaveid_top_uniq_0.vhd":4:7:4:24|Synthesizing work.slaveid_top_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slaveid_id_uniq_0.vhd":4:7:4:23|Synthesizing work.slaveid_id_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_sel_uniq_3.vhd":4:7:4:19|Synthesizing work.fc_sel_uniq_3.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_dec_uniq_3.vhd":4:7:4:19|Synthesizing work.fc_dec_uniq_3.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_top_s127m_uniq_0.vhd":3:7:3:34|Synthesizing work.tmpctrl_4ch_top_s127m_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_reg_s127m_uniq_0.vhd":4:7:4:34|Synthesizing work.tmpctrl_4ch_reg_s127m_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsgen_uniq_0.vhd":5:7:5:24|Synthesizing work.temp_plsgen_uniq_0.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsgen_uniq_0.vhd":81:20:81:33|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_3.vhd":3:7:3:24|Synthesizing work.temp_plsmod_uniq_3.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_7.vhd":3:7:3:24|Synthesizing work.temp_plsdrv_uniq_7.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_6.vhd":3:7:3:24|Synthesizing work.temp_plsdrv_uniq_6.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_3.vhd":3:7:3:24|Synthesizing work.temp_dlysel_uniq_3.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_3.vhd":31:12:31:25|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_11.vhd":3:7:3:28|Synthesizing work.temp_dly_2term_uniq_11.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_10.vhd":3:7:3:28|Synthesizing work.temp_dly_2term_uniq_10.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_9.vhd":3:7:3:27|Synthesizing work.temp_dly_2term_uniq_9.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_3.vhd":5:7:5:24|Synthesizing work.temp_plssel_uniq_3.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_2.vhd":3:7:3:24|Synthesizing work.temp_plsmod_uniq_2.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_5.vhd":3:7:3:24|Synthesizing work.temp_plsdrv_uniq_5.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_4.vhd":3:7:3:24|Synthesizing work.temp_plsdrv_uniq_4.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_2.vhd":3:7:3:24|Synthesizing work.temp_dlysel_uniq_2.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_2.vhd":31:12:31:25|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_8.vhd":3:7:3:27|Synthesizing work.temp_dly_2term_uniq_8.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_7.vhd":3:7:3:27|Synthesizing work.temp_dly_2term_uniq_7.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_6.vhd":3:7:3:27|Synthesizing work.temp_dly_2term_uniq_6.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_2.vhd":5:7:5:24|Synthesizing work.temp_plssel_uniq_2.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_1.vhd":3:7:3:24|Synthesizing work.temp_plsmod_uniq_1.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_3.vhd":3:7:3:24|Synthesizing work.temp_plsdrv_uniq_3.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_2.vhd":3:7:3:24|Synthesizing work.temp_plsdrv_uniq_2.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_1.vhd":3:7:3:24|Synthesizing work.temp_dlysel_uniq_1.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_1.vhd":31:12:31:25|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_5.vhd":3:7:3:27|Synthesizing work.temp_dly_2term_uniq_5.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_4.vhd":3:7:3:27|Synthesizing work.temp_dly_2term_uniq_4.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_3.vhd":3:7:3:27|Synthesizing work.temp_dly_2term_uniq_3.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_1.vhd":5:7:5:24|Synthesizing work.temp_plssel_uniq_1.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsmod_uniq_0.vhd":3:7:3:24|Synthesizing work.temp_plsmod_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_1.vhd":3:7:3:24|Synthesizing work.temp_plsdrv_uniq_1.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsdrv_uniq_0.vhd":3:7:3:24|Synthesizing work.temp_plsdrv_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_0.vhd":3:7:3:24|Synthesizing work.temp_dlysel_uniq_0.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dlysel_uniq_0.vhd":31:12:31:25|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_2.vhd":3:7:3:27|Synthesizing work.temp_dly_2term_uniq_2.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_1.vhd":3:7:3:27|Synthesizing work.temp_dly_2term_uniq_1.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dly_2term_uniq_0.vhd":3:7:3:27|Synthesizing work.temp_dly_2term_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_0.vhd":5:7:5:24|Synthesizing work.temp_plssel_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsnum_reg_uniq_0.vhd":3:7:3:28|Synthesizing work.temp_plsnum_reg_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctrl_uniq_0.vhd":5:7:5:22|Synthesizing work.temp_ctrl_uniq_0.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctrl_uniq_0.vhd":89:16:89:29|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_rng_chk_uniq_0.vhd":4:7:4:25|Synthesizing work.temp_rng_chk_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_edge_dtct_uniq_0.vhd":3:7:3:27|Synthesizing work.temp_edge_dtct_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_prm_sel_uniq_0.vhd":3:7:3:25|Synthesizing work.temp_prm_sel_uniq_0.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_prm_sel_uniq_0.vhd":67:12:67:25|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_idlm_reg_uniq_0.vhd":3:7:3:26|Synthesizing work.temp_idlm_reg_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_cut_ref_reg_uniq_0.vhd":3:7:3:29|Synthesizing work.temp_cut_ref_reg_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":3:7:3:26|Synthesizing work.temp_ctst_reg_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ajst_reg_uniq_0.vhd":3:7:3:26|Synthesizing work.temp_ajst_reg_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ref_reg_uniq_0.vhd":3:7:3:25|Synthesizing work.temp_ref_reg_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_meas_reg_s127m_uniq_0.vhd":3:7:3:32|Synthesizing work.temp_meas_reg_s127m_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_dec_uniq_0.vhd":3:7:3:21|Synthesizing work.temp_dec_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_id_uniq_0.vhd":3:7:3:27|Synthesizing work.tmpctrl_4ch_id_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_sel_uniq_2.vhd":4:7:4:19|Synthesizing work.fc_sel_uniq_2.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\fc_dec_uniq_2.vhd":4:7:4:19|Synthesizing work.fc_dec_uniq_2.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_top_uniq_0.vhd":4:7:4:21|Synthesizing work.gpio_top_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_reg_uniq_0.vhd":4:7:4:21|Synthesizing work.gpio_reg_uniq_0.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_31.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_31.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_31.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_31.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_30.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_30.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_30.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_30.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_29.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_29.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_29.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_29.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_28.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_28.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_28.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_28.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_27.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_27.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_27.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_27.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_26.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_26.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_26.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_26.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_25.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_25.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_25.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_25.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_24.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_24.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_24.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_24.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_23.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_23.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_23.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_23.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_22.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_22.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_22.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_22.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_21.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_21.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_21.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_21.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_20.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_20.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_20.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_20.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_19.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_19.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_19.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_19.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_18.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_18.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_18.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_18.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_17.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_17.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_17.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_17.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_16.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_16.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_16.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_16.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_15.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_15.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_15.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_15.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_14.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_14.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_14.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_14.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_13.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_13.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_13.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_13.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_12.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_12.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_12.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_12.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_ip_reg_uniq_11.vhd":4:7:4:25|Synthesizing work.gpio_ip_reg_uniq_11.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\gpio_op_reg_uniq_11.vhd":4:7:4:25|Synthesizing work.gpio_op_reg_uniq_11.rtl.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_cmdchk_uniq_0.vhd":114:16:114:25|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd":116:16:116:22|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd":157:20:157:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd":252:24:252:32|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd":258:20:258:24|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd":291:20:291:24|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd":309:20:309:24|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd":322:20:322:24|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd":325:20:325:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd":115:20:115:31|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd":116:20:116:32|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd":120:20:120:31|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd":121:20:121:32|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd":137:20:137:31|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd":138:20:138:32|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd":144:24:144:35|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd":151:16:151:30|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd":152:16:152:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd":153:16:153:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd":154:16:154:28|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_enblr_s118m_uniq_0.vhd":168:16:168:22|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":115:16:115:25|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":127:16:127:28|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":132:16:132:28|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":133:16:133:22|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":265:16:265:31|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":288:16:288:34|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":300:16:300:24|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":336:16:336:30|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":348:16:348:26|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":372:16:372:22|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":396:16:396:22|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":418:16:418:20|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_pls_cnt_uniq_0.vhd":47:16:47:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_pls_cnt_uniq_0.vhd":49:16:49:18|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_pls_cnt_uniq_0.vhd":50:16:50:21|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_pls_cnt_uniq_0.vhd":66:20:66:28|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_pls_cnt_uniq_0.vhd":69:16:69:24|Removing redundant assignment.
+@N: CD231 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_speed_cnt_uniq_0.vhd":20:31:20:32|Using onehot encoding for type visual_stop_st_states. For example, enumeration stop_st is mapped to "10000".
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_speed_cnt_uniq_0.vhd":83:16:83:29|OTHERS clause is not synthesized.
+@N: CD231 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":20:15:20:16|Using onehot encoding for type state. For example, enumeration idle is mapped to "1000000000000000000000000000000000".
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":98:28:98:33|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":101:20:101:25|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":104:20:104:25|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":105:20:105:23|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":106:20:106:25|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":125:28:125:31|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":126:28:126:32|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":132:28:132:32|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":138:24:138:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":140:24:140:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":144:24:144:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":146:24:146:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":150:24:150:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":152:24:152:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":156:24:156:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":158:24:158:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":162:24:162:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":164:24:164:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":168:24:168:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":170:24:170:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":174:24:174:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":176:24:176:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":180:24:180:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":182:24:182:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":186:24:186:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":188:24:188:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":192:24:192:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":194:24:194:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":198:24:198:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":200:24:200:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":204:24:204:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":206:24:206:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":210:24:210:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":212:24:212:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":216:24:216:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":218:24:218:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":222:24:222:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":224:24:224:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":228:24:228:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":230:24:230:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":234:24:234:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":236:24:236:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":240:24:240:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":242:24:242:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":246:24:246:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":248:24:248:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":252:24:252:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":254:24:254:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":258:24:258:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":260:24:260:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":264:24:264:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":266:24:266:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":270:24:270:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":272:24:272:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":276:24:276:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":278:24:278:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":282:24:282:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":284:24:284:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":288:24:288:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":290:24:290:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":294:24:294:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":296:24:296:27|Removing redundant assignment.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":334:20:334:33|OTHERS clause is not synthesized.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\linear_signal_ctrl_uniq_0.vhd":134:20:134:33|OTHERS clause is not synthesized.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_com_top_uniq_0.vhd":242:16:242:29|OTHERS clause is not synthesized.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc3b_4b_uniq_0.vhd":77:20:77:33|OTHERS clause is not synthesized.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\enc5b_6b_uniq_0.vhd":180:20:180:33|OTHERS clause is not synthesized.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_rx_ctrl_uniq_0.vhd":420:12:420:25|OTHERS clause is not synthesized.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_tx_ctrl_uniq_0.vhd":44:8:44:9|Trying to extract state machine for register STATE.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_rx_ctrl_uniq_0.vhd":72:8:72:9|Trying to extract state machine for register STATE.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_ctl_1st_uniq_0.vhd":86:8:86:9|Trying to extract state machine for register state_count.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_ctl_3rd_uniq_0.vhd":10:8:10:15|Input RX_EMPTY is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_com_uniq_0.vhd":8:8:8:12|Input CLK2A is unused.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_com_top_uniq_0.vhd":213:8:213:9|Trying to extract state machine for register ck_state.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_com_top_uniq_0.vhd":12:8:12:15|Input LVCLK_Ip is unused.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\log_ca_dacif_seq_uniq_0.vhd":42:8:42:9|Trying to extract state machine for register st.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\adif_seq_uniq_0.vhd":45:8:45:9|Trying to extract state machine for register st.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":113:8:113:9|Trying to extract state machine for register s_state.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_speed_cnt_uniq_0.vhd":25:8:25:9|Trying to extract state machine for register visual_STOP_ST_current.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_phgen_uniq_0.vhd":46:8:46:9|Trying to extract state machine for register STATE.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd":195:8:195:9|Trying to extract state machine for register STATE.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd":10:8:10:16|Input PULSE_REG is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_cmdchk_uniq_0.vhd":8:8:8:14|Input UP_DOWN is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_cmdchk_uniq_0.vhd":9:8:9:14|Input ACC_ENB is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_cmdchk_uniq_0.vhd":13:8:13:15|Input LOW_FREQ is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_cmdchk_uniq_0.vhd":14:8:14:16|Input HIGH_FREQ is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_cmdchk_uniq_0.vhd":15:8:15:16|Input PULSE_REG is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_cmdchk_uniq_0.vhd":18:8:18:12|Input SPEED is unused.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctrl_uniq_0.vhd":39:8:39:9|Trying to extract state machine for register st.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsnum_reg_uniq_0.vhd":9:8:9:13|Input LOAD_L is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_0.vhd":13:8:13:13|Input IDLING is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_1.vhd":13:8:13:13|Input IDLING is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_2.vhd":13:8:13:13|Input IDLING is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_3.vhd":13:8:13:13|Input IDLING is unused.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsgen_uniq_0.vhd":51:8:51:9|Trying to extract state machine for register st.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slaveid_top_uniq_0.vhd":6:8:6:10|Input CLK is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slaveid_top_uniq_0.vhd":11:8:11:10|Input LDI is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slaveid_top_uniq_0.vhd":14:8:14:11|Input LWEb is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slaveid_top_uniq_0.vhd":17:8:17:12|Input LRSTb is unused.
+@N: CG364 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":1162:7:1162:16|Synthesizing module jtagconn16 in library work.
+@N: CG364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\sp0565_la0_trig_gen.v":11:7:11:21|Synthesizing module sp0565_la0_trig in library work.
+@N: CG364 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":12:7:12:16|Synthesizing module sp0565_la0 in library work.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":51:7:51:13|Input reset_n is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\sp0565_la0_gen.v":62:7:62:16|Input trigger_en is unused.
+@N|Running in 64-bit mode
+

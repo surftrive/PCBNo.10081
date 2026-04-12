@@ -1,0 +1,431 @@
+Runtime Summary:
+================
+
+	The following design units have negligible CPU times:
+	=====================================================
+		*Library: work, Entity: rst_cnt_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: slv_tx_ctrl_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: slv_rx_ctrl_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: node_sel_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: adr_sel_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: nd_sel_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: slv_ctrl_top_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: slvadr_cnv_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: pll_gen_uniq_0, Architecture: structure
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: CLK_gen_S124M_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: enc5b_6b_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: enc3b_4b_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: enc8b_10b_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: enc8b10b_new_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: enc8b10b_wrapper_uniq_0, Architecture: wrapper
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: dcfifo_tx_b1_uniq_0, Architecture: structure
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: crc_gen_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: tx_ctl_1st_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: tx_cont_b1_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: dcfifo_tx_b2_uniq_0, Architecture: structure
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: tx_ctl_3rd_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: tx_cont_b2_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: tx_com_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: dec6b_5b_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: dec4b_3b_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: dec8b10b_new_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: dec8b10b_wrapper_uniq_0, Architecture: wrapper
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: dcfifo_rx_b1_uniq_0, Architecture: structure
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: rx_ctl_1st_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: rx_cont_b1_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: dcfifo_rx_b2_uniq_0, Architecture: structure
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: crc_check_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: rx_ctl_3rd_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: rx_cont_b2_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: rx_com_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: cds_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: slv_com_top_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: slv_clk_gen_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: log_ca_DACclk_gen_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: log_ca_DACif_seq_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: log_ca_DAC_ctrl_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: DAC081S101_top_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: adclk_gen_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: adif_seq_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: shiftreg12bit_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: adc_reg_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ad_ctrl_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: encoder_2bit_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: enc_lmt_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: enc_top_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: enc_func_top_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ring_counter_uniq_0_8, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: pulse_sens_uniq_0_8, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: linear_signal_ctrl_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ad5270_5271_ctrl_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: fc_dec_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: fc_sel_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_id_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_u_step_ext_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_acc_tim_gen_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_speed_cnt_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_timer_cnt_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_pls_cnt_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_plsgen_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_dec_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_rgstr_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_enblr_S118M_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_phgen_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_ctrl_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_cmdchk_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_reg_S118M_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: ppmc_top_S118M_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: fc_dec_uniq_1, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: fc_sel_uniq_1, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_id_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_1, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_1, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_2, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_2, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_3, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_3, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_4, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_4, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_5, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_5, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_6, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_6, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_7, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_7, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_8, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_8, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_9, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_9, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_10, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_10, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_11, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_11, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_12, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_12, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_13, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_13, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_14, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_14, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_15, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_15, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_16, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_16, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_17, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_17, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_18, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_18, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_19, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_19, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_20, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_20, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_21, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_21, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_22, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_22, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_23, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_23, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_24, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_24, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_25, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_25, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_26, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_26, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_27, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_27, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_28, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_28, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_29, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_29, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_30, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_30, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_op_reg_uniq_31, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_ip_reg_uniq_31, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_reg_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: gpio_top_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: fc_dec_uniq_2, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: fc_sel_uniq_2, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: tmpctrl_4ch_id_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dec_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_meas_reg_S127M_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_ref_reg_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_ajst_reg_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_ctst_reg_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_cut_ref_reg_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_idlm_reg_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_prm_sel_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_edge_dtct_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_rng_chk_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_ctrl_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plsnum_reg_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plssel_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dly_2term_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dly_2term_uniq_1, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dly_2term_uniq_2, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dlysel_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plsdrv_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plsdrv_uniq_1, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plsmod_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plssel_uniq_1, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dly_2term_uniq_3, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dly_2term_uniq_4, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dly_2term_uniq_5, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dlysel_uniq_1, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plsdrv_uniq_2, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plsdrv_uniq_3, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plsmod_uniq_1, Architecture: rtl
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plssel_uniq_2, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dly_2term_uniq_6, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dly_2term_uniq_7, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dly_2term_uniq_8, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dlysel_uniq_2, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plsdrv_uniq_4, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plsdrv_uniq_5, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plsmod_uniq_2, Architecture: rtl
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plssel_uniq_3, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dly_2term_uniq_9, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dly_2term_uniq_10, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dly_2term_uniq_11, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_dlysel_uniq_3, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plsdrv_uniq_6, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plsdrv_uniq_7, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plsmod_uniq_3, Architecture: rtl
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: temp_plsgen_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: tmpctrl_4ch_reg_S127M_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: tmpctrl_4ch_top_S127M_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: fc_dec_uniq_3, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: fc_sel_uniq_3, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: slaveid_id_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: slaveid_top_uniq_0, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: reveal_coretop, Architecture: one
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: SP0565, Architecture: rtl
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: ecp5u, Entity: EHXPLLL, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: ecp5u, Entity: AND2, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: ecp5u, Entity: INV, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: ecp5u, Entity: OR2, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: ecp5u, Entity: XOR2, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: ecp5u, Entity: VHI, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: ecp5u, Entity: VLO, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: ecp5u, Entity: CCU2C, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: ecp5u, Entity: FD1S3BX, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: ecp5u, Entity: FD1S3DX, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: ecp5u, Entity: FD1P3DX, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: ecp5u, Entity: FD1P3BX, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: ecp5u, Entity: DP16KD, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: ecp5u, Entity: ROM16X1A, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: sp0565_la0, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time
+		*Library: work, Entity: jtagconn16, Architecture: syn_black_box
+			Initial Cleanup Phase, Optimization Phase: Negligible CPU time

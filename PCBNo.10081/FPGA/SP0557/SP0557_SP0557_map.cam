@@ -1,11 +1,5 @@
 [ START MERGED ]
-s_LRSTb_i s_LRSTb
-U_DAC43608_top/U03/s_LATCH_1_i[1] U_DAC43608_top/U03/s_LATCH_1[1]
-U_DAC43608_top/U03/s_LATCH_1_i[0] U_DAC43608_top/U03/s_LATCH_1[0]
-U_DAC43608_top/U03/s_LATCH_1_i[12] U_DAC43608_top/U03/s_LATCH_1[12]
-U_DAC43608_top/U03/s_LATCH_1_i[11] U_DAC43608_top/U03/s_LATCH_1[11]
-U_DAC43608_top/U03/s_LATCH_1_i[10] U_DAC43608_top/U03/s_LATCH_1[10]
-U_DAC43608_top/U03/s_LATCH_1_i[9] U_DAC43608_top/U03/s_LATCH_1[9]
+s_LRSTb_i s_LRSTb_r47
 U_DAC43608_top/U03/s_LATCH_1_i[8] U_DAC43608_top/U03/s_LATCH_1[8]
 U_DAC43608_top/U03/s_LATCH_1_i[7] U_DAC43608_top/U03/s_LATCH_1[7]
 U_DAC43608_top/U03/s_LATCH_1_i[6] U_DAC43608_top/U03/s_LATCH_1[6]
@@ -13,10 +7,16 @@ U_DAC43608_top/U03/s_LATCH_1_i[5] U_DAC43608_top/U03/s_LATCH_1[5]
 U_DAC43608_top/U03/s_LATCH_1_i[4] U_DAC43608_top/U03/s_LATCH_1[4]
 U_DAC43608_top/U03/s_LATCH_1_i[3] U_DAC43608_top/U03/s_LATCH_1[3]
 U_DAC43608_top/U03/s_LATCH_1_i[2] U_DAC43608_top/U03/s_LATCH_1[2]
+U_DAC43608_top/U03/s_LATCH_1_i[1] U_DAC43608_top/U03/s_LATCH_1[1]
+U_DAC43608_top/U03/s_LATCH_1_i[0] U_DAC43608_top/U03/s_LATCH_1[0]
+U_DAC43608_top/U03/s_LATCH_1_i[12] U_DAC43608_top/U03/s_LATCH_1[12]
+U_DAC43608_top/U03/s_LATCH_1_i[11] U_DAC43608_top/U03/s_LATCH_1[11]
+U_DAC43608_top/U03/s_LATCH_1_i[10] U_DAC43608_top/U03/s_LATCH_1[10]
+U_DAC43608_top/U03/s_LATCH_1_i[9] U_DAC43608_top/U03/s_LATCH_1[9]
 PORb_c_i PORb_c
 slv_com_top_inst/CN slv_com_top_inst/CLK2A
 slv_com_top_inst/CN_0 slv_com_top_inst.CLKCOM_OUT
-slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/rRst TX_RSTb_i_o3
+slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/rRst slv_com_top_inst.s_RSTb1_i
 slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/invout_1 slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/Full
 slv_com_top_inst/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/invout_0 slv_com_top_inst/RX_EMPTY
 slv_com_top_inst/rx_com_inst/rx_data_c_i[10] slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/rx_data_c[10]
@@ -24,11 +24,11 @@ slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/invout_1 slv_
 slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/invout_0 slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/RXCF_RDEMPTY
 slv_com_top_inst/CN_1 slv_com_top_inst.CLK1
 slv_com_top_inst/rx_com_inst/dec8b10b_wrapper_inst/reset_n_reg_i slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.reset_n_reg
-slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/rRst TX_RSTb_i_o3
-slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/rRst TX_RSTb_i
+slv_com_top_inst/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/rRst slv_com_top_inst.s_RSTb1_i
+slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/rRst slv_com_top_inst/TX_RSTb_i_r11
 slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/invout_1 slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/Full
 slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/invout_0 slv_com_top_inst/tx_com_inst/tx_cont_b2_inst/TXCF_RDEMPTY
-slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/rRst TX_RSTb_i
+slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/rRst slv_com_top_inst/TX_RSTb_i_r13
 slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/invout_0 slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/TX_WREMPTY
 slv_com_top_inst/TX_FULL_i slv_com_top_inst/TX_FULL
 slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/invout_1 slv_com_top_inst/TX_FULL
@@ -45,7 +45,6 @@ VCC
 slv_com_top_inst/rst_cnt_inst/VCC
 slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/VCC
 slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/VCC
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/VCC
 slv_com_top_inst/slvadr_cnv_inst/VCC
 slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/VCC
 slv_com_top_inst/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst/VCC
@@ -196,159 +195,7 @@ slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/LA_cry_0_S0[0]
 slv_com_top_inst/slv_ctrl_top_inst/slv_tx_ctrl_inst/N_11
 slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/LA_cry_0_COUT_0[3]
 slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/LA_cry_0_S0_0[0]
-slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_24
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_0_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_0_0_COUT
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_0_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_0_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_0_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_0_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_0_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_0_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_0_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_0_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_0_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_0_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_0_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_0_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_0_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_0_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_0_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_0_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/N_1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_1_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_1_0_COUT
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_1_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_1_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_1_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_1_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_1_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_1_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_1_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_1_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_1_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_1_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_1_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_1_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_1_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_1_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_1_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_1_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/N_2
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_2_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_2_0_COUT
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_2_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_2_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_2_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_2_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_2_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_2_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_2_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_2_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_2_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_2_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_2_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_2_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_2_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_2_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_2_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_2_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/N_3
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_3_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_3_0_COUT
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_3_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_3_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_3_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_3_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_3_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_3_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_3_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_3_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_3_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_3_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_3_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_3_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_3_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_3_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_3_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_3_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/N_4
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_4_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_4_0_COUT
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_4_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_4_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_4_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_4_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_4_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_4_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_4_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_4_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_4_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_4_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_4_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_4_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_4_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_4_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_4_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_4_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/N_5
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_5_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_5_0_COUT
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_5_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_5_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_5_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_5_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_5_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_5_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_5_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_5_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_5_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_5_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_5_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_5_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_5_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_5_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_5_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_5_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/N_6
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_6_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_6_0_COUT
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_6_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_6_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_6_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_6_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_6_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_6_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_6_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_6_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_6_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_6_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_6_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_6_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_6_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_6_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_6_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_6_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/N_7
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_7_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_1_7_0_COUT
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_7_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_2_7_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_7_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_4_7_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_7_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_6_7_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_7_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_8_7_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_7_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_10_7_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_7_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_12_7_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_7_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_14_7_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_7_0_S1
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/LDO_prm_15_7_0_S0
-slv_com_top_inst/slv_ctrl_top_inst/nd_sel_inst/N_8
+slv_com_top_inst/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_23
 slv_com_top_inst/slvadr_cnv_inst/un15_s3_cry_3_0_COUT
 slv_com_top_inst/slvadr_cnv_inst/un15_s3_cry_0_0_S1
 slv_com_top_inst/slvadr_cnv_inst/un15_s3_cry_0_0_S0
@@ -775,20 +622,24 @@ ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_1_0_S0
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S1
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S0
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/N_2
+ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_7_0_COUT_11
+ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S1_11
+ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S0_11
+ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/N_3
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_S1
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_COUT
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S1
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S0
-ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/N_3
+ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/N_4
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_S1
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_COUT
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_cry_0_0_S0
-ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/N_4
+ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/N_6
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_0_S1
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_0_COUT
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_0_S1
 ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_0_S0
-ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/N_5
+ENC_inst/enc_func.1.enc_top_inst/U_enc_lmt/N_7
 ENC_inst/enc_func.11.enc_top_inst/encoder_inst/encdat_cry_0_COUT_0[14]
 ENC_inst/enc_func.11.enc_top_inst/encoder_inst/encdat_lcry_0_S1_0
 ENC_inst/enc_func.11.enc_top_inst/encoder_inst/encdat_lcry_0_S0_0
@@ -833,20 +684,24 @@ ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_1_0_S0_0
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S1_0
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S0_0
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/N_2
+ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_7_0_COUT_10
+ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S1_10
+ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S0_10
+ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/N_3
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_S1_0
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_COUT_0
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S1_0
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S0_0
-ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/N_3
+ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/N_4
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_S1_0
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_COUT_0
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_cry_0_0_S0_0
-ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/N_4
+ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/N_6
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_0
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_0
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_0
 ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_0
-ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/N_5
+ENC_inst/enc_func.11.enc_top_inst/U_enc_lmt/N_7
 ENC_inst/enc_func.8.enc_top_inst/encoder_inst/encdat_cry_0_COUT_1[14]
 ENC_inst/enc_func.8.enc_top_inst/encoder_inst/encdat_lcry_0_S1_1
 ENC_inst/enc_func.8.enc_top_inst/encoder_inst/encdat_lcry_0_S0_1
@@ -891,20 +746,24 @@ ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_1_0_S0_1
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S1_1
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S0_1
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/N_2
+ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_7_0_COUT_9
+ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S1_9
+ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S0_9
+ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/N_3
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_S1_1
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_COUT_1
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S1_1
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S0_1
-ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/N_3
+ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/N_4
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_S1_1
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_COUT_1
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_cry_0_0_S0_1
-ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/N_4
+ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/N_6
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_1
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_1
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_1
 ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_1
-ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/N_5
+ENC_inst/enc_func.8.enc_top_inst/U_enc_lmt/N_7
 ENC_inst/enc_func.5.enc_top_inst/encoder_inst/encdat_cry_0_COUT_2[14]
 ENC_inst/enc_func.5.enc_top_inst/encoder_inst/encdat_lcry_0_S1_2
 ENC_inst/enc_func.5.enc_top_inst/encoder_inst/encdat_lcry_0_S0_2
@@ -949,20 +808,24 @@ ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_1_0_S0_2
 ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S1_2
 ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S0_2
 ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/N_2
+ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_7_0_COUT_8
+ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S1_8
+ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S0_8
+ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/N_3
 ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_S1_2
 ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_COUT_2
 ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S1_2
 ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S0_2
-ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/N_3
+ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/N_4
 ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_S1_2
 ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_COUT_2
 ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_cry_0_0_S0_2
-ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/N_4
+ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/N_6
 ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_2
 ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_2
 ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_2
 ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_2
-ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/N_6
+ENC_inst/enc_func.5.enc_top_inst/U_enc_lmt/N_7
 ENC_inst/enc_func.2.enc_top_inst/encoder_inst/encdat_cry_0_COUT_3[14]
 ENC_inst/enc_func.2.enc_top_inst/encoder_inst/encdat_lcry_0_S1_3
 ENC_inst/enc_func.2.enc_top_inst/encoder_inst/encdat_lcry_0_S0_3
@@ -1007,20 +870,24 @@ ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_1_0_S0_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S1_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S0_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/N_2
+ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_7_0_COUT_7
+ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S1_7
+ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S0_7
+ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/N_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_S1_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_COUT_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S1_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S0_3
-ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/N_3
+ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/N_4
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_S1_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_COUT_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_cry_0_0_S0_3
-ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/N_4
+ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/N_6
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_3
 ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_3
-ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/N_5
+ENC_inst/enc_func.2.enc_top_inst/U_enc_lmt/N_7
 ENC_inst/enc_func.12.enc_top_inst/encoder_inst/encdat_cry_0_COUT_4[14]
 ENC_inst/enc_func.12.enc_top_inst/encoder_inst/encdat_lcry_0_S1_4
 ENC_inst/enc_func.12.enc_top_inst/encoder_inst/encdat_lcry_0_S0_4
@@ -1065,20 +932,24 @@ ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_1_0_S0_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S1_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S0_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/N_2
+ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_7_0_COUT_6
+ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S1_6
+ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S0_6
+ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/N_3
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_S1_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_COUT_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S1_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S0_4
-ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/N_3
+ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/N_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_S1_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_COUT_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_cry_0_0_S0_4
-ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/N_4
+ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/N_6
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_4
 ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_4
-ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/N_6
+ENC_inst/enc_func.12.enc_top_inst/U_enc_lmt/N_7
 ENC_inst/enc_func.9.enc_top_inst/encoder_inst/encdat_cry_0_COUT_5[14]
 ENC_inst/enc_func.9.enc_top_inst/encoder_inst/encdat_lcry_0_S1_5
 ENC_inst/enc_func.9.enc_top_inst/encoder_inst/encdat_lcry_0_S0_5
@@ -1123,20 +994,24 @@ ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_1_0_S0_5
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S1_5
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S0_5
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/N_2
+ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_7_0_COUT_5
+ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S1_5
+ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S0_5
+ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/N_3
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_S1_5
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_COUT_5
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S1_5
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S0_5
-ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/N_3
+ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/N_4
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_S1_5
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_COUT_5
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_cry_0_0_S0_5
-ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/N_4
+ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/N_6
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_5
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_5
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_5
 ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_5
-ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/N_5
+ENC_inst/enc_func.9.enc_top_inst/U_enc_lmt/N_7
 ENC_inst/enc_func.6.enc_top_inst/encoder_inst/encdat_cry_0_COUT_6[14]
 ENC_inst/enc_func.6.enc_top_inst/encoder_inst/encdat_lcry_0_S1_6
 ENC_inst/enc_func.6.enc_top_inst/encoder_inst/encdat_lcry_0_S0_6
@@ -1181,20 +1056,24 @@ ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_1_0_S0_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S1_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S0_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/N_2
+ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_7_0_COUT_4
+ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S1_4
+ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S0_4
+ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/N_3
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_S1_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_COUT_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S1_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S0_6
-ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/N_3
+ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/N_4
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_S1_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_COUT_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_cry_0_0_S0_6
-ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/N_4
+ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/N_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_6
 ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_6
-ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/N_5
+ENC_inst/enc_func.6.enc_top_inst/U_enc_lmt/N_7
 ENC_inst/enc_func.3.enc_top_inst/encoder_inst/encdat_cry_0_COUT_7[14]
 ENC_inst/enc_func.3.enc_top_inst/encoder_inst/encdat_lcry_0_S1_7
 ENC_inst/enc_func.3.enc_top_inst/encoder_inst/encdat_lcry_0_S0_7
@@ -1239,20 +1118,24 @@ ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_1_0_S0_7
 ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S1_7
 ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S0_7
 ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/N_2
+ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_7_0_COUT_3
+ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S1_3
+ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S0_3
+ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/N_3
 ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_S1_7
 ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_COUT_7
 ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S1_7
 ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S0_7
-ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/N_3
+ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/N_4
 ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_S1_7
 ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_COUT_7
 ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_cry_0_0_S0_7
-ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/N_4
+ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/N_5
 ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_7
 ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_7
 ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_7
 ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_7
-ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/N_5
+ENC_inst/enc_func.3.enc_top_inst/U_enc_lmt/N_6
 ENC_inst/enc_func.13.enc_top_inst/encoder_inst/encdat_cry_0_COUT_8[14]
 ENC_inst/enc_func.13.enc_top_inst/encoder_inst/encdat_lcry_0_S1_8
 ENC_inst/enc_func.13.enc_top_inst/encoder_inst/encdat_lcry_0_S0_8
@@ -1297,20 +1180,24 @@ ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_1_0_S0_8
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S1_8
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S0_8
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/N_2
+ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_7_0_COUT_2
+ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S1_2
+ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S0_2
+ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/N_3
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_S1_8
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_COUT_8
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S1_8
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S0_8
-ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/N_3
+ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/N_4
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_S1_8
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_COUT_8
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_cry_0_0_S0_8
-ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/N_4
+ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/N_6
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_8
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_8
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_8
 ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_8
-ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/N_5
+ENC_inst/enc_func.13.enc_top_inst/U_enc_lmt/N_7
 ENC_inst/enc_func.10.enc_top_inst/encoder_inst/encdat_cry_0_COUT_9[14]
 ENC_inst/enc_func.10.enc_top_inst/encoder_inst/encdat_lcry_0_S1_9
 ENC_inst/enc_func.10.enc_top_inst/encoder_inst/encdat_lcry_0_S0_9
@@ -1355,20 +1242,24 @@ ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_1_0_S0_9
 ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S1_9
 ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S0_9
 ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/N_2
+ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_7_0_COUT_1
+ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S1_1
+ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S0_1
+ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/N_3
 ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_S1_9
 ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_COUT_9
 ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S1_9
 ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S0_9
-ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/N_3
+ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/N_4
 ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_S1_9
 ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_COUT_9
 ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_cry_0_0_S0_9
-ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/N_4
+ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/N_6
 ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_9
 ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_9
 ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_9
 ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_9
-ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/N_6
+ENC_inst/enc_func.10.enc_top_inst/U_enc_lmt/N_7
 ENC_inst/enc_func.7.enc_top_inst/encoder_inst/encdat_cry_0_COUT_10[14]
 ENC_inst/enc_func.7.enc_top_inst/encoder_inst/encdat_lcry_0_S1_10
 ENC_inst/enc_func.7.enc_top_inst/encoder_inst/encdat_lcry_0_S0_10
@@ -1413,20 +1304,24 @@ ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_1_0_S0_10
 ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S1_10
 ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S0_10
 ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/N_2
+ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_7_0_COUT_0
+ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S1_0
+ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S0_0
+ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/N_3
 ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_S1_10
 ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_COUT_10
 ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S1_10
 ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S0_10
-ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/N_3
+ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/N_4
 ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_S1_10
 ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_COUT_10
 ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_cry_0_0_S0_10
-ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/N_4
+ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/N_6
 ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_10
 ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_10
 ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_10
 ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_10
-ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/N_6
+ENC_inst/enc_func.7.enc_top_inst/U_enc_lmt/N_7
 ENC_inst/enc_func.4.enc_top_inst/encoder_inst/encdat_cry_0_COUT_11[14]
 ENC_inst/enc_func.4.enc_top_inst/encoder_inst/encdat_lcry_0_S1_11
 ENC_inst/enc_func.4.enc_top_inst/encoder_inst/encdat_lcry_0_S0_11
@@ -1471,20 +1366,24 @@ ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_1_0_S0_11
 ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S1_11
 ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un30_s_encerr_cry_0_0_S0_11
 ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/N_2
+ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_7_0_COUT
+ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S1
+ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un5_s_enc_thh_cry_0_0_S0
+ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/N_3
 ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_S1_11
 ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_COUT_11
 ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S1_11
 ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_S0_11
-ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/N_3
+ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/N_4
 ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_S1_11
 ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_COUT_11
 ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_6_cry_0_0_S0_11
-ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/N_4
+ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/N_6
 ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_S1_11
 ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_s_13_COUT_11
 ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S1_11
 ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/un1_s_encerr_1_0_cry_0_S0_11
-ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/N_5
+ENC_inst/enc_func.4.enc_top_inst/U_enc_lmt/N_7
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_21_0_S0
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_21_0_COUT
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_33_0_S1
@@ -1496,9 +1395,9 @@ stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_9_0
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S1
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S0
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_1
-stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_25[15]
-stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_25[15]
-stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_25[0]
+stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1[15]
+stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT[15]
+stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0[0]
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_2
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_S0
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_COUT
@@ -1538,9 +1437,9 @@ stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S1
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S0
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_7
-stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_S1[15]
-stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_COUT[15]
-stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_S0[0]
+stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_COUT[14]
+stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S1
+stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S0
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_8
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_S1
 stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_COUT
@@ -1701,9 +1600,9 @@ stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_9_0
 stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S1_0
 stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S0_0
 stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_1
-stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_26[15]
-stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_26[15]
-stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_26[0]
+stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_1[15]
+stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_1[15]
+stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_1[0]
 stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_2
 stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_S0_0
 stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_COUT_0
@@ -1743,9 +1642,9 @@ stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry
 stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S1_0
 stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S0_0
 stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_7
-stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_S1_1[15]
-stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_COUT_1[15]
-stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_S0_1[0]
+stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_COUT_0[14]
+stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S1_0
+stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S0_0
 stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_8
 stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_S1_0
 stm02/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_COUT_0
@@ -1906,9 +1805,9 @@ stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_9_0
 stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S1_1
 stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S0_1
 stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_1
-stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_27[15]
-stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_27[15]
-stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_27[0]
+stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_3[15]
+stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_3[15]
+stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_3[0]
 stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_2
 stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_S0_1
 stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_COUT_1
@@ -1948,9 +1847,9 @@ stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry
 stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S1_1
 stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S0_1
 stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_7
-stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_S1_3[15]
-stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_COUT_3[15]
-stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_S0_3[0]
+stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_COUT_1[14]
+stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S1_1
+stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S0_1
 stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_8
 stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_S1_1
 stm03/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_COUT_1
@@ -2111,9 +2010,9 @@ stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_9_0
 stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S1_2
 stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S0_2
 stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_1
-stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_28[15]
-stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_28[15]
-stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_28[0]
+stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_5[15]
+stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_5[15]
+stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_5[0]
 stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_2
 stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_S0_2
 stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_COUT_2
@@ -2153,9 +2052,9 @@ stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry
 stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S1_2
 stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S0_2
 stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_7
-stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_S1_5[15]
-stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_COUT_5[15]
-stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_S0_5[0]
+stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_COUT_2[14]
+stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S1_2
+stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S0_2
 stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_8
 stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_S1_2
 stm04/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_COUT_2
@@ -2316,9 +2215,9 @@ stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_9_0
 stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S1_3
 stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S0_3
 stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_1
-stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_29[15]
-stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_29[15]
-stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_29[0]
+stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_7[15]
+stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_7[15]
+stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_7[0]
 stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_2
 stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_S0_3
 stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_COUT_3
@@ -2358,9 +2257,9 @@ stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry
 stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S1_3
 stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S0_3
 stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_7
-stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_S1_7[15]
-stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_COUT_7[15]
-stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_S0_7[0]
+stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_COUT_3[14]
+stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S1_3
+stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S0_3
 stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_8
 stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_S1_3
 stm05/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_COUT_3
@@ -2521,9 +2420,9 @@ stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_9_0
 stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S1_4
 stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S0_4
 stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_1
-stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_30[15]
-stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_30[15]
-stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_30[0]
+stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_9[15]
+stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_9[15]
+stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_9[0]
 stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_2
 stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_S0_4
 stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_COUT_4
@@ -2563,9 +2462,9 @@ stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry
 stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S1_4
 stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S0_4
 stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_7
-stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_S1_9[15]
-stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_COUT_9[15]
-stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_S0_9[0]
+stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_COUT_4[14]
+stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S1_4
+stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S0_4
 stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_8
 stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_S1_4
 stm06/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_COUT_4
@@ -2726,9 +2625,9 @@ stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_9_0
 stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S1_5
 stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S0_5
 stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_1
-stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_31[15]
-stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_31[15]
-stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_31[0]
+stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_11[15]
+stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_11[15]
+stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_11[0]
 stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_2
 stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_S0_5
 stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_COUT_5
@@ -2768,9 +2667,9 @@ stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry
 stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S1_5
 stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S0_5
 stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_7
-stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_S1_11[15]
-stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_COUT_11[15]
-stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_S0_11[0]
+stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_COUT_5[14]
+stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S1_5
+stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S0_5
 stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_8
 stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_S1_5
 stm07/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_COUT_5
@@ -2931,9 +2830,9 @@ stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_9_0
 stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S1_6
 stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S0_6
 stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_1
-stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_32[15]
-stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_32[15]
-stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_32[0]
+stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_13[15]
+stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_13[15]
+stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_13[0]
 stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_2
 stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_S0_6
 stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_COUT_6
@@ -2973,9 +2872,9 @@ stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry
 stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S1_6
 stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S0_6
 stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_7
-stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_S1_13[15]
-stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_COUT_13[15]
-stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_S0_13[0]
+stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_COUT_6[14]
+stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S1_6
+stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S0_6
 stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_8
 stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_S1_6
 stm08/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_COUT_6
@@ -3136,9 +3035,9 @@ stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_9_0
 stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S1_7
 stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S0_7
 stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_1
-stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_33[15]
-stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_33[15]
-stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_33[0]
+stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_15[15]
+stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_15[15]
+stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_15[0]
 stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_2
 stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_S0_7
 stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_COUT_7
@@ -3178,9 +3077,9 @@ stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry
 stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S1_7
 stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S0_7
 stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_7
-stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_S1_15[15]
-stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_COUT_15[15]
-stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_S0_15[0]
+stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_COUT_7[14]
+stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S1_7
+stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S0_7
 stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_8
 stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_S1_7
 stm09/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_COUT_7
@@ -3341,9 +3240,9 @@ stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_9_0
 stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S1_8
 stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S0_8
 stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_1
-stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_34[15]
-stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_34[15]
-stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_34[0]
+stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_17[15]
+stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_17[15]
+stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_17[0]
 stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_2
 stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_S0_8
 stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_COUT_8
@@ -3383,9 +3282,9 @@ stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry
 stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S1_8
 stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S0_8
 stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_7
-stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_S1_17[15]
-stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_COUT_17[15]
-stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_S0_17[0]
+stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_COUT_8[14]
+stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S1_8
+stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S0_8
 stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_8
 stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_S1_8
 stm10/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_COUT_8
@@ -3546,9 +3445,9 @@ stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_9_0
 stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S1_9
 stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S0_9
 stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_1
-stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_35[15]
-stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_35[15]
-stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_35[0]
+stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_19[15]
+stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_19[15]
+stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_19[0]
 stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_2
 stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_S0_9
 stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_COUT_9
@@ -3588,9 +3487,9 @@ stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry
 stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S1_9
 stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S0_9
 stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_7
-stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_S1_19[15]
-stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_COUT_19[15]
-stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_S0_19[0]
+stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_COUT_9[14]
+stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S1_9
+stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S0_9
 stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_8
 stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_S1_9
 stm11/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_COUT_9
@@ -3751,9 +3650,9 @@ stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_9_0
 stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S1_10
 stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S0_10
 stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_1
-stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_36[15]
-stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_36[15]
-stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_36[0]
+stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_21[15]
+stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_21[15]
+stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_21[0]
 stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_2
 stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_S0_10
 stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_COUT_10
@@ -3793,9 +3692,9 @@ stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry
 stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S1_10
 stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S0_10
 stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_7
-stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_S1_21[15]
-stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_COUT_21[15]
-stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_S0_21[0]
+stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_COUT_10[14]
+stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S1_10
+stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S0_10
 stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_8
 stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_S1_10
 stm12/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_COUT_10
@@ -3956,9 +3855,9 @@ stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_9_0
 stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S1_11
 stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_0_I_1_0_S0_11
 stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_1
-stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_37[15]
-stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_37[15]
-stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_37[0]
+stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_S1_23[15]
+stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_COUT_23[15]
+stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_0_S0_23[0]
 stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_2
 stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_S0_11
 stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pulse_cry_15_0_COUT_11
@@ -3998,9 +3897,9 @@ stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry
 stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S1_11
 stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pulse_cry_0_0_S0_11
 stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_7
-stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_S1_23[15]
-stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_COUT_23[15]
-stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_S0_23[0]
+stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_COUT_11[14]
+stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S1_11
+stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_lcry_0_S0_11
 stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_8
 stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_S1_11
 stm13/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_clk_cry_18_0_COUT_11
@@ -4153,7 +4052,7 @@ stm13/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_1
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Sun Mar 01 12:35:53 2026
+# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Sun Mar 01 23:47:01 2026
 
 SYSCONFIG SLAVE_SPI_PORT=DISABLE MASTER_SPI_PORT=DISABLE SLAVE_PARALLEL_PORT=DISABLE BACKGROUND_RECONFIG=OFF DONE_EX=OFF DONE_OD=ON DONE_PULL=ON MCCLK_FREQ=2.4 TRANSFR=OFF CONFIG_IOVOLTAGE=2.5 CONFIG_SECURE=OFF WAKE_UP=21 COMPRESS_CONFIG=OFF CONFIG_MODE=JTAG INBUF=OFF ;
 LOCATE COMP "STMVREF_SCL" SITE "L14" ;
@@ -4283,11 +4182,11 @@ LOCATE COMP "SLVADR[2]" SITE "R3" ;
 LOCATE COMP "SLVADR[1]" SITE "P3" ;
 LOCATE COMP "SLVADR[0]" SITE "N3" ;
 LOCATE COMP "PORb" SITE "L16" ;
-FREQUENCY NET "slv_com_top_inst.CLKCOM_OUT" 100.000000 MHz ;
-FREQUENCY NET "slv_com_top_inst/CLK2A" 100.000000 MHz ;
 FREQUENCY PORT "CLK20M" 20.000000 MHz ;
 FREQUENCY NET "s_PLL_CLK20M" 20.000000 MHz ;
 FREQUENCY NET "slv_com_top_inst.CLK1" 10.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst.CLKCOM_OUT" 100.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst/CLK2A" 100.000000 MHz ;
 FREQUENCY NET "UP_CLK_c" 20.000000 MHz ;
 FREQUENCY PORT "UP_CLK" 20.000000 MHz ;
 SCHEMATIC END ;

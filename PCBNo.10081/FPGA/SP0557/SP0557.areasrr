@@ -1,19 +1,19 @@
 ----------------------------------------------------------------------
 Report for cell SP0557.rtl
 
-Register bits: 9915 of 24288 (41%)
+Register bits: 9893 of 24288 (41%)
 PIC Latch:       0
 I/O cells:       127
                                           Cell usage:
                                cell       count    Res Usage(%)
                                AND2        8       100.0
                                  BB        2       100.0
-                              CCU2C     3054       100.0
+                              CCU2C     2982       100.0
                              DP16KD        4       100.0
                             EHXPLLL        1       100.0
                             FD1P3AX       25       100.0
-                            FD1P3BX      111       100.0
-                            FD1P3DX     6208       100.0
+                            FD1P3BX       94       100.0
+                            FD1P3DX     6203       100.0
                             FD1P3IX        1       100.0
                             FD1P3JX        1       100.0
                             FD1S3AX      132       100.0
@@ -26,14 +26,14 @@ I/O cells:       127
                            IFS1P3DX       65       100.0
                            IFS1P3IX        1       100.0
                                 INV       71       100.0
-                            L6MUX21       19       100.0
+                            L6MUX21       36       100.0
                                  OB       51       100.0
                            OFS1P3BX        2       100.0
                            OFS1P3DX       14       100.0
                            OFS1P3IX        1       100.0
                                 OR2        4       100.0
-                           ORCALUT4     8923       100.0
-                              PFUMX       94       100.0
+                           ORCALUT4     8575       100.0
+                              PFUMX      133       100.0
                                 PUR        1       100.0
                            ROM16X1A       64       100.0
                            ROM64X1A        6       100.0
@@ -446,7 +446,7 @@ SUB MODULES
                          tx_ctl_1st        1       100.0
                          tx_ctl_3rd        1       100.0
                             
-                         TOTAL         23554           
+                         TOTAL         23168           
 ----------------------------------------------------------------------
 Report for cell gpio_top_0.netlist
   Original Cell name gpio_top
@@ -456,7 +456,7 @@ Report for cell gpio_top_0.netlist
                             FD1P3DX      522         8.4
                             FD1S3DX      230         7.0
                                 INV        1         1.4
-                           ORCALUT4      225         2.5
+                           ORCALUT4      196         2.3
                                 VHI       54        13.3
                                 VLO       54        13.3
 SUB MODULES 
@@ -514,7 +514,7 @@ SUB MODULES
                     gpio_op_reg_4_1        1       100.0
                          gpio_reg_1        1       100.0
                             
-                         TOTAL          1139           
+                         TOTAL          1110           
 ----------------------------------------------------------------------
 Report for cell gpio_reg_1.netlist
   Original Cell name gpio_reg
@@ -524,7 +524,7 @@ Report for cell gpio_reg_1.netlist
                             FD1P3DX      522         8.4
                             FD1S3DX      230         7.0
                                 INV        1         1.4
-                           ORCALUT4      155         1.7
+                           ORCALUT4      154         1.8
                                 VHI       51        12.6
                                 VLO       51        12.6
 SUB MODULES 
@@ -579,7 +579,7 @@ SUB MODULES
                    gpio_op_reg_0_31        1       100.0
                     gpio_op_reg_4_1        1       100.0
                             
-                         TOTAL          1060           
+                         TOTAL          1059           
 ----------------------------------------------------------------------
 Report for cell gpio_ip_reg_0_14.netlist
   Original Cell name gpio_ip_reg_0
@@ -1184,11 +1184,11 @@ Report for cell fc_sel_13.netlist
      Instance path:  gpio02.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       65         0.7
+                           ORCALUT4       37         0.4
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            67           
+                         TOTAL            39           
 ----------------------------------------------------------------------
 Report for cell fc_dec_13.netlist
   Original Cell name fc_dec
@@ -1206,9 +1206,9 @@ Report for cell gpio_top_1.netlist
      Instance path:  gpio01
                                           Cell usage:
                                cell       count    Res Usage(%)
-                            FD1P3DX      584         9.4
+                            FD1P3DX      578         9.3
                             FD1S3DX      230         7.0
-                           ORCALUT4      266         3.0
+                           ORCALUT4      258         3.0
                                 VHI       56        13.8
                                 VLO       56        13.8
 SUB MODULES 
@@ -1268,16 +1268,16 @@ SUB MODULES
                       gpio_op_reg_2        1       100.0
                          gpio_reg_0        1       100.0
                             
-                         TOTAL          1247           
+                         TOTAL          1233           
 ----------------------------------------------------------------------
 Report for cell gpio_reg_0.netlist
   Original Cell name gpio_reg
      Instance path:  gpio01.gpio_reg_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                            FD1P3DX      584         9.4
+                            FD1P3DX      578         9.3
                             FD1S3DX      230         7.0
-                           ORCALUT4      198         2.2
+                           ORCALUT4      194         2.3
                                 VHI       53        13.1
                                 VLO       53        13.1
 SUB MODULES 
@@ -1334,7 +1334,7 @@ SUB MODULES
                    gpio_op_reg_19_0        1       100.0
                       gpio_op_reg_2        1       100.0
                             
-                         TOTAL          1170           
+                         TOTAL          1160           
 ----------------------------------------------------------------------
 Report for cell gpio_ip_reg_3.netlist
   Original Cell name gpio_ip_reg
@@ -1498,11 +1498,11 @@ Report for cell gpio_op_reg_0_15.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3DX       16         0.3
-                           ORCALUT4        2         0.0
+                           ORCALUT4        1         0.0
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            20           
+                         TOTAL            19           
 ----------------------------------------------------------------------
 Report for cell gpio_ip_reg_2_16.netlist
   Original Cell name gpio_ip_reg_2
@@ -1950,23 +1950,23 @@ Report for cell gpio_op_reg_19_0.netlist
      Instance path:  gpio01.gpio_reg_inst.gpio_op_reg_inst0
                                           Cell usage:
                                cell       count    Res Usage(%)
-                            FD1P3DX       42         0.7
+                            FD1P3DX       36         0.6
                            ORCALUT4        1         0.0
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            45           
+                         TOTAL            39           
 ----------------------------------------------------------------------
 Report for cell fc_sel_12.netlist
   Original Cell name fc_sel
      Instance path:  gpio01.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       49         0.5
+                           ORCALUT4       45         0.5
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            51           
+                         TOTAL            47           
 ----------------------------------------------------------------------
 Report for cell fc_dec_12.netlist
   Original Cell name fc_dec
@@ -1984,13 +1984,14 @@ Report for cell ppmc_top_S118M_23.netlist
      Instance path:  stm13
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      124         3.8
                                 INV        2         2.8
-                           ORCALUT4      450         5.0
+                           ORCALUT4      381         4.4
+                              PFUMX        1         0.8
                                 VHI       15         3.7
                                 VLO       15         3.7
 SUB MODULES 
@@ -2009,20 +2010,21 @@ SUB MODULES
                ppmc_timer_cnt_12_11        1       100.0
               ppmc_u_step_ext_12_11        1       100.0
                             
-                         TOTAL          1077           
+                         TOTAL          1009           
 ----------------------------------------------------------------------
 Report for cell ppmc_reg_S118M_12_11.netlist
   Original Cell name ppmc_reg_S118M_12
      Instance path:  stm13.ppmc_reg_S118M_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      122         3.7
                                 INV        2         2.8
-                           ORCALUT4      334         3.7
+                           ORCALUT4      290         3.4
+                              PFUMX        1         0.8
                                 VHI       12         3.0
                                 VLO       12         3.0
 SUB MODULES 
@@ -2038,7 +2040,7 @@ SUB MODULES
                ppmc_timer_cnt_12_11        1       100.0
               ppmc_u_step_ext_12_11        1       100.0
                             
-                         TOTAL           950           
+                         TOTAL           907           
 ----------------------------------------------------------------------
 Report for cell ppmc_cmdchk_11.netlist
   Original Cell name ppmc_cmdchk
@@ -2059,11 +2061,12 @@ Report for cell ppmc_ctrl_11.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       28         0.9
-                            FD1P3BX        4         3.6
+                            FD1P3BX        4         4.3
                             FD1P3DX      107         1.7
                             FD1S3DX       18         0.5
                                 INV        2         2.8
-                           ORCALUT4       46         0.5
+                           ORCALUT4       45         0.5
+                              PFUMX        1         0.8
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -2077,7 +2080,7 @@ Report for cell ppmc_enblr_S118M_12_11.netlist
                               CCU2C        8         0.3
                             FD1P3DX       16         0.3
                             FD1S3DX        2         0.1
-                           ORCALUT4       13         0.1
+                           ORCALUT4       13         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -2090,34 +2093,34 @@ Report for cell ppmc_rgstr_12_11.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX      147         2.4
                             FD1S3DX       40         1.2
-                           ORCALUT4      123         1.4
+                           ORCALUT4       92         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           312           
+                         TOTAL           281           
 ----------------------------------------------------------------------
 Report for cell ppmc_dec_11.netlist
   Original Cell name ppmc_dec
      Instance path:  stm13.ppmc_reg_S118M_inst.inst_ppmc_dec
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       20         0.2
+                           ORCALUT4        9         0.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            22           
+                         TOTAL            11           
 ----------------------------------------------------------------------
 Report for cell ppmc_plsgen_12_11.netlist
   Original Cell name ppmc_plsgen_12
      Instance path:  stm13.ppmc_reg_S118M_inst.inst_ppmc_plsgen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      105         3.4
-                            FD1P3BX        1         0.9
+                              CCU2C      105         3.5
+                            FD1P3BX        1         1.1
                             FD1P3DX       25         0.4
                             FD1S3BX        1         1.5
                             FD1S3DX       58         1.8
-                           ORCALUT4       74         0.8
+                           ORCALUT4       74         0.9
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -2161,7 +2164,7 @@ Report for cell ppmc_speed_cnt_12_11.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       27         0.9
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1S3BX        1         1.5
                             FD1S3DX       20         0.6
                            ORCALUT4       36         0.4
@@ -2200,11 +2203,11 @@ Report for cell fc_sel_11.netlist
      Instance path:  stm13.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4      114         1.3
+                           ORCALUT4       89         1.0
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           116           
+                         TOTAL            91           
 ----------------------------------------------------------------------
 Report for cell fc_dec_11.netlist
   Original Cell name fc_dec
@@ -2222,14 +2225,13 @@ Report for cell ppmc_top_S118M_22.netlist
      Instance path:  stm12
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      124         3.8
                                 INV        2         2.8
-                           ORCALUT4      446         5.0
-                              PFUMX        1         1.1
+                           ORCALUT4      409         4.8
                                 VHI       15         3.7
                                 VLO       15         3.7
 SUB MODULES 
@@ -2248,21 +2250,20 @@ SUB MODULES
                ppmc_timer_cnt_12_10        1       100.0
               ppmc_u_step_ext_12_10        1       100.0
                             
-                         TOTAL          1074           
+                         TOTAL          1036           
 ----------------------------------------------------------------------
 Report for cell ppmc_reg_S118M_12_10.netlist
   Original Cell name ppmc_reg_S118M_12
      Instance path:  stm12.ppmc_reg_S118M_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      122         3.7
                                 INV        2         2.8
-                           ORCALUT4      356         4.0
-                              PFUMX        1         1.1
+                           ORCALUT4      320         3.7
                                 VHI       12         3.0
                                 VLO       12         3.0
 SUB MODULES 
@@ -2278,7 +2279,7 @@ SUB MODULES
                ppmc_timer_cnt_12_10        1       100.0
               ppmc_u_step_ext_12_10        1       100.0
                             
-                         TOTAL           973           
+                         TOTAL           936           
 ----------------------------------------------------------------------
 Report for cell ppmc_cmdchk_10.netlist
   Original Cell name ppmc_cmdchk
@@ -2299,7 +2300,7 @@ Report for cell ppmc_ctrl_10.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       28         0.9
-                            FD1P3BX        4         3.6
+                            FD1P3BX        4         4.3
                             FD1P3DX      107         1.7
                             FD1S3DX       18         0.5
                                 INV        2         2.8
@@ -2317,7 +2318,7 @@ Report for cell ppmc_enblr_S118M_12_10.netlist
                               CCU2C        8         0.3
                             FD1P3DX       16         0.3
                             FD1S3DX        2         0.1
-                           ORCALUT4       13         0.1
+                           ORCALUT4       13         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -2330,35 +2331,34 @@ Report for cell ppmc_rgstr_12_10.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX      147         2.4
                             FD1S3DX       40         1.2
-                           ORCALUT4      146         1.6
+                           ORCALUT4      119         1.4
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           335           
+                         TOTAL           308           
 ----------------------------------------------------------------------
 Report for cell ppmc_dec_10.netlist
   Original Cell name ppmc_dec
      Instance path:  stm12.ppmc_reg_S118M_inst.inst_ppmc_dec
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       20         0.2
-                              PFUMX        1         1.1
+                           ORCALUT4       11         0.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            23           
+                         TOTAL            13           
 ----------------------------------------------------------------------
 Report for cell ppmc_plsgen_12_10.netlist
   Original Cell name ppmc_plsgen_12
      Instance path:  stm12.ppmc_reg_S118M_inst.inst_ppmc_plsgen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      105         3.4
-                            FD1P3BX        1         0.9
+                              CCU2C      105         3.5
+                            FD1P3BX        1         1.1
                             FD1P3DX       25         0.4
                             FD1S3BX        1         1.5
                             FD1S3DX       58         1.8
-                           ORCALUT4       74         0.8
+                           ORCALUT4       74         0.9
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -2402,7 +2402,7 @@ Report for cell ppmc_speed_cnt_12_10.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       27         0.9
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1S3BX        1         1.5
                             FD1S3DX       20         0.6
                            ORCALUT4       36         0.4
@@ -2441,11 +2441,11 @@ Report for cell fc_sel_10.netlist
      Instance path:  stm12.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       88         1.0
+                           ORCALUT4       87         1.0
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            90           
+                         TOTAL            89           
 ----------------------------------------------------------------------
 Report for cell fc_dec_10.netlist
   Original Cell name fc_dec
@@ -2463,14 +2463,13 @@ Report for cell ppmc_top_S118M_21.netlist
      Instance path:  stm11
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      124         3.8
                                 INV        2         2.8
-                           ORCALUT4      387         4.3
-                              PFUMX        1         1.1
+                           ORCALUT4      373         4.3
                                 VHI       15         3.7
                                 VLO       15         3.7
 SUB MODULES 
@@ -2489,21 +2488,20 @@ SUB MODULES
                 ppmc_timer_cnt_12_9        1       100.0
                ppmc_u_step_ext_12_9        1       100.0
                             
-                         TOTAL          1015           
+                         TOTAL          1000           
 ----------------------------------------------------------------------
 Report for cell ppmc_reg_S118M_12_9.netlist
   Original Cell name ppmc_reg_S118M_12
      Instance path:  stm11.ppmc_reg_S118M_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      122         3.7
                                 INV        2         2.8
-                           ORCALUT4      292         3.3
-                              PFUMX        1         1.1
+                           ORCALUT4      290         3.4
                                 VHI       12         3.0
                                 VLO       12         3.0
 SUB MODULES 
@@ -2519,7 +2517,7 @@ SUB MODULES
                 ppmc_timer_cnt_12_9        1       100.0
                ppmc_u_step_ext_12_9        1       100.0
                             
-                         TOTAL           909           
+                         TOTAL           906           
 ----------------------------------------------------------------------
 Report for cell ppmc_cmdchk_9.netlist
   Original Cell name ppmc_cmdchk
@@ -2540,12 +2538,11 @@ Report for cell ppmc_ctrl_9.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       28         0.9
-                            FD1P3BX        4         3.6
+                            FD1P3BX        4         4.3
                             FD1P3DX      107         1.7
                             FD1S3DX       18         0.5
                                 INV        2         2.8
-                           ORCALUT4       45         0.5
-                              PFUMX        1         1.1
+                           ORCALUT4       46         0.5
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -2559,7 +2556,7 @@ Report for cell ppmc_enblr_S118M_12_9.netlist
                               CCU2C        8         0.3
                             FD1P3DX       16         0.3
                             FD1S3DX        2         0.1
-                           ORCALUT4       13         0.1
+                           ORCALUT4       13         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -2572,7 +2569,7 @@ Report for cell ppmc_rgstr_12_9.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX      147         2.4
                             FD1S3DX       40         1.2
-                           ORCALUT4      111         1.2
+                           ORCALUT4      111         1.3
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -2583,23 +2580,23 @@ Report for cell ppmc_dec_9.netlist
      Instance path:  stm11.ppmc_reg_S118M_inst.inst_ppmc_dec
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       15         0.2
+                           ORCALUT4       12         0.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            17           
+                         TOTAL            14           
 ----------------------------------------------------------------------
 Report for cell ppmc_plsgen_12_9.netlist
   Original Cell name ppmc_plsgen_12
      Instance path:  stm11.ppmc_reg_S118M_inst.inst_ppmc_plsgen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      105         3.4
-                            FD1P3BX        1         0.9
+                              CCU2C      105         3.5
+                            FD1P3BX        1         1.1
                             FD1P3DX       25         0.4
                             FD1S3BX        1         1.5
                             FD1S3DX       58         1.8
-                           ORCALUT4       74         0.8
+                           ORCALUT4       74         0.9
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -2643,7 +2640,7 @@ Report for cell ppmc_speed_cnt_12_9.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       27         0.9
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1S3BX        1         1.5
                             FD1S3DX       20         0.6
                            ORCALUT4       36         0.4
@@ -2682,11 +2679,11 @@ Report for cell fc_sel_9.netlist
      Instance path:  stm11.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       93         1.0
+                           ORCALUT4       81         0.9
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            95           
+                         TOTAL            83           
 ----------------------------------------------------------------------
 Report for cell fc_dec_9.netlist
   Original Cell name fc_dec
@@ -2704,14 +2701,13 @@ Report for cell ppmc_top_S118M_20.netlist
      Instance path:  stm10
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      124         3.8
                                 INV        2         2.8
-                           ORCALUT4      431         4.8
-                              PFUMX        1         1.1
+                           ORCALUT4      397         4.6
                                 VHI       15         3.7
                                 VLO       15         3.7
 SUB MODULES 
@@ -2730,21 +2726,20 @@ SUB MODULES
                 ppmc_timer_cnt_12_8        1       100.0
                ppmc_u_step_ext_12_8        1       100.0
                             
-                         TOTAL          1059           
+                         TOTAL          1024           
 ----------------------------------------------------------------------
 Report for cell ppmc_reg_S118M_12_8.netlist
   Original Cell name ppmc_reg_S118M_12
      Instance path:  stm10.ppmc_reg_S118M_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      122         3.7
                                 INV        2         2.8
-                           ORCALUT4      337         3.8
-                              PFUMX        1         1.1
+                           ORCALUT4      303         3.5
                                 VHI       12         3.0
                                 VLO       12         3.0
 SUB MODULES 
@@ -2760,7 +2755,7 @@ SUB MODULES
                 ppmc_timer_cnt_12_8        1       100.0
                ppmc_u_step_ext_12_8        1       100.0
                             
-                         TOTAL           954           
+                         TOTAL           919           
 ----------------------------------------------------------------------
 Report for cell ppmc_cmdchk_8.netlist
   Original Cell name ppmc_cmdchk
@@ -2781,12 +2776,11 @@ Report for cell ppmc_ctrl_8.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       28         0.9
-                            FD1P3BX        4         3.6
+                            FD1P3BX        4         4.3
                             FD1P3DX      107         1.7
                             FD1S3DX       18         0.5
                                 INV        2         2.8
-                           ORCALUT4       45         0.5
-                              PFUMX        1         1.1
+                           ORCALUT4       46         0.5
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -2800,7 +2794,7 @@ Report for cell ppmc_enblr_S118M_12_8.netlist
                               CCU2C        8         0.3
                             FD1P3DX       16         0.3
                             FD1S3DX        2         0.1
-                           ORCALUT4       13         0.1
+                           ORCALUT4       13         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -2813,34 +2807,34 @@ Report for cell ppmc_rgstr_12_8.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX      147         2.4
                             FD1S3DX       40         1.2
-                           ORCALUT4      123         1.4
+                           ORCALUT4      102         1.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           312           
+                         TOTAL           291           
 ----------------------------------------------------------------------
 Report for cell ppmc_dec_8.netlist
   Original Cell name ppmc_dec
      Instance path:  stm10.ppmc_reg_S118M_inst.inst_ppmc_dec
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       24         0.3
+                           ORCALUT4       11         0.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            26           
+                         TOTAL            13           
 ----------------------------------------------------------------------
 Report for cell ppmc_plsgen_12_8.netlist
   Original Cell name ppmc_plsgen_12
      Instance path:  stm10.ppmc_reg_S118M_inst.inst_ppmc_plsgen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      105         3.4
-                            FD1P3BX        1         0.9
+                              CCU2C      105         3.5
+                            FD1P3BX        1         1.1
                             FD1P3DX       25         0.4
                             FD1S3BX        1         1.5
                             FD1S3DX       58         1.8
-                           ORCALUT4       74         0.8
+                           ORCALUT4       74         0.9
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -2884,7 +2878,7 @@ Report for cell ppmc_speed_cnt_12_8.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       27         0.9
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1S3BX        1         1.5
                             FD1S3DX       20         0.6
                            ORCALUT4       36         0.4
@@ -2923,7 +2917,7 @@ Report for cell fc_sel_8.netlist
      Instance path:  stm10.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       92         1.0
+                           ORCALUT4       92         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -2945,13 +2939,13 @@ Report for cell ppmc_top_S118M_19.netlist
      Instance path:  stm09
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      124         3.8
                                 INV        2         2.8
-                           ORCALUT4      435         4.9
+                           ORCALUT4      395         4.6
                                 VHI       15         3.7
                                 VLO       15         3.7
 SUB MODULES 
@@ -2970,20 +2964,20 @@ SUB MODULES
                 ppmc_timer_cnt_12_7        1       100.0
                ppmc_u_step_ext_12_7        1       100.0
                             
-                         TOTAL          1062           
+                         TOTAL          1022           
 ----------------------------------------------------------------------
 Report for cell ppmc_reg_S118M_12_7.netlist
   Original Cell name ppmc_reg_S118M_12
      Instance path:  stm09.ppmc_reg_S118M_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      122         3.7
                                 INV        2         2.8
-                           ORCALUT4      342         3.8
+                           ORCALUT4      303         3.5
                                 VHI       12         3.0
                                 VLO       12         3.0
 SUB MODULES 
@@ -2999,7 +2993,7 @@ SUB MODULES
                 ppmc_timer_cnt_12_7        1       100.0
                ppmc_u_step_ext_12_7        1       100.0
                             
-                         TOTAL           958           
+                         TOTAL           919           
 ----------------------------------------------------------------------
 Report for cell ppmc_cmdchk_7.netlist
   Original Cell name ppmc_cmdchk
@@ -3020,7 +3014,7 @@ Report for cell ppmc_ctrl_7.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       28         0.9
-                            FD1P3BX        4         3.6
+                            FD1P3BX        4         4.3
                             FD1P3DX      107         1.7
                             FD1S3DX       18         0.5
                                 INV        2         2.8
@@ -3038,7 +3032,7 @@ Report for cell ppmc_enblr_S118M_12_7.netlist
                               CCU2C        8         0.3
                             FD1P3DX       16         0.3
                             FD1S3DX        2         0.1
-                           ORCALUT4       13         0.1
+                           ORCALUT4       13         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -3051,34 +3045,34 @@ Report for cell ppmc_rgstr_12_7.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX      147         2.4
                             FD1S3DX       40         1.2
-                           ORCALUT4      126         1.4
+                           ORCALUT4       98         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           315           
+                         TOTAL           287           
 ----------------------------------------------------------------------
 Report for cell ppmc_dec_7.netlist
   Original Cell name ppmc_dec
      Instance path:  stm09.ppmc_reg_S118M_inst.inst_ppmc_dec
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       25         0.3
+                           ORCALUT4       15         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            27           
+                         TOTAL            17           
 ----------------------------------------------------------------------
 Report for cell ppmc_plsgen_12_7.netlist
   Original Cell name ppmc_plsgen_12
      Instance path:  stm09.ppmc_reg_S118M_inst.inst_ppmc_plsgen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      105         3.4
-                            FD1P3BX        1         0.9
+                              CCU2C      105         3.5
+                            FD1P3BX        1         1.1
                             FD1P3DX       25         0.4
                             FD1S3BX        1         1.5
                             FD1S3DX       58         1.8
-                           ORCALUT4       74         0.8
+                           ORCALUT4       74         0.9
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -3122,7 +3116,7 @@ Report for cell ppmc_speed_cnt_12_7.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       27         0.9
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1S3BX        1         1.5
                             FD1S3DX       20         0.6
                            ORCALUT4       36         0.4
@@ -3161,11 +3155,11 @@ Report for cell fc_sel_7.netlist
      Instance path:  stm09.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       91         1.0
+                           ORCALUT4       90         1.0
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            93           
+                         TOTAL            92           
 ----------------------------------------------------------------------
 Report for cell fc_dec_7.netlist
   Original Cell name fc_dec
@@ -3183,14 +3177,13 @@ Report for cell ppmc_top_S118M_18.netlist
      Instance path:  stm08
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      124         3.8
                                 INV        2         2.8
-                           ORCALUT4      429         4.8
-                              PFUMX        1         1.1
+                           ORCALUT4      386         4.5
                                 VHI       15         3.7
                                 VLO       15         3.7
 SUB MODULES 
@@ -3209,21 +3202,20 @@ SUB MODULES
                 ppmc_timer_cnt_12_6        1       100.0
                ppmc_u_step_ext_12_6        1       100.0
                             
-                         TOTAL          1057           
+                         TOTAL          1013           
 ----------------------------------------------------------------------
 Report for cell ppmc_reg_S118M_12_6.netlist
   Original Cell name ppmc_reg_S118M_12
      Instance path:  stm08.ppmc_reg_S118M_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      122         3.7
                                 INV        2         2.8
-                           ORCALUT4      329         3.7
-                              PFUMX        1         1.1
+                           ORCALUT4      289         3.4
                                 VHI       12         3.0
                                 VLO       12         3.0
 SUB MODULES 
@@ -3239,7 +3231,7 @@ SUB MODULES
                 ppmc_timer_cnt_12_6        1       100.0
                ppmc_u_step_ext_12_6        1       100.0
                             
-                         TOTAL           946           
+                         TOTAL           905           
 ----------------------------------------------------------------------
 Report for cell ppmc_cmdchk_6.netlist
   Original Cell name ppmc_cmdchk
@@ -3260,12 +3252,11 @@ Report for cell ppmc_ctrl_6.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       28         0.9
-                            FD1P3BX        4         3.6
+                            FD1P3BX        4         4.3
                             FD1P3DX      107         1.7
                             FD1S3DX       18         0.5
                                 INV        2         2.8
-                           ORCALUT4       45         0.5
-                              PFUMX        1         1.1
+                           ORCALUT4       46         0.5
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -3279,7 +3270,7 @@ Report for cell ppmc_enblr_S118M_12_6.netlist
                               CCU2C        8         0.3
                             FD1P3DX       16         0.3
                             FD1S3DX        2         0.1
-                           ORCALUT4       13         0.1
+                           ORCALUT4       13         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -3292,34 +3283,34 @@ Report for cell ppmc_rgstr_12_6.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX      147         2.4
                             FD1S3DX       40         1.2
-                           ORCALUT4      111         1.2
+                           ORCALUT4       91         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           300           
+                         TOTAL           280           
 ----------------------------------------------------------------------
 Report for cell ppmc_dec_6.netlist
   Original Cell name ppmc_dec
      Instance path:  stm08.ppmc_reg_S118M_inst.inst_ppmc_dec
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       29         0.3
+                           ORCALUT4        8         0.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            31           
+                         TOTAL            10           
 ----------------------------------------------------------------------
 Report for cell ppmc_plsgen_12_6.netlist
   Original Cell name ppmc_plsgen_12
      Instance path:  stm08.ppmc_reg_S118M_inst.inst_ppmc_plsgen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      105         3.4
-                            FD1P3BX        1         0.9
+                              CCU2C      105         3.5
+                            FD1P3BX        1         1.1
                             FD1P3DX       25         0.4
                             FD1S3BX        1         1.5
                             FD1S3DX       58         1.8
-                           ORCALUT4       74         0.8
+                           ORCALUT4       74         0.9
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -3363,7 +3354,7 @@ Report for cell ppmc_speed_cnt_12_6.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       27         0.9
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1S3BX        1         1.5
                             FD1S3DX       20         0.6
                            ORCALUT4       36         0.4
@@ -3402,36 +3393,35 @@ Report for cell fc_sel_6.netlist
      Instance path:  stm08.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       98         1.1
+                           ORCALUT4       94         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           100           
+                         TOTAL            96           
 ----------------------------------------------------------------------
 Report for cell fc_dec_6.netlist
   Original Cell name fc_dec
      Instance path:  stm08.fc_dec_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4        2         0.0
+                           ORCALUT4        3         0.0
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL             4           
+                         TOTAL             5           
 ----------------------------------------------------------------------
 Report for cell ppmc_top_S118M_17.netlist
   Original Cell name ppmc_top_S118M
      Instance path:  stm07
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      124         3.8
                                 INV        2         2.8
-                           ORCALUT4      431         4.8
-                              PFUMX        1         1.1
+                           ORCALUT4      387         4.5
                                 VHI       15         3.7
                                 VLO       15         3.7
 SUB MODULES 
@@ -3450,21 +3440,20 @@ SUB MODULES
                 ppmc_timer_cnt_12_5        1       100.0
                ppmc_u_step_ext_12_5        1       100.0
                             
-                         TOTAL          1059           
+                         TOTAL          1014           
 ----------------------------------------------------------------------
 Report for cell ppmc_reg_S118M_12_5.netlist
   Original Cell name ppmc_reg_S118M_12
      Instance path:  stm07.ppmc_reg_S118M_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      122         3.7
                                 INV        2         2.8
-                           ORCALUT4      326         3.7
-                              PFUMX        1         1.1
+                           ORCALUT4      294         3.4
                                 VHI       12         3.0
                                 VLO       12         3.0
 SUB MODULES 
@@ -3480,7 +3469,7 @@ SUB MODULES
                 ppmc_timer_cnt_12_5        1       100.0
                ppmc_u_step_ext_12_5        1       100.0
                             
-                         TOTAL           943           
+                         TOTAL           910           
 ----------------------------------------------------------------------
 Report for cell ppmc_cmdchk_5.netlist
   Original Cell name ppmc_cmdchk
@@ -3501,12 +3490,11 @@ Report for cell ppmc_ctrl_5.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       28         0.9
-                            FD1P3BX        4         3.6
+                            FD1P3BX        4         4.3
                             FD1P3DX      107         1.7
                             FD1S3DX       18         0.5
                                 INV        2         2.8
-                           ORCALUT4       45         0.5
-                              PFUMX        1         1.1
+                           ORCALUT4       46         0.5
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -3520,7 +3508,7 @@ Report for cell ppmc_enblr_S118M_12_5.netlist
                               CCU2C        8         0.3
                             FD1P3DX       16         0.3
                             FD1S3DX        2         0.1
-                           ORCALUT4       13         0.1
+                           ORCALUT4       13         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -3533,34 +3521,34 @@ Report for cell ppmc_rgstr_12_5.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX      147         2.4
                             FD1S3DX       40         1.2
-                           ORCALUT4      114         1.3
+                           ORCALUT4       92         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           303           
+                         TOTAL           281           
 ----------------------------------------------------------------------
 Report for cell ppmc_dec_5.netlist
   Original Cell name ppmc_dec
      Instance path:  stm07.ppmc_reg_S118M_inst.inst_ppmc_dec
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       23         0.3
+                           ORCALUT4       12         0.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            25           
+                         TOTAL            14           
 ----------------------------------------------------------------------
 Report for cell ppmc_plsgen_12_5.netlist
   Original Cell name ppmc_plsgen_12
      Instance path:  stm07.ppmc_reg_S118M_inst.inst_ppmc_plsgen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      105         3.4
-                            FD1P3BX        1         0.9
+                              CCU2C      105         3.5
+                            FD1P3BX        1         1.1
                             FD1P3DX       25         0.4
                             FD1S3BX        1         1.5
                             FD1S3DX       58         1.8
-                           ORCALUT4       74         0.8
+                           ORCALUT4       74         0.9
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -3604,7 +3592,7 @@ Report for cell ppmc_speed_cnt_12_5.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       27         0.9
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1S3BX        1         1.5
                             FD1S3DX       20         0.6
                            ORCALUT4       36         0.4
@@ -3643,11 +3631,11 @@ Report for cell fc_sel_5.netlist
      Instance path:  stm07.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4      103         1.2
+                           ORCALUT4       91         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           105           
+                         TOTAL            93           
 ----------------------------------------------------------------------
 Report for cell fc_dec_5.netlist
   Original Cell name fc_dec
@@ -3665,13 +3653,13 @@ Report for cell ppmc_top_S118M_16.netlist
      Instance path:  stm06
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      124         3.8
                                 INV        2         2.8
-                           ORCALUT4      427         4.8
+                           ORCALUT4      390         4.5
                                 VHI       15         3.7
                                 VLO       15         3.7
 SUB MODULES 
@@ -3690,20 +3678,20 @@ SUB MODULES
                 ppmc_timer_cnt_12_4        1       100.0
                ppmc_u_step_ext_12_4        1       100.0
                             
-                         TOTAL          1054           
+                         TOTAL          1017           
 ----------------------------------------------------------------------
 Report for cell ppmc_reg_S118M_12_4.netlist
   Original Cell name ppmc_reg_S118M_12
      Instance path:  stm06.ppmc_reg_S118M_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      122         3.7
                                 INV        2         2.8
-                           ORCALUT4      332         3.7
+                           ORCALUT4      295         3.4
                                 VHI       12         3.0
                                 VLO       12         3.0
 SUB MODULES 
@@ -3719,7 +3707,7 @@ SUB MODULES
                 ppmc_timer_cnt_12_4        1       100.0
                ppmc_u_step_ext_12_4        1       100.0
                             
-                         TOTAL           948           
+                         TOTAL           911           
 ----------------------------------------------------------------------
 Report for cell ppmc_cmdchk_4.netlist
   Original Cell name ppmc_cmdchk
@@ -3740,7 +3728,7 @@ Report for cell ppmc_ctrl_4.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       28         0.9
-                            FD1P3BX        4         3.6
+                            FD1P3BX        4         4.3
                             FD1P3DX      107         1.7
                             FD1S3DX       18         0.5
                                 INV        2         2.8
@@ -3758,7 +3746,7 @@ Report for cell ppmc_enblr_S118M_12_4.netlist
                               CCU2C        8         0.3
                             FD1P3DX       16         0.3
                             FD1S3DX        2         0.1
-                           ORCALUT4       13         0.1
+                           ORCALUT4       13         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -3771,34 +3759,34 @@ Report for cell ppmc_rgstr_12_4.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX      147         2.4
                             FD1S3DX       40         1.2
-                           ORCALUT4      119         1.3
+                           ORCALUT4       95         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           308           
+                         TOTAL           284           
 ----------------------------------------------------------------------
 Report for cell ppmc_dec_4.netlist
   Original Cell name ppmc_dec
      Instance path:  stm06.ppmc_reg_S118M_inst.inst_ppmc_dec
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       23         0.3
+                           ORCALUT4       10         0.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            25           
+                         TOTAL            12           
 ----------------------------------------------------------------------
 Report for cell ppmc_plsgen_12_4.netlist
   Original Cell name ppmc_plsgen_12
      Instance path:  stm06.ppmc_reg_S118M_inst.inst_ppmc_plsgen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      105         3.4
-                            FD1P3BX        1         0.9
+                              CCU2C      105         3.5
+                            FD1P3BX        1         1.1
                             FD1P3DX       25         0.4
                             FD1S3BX        1         1.5
                             FD1S3DX       58         1.8
-                           ORCALUT4       74         0.8
+                           ORCALUT4       74         0.9
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -3842,7 +3830,7 @@ Report for cell ppmc_speed_cnt_12_4.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       27         0.9
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1S3BX        1         1.5
                             FD1S3DX       20         0.6
                            ORCALUT4       36         0.4
@@ -3881,7 +3869,7 @@ Report for cell fc_sel_4.netlist
      Instance path:  stm06.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       93         1.0
+                           ORCALUT4       93         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -3903,13 +3891,14 @@ Report for cell ppmc_top_S118M_15.netlist
      Instance path:  stm05
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      124         3.8
                                 INV        2         2.8
-                           ORCALUT4      441         4.9
+                           ORCALUT4      385         4.5
+                              PFUMX        1         0.8
                                 VHI       15         3.7
                                 VLO       15         3.7
 SUB MODULES 
@@ -3928,20 +3917,21 @@ SUB MODULES
                 ppmc_timer_cnt_12_3        1       100.0
                ppmc_u_step_ext_12_3        1       100.0
                             
-                         TOTAL          1068           
+                         TOTAL          1013           
 ----------------------------------------------------------------------
 Report for cell ppmc_reg_S118M_12_3.netlist
   Original Cell name ppmc_reg_S118M_12
      Instance path:  stm05.ppmc_reg_S118M_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      122         3.7
                                 INV        2         2.8
-                           ORCALUT4      344         3.9
+                           ORCALUT4      292         3.4
+                              PFUMX        1         0.8
                                 VHI       12         3.0
                                 VLO       12         3.0
 SUB MODULES 
@@ -3957,7 +3947,7 @@ SUB MODULES
                 ppmc_timer_cnt_12_3        1       100.0
                ppmc_u_step_ext_12_3        1       100.0
                             
-                         TOTAL           960           
+                         TOTAL           909           
 ----------------------------------------------------------------------
 Report for cell ppmc_cmdchk_3.netlist
   Original Cell name ppmc_cmdchk
@@ -3978,11 +3968,12 @@ Report for cell ppmc_ctrl_3.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       28         0.9
-                            FD1P3BX        4         3.6
+                            FD1P3BX        4         4.3
                             FD1P3DX      107         1.7
                             FD1S3DX       18         0.5
                                 INV        2         2.8
-                           ORCALUT4       46         0.5
+                           ORCALUT4       45         0.5
+                              PFUMX        1         0.8
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -3996,7 +3987,7 @@ Report for cell ppmc_enblr_S118M_12_3.netlist
                               CCU2C        8         0.3
                             FD1P3DX       16         0.3
                             FD1S3DX        2         0.1
-                           ORCALUT4       13         0.1
+                           ORCALUT4       13         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -4009,34 +4000,34 @@ Report for cell ppmc_rgstr_12_3.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX      147         2.4
                             FD1S3DX       40         1.2
-                           ORCALUT4      128         1.4
+                           ORCALUT4       93         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           317           
+                         TOTAL           282           
 ----------------------------------------------------------------------
 Report for cell ppmc_dec_3.netlist
   Original Cell name ppmc_dec
      Instance path:  stm05.ppmc_reg_S118M_inst.inst_ppmc_dec
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       26         0.3
+                           ORCALUT4       10         0.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            28           
+                         TOTAL            12           
 ----------------------------------------------------------------------
 Report for cell ppmc_plsgen_12_3.netlist
   Original Cell name ppmc_plsgen_12
      Instance path:  stm05.ppmc_reg_S118M_inst.inst_ppmc_plsgen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      105         3.4
-                            FD1P3BX        1         0.9
+                              CCU2C      105         3.5
+                            FD1P3BX        1         1.1
                             FD1P3DX       25         0.4
                             FD1S3BX        1         1.5
                             FD1S3DX       58         1.8
-                           ORCALUT4       74         0.8
+                           ORCALUT4       74         0.9
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -4080,7 +4071,7 @@ Report for cell ppmc_speed_cnt_12_3.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       27         0.9
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1S3BX        1         1.5
                             FD1S3DX       20         0.6
                            ORCALUT4       36         0.4
@@ -4119,11 +4110,11 @@ Report for cell fc_sel_3.netlist
      Instance path:  stm05.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       95         1.1
+                           ORCALUT4       91         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            97           
+                         TOTAL            93           
 ----------------------------------------------------------------------
 Report for cell fc_dec_3.netlist
   Original Cell name fc_dec
@@ -4141,13 +4132,13 @@ Report for cell ppmc_top_S118M_14.netlist
      Instance path:  stm04
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      124         3.8
                                 INV        2         2.8
-                           ORCALUT4      423         4.7
+                           ORCALUT4      391         4.6
                                 VHI       15         3.7
                                 VLO       15         3.7
 SUB MODULES 
@@ -4166,20 +4157,20 @@ SUB MODULES
                 ppmc_timer_cnt_12_2        1       100.0
                ppmc_u_step_ext_12_2        1       100.0
                             
-                         TOTAL          1050           
+                         TOTAL          1018           
 ----------------------------------------------------------------------
 Report for cell ppmc_reg_S118M_12_2.netlist
   Original Cell name ppmc_reg_S118M_12
      Instance path:  stm04.ppmc_reg_S118M_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      122         3.7
                                 INV        2         2.8
-                           ORCALUT4      324         3.6
+                           ORCALUT4      293         3.4
                                 VHI       12         3.0
                                 VLO       12         3.0
 SUB MODULES 
@@ -4195,7 +4186,7 @@ SUB MODULES
                 ppmc_timer_cnt_12_2        1       100.0
                ppmc_u_step_ext_12_2        1       100.0
                             
-                         TOTAL           940           
+                         TOTAL           909           
 ----------------------------------------------------------------------
 Report for cell ppmc_cmdchk_2.netlist
   Original Cell name ppmc_cmdchk
@@ -4216,7 +4207,7 @@ Report for cell ppmc_ctrl_2.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       28         0.9
-                            FD1P3BX        4         3.6
+                            FD1P3BX        4         4.3
                             FD1P3DX      107         1.7
                             FD1S3DX       18         0.5
                                 INV        2         2.8
@@ -4234,7 +4225,7 @@ Report for cell ppmc_enblr_S118M_12_2.netlist
                               CCU2C        8         0.3
                             FD1P3DX       16         0.3
                             FD1S3DX        2         0.1
-                           ORCALUT4       13         0.1
+                           ORCALUT4       13         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -4247,34 +4238,34 @@ Report for cell ppmc_rgstr_12_2.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX      147         2.4
                             FD1S3DX       40         1.2
-                           ORCALUT4      111         1.2
+                           ORCALUT4       91         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           300           
+                         TOTAL           280           
 ----------------------------------------------------------------------
 Report for cell ppmc_dec_2.netlist
   Original Cell name ppmc_dec
      Instance path:  stm04.ppmc_reg_S118M_inst.inst_ppmc_dec
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       23         0.3
+                           ORCALUT4       11         0.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            25           
+                         TOTAL            13           
 ----------------------------------------------------------------------
 Report for cell ppmc_plsgen_12_2.netlist
   Original Cell name ppmc_plsgen_12
      Instance path:  stm04.ppmc_reg_S118M_inst.inst_ppmc_plsgen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      105         3.4
-                            FD1P3BX        1         0.9
+                              CCU2C      105         3.5
+                            FD1P3BX        1         1.1
                             FD1P3DX       25         0.4
                             FD1S3BX        1         1.5
                             FD1S3DX       58         1.8
-                           ORCALUT4       74         0.8
+                           ORCALUT4       74         0.9
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -4318,7 +4309,7 @@ Report for cell ppmc_speed_cnt_12_2.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       27         0.9
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1S3BX        1         1.5
                             FD1S3DX       20         0.6
                            ORCALUT4       36         0.4
@@ -4357,11 +4348,11 @@ Report for cell fc_sel_2.netlist
      Instance path:  stm04.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       97         1.1
+                           ORCALUT4       96         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            99           
+                         TOTAL            98           
 ----------------------------------------------------------------------
 Report for cell fc_dec_2.netlist
   Original Cell name fc_dec
@@ -4379,14 +4370,13 @@ Report for cell ppmc_top_S118M_13.netlist
      Instance path:  stm03
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      124         3.8
                                 INV        2         2.8
-                           ORCALUT4      421         4.7
-                              PFUMX        1         1.1
+                           ORCALUT4      385         4.5
                                 VHI       15         3.7
                                 VLO       15         3.7
 SUB MODULES 
@@ -4405,21 +4395,20 @@ SUB MODULES
                 ppmc_timer_cnt_12_1        1       100.0
                ppmc_u_step_ext_12_1        1       100.0
                             
-                         TOTAL          1049           
+                         TOTAL          1012           
 ----------------------------------------------------------------------
 Report for cell ppmc_reg_S118M_12_1.netlist
   Original Cell name ppmc_reg_S118M_12
      Instance path:  stm03.ppmc_reg_S118M_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      122         3.7
                                 INV        2         2.8
-                           ORCALUT4      326         3.7
-                              PFUMX        1         1.1
+                           ORCALUT4      292         3.4
                                 VHI       12         3.0
                                 VLO       12         3.0
 SUB MODULES 
@@ -4435,7 +4424,7 @@ SUB MODULES
                 ppmc_timer_cnt_12_1        1       100.0
                ppmc_u_step_ext_12_1        1       100.0
                             
-                         TOTAL           943           
+                         TOTAL           908           
 ----------------------------------------------------------------------
 Report for cell ppmc_cmdchk_1.netlist
   Original Cell name ppmc_cmdchk
@@ -4456,12 +4445,11 @@ Report for cell ppmc_ctrl_1.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       28         0.9
-                            FD1P3BX        4         3.6
+                            FD1P3BX        4         4.3
                             FD1P3DX      107         1.7
                             FD1S3DX       18         0.5
                                 INV        2         2.8
-                           ORCALUT4       45         0.5
-                              PFUMX        1         1.1
+                           ORCALUT4       46         0.5
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -4475,7 +4463,7 @@ Report for cell ppmc_enblr_S118M_12_1.netlist
                               CCU2C        8         0.3
                             FD1P3DX       16         0.3
                             FD1S3DX        2         0.1
-                           ORCALUT4       13         0.1
+                           ORCALUT4       13         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -4488,34 +4476,34 @@ Report for cell ppmc_rgstr_12_1.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX      147         2.4
                             FD1S3DX       40         1.2
-                           ORCALUT4      108         1.2
+                           ORCALUT4       92         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           297           
+                         TOTAL           281           
 ----------------------------------------------------------------------
 Report for cell ppmc_dec_1.netlist
   Original Cell name ppmc_dec
      Instance path:  stm03.ppmc_reg_S118M_inst.inst_ppmc_dec
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       29         0.3
+                           ORCALUT4       10         0.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            31           
+                         TOTAL            12           
 ----------------------------------------------------------------------
 Report for cell ppmc_plsgen_12_1.netlist
   Original Cell name ppmc_plsgen_12
      Instance path:  stm03.ppmc_reg_S118M_inst.inst_ppmc_plsgen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      105         3.4
-                            FD1P3BX        1         0.9
+                              CCU2C      105         3.5
+                            FD1P3BX        1         1.1
                             FD1P3DX       25         0.4
                             FD1S3BX        1         1.5
                             FD1S3DX       58         1.8
-                           ORCALUT4       74         0.8
+                           ORCALUT4       74         0.9
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -4559,7 +4547,7 @@ Report for cell ppmc_speed_cnt_12_1.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       27         0.9
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1S3BX        1         1.5
                             FD1S3DX       20         0.6
                            ORCALUT4       36         0.4
@@ -4598,11 +4586,11 @@ Report for cell fc_sel_1.netlist
      Instance path:  stm03.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       93         1.0
+                           ORCALUT4       91         1.1
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            95           
+                         TOTAL            93           
 ----------------------------------------------------------------------
 Report for cell fc_dec_1.netlist
   Original Cell name fc_dec
@@ -4620,13 +4608,13 @@ Report for cell ppmc_top_S118M_12.netlist
      Instance path:  stm02
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      124         3.8
                                 INV        2         2.8
-                           ORCALUT4      420         4.7
+                           ORCALUT4      414         4.8
                                 VHI       15         3.7
                                 VLO       15         3.7
 SUB MODULES 
@@ -4645,20 +4633,20 @@ SUB MODULES
                 ppmc_timer_cnt_12_0        1       100.0
                ppmc_u_step_ext_12_0        1       100.0
                             
-                         TOTAL          1047           
+                         TOTAL          1041           
 ----------------------------------------------------------------------
 Report for cell ppmc_reg_S118M_12_0.netlist
   Original Cell name ppmc_reg_S118M_12
      Instance path:  stm02.ppmc_reg_S118M_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      122         3.7
                                 INV        2         2.8
-                           ORCALUT4      317         3.6
+                           ORCALUT4      328         3.8
                                 VHI       12         3.0
                                 VLO       12         3.0
 SUB MODULES 
@@ -4674,7 +4662,7 @@ SUB MODULES
                 ppmc_timer_cnt_12_0        1       100.0
                ppmc_u_step_ext_12_0        1       100.0
                             
-                         TOTAL           933           
+                         TOTAL           944           
 ----------------------------------------------------------------------
 Report for cell ppmc_cmdchk_0.netlist
   Original Cell name ppmc_cmdchk
@@ -4695,7 +4683,7 @@ Report for cell ppmc_ctrl_0.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       28         0.9
-                            FD1P3BX        4         3.6
+                            FD1P3BX        4         4.3
                             FD1P3DX      107         1.7
                             FD1S3DX       18         0.5
                                 INV        2         2.8
@@ -4713,7 +4701,7 @@ Report for cell ppmc_enblr_S118M_12_0.netlist
                               CCU2C        8         0.3
                             FD1P3DX       16         0.3
                             FD1S3DX        2         0.1
-                           ORCALUT4       13         0.1
+                           ORCALUT4       13         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -4726,34 +4714,34 @@ Report for cell ppmc_rgstr_12_0.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX      147         2.4
                             FD1S3DX       40         1.2
-                           ORCALUT4      103         1.2
+                           ORCALUT4      122         1.4
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           292           
+                         TOTAL           311           
 ----------------------------------------------------------------------
 Report for cell ppmc_dec_0.netlist
   Original Cell name ppmc_dec
      Instance path:  stm02.ppmc_reg_S118M_inst.inst_ppmc_dec
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       24         0.3
+                           ORCALUT4       15         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            26           
+                         TOTAL            17           
 ----------------------------------------------------------------------
 Report for cell ppmc_plsgen_12_0.netlist
   Original Cell name ppmc_plsgen_12
      Instance path:  stm02.ppmc_reg_S118M_inst.inst_ppmc_plsgen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      105         3.4
-                            FD1P3BX        1         0.9
+                              CCU2C      105         3.5
+                            FD1P3BX        1         1.1
                             FD1P3DX       25         0.4
                             FD1S3BX        1         1.5
                             FD1S3DX       58         1.8
-                           ORCALUT4       74         0.8
+                           ORCALUT4       74         0.9
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -4797,7 +4785,7 @@ Report for cell ppmc_speed_cnt_12_0.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       27         0.9
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1S3BX        1         1.5
                             FD1S3DX       20         0.6
                            ORCALUT4       36         0.4
@@ -4836,11 +4824,11 @@ Report for cell fc_sel_0.netlist
      Instance path:  stm02.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4      101         1.1
+                           ORCALUT4       84         1.0
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           103           
+                         TOTAL            86           
 ----------------------------------------------------------------------
 Report for cell fc_dec_0.netlist
   Original Cell name fc_dec
@@ -4858,13 +4846,13 @@ Report for cell ppmc_top_S118M.netlist
      Instance path:  stm01
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      124         3.8
                                 INV        2         2.8
-                           ORCALUT4      529         5.9
+                           ORCALUT4      466         5.4
                                 VHI       15         3.7
                                 VLO       15         3.7
 SUB MODULES 
@@ -4883,20 +4871,20 @@ SUB MODULES
                   ppmc_timer_cnt_12        1       100.0
                  ppmc_u_step_ext_12        1       100.0
                             
-                         TOTAL          1156           
+                         TOTAL          1093           
 ----------------------------------------------------------------------
 Report for cell ppmc_reg_S118M_12.netlist
   Original Cell name ppmc_reg_S118M
      Instance path:  stm01.ppmc_reg_S118M_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      150         4.9
-                            FD1P3BX        5         4.5
-                            FD1P3DX      301         4.8
+                              CCU2C      150         5.0
+                            FD1P3BX        5         5.3
+                            FD1P3DX      301         4.9
                             FD1S3BX        1         1.5
                             FD1S3DX      122         3.7
                                 INV        2         2.8
-                           ORCALUT4      381         4.3
+                           ORCALUT4      349         4.1
                                 VHI       12         3.0
                                 VLO       12         3.0
 SUB MODULES 
@@ -4912,7 +4900,7 @@ SUB MODULES
                   ppmc_timer_cnt_12        1       100.0
                  ppmc_u_step_ext_12        1       100.0
                             
-                         TOTAL           997           
+                         TOTAL           965           
 ----------------------------------------------------------------------
 Report for cell ppmc_cmdchk.netlist
   Original Cell name ppmc_cmdchk
@@ -4933,15 +4921,15 @@ Report for cell ppmc_ctrl.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       28         0.9
-                            FD1P3BX        4         3.6
+                            FD1P3BX        4         4.3
                             FD1P3DX      107         1.7
                             FD1S3DX       18         0.5
                                 INV        2         2.8
-                           ORCALUT4       47         0.5
+                           ORCALUT4       46         0.5
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           208           
+                         TOTAL           207           
 ----------------------------------------------------------------------
 Report for cell ppmc_enblr_S118M_12.netlist
   Original Cell name ppmc_enblr_S118M
@@ -4951,7 +4939,7 @@ Report for cell ppmc_enblr_S118M_12.netlist
                               CCU2C        8         0.3
                             FD1P3DX       16         0.3
                             FD1S3DX        2         0.1
-                           ORCALUT4       13         0.1
+                           ORCALUT4       13         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -4964,34 +4952,34 @@ Report for cell ppmc_rgstr_12.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX      147         2.4
                             FD1S3DX       40         1.2
-                           ORCALUT4      140         1.6
+                           ORCALUT4      121         1.4
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           329           
+                         TOTAL           310           
 ----------------------------------------------------------------------
 Report for cell ppmc_dec.netlist
   Original Cell name ppmc_dec
      Instance path:  stm01.ppmc_reg_S118M_inst.inst_ppmc_dec
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       50         0.6
+                           ORCALUT4       37         0.4
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            52           
+                         TOTAL            39           
 ----------------------------------------------------------------------
 Report for cell ppmc_plsgen_12.netlist
   Original Cell name ppmc_plsgen
      Instance path:  stm01.ppmc_reg_S118M_inst.inst_ppmc_plsgen
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      105         3.4
-                            FD1P3BX        1         0.9
+                              CCU2C      105         3.5
+                            FD1P3BX        1         1.1
                             FD1P3DX       25         0.4
                             FD1S3BX        1         1.5
                             FD1S3DX       58         1.8
-                           ORCALUT4       73         0.8
+                           ORCALUT4       74         0.9
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -5000,7 +4988,7 @@ SUB MODULES
                   ppmc_speed_cnt_12        1       100.0
                   ppmc_timer_cnt_12        1       100.0
                             
-                         TOTAL           277           
+                         TOTAL           278           
 ----------------------------------------------------------------------
 Report for cell ppmc_pls_cnt_12.netlist
   Original Cell name ppmc_pls_cnt
@@ -5010,11 +4998,11 @@ Report for cell ppmc_pls_cnt_12.netlist
                               CCU2C       33         1.1
                             FD1P3DX       25         0.4
                             FD1S3DX        1         0.0
-                           ORCALUT4       25         0.3
+                           ORCALUT4       26         0.3
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            86           
+                         TOTAL            87           
 ----------------------------------------------------------------------
 Report for cell ppmc_timer_cnt_12.netlist
   Original Cell name ppmc_timer_cnt
@@ -5035,7 +5023,7 @@ Report for cell ppmc_speed_cnt_12.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       27         0.9
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1S3BX        1         1.5
                             FD1S3DX       20         0.6
                            ORCALUT4       36         0.4
@@ -5074,22 +5062,22 @@ Report for cell fc_sel.netlist
      Instance path:  stm01.fc_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4      111         1.2
+                           ORCALUT4      114         1.3
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           113           
+                         TOTAL           116           
 ----------------------------------------------------------------------
 Report for cell fc_dec.netlist
   Original Cell name fc_dec
      Instance path:  stm01.fc_dec_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       37         0.4
+                           ORCALUT4        3         0.0
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            39           
+                         TOTAL             5           
 ----------------------------------------------------------------------
 Report for cell pls_sens.netlist
      Instance path:  pls_sens_inst
@@ -5107,11 +5095,11 @@ Report for cell enc_func_top.netlist
      Instance path:  ENC_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C      832        27.2
+                              CCU2C      832        27.9
                             FD1P3DX      273         4.4
                             FD1S3BX       13        20.0
                             FD1S3DX      598        18.2
-                           ORCALUT4      978        11.0
+                           ORCALUT4      979        11.4
                                 VHI       40         9.9
                                 VLO       40         9.9
 SUB MODULES 
@@ -5155,7 +5143,7 @@ SUB MODULES
                   encoder_2bit_12_8        1       100.0
                   encoder_2bit_12_9        1       100.0
                             
-                         TOTAL          2813           
+                         TOTAL          2814           
 ----------------------------------------------------------------------
 Report for cell enc_top_23.netlist
   Original Cell name enc_top
@@ -5184,7 +5172,7 @@ Report for cell enc_lmt_12_11.netlist
                             FD1P3DX        1         0.0
                             FD1S3BX        1         1.5
                             FD1S3DX       24         0.7
-                           ORCALUT4       48         0.5
+                           ORCALUT4       48         0.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -5231,7 +5219,7 @@ Report for cell enc_lmt_12_10.netlist
                             FD1P3DX        1         0.0
                             FD1S3BX        1         1.5
                             FD1S3DX       24         0.7
-                           ORCALUT4       48         0.5
+                           ORCALUT4       48         0.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -5278,7 +5266,7 @@ Report for cell enc_lmt_12_9.netlist
                             FD1P3DX        1         0.0
                             FD1S3BX        1         1.5
                             FD1S3DX       24         0.7
-                           ORCALUT4       48         0.5
+                           ORCALUT4       48         0.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -5325,7 +5313,7 @@ Report for cell enc_lmt_12_8.netlist
                             FD1P3DX        1         0.0
                             FD1S3BX        1         1.5
                             FD1S3DX       24         0.7
-                           ORCALUT4       48         0.5
+                           ORCALUT4       48         0.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -5354,14 +5342,14 @@ Report for cell enc_top_19.netlist
                             FD1P3DX       21         0.3
                             FD1S3BX        1         1.5
                             FD1S3DX       46         1.4
-                           ORCALUT4       72         0.8
+                           ORCALUT4       73         0.9
                                 VHI        3         0.7
                                 VLO        3         0.7
 SUB MODULES 
                        enc_lmt_12_7        1       100.0
                   encoder_2bit_12_7        1       100.0
                             
-                         TOTAL           212           
+                         TOTAL           213           
 ----------------------------------------------------------------------
 Report for cell enc_lmt_12_7.netlist
   Original Cell name enc_lmt_12
@@ -5372,11 +5360,11 @@ Report for cell enc_lmt_12_7.netlist
                             FD1P3DX        1         0.0
                             FD1S3BX        1         1.5
                             FD1S3DX       24         0.7
-                           ORCALUT4       48         0.5
+                           ORCALUT4       49         0.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           121           
+                         TOTAL           122           
 ----------------------------------------------------------------------
 Report for cell encoder_2bit_12_7.netlist
   Original Cell name encoder_2bit_12
@@ -5419,7 +5407,7 @@ Report for cell enc_lmt_12_6.netlist
                             FD1P3DX        1         0.0
                             FD1S3BX        1         1.5
                             FD1S3DX       24         0.7
-                           ORCALUT4       48         0.5
+                           ORCALUT4       48         0.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -5466,7 +5454,7 @@ Report for cell enc_lmt_12_5.netlist
                             FD1P3DX        1         0.0
                             FD1S3BX        1         1.5
                             FD1S3DX       24         0.7
-                           ORCALUT4       48         0.5
+                           ORCALUT4       48         0.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -5513,7 +5501,7 @@ Report for cell enc_lmt_12_4.netlist
                             FD1P3DX        1         0.0
                             FD1S3BX        1         1.5
                             FD1S3DX       24         0.7
-                           ORCALUT4       48         0.5
+                           ORCALUT4       48         0.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -5560,7 +5548,7 @@ Report for cell enc_lmt_12_3.netlist
                             FD1P3DX        1         0.0
                             FD1S3BX        1         1.5
                             FD1S3DX       24         0.7
-                           ORCALUT4       48         0.5
+                           ORCALUT4       48         0.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -5607,7 +5595,7 @@ Report for cell enc_lmt_12_2.netlist
                             FD1P3DX        1         0.0
                             FD1S3BX        1         1.5
                             FD1S3DX       24         0.7
-                           ORCALUT4       48         0.5
+                           ORCALUT4       48         0.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -5654,7 +5642,7 @@ Report for cell enc_lmt_12_1.netlist
                             FD1P3DX        1         0.0
                             FD1S3BX        1         1.5
                             FD1S3DX       24         0.7
-                           ORCALUT4       48         0.5
+                           ORCALUT4       48         0.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -5701,7 +5689,7 @@ Report for cell enc_lmt_12_0.netlist
                             FD1P3DX        1         0.0
                             FD1S3BX        1         1.5
                             FD1S3DX       24         0.7
-                           ORCALUT4       48         0.5
+                           ORCALUT4       48         0.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -5748,7 +5736,7 @@ Report for cell enc_lmt_12.netlist
                             FD1P3DX        1         0.0
                             FD1S3BX        1         1.5
                             FD1S3DX       24         0.7
-                           ORCALUT4       48         0.5
+                           ORCALUT4       48         0.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -5781,7 +5769,7 @@ Report for cell LEDLT_TOP.netlist
                             FD1S3BX        8        12.3
                             FD1S3DX       21         0.6
                             FD1S3IX        4        57.1
-                           ORCALUT4       92         1.0
+                           ORCALUT4       92         1.1
                                 VHI        4         1.0
                                 VLO        4         1.0
 SUB MODULES 
@@ -5846,7 +5834,8 @@ Report for cell ad_ctrl.netlist
                             FD1P3DX       45         0.7
                             FD1S3DX        6         0.2
                                 INV        1         1.4
-                           ORCALUT4       30         0.3
+                           ORCALUT4       29         0.3
+                              PFUMX        1         0.8
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -5885,7 +5874,8 @@ Report for cell adif_seq.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3DX       10         0.2
-                           ORCALUT4       22         0.2
+                           ORCALUT4       21         0.2
+                              PFUMX        1         0.8
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -5908,16 +5898,16 @@ Report for cell DAC43608_top.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C       48         1.6
-                            FD1P3BX       18        16.2
+                            FD1P3BX       18        19.1
                             FD1P3DX      180         2.9
                             FD1S3AX       36        27.3
                             FD1S3BX        6         9.2
                             FD1S3DX      198         6.0
                             FD1S3IX        1        14.3
                                 INV       13        18.3
-                            L6MUX21        8        42.1
-                           ORCALUT4      804         9.0
-                              PFUMX       65        69.1
+                            L6MUX21        8        22.2
+                           ORCALUT4      808         9.4
+                              PFUMX       69        51.9
                                 VHI        7         1.7
                                 VLO        7         1.7
 SUB MODULES 
@@ -5928,7 +5918,7 @@ SUB MODULES
                i2c_master_registers        1       100.0
                   i2c_master_wb_top        1       100.0
                             
-                         TOTAL          1397           
+                         TOTAL          1405           
 ----------------------------------------------------------------------
 Report for cell CTRL_32CH.netlist
      Instance path:  U_DAC43608_top.U03
@@ -5939,13 +5929,13 @@ Report for cell CTRL_32CH.netlist
                             FD1S3AX       32        24.2
                             FD1S3DX      154         4.7
                                 INV       13        18.3
-                            L6MUX21        8        42.1
-                           ORCALUT4      378         4.2
-                              PFUMX       61        64.9
+                            L6MUX21        8        22.2
+                           ORCALUT4      380         4.4
+                              PFUMX       65        48.9
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           805           
+                         TOTAL           811           
 ----------------------------------------------------------------------
 Report for cell DAC_CTRL_1CH.netlist
      Instance path:  U_DAC43608_top.U02
@@ -5953,26 +5943,26 @@ Report for cell DAC_CTRL_1CH.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX       14         0.2
                             FD1S3DX        8         0.2
-                           ORCALUT4      283         3.2
-                              PFUMX        1         1.1
+                           ORCALUT4      284         3.3
+                              PFUMX        1         0.8
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           308           
+                         TOTAL           309           
 ----------------------------------------------------------------------
 Report for cell i2c_master_wb_top.netlist
      Instance path:  U_DAC43608_top.U01
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C        9         0.3
-                            FD1P3BX       18        16.2
+                            FD1P3BX       18        19.1
                             FD1P3DX       48         0.8
                             FD1S3AX        4         3.0
                             FD1S3BX        6         9.2
                             FD1S3DX       36         1.1
                             FD1S3IX        1        14.3
-                           ORCALUT4      143         1.6
-                              PFUMX        3         3.2
+                           ORCALUT4      144         1.7
+                              PFUMX        3         2.3
                                 VHI        4         1.0
                                 VLO        4         1.0
 SUB MODULES 
@@ -5980,27 +5970,27 @@ SUB MODULES
                i2c_master_byte_ctrl        1       100.0
                i2c_master_registers        1       100.0
                             
-                         TOTAL           279           
+                         TOTAL           280           
 ----------------------------------------------------------------------
 Report for cell i2c_master_registers.netlist
      Instance path:  U_DAC43608_top.U01.registers
                                           Cell usage:
                                cell       count    Res Usage(%)
-                            FD1P3BX       16        14.4
+                            FD1P3BX       16        17.0
                             FD1P3DX       17         0.3
                             FD1S3DX        2         0.1
-                           ORCALUT4       16         0.2
+                           ORCALUT4       17         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            53           
+                         TOTAL            54           
 ----------------------------------------------------------------------
 Report for cell i2c_master_bit_ctrl.netlist
      Instance path:  U_DAC43608_top.U01.bit_controller
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C        9         0.3
-                            FD1P3BX        2         1.8
+                            FD1P3BX        2         2.1
                             FD1P3DX       18         0.3
                             FD1S3AX        1         0.8
                             FD1S3BX        5         7.7
@@ -6041,31 +6031,31 @@ Report for cell sp_conv.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C        4         0.1
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1P3DX      166         2.7
                             FD1S3BX        1         1.5
                             FD1S3DX        5         0.2
                                 INV        1         1.4
-                           ORCALUT4      194         2.2
+                           ORCALUT4      193         2.3
                                 VHI        3         0.7
                                 VLO        3         0.7
 SUB MODULES 
                           SIO_ctrl2        1       100.0
                         SPI_master2        1       100.0
                             
-                         TOTAL           380           
+                         TOTAL           379           
 ----------------------------------------------------------------------
 Report for cell SIO_ctrl2.netlist
      Instance path:  sp_conv_inst.SIO_inst1
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C        4         0.1
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1P3DX      166         2.7
                             FD1S3BX        1         1.5
                             FD1S3DX        5         0.2
                                 INV        1         1.4
-                           ORCALUT4      142         1.6
+                           ORCALUT4      142         1.7
                                 VHI        2         0.5
                                 VLO        2         0.5
 SUB MODULES 
@@ -6078,11 +6068,11 @@ Report for cell SPI_master2.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C        4         0.1
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1P3DX      126         2.0
                             FD1S3DX        2         0.1
                                 INV        1         1.4
-                           ORCALUT4      137         1.5
+                           ORCALUT4      137         1.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -6106,21 +6096,21 @@ Report for cell slv_com_top.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                                AND2        8       100.0
-                              CCU2C      204         6.7
+                              CCU2C      132         4.4
                              DP16KD        4       100.0
                             EHXPLLL        1       100.0
                             FD1P3AX       25       100.0
-                            FD1P3BX       27        24.3
-                            FD1P3DX      448         7.2
+                            FD1P3BX       10        10.6
+                            FD1P3DX      449         7.2
                             FD1S3AX       91        68.9
                             FD1S3BX       24        36.9
                             FD1S3DX      337        10.3
                             FD1S3IX        2        28.6
                                 INV       27        38.0
-                            L6MUX21       11        57.9
+                            L6MUX21       28        77.8
                                 OR2        4       100.0
-                           ORCALUT4      602         6.7
-                              PFUMX       23        24.5
+                           ORCALUT4      799         9.3
+                              PFUMX       61        45.9
                            ROM16X1A       64       100.0
                            ROM64X1A        6       100.0
                                 VHI       37         9.1
@@ -6164,18 +6154,18 @@ SUB MODULES
                          tx_ctl_1st        1       100.0
                          tx_ctl_3rd        1       100.0
                             
-                         TOTAL          2066           
+                         TOTAL          2230           
 ----------------------------------------------------------------------
 Report for cell cds.netlist
      Instance path:  slv_com_top_inst.cds_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                            FD1P3BX        1         0.9
+                            FD1P3BX        1         1.1
                             FD1P3DX        1         0.0
                             FD1S3DX       33         1.0
                                 INV        2         2.8
                            ORCALUT4       28         0.3
-                              PFUMX        1         1.1
+                              PFUMX        1         0.8
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -6188,17 +6178,17 @@ Report for cell rx_com.netlist
                                AND2        4        50.0
                               CCU2C       49         1.6
                              DP16KD        2        50.0
-                            FD1P3BX        4         3.6
-                            FD1P3DX      121         1.9
+                            FD1P3BX        4         4.3
+                            FD1P3DX      121         2.0
                             FD1S3AX       43        32.6
                             FD1S3BX       11        16.9
                             FD1S3DX      131         4.0
                             FD1S3IX        1        14.3
                                 INV        8        11.3
-                            L6MUX21        1         5.3
+                            L6MUX21        1         2.8
                                 OR2        2        50.0
-                           ORCALUT4      170         1.9
-                              PFUMX        4         4.3
+                           ORCALUT4      171         2.0
+                              PFUMX        4         3.0
                            ROM16X1A       32        50.0
                            ROM64X1A        6       100.0
                                 VHI       12         3.0
@@ -6217,7 +6207,7 @@ SUB MODULES
                          rx_ctl_1st        1       100.0
                          rx_ctl_3rd        1       100.0
                             
-                         TOTAL           648           
+                         TOTAL           649           
 ----------------------------------------------------------------------
 Report for cell rx_cont_b2.netlist
      Instance path:  slv_com_top_inst.rx_com_inst.rx_cont_b2_inst
@@ -6226,7 +6216,7 @@ Report for cell rx_cont_b2.netlist
                                AND2        2        25.0
                               CCU2C       27         0.9
                              DP16KD        1        25.0
-                            FD1P3BX        2         1.8
+                            FD1P3BX        2         2.1
                             FD1P3DX       65         1.0
                             FD1S3BX        9        13.8
                             FD1S3DX       58         1.8
@@ -6277,7 +6267,7 @@ Report for cell dcfifo_rx_b2.netlist
                                AND2        2        25.0
                               CCU2C       22         0.7
                              DP16KD        1        25.0
-                            FD1P3BX        2         1.8
+                            FD1P3BX        2         2.1
                             FD1P3DX       40         0.6
                             FD1S3BX        1         1.5
                             FD1S3DX       29         0.9
@@ -6297,7 +6287,7 @@ Report for cell rx_cont_b1.netlist
                                AND2        2        25.0
                               CCU2C       22         0.7
                              DP16KD        1        25.0
-                            FD1P3BX        2         1.8
+                            FD1P3BX        2         2.1
                             FD1P3DX       40         0.6
                             FD1S3BX        2         3.1
                             FD1S3DX       73         2.2
@@ -6333,7 +6323,7 @@ Report for cell dcfifo_rx_b1.netlist
                                AND2        2        25.0
                               CCU2C       22         0.7
                              DP16KD        1        25.0
-                            FD1P3BX        2         1.8
+                            FD1P3BX        2         2.1
                             FD1P3DX       40         0.6
                             FD1S3BX        1         1.5
                             FD1S3DX       29         0.9
@@ -6354,9 +6344,9 @@ Report for cell dec8b10b_wrapper.netlist
                             FD1S3AX       43        32.6
                             FD1S3IX        1        14.3
                                 INV        2         2.8
-                            L6MUX21        1         5.3
-                           ORCALUT4       48         0.5
-                              PFUMX        4         4.3
+                            L6MUX21        1         2.8
+                           ORCALUT4       49         0.6
+                              PFUMX        4         3.0
                            ROM64X1A        6       100.0
                                 VHI        4         1.0
                                 VLO        4         1.0
@@ -6365,7 +6355,7 @@ SUB MODULES
                            dec6b_5b        1       100.0
                        dec8b10b_new        1       100.0
                             
-                         TOTAL           132           
+                         TOTAL           133           
 ----------------------------------------------------------------------
 Report for cell dec8b10b_new.netlist
      Instance path:  slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst
@@ -6374,9 +6364,9 @@ Report for cell dec8b10b_new.netlist
                             FD1P3DX       16         0.3
                             FD1S3AX       21        15.9
                                 INV        1         1.4
-                            L6MUX21        1         5.3
-                           ORCALUT4       48         0.5
-                              PFUMX        4         4.3
+                            L6MUX21        1         2.8
+                           ORCALUT4       49         0.6
+                              PFUMX        4         3.0
                            ROM64X1A        6       100.0
                                 VHI        3         0.7
                                 VLO        3         0.7
@@ -6384,7 +6374,7 @@ SUB MODULES
                            dec4b_3b        1       100.0
                            dec6b_5b        1       100.0
                             
-                         TOTAL           105           
+                         TOTAL           106           
 ----------------------------------------------------------------------
 Report for cell dec4b_3b.netlist
      Instance path:  slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec4b_3b_inst
@@ -6392,9 +6382,9 @@ Report for cell dec4b_3b.netlist
                                cell       count    Res Usage(%)
                             FD1P3DX        7         0.1
                                 INV        1         1.4
-                            L6MUX21        1         5.3
-                           ORCALUT4       22         0.2
-                              PFUMX        4         4.3
+                            L6MUX21        1         2.8
+                           ORCALUT4       22         0.3
+                              PFUMX        4         3.0
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -6405,12 +6395,12 @@ Report for cell dec6b_5b.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3DX        9         0.1
-                           ORCALUT4       23         0.3
+                           ORCALUT4       24         0.3
                            ROM64X1A        6       100.0
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            40           
+                         TOTAL            41           
 ----------------------------------------------------------------------
 Report for cell tx_com.netlist
      Instance path:  slv_com_top_inst.tx_com_inst
@@ -6419,17 +6409,17 @@ Report for cell tx_com.netlist
                                AND2        4        50.0
                               CCU2C       49         1.6
                              DP16KD        2        50.0
-                            FD1P3BX        4         3.6
+                            FD1P3BX        4         4.3
                             FD1P3DX      122         2.0
                             FD1S3AX       48        36.4
                             FD1S3BX       10        15.4
                             FD1S3DX      126         3.8
                             FD1S3IX        1        14.3
                                 INV       10        14.1
-                            L6MUX21        3        15.8
+                            L6MUX21        3         8.3
                                 OR2        2        50.0
-                           ORCALUT4      158         1.8
-                              PFUMX       10        10.6
+                           ORCALUT4      159         1.9
+                              PFUMX       10         7.5
                            ROM16X1A       32        50.0
                                 VHI       13         3.2
                                 VLO       13         3.2
@@ -6448,7 +6438,7 @@ SUB MODULES
                          tx_ctl_1st        1       100.0
                          tx_ctl_3rd        1       100.0
                             
-                         TOTAL           643           
+                         TOTAL           644           
 ----------------------------------------------------------------------
 Report for cell tx_cont_b2.netlist
      Instance path:  slv_com_top_inst.tx_com_inst.tx_cont_b2_inst
@@ -6457,7 +6447,7 @@ Report for cell tx_cont_b2.netlist
                                AND2        2        25.0
                               CCU2C       22         0.7
                              DP16KD        1        25.0
-                            FD1P3BX        2         1.8
+                            FD1P3BX        2         2.1
                             FD1P3DX       42         0.7
                             FD1S3BX        1         1.5
                             FD1S3DX       47         1.4
@@ -6493,7 +6483,7 @@ Report for cell dcfifo_tx_b2.netlist
                                AND2        2        25.0
                               CCU2C       22         0.7
                              DP16KD        1        25.0
-                            FD1P3BX        2         1.8
+                            FD1P3BX        2         2.1
                             FD1P3DX       40         0.6
                             FD1S3BX        1         1.5
                             FD1S3DX       29         0.9
@@ -6513,13 +6503,13 @@ Report for cell tx_cont_b1.netlist
                                AND2        2        25.0
                               CCU2C       27         0.9
                              DP16KD        1        25.0
-                            FD1P3BX        2         1.8
+                            FD1P3BX        2         2.1
                             FD1P3DX       80         1.3
                             FD1S3BX        9        13.8
                             FD1S3DX       65         2.0
                                 INV        5         7.0
                                 OR2        1        25.0
-                           ORCALUT4       75         0.8
+                           ORCALUT4       75         0.9
                            ROM16X1A       16        25.0
                                 VHI        4         1.0
                                 VLO        4         1.0
@@ -6565,7 +6555,7 @@ Report for cell dcfifo_tx_b1.netlist
                                AND2        2        25.0
                               CCU2C       22         0.7
                              DP16KD        1        25.0
-                            FD1P3BX        2         1.8
+                            FD1P3BX        2         2.1
                             FD1P3DX       40         0.6
                             FD1S3BX        1         1.5
                             FD1S3DX       29         0.9
@@ -6586,9 +6576,9 @@ Report for cell enc8b10b_wrapper.netlist
                             FD1S3DX       14         0.4
                             FD1S3IX        1        14.3
                                 INV        2         2.8
-                            L6MUX21        3        15.8
-                           ORCALUT4       59         0.7
-                              PFUMX       10        10.6
+                            L6MUX21        3         8.3
+                           ORCALUT4       60         0.7
+                              PFUMX       10         7.5
                                 VHI        5         1.2
                                 VLO        5         1.2
 SUB MODULES 
@@ -6597,7 +6587,7 @@ SUB MODULES
                        enc8b10b_new        1       100.0
                           enc8b_10b        1       100.0
                             
-                         TOTAL           151           
+                         TOTAL           152           
 ----------------------------------------------------------------------
 Report for cell enc8b10b_new.netlist
      Instance path:  slv_com_top_inst.tx_com_inst.enc8b10b_wrapper_inst.enc8b10b_new_inst
@@ -6606,9 +6596,9 @@ Report for cell enc8b10b_new.netlist
                             FD1S3AX       27        20.5
                             FD1S3DX       14         0.4
                                 INV        1         1.4
-                            L6MUX21        3        15.8
+                            L6MUX21        3         8.3
                            ORCALUT4       59         0.7
-                              PFUMX       10        10.6
+                              PFUMX       10         7.5
                                 VHI        4         1.0
                                 VLO        4         1.0
 SUB MODULES 
@@ -6625,9 +6615,9 @@ Report for cell enc8b_10b.netlist
                             FD1S3AX       16        12.1
                             FD1S3DX       14         0.4
                                 INV        1         1.4
-                            L6MUX21        3        15.8
+                            L6MUX21        3         8.3
                            ORCALUT4       59         0.7
-                              PFUMX       10        10.6
+                              PFUMX       10         7.5
                                 VHI        3         0.7
                                 VLO        3         0.7
 SUB MODULES 
@@ -6643,7 +6633,7 @@ Report for cell enc3b_4b.netlist
                             FD1S3DX        6         0.2
                                 INV        1         1.4
                            ORCALUT4       14         0.2
-                              PFUMX        1         1.1
+                              PFUMX        1         0.8
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -6654,9 +6644,9 @@ Report for cell enc5b_6b.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1S3DX        8         0.2
-                            L6MUX21        3        15.8
+                            L6MUX21        3         8.3
                            ORCALUT4       44         0.5
-                              PFUMX        9         9.6
+                              PFUMX        9         6.8
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
@@ -6702,16 +6692,16 @@ Report for cell slv_ctrl_top.netlist
      Instance path:  slv_com_top_inst.slv_ctrl_top_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C       78         2.6
+                              CCU2C        6         0.2
                             FD1P3AX       25       100.0
-                            FD1P3BX       18        16.2
-                            FD1P3DX      163         2.6
+                            FD1P3BX        1         1.1
+                            FD1P3DX      164         2.6
                             FD1S3BX        2         3.1
                             FD1S3DX       33         1.0
                                 INV        1         1.4
-                            L6MUX21        7        36.8
-                           ORCALUT4      227         2.5
-                              PFUMX        8         8.5
+                            L6MUX21       24        66.7
+                           ORCALUT4      422         4.9
+                              PFUMX       46        34.6
                                 VHI        6         1.5
                                 VLO        6         1.5
 SUB MODULES 
@@ -6721,37 +6711,39 @@ SUB MODULES
                         slv_rx_ctrl        1       100.0
                         slv_tx_ctrl        1       100.0
                             
-                         TOTAL           579           
+                         TOTAL           741           
 ----------------------------------------------------------------------
 Report for cell nd_sel.netlist
      Instance path:  slv_com_top_inst.slv_ctrl_top_inst.nd_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2C       72         2.4
+                            L6MUX21       17        47.2
+                           ORCALUT4      141         1.6
+                              PFUMX       38        28.6
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            74           
+                         TOTAL           198           
 ----------------------------------------------------------------------
 Report for cell adr_sel.netlist
      Instance path:  slv_com_top_inst.slv_ctrl_top_inst.adr_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       16         0.2
+                           ORCALUT4       75         0.9
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            18           
+                         TOTAL            77           
 ----------------------------------------------------------------------
 Report for cell node_sel.netlist
      Instance path:  slv_com_top_inst.slv_ctrl_top_inst.node_sel_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       23         0.3
+                           ORCALUT4       19         0.2
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL            25           
+                         TOTAL            21           
 ----------------------------------------------------------------------
 Report for cell slv_rx_ctrl.netlist
      Instance path:  slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst
@@ -6759,32 +6751,32 @@ Report for cell slv_rx_ctrl.netlist
                                cell       count    Res Usage(%)
                               CCU2C        3         0.1
                             FD1P3AX       25       100.0
-                            FD1P3DX      144         2.3
+                            FD1P3DX      146         2.4
                             FD1S3BX        1         1.5
                             FD1S3DX       18         0.5
                                 INV        1         1.4
-                            L6MUX21        7        36.8
-                           ORCALUT4      119         1.3
-                              PFUMX        8         8.5
+                            L6MUX21        7        19.4
+                           ORCALUT4      118         1.4
+                              PFUMX        8         6.0
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           328           
+                         TOTAL           329           
 ----------------------------------------------------------------------
 Report for cell slv_tx_ctrl.netlist
      Instance path:  slv_com_top_inst.slv_ctrl_top_inst.slv_tx_ctrl_inst
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2C        3         0.1
-                            FD1P3BX       18        16.2
-                            FD1P3DX       19         0.3
+                            FD1P3BX        1         1.1
+                            FD1P3DX       18         0.3
                             FD1S3BX        1         1.5
                             FD1S3DX        7         0.2
                            ORCALUT4       67         0.8
                                 VHI        1         0.2
                                 VLO        1         0.2
                             
-                         TOTAL           117           
+                         TOTAL            99           
 ----------------------------------------------------------------------
 Report for cell rst_cnt.netlist
      Instance path:  slv_com_top_inst.rst_cnt_inst

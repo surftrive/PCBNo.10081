@@ -1,0 +1,5 @@
+#List of actual used RTLs.
+
+File                                                                                                             Type     IN_PROJECT/INCLUDED/LIBRARY
+
+"C:\work\Diamond\zz_customer\VHDL\Sysmex\05_20250221\PCBNo.10082_20250221\RTL\IPcore\pll_gen\pll_gen.vhd"        vhdl                      IN PROJECT

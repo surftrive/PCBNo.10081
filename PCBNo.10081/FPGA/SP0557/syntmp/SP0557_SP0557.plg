@@ -1,35 +1,35 @@
-@P:  Worst Slack : -5.519
+@P:  Worst Slack : 5.891
 @P:  CLK20M_ext - Estimated Frequency : 324.9 MHz
 @P:  CLK20M_ext - Requested Frequency : 20.0 MHz
 @P:  CLK20M_ext - Estimated Period : 3.078
 @P:  CLK20M_ext - Requested Period : 50.000
 @P:  CLK20M_ext - Slack : 46.922
-@P:  pll_gen|CLKOP_inferred_clock - Estimated Frequency : 243.3 MHz
-@P:  pll_gen|CLKOP_inferred_clock - Requested Frequency : 200.0 MHz
-@P:  pll_gen|CLKOP_inferred_clock - Estimated Period : 4.109
-@P:  pll_gen|CLKOP_inferred_clock - Requested Period : 5.000
-@P:  pll_gen|CLKOP_inferred_clock - Slack : 0.890
-@P:  pll_gen|CLKOS2_inferred_clock - Estimated Frequency : 136.0 MHz
-@P:  pll_gen|CLKOS2_inferred_clock - Requested Frequency : 200.0 MHz
-@P:  pll_gen|CLKOS2_inferred_clock - Estimated Period : 7.354
-@P:  pll_gen|CLKOS2_inferred_clock - Requested Period : 5.000
-@P:  pll_gen|CLKOS2_inferred_clock - Slack : -2.354
-@P:  pll_gen|CLKOS3_inferred_clock - Estimated Frequency : 95.1 MHz
-@P:  pll_gen|CLKOS3_inferred_clock - Requested Frequency : 200.0 MHz
-@P:  pll_gen|CLKOS3_inferred_clock - Estimated Period : 10.519
-@P:  pll_gen|CLKOS3_inferred_clock - Requested Period : 5.000
-@P:  pll_gen|CLKOS3_inferred_clock - Slack : -5.519
-@P:  pll_gen|CLKOS_inferred_clock - Estimated Frequency : 324.9 MHz
-@P:  pll_gen|CLKOS_inferred_clock - Requested Frequency : 200.0 MHz
-@P:  pll_gen|CLKOS_inferred_clock - Estimated Period : 3.078
-@P:  pll_gen|CLKOS_inferred_clock - Requested Period : 5.000
-@P:  pll_gen|CLKOS_inferred_clock - Slack : 1.923
-@P:  System - Estimated Frequency : 262.4 MHz
+@P:  CLKOP_100M - Estimated Frequency : 243.3 MHz
+@P:  CLKOP_100M - Requested Frequency : 100.0 MHz
+@P:  CLKOP_100M - Estimated Period : 4.109
+@P:  CLKOP_100M - Requested Period : 10.000
+@P:  CLKOP_100M - Slack : 5.891
+@P:  CLKOS2_20M - Estimated Frequency : 123.5 MHz
+@P:  CLKOS2_20M - Requested Frequency : 20.0 MHz
+@P:  CLKOS2_20M - Estimated Period : 8.098
+@P:  CLKOS2_20M - Requested Period : 50.000
+@P:  CLKOS2_20M - Slack : 41.902
+@P:  CLKOS3_10M - Estimated Frequency : 81.6 MHz
+@P:  CLKOS3_10M - Requested Frequency : 10.0 MHz
+@P:  CLKOS3_10M - Estimated Period : 12.254
+@P:  CLKOS3_10M - Requested Period : 100.000
+@P:  CLKOS3_10M - Slack : 45.433
+@P:  CLKOS_100M_90 - Estimated Frequency : 324.9 MHz
+@P:  CLKOS_100M_90 - Requested Frequency : 100.0 MHz
+@P:  CLKOS_100M_90 - Estimated Period : 3.078
+@P:  CLKOS_100M_90 - Requested Period : 10.000
+@P:  CLKOS_100M_90 - Slack : 6.593
+@P:  System - Estimated Frequency : NA
 @P:  System - Requested Frequency : 200.0 MHz
-@P:  System - Estimated Period : 3.811
+@P:  System - Estimated Period : NA
 @P:  System - Requested Period : 5.000
-@P:  System - Slack : 1.189
-@P:  Total Area : 9195.0
+@P:  System - Slack : 8.104
+@P:  Total Area : 8204.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
@@ -434,4 +434,4 @@
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
-@P:  CPU Time : 0h:01m:46s
+@P:  CPU Time : 0h:00m:51s

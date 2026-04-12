@@ -1,0 +1,358 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP0565.vhd":19:7:19:12|Top entity is set to SP0565.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\com\fc_dec.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\com\fc_sel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\com\w_pack.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\ad_ctrl\adc_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\ad_ctrl\adclk_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\ad_ctrl\adif_seq.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\ad_ctrl\shiftreg12bit.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_acc_tim_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_cmdchk.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_dec.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_enblr_S118M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_id.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_phgen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_pls_cnt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_rgstr.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_speed_cnt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_timer_cnt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_u_step_ext.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\DAC081S101\log_ca_DACclk_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\DAC081S101\log_ca_DACif_seq.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\encoder\enc_lmt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\encoder\encoder_2bit.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\gpio\gpio_id.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\gpio\gpio_ip_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\gpio\gpio_op_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\linear_signal_ctrl\linear_signal_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\pls_sens\pls_sens.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slaveid_top\slaveid_id.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\crc_check.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\dec4b_3b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\dec6b_5b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\rx_ctl_1st.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\rx_ctl_3rd.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slv_ctrl\adr_sel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slv_ctrl\nd_sel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slv_ctrl\node_sel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slv_ctrl\slv_rx_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slv_ctrl\slv_tx_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\crc_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\enc3b_4b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\enc5b_6b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\tx_ctl_1st.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\tx_ctl_3rd.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\cds.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rst_cnt.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slvadr_cnv.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_ajst_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_ctst_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_cut_ref_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_dec.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_dly_2term.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_dlysel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_edge_dtct.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_idlm_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_meas_reg_S127M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_plsdrv.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_plsgen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_plsnum_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_plssel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_prm_sel.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_ref_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_rng_chk.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\tmpctrl_4ch_id.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_clk_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\IPcore\pll_gen\pll_gen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\IPcore\IPcore.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\ad_ctrl\ad_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_plsgen.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_reg_S118M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_top_S118M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\DAC081S101\log_ca_DAC_ctrl.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\DAC081S101\DAC081S101_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\encoder\enc_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\encoder\enc_func_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\gpio\gpio_reg.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\gpio\gpio_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slaveid_top\slaveid_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\dec8b10b_new.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\dec8b10b_wrapper.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\rx_cont_b1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\rx_cont_b2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\enc8b_10b.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\enc8b10b_new.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\enc8b10b_wrapper.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\tx_cont_b1.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\tx_cont_b2.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\CLK_gen_S124M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slv_ctrl_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slv_com_top.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_plsmod.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\tmpctrl_4ch_reg_S127M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\tmpctrl_4ch_top_S127M.vhd'.
+@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP0565.vhd'.
+@N: CD231 :"C:\lscc\diamond\3.13\synpbase\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP0565.vhd":19:7:19:12|Synthesizing work.sp0565.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slaveid_top\slaveid_top.vhd":20:7:20:17|Synthesizing work.slaveid_top.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slaveid_top\slaveid_id.vhd":20:7:20:16|Synthesizing work.slaveid_id.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\com\fc_sel.vhd":20:7:20:12|Synthesizing work.fc_sel.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\com\fc_dec.vhd":20:7:20:12|Synthesizing work.fc_dec.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\tmpctrl_4ch_top_S127M.vhd":59:7:59:27|Synthesizing work.tmpctrl_4ch_top_s127m.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\tmpctrl_4ch_reg_S127M.vhd":63:7:63:27|Synthesizing work.tmpctrl_4ch_reg_s127m.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_plsgen.vhd":20:7:20:17|Synthesizing work.temp_plsgen.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_plsgen.vhd":102:5:102:18|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_plsmod.vhd":28:7:28:17|Synthesizing work.temp_plsmod.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_plsdrv.vhd":23:7:23:17|Synthesizing work.temp_plsdrv.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_dlysel.vhd":18:7:18:17|Synthesizing work.temp_dlysel.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_dlysel.vhd":42:3:42:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_dly_2term.vhd":18:7:18:20|Synthesizing work.temp_dly_2term.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_plssel.vhd":25:7:25:17|Synthesizing work.temp_plssel.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_plsnum_reg.vhd":18:7:18:21|Synthesizing work.temp_plsnum_reg.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_ctrl.vhd":21:7:21:15|Synthesizing work.temp_ctrl.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_ctrl.vhd":108:4:108:17|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_rng_chk.vhd":29:7:29:18|Synthesizing work.temp_rng_chk.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_edge_dtct.vhd":19:7:19:20|Synthesizing work.temp_edge_dtct.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_prm_sel.vhd":19:7:19:18|Synthesizing work.temp_prm_sel.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_prm_sel.vhd":80:3:80:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_idlm_reg.vhd":23:7:23:19|Synthesizing work.temp_idlm_reg.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_cut_ref_reg.vhd":23:7:23:22|Synthesizing work.temp_cut_ref_reg.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_ctst_reg.vhd":23:7:23:19|Synthesizing work.temp_ctst_reg.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_ajst_reg.vhd":18:7:18:19|Synthesizing work.temp_ajst_reg.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_ref_reg.vhd":18:7:18:18|Synthesizing work.temp_ref_reg.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_meas_reg_S127M.vhd":18:7:18:25|Synthesizing work.temp_meas_reg_s127m.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_dec.vhd":18:7:18:14|Synthesizing work.temp_dec.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\tmpctrl_4ch_id.vhd":19:7:19:20|Synthesizing work.tmpctrl_4ch_id.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\gpio\gpio_top.vhd":20:7:20:14|Synthesizing work.gpio_top.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\gpio\gpio_reg.vhd":20:7:20:14|Synthesizing work.gpio_reg.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\gpio\gpio_ip_reg.vhd":20:7:20:17|Synthesizing work.gpio_ip_reg.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\gpio\gpio_op_reg.vhd":20:7:20:17|Synthesizing work.gpio_op_reg.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\gpio\gpio_id.vhd":20:7:20:13|Synthesizing work.gpio_id.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_top_S118M.vhd":48:7:48:20|Synthesizing work.ppmc_top_s118m.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_reg_S118M.vhd":53:7:53:20|Synthesizing work.ppmc_reg_s118m.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_cmdchk.vhd":25:7:25:17|Synthesizing work.ppmc_cmdchk.rtl.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_cmdchk.vhd":152:16:152:25|Removing redundant assignment.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_ctrl.vhd":36:7:36:15|Synthesizing work.ppmc_ctrl.rtl.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_ctrl.vhd":167:16:167:22|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_ctrl.vhd":217:20:217:27|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_ctrl.vhd":346:24:346:32|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_ctrl.vhd":353:20:353:24|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_ctrl.vhd":387:20:387:24|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_ctrl.vhd":406:20:406:24|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_ctrl.vhd":420:24:420:28|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_ctrl.vhd":423:24:423:31|Removing redundant assignment.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_phgen.vhd":27:7:27:16|Synthesizing work.ppmc_phgen.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_enblr_S118M.vhd":49:7:49:22|Synthesizing work.ppmc_enblr_s118m.rtl.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_enblr_S118M.vhd":107:5:107:16|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_enblr_S118M.vhd":108:5:108:17|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_enblr_S118M.vhd":113:5:113:16|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_enblr_S118M.vhd":114:5:114:17|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_enblr_S118M.vhd":134:5:134:16|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_enblr_S118M.vhd":135:5:135:17|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_enblr_S118M.vhd":141:6:141:17|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_enblr_S118M.vhd":150:4:150:18|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_enblr_S118M.vhd":151:4:151:15|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_enblr_S118M.vhd":152:4:152:15|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_enblr_S118M.vhd":153:4:153:16|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_enblr_S118M.vhd":177:4:177:10|Removing redundant assignment.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_rgstr.vhd":34:7:34:16|Synthesizing work.ppmc_rgstr.rtl.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_rgstr.vhd":163:16:163:25|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_rgstr.vhd":177:16:177:28|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_rgstr.vhd":182:16:182:28|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_rgstr.vhd":183:16:183:22|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_rgstr.vhd":333:16:333:31|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_rgstr.vhd":359:16:359:34|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_rgstr.vhd":373:16:373:24|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_rgstr.vhd":415:16:415:30|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_rgstr.vhd":429:16:429:26|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_rgstr.vhd":457:16:457:22|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_rgstr.vhd":484:16:484:22|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_rgstr.vhd":511:16:511:20|Removing redundant assignment.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_dec.vhd":34:7:34:14|Synthesizing work.ppmc_dec.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_plsgen.vhd":19:7:19:17|Synthesizing work.ppmc_plsgen.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_pls_cnt.vhd":26:7:26:18|Synthesizing work.ppmc_pls_cnt.rtl.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_pls_cnt.vhd":74:10:74:15|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_pls_cnt.vhd":76:10:76:12|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_pls_cnt.vhd":77:10:77:15|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_pls_cnt.vhd":97:20:97:28|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_pls_cnt.vhd":100:16:100:24|Removing redundant assignment.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_timer_cnt.vhd":20:7:20:20|Synthesizing work.ppmc_timer_cnt.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_speed_cnt.vhd":25:7:25:20|Synthesizing work.ppmc_speed_cnt.rtl.
+@N: CD231 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_speed_cnt.vhd":47:31:47:32|Using onehot encoding for type visual_stop_st_states. For example, enumeration stop_st is mapped to "10000".
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_speed_cnt.vhd":125:16:125:29|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_acc_tim_gen.vhd":20:7:20:22|Synthesizing work.ppmc_acc_tim_gen.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_u_step_ext.vhd":27:7:27:21|Synthesizing work.ppmc_u_step_ext.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_id.vhd":19:7:19:13|Synthesizing work.ppmc_id.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":26:7:26:22|Synthesizing work.ad5270_5271_ctrl.rtl.
+@N: CD231 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":46:11:46:12|Using onehot encoding for type state. For example, enumeration idle is mapped to "1000000000000000000000000000000000".
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":153:47:153:52|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":156:5:156:10|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":159:5:159:10|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":160:5:160:8|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":161:5:161:10|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":183:20:183:23|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":184:20:184:24|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":191:20:191:24|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":197:16:197:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":199:16:199:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":203:16:203:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":205:16:205:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":209:16:209:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":211:16:211:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":215:16:215:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":217:16:217:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":223:16:223:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":225:16:225:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":229:16:229:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":231:16:231:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":235:16:235:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":237:16:237:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":241:16:241:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":243:16:243:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":247:16:247:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":249:16:249:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":253:16:253:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":255:16:255:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":259:16:259:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":261:16:261:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":265:16:265:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":267:16:267:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":273:16:273:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":275:16:275:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":279:16:279:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":281:16:281:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":285:16:285:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":287:16:287:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":291:16:291:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":293:16:293:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":297:16:297:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":299:16:299:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":303:16:303:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":305:16:305:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":309:16:309:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":311:16:311:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":315:16:315:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":317:16:317:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":321:16:321:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":323:16:323:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":327:16:327:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":329:16:329:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":333:16:333:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":335:16:335:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":339:16:339:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":341:16:341:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":345:16:345:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":347:16:347:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":351:16:351:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":353:16:353:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":357:16:357:19|Removing redundant assignment.
+@N: CD364 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":359:16:359:19|Removing redundant assignment.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":403:12:403:25|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\linear_signal_ctrl\linear_signal_ctrl.vhd":25:7:25:24|Synthesizing work.linear_signal_ctrl.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\linear_signal_ctrl\linear_signal_ctrl.vhd":192:6:192:19|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\pls_sens\pls_sens.vhd":21:7:21:14|Synthesizing work.pls_sens.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\encoder\enc_func_top.vhd":24:7:24:18|Synthesizing work.enc_func_top.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\encoder\enc_top.vhd":24:7:24:13|Synthesizing work.enc_top.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\encoder\enc_lmt.vhd":25:8:25:14|Synthesizing work.enc_lmt.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\encoder\encoder_2bit.vhd":26:8:26:19|Synthesizing work.encoder_2bit.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\ad_ctrl\ad_ctrl.vhd":19:7:19:13|Synthesizing work.ad_ctrl.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\ad_ctrl\adc_reg.vhd":22:7:22:13|Synthesizing work.adc_reg.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\ad_ctrl\shiftreg12bit.vhd":18:7:18:19|Synthesizing work.shiftreg12bit.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\ad_ctrl\adif_seq.vhd":19:7:19:14|Synthesizing work.adif_seq.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\ad_ctrl\adclk_gen.vhd":19:7:19:15|Synthesizing work.adclk_gen.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\DAC081S101\DAC081S101_top.vhd":24:7:24:20|Synthesizing work.dac081s101_top.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\DAC081S101\log_ca_DAC_ctrl.vhd":19:7:19:21|Synthesizing work.log_ca_dac_ctrl.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\DAC081S101\log_ca_DACif_seq.vhd":20:7:20:22|Synthesizing work.log_ca_dacif_seq.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\DAC081S101\log_ca_DACclk_gen.vhd":19:7:19:23|Synthesizing work.log_ca_dacclk_gen.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_clk_gen.vhd":19:7:19:17|Synthesizing work.slv_clk_gen.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slv_com_top.vhd":30:7:30:17|Synthesizing work.slv_com_top.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slv_com_top.vhd":315:4:315:17|OTHERS clause is not synthesized.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\cds.vhd":25:7:25:9|Synthesizing work.cds.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com.vhd":24:7:24:12|Synthesizing work.rx_com.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\rx_cont_b2.vhd":20:7:20:16|Synthesizing work.rx_cont_b2.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\rx_ctl_3rd.vhd":19:7:19:16|Synthesizing work.rx_ctl_3rd.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\crc_check.vhd":19:7:19:15|Synthesizing work.crc_check.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\IPcore\dcfifo_rx_b2\dcfifo_rx_b2.vhd":12:7:12:18|Synthesizing work.dcfifo_rx_b2.structure.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":768:10:768:17|Synthesizing work.rom16x1a.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":1128:10:1128:15|Synthesizing work.dp16kd.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":118:10:118:16|Synthesizing work.fd1p3bx.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":130:10:130:16|Synthesizing work.fd1p3dx.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":197:10:197:16|Synthesizing work.fd1s3dx.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":186:10:186:16|Synthesizing work.fd1s3bx.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":34:10:34:14|Synthesizing work.ccu2c.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":830:10:830:12|Synthesizing work.vlo.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":823:10:823:12|Synthesizing work.vhi.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":837:10:837:13|Synthesizing work.xor2.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":716:10:716:12|Synthesizing work.or2.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":362:10:362:12|Synthesizing work.inv.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.13\cae_library\synthesis\vhdl\ecp5u.vhd":54:10:54:13|Synthesizing work.and2.syn_black_box.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\rx_cont_b1.vhd":21:7:21:16|Synthesizing work.rx_cont_b1.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\rx_ctl_1st.vhd":20:7:20:16|Synthesizing work.rx_ctl_1st.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\IPcore\dcfifo_rx_b1\dcfifo_rx_b1.vhd":12:7:12:18|Synthesizing work.dcfifo_rx_b1.structure.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\dec8b10b_wrapper.vhd":5:7:5:22|Synthesizing work.dec8b10b_wrapper.wrapper.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\dec8b10b_new.vhd":15:7:15:18|Synthesizing work.dec8b10b_new.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\dec4b_3b.vhd":15:7:15:14|Synthesizing work.dec4b_3b.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\dec6b_5b.vhd":15:7:15:14|Synthesizing work.dec6b_5b.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com.vhd":25:7:25:12|Synthesizing work.tx_com.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\tx_cont_b2.vhd":20:7:20:16|Synthesizing work.tx_cont_b2.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\tx_ctl_3rd.vhd":20:7:20:16|Synthesizing work.tx_ctl_3rd.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\IPcore\dcfifo_tx_b2\dcfifo_tx_b2.vhd":12:7:12:18|Synthesizing work.dcfifo_tx_b2.structure.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\tx_cont_b1.vhd":20:7:20:16|Synthesizing work.tx_cont_b1.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\tx_ctl_1st.vhd":20:7:20:16|Synthesizing work.tx_ctl_1st.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\crc_gen.vhd":20:7:20:13|Synthesizing work.crc_gen.rtl.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\IPcore\dcfifo_tx_b1\dcfifo_tx_b1.vhd":12:7:12:18|Synthesizing work.dcfifo_tx_b1.structure.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\enc8b10b_wrapper.vhd":5:7:5:22|Synthesizing work.enc8b10b_wrapper.wrapper.
+@N: CD630 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\enc8b10b_new.vhd":15:7:15:18|Synthesizing work.enc8b10b_new.rtl.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\enc3b_4b.vhd":99:20:99:33|OTHERS clause is not synthesized.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\tx_com\enc5b_6b.vhd":226:20:226:33|OTHERS clause is not synthesized.
+@N: CD604 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slv_ctrl\slv_rx_ctrl.vhd":432:3:432:16|OTHERS clause is not synthesized.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Trying to extract state machine for register STATE.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slv_ctrl\slv_rx_ctrl.vhd":108:2:108:3|Trying to extract state machine for register STATE.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\rx_ctl_1st.vhd":126:2:126:3|Trying to extract state machine for register state_count.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com\rx_ctl_3rd.vhd":25:2:25:9|Input RX_EMPTY is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\rx_com.vhd":28:8:28:12|Input CLK2A is unused.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slv_com_top.vhd":286:2:286:3|Trying to extract state machine for register ck_state.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slv_com\slv_com_top.vhd":41:2:41:9|Input LVCLK_Ip is unused.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\DAC081S101\log_ca_DACif_seq.vhd":62:8:62:9|Trying to extract state machine for register st.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\ad_ctrl\adif_seq.vhd":64:2:64:3|Trying to extract state machine for register st.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\AD5270\ad5270_5271_ctrl.vhd":171:2:171:3|Trying to extract state machine for register s_state.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_speed_cnt.vhd":57:8:57:9|Trying to extract state machine for register visual_STOP_ST_current.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_phgen.vhd":83:8:83:9|Trying to extract state machine for register STATE.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_ctrl.vhd":283:8:283:9|Trying to extract state machine for register STATE.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_ctrl.vhd":42:8:42:16|Input PULSE_REG is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_cmdchk.vhd":29:8:29:14|Input UP_DOWN is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_cmdchk.vhd":30:8:30:14|Input ACC_ENB is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_cmdchk.vhd":34:8:34:15|Input LOW_FREQ is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_cmdchk.vhd":35:8:35:16|Input HIGH_FREQ is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_cmdchk.vhd":36:8:36:16|Input PULSE_REG is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\compactppmc\ppmc_cmdchk.vhd":39:8:39:12|Input SPEED is unused.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_ctrl.vhd":58:2:58:3|Trying to extract state machine for register st.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_plsnum_reg.vhd":23:2:23:7|Input LOAD_L is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_plssel.vhd":32:4:32:9|Input IDLING is unused.
+@N: CL201 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\tmpctrl_4ch\temp_plsgen.vhd":72:2:72:3|Trying to extract state machine for register st.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slaveid_top\slaveid_top.vhd":23:8:23:10|Input CLK is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slaveid_top\slaveid_top.vhd":28:8:28:10|Input LDI is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slaveid_top\slaveid_top.vhd":31:8:31:11|Input LWEb is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP05565\slaveid_top\slaveid_top.vhd":34:8:34:12|Input LRSTb is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP0565.vhd":37:2:37:9|Input nFLT_PLS is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP0565.vhd":38:2:38:12|Input nFLT_PLSSNS is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP0565.vhd":39:2:39:8|Input nFLT_SV is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP0565.vhd":40:2:40:10|Input nFLT_PUMP is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP0565.vhd":41:2:41:9|Input nFLT_LMT is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP0565.vhd":42:2:42:12|Input nFLT_SNSLED is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP0565.vhd":54:2:54:11|Input STM_nFAULT is unused.
+@N: CL159 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP0565.vhd":61:2:61:9|Input nFLT_PLT is unused.
+@N|Running in 64-bit mode
+

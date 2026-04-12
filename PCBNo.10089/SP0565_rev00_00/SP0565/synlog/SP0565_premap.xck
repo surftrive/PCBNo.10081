@@ -1,0 +1,5 @@
+ckid0_0:@|S:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2@|E:slv_com.slvadr_cnv_inst.s_HEX_OUT[5:0]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
+ckid0_1:@|S:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOP@|E:slv_com.cds_inst.data_sel[1:0]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1
+ckid0_2:@|S:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS@|E:slv_com.cds_inst.dz[2]@|F:@syn_dgcc_clockid0_2==1@|M:ClockId_0_2
+ckid0_3:@|S:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3@|E:slv_com.slv_ctrl_top_inst.s_prpty[0]@|F:@syn_dgcc_clockid0_3==1@|M:ClockId_0_3
+ckid0_4:@|S:CLK20M@|E:slv_com.ck_state[1]@|F:@syn_dgcc_clockid0_4==1@|M:ClockId_0_4

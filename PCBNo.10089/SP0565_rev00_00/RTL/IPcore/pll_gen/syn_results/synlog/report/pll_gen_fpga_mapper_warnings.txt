@@ -1,0 +1,1 @@
+@W: MT246 :"c:\work\diamond\zz_customer\vhdl\sysmex\05_20250221\pcbno.10082_20250221\rtl\ipcore\pll_gen\pll_gen.vhd":60:4:60:12|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)

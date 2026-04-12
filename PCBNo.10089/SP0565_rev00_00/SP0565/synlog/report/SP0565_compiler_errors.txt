@@ -1,0 +1,3 @@
+@E: CD242 :"C:\work\S127M\PCBNo_10089\SP0565_rev02_00\RTL\SP0565.vhd":930:1:930:6|Expecting ;
+@E: Parse errors encountered - exiting
+

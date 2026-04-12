@@ -21,33 +21,33 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data>46.922</data>
 </row>
 <row>
-<data>pll_gen|CLKOP_inferred_clock</data>
+<data>CLKOP_100M</data>
 <data>100.0 MHz</data>
 <data>243.3 MHz</data>
 <data>5.891</data>
 </row>
 <row>
-<data>pll_gen|CLKOS2_inferred_clock</data>
-<data>100.0 MHz</data>
-<data>127.0 MHz</data>
-<data>2.123</data>
+<data>CLKOS2_20M</data>
+<data>20.0 MHz</data>
+<data>116.3 MHz</data>
+<data>41.403</data>
 </row>
 <row>
-<data>pll_gen|CLKOS3_inferred_clock</data>
-<data>100.0 MHz</data>
-<data>97.3 MHz</data>
-<data>-0.280</data>
+<data>CLKOS3_10M</data>
+<data>10.0 MHz</data>
+<data>81.6 MHz</data>
+<data>45.433</data>
 </row>
 <row>
-<data>pll_gen|CLKOS_inferred_clock</data>
+<data>CLKOS_100M_90</data>
 <data>100.0 MHz</data>
 <data>324.9 MHz</data>
-<data>6.923</data>
+<data>6.593</data>
 </row>
 <row>
 <data>System</data>
 <data>100.0 MHz</data>
-<data>241.7 MHz</data>
-<data>5.862</data>
+<data>527.6 MHz</data>
+<data>8.104</data>
 </row>
 </report_table>

@@ -1,0 +1,192 @@
+#--  Synopsys, Inc.
+#--  Version U-2023.03L-SP1
+#--  Project file C:\work\S127M\PCBNo_10089\SP0565_rev02_00\SP0565\SP0565_syn.prj
+#--  Written on Tue Feb  3 10:32:33 2026
+
+
+#project files
+add_file -vhdl -lib work "C:/lscc/diamond/3.13/cae_library/synthesis/vhdl/ecp5u.vhd"
+add_file -vhdl -lib work "../RTL/com/fc_dec.vhd"
+add_file -vhdl -lib work "../RTL/com/fc_sel.vhd"
+add_file -vhdl -lib work "../RTL/com/w_pack.vhd"
+add_file -vhdl -lib work "../RTL/IPcore/dcfifo_rx_b1/dcfifo_rx_b1.vhd"
+add_file -vhdl -lib work "../RTL/IPcore/dcfifo_rx_b2/dcfifo_rx_b2.vhd"
+add_file -vhdl -lib work "../RTL/IPcore/dcfifo_tx_b1/dcfifo_tx_b1.vhd"
+add_file -vhdl -lib work "../RTL/IPcore/dcfifo_tx_b2/dcfifo_tx_b2.vhd"
+add_file -vhdl -lib work "../RTL/IPcore/pll_gen/pll_gen.vhd"
+add_file -vhdl -lib work "../RTL/IPcore/IPcore.vhd"
+add_file -vhdl -lib work "../RTL/SP0565.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/ad_ctrl/ad_ctrl.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/ad_ctrl/adc_reg.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/ad_ctrl/adclk_gen.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/ad_ctrl/adif_seq.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/ad_ctrl/shiftreg12bit.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/AD5270/ad5270_5271_ctrl.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_acc_tim_gen.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_cmdchk.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_ctrl.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_dec.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_enblr_S118M.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_id.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_phgen.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_pls_cnt.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_plsgen.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_reg_S118M.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_rgstr.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_speed_cnt.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_timer_cnt.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_top_S118M.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/compactppmc/ppmc_u_step_ext.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/DAC081S101/DAC081S101_top.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/DAC081S101/log_ca_DAC_ctrl.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/DAC081S101/log_ca_DACclk_gen.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/DAC081S101/log_ca_DACif_seq.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/encoder/enc_func_top.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/encoder/enc_lmt.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/encoder/enc_top.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/encoder/encoder_2bit.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/gpio/gpio_id.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/gpio/gpio_ip_reg.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/gpio/gpio_op_reg.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/gpio/gpio_reg.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/gpio/gpio_top.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/linear_signal_ctrl/linear_signal_ctrl.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/pls_sens/pls_sens.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slaveid_top/slaveid_id.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slaveid_top/slaveid_top.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/rx_com/crc_check.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/rx_com/dec4b_3b.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/rx_com/dec6b_5b.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/rx_com/dec8b10b_new.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/rx_com/dec8b10b_wrapper.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/rx_com/rx_cont_b1.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/rx_com/rx_cont_b2.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/rx_com/rx_ctl_1st.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/rx_com/rx_ctl_3rd.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/slv_ctrl/adr_sel.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/slv_ctrl/nd_sel.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/slv_ctrl/node_sel.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/slv_ctrl/slv_rx_ctrl.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/slv_ctrl/slv_tx_ctrl.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/tx_com/crc_gen.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/tx_com/enc3b_4b.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/tx_com/enc5b_6b.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/tx_com/enc8b_10b.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/tx_com/enc8b10b_new.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/tx_com/enc8b10b_wrapper.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/tx_com/tx_cont_b1.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/tx_com/tx_cont_b2.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/tx_com/tx_ctl_1st.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/tx_com/tx_ctl_3rd.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/cds.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/CLK_gen_S124M.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/rst_cnt.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/rx_com.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/slv_com_top.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/slv_ctrl_top.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/slvadr_cnv.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_com/tx_com.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_ajst_reg.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_ctrl.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_ctst_reg.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_cut_ref_reg.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_dec.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_dly_2term.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_dlysel.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_edge_dtct.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_idlm_reg.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_meas_reg_S127M.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_plsdrv.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_plsgen.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_plsmod.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_plsnum_reg.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_plssel.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_prm_sel.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_ref_reg.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/temp_rng_chk.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/tmpctrl_4ch_id.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/tmpctrl_4ch_reg_S127M.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/tmpctrl_4ch/tmpctrl_4ch_top_S127M.vhd"
+add_file -vhdl -lib work "../RTL/SP05565/slv_clk_gen.vhd"
+
+
+#implementation: "SP0565"
+impl -add SP0565 -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std sysv
+set_option -project_relative_includes 1
+
+#device options
+set_option -technology ECP5U
+set_option -part LFE5U_25F
+set_option -package BG256C
+set_option -speed_grade -6
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -top_module "SP0565"
+
+# hdl_compiler_options
+set_option -distributed_compile 0
+set_option -scm2hydra 0
+set_option -scm2hydra_preserve_rtl_sig 1
+set_option -hdl_strict_syntax 0
+set_option -rtl_xmr_naming 0
+set_option -use_module_idb 1
+
+# mapper_without_write_options
+set_option -frequency auto
+set_option -srs_instrumentation 1
+
+# mapper_options
+set_option -write_verilog 0
+set_option -write_structural_verilog 0
+set_option -write_vhdl 0
+
+# Lattice XP
+set_option -maxfan 100
+set_option -disable_io_insertion 0
+set_option -retiming 0
+set_option -pipe 1
+set_option -forcegsr no
+set_option -fix_gated_and_generated_clocks 1
+set_option -rw_check_on_ram 1
+set_option -update_models_cp 0
+set_option -syn_edif_array_rename 1
+set_option -Write_declared_clocks_only 1
+set_option -seqshift_no_replicate 0
+
+# NFilter
+set_option -no_sequential_opt 0
+
+# common_options
+set_option -add_dut_hierarchy 0
+set_option -prepare_readback 0
+
+# flow_options
+set_option -use_unified_compile 0
+set_option -slr_aware_debug 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+set_option -multi_file_compilation_unit 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+# Compiler Options
+set_option -vhdl2008 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./SP0565.edi"
+impl -active "SP0565"

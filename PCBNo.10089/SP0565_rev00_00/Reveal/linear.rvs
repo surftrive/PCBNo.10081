@@ -1,0 +1,39 @@
+<Project ModBy="Analyzer" Name="C:/work/S127M/PCBNo_10089/SP0565_rev00_00/Reveal/linear.rvs" Date="2026-04-09">
+ <Core Name="SP0565_LA0">
+  <Setting>
+   <Capture SamplesPerTrig="256" NumTrigsCap="1"/>
+   <Event EventCnt="0" CntEnableRun="0"/>
+   <TrigSetting PreTrgSamples="" AND_ALL="0" PostTrgSamples="" TURadix="0"/>
+  </Setting>
+  <Dataset Name="Base">
+   <Trace>
+    <Sig Name="stm01/ppmc_reg_s118m_inst/const_f"/>
+    <Sig Name="stm01/ppmc_reg_s118m_inst/enb_start"/>
+    <Sig Name="stm01/ppmc_reg_s118m_inst/start_stop"/>
+    <Sig Name="stm01/ppmc_reg_s118m_inst/p_stop"/>
+    <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_1280us"/>
+    <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/ph_flag"/>
+    <Bus Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt" Radix="0">
+     <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:0"/>
+     <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:1"/>
+     <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:2"/>
+     <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:3"/>
+     <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:4"/>
+     <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:5"/>
+     <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:6"/>
+     <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:7"/>
+     <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:8"/>
+     <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:9"/>
+     <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:10"/>
+     <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:11"/>
+     <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:12"/>
+     <Sig Name="stm01/ppmc_reg_s118m_inst/inst_ppmc_enblr/enb_wait_cnt:13"/>
+    </Bus>
+   </Trace>
+   <Trigger>
+    <TU Operator="0" Name="TU1" ID="1" Value="0011" Radix="0"/>
+    <TE Enable="1" Expression="TU1" Name="TE1" ID="1"/>
+   </Trigger>
+  </Dataset>
+ </Core>
+</Project>

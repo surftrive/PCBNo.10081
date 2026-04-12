@@ -1,0 +1,33 @@
+SCUBA, Version Diamond (64-bit) 3.13.0.56.2
+Thu Feb 13 08:58:31 2025
+  
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+  
+BEGIN SCUBA Module Synthesis
+  
+    Issued command   : C:\lscc\diamond\3.13\ispfpga\bin\nt64\scuba.exe -w -n dcfifo_tx_b2 -lang vhdl -synth synplify -bus_exp 7 -bb -arch sa5p00 -type ebfifo -depth 64 -width 10 -rwidth 10 -reset_rel SYNC -pe -1 -pf -1 
+    Circuit name     : dcfifo_tx_b2
+    Module type      : ebfifo
+    Module Version   : 5.8
+    Ports            : 
+    Inputs       : Data[9:0], WrClock, RdClock, WrEn, RdEn, Reset, RPReset
+    Outputs      : Q[9:0], Empty, Full
+    I/O buffer       : not inserted
+    EDIF output      : dcfifo_tx_b2.edn
+    VHDL output      : dcfifo_tx_b2.vhd
+    VHDL template    : dcfifo_tx_b2_tmpl.vhd
+    VHDL testbench   : tb_dcfifo_tx_b2_tmpl.vhd
+    VHDL purpose     : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : dcfifo_tx_b2.srp
+    Estimated Resource Usage:
+            LUT : 75
+            EBR : 1
+            Reg : 72
+  
+END   SCUBA Module Synthesis
+

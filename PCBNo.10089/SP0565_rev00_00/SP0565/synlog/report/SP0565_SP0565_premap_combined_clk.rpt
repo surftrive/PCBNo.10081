@@ -1,0 +1,34 @@
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+3 non-gated/non-generated clock tree(s) driving 412 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 2569 clock pin(s) of sequential element(s)
+0 instances converted, 2569 sequential instances remain driven by gated/generated clocks
+
+============================================== Non-Gated/Non-Generated Clocks ===============================================
+Clock Tree ID     Driving Element                                    Drive Element Type     Fanout     Sample Instance       
+-----------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       CLK20M                                             port                   187        slv_com.ck_state[1]   
+@KP:ckid0_1       sp0565_reveal_coretop_instance.jtag0.jtck          jtagconn16             203        ENCRYPTED             
+@KP:ckid0_5       slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS     EHXPLLL                22         slv_com.cds_inst.dz[2]
+=============================================================================================================================
+============================================================================================================================ Gated/Generated Clocks =============================================================================================================================
+Clock Tree ID     Driving Element                                     Drive Element Type     Unconverted Fanout     Sample Instance                                                             Explanation                                                                      
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_3       slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2     EHXPLLL                1766                   slv_com.slvadr_cnv_inst.s_HEX_OUT[5:0]                                      Clock source is invalid for GCC                                                  
+@KP:ckid0_4       slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOP      EHXPLLL                258                    slv_com.rx_com_inst.rx_cont_b1_inst.rx_ck_dcfifo1_48_inst.pdp_ram_0_0_0     Synplify Pro Clock optimization on technology cells not supported in this product
+@KP:ckid0_6       slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3     EHXPLLL                545                    slv_com.rx_com_inst.rx_cont_b2_inst.rx_dcfifo1_48_inst.pdp_ram_0_0_0        Synplify Pro Clock optimization on technology cells not supported in this product
+=================================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+
+Summary of user generated gated clocks:
+0 user generated gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+

@@ -1,0 +1,109 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: C:\lscc\diamond\3.14\synpbase
+OS: Windows 10 or later
+Hostname: HD13396A
+
+Implementation : syn_results
+Synopsys HDL Compiler, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: C:\lscc\diamond\3.14\synpbase
+OS: Windows 10 or later
+Hostname: HD13396A
+
+Implementation : syn_results
+Synopsys VHDL Compiler, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
+
+@N|Running in 64-bit mode
+@N:"C:\work\Diamond\zz_customer\VHDL\Sysmex\05_20250221\PCBNo.10082_20250221\RTL\IPcore\pll_gen\pll_gen.vhd":12:7:12:13|Top entity is set to pll_gen.
+File C:\work\Diamond\zz_customer\VHDL\Sysmex\05_20250221\PCBNo.10082_20250221\RTL\IPcore\pll_gen\pll_gen.vhd changed - recompiling
+File C:\lscc\diamond\3.14\synpbase\lib\lucent\ecp5u.vhd changed - recompiling
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\work\Diamond\zz_customer\VHDL\Sysmex\05_20250221\PCBNo.10082_20250221\RTL\IPcore\pll_gen\pll_gen.vhd'.
+VHDL syntax check successful!
+File C:\work\Diamond\zz_customer\VHDL\Sysmex\05_20250221\PCBNo.10082_20250221\RTL\IPcore\pll_gen\pll_gen.vhd changed - recompiling
+@N: CD630 :"C:\work\Diamond\zz_customer\VHDL\Sysmex\05_20250221\PCBNo.10082_20250221\RTL\IPcore\pll_gen\pll_gen.vhd":12:7:12:13|Synthesizing work.pll_gen.structure.
+@N: CD630 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\ecp5u.vhd":2083:10:2083:16|Synthesizing ecp5u.ehxplll.syn_black_box.
+Post processing for ecp5u.ehxplll.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\ecp5u.vhd":832:10:832:12|Synthesizing ecp5u.vlo.syn_black_box.
+Post processing for ecp5u.vlo.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\ecp5u.vhd":825:10:825:12|Synthesizing ecp5u.vhi.syn_black_box.
+Post processing for ecp5u.vhi.syn_black_box
+Post processing for work.pll_gen.structure
+Running optimization stage 1 on pll_gen .......
+@W: CL168 :"C:\work\Diamond\zz_customer\VHDL\Sysmex\05_20250221\PCBNo.10082_20250221\RTL\IPcore\pll_gen\pll_gen.vhd":54:4:54:17|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+Finished optimization stage 1 on pll_gen (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on pll_gen .......
+Finished optimization stage 2 on pll_gen (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\work\Diamond\zz_customer\VHDL\Sysmex\05_20250221\PCBNo.10082_20250221\RTL\IPcore\pll_gen\syn_results\synwork\layer0.duruntime
+
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Feb 22 16:53:16 2025
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: C:\lscc\diamond\3.14\synpbase
+OS: Windows 10 or later
+Hostname: HD13396A
+
+Implementation : syn_results
+Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
+
+@N|Running in 64-bit mode
+File C:\work\Diamond\zz_customer\VHDL\Sysmex\05_20250221\PCBNo.10082_20250221\RTL\IPcore\pll_gen\syn_results\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 91MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Feb 22 16:53:16 2025
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\work\Diamond\zz_customer\VHDL\Sysmex\05_20250221\PCBNo.10082_20250221\RTL\IPcore\pll_gen\syn_results\synwork\pll_gen_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 22MB peak: 23MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Feb 22 16:53:16 2025
+
+###########################################################]

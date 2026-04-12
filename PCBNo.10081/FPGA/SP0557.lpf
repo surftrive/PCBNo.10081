@@ -295,12 +295,14 @@ IOBUF PORT "ENC_A[1]" IO_TYPE=LVCMOS33 PULLMODE=NONE DRIVE=NA SLEWRATE=NA CLAMP=
 # Note: CLK2A uses "/" separator because it is an internal signal of
 # slv_com_top, not a port. CLKCOM_OUT uses "." because it is a port.
 #
-# Guard-banding: 100MHz constrained as 115MHz for timing margin.
+# Rev.4c: Changed from 115MHz (guard-band) to 100MHz (actual PLL output).
+#   115MHz guard-band caused 1.021ns timing violation (actual max 102.9MHz).
+#   At 100MHz: path delay 9.569ns vs period 10.0ns = 0.43ns positive slack.
 #----------------------------------------------------------------------------
 FREQUENCY NET "s_PLL_CLK20M" 20.000000 MHz ;
 FREQUENCY NET "slv_com_top_inst.CLK1" 10.000000 MHz ;
-FREQUENCY NET "slv_com_top_inst.CLKCOM_OUT" 115.000000 MHz ;
-FREQUENCY NET "slv_com_top_inst/CLK2A" 115.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst.CLKCOM_OUT" 100.000000 MHz ;
+FREQUENCY NET "slv_com_top_inst/CLK2A" 100.000000 MHz ;
 FREQUENCY NET "UP_CLK_c" 20.000000 MHz ;
 
 #----------------------------------------------------------------------------

@@ -1,0 +1,6 @@
+ckid0_0:@|S:CLK20M@|E:slv_com.ck_state[1]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
+ckid0_1:@|S:sp0565_reveal_coretop_instance.jtag0.jtck@|E:ENCRYPTED@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1
+ckid0_3:@|S:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2@|E:slv_com.slvadr_cnv_inst.s_HEX_OUT[5:0]@|F:@syn_dgcc_clockid0_3==1@|M:ClockId_0_3
+ckid0_4:@|S:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOP@|E:slv_com.rx_com_inst.rx_cont_b1_inst.rx_ck_dcfifo1_48_inst.pdp_ram_0_0_0@|F:@syn_dgcc_clockid0_4==1@|M:ClockId_0_4
+ckid0_5:@|S:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS@|E:slv_com.cds_inst.dz[2]@|F:@syn_dgcc_clockid0_5==1@|M:ClockId_0_5
+ckid0_6:@|S:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3@|E:slv_com.rx_com_inst.rx_cont_b2_inst.rx_dcfifo1_48_inst.pdp_ram_0_0_0@|F:@syn_dgcc_clockid0_6==1@|M:ClockId_0_6

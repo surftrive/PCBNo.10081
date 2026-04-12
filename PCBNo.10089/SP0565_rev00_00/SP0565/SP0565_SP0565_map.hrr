@@ -1,0 +1,1323 @@
+---------------------------------------------------
+Report for cell SP0565
+   Instance path: SP0565
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	    2917.00        100.0
+                                 IOLGC	      30.00        100.0
+                                  LUT4	    2778.00        100.0
+                                 IOREG	         30        100.0
+                                 IOBUF	         66        100.0
+                                PFUREG	       2775        100.0
+                                RIPPLE	        430        100.0
+                                   EBR	          6        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                    slv_com_top_uniq_0	          1        30.5
+          tmpctrl_4ch_top_S127M_uniq_0	          1        14.6
+                    slv_clk_gen_uniq_0	          1         0.7
+                    slaveid_top_uniq_0	          1         1.1
+                               sa5phub	          1         1.4
+                   pulse_sens_uniq_0_8	          1         0.9
+                        reveal_coretop	          1        12.6
+                 ppmc_top_S118M_uniq_0	          1        17.1
+             linear_signal_ctrl_uniq_0	          1         0.9
+                       gpio_top_uniq_0	          1        10.5
+                   enc_func_top_uniq_0	          1         4.6
+                        ad_ctrl_uniq_0	          1         1.7
+               ad5270_5271_ctrl_uniq_0	          1         1.8
+                 DAC081S101_top_uniq_0	          1         1.5
+---------------------------------------------------
+Report for cell slaveid_top_uniq_0
+   Instance path: SP0565/node15
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      31.00         1.1
+                                  LUT4	      60.00         2.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                         fc_sel_uniq_3	          1         1.1
+---------------------------------------------------
+Report for cell fc_sel_uniq_3
+   Instance path: SP0565/node15/fc_sel_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      31.00         1.1
+                                  LUT4	      60.00         2.2
+---------------------------------------------------
+Report for cell tmpctrl_4ch_top_S127M_uniq_0
+   Instance path: SP0565/tmpctrl_4ch
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     425.00        14.6
+                                  LUT4	     398.00        14.3
+                                PFUREG	        370        13.3
+                                RIPPLE	         29         6.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+          tmpctrl_4ch_reg_S127M_uniq_0	          1        11.4
+                         fc_sel_uniq_2	          1         3.1
+                         fc_dec_uniq_2	          1         0.0
+---------------------------------------------------
+Report for cell tmpctrl_4ch_reg_S127M_uniq_0
+   Instance path: SP0565/tmpctrl_4ch/tmpctrl_4ch_reg_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     332.83        11.4
+                                  LUT4	     223.50         8.0
+                                PFUREG	        370        13.3
+                                RIPPLE	         29         6.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                   temp_rng_chk_uniq_0	          1         0.6
+                 temp_edge_dtct_uniq_0	          1         0.0
+                    temp_plsgen_uniq_0	          1         0.5
+                   temp_prm_sel_uniq_0	          1         1.5
+                   temp_ref_reg_uniq_0	          1         1.9
+                temp_plsnum_reg_uniq_0	          1         0.4
+                  temp_idlm_reg_uniq_0	          1         0.7
+            temp_meas_reg_S127M_uniq_0	          1         0.9
+                      temp_ctrl_uniq_0	          1         1.6
+                  temp_ctst_reg_uniq_0	          1         0.8
+                  temp_ajst_reg_uniq_0	          1         1.3
+---------------------------------------------------
+Report for cell temp_plsgen_uniq_0
+   Instance path: SP0565/tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsgen_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      14.00         0.5
+                                  LUT4	       6.00         0.2
+                                PFUREG	         20         0.7
+                                RIPPLE	         10         2.3
+---------------------------------------------------
+Report for cell temp_plsnum_reg_uniq_0
+   Instance path: SP0565/tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsnum_reg_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.92         0.4
+                                  LUT4	       8.00         0.3
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell temp_ctrl_uniq_0
+   Instance path: SP0565/tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      47.50         1.6
+                                  LUT4	      61.00         2.2
+                                PFUREG	         39         1.4
+                                RIPPLE	          7         1.6
+---------------------------------------------------
+Report for cell temp_rng_chk_uniq_0
+   Instance path: SP0565/tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      16.67         0.6
+                                  LUT4	      10.00         0.4
+                                RIPPLE	         12         2.8
+---------------------------------------------------
+Report for cell temp_edge_dtct_uniq_0
+   Instance path: SP0565/tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_edge_dtct_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.0
+                                PFUREG	          2         0.1
+---------------------------------------------------
+Report for cell temp_prm_sel_uniq_0
+   Instance path: SP0565/tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_prm_sel_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      44.83         1.5
+                                  LUT4	      56.00         2.0
+---------------------------------------------------
+Report for cell temp_idlm_reg_uniq_0
+   Instance path: SP0565/tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_idlm_reg_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      20.50         0.7
+                                  LUT4	       9.00         0.3
+                                PFUREG	         32         1.2
+---------------------------------------------------
+Report for cell temp_ctst_reg_uniq_0
+   Instance path: SP0565/tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctst_reg_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.33         0.8
+                                  LUT4	       6.50         0.2
+                                PFUREG	         39         1.4
+---------------------------------------------------
+Report for cell temp_ajst_reg_uniq_0
+   Instance path: SP0565/tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ajst_reg_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      37.17         1.3
+                                  LUT4	       6.00         0.2
+                                PFUREG	         64         2.3
+---------------------------------------------------
+Report for cell temp_ref_reg_uniq_0
+   Instance path: SP0565/tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ref_reg_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      56.00         1.9
+                                  LUT4	      12.00         0.4
+                                PFUREG	         96         3.5
+---------------------------------------------------
+Report for cell temp_meas_reg_S127M_uniq_0
+   Instance path: SP0565/tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_meas_reg_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      25.33         0.9
+                                  LUT4	       2.00         0.1
+                                PFUREG	         48         1.7
+---------------------------------------------------
+Report for cell fc_sel_uniq_2
+   Instance path: SP0565/tmpctrl_4ch/fc_sel_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      90.92         3.1
+                                  LUT4	     172.50         6.2
+---------------------------------------------------
+Report for cell fc_dec_uniq_2
+   Instance path: SP0565/tmpctrl_4ch/fc_dec_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.25         0.0
+                                  LUT4	       2.00         0.1
+---------------------------------------------------
+Report for cell gpio_top_uniq_0
+   Instance path: SP0565/gpio01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     305.83        10.5
+                                  LUT4	     169.00         6.1
+                                PFUREG	        420        15.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                       gpio_reg_uniq_0	          1         7.6
+                         fc_sel_uniq_1	          1         2.8
+                         fc_dec_uniq_1	          1         0.1
+---------------------------------------------------
+Report for cell gpio_reg_uniq_0
+   Instance path: SP0565/gpio01/gpio_reg_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     222.33         7.6
+                                  LUT4	      13.00         0.5
+                                PFUREG	        420        15.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                   gpio_op_reg_uniq_25	          1         0.4
+                   gpio_op_reg_uniq_22	          1         0.3
+                   gpio_op_reg_uniq_24	          1         0.3
+                   gpio_op_reg_uniq_23	          1         0.3
+                   gpio_op_reg_uniq_21	          1         0.3
+                    gpio_ip_reg_uniq_0	          1         0.0
+                    gpio_ip_reg_uniq_6	          1         0.3
+                   gpio_op_reg_uniq_16	          1         0.3
+                   gpio_op_reg_uniq_18	          1         0.4
+                   gpio_op_reg_uniq_19	          1         0.3
+                   gpio_op_reg_uniq_17	          1         0.3
+                    gpio_ip_reg_uniq_8	          1         0.0
+                    gpio_ip_reg_uniq_9	          1         0.3
+                    gpio_ip_reg_uniq_7	          1         0.1
+                   gpio_ip_reg_uniq_13	          1         0.0
+                   gpio_ip_reg_uniq_21	          1         0.3
+                   gpio_ip_reg_uniq_25	          1         0.3
+                    gpio_ip_reg_uniq_4	          1         0.3
+                    gpio_ip_reg_uniq_5	          1         0.1
+                    gpio_ip_reg_uniq_3	          1         0.0
+                   gpio_ip_reg_uniq_23	          1         0.3
+                   gpio_ip_reg_uniq_24	          1         0.3
+                   gpio_ip_reg_uniq_22	          1         0.3
+                   gpio_ip_reg_uniq_19	          1         0.3
+                    gpio_ip_reg_uniq_2	          1         0.0
+                   gpio_ip_reg_uniq_20	          1         0.3
+                   gpio_ip_reg_uniq_17	          1         0.3
+                   gpio_ip_reg_uniq_18	          1         0.3
+                   gpio_ip_reg_uniq_16	          1         0.3
+                   gpio_ip_reg_uniq_11	          1         0.1
+                   gpio_ip_reg_uniq_12	          1         0.1
+                    gpio_ip_reg_uniq_1	          1         0.1
+                   gpio_ip_reg_uniq_10	          1         0.3
+                   gpio_op_reg_uniq_20	          1         0.3
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_25
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst25
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.50         0.3
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_op_reg_uniq_25
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_op_reg_inst25
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      12.50         0.4
+                                  LUT4	       3.00         0.1
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_24
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst24
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.67         0.3
+                                PFUREG	         15         0.5
+---------------------------------------------------
+Report for cell gpio_op_reg_uniq_24
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_op_reg_inst24
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.50         0.3
+                                  LUT4	       1.00         0.0
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_23
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst23
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.67         0.3
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_op_reg_uniq_23
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_op_reg_inst23
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.50         0.3
+                                  LUT4	       1.00         0.0
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_22
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst22
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.00         0.3
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_op_reg_uniq_22
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_op_reg_inst22
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.50         0.3
+                                  LUT4	       1.00         0.0
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_21
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst21
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.00         0.3
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_op_reg_uniq_21
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_op_reg_inst21
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.83         0.3
+                                  LUT4	       1.00         0.0
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_20
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst20
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.83         0.3
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_op_reg_uniq_20
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_op_reg_inst20
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.00         0.3
+                                  LUT4	       1.00         0.0
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_19
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst19
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.83         0.3
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_op_reg_uniq_19
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_op_reg_inst19
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.00         0.3
+                                  LUT4	       1.00         0.0
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_18
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst18
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.00         0.3
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_op_reg_uniq_18
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_op_reg_inst18
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      10.50         0.4
+                                  LUT4	       2.00         0.1
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_17
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst17
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.67         0.3
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_op_reg_uniq_17
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_op_reg_inst17
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.50         0.3
+                                  LUT4	       1.00         0.0
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_16
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst16
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.50         0.3
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_op_reg_uniq_16
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_op_reg_inst16
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.50         0.3
+                                  LUT4	       1.00         0.0
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_13
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst13
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.0
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_12
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst12
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.50         0.1
+                                PFUREG	          7         0.3
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_11
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.50         0.1
+                                PFUREG	          2         0.1
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_10
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst10
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.83         0.3
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_9
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst9
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.83         0.3
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_8
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst8
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.83         0.0
+                                PFUREG	          2         0.1
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_7
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst7
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.00         0.1
+                                PFUREG	          8         0.3
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_6
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst6
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       8.00         0.3
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_5
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.00         0.1
+                                PFUREG	          8         0.3
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_4
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.83         0.3
+                                PFUREG	         16         0.6
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_3
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.0
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_2
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.0
+                                PFUREG	          2         0.1
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_1
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.1
+                                PFUREG	          4         0.1
+---------------------------------------------------
+Report for cell gpio_ip_reg_uniq_0
+   Instance path: SP0565/gpio01/gpio_reg_inst/gpio_ip_reg_inst0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.0
+                                PFUREG	          2         0.1
+---------------------------------------------------
+Report for cell fc_sel_uniq_1
+   Instance path: SP0565/gpio01/fc_sel_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      81.50         2.8
+                                  LUT4	     154.00         5.5
+---------------------------------------------------
+Report for cell fc_dec_uniq_1
+   Instance path: SP0565/gpio01/fc_dec_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.1
+                                  LUT4	       2.00         0.1
+---------------------------------------------------
+Report for cell ppmc_top_S118M_uniq_0
+   Instance path: SP0565/stm01
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     499.33        17.1
+                                  LUT4	     393.67        14.2
+                                PFUREG	        393        14.2
+                                RIPPLE	        150        34.9
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                 ppmc_reg_S118M_uniq_0	          1        16.5
+                         fc_sel_uniq_0	          1         0.6
+                         fc_dec_uniq_0	          1         0.1
+---------------------------------------------------
+Report for cell ppmc_reg_S118M_uniq_0
+   Instance path: SP0565/stm01/ppmc_reg_S118M_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     480.17        16.5
+                                  LUT4	     355.00        12.8
+                                PFUREG	        393        14.2
+                                RIPPLE	        150        34.9
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                ppmc_u_step_ext_uniq_0	          1         0.2
+                     ppmc_rgstr_uniq_0	          1         5.2
+                    ppmc_plsgen_uniq_0	          1         5.5
+                      ppmc_ctrl_uniq_0	          1         3.8
+               ppmc_enblr_S118M_uniq_0	          1         0.8
+                    ppmc_cmdchk_uniq_0	          1         0.9
+---------------------------------------------------
+Report for cell ppmc_cmdchk_uniq_0
+   Instance path: SP0565/stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      26.17         0.9
+                                  LUT4	      34.50         1.2
+                                PFUREG	          6         0.2
+                                RIPPLE	          9         2.1
+---------------------------------------------------
+Report for cell ppmc_ctrl_uniq_0
+   Instance path: SP0565/stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     111.33         3.8
+                                  LUT4	      61.50         2.2
+                                PFUREG	        129         4.6
+                                RIPPLE	         28         6.5
+---------------------------------------------------
+Report for cell ppmc_enblr_S118M_uniq_0
+   Instance path: SP0565/stm01/ppmc_reg_S118M_inst/inst_ppmc_enblr
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.50         0.8
+                                  LUT4	      29.00         1.0
+                                PFUREG	         19         0.7
+                                RIPPLE	          8         1.9
+---------------------------------------------------
+Report for cell ppmc_rgstr_uniq_0
+   Instance path: SP0565/stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     152.17         5.2
+                                  LUT4	     138.00         5.0
+                                PFUREG	        150         5.4
+---------------------------------------------------
+Report for cell ppmc_plsgen_uniq_0
+   Instance path: SP0565/stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     161.17         5.5
+                                  LUT4	      86.00         3.1
+                                PFUREG	         85         3.1
+                                RIPPLE	        105        24.4
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                 ppmc_timer_cnt_uniq_0	          1         1.3
+                 ppmc_speed_cnt_uniq_0	          1         1.6
+                   ppmc_pls_cnt_uniq_0	          1         2.1
+               ppmc_acc_tim_gen_uniq_0	          1         0.5
+---------------------------------------------------
+Report for cell ppmc_pls_cnt_uniq_0
+   Instance path: SP0565/stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      61.50         2.1
+                                  LUT4	      40.00         1.4
+                                PFUREG	         26         0.9
+                                RIPPLE	         33         7.7
+---------------------------------------------------
+Report for cell ppmc_timer_cnt_uniq_0
+   Instance path: SP0565/stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      36.67         1.3
+                                  LUT4	       9.00         0.3
+                                PFUREG	         20         0.7
+                                RIPPLE	         31         7.2
+---------------------------------------------------
+Report for cell ppmc_speed_cnt_uniq_0
+   Instance path: SP0565/stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      48.00         1.6
+                                  LUT4	      36.00         1.3
+                                PFUREG	         22         0.8
+                                RIPPLE	         27         6.3
+---------------------------------------------------
+Report for cell ppmc_acc_tim_gen_uniq_0
+   Instance path: SP0565/stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      15.00         0.5
+                                  LUT4	       1.00         0.0
+                                PFUREG	         17         0.6
+                                RIPPLE	         14         3.3
+---------------------------------------------------
+Report for cell ppmc_u_step_ext_uniq_0
+   Instance path: SP0565/stm01/ppmc_reg_S118M_inst/inst_ppmc_u_step_ext
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.83         0.2
+                                  LUT4	       6.00         0.2
+                                PFUREG	          4         0.1
+---------------------------------------------------
+Report for cell fc_sel_uniq_0
+   Instance path: SP0565/stm01/fc_sel_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.17         0.6
+                                  LUT4	      34.67         1.2
+---------------------------------------------------
+Report for cell fc_dec_uniq_0
+   Instance path: SP0565/stm01/fc_dec_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.1
+                                  LUT4	       4.00         0.1
+---------------------------------------------------
+Report for cell ad5270_5271_ctrl_uniq_0
+   Instance path: SP0565/ad5270_5271_ctrl_inst_ch0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      53.00         1.8
+                                  LUT4	      55.00         2.0
+                                PFUREG	         63         2.3
+---------------------------------------------------
+Report for cell linear_signal_ctrl_uniq_0
+   Instance path: SP0565/linear_signal_ctrl_inst_ch0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      27.25         0.9
+                                  LUT4	      45.00         1.6
+                                PFUREG	         27         1.0
+---------------------------------------------------
+Report for cell pulse_sens_uniq_0_8
+   Instance path: SP0565/pulse_sensor
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      27.00         0.9
+                                  LUT4	      23.00         0.8
+                                PFUREG	         28         1.0
+                                RIPPLE	          5         1.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                 ring_counter_uniq_0_8	          1         0.6
+---------------------------------------------------
+Report for cell ring_counter_uniq_0_8
+   Instance path: SP0565/pulse_sensor/ring_counter_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      18.00         0.6
+                                  LUT4	      15.00         0.5
+                                PFUREG	         18         0.6
+                                RIPPLE	          5         1.2
+---------------------------------------------------
+Report for cell enc_func_top_uniq_0
+   Instance path: SP0565/ENC_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     134.33         4.6
+                                  LUT4	     115.00         4.1
+                                PFUREG	         76         2.7
+                                RIPPLE	         67        15.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        enc_top_uniq_0	          1         4.6
+---------------------------------------------------
+Report for cell enc_top_uniq_0
+   Instance path: SP0565/ENC_inst/\enc_func(1).enc_top_inst\
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     133.30         4.6
+                                  LUT4	     112.50         4.0
+                                PFUREG	         76         2.7
+                                RIPPLE	         67        15.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                   encoder_2bit_uniq_0	          1         1.5
+                        enc_lmt_uniq_0	          1         3.0
+---------------------------------------------------
+Report for cell enc_lmt_uniq_0
+   Instance path: SP0565/ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      87.63         3.0
+                                  LUT4	      68.50         2.5
+                                PFUREG	         26         0.9
+                                RIPPLE	         48        11.2
+---------------------------------------------------
+Report for cell encoder_2bit_uniq_0
+   Instance path: SP0565/ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      45.00         1.5
+                                  LUT4	      42.00         1.5
+                                PFUREG	         50         1.8
+                                RIPPLE	         19         4.4
+---------------------------------------------------
+Report for cell ad_ctrl_uniq_0
+   Instance path: SP0565/ADC_CONT
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      49.00         1.7
+                                  LUT4	      29.00         1.0
+                                PFUREG	         75         2.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                  shiftreg12bit_uniq_0	          1         0.2
+                      adclk_gen_uniq_0	          1         0.2
+                       adif_seq_uniq_0	          1         0.3
+                        adc_reg_uniq_0	          1         0.9
+---------------------------------------------------
+Report for cell adc_reg_uniq_0
+   Instance path: SP0565/ADC_CONT/adc_reg_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      27.00         0.9
+                                  LUT4	       5.00         0.2
+                                PFUREG	         49         1.8
+---------------------------------------------------
+Report for cell shiftreg12bit_uniq_0
+   Instance path: SP0565/ADC_CONT/shiftreg12bit_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.00         0.2
+                                  LUT4	       1.00         0.0
+                                PFUREG	         11         0.4
+---------------------------------------------------
+Report for cell adif_seq_uniq_0
+   Instance path: SP0565/ADC_CONT/adif_seq_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      10.00         0.3
+                                  LUT4	      18.00         0.6
+                                PFUREG	         10         0.4
+---------------------------------------------------
+Report for cell adclk_gen_uniq_0
+   Instance path: SP0565/ADC_CONT/adclk_gen_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.00         0.2
+                                  LUT4	       5.00         0.2
+                                PFUREG	          5         0.2
+---------------------------------------------------
+Report for cell DAC081S101_top_uniq_0
+   Instance path: SP0565/DAC081S101_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      45.00         1.5
+                                  LUT4	      31.00         1.1
+                                PFUREG	         52         1.9
+                                RIPPLE	          3         0.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                log_ca_DAC_ctrl_uniq_0	          1         1.2
+---------------------------------------------------
+Report for cell log_ca_DAC_ctrl_uniq_0
+   Instance path: SP0565/DAC081S101_inst/log_ca_DAC_ctrl_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      35.00         1.2
+                                  LUT4	      24.00         0.9
+                                PFUREG	         43         1.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+              log_ca_DACclk_gen_uniq_0	          1         0.1
+               log_ca_DACif_seq_uniq_0	          1         0.8
+---------------------------------------------------
+Report for cell log_ca_DACif_seq_uniq_0
+   Instance path: SP0565/DAC081S101_inst/log_ca_DAC_ctrl_inst/log_ca_DACif_seq_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      22.00         0.8
+                                  LUT4	      15.00         0.5
+                                PFUREG	         27         1.0
+---------------------------------------------------
+Report for cell log_ca_DACclk_gen_uniq_0
+   Instance path: SP0565/DAC081S101_inst/log_ca_DAC_ctrl_inst/log_ca_DACclk_gen_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.00         0.1
+                                  LUT4	       4.00         0.1
+                                PFUREG	          4         0.1
+---------------------------------------------------
+Report for cell slv_clk_gen_uniq_0
+   Instance path: SP0565/CLK_gen_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      20.00         0.7
+                                  LUT4	      29.00         1.0
+                                PFUREG	         24         0.9
+---------------------------------------------------
+Report for cell slv_com_top_uniq_0
+   Instance path: SP0565/slv_com
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     888.25        30.5
+                                  LUT4	     971.33        35.0
+                                PFUREG	        836        30.1
+                                RIPPLE	        132        30.7
+                                   EBR	          4        66.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                         tx_com_uniq_0	          1         8.7
+                     slvadr_cnv_uniq_0	          1         0.2
+                   slv_ctrl_top_uniq_0	          1         9.8
+                         rx_com_uniq_0	          1         9.2
+                        rst_cnt_uniq_0	          1         1.1
+                            cds_uniq_0	          1         1.2
+                  CLK_gen_S124M_uniq_0	          1         0.1
+---------------------------------------------------
+Report for cell cds_uniq_0
+   Instance path: SP0565/slv_com/cds_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      34.00         1.2
+                                  LUT4	      28.00         1.0
+                                PFUREG	         35         1.3
+---------------------------------------------------
+Report for cell rx_com_uniq_0
+   Instance path: SP0565/slv_com/rx_com_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     268.00         9.2
+                                  LUT4	     257.00         9.3
+                                PFUREG	        293        10.6
+                                RIPPLE	         49        11.4
+                                   EBR	          2        33.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                     rx_cont_b1_uniq_0	          1         3.0
+                     rx_cont_b2_uniq_0	          1         4.1
+               dec8b10b_wrapper_uniq_0	          1         2.0
+---------------------------------------------------
+Report for cell rx_cont_b2_uniq_0
+   Instance path: SP0565/slv_com/rx_com_inst/rx_cont_b2_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     121.00         4.1
+                                  LUT4	     116.00         4.2
+                                PFUREG	        134         4.8
+                                RIPPLE	         27         6.3
+                                   EBR	          1        16.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                     rx_ctl_3rd_uniq_0	          1         1.3
+                   dcfifo_rx_b2_uniq_0	          1         2.0
+                      crc_check_uniq_0	          1         0.6
+---------------------------------------------------
+Report for cell rx_ctl_3rd_uniq_0
+   Instance path: SP0565/slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      38.83         1.3
+                                  LUT4	      54.00         1.9
+                                PFUREG	         29         1.0
+                                RIPPLE	          5         1.2
+---------------------------------------------------
+Report for cell crc_check_uniq_0
+   Instance path: SP0565/slv_com/rx_com_inst/rx_cont_b2_inst/crc_check_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      18.67         0.6
+                                  LUT4	      32.00         1.2
+                                PFUREG	         25         0.9
+---------------------------------------------------
+Report for cell dcfifo_rx_b2_uniq_0
+   Instance path: SP0565/slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      59.50         2.0
+                                  LUT4	      30.00         1.1
+                                PFUREG	         72         2.6
+                                RIPPLE	         22         5.1
+                                   EBR	          1        16.7
+---------------------------------------------------
+Report for cell rx_cont_b1_uniq_0
+   Instance path: SP0565/slv_com/rx_com_inst/rx_cont_b1_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      87.00         3.0
+                                  LUT4	      65.00         2.3
+                                PFUREG	         99         3.6
+                                RIPPLE	         22         5.1
+                                   EBR	          1        16.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                     rx_ctl_1st_uniq_0	          1         0.9
+                   dcfifo_rx_b1_uniq_0	          1         2.1
+---------------------------------------------------
+Report for cell rx_ctl_1st_uniq_0
+   Instance path: SP0565/slv_com/rx_com_inst/rx_cont_b1_inst/rx_ctl_1st_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      25.00         0.9
+                                  LUT4	      34.00         1.2
+                                PFUREG	         25         0.9
+---------------------------------------------------
+Report for cell dcfifo_rx_b1_uniq_0
+   Instance path: SP0565/slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      60.50         2.1
+                                  LUT4	      31.00         1.1
+                                PFUREG	         72         2.6
+                                RIPPLE	         22         5.1
+                                   EBR	          1        16.7
+---------------------------------------------------
+Report for cell dec8b10b_wrapper_uniq_0
+   Instance path: SP0565/slv_com/rx_com_inst/dec8b10b_wrapper_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      59.67         2.0
+                                  LUT4	      75.00         2.7
+                                PFUREG	         60         2.2
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                   dec8b10b_new_uniq_0	          1         1.7
+---------------------------------------------------
+Report for cell dec8b10b_new_uniq_0
+   Instance path: SP0565/slv_com/rx_com_inst/dec8b10b_wrapper_inst/dec8b10b_new_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      48.25         1.7
+                                  LUT4	      75.00         2.7
+                                PFUREG	         37         1.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                       dec4b_3b_uniq_0	          1         0.4
+                       dec6b_5b_uniq_0	          1         0.8
+---------------------------------------------------
+Report for cell dec4b_3b_uniq_0
+   Instance path: SP0565/slv_com/rx_com_inst/dec8b10b_wrapper_inst/dec8b10b_new_inst/dec4b_3b_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      11.67         0.4
+                                  LUT4	      23.00         0.8
+                                PFUREG	          7         0.3
+---------------------------------------------------
+Report for cell dec6b_5b_uniq_0
+   Instance path: SP0565/slv_com/rx_com_inst/dec8b10b_wrapper_inst/dec8b10b_new_inst/dec6b_5b_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.75         0.8
+                                  LUT4	      49.00         1.8
+                                PFUREG	          9         0.3
+---------------------------------------------------
+Report for cell tx_com_uniq_0
+   Instance path: SP0565/slv_com/tx_com_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     253.67         8.7
+                                  LUT4	     223.00         8.0
+                                PFUREG	        311        11.2
+                                RIPPLE	         49        11.4
+                                   EBR	          2        33.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                     tx_cont_b1_uniq_0	          1         4.2
+                     tx_cont_b2_uniq_0	          1         2.6
+               enc8b10b_wrapper_uniq_0	          1         1.9
+---------------------------------------------------
+Report for cell tx_cont_b2_uniq_0
+   Instance path: SP0565/slv_com/tx_com_inst/tx_cont_b2_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      76.00         2.6
+                                  LUT4	      55.00         2.0
+                                PFUREG	         92         3.3
+                                RIPPLE	         22         5.1
+                                   EBR	          1        16.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                     tx_ctl_3rd_uniq_0	          1         0.5
+                   dcfifo_tx_b2_uniq_0	          1         2.1
+---------------------------------------------------
+Report for cell tx_ctl_3rd_uniq_0
+   Instance path: SP0565/slv_com/tx_com_inst/tx_cont_b2_inst/tx_ctl_3rd_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      15.50         0.5
+                                  LUT4	      24.00         0.9
+                                PFUREG	         20         0.7
+---------------------------------------------------
+Report for cell dcfifo_tx_b2_uniq_0
+   Instance path: SP0565/slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      60.50         2.1
+                                  LUT4	      31.00         1.1
+                                PFUREG	         72         2.6
+                                RIPPLE	         22         5.1
+                                   EBR	          1        16.7
+---------------------------------------------------
+Report for cell tx_cont_b1_uniq_0
+   Instance path: SP0565/slv_com/tx_com_inst/tx_cont_b1_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     122.50         4.2
+                                  LUT4	     107.00         3.9
+                                PFUREG	        156         5.6
+                                RIPPLE	         27         6.3
+                                   EBR	          1        16.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                     tx_ctl_1st_uniq_0	          1         1.1
+                   dcfifo_tx_b1_uniq_0	          1         2.1
+                        crc_gen_uniq_0	          1         0.8
+---------------------------------------------------
+Report for cell tx_ctl_1st_uniq_0
+   Instance path: SP0565/slv_com/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      31.33         1.1
+                                  LUT4	      42.00         1.5
+                                PFUREG	         28         1.0
+                                RIPPLE	          5         1.2
+---------------------------------------------------
+Report for cell crc_gen_uniq_0
+   Instance path: SP0565/slv_com/tx_com_inst/tx_cont_b1_inst/crc_gen_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      22.67         0.8
+                                  LUT4	      26.00         0.9
+                                PFUREG	         40         1.4
+---------------------------------------------------
+Report for cell dcfifo_tx_b1_uniq_0
+   Instance path: SP0565/slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      60.50         2.1
+                                  LUT4	      31.00         1.1
+                                PFUREG	         72         2.6
+                                RIPPLE	         22         5.1
+                                   EBR	          1        16.7
+---------------------------------------------------
+Report for cell enc8b10b_wrapper_uniq_0
+   Instance path: SP0565/slv_com/tx_com_inst/enc8b10b_wrapper_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      55.17         1.9
+                                  LUT4	      61.00         2.2
+                                PFUREG	         63         2.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                   enc8b10b_new_uniq_0	          1         1.5
+---------------------------------------------------
+Report for cell enc8b10b_new_uniq_0
+   Instance path: SP0565/slv_com/tx_com_inst/enc8b10b_wrapper_inst/enc8b10b_new_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      44.00         1.5
+                                  LUT4	      60.00         2.2
+                                PFUREG	         41         1.5
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                      enc8b_10b_uniq_0	          1         1.3
+---------------------------------------------------
+Report for cell enc8b_10b_uniq_0
+   Instance path: SP0565/slv_com/tx_com_inst/enc8b10b_wrapper_inst/enc8b10b_new_inst/enc8b_10b_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      38.50         1.3
+                                  LUT4	      60.00         2.2
+                                PFUREG	         30         1.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                       enc5b_6b_uniq_0	          1         0.9
+                       enc3b_4b_uniq_0	          1         0.1
+---------------------------------------------------
+Report for cell enc3b_4b_uniq_0
+   Instance path: SP0565/slv_com/tx_com_inst/enc8b10b_wrapper_inst/enc8b10b_new_inst/enc8b_10b_inst/enc3b_4b_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.33         0.1
+                                  LUT4	       1.00         0.0
+                                PFUREG	          6         0.2
+---------------------------------------------------
+Report for cell enc5b_6b_uniq_0
+   Instance path: SP0565/slv_com/tx_com_inst/enc8b10b_wrapper_inst/enc8b10b_new_inst/enc8b_10b_inst/enc5b_6b_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      27.33         0.9
+                                  LUT4	      58.00         2.1
+                                PFUREG	          8         0.3
+---------------------------------------------------
+Report for cell CLK_gen_S124M_uniq_0
+   Instance path: SP0565/slv_com/clk_gen_inst2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.1
+                                  LUT4	       2.00         0.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        pll_gen_uniq_0	          1         0.1
+---------------------------------------------------
+Report for cell pll_gen_uniq_0
+   Instance path: SP0565/slv_com/clk_gen_inst2/PLL_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.1
+                                  LUT4	       2.00         0.1
+---------------------------------------------------
+Report for cell slvadr_cnv_uniq_0
+   Instance path: SP0565/slv_com/slvadr_cnv_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.00         0.2
+                                  LUT4	       8.00         0.3
+                                PFUREG	          6         0.2
+                                RIPPLE	          3         0.7
+---------------------------------------------------
+Report for cell slv_ctrl_top_uniq_0
+   Instance path: SP0565/slv_com/slv_ctrl_top_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     287.08         9.8
+                                  LUT4	     442.33        15.9
+                                PFUREG	        143         5.2
+                                RIPPLE	          6         1.4
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                    slv_rx_ctrl_uniq_0	          1         3.6
+                    slv_tx_ctrl_uniq_0	          1         3.3
+                       node_sel_uniq_0	          1         0.2
+                         nd_sel_uniq_0	          1         2.6
+                        adr_sel_uniq_0	          1         0.1
+---------------------------------------------------
+Report for cell nd_sel_uniq_0
+   Instance path: SP0565/slv_com/slv_ctrl_top_inst/nd_sel_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      75.33         2.6
+                                  LUT4	     150.33         5.4
+---------------------------------------------------
+Report for cell adr_sel_uniq_0
+   Instance path: SP0565/slv_com/slv_ctrl_top_inst/adr_sel_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.00         0.1
+                                  LUT4	       5.00         0.2
+---------------------------------------------------
+Report for cell node_sel_uniq_0
+   Instance path: SP0565/slv_com/slv_ctrl_top_inst/node_sel_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.00         0.2
+                                  LUT4	      13.00         0.5
+---------------------------------------------------
+Report for cell slv_rx_ctrl_uniq_0
+   Instance path: SP0565/slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     103.75         3.6
+                                  LUT4	     109.50         3.9
+                                PFUREG	        110         4.0
+                                RIPPLE	          3         0.7
+---------------------------------------------------
+Report for cell slv_tx_ctrl_uniq_0
+   Instance path: SP0565/slv_com/slv_ctrl_top_inst/slv_tx_ctrl_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      97.50         3.3
+                                  LUT4	     162.00         5.8
+                                PFUREG	         31         1.1
+                                RIPPLE	          3         0.7
+---------------------------------------------------
+Report for cell rst_cnt_uniq_0
+   Instance path: SP0565/slv_com/rst_cnt_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      33.00         1.1
+                                  LUT4	       8.00         0.3
+                                PFUREG	         45         1.6
+                                RIPPLE	         25         5.8
+---------------------------------------------------
+Report for cell reveal_coretop
+   Instance path: SP0565/sp0565_reveal_coretop_instance
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     367.17        12.6
+                                  LUT4	     434.00        15.6
+                                PFUREG	        363        13.1
+                                RIPPLE	         36         8.4
+                                   EBR	          2        33.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                            sp0565_la0	          1        12.6
+---------------------------------------------------
+Report for cell sp0565_la0
+   Instance path: SP0565/sp0565_reveal_coretop_instance/core0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     367.17        12.6
+                                  LUT4	     434.00        15.6
+                                PFUREG	        363        13.1
+                                RIPPLE	         36         8.4
+                                   EBR	          2        33.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                       sp0565_la0_trig	          1         3.2
+                      rvl_tm_Z3_layer1	          1         4.2
+  rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s	          1         5.2
+---------------------------------------------------
+Report for cell sp0565_la0_trig
+   Instance path: SP0565/sp0565_reveal_coretop_instance/core0/trig_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      92.17         3.2
+                                  LUT4	     111.00         4.0
+                                PFUREG	         77         2.8
+                                RIPPLE	          9         2.1
+                                   EBR	          1        16.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                 rvl_tu_4s_0s_0s_0s_1s	          1         0.8
+                      rvl_te_Z1_layer1	          1         1.6
+                   rvl_tcnt_1s_3s_1_0s	          1         0.5
+                      rvl_decode_1s_1s	          1         0.1
+---------------------------------------------------
+Report for cell rvl_decode_1s_1s
+   Instance path: SP0565/sp0565_reveal_coretop_instance/core0/trig_u/decode_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       3.83         0.1
+                                  LUT4	       7.50         0.3
+---------------------------------------------------
+Report for cell rvl_tu_4s_0s_0s_0s_1s
+   Instance path: SP0565/sp0565_reveal_coretop_instance/core0/trig_u/tu_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.58         0.8
+                                  LUT4	      29.00         1.0
+                                PFUREG	         20         0.7
+---------------------------------------------------
+Report for cell rvl_te_Z1_layer1
+   Instance path: SP0565/sp0565_reveal_coretop_instance/core0/trig_u/te_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      46.83         1.6
+                                  LUT4	      49.50         1.8
+                                PFUREG	         45         1.6
+                                RIPPLE	          9         2.1
+                                   EBR	          1        16.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+   pmi_ram_dpEbnonesadr112112p13063b8e	          1         0.0
+---------------------------------------------------
+Report for cell pmi_ram_dpEbnonesadr112112p13063b8e
+   Instance path: SP0565/sp0565_reveal_coretop_instance/core0/trig_u/te_0/genblk1.te_tt_ebr_ram
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1        16.7
+---------------------------------------------------
+Report for cell rvl_tcnt_1s_3s_1_0s
+   Instance path: SP0565/sp0565_reveal_coretop_instance/core0/trig_u/tcnt_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      14.58         0.5
+                                  LUT4	      20.50         0.7
+                                PFUREG	         12         0.4
+---------------------------------------------------
+Report for cell rvl_jtag_int_20s_4s_1s_0s_5s_24s_24s
+   Instance path: SP0565/sp0565_reveal_coretop_instance/core0/jtag_int_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     151.33         5.2
+                                  LUT4	     217.00         7.8
+                                PFUREG	        140         5.0
+                                RIPPLE	          7         1.6
+---------------------------------------------------
+Report for cell rvl_tm_Z3_layer1
+   Instance path: SP0565/sp0565_reveal_coretop_instance/core0/tm_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     122.33         4.2
+                                  LUT4	     104.50         3.8
+                                PFUREG	        146         5.3
+                                RIPPLE	         20         4.7
+                                   EBR	          1        16.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+pmi_ram_dpEbnonesadr248256248256p1372b6e7	          1         0.0
+---------------------------------------------------
+Report for cell pmi_ram_dpEbnonesadr248256248256p1372b6e7
+   Instance path: SP0565/sp0565_reveal_coretop_instance/core0/tm_u/genblk4.tr_mem
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1        16.7
+---------------------------------------------------
+Report for cell sa5phub
+   Instance path: SP0565/sa5phub
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      40.83         1.4
+                                  LUT4	      22.00         0.8
+                                PFUREG	         48         1.7
+                                RIPPLE	          8         1.9

@@ -707,24 +707,14 @@
 @N: BN362 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\compactppmc\ppmc_rgstr.vhd":390:8:390:9|Removing sequential instance DOWNDELAY_REG_O[0] (in view: work.ppmc_rgstr(rtl)) because it does not drive other instances.
 @N: BN362 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\sp_conv\spi_master2.vhd":289:2:289:3|Removing sequential instance sp_conv_inst.SIO_inst1.U_SPI_master.s_sta[2] (in view: work.SP0557(rtl)) because it does not drive other instances.
 @N: FX214 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec6b_5b.vhd":57:16:57:19|Generating ROM slv_com_top_inst.rx_com_inst.dec8b10b_wrapper_inst.dec8b10b_new_inst.dec6b_5b_inst.DATAOUT_33_0[5:0] (in view: work.SP0557(rtl)).
-@N: FX1019 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":144:3:144:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.cz[2] (in view: work.SP0557(rtl)).
-@N: FX1019 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":113:3:113:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.bz[1] (in view: work.SP0557(rtl)).
-@N: FX1019 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":144:3:144:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.cz[2] (in view: work.SP0557(rtl)).
-@N: FX1019 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\cds.vhd":113:3:113:17|Adding ASYNC_REG property on synchronizing instance slv_com_top_inst.cds_inst.bz[1] (in view: work.SP0557(rtl)).
-@N: FX271 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":115:2:115:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[2] (in view: work.SP0557(rtl)) with 11 loads 1 time to improve timing.
-@N: FX271 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":115:2:115:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[1] (in view: work.SP0557(rtl)) with 10 loads 1 time to improve timing.
-@N: FX271 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":115:2:115:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.RX_F (in view: work.SP0557(rtl)) with 15 loads 1 time to improve timing.
-@N: FX271 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":115:2:115:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[3] (in view: work.SP0557(rtl)) with 15 loads 1 time to improve timing.
-@N: FX271 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":115:2:115:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.CMD_DATA[0] (in view: work.SP0557(rtl)) with 12 loads 1 time to improve timing.
-@N: FX271 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":115:2:115:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[2] (in view: work.SP0557(rtl)) with 5 loads 1 time to improve timing.
-@N: FX271 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":115:2:115:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[1] (in view: work.SP0557(rtl)) with 16 loads 1 time to improve timing.
-@N: FX271 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":115:2:115:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[3] (in view: work.SP0557(rtl)) with 4 loads 1 time to improve timing.
-@N: FX271 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_tx_ctrl_inst.LA[1] (in view: work.SP0557(rtl)) with 8 loads 1 time to improve timing.
-@N: FX271 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":115:2:115:3|Replicating instance slv_com_top_inst.slv_ctrl_top_inst.slv_rx_ctrl_inst.LA[4] (in view: work.SP0557(rtl)) with 8 loads 1 time to improve timing.
-@N: FX104 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":406:2:406:5|Inserting 3 buffers on net s_LWEb (with fanout of 257) because of a soft fanout limit of 100.
+@N: FX104 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":406:2:406:5|Inserting 3 buffers on net s_LWEb (with fanout of 298) because of a soft fanout limit of 100.
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @N: FX1056 |Writing EDF file: C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT615 |Found clock CLKOP_100M with period 10.00ns 
+@N: MT615 |Found clock CLKOS_100M_90 with period 10.00ns 
+@N: MT615 |Found clock CLKOS2_20M with period 50.00ns 
+@N: MT615 |Found clock CLKOS3_10M with period 100.00ns 
 @N: MT615 |Found clock CLK20M_ext with period 50.00ns 
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 @N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

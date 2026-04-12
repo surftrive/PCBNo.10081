@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "SP0565_SP0565.log"
+-o "SP0565_SP0565.csv"
+-pr "SP0565_SP0565.prf"

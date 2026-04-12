@@ -1,79 +1,63 @@
 #----------------------------------------------------------------------
-# SP0557 Synplify Forward Declaration Constraint (FDC) File
-# Purpose: Define cross-domain timing constraints for PLL-derived clocks
-#          and view-level synthesis attributes.
+# SP0557 Synplify Constraint File (SDC + Synplify attribute commands)
+# Purpose: PLL clock definitions and cross-domain timing constraints.
 #
-# Clock definitions use hierarchical net references {n:...} pointing to
-# the EHXPLLL primitive output ports inside pll_gen. The path must
-# reach PLLInst_0 (the EHXPLLL instance), NOT the pll_gen wrapper ports.
+# Rev.4 (2026-03-01): All timing constraints converted to SDC format
+#   to use create_clock + get_pins for EHXPLLL blackbox pins.
+#   (FDC define_clock and SDC create_clock cannot coexist: MF720)
 #
-# Confirmed from SP0557_SP0557.srr inferred clock source paths:
-#   pll_gen|CLKOP_inferred_clock  source: ...PLLInst_0.CLKOP(EHXPLLL)
-#   pll_gen|CLKOS_inferred_clock  source: ...PLLInst_0.CLKOS(EHXPLLL)
-#   pll_gen|CLKOS2_inferred_clock source: ...PLLInst_0.CLKOS2(EHXPLLL)
-#   pll_gen|CLKOS3_inferred_clock source: ...PLLInst_0.CLKOS3(EHXPLLL)
+# Rev.4c (2026-03-01): Removed false_path/multicycle constraints for
+#   domain pairs with no physical data paths to eliminate MT447/MT446.
+#   Retained only constraints for paths that actually exist in design.
 #
-# Clock Name Reference:
+#   Previous attempts all failed with MT548:
+#     Rev.1: FDC {n:...PLLInst_0.CLKOP}     (blackbox pin, not net)
+#     Rev.2: FDC {n:...PLL_inst.CLKCOM_OUT}  ({n:} cannot resolve)
+#     Rev.3: FDC {p:CLKOP} in pll_gen.fdc    (global FDC = top scope)
+#
+# Clock Names:
 #   CLKOP_100M    : 100MHz, 0 deg   (CLKOP  -> CLKCOM_OUT -> serial comm)
 #   CLKOS_100M_90 : 100MHz, 90 deg  (CLKOS  -> CLK2A -> CDR sampling)
 #   CLKOS2_20M    : 20MHz,  0 deg   (CLKOS2 -> s_PLL_CLK20M -> system)
 #   CLKOS3_10M    : 10MHz,  0 deg   (CLKOS3 -> CLK1 -> slave control)
+#   CLK20M_ext    : 20MHz,  external input
 #
-# Date   : 2026-03-01
 # Target : LFE5U-25F-6 CABGA256
 #----------------------------------------------------------------------
 
 #----------------------------------------------------------------------
-# Section 0: PLL Output Clock Definitions (EHXPLLL primitive outputs)
+# Section 0: PLL Output Clock Definitions (SDC create_clock + get_pins)
 #
-#   Hierarchy: SP0557 -> slv_com_top_inst -> clk_gen_inst2 -> PLL_inst
-#              -> PLLInst_0 (EHXPLLL primitive)
+#   Hierarchy: SP0557 -> slv_com_top_inst -> clk_gen_inst2 -> PLL_inst -> PLLInst_0
 #----------------------------------------------------------------------
-define_clock -name {CLKOP_100M} \
-    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOP} \
-    -freq 100.000 \
-    -rise 0.000 -fall 5.000 \
-    -clockgroup pll_clks
+create_clock -name {CLKOP_100M} -period 10.000 -waveform {0.000 5.000} \
+    [get_pins {slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOP}]
 
-define_clock -name {CLKOS_100M_90} \
-    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS} \
-    -freq 100.000 \
-    -rise 2.500 -fall 7.500 \
-    -clockgroup pll_clks
+create_clock -name {CLKOS_100M_90} -period 10.000 -waveform {2.500 7.500} \
+    [get_pins {slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS}]
 
-define_clock -name {CLKOS2_20M} \
-    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2} \
-    -freq 20.000 \
-    -rise 0.000 -fall 25.000 \
-    -clockgroup pll_clks
+create_clock -name {CLKOS2_20M} -period 50.000 -waveform {0.000 25.000} \
+    [get_pins {slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2}]
 
-define_clock -name {CLKOS3_10M} \
-    {n:slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3} \
-    -freq 10.000 \
-    -rise 0.000 -fall 50.000 \
-    -clockgroup pll_clks
+create_clock -name {CLKOS3_10M} -period 100.000 -waveform {0.000 50.000} \
+    [get_pins {slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3}]
 
 #----------------------------------------------------------------------
-# Section 1: External Clock Domain Isolation
+# Section 1: External Clock Definition and Domain Isolation
 #
 #   CLK20M (external 20MHz input) feeds only rst_cnt LOCAL_CLK counter
-#   and ck_state FSM. No direct functional data transfer between
-#   CLK20M domain and PLL output domains.
+#   and ck_state FSM. Only CLKOS3_10M domain has actual data paths
+#   to/from CLK20M domain (rst_cnt clock monitors).
+#
+#   Rev.4c: Removed false_path for domain pairs with no physical paths
+#     (CLK20M_ext <-> CLKOP_100M, CLKOS_100M_90, CLKOS2_20M)
+#     to eliminate MT447 warnings. Retained only paths that exist.
 #----------------------------------------------------------------------
-define_clock -name {CLK20M_ext} \
-    {p:CLK20M} \
-    -freq 20.000 \
-    -rise 0.000 -fall 25.000 \
-    -clockgroup ext_clks
+create_clock -name {CLK20M_ext} -period 50.000 -waveform {0.000 25.000} \
+    [get_ports {CLK20M}]
 
-define_false_path -from {CLK20M_ext} -to {CLKOP_100M}
-define_false_path -from {CLK20M_ext} -to {CLKOS_100M_90}
-define_false_path -from {CLK20M_ext} -to {CLKOS2_20M}
-define_false_path -from {CLK20M_ext} -to {CLKOS3_10M}
-define_false_path -from {CLKOP_100M}    -to {CLK20M_ext}
-define_false_path -from {CLKOS_100M_90} -to {CLK20M_ext}
-define_false_path -from {CLKOS2_20M}    -to {CLK20M_ext}
-define_false_path -from {CLKOS3_10M}    -to {CLK20M_ext}
+set_false_path -from [get_clocks {CLK20M_ext}] -to [get_clocks {CLKOS3_10M}]
+set_false_path -from [get_clocks {CLKOS3_10M}]    -to [get_clocks {CLK20M_ext}]
 
 #----------------------------------------------------------------------
 # Section 2: CLKOS2 (20MHz) <-> CLKOS3 (10MHz) Multicycle
@@ -81,8 +65,8 @@ define_false_path -from {CLKOS3_10M}    -to {CLK20M_ext}
 #   Same PLL, 2:1 frequency ratio.
 #   Data from 20MHz is stable for 2 CLKOS3 periods before capture.
 #----------------------------------------------------------------------
-define_multicycle_path -from {CLKOS2_20M} -to {CLKOS3_10M} 2
-define_multicycle_path -from {CLKOS3_10M} -to {CLKOS2_20M} 2
+set_multicycle_path 2 -from [get_clocks {CLKOS2_20M}] -to [get_clocks {CLKOS3_10M}]
+set_multicycle_path 2 -from [get_clocks {CLKOS3_10M}] -to [get_clocks {CLKOS2_20M}]
 
 #----------------------------------------------------------------------
 # Section 3: CLKOS3 (10MHz) <-> CLKOP (100MHz) Multicycle
@@ -91,34 +75,33 @@ define_multicycle_path -from {CLKOS3_10M} -to {CLKOS2_20M} 2
 #   CLK1 -> CLK2: Data from 10MHz is stable for 10 CLK2 periods.
 #   CLK2 -> CLK1: Fast-to-slow. 2x relaxation for CDC sync chains.
 #----------------------------------------------------------------------
-define_multicycle_path -from {CLKOS3_10M} -to {CLKOP_100M} 10
-define_multicycle_path -from {CLKOP_100M} -to {CLKOS3_10M} 2
+set_multicycle_path 10 -from [get_clocks {CLKOS3_10M}] -to [get_clocks {CLKOP_100M}]
+set_multicycle_path 2  -from [get_clocks {CLKOP_100M}] -to [get_clocks {CLKOS3_10M}]
 
 #----------------------------------------------------------------------
-# Section 4: CLKOS3 (10MHz) <-> CLKOS (100MHz, 90deg) Multicycle
+# Section 4: (Removed in Rev.4c)
 #
-#   Same as Section 3 but for CLK2A domain.
+#   CLKOS3_10M <-> CLKOS_100M_90 multicycle was defined but no physical
+#   data paths exist between these domains (MT446). Removed to eliminate
+#   warning. If future RTL changes create paths, re-add constraints.
 #----------------------------------------------------------------------
-define_multicycle_path -from {CLKOS3_10M}    -to {CLKOS_100M_90} 10
-define_multicycle_path -from {CLKOS_100M_90} -to {CLKOS3_10M} 2
 
 #----------------------------------------------------------------------
-# Section 5: CLKOS2 (20MHz) <-> CLKOP/CLKOS (100MHz) False Path
+# Section 5: (Removed in Rev.4c)
 #
-#   No direct data transfer between 20MHz system domain and 100MHz
-#   communication domain. All CDC is through DCFIFO IP blocks.
+#   CLKOS2_20M <-> CLKOP_100M/CLKOS_100M_90 false_path was defined but
+#   no physical data paths exist between these domains (MT447).
+#   CDC between 20MHz and 100MHz domains goes through DCFIFO IP blocks
+#   which have their own internal synchronization (no cross-domain
+#   register paths visible to Synplify). Removed to eliminate warning.
 #----------------------------------------------------------------------
-define_false_path -from {CLKOS2_20M} -to {CLKOP_100M}
-define_false_path -from {CLKOP_100M} -to {CLKOS2_20M}
-define_false_path -from {CLKOS2_20M} -to {CLKOS_100M_90}
-define_false_path -from {CLKOS_100M_90} -to {CLKOS2_20M}
 
 #----------------------------------------------------------------------
 # Section 6: CLKOP (100MHz, 0deg) <-> CLKOS (100MHz, 90deg)
 #
 #   SAME frequency, 90-degree phase offset. Mesochronous CDC paths
 #   in cds.vhd (CDR module). Synplify analyzes these with the correct
-#   2.5ns/7.5ns setup/hold windows from the clock group definition.
+#   2.5ns/7.5ns setup/hold windows from the waveform definitions.
 #   NO multicycle needed - same frequency, just phase-shifted.
 #----------------------------------------------------------------------
 

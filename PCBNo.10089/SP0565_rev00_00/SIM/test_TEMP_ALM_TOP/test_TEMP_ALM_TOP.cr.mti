@@ -1,0 +1,11 @@
+C:/work/S127M/PCBNo_10089/SP0565_rev02_00/SIM/TB/TEMP_ALM_TOP_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/work/S127M/PCBNo_10089/SP0565_rev02_00/SIM/TB/TEMP_ALM_TOP_tb.vhd
+Model Technology ModelSim - Lattice FPGA Edition vcom 2023.3 Compiler 2023.07 Jul 18 2023
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity TB_TEMP_ALM_TOP
+-- Compiling architecture SIM of TB_TEMP_ALM_TOP
+-- Loading entity TEMP_ALM_TOP
+
+} {} {}}

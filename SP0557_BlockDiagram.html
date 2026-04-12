@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>SP0557 Top-Level Block Diagram</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#fff;color:#222;font-family:'Consolas','Courier New',monospace;overflow:auto}
+.title-bar{text-align:center;padding:10px;font-size:20px;font-weight:bold;color:#1a5276;letter-spacing:2px}
+#dc{position:relative;width:2000px;height:1200px;margin:0 auto}
+svg.wires{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.fpga{position:absolute;top:20px;left:230px;width:1540px;height:1140px;border:3px solid #1a5276;border-radius:10px;z-index:0;background:rgba(230,242,255,0.15)}
+.fpga-lbl{position:absolute;top:28px;left:250px;font-size:18px;font-weight:bold;color:#1a5276;z-index:5}
+.m{position:absolute;background:#e8f0f8;border:2px solid #2c3e50;border-radius:5px;color:#1a1a2e;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;z-index:3;cursor:default;transition:box-shadow .2s}
+.m:hover{box-shadow:0 0 12px rgba(44,62,80,.3)}
+.m .n{font-weight:bold;font-size:14px;color:#1a3050}
+.m .d{font-size:11px;color:#555}
+.pg{position:absolute;z-index:4;font-size:11px}
+.pg .pt{font-weight:bold;font-size:11px;margin-bottom:1px;padding:2px 6px;border-radius:3px}
+.pg .pi{font-size:10px;padding:1px 4px;white-space:nowrap}
+.pin-l .pt{background:#d6eaf8;color:#1a5276}
+.pin-l .pi{color:#2471a3}
+.pin-r .pt{background:#f5e6f0;color:#6c3483}
+.pin-r .pi{color:#884ea0}
+.pin-io .pt{background:#fdebd0;color:#935116}
+.pin-io .pi{color:#a0522d}
+.legend{position:absolute;bottom:15px;right:30px;z-index:10;background:#fff;border:2px solid #aaa;border-radius:6px;padding:12px;font-size:11px;color:#333}
+.legend h3{font-size:13px;margin-bottom:6px;color:#222}
+/* Signal label boxes for callouts */
+.sig-box{position:absolute;z-index:6;font-size:10px;color:#1a6633;background:#eef8ee;border:1px solid #8fbc8f;border-radius:3px;padding:2px 5px;pointer-events:none;white-space:nowrap;line-height:1.3}
+.sig-box-ext{color:#6c3483;background:#f8eef8;border-color:#c39bd3}
+</style>
+</head>
+<body>
+<div class="title-bar">SP0557 (Lattice FPGA) &mdash; Top Level Block Diagram &mdash; Rev02_00</div>
+<div id="dc">
+<div class="fpga"></div>
+<div class="fpga-lbl">SP0557 entity</div>
+
+<!-- ===== LEFT INPUT PINS ===== -->
+<div class="pg pin-l" style="top:60px;left:10px">
+  <div class="pt">System</div>
+  <div class="pi">CLK20M (20MHz)</div>
+  <div class="pi">PORb (Reset)</div>
+</div>
+<div class="pg pin-l" style="top:135px;left:10px">
+  <div class="pt">Slave Address</div>
+  <div class="pi">SLVADR[7:0]</div>
+</div>
+<div class="pg pin-l" style="top:195px;left:10px">
+  <div class="pt">S3IO Input</div>
+  <div class="pi">UP_CLK</div>
+  <div class="pi">UP_RXD</div>
+</div>
+<div class="pg pin-l" style="top:320px;left:10px">
+  <div class="pt">P2S (SN74LV165)</div>
+  <div class="pi">P2S_SDI</div>
+</div>
+<div class="pg pin-l" style="top:410px;left:10px">
+  <div class="pt">STM Limit</div>
+  <div class="pi">STM_LCW[16:1]</div>
+  <div class="pi">STM_LCCW[16:1]</div>
+</div>
+<div class="pg pin-l" style="top:540px;left:10px">
+  <div class="pt">ADC Input</div>
+  <div class="pi">ADC_MISO</div>
+</div>
+<div class="pg pin-l" style="top:710px;left:10px">
+  <div class="pt">Encoder</div>
+  <div class="pi">ENC_A[16:1]</div>
+  <div class="pi">ENC_B[16:1]</div>
+</div>
+<div class="pg pin-l" style="top:810px;left:10px">
+  <div class="pt">Pulse Sensor</div>
+  <div class="pi">PLS_SNS[12:1]</div>
+</div>
+
+<!-- ===== RIGHT OUTPUT PINS ===== -->
+<div class="pg pin-r" style="top:60px;right:10px;text-align:right">
+  <div class="pt">S3IO Output</div>
+  <div class="pi">UP_TXD</div>
+</div>
+<div class="pg pin-r" style="top:290px;right:10px;text-align:right">
+  <div class="pt">S2P (SN74AHC595)</div>
+  <div class="pi">S2P_SCK / RCK</div>
+  <div class="pi">S2P_nOE / nCLR / SDO</div>
+</div>
+<div class="pg pin-r" style="top:380px;right:10px;text-align:right">
+  <div class="pt">P2S Control</div>
+  <div class="pi">P2S_SCK / SLD</div>
+</div>
+<div class="pg pin-r" style="top:440px;right:10px;text-align:right">
+  <div class="pt">STM Drive</div>
+  <div class="pi">STM_PCK[16:1]</div>
+</div>
+<div class="pg pin-io" style="top:520px;right:10px;text-align:right">
+  <div class="pt">DAC I2C (inout)</div>
+  <div class="pi">STMVREF_SCL / SDA</div>
+</div>
+<div class="pg pin-r" style="top:590px;right:10px;text-align:right">
+  <div class="pt">ADC Output</div>
+  <div class="pi">ADC_nCS / SCK / MOSI</div>
+</div>
+<div class="pg pin-r" style="top:665px;right:10px;text-align:right">
+  <div class="pt">LED Light Board</div>
+  <div class="pi">LEDDRV_LE/OEb/CLK/SD</div>
+  <div class="pi">DPM_CSb/CLK/SD</div>
+</div>
+<div class="pg pin-r" style="top:755px;right:10px;text-align:right">
+  <div class="pt">LED Search (Fixed)</div>
+  <div class="pi">LEDSH_* = const</div>
+</div>
+<div class="pg pin-r" style="top:825px;right:10px;text-align:right">
+  <div class="pt">Pulse LED</div>
+  <div class="pi">PTLEDb[12:1]</div>
+</div>
+<div class="pg pin-r" style="top:920px;right:10px;text-align:right">
+  <div class="pt">ACT / PUMP</div>
+  <div class="pi">ACTb[6:1]</div>
+  <div class="pi">PUMPb[2:1]</div>
+</div>
+
+<!-- ===== MODULES (3-col centered grid) ===== -->
+<!-- Row 1: y=70 -->
+<div class="m" style="top:65px;left:420px;width:250px;height:80px">
+  <div class="n">slv_com_top</div>
+  <div class="d">S3IO Slave Comm</div>
+  <div class="d">8b10b / CRC / PLL</div>
+</div>
+<div class="m" style="top:65px;left:880px;width:230px;height:80px">
+  <div class="n">slv_clk_gen</div>
+  <div class="d">Clock Generator</div>
+</div>
+<div class="m" style="top:65px;left:1320px;width:230px;height:80px">
+  <div class="n">EFUSE_CTRL</div>
+  <div class="d">eFuse Enable Ctrl</div>
+</div>
+
+<!-- Row 2: y=250 -->
+<div class="m" style="top:250px;left:420px;width:250px;height:95px">
+  <div class="n">sp_conv</div>
+  <div class="d">Serial / Parallel</div>
+  <div class="d">Converter</div>
+</div>
+<div class="m" style="top:240px;left:740px;width:540px;height:130px">
+  <div class="n" style="font-size:16px">ppmc_top_S118M &times; 13</div>
+  <div class="d" style="font-size:12px">Compact PPMC (STM Control)</div>
+  <div class="d">stm01 ~ stm13 (Node 0 ~ 12)</div>
+</div>
+
+<!-- Row 3: y=480 -->
+<div class="m" style="top:480px;left:420px;width:230px;height:70px">
+  <div class="n">DAC43608_top</div>
+  <div class="d">DAC (I2C) STM VREF</div>
+</div>
+<div class="m" style="top:480px;left:750px;width:230px;height:70px">
+  <div class="n">ad_ctrl</div>
+  <div class="d">ADC (SPI) ADC128S022</div>
+</div>
+<div class="m" style="top:480px;left:1090px;width:250px;height:75px">
+  <div class="n">LEDLT_TOP</div>
+  <div class="d">LED Light Board</div>
+  <div class="d">TLC5916 + AD8402</div>
+</div>
+
+<!-- Row 4: y=660 -->
+<div class="m" style="top:660px;left:420px;width:260px;height:80px">
+  <div class="n">enc_func_top</div>
+  <div class="d">Encoder Count &amp; Limit</div>
+</div>
+<div class="m" style="top:660px;left:800px;width:230px;height:70px">
+  <div class="n">pls_sens</div>
+  <div class="d">Pulse Sensor I/O</div>
+</div>
+
+<!-- Row 5: y=860 -->
+<div class="m" style="top:860px;left:420px;width:340px;height:80px">
+  <div class="n">gpio_top &mdash; gpio01 (Node 13)</div>
+  <div class="d">Encoder Data / Config</div>
+</div>
+<div class="m" style="top:860px;left:870px;width:420px;height:80px">
+  <div class="n">gpio_top &mdash; gpio02 (Node 14)</div>
+  <div class="d">Status / Sensor / Control Hub</div>
+</div>
+
+<!-- ===== SIGNAL LABEL CALLOUTS (positioned to avoid overlap) ===== -->
+
+<!-- Internal signal labels (green boxes) -->
+<div class="sig-box" style="top:92px;left:700px">s_PLL_CLK20M &rarr;</div>
+<div class="sig-box" style="top:120px;left:700px">s_LRSTb &rarr;</div>
+
+<div class="sig-box" style="top:158px;left:1020px">
+  Clock Distribution<br>
+  s_CLK500k / s_CKEN1k<br>
+  s_CKEN500k / s_CKEN5M
+</div>
+
+<div class="sig-box" style="top:175px;left:340px">
+  <b>Local Bus</b><br>
+  s_LA[11:0], s_LDI[7:0]<br>
+  s_NSb[15:0], s_IDSb<br>
+  s_LGSb, s_LRDb, s_LWEb<br>
+  s_LATCH, s_LOAD, s_LRSTb
+</div>
+
+<div class="sig-box" style="top:270px;left:340px">&larr; sa_ND[0..14]<br>(Node Data Return)</div>
+
+<div class="sig-box" style="top:220px;left:1100px">&larr; PW_*_EN (10 signals)</div>
+
+<div class="sig-box" style="top:345px;left:418px">
+  &uarr; sa_STM_M, s_STMDIR<br>
+  &nbsp; s_STM_ENB
+</div>
+
+<div class="sig-box" style="top:408px;left:650px">
+  s_SNS[16:1]<br>
+  s_STM_nFAULT<br>
+  PW_*_nFLT<br>
+  &darr; gpio02
+</div>
+
+<div class="sig-box" style="top:560px;left:813px">
+  &darr; s_STM_POUT<br>
+  &nbsp; s_STMDIR, sa_STM_M<br>
+  &nbsp; s_STM_STOP
+</div>
+<div class="sig-box" style="top:580px;left:690px;text-align:right">
+  s_MORE_INH_CW &uarr;<br>
+  s_MORE_INH_CCW &uarr;
+</div>
+
+<div class="sig-box" style="top:757px;left:423px">
+  &darr; sa_ENCDATA<br>
+  &nbsp; s_ENCPHASE<br>
+  &nbsp; s_ENC_LMT_DET
+</div>
+<div class="sig-box" style="top:757px;left:580px">
+  &uarr; s_ENC_EN, s_ENCLMT_EN<br>
+  &nbsp; sa_ENCLMT_TH<br>
+  &nbsp; s_ENC_INV, s_ENC_MODE
+</div>
+
+<div class="sig-box" style="top:738px;left:930px">s_PLS_SNS &darr;</div>
+
+<div class="sig-box" style="top:570px;left:910px">
+  sa_STM_CUR[13:1] &uarr;<br>
+  (gpio02 &rarr; DAC43608)
+</div>
+<div class="sig-box" style="top:570px;left:1150px">
+  s_LEDLT_CTRL &uarr;<br>
+  s_LED_I_SET &uarr;<br>
+  (gpio02 &rarr; LEDLT)
+</div>
+
+<div class="sig-box" style="top:770px;left:1040px">
+  s_PRES01_DATA &darr;<br>
+  s_PRES02_DATA &darr;<br>
+  (ad_ctrl &rarr; gpio02)
+</div>
+
+<div class="sig-box" style="top:210px;left:1300px">
+  &uarr; s_mode_com<br>
+  &darr; s_mode_out<br>
+  (gpio02 &harr; EFUSE)
+</div>
+
+<!-- External signal labels (purple boxes) -->
+<div class="sig-box sig-box-ext" style="top:78px;left:248px;font-size:9px">CLK20M, PORb &rarr;</div>
+<div class="sig-box sig-box-ext" style="top:135px;left:248px;font-size:9px">SLVADR[7:0] &rarr;</div>
+<div class="sig-box sig-box-ext" style="top:160px;left:248px;font-size:9px">UP_CLK, UP_RXD &rarr;</div>
+<div class="sig-box sig-box-ext" style="top:72px;left:1580px;font-size:9px">&rarr; UP_TXD</div>
+
+<div class="sig-box sig-box-ext" style="top:330px;left:248px;font-size:9px">P2S_SDI &rarr;</div>
+<div class="sig-box sig-box-ext" style="top:300px;left:1580px;font-size:9px">&rarr; S2P_SCK/RCK/nOE/nCLR/SDO</div>
+<div class="sig-box sig-box-ext" style="top:387px;left:1580px;font-size:9px">&rarr; P2S_SCK/SLD</div>
+
+<div class="sig-box sig-box-ext" style="top:425px;left:248px;font-size:9px">STM_LCW/LCCW &rarr;</div>
+<div class="sig-box sig-box-ext" style="top:448px;left:1580px;font-size:9px">&rarr; STM_PCK[16:1]</div>
+
+<div class="sig-box sig-box-ext" style="top:552px;left:248px;font-size:9px">ADC_MISO &rarr;</div>
+<div class="sig-box sig-box-ext" style="top:505px;left:1580px;font-size:9px">&rarr; STMVREF_SCL/SDA (inout)</div>
+<div class="sig-box sig-box-ext" style="top:595px;left:1580px;font-size:9px">&rarr; ADC_nCS/SCK/MOSI</div>
+<div class="sig-box sig-box-ext" style="top:510px;left:1400px;font-size:9px">&rarr; LEDDRV/DPM_*</div>
+
+<div class="sig-box sig-box-ext" style="top:720px;left:248px;font-size:9px">ENC_A/B[16:1] &rarr;</div>
+<div class="sig-box sig-box-ext" style="top:818px;left:248px;font-size:9px">PLS_SNS[12:1] &rarr;</div>
+<div class="sig-box sig-box-ext" style="top:690px;left:1580px;font-size:9px">&rarr; PTLEDb[12:1]</div>
+<div class="sig-box sig-box-ext" style="top:935px;left:1400px;font-size:9px">&rarr; ACTb/PUMPb</div>
+
+<!-- ===== SVG SIGNAL WIRES ===== -->
+<svg class="wires" viewBox="0 0 2000 1200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <!-- Green arrow (internal) -->
+  <marker id="ag" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#2e8b57"/></marker>
+  <!-- Blue arrow (external in) -->
+  <marker id="ab" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#2471a3"/></marker>
+  <!-- Purple arrow (external out) -->
+  <marker id="ap" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto"><polygon points="0 0,7 2.5,0 5" fill="#884ea0"/></marker>
+</defs>
+
+<!-- ============ EXTERNAL PIN → MODULE (blue) ============ -->
+
+<!-- CLK20M, PORb → slv_com_top -->
+<path d="M 228,80 H 418" stroke="#2471a3" stroke-width="1.5" fill="none" marker-end="url(#ab)"/>
+<path d="M 228,98 H 418" stroke="#2471a3" stroke-width="1.5" fill="none" marker-end="url(#ab)"/>
+
+<!-- SLVADR → slv_com_top -->
+<path d="M 228,148 H 330 V 120 H 418" stroke="#2471a3" stroke-width="1.5" fill="none" marker-end="url(#ab)"/>
+
+<!-- UP_CLK, UP_RXD → slv_com_top -->
+<path d="M 228,210 H 310 V 108 H 418" stroke="#2471a3" stroke-width="1.5" fill="none" marker-end="url(#ab)"/>
+<path d="M 228,228 H 295 V 132 H 418" stroke="#2471a3" stroke-width="1.5" fill="none" marker-end="url(#ab)"/>
+
+<!-- UP_TXD out -->
+<path d="M 672,82 H 1772" stroke="#884ea0" stroke-width="1.5" fill="none" marker-end="url(#ap)"/>
+
+<!-- P2S_SDI → sp_conv -->
+<path d="M 228,335 H 418" stroke="#2471a3" stroke-width="1.5" fill="none" marker-end="url(#ab)"/>
+
+<!-- sp_conv → S2P -->
+<path d="M 672,270 H 1772" stroke="#884ea0" stroke-width="1.5" fill="none" marker-end="url(#ap)"/>
+<!-- sp_conv → P2S_SCK/SLD -->
+<path d="M 672,290 H 1772" stroke="#884ea0" stroke-width="1.5" fill="none" marker-end="url(#ap)"/>
+
+<!-- STM_LCW/LCCW → ppmc -->
+<path d="M 228,428 H 350 V 295 H 738" stroke="#2471a3" stroke-width="1.5" fill="none" marker-end="url(#ab)"/>
+<path d="M 228,448 H 340 V 315 H 738" stroke="#2471a3" stroke-width="1.5" fill="none" marker-end="url(#ab)"/>
+
+<!-- ppmc → STM_PCK -->
+<path d="M 1282,320 H 1772" stroke="#884ea0" stroke-width="2" fill="none" marker-end="url(#ap)"/>
+
+<!-- ADC_MISO → ad_ctrl -->
+<path d="M 228,555 H 355 V 510 H 748" stroke="#2471a3" stroke-width="1.5" fill="none" marker-end="url(#ab)"/>
+
+<!-- ad_ctrl → ADC output -->
+<path d="M 982,500 H 1772" stroke="#884ea0" stroke-width="1.5" fill="none" marker-end="url(#ap)"/>
+
+<!-- DAC43608 → I2C inout -->
+<path d="M 652,500 H 1772" stroke="#a0522d" stroke-width="1.5" fill="none" stroke-dasharray="6,3" marker-end="url(#ap)"/>
+
+<!-- LEDLT → LED pins -->
+<path d="M 1342,510 H 1772" stroke="#884ea0" stroke-width="1.5" fill="none" marker-end="url(#ap)"/>
+
+<!-- ENC_A/B → enc_func_top -->
+<path d="M 228,726 H 418" stroke="#2471a3" stroke-width="1.5" fill="none" marker-end="url(#ab)"/>
+<path d="M 228,744 H 418" stroke="#2471a3" stroke-width="1.5" fill="none" marker-end="url(#ab)"/>
+
+<!-- PLS_SNS → pls_sens -->
+<path d="M 228,825 H 365 V 695 H 798" stroke="#2471a3" stroke-width="1.5" fill="none" marker-end="url(#ab)"/>
+
+<!-- pls_sens → PTLEDb -->
+<path d="M 1032,692 H 1772" stroke="#884ea0" stroke-width="1.5" fill="none" marker-end="url(#ap)"/>
+
+<!-- gpio02 → ACTb/PUMPb -->
+<path d="M 1292,910 H 1400 V 945 H 1772" stroke="#884ea0" stroke-width="1.5" fill="none" marker-end="url(#ap)"/>
+
+<!-- ============ INTER-MODULE (green) ============ -->
+
+<!-- slv_com_top → slv_clk_gen -->
+<path d="M 672,95 H 878" stroke="#2e8b57" stroke-width="2" fill="none" marker-end="url(#ag)"/>
+<path d="M 672,118 H 878" stroke="#2e8b57" stroke-width="1.5" fill="none" marker-end="url(#ag)"/>
+
+<!-- Clock distribution vertical spine -->
+<path d="M 995,147 V 930" stroke="#2e8b57" stroke-width="1.5" fill="none" stroke-dasharray="6,4"/>
+<!-- Clock → ppmc -->
+<path d="M 995,295 H 1282" stroke="#2e8b57" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+<!-- Clock → LEDLT -->
+<path d="M 995,520 H 1088" stroke="#2e8b57" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+<!-- Clock → pls_sens -->
+<path d="M 995,700 H 798" stroke="#2e8b57" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+
+<!-- PLL CLK distribution spine -->
+<path d="M 700,147 V 930" stroke="#2e8b57" stroke-width="1" fill="none" stroke-dasharray="3,6" opacity="0.35"/>
+
+<!-- LOCAL BUS vertical spine -->
+<path d="M 510,147 V 858" stroke="#2e8b57" stroke-width="4" fill="none" stroke-dasharray="8,4"/>
+<!-- Local Bus → ppmc -->
+<path d="M 510,300 H 738" stroke="#2e8b57" stroke-width="3" fill="none" stroke-dasharray="6,3" marker-end="url(#ag)"/>
+<!-- Local Bus → gpio01 -->
+<path d="M 510,890 H 418" stroke="#2e8b57" stroke-width="3" fill="none" stroke-dasharray="6,3"/>
+<!-- Local Bus → gpio02 -->
+<path d="M 510,900 H 868" stroke="#2e8b57" stroke-width="3" fill="none" stroke-dasharray="6,3" marker-end="url(#ag)"/>
+
+<!-- Node Data Return -->
+<path d="M 490,858 V 147" stroke="#2e8b57" stroke-width="2" fill="none" stroke-dasharray="4,3" marker-end="url(#ag)"/>
+<!-- sa_ND from ppmc -->
+<path d="M 738,280 H 492" stroke="#2e8b57" stroke-width="1.5" fill="none" stroke-dasharray="3,3"/>
+<!-- sa_ND from gpio01 -->
+<path d="M 418,880 H 492" stroke="#2e8b57" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+<!-- sa_ND from gpio02 -->
+<path d="M 868,880 H 540 V 858" stroke="#2e8b57" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+
+<!-- EFUSE_CTRL → sp_conv: PW_*_EN -->
+<path d="M 1320,105 H 1290 V 230 H 672" stroke="#2e8b57" stroke-width="1.5" fill="none" marker-end="url(#ag)"/>
+
+<!-- sp_conv → gpio02: SNS, nFAULT, nFLT -->
+<path d="M 610,347 V 858" stroke="#2e8b57" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#ag)"/>
+
+<!-- ppmc ↔ enc_func_top -->
+<!-- ppmc → enc (down) -->
+<path d="M 830,372 V 658" stroke="#2e8b57" stroke-width="2" fill="none" marker-end="url(#ag)"/>
+<!-- enc → ppmc (up) -->
+<path d="M 810,658 V 372" stroke="#2e8b57" stroke-width="1.5" fill="none" stroke-dasharray="4,3" marker-end="url(#ag)"/>
+
+<!-- ppmc → sp_conv -->
+<path d="M 738,340 H 672" stroke="#2e8b57" stroke-width="1.5" fill="none" marker-end="url(#ag)"/>
+
+<!-- enc_func_top ↔ gpio01 -->
+<!-- enc → gpio01 (down) -->
+<path d="M 555,742 V 858" stroke="#2e8b57" stroke-width="1.5" fill="none" marker-end="url(#ag)"/>
+<!-- gpio01 → enc (up) -->
+<path d="M 575,858 V 742" stroke="#2e8b57" stroke-width="1" fill="none" stroke-dasharray="4,3" marker-end="url(#ag)"/>
+
+<!-- pls_sens → gpio02 -->
+<path d="M 920,732 V 770 H 950 V 858" stroke="#2e8b57" stroke-width="1.5" fill="none" marker-end="url(#ag)"/>
+
+<!-- gpio02 → DAC43608 -->
+<path d="M 930,858 V 552" stroke="#2e8b57" stroke-width="1.5" fill="none" marker-end="url(#ag)"/>
+
+<!-- gpio02 → LEDLT_TOP -->
+<path d="M 1180,858 V 557" stroke="#2e8b57" stroke-width="1.5" fill="none" marker-end="url(#ag)"/>
+
+<!-- ad_ctrl → gpio02 -->
+<path d="M 865,552 V 615 H 1050 V 858" stroke="#2e8b57" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#ag)"/>
+
+<!-- gpio02 ↔ EFUSE_CTRL -->
+<!-- gpio02 → EFUSE: s_mode_com -->
+<path d="M 1260,858 V 147" stroke="#2e8b57" stroke-width="1.5" fill="none" marker-end="url(#ag)"/>
+<!-- EFUSE → gpio02: s_mode_out -->
+<path d="M 1280,147 V 858" stroke="#2e8b57" stroke-width="1" fill="none" stroke-dasharray="4,3" marker-end="url(#ag)"/>
+
+</svg>
+
+<!-- Legend -->
+<div class="legend">
+  <h3>Legend</h3>
+  <div style="margin:4px 0"><span style="color:#2471a3;font-weight:bold">──▶</span> &nbsp;External input pin → Module</div>
+  <div style="margin:4px 0"><span style="color:#884ea0;font-weight:bold">──▶</span> &nbsp;Module → External output pin</div>
+  <div style="margin:4px 0"><span style="color:#2e8b57;font-weight:bold">──▶</span> &nbsp;Internal signal (module ↔ module)</div>
+  <div style="margin:4px 0"><span style="color:#2e8b57">- - ▶</span> &nbsp;Clock / return path</div>
+  <div style="margin:4px 0">━━ Thick line = multi-bit bus</div>
+  <div style="margin:8px 0 0 0;padding-top:6px;border-top:1px solid #ccc">
+    <span style="background:#eef8ee;border:1px solid #8fbc8f;padding:1px 4px;border-radius:2px;font-size:9px;color:#1a6633">Label</span> Internal signal name<br>
+    <span style="background:#f8eef8;border:1px solid #c39bd3;padding:1px 4px;border-radius:2px;font-size:9px;color:#6c3483">Label</span> External pin signal
+  </div>
+</div>
+
+</div>
+</body>
+</html>

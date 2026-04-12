@@ -1,0 +1,3054 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+            Lattice Mapping Report File for Design Module 'SP0565'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a ECP5U -p LFE5U-25F -t CABGA256 -s 6 -oc Commercial
+     SP0565_SP0565.ngd -o SP0565_SP0565_map.ncd -pr SP0565_SP0565.prf -mp
+     SP0565_SP0565.mrp -lpf C:/work/S127M/PCBNo_10089/SP0565_rev00_00/SP0565/SP0
+     565_SP0565_synplify.lpf -lpf
+     C:/work/S127M/PCBNo_10089/SP0565_rev00_00/SP0565.lpf -gui -msgset
+     C:/work/S127M/PCBNo_10089/SP0565_rev00_00/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LFE5U-25FCABGA256
+Target Performance:   6
+Mapper:  sa5p00,  version:  Diamond (64-bit) 3.13.0.56.2
+Mapped on:  04/09/26  18:26:45
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:   2805 out of 24879 (11%)
+      PFU registers:         2775 out of 24288 (11%)
+      PIO registers:           30 out of   591 (5%)
+   Number of SLICEs:      2917 out of 12144 (24%)
+      SLICEs as Logic/ROM:   2917 out of 12144 (24%)
+      SLICEs as RAM:            0 out of  9108 (0%)
+      SLICEs as Carry:        430 out of 12144 (4%)
+   Number of LUT4s:        3638 out of 24288 (15%)
+      Number used as logic LUTs:        2778
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      860
+      Number used as shift registers:     0
+   Number of PIO sites used: 66 out of 197 (34%)
+   Number of block RAMs:  6 out of 56 (11%)
+   Number of GSRs:  1 out of 1 (100%)
+   JTAG used :      Yes
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 4 (0%)
+   Number of DCC:  0 out of 60 (0%)
+   Number of DCS:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DDRDLLs:  0 out of 4 (0%)
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 10 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+
+        Number Of Mapped DSP Components:
+   --------------------------------
+   MULT18X18D          0
+   MULT9X9D            0
+   ALU54B              0
+
+   ALU24B              0
+   PRADD18A            0
+   PRADD9A             0
+   --------------------------------
+   Number of Used DSP MULT Sites:  0 out of 56 (0 %)
+   Number of Used DSP ALU Sites:  0 out of 28 (0 %)
+   Number of Used DSP PRADD Sites:  0 out of 56 (0 %)
+   Number of clocks:  7
+     Net CLK20M_c: 118 loads, 118 rising, 0 falling (Driver: PIO CLK20M )
+     Net slv_com.CLK1: 326 loads, 315 rising, 11 falling (Driver:
+     slv_com/clk_gen_inst2/PLL_inst/PLLInst_0 )
+     Net s_PLL_CLK20M: 922 loads, 922 rising, 0 falling (Driver:
+     slv_com/clk_gen_inst2/PLL_inst/PLLInst_0 )
+     Net slv_com/CLK2A: 16 loads, 9 rising, 7 falling (Driver:
+     slv_com/clk_gen_inst2/PLL_inst/PLLInst_0 )
+     Net slv_com.CLKCOM_OUT: 163 loads, 155 rising, 8 falling (Driver:
+     slv_com/clk_gen_inst2/PLL_inst/PLLInst_0 )
+     Net UP_CLK_c: 1 loads, 1 rising, 0 falling (Driver: PIO UP_CLK )
+     Net jtaghub16_jtck: 138 loads, 0 rising, 138 falling (Driver:
+     sa5phub/genblk8.jtagg_u )
+   Number of Clock Enables:  214
+     Net slv_com.CLK_RSTb_OUT_i: 5 loads, 5 LSLICEs
+     Net ADC_CONT.shiftreg12bit_inst.reg_0_sqmuxa: 7 loads, 6 LSLICEs
+     Net ADC_CONT.s_FALL: 6 loads, 4 LSLICEs
+     Net s_TERM: 4 loads, 4 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsnum_reg_inst/wrp9: 2 loads, 2
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsnum_reg_inst/wrp8: 2 loads, 2
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsnum_reg_inst/wrp7: 3 loads, 3
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsnum_reg_inst/wrp6: 3 loads, 3
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsnum_reg_inst/un27_wrp: 1
+     loads, 1 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsnum_reg_inst/un22_wrp: 1
+     loads, 1 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/un1_lrstb_inv_i: 7
+     loads, 7 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/st[1]: 1 loads, 1
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/st[7]: 1 loads, 1
+     LSLICEs
+     Net s_LRSTb: 3 loads, 3 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/ajstreg_1_sqmuxa: 4
+     loads, 4 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/un1_st_6_0: 1 loads, 1
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_idlm_reg_inst/WRP[3]: 5 loads, 5
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_idlm_reg_inst/WRP[2]: 5 loads, 5
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_idlm_reg_inst/WRP[1]: 5 loads, 5
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_idlm_reg_inst/WRP[0]: 5 loads, 5
+     LSLICEs
+
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctst_reg_inst/WRP[3]: 4 loads, 4
+     LSLICEs
+     Net tmpctrl_4ch/LATCH_L: 48 loads, 48 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctst_reg_inst/WRP[2]: 4 loads, 4
+     LSLICEs
+     Net tmpctrl_4ch/LOAD_L: 16 loads, 16 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctst_reg_inst/WRP[1]: 4 loads, 4
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctst_reg_inst/WRP[0]: 4 loads, 4
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ajst_reg_inst/WRP[3]: 5 loads, 5
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ajst_reg_inst/WRP[2]: 5 loads, 5
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ajst_reg_inst/WRP[1]: 5 loads, 5
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ajst_reg_inst/WRP[0]: 5 loads, 5
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ref_reg_inst/WRP[6]: 5 loads, 5
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ref_reg_inst/WRP[7]: 2 loads, 2
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ref_reg_inst/WRP[4]: 5 loads, 5
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ref_reg_inst/WRP[5]: 2 loads, 2
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ref_reg_inst/WRP[2]: 5 loads, 5
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ref_reg_inst/WRP[3]: 3 loads, 3
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ref_reg_inst/WRP[0]: 5 loads, 5
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ref_reg_inst/WRP[1]: 2 loads, 2
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_meas_reg_inst/wrp9: 6 loads, 6
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_meas_reg_inst/wrp8: 6 loads, 6
+     LSLICEs
+     Net gpio01/N_766_i: 76 loads, 76 LSLICEs
+     Net gpio01/gpio_reg_inst/gpio_op_reg_inst25/WRITEENB: 4 loads, 4 LSLICEs
+     Net gpio01/N_60_i: 47 loads, 47 LSLICEs
+     Net gpio01/gpio_reg_inst/gpio_op_reg_inst24/WRITEENB: 4 loads, 4 LSLICEs
+     Net gpio01/gpio_reg_inst/gpio_op_reg_inst23/WRITEENB: 4 loads, 4 LSLICEs
+     Net gpio01/gpio_reg_inst/gpio_op_reg_inst22/WRITEENB: 4 loads, 4 LSLICEs
+     Net gpio01/gpio_reg_inst/gpio_op_reg_inst21/WRITEENB: 4 loads, 4 LSLICEs
+     Net gpio01/gpio_reg_inst/gpio_op_reg_inst20/WRITEENB: 4 loads, 4 LSLICEs
+     Net gpio01/gpio_reg_inst/gpio_op_reg_inst19/WRITEENB: 4 loads, 4 LSLICEs
+     Net gpio01/gpio_reg_inst/gpio_op_reg_inst18/WRITEENB: 4 loads, 4 LSLICEs
+     Net gpio01/gpio_reg_inst/gpio_op_reg_inst17/WRITEENB: 4 loads, 4 LSLICEs
+     Net gpio01/gpio_reg_inst/gpio_op_reg_inst16/WRITEENB: 4 loads, 4 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/stop_RNO_0: 1 loads, 1
+     LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/high_low_RNO_0: 1 loads, 1
+     LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/N_179_i: 46 loads, 46 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/l_const_0_sqmuxa_i_0: 1
+
+     loads, 1 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/COMMAND_HIT: 1 loads, 1 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/const_0_sqmuxa_i_0: 1 loads,
+     1 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_STATE_5_0_0: 1 loads, 1
+     LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_STATE_3_i_i: 2 loads, 2
+     LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/more_cnte: 8 loads, 8 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_command_cng: 1 loads, 1
+     LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_290_i: 1 loads, 1 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/N_698: 2 loads, 2 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_sel_com_0: 1 loads, 1
+     LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_slow_l_0_a2: 5 loads,
+     5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_slow_h_0_a2: 5 loads,
+     5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_pls_l_0_a2: 4 loads,
+     4 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_pls_h_0_a2: 4 loads,
+     4 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_pre_0_a2: 5 loads, 5
+     LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_b_0_a2: 2 loads, 2
+     LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_mp_a_0_a2: 2 loads, 2
+     LSLICEs
+     Net N_65_i: 5 loads, 3 LSLICEs
+     Net stm01/N_63_i: 2 loads, 2 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_more_l_0_a2: 5 loads,
+     5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_more_h_0_a2: 5 loads,
+     5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_low_l_0_a2: 5 loads,
+     5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_low_h_0_a2: 4 loads,
+     4 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_l_mask_0_a2: 6 loads,
+     6 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un3_start_stop_0_a2: 1 loads,
+     1 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_high_l_0_a2: 5 loads,
+     5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_high_h_0_a2: 5 loads,
+     5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_ctrl2_0_a2: 5 loads,
+     5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un4_sel_com_0_a2: 5 loads, 5
+     LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_acc_l_0_a2: 4 loads,
+     4 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/un1_sel_acc_h_0_a2: 5 loads,
+     5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/rege: 9
+
+     loads, 9 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/N_308_i: 5
+     loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un1_pls_ld
+     _2_i_0: 1 loads, 1 LSLICEs
+     Net s_CKEN500k: 5 loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un1_tm_c
+     lr_1_sqmuxa_0: 1 loads, 1 LSLICEs
+     Net ad5270_5271_ctrl_inst_ch0.s_CKEN5M: 21 loads, 20 LSLICEs
+     Net ad5270_5271_ctrl_inst_ch0/N_265_i: 5 loads, 5 LSLICEs
+     Net ad5270_5271_ctrl_inst_ch0/un1_s_da_send_ago5_2_i: 1 loads, 1 LSLICEs
+     Net ad5270_5271_ctrl_inst_ch0/un1_s_da_send_ago5_4_i: 5 loads, 5 LSLICEs
+     Net ad5270_5271_ctrl_inst_ch0.N_263_i: 1 loads, 0 LSLICEs
+     Net linear_signal_ctrl_inst_ch0/un29_term: 1 loads, 1 LSLICEs
+     Net un41_term: 2 loads, 1 LSLICEs
+     Net linear_signal_ctrl_inst_ch0/un1_neg_1_i: 2 loads, 2 LSLICEs
+     Net un37_term: 1 loads, 0 LSLICEs
+     Net pulse_sensor/ring_counter_inst/s_reg_0_sqmuxa: 5 loads, 5 LSLICEs
+     Net ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un2_s_stmst_pls_1sh_2_i:
+     1 loads, 1 LSLICEs
+     Net ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/N_14_i: 5 loads, 5
+     LSLICEs
+     Net ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/N_17_i: 5 loads, 5
+     LSLICEs
+     Net ADC_CONT/adc_reg_inst/s_reg18: 6 loads, 6 LSLICEs
+     Net ADC_CONT/adc_reg_inst/s_reg17: 6 loads, 6 LSLICEs
+     Net ADC_CONT/adc_reg_inst/s_reg16: 6 loads, 6 LSLICEs
+     Net ADC_CONT/adc_reg_inst/s_reg15: 6 loads, 6 LSLICEs
+     Net ADC_CONT/adif_seq_inst/s_CH_1_sqmuxa: 1 loads, 1 LSLICEs
+     Net DAC081S101_inst/log_ca_DAC_ctrl_inst/s_RISE: 11 loads, 11 LSLICEs
+     Net DAC081S101_inst/log_ca_DAC_ctrl_inst/log_ca_DACif_seq_inst/s_SEND_DATA_
+     0_sqmuxa_1: 4 loads, 4 LSLICEs
+     Net DAC081S101_inst.log_ca_DAC_ctrl_inst.log_ca_DACif_seq_inst.s_SEND_DATA_
+     0_sqmuxa: 1 loads, 0 LSLICEs
+     Net DAC081S101_inst/log_ca_DAC_ctrl_inst/un5_da_send: 1 loads, 1 LSLICEs
+     Net DAC081S101_inst/log_ca_DAC_ctrl_inst/un2_da_send: 5 loads, 5 LSLICEs
+     Net CLK_gen_inst/s_CKEN10k: 2 loads, 2 LSLICEs
+     Net CLK_gen_inst/s_CKEN5M: 2 loads, 2 LSLICEs
+     Net slv_com/m4_e: 1 loads, 1 LSLICEs
+     Net slv_com/cds_inst/N_4: 1 loads, 1 LSLICEs
+     Net slv_com/clk2An_cntr[8]: 5 loads, 5 LSLICEs
+     Net slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/crc_en_RNO: 1
+     loads, 1 LSLICEs
+     Net slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/kerr_RNO: 1 loads,
+     1 LSLICEs
+     Net slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/rxdt_counte: 2
+     loads, 2 LSLICEs
+     Net slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/un1_valid: 1 loads,
+     1 LSLICEs
+     Net slv_com/rx_com_inst/rx_cont_b2_inst/DATA_LD: 1 loads, 1 LSLICEs
+     Net slv_com/rx_com_inst/rx_cont_b2_inst/crc_check_inst/un1_crcck_en_0: 8
+     loads, 8 LSLICEs
+     Net slv_com/rx_com_inst/rx_cont_b2_inst/crc_check_inst/crc_error_RNO: 1
+     loads, 1 LSLICEs
+     Net slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/wren_i: 14
+     loads, 12 LSLICEs
+
+     Net slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/rden_i: 14
+     loads, 12 LSLICEs
+     Net slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/wren_i: 14
+     loads, 12 LSLICEs
+     Net slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/rden_i: 14
+     loads, 12 LSLICEs
+     Net slv_com/rx_com_inst/dec8b10b_wrapper_inst/dec8b10b_new_inst/ENB_BUF: 6
+     loads, 6 LSLICEs
+     Net slv_com/rx_com_inst/dec8b10b_wrapper_inst/enable_reg: 9 loads, 9
+     LSLICEs
+     Net slv_com/tx_com_inst/tx_cont_b2_inst/tx_ctl_3rd_inst/un4_st_count: 1
+     loads, 1 LSLICEs
+     Net slv_com/tx_com_inst/tx_cont_b2_inst/tx_ctl_3rd_inst/dt_load: 1 loads, 1
+     LSLICEs
+     Net slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/wren_i: 14
+     loads, 12 LSLICEs
+     Net slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/rden_i: 14
+     loads, 12 LSLICEs
+     Net slv_com/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst/txdt_counte: 2
+     loads, 2 LSLICEs
+     Net slv_com/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst/un32_dn_count: 1
+     loads, 1 LSLICEs
+     Net slv_com/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst/un28_dn_count: 1
+     loads, 1 LSLICEs
+     Net slv_com/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst/un6_hub_en: 1
+     loads, 1 LSLICEs
+     Net slv_com/tx_com_inst/tx_cont_b1_inst/CRCCK_EN: 5 loads, 5 LSLICEs
+     Net slv_com/tx_com_inst/tx_cont_b1_inst/LATCH_EN: 4 loads, 4 LSLICEs
+     Net slv_com/tx_com_inst/tx_cont_b1_inst/DATA_LD: 1 loads, 1 LSLICEs
+     Net slv_com/tx_com_inst/tx_cont_b1_inst/crc_gen_inst/un1_crcck_en: 8 loads,
+     8 LSLICEs
+     Net slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/wren_i: 14
+     loads, 12 LSLICEs
+     Net slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/rden_i: 14
+     loads, 12 LSLICEs
+     Net slv_com/TX_FULL: 3 loads, 3 LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/un1_rx_empty_2_i[0]: 1
+     loads, 1 LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_317_i: 1 loads, 1 LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/wren_dce[0]: 4 loads, 4
+     LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/wren_dce[8]: 4 loads, 4
+     LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/wren_dce[16]: 4 loads, 4
+     LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_373: 4 loads, 4 LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_50_i: 1 loads, 1 LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/un1_STATE_20_i: 1 loads, 1
+     LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_360_i: 4 loads, 4 LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/STATE[9]: 5 loads, 5 LSLICEs
+     
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/STATE[6]: 6 loads, 6 LSLICEs
+     
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/STATE[8]: 4 loads, 4 LSLICEs
+     
+
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_320_i: 1 loads, 1 LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/un1_STATE_12_0: 1 loads, 1
+     LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/un1_STATE_13_0: 1 loads, 1
+     LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_35_i: 4 loads, 4 LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_93: 7 loads, 7 LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/un1_STATE_14_0: 1 loads, 1
+     LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_tx_ctrl_inst/LAe: 5 loads, 5 LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_tx_ctrl_inst/TX_WRENB_O_1: 4 loads, 4
+     LSLICEs
+     Net slv_com/slv_ctrl_top_inst/slv_tx_ctrl_inst/un1_STATE_15_0_0: 1 loads, 1
+     LSLICEs
+     Net slv_com/rst_cnt_inst/clk2Ap_cntr[8]: 5 loads, 5 LSLICEs
+     Net slv_com/rst_cnt_inst/clk2n_cntr[8]: 5 loads, 5 LSLICEs
+     Net slv_com/rst_cnt_inst/clk2p_cntr[8]: 5 loads, 5 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/trig_u/tu_0/op_code7: 2 loads, 2
+     LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/trig_u/tu_0/mask_reg[0]_0_sqmuxa:
+     2 loads, 2 LSLICEs
+     Net
+     sp0565_reveal_coretop_instance/core0/trig_u/tu_0/compare_reg[0]_0_sqmuxa: 2
+     loads, 2 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/trig_u/te_0/tt_wr_addr_cntr_1_sqmu
+     xa_i_0: 1 loads, 1 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/trig_u/te_0/un1_tt_end_1_0: 1
+     loads, 1 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/trig_u/te_0/tt_prog_active_1_sqmux
+     a_1_i_0: 1 loads, 1 LSLICEs
+     Net
+     sp0565_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val_0_sqmuxa: 8
+     loads, 8 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/trig_u/te_0/te_precnte: 8 loads, 8
+     LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/trig_u/te_0/cnt_contig_reg_wen_1:
+     1 loads, 1 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/trig_u/te_0/num_then_wen_1: 1
+     loads, 1 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/trig_u/te_0/next_then_reg_wen_1: 1
+     loads, 1 LSLICEs
+     Net jtaghub16_ip_enable0: 24 loads, 24 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/trig_u/tcnt_0/reg2_0_sqmuxa: 1
+     loads, 1 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/trig_u/tcnt_0/reg1_0_sqmuxa: 2
+     loads, 2 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/trig_u/tcnt_0/reg0_read11: 1
+     loads, 1 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/trig_u/tcnt_0/reg0_0_sqmuxa: 2
+     loads, 2 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/jtag_int_u/addr_15_0_sqmuxa: 2
+     loads, 2 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/jtag_int_u/un3_jupdate_early_0_o2_
+     RNIK0JB: 11 loads, 11 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/jtag_int_u/N_8_i: 17 loads, 17
+     LSLICEs
+
+     Net sp0565_reveal_coretop_instance/core0/jtag_int_u/N_10_i: 1 loads, 1
+     LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/jtag_int_u/un1_jtdo_1_i_0: 8
+     loads, 8 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/jtag_int_u/N_790_i: 3 loads, 3
+     LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/jtag_int_u/un1_jtdo_4_i_0: 8
+     loads, 8 LSLICEs
+     Net
+     sp0565_reveal_coretop_instance/core0/jtag_int_u/parity_err_lat_0_sqmuxa: 1
+     loads, 1 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/jtag_int_u/cmd_block_extend_1_sqmu
+     xa_i_0: 1 loads, 1 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/jtag_int_u/capture_dr_d4_0_sqmuxa:
+     1 loads, 1 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/tm_u/N_574_i: 4 loads, 4 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/tm_u/sample_en_d: 11 loads, 11
+     LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/tm_u/N_569_i: 5 loads, 5 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/tm_u/N_50_i: 4 loads, 4 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/tm_u/trig_enbl_0_sqmuxa: 1 loads,
+     1 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/tm_u/trace_dout_1_sqmuxa_i: 12
+     loads, 12 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/tm_u/N_521_i: 5 loads, 5 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/tm_u/force_trig_0_sqmuxa_1: 1
+     loads, 1 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/tm_u/un1_rd_dout_tm51_i: 7 loads,
+     7 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/tm_u/pre_trig_cntre: 5 loads, 5
+     LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/tm_u/N_542_i: 5 loads, 5 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/tm_u/num_pre_trig_frm_0_sqmuxa: 4
+     loads, 4 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/tm_u/num_post_trig_frm_0_sqmuxa: 4
+     loads, 4 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/tm_u/force_trig_2_sqmuxa_i_0_0: 1
+     loads, 1 LSLICEs
+     Net jtaghub16_jupdate: 7 loads, 7 LSLICEs
+     Net sa5phub/id_enable_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net sa5phub/N_5_i: 10 loads, 10 LSLICEs
+   Number of local set/reset loads for net s_LRSTb merged into GSR:  1271
+   Number of LSRs:  34
+     Net PORb_c: 6 loads, 6 LSLICEs
+     Net slv_com.CLK_RSTb_OUT_i: 2 loads, 1 LSLICEs
+     Net slv_com.rx_com_inst.dec8b10b_wrapper_inst.reset_n_reg: 15 loads, 15
+     LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/un1_lrstb_2_0_a17: 1 loads, 1 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/un1_lrstb_4_0_a17: 1 loads, 1 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/un1_lrstb_5_0_a17: 1 loads, 1 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/un1_lrstb_1_0_a17: 1 loads, 1 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/un1_lrstb_6_0_a17: 1 loads, 1 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/un1_lrstb_3_0_a17: 1 loads, 1 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/N_151_i: 1 loads, 1 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/N_7_i: 1 loads, 1 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/N_152_i: 1 loads, 1 LSLICEs
+
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/N_53_i: 1 loads, 1 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/N_51_i: 1 loads, 1 LSLICEs
+     Net tmpctrl_4ch/tmpctrl_4ch_reg_inst/N_153_i: 1 loads, 1 LSLICEs
+     Net stm01.ppmc_reg_S118M_inst.N_698_i: 138 loads, 136 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/N_563_i: 5
+     loads, 5 LSLICEs
+     Net stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un1_ac
+     c_enb: 10 loads, 10 LSLICEs
+     Net ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/un1_encphase_a_1: 2
+     loads, 2 LSLICEs
+     Net ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/un1_lrstb_1: 2 loads,
+     2 LSLICEs
+     Net ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/un1_encphase_b_1: 2
+     loads, 2 LSLICEs
+     Net ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/un1_lrstb_2: 2 loads,
+     2 LSLICEs
+     Net slv_com/cds_inst/s_RSTb3_2An_i: 1 loads, 1 LSLICEs
+     Net slv_com/s_RSTb3_2n_i: 2 loads, 2 LSLICEs
+     Net slv_com/s_RSTb3_2Ap_i: 3 loads, 3 LSLICEs
+     Net slv_com.s_RSTb3_2p_i: 21 loads, 20 LSLICEs
+     Net slv_com/s_RSTb1_i: 201 loads, 197 LSLICEs
+     Net
+     slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/rx_data_c[10]: 1
+     loads, 1 LSLICEs
+     Net slv_com.TX_RSTb_i: 150 loads, 145 LSLICEs
+     Net slv_com/tx_com_inst/enc8b10b_wrapper_inst/reset_n_reg: 10 loads, 10
+     LSLICEs
+     Net slv_com/clk_gen_inst2/PLL_inst/s_RSTb2_i: 1 loads, 0 LSLICEs
+     Net slv_com/LOCKED: 30 loads, 30 LSLICEs
+     Net sp0565_reveal_coretop_instance/core0/reset_rvl_n: 99 loads, 98 LSLICEs
+     Net jtaghub16_jrstn: 135 loads, 135 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net slv_com/s_RSTb1_i: 201 loads
+     Net slv_com.TX_RSTb_i: 150 loads
+     Net jtaghub16_jrstn: 139 loads
+     Net stm01.ppmc_reg_S118M_inst.N_698_i: 138 loads
+     Net s_LA[0]: 104 loads
+     Net s_LA[3]: 102 loads
+     Net s_LA[1]: 101 loads
+     Net sp0565_reveal_coretop_instance/core0/reset_rvl_n: 99 loads
+     Net s_LA[2]: 93 loads
+     Net s_LA[4]: 92 loads
+
+
+
+
+   Number of warnings:  2
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: Using local reset signal 's_LRSTb' to infer global GSR net.
+WARNING - map: The reset of EBR 'sp0565_reveal_coretop_instance/core0/trig_u/te_
+
+     0/genblk1.te_tt_ebr_ram/pmi_ram_dpEbnonesadr112112p13063b8e_0_0_0' cannot
+     be controlled. The local reset is not connected to any control signal and
+     set to GND. The global reset is disabled via GSR property. To control the
+     EBR reset, either connect the local reset to a control signal or force the
+     GSR property to be enabled.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| UP_TXD              | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| CLK20M              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| FAN_ON[1]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| FAN_SNS[1]          | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| PUMPb[2]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PUMPb[1]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ACTb[6]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ACTb[5]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ACTb[4]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ACTb[3]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ACTb[2]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ACTb[1]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ENC_B[1]            | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| ENC_A[1]            | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| PTLEDb[2]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PTLEDb[1]           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PLS_SNS[2]          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PLS_SNS[1]          | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SNS[2]              | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| SNS[1]              | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| STM_LCCW[1]         | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| STM_LCW[1]          | INPUT     | LVCMOS33  | IN         |
+
++---------------------+-----------+-----------+------------+
+| ADC_MISO            | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| ADC_MOSI            | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| ADC_SCK             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| ADC_nCS             | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| nFLT_PLT            | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| PLT_MOSI            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PLT_SCLK            | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| PLT_SYNCb           | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| PLT_ON              | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| PLT_EN              | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| STM_nFAULT[1]       | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| STM_MOSI            | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| STM_SCLK            | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| STM_SYNCb           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| STM_M1              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| STM_M0Z             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| STM_M0S             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| STM_DIR             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| STM_EN              | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| STM_nSLP            | OUTPUT    | LVCMOS33  | OUT        |
++---------------------+-----------+-----------+------------+
+| STM_PCK[1]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| nFLT_SNSLED         | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| nFLT_LMT            | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| nFLT_PUMP           | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| nFLT_SV             | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| nFLT_PLSSNS         | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| nFLT_PLS            | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| PW_SNSLED_ON        | OUTPUT    | LVCMOS33  |            |
+
++---------------------+-----------+-----------+------------+
+| PW_LMT_ON           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PW_PUMP_ON          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PW_SV_ON            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PW_PLS_ON           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SLV_ER              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| UP_RXD              | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+| UP_CLK              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SLVADR[7]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SLVADR[6]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SLVADR[5]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SLVADR[4]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SLVADR[3]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SLVADR[2]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SLVADR[1]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SLVADR[0]           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| PORb                | INPUT     | LVCMOS33  | IN         |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block sa5phub/ip_enable[14] undriven or does not drive anything - clipped.
+Block sa5phub/ip_enable[13] undriven or does not drive anything - clipped.
+Block sa5phub/ip_enable[12] undriven or does not drive anything - clipped.
+Block VCC undriven or does not drive anything - clipped.
+Block sa5phub/GND_0 undriven or does not drive anything - clipped.
+Block sa5phub/ip_enable[15] undriven or does not drive anything - clipped.
+Block sa5phub/cdn undriven or does not drive anything - clipped.
+Block sp0565_reveal_coretop_instance/VCC_0 undriven or does not drive anything -
+     clipped.
+Block sp0565_reveal_coretop_instance/GND_0 undriven or does not drive anything -
+     clipped.
+Block sp0565_reveal_coretop_instance/core0/GND_0 undriven or does not drive
+     anything - clipped.
+Block sp0565_reveal_coretop_instance/core0/VCC_0 undriven or does not drive
+     anything - clipped.
+Block sp0565_reveal_coretop_instance/core0/tm_u/GND_0 undriven or does not drive
+     anything - clipped.
+Block sp0565_reveal_coretop_instance/core0/jtag_int_u/GND_0 undriven or does not
+     drive anything - clipped.
+
+Block sp0565_reveal_coretop_instance/core0/trig_u/GND_0 undriven or does not
+     drive anything - clipped.
+Block sp0565_reveal_coretop_instance/core0/trig_u/VCC_0 undriven or does not
+     drive anything - clipped.
+Block sp0565_reveal_coretop_instance/core0/trig_u/tcnt_0/VCC_0 undriven or does
+     not drive anything - clipped.
+Block sp0565_reveal_coretop_instance/core0/trig_u/tcnt_0/GND_0 undriven or does
+     not drive anything - clipped.
+Block sp0565_reveal_coretop_instance/core0/trig_u/te_0/genblk1.te_tt_ebr_ram/scu
+     ba_vhi_inst undriven or does not drive anything - clipped.
+Block sp0565_reveal_coretop_instance/core0/trig_u/tu_0/VCC_0 undriven or does
+     not drive anything - clipped.
+Block sp0565_reveal_coretop_instance/core0/trig_u/tu_0/GND_0 undriven or does
+     not drive anything - clipped.
+Block sp0565_reveal_coretop_instance/core0/trig_u/decode_u/VCC_0 undriven or
+     does not drive anything - clipped.
+Block sp0565_reveal_coretop_instance/core0/trig_u/decode_u/GND_0 undriven or
+     does not drive anything - clipped.
+Block slv_com/GND undriven or does not drive anything - clipped.
+Block slv_com/VCC undriven or does not drive anything - clipped.
+Block slv_com/rst_cnt_inst/GND undriven or does not drive anything - clipped.
+Block slv_com/slv_ctrl_top_inst/GND undriven or does not drive anything -
+     clipped.
+Block slv_com/slv_ctrl_top_inst/VCC undriven or does not drive anything -
+     clipped.
+Block slv_com/slv_ctrl_top_inst/slv_tx_ctrl_inst/GND undriven or does not drive
+     anything - clipped.
+Block slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/GND undriven or does not drive
+     anything - clipped.
+Block slv_com/slv_ctrl_top_inst/node_sel_inst/GND undriven or does not drive
+     anything - clipped.
+Block slv_com/slv_ctrl_top_inst/node_sel_inst/VCC undriven or does not drive
+     anything - clipped.
+Block slv_com/slv_ctrl_top_inst/adr_sel_inst/GND undriven or does not drive
+     anything - clipped.
+Block slv_com/slv_ctrl_top_inst/adr_sel_inst/VCC undriven or does not drive
+     anything - clipped.
+Block slv_com/slv_ctrl_top_inst/nd_sel_inst/GND undriven or does not drive
+     anything - clipped.
+Block slv_com/slv_ctrl_top_inst/nd_sel_inst/VCC undriven or does not drive
+     anything - clipped.
+Block slv_com/slvadr_cnv_inst/GND undriven or does not drive anything - clipped.
+     
+Block slv_com/clk_gen_inst2/GND undriven or does not drive anything - clipped.
+Block slv_com/clk_gen_inst2/VCC undriven or does not drive anything - clipped.
+Block slv_com/clk_gen_inst2/PLL_inst/VCC undriven or does not drive anything -
+     clipped.
+Block slv_com/tx_com_inst/GND undriven or does not drive anything - clipped.
+Block slv_com/tx_com_inst/VCC undriven or does not drive anything - clipped.
+Block slv_com/tx_com_inst/enc8b10b_wrapper_inst/GND undriven or does not drive
+     anything - clipped.
+Block slv_com/tx_com_inst/enc8b10b_wrapper_inst/VCC undriven or does not drive
+     anything - clipped.
+Block slv_com/tx_com_inst/enc8b10b_wrapper_inst/enc8b10b_new_inst/GND undriven
+     or does not drive anything - clipped.
+Block slv_com/tx_com_inst/enc8b10b_wrapper_inst/enc8b10b_new_inst/VCC undriven
+
+     or does not drive anything - clipped.
+Block slv_com/tx_com_inst/enc8b10b_wrapper_inst/enc8b10b_new_inst/enc8b_10b_inst
+     /GND undriven or does not drive anything - clipped.
+Block slv_com/tx_com_inst/enc8b10b_wrapper_inst/enc8b10b_new_inst/enc8b_10b_inst
+     /VCC undriven or does not drive anything - clipped.
+Block slv_com/tx_com_inst/enc8b10b_wrapper_inst/enc8b10b_new_inst/enc8b_10b_inst
+     /enc5b_6b_inst/GND undriven or does not drive anything - clipped.
+Block slv_com/tx_com_inst/enc8b10b_wrapper_inst/enc8b10b_new_inst/enc8b_10b_inst
+     /enc5b_6b_inst/VCC undriven or does not drive anything - clipped.
+Block slv_com/tx_com_inst/enc8b10b_wrapper_inst/enc8b10b_new_inst/enc8b_10b_inst
+     /enc3b_4b_inst/GND undriven or does not drive anything - clipped.
+Block slv_com/tx_com_inst/enc8b10b_wrapper_inst/enc8b10b_new_inst/enc8b_10b_inst
+     /enc3b_4b_inst/VCC undriven or does not drive anything - clipped.
+Block slv_com/tx_com_inst/tx_cont_b1_inst/GND undriven or does not drive
+     anything - clipped.
+Block slv_com/tx_com_inst/tx_cont_b1_inst/VCC undriven or does not drive
+     anything - clipped.
+Block slv_com/tx_com_inst/tx_cont_b1_inst/crc_gen_inst/GND undriven or does not
+     drive anything - clipped.
+Block slv_com/tx_com_inst/tx_cont_b1_inst/crc_gen_inst/VCC undriven or does not
+     drive anything - clipped.
+Block slv_com/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst/GND undriven or does
+     not drive anything - clipped.
+Block slv_com/tx_com_inst/tx_cont_b2_inst/GND undriven or does not drive
+     anything - clipped.
+Block slv_com/tx_com_inst/tx_cont_b2_inst/VCC undriven or does not drive
+     anything - clipped.
+Block slv_com/tx_com_inst/tx_cont_b2_inst/tx_ctl_3rd_inst/GND undriven or does
+     not drive anything - clipped.
+Block slv_com/tx_com_inst/tx_cont_b2_inst/tx_ctl_3rd_inst/VCC undriven or does
+     not drive anything - clipped.
+Block slv_com/rx_com_inst/GND undriven or does not drive anything - clipped.
+Block slv_com/rx_com_inst/VCC undriven or does not drive anything - clipped.
+Block slv_com/rx_com_inst/dec8b10b_wrapper_inst/GND undriven or does not drive
+     anything - clipped.
+Block slv_com/rx_com_inst/dec8b10b_wrapper_inst/VCC undriven or does not drive
+     anything - clipped.
+Block slv_com/rx_com_inst/dec8b10b_wrapper_inst/dec8b10b_new_inst/GND undriven
+     or does not drive anything - clipped.
+Block slv_com/rx_com_inst/dec8b10b_wrapper_inst/dec8b10b_new_inst/VCC undriven
+     or does not drive anything - clipped.
+Block slv_com/rx_com_inst/dec8b10b_wrapper_inst/dec8b10b_new_inst/dec6b_5b_inst/
+     GND undriven or does not drive anything - clipped.
+Block slv_com/rx_com_inst/dec8b10b_wrapper_inst/dec8b10b_new_inst/dec6b_5b_inst/
+     VCC undriven or does not drive anything - clipped.
+Block slv_com/rx_com_inst/dec8b10b_wrapper_inst/dec8b10b_new_inst/dec4b_3b_inst/
+     GND undriven or does not drive anything - clipped.
+Block slv_com/rx_com_inst/dec8b10b_wrapper_inst/dec8b10b_new_inst/dec4b_3b_inst/
+     VCC undriven or does not drive anything - clipped.
+Block slv_com/rx_com_inst/rx_cont_b1_inst/GND undriven or does not drive
+     anything - clipped.
+Block slv_com/rx_com_inst/rx_cont_b1_inst/VCC undriven or does not drive
+     anything - clipped.
+Block slv_com/rx_com_inst/rx_cont_b1_inst/rx_ctl_1st_inst/GND undriven or does
+     not drive anything - clipped.
+Block slv_com/rx_com_inst/rx_cont_b1_inst/rx_ctl_1st_inst/VCC undriven or does
+
+     not drive anything - clipped.
+Block slv_com/rx_com_inst/rx_cont_b2_inst/GND undriven or does not drive
+     anything - clipped.
+Block slv_com/rx_com_inst/rx_cont_b2_inst/VCC undriven or does not drive
+     anything - clipped.
+Block slv_com/rx_com_inst/rx_cont_b2_inst/crc_check_inst/GND undriven or does
+     not drive anything - clipped.
+Block slv_com/rx_com_inst/rx_cont_b2_inst/crc_check_inst/VCC undriven or does
+     not drive anything - clipped.
+Block slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/GND undriven or does
+     not drive anything - clipped.
+Block slv_com/cds_inst/GND undriven or does not drive anything - clipped.
+Block slv_com/cds_inst/VCC undriven or does not drive anything - clipped.
+Block CLK_gen_inst/GND undriven or does not drive anything - clipped.
+Block CLK_gen_inst/VCC undriven or does not drive anything - clipped.
+Block DAC081S101_inst/GND undriven or does not drive anything - clipped.
+Block DAC081S101_inst/log_ca_DAC_ctrl_inst/GND undriven or does not drive
+     anything - clipped.
+Block DAC081S101_inst/log_ca_DAC_ctrl_inst/VCC undriven or does not drive
+     anything - clipped.
+Block DAC081S101_inst/log_ca_DAC_ctrl_inst/log_ca_DACclk_gen_inst/GND undriven
+     or does not drive anything - clipped.
+Block DAC081S101_inst/log_ca_DAC_ctrl_inst/log_ca_DACclk_gen_inst/VCC undriven
+     or does not drive anything - clipped.
+Block DAC081S101_inst/log_ca_DAC_ctrl_inst/log_ca_DACif_seq_inst/GND undriven or
+     does not drive anything - clipped.
+Block DAC081S101_inst/log_ca_DAC_ctrl_inst/log_ca_DACif_seq_inst/VCC undriven or
+     does not drive anything - clipped.
+Block ADC_CONT/GND undriven or does not drive anything - clipped.
+Block ADC_CONT/VCC undriven or does not drive anything - clipped.
+Block ADC_CONT/adclk_gen_inst/GND undriven or does not drive anything - clipped.
+     
+Block ADC_CONT/adclk_gen_inst/VCC undriven or does not drive anything - clipped.
+     
+Block ADC_CONT/adif_seq_inst/GND undriven or does not drive anything - clipped.
+Block ADC_CONT/adif_seq_inst/VCC undriven or does not drive anything - clipped.
+Block ADC_CONT/shiftreg12bit_inst/GND undriven or does not drive anything -
+     clipped.
+Block ADC_CONT/shiftreg12bit_inst/VCC undriven or does not drive anything -
+     clipped.
+Block ADC_CONT/adc_reg_inst/GND undriven or does not drive anything - clipped.
+Block ADC_CONT/adc_reg_inst/VCC undriven or does not drive anything - clipped.
+Block ENC_inst/GND undriven or does not drive anything - clipped.
+Block ENC_inst/VCC undriven or does not drive anything - clipped.
+Block ENC_inst/\enc_func(1).enc_top_inst\/GND undriven or does not drive
+     anything - clipped.
+Block ENC_inst/\enc_func(1).enc_top_inst\/VCC undriven or does not drive
+     anything - clipped.
+Block ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/GND undriven or does not
+     drive anything - clipped.
+Block ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/GND undriven or does not
+     drive anything - clipped.
+Block pulse_sensor/GND undriven or does not drive anything - clipped.
+Block pulse_sensor/VCC undriven or does not drive anything - clipped.
+Block pulse_sensor/ring_counter_inst/GND undriven or does not drive anything -
+     clipped.
+
+Block linear_signal_ctrl_inst_ch0/GND undriven or does not drive anything -
+     clipped.
+Block linear_signal_ctrl_inst_ch0/VCC undriven or does not drive anything -
+     clipped.
+Block ad5270_5271_ctrl_inst_ch0/GND undriven or does not drive anything -
+     clipped.
+Block ad5270_5271_ctrl_inst_ch0/VCC undriven or does not drive anything -
+     clipped.
+Block stm01/GND undriven or does not drive anything - clipped.
+Block stm01/VCC undriven or does not drive anything - clipped.
+Block stm01/fc_dec_inst/GND undriven or does not drive anything - clipped.
+Block stm01/fc_dec_inst/VCC undriven or does not drive anything - clipped.
+Block stm01/fc_sel_inst/GND undriven or does not drive anything - clipped.
+Block stm01/fc_sel_inst/VCC undriven or does not drive anything - clipped.
+Block stm01/ppmc_reg_S118M_inst/GND undriven or does not drive anything -
+     clipped.
+Block stm01/ppmc_reg_S118M_inst/VCC undriven or does not drive anything -
+     clipped.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_u_step_ext/GND undriven or does not
+     drive anything - clipped.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_u_step_ext/VCC undriven or does not
+     drive anything - clipped.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/GND undriven or does not drive
+     anything - clipped.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/VCC undriven or does not drive
+     anything - clipped.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/GND
+     undriven or does not drive anything - clipped.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/GND
+     undriven or does not drive anything - clipped.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/GND
+     undriven or does not drive anything - clipped.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/GND undriven
+     or does not drive anything - clipped.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/GND undriven or does not drive
+     anything - clipped.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_rgstr/VCC undriven or does not drive
+     anything - clipped.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_enblr/GND undriven or does not drive
+     anything - clipped.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/GND undriven or does not drive
+     anything - clipped.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/GND undriven or does not drive anything - clipped.
+Block gpio01/VCC undriven or does not drive anything - clipped.
+Block gpio01/fc_dec_inst/GND undriven or does not drive anything - clipped.
+Block gpio01/fc_dec_inst/VCC undriven or does not drive anything - clipped.
+Block gpio01/fc_sel_inst/GND undriven or does not drive anything - clipped.
+Block gpio01/fc_sel_inst/VCC undriven or does not drive anything - clipped.
+Block gpio01/gpio_reg_inst/GND undriven or does not drive anything - clipped.
+Block gpio01/gpio_reg_inst/VCC undriven or does not drive anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst0/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst0/VCC undriven or does not drive
+     anything - clipped.
+
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst1/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst1/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst2/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst2/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst3/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst3/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst4/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst4/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst5/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst5/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst6/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst6/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst7/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst7/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst8/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst8/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst9/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst9/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst10/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst10/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst11/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst11/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst12/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst12/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst13/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst13/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst16/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst16/VCC undriven or does not drive
+     anything - clipped.
+
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst16/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst16/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst17/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst17/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst17/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst17/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst18/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst18/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst18/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst18/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst19/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst19/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst19/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst19/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst20/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst20/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst20/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst20/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst21/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst21/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst21/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst21/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst22/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst22/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst22/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst22/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst23/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst23/VCC undriven or does not drive
+     anything - clipped.
+
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst23/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst23/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst24/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst24/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst24/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst24/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst25/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_op_reg_inst25/VCC undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst25/GND undriven or does not drive
+     anything - clipped.
+Block gpio01/gpio_reg_inst/gpio_ip_reg_inst25/VCC undriven or does not drive
+     anything - clipped.
+Block tmpctrl_4ch/GND undriven or does not drive anything - clipped.
+Block tmpctrl_4ch/VCC undriven or does not drive anything - clipped.
+Block tmpctrl_4ch/fc_dec_inst/GND undriven or does not drive anything - clipped.
+     
+Block tmpctrl_4ch/fc_dec_inst/VCC undriven or does not drive anything - clipped.
+     
+Block tmpctrl_4ch/fc_sel_inst/GND undriven or does not drive anything - clipped.
+     
+Block tmpctrl_4ch/fc_sel_inst/VCC undriven or does not drive anything - clipped.
+     
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/GND undriven or does not drive anything -
+     clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/VCC undriven or does not drive anything -
+     clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_meas_reg_inst/GND undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_meas_reg_inst/VCC undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ref_reg_inst/GND undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ref_reg_inst/VCC undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ajst_reg_inst/GND undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ajst_reg_inst/VCC undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctst_reg_inst/GND undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctst_reg_inst/VCC undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_idlm_reg_inst/GND undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_idlm_reg_inst/VCC undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_prm_sel_inst/GND undriven or does
+     not drive anything - clipped.
+
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_prm_sel_inst/VCC undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_edge_dtct_inst/GND undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_edge_dtct_inst/VCC undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/GND undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/GND undriven or does not
+     drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsnum_reg_inst/GND undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsnum_reg_inst/VCC undriven or does
+     not drive anything - clipped.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsgen_inst/GND undriven or does not
+     drive anything - clipped.
+Block node15/GND undriven or does not drive anything - clipped.
+Block node15/VCC undriven or does not drive anything - clipped.
+Block node15/fc_sel_inst/GND undriven or does not drive anything - clipped.
+Block node15/fc_sel_inst/VCC undriven or does not drive anything - clipped.
+Signal sa5phub/jrstn_i was merged into signal jtaghub16_jrstn
+Signal sa5phub/cdn.CN was merged into signal jtaghub16_jtck
+Signal sa5phub/jtdo2_int_bm_RNO_2 was merged into signal sa5phub/ip_enable[5]
+Signal PORb_c_i was merged into signal PORb_c
+Signal sp0565_reveal_coretop_instance/core0/tm_u/jrstn_i was merged into signal
+     jtaghub16_jrstn
+Signal sp0565_reveal_coretop_instance/core0/tm_u/jtck_i was merged into signal
+     jtaghub16_jtck
+Signal sp0565_reveal_coretop_instance/core0/tm_u/reset_n_i was merged into
+     signal sp0565_reveal_coretop_instance/core0/reset_rvl_n
+Signal sp0565_reveal_coretop_instance/core0/jtag_int_u/r_w.CN was merged into
+     signal jtaghub16_jtck
+Signal sp0565_reveal_coretop_instance/core0/jtag_int_u/jrstn_i was merged into
+     signal jtaghub16_jrstn
+Signal sp0565_reveal_coretop_instance/core0/jtag_int_u/reset_n_i was merged into
+     signal sp0565_reveal_coretop_instance/core0/reset_rvl_n
+Signal sp0565_reveal_coretop_instance/core0/trig_u/tcnt_0/reset_n_i was merged
+     into signal sp0565_reveal_coretop_instance/core0/reset_rvl_n
+Signal sp0565_reveal_coretop_instance/core0/trig_u/te_0/jshift_d2.CN was merged
+     into signal jtaghub16_jtck
+Signal sp0565_reveal_coretop_instance/core0/trig_u/te_0/jrstn_i was merged into
+     signal jtaghub16_jrstn
+Signal sp0565_reveal_coretop_instance/core0/trig_u/te_0/reset_n_i was merged
+     into signal sp0565_reveal_coretop_instance/core0/reset_rvl_n
+Signal sp0565_reveal_coretop_instance/core0/trig_u/tu_0/reset_n_i was merged
+     into signal sp0565_reveal_coretop_instance/core0/reset_rvl_n
+Signal slv_com/rst_cnt_inst/clk2An_cntr_i[8] was merged into signal
+     slv_com/clk2An_cntr[8]
+Signal slv_com/rst_cnt_inst/clk2Ap_cntr_i[8] was merged into signal
+     slv_com/rst_cnt_inst/clk2Ap_cntr[8]
+Signal slv_com/rst_cnt_inst/clk2n_cntr_i[8] was merged into signal
+     slv_com/rst_cnt_inst/clk2n_cntr[8]
+Signal slv_com/rst_cnt_inst/clk2p_cntr_i[8] was merged into signal
+     slv_com/rst_cnt_inst/clk2p_cntr[8]
+Signal slv_com/rst_cnt_inst/CLK_RSTb_OUT_i_i was merged into signal
+     slv_com.CLK_RSTb_OUT_i
+
+Signal s_LRSTb_i was merged into signal s_LRSTb
+Signal slv_com/tx_com_inst/enc8b10b_wrapper_inst/reset_n_reg_i was merged into
+     signal slv_com/tx_com_inst/enc8b10b_wrapper_inst/reset_n_reg
+Signal slv_com/CN_1 was merged into signal slv_com.CLK1
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/invout_0 was
+     merged into signal slv_com/tx_com_inst/tx_cont_b1_inst/TX_WREMPTY
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/invout_1 was
+     merged into signal slv_com/TX_FULL
+Signal slv_com/TX_FULL_i was merged into signal slv_com/TX_FULL
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/rRst was merged
+     into signal slv_com.TX_RSTb_i
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/rRst was merged
+     into signal slv_com.TX_RSTb_i
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/invout_0 was
+     merged into signal slv_com/tx_com_inst/tx_cont_b2_inst/TXCF_RDEMPTY
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/invout_1 was
+     merged into signal
+     slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/Full
+Signal slv_com/rx_com_inst/dec8b10b_wrapper_inst/reset_n_reg_i was merged into
+     signal slv_com.rx_com_inst.dec8b10b_wrapper_inst.reset_n_reg
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/rRst was merged
+     into signal slv_com/s_RSTb1_i
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/invout_0 was
+     merged into signal
+     slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/RXCF_RDEMPTY
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/invout_1 was
+     merged into signal
+     slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/Full
+Signal slv_com/rx_com_inst/rx_data_c_i[10] was merged into signal
+     slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/rx_data_c[10]
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/rRst was merged
+     into signal slv_com/s_RSTb1_i
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/invout_0 was
+     merged into signal slv_com/RX_EMPTY
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/invout_1 was
+     merged into signal
+     slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/Full
+Signal slv_com/CN_0 was merged into signal slv_com.CLKCOM_OUT
+Signal slv_com/CN was merged into signal slv_com/CLK2A
+Signal sa5phub/ip_enable[14] undriven or does not drive anything - clipped.
+Signal sa5phub/ip_enable[13] undriven or does not drive anything - clipped.
+Signal sa5phub/ip_enable[12] undriven or does not drive anything - clipped.
+Signal sa5phub/jtdo2_int_m5_bm undriven or does not drive anything - clipped.
+Signal sa5phub/VCC undriven or does not drive anything - clipped.
+Signal sa5phub/jtdo2_int_m0 undriven or does not drive anything - clipped.
+Signal sa5phub/jtdo2_int_m1 undriven or does not drive anything - clipped.
+Signal sa5phub/jtdo2_int_m4 undriven or does not drive anything - clipped.
+Signal sa5phub/jtdo2_int_m7 undriven or does not drive anything - clipped.
+Signal sa5phub/jtdo2_int_bm_RNO_1 undriven or does not drive anything - clipped.
+     
+Signal GND undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/VCC undriven or does not drive
+     anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/genblk4.tr_mem/scuba_vlo
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/genblk4.tr_mem/scuba_vhi
+
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/jtag_int_u/VCC undriven or does not
+     drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/trig_u/te_0/VCC undriven or does not
+     drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/trig_u/rd_dout_te[1] undriven or
+     does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/trig_u/te_0/genblk1.te_tt_ebr_ram/sc
+     uba_vlo undriven or does not drive anything - clipped.
+Signal slv_com/rst_cnt_inst/VCC undriven or does not drive anything - clipped.
+Signal slv_com/slv_ctrl_top_inst/slv_tx_ctrl_inst/VCC undriven or does not drive
+     anything - clipped.
+Signal slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/VCC undriven or does not drive
+     anything - clipped.
+Signal slv_com/slvadr_cnv_inst/VCC undriven or does not drive anything -
+     clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/VCC undriven or
+     does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst/VCC undriven or does
+     not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/VCC undriven or
+     does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/VCC undriven or
+     does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/VCC undriven or
+     does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/VCC undriven or does
+     not drive anything - clipped.
+Signal DAC081S101_inst/VCC undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/VCC undriven or does not
+     drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/VCC undriven or does not
+     drive anything - clipped.
+Signal pulse_sensor/ring_counter_inst/VCC undriven or does not drive anything -
+     clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/VCC
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/VCC
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/VCC
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/VCC undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_enblr/VCC undriven or does not drive
+     anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/VCC undriven or does not drive
+     anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/VCC undriven or does not drive
+     anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/VCC undriven or does
+     not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/VCC undriven or does not
+     drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsgen_inst/VCC undriven or does
+     not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+
+Signal sa5phub/rom_rd_addr_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal sa5phub/N_1 undriven or does not drive anything - clipped.
+Signal sa5phub/bit_count_cry_0_COUT[3] undriven or does not drive anything -
+     clipped.
+Signal sa5phub/bit_count_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal sa5phub/N_2 undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[15] undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[14] undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[13] undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[12] undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[10] undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[9] undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[7] undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[6] undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[1] undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[11] undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[4] undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[3] undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[5] undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[2] undriven or does not drive anything - clipped.
+Signal sa5phub/er2_tdo[8] undriven or does not drive anything - clipped.
+Signal sa5phub/ip_enable[15] undriven or does not drive anything - clipped.
+Signal sa5phub/genblk8.un1_jtagg_u undriven or does not drive anything -
+     clipped.
+Signal sa5phub/genblk8.un1_jtagg_u_1 undriven or does not drive anything -
+     clipped.
+Signal sa5phub/tdoa undriven or does not drive anything - clipped.
+Signal sa5phub/tdia undriven or does not drive anything - clipped.
+Signal sa5phub/tmsa undriven or does not drive anything - clipped.
+Signal sa5phub/tcka undriven or does not drive anything - clipped.
+Signal sa5phub/cdn undriven or does not drive anything - clipped.
+Signal sa5phub/rom_rd_addr_s_0_S1[7] undriven or does not drive anything -
+     clipped.
+Signal sa5phub/rom_rd_addr_s_0_COUT[7] undriven or does not drive anything -
+     clipped.
+Signal sp0565_reveal_coretop_instance/core0/GND undriven or does not drive
+     anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/VCC undriven or does not drive
+     anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/rd_dout_tm[12] undriven or does not
+     drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/post_trig_cntr_s_0_S1[7]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/post_trig_cntr_s_0_COUT[7]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/post_trig_cntr_cry_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/N_1 undriven or does not drive
+     anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/pre_trig_cntr_s_0_S1[7]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/pre_trig_cntr_s_0_COUT[7]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/pre_trig_cntr_cry_0_S0[0]
+
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/N_2 undriven or does not drive
+     anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/tm_rd_addr_cntr_s_0_S1[7]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/tm_rd_addr_cntr_s_0_COUT[7]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/tm_rd_addr_cntr_cry_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/N_3 undriven or does not drive
+     anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/tm_wr_addr_cntr_s_0_S1[7]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/tm_wr_addr_cntr_s_0_COUT[7]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/tm_wr_addr_cntr_cry_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/tm_u/N_4 undriven or does not drive
+     anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/ren_jtck undriven or does not drive
+     anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/jtag_int_u/tr_dout_bit_cnt_cry_0_COU
+     T[3] undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/jtag_int_u/tr_dout_bit_cnt_cry_0_S0[
+     0] undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/jtag_int_u/N_1 undriven or does not
+     drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/jtag_int_u/bit_cnt_s_0_S1[5]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/jtag_int_u/bit_cnt_s_0_COUT[5]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/jtag_int_u/bit_cnt_cry_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/jtag_int_u/N_2 undriven or does not
+     drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/trig_u/GND undriven or does not
+     drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/trig_u/VCC undriven or does not
+     drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/trig_u/rd_dout_tcnt[4] undriven or
+     does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_s_s0_0_S1[15]
+     undriven or does not drive anything - clipped.
+Signal
+     sp0565_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_s_s0_0_COUT[15]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_cry_s0_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/trig_u/te_0/N_1 undriven or does not
+     drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/trig_u/te_0/genblk1.te_tt_ebr_ram/sc
+     uba_vhi undriven or does not drive anything - clipped.
+Signal sp0565_reveal_coretop_instance/core0/trig_u/rd_dout_tu[4] undriven or
+     does not drive anything - clipped.
+Signal slv_com/rst_cnt_inst/clk2An_cntr_cry_0_COUT[7] undriven or does not drive
+     anything - clipped.
+
+Signal slv_com/rst_cnt_inst/clk2An_cntr_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal slv_com/rst_cnt_inst/N_1 undriven or does not drive anything - clipped.
+Signal slv_com/rst_cnt_inst/clk2Ap_cntr_cry_0_COUT[7] undriven or does not drive
+     anything - clipped.
+Signal slv_com/rst_cnt_inst/clk2Ap_cntr_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal slv_com/rst_cnt_inst/N_2 undriven or does not drive anything - clipped.
+Signal slv_com/rst_cnt_inst/clk2n_cntr_cry_0_COUT[7] undriven or does not drive
+     anything - clipped.
+Signal slv_com/rst_cnt_inst/clk2n_cntr_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal slv_com/rst_cnt_inst/N_3 undriven or does not drive anything - clipped.
+Signal slv_com/rst_cnt_inst/clk2p_cntr_cry_0_COUT[7] undriven or does not drive
+     anything - clipped.
+Signal slv_com/rst_cnt_inst/clk2p_cntr_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal slv_com/rst_cnt_inst/N_4 undriven or does not drive anything - clipped.
+Signal slv_com/rst_cnt_inst/clk_cntr_cry_0_COUT[7] undriven or does not drive
+     anything - clipped.
+Signal slv_com/rst_cnt_inst/clk_cntr_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal slv_com/rst_cnt_inst/N_5 undriven or does not drive anything - clipped.
+Signal slv_com/slv_ctrl_top_inst/slv_tx_ctrl_inst/LA_cry_0_COUT[3] undriven or
+     does not drive anything - clipped.
+Signal slv_com/slv_ctrl_top_inst/slv_tx_ctrl_inst/LA_cry_0_S0[0] undriven or
+     does not drive anything - clipped.
+Signal slv_com/slv_ctrl_top_inst/slv_tx_ctrl_inst/N_2 undriven or does not drive
+     anything - clipped.
+Signal slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/LA_cry_0_COUT_0[3] undriven or
+     does not drive anything - clipped.
+Signal slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/LA_cry_0_S0_0[0] undriven or
+     does not drive anything - clipped.
+Signal slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/N_23 undriven or does not
+     drive anything - clipped.
+Signal slv_com/slvadr_cnv_inst/un15_s3_cry_4_0_COUT undriven or does not drive
+     anything - clipped.
+Signal slv_com/slvadr_cnv_inst/un15_s3_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal slv_com/slvadr_cnv_inst/un15_s3_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal slv_com/slvadr_cnv_inst/N_1 undriven or does not drive anything -
+     clipped.
+Signal slv_com/clk_gen_inst2/PLL_inst/CLKINTFB undriven or does not drive
+     anything - clipped.
+Signal slv_com/clk_gen_inst2/PLL_inst/REFCLK undriven or does not drive anything
+     - clipped.
+Signal slv_com/clk_gen_inst2/PLL_inst/INTLOCK undriven or does not drive
+     anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/a1_S1 undriven or
+     does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/a1_COUT undriven
+     or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/full_cmp_3_S1
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/full_cmp_3_S0
+
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/full_cmp_2_S1
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/full_cmp_2_S0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/full_cmp_1_S1
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/full_cmp_1_S0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/full_cmp_0_S1
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/full_cmp_0_S0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/full_cmp_ci_a_S1
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/full_cmp_ci_a_S0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/CIN undriven or
+     does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/a0_S1 undriven or
+     does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/a0_COUT undriven
+     or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/empty_cmp_3_S1
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/empty_cmp_3_S0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/empty_cmp_2_S1
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/empty_cmp_2_S0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/empty_cmp_1_S1
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/empty_cmp_1_S0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/empty_cmp_0_S1
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/empty_cmp_0_S0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/empty_cmp_ci_a_S1
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/empty_cmp_ci_a_S0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/CIN_0 undriven or
+     does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/r_gctr_3_S1
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/co3_1 undriven or
+     does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/r_gctr_cia_S1
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/r_gctr_cia_S0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/CIN_1 undriven or
+     does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/w_gctr_3_S1
+
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/co3 undriven or
+     does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/w_gctr_cia_S1
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/w_gctr_cia_S0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/CIN_2 undriven or
+     does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB17
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB16
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB15
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB14
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB13
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB12
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB11
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB10
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB9
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB8
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA17
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA16
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA15
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA14
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA13
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA12
+     undriven or does not drive anything - clipped.
+Signal
+
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA11
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA10
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA9
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA8
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA7
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA6
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA5
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA4
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA3
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA2
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA1
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst/un1_dn_count_2_s_7_0_
+     S1 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst/un1_dn_count_2_s_7_0_
+     COUT undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst/un1_dn_count_2_cry_0_
+     0_S1 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst/un1_dn_count_2_cry_0_
+     0_S0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst/N_1 undriven or does
+     not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/a1_S1_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/a1_COUT_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/full_cmp_3_S1_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/full_cmp_3_S0_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/full_cmp_2_S1_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/full_cmp_2_S0_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/full_cmp_1_S1_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/full_cmp_1_S0_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/full_cmp_0_S1_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/full_cmp_0_S0_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/full_cmp_ci_a_S
+
+     1_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/full_cmp_ci_a_S
+     0_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/CIN undriven or
+     does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/a0_S1_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/a0_COUT_0
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/empty_cmp_3_S1_0
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/empty_cmp_3_S0_0
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/empty_cmp_2_S1_0
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/empty_cmp_2_S0_0
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/empty_cmp_1_S1_0
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/empty_cmp_1_S0_0
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/empty_cmp_0_S1_0
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/empty_cmp_0_S0_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/empty_cmp_ci_a_
+     S1_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/empty_cmp_ci_a_
+     S0_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/CIN_0 undriven
+     or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/r_gctr_3_S1_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/co3_1 undriven
+     or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/r_gctr_cia_S1_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/r_gctr_cia_S0_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/CIN_1 undriven
+     or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/w_gctr_3_S1_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/co3 undriven or
+     does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/w_gctr_cia_S1_0
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/w_gctr_cia_S0_0
+
+     undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/CIN_2 undriven
+     or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB17_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB16_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB15_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB14_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB13_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB12_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB11_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB10_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA17_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA16_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA15_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA14_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA13_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA12_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA11_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA10_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA9_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA8_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA7_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA6_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA5_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA4_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA3_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA2_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA1_0 undriven or does not drive anything - clipped.
+Signal slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA0_0 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/a1_S1_1
+
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/a1_COUT_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/full_cmp_3_S1_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/full_cmp_3_S0_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/full_cmp_2_S1_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/full_cmp_2_S0_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/full_cmp_1_S1_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/full_cmp_1_S0_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/full_cmp_0_S1_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/full_cmp_0_S0_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/full_cmp_ci_a_S
+     1_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/full_cmp_ci_a_S
+     0_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/CIN undriven or
+     does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/a0_S1_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/a0_COUT_1
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/empty_cmp_3_S1_1
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/empty_cmp_3_S0_1
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/empty_cmp_2_S1_1
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/empty_cmp_2_S0_1
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/empty_cmp_1_S1_1
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/empty_cmp_1_S0_1
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/empty_cmp_0_S1_1
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/empty_cmp_0_S0_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/empty_cmp_ci_a_
+     S1_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/empty_cmp_ci_a_
+
+     S0_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/CIN_0 undriven
+     or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/r_gctr_3_S1_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/co3_1 undriven
+     or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/r_gctr_cia_S1_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/r_gctr_cia_S0_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/CIN_1 undriven
+     or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/w_gctr_3_S1_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/co3 undriven or
+     does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/w_gctr_cia_S1_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/w_gctr_cia_S0_1
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/CIN_2 undriven
+     or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB17_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB16_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB15_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB14_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB13_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB12_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OB11_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA17_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA16_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA15_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA14_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA13_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA12_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA11_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA10_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA9_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+
+     OA8_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA7_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA6_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA5_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA4_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA3_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA2_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA1_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_D
+     OA0_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/a1_S1_2 undriven
+     or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/a1_COUT_2 undriven
+     or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/full_cmp_3_S1_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/full_cmp_3_S0_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/full_cmp_2_S1_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/full_cmp_2_S0_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/full_cmp_1_S1_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/full_cmp_1_S0_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/full_cmp_0_S1_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/full_cmp_0_S0_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/full_cmp_ci_a_S1_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/full_cmp_ci_a_S0_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/CIN undriven or
+     does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/a0_S1_2 undriven
+     or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/a0_COUT_2 undriven
+     or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/empty_cmp_3_S1_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/empty_cmp_3_S0_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/empty_cmp_2_S1_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/empty_cmp_2_S0_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/empty_cmp_1_S1_2
+
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/empty_cmp_1_S0_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/empty_cmp_0_S1_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/empty_cmp_0_S0_2
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/empty_cmp_ci_a_S1_2
+     undriven or does not drive anything - clipped.
+Signal
+     slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/empty_cmp_ci_a_S0_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/CIN_0 undriven or
+     does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/r_gctr_3_S1_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/co3_1 undriven or
+     does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/r_gctr_cia_S1_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/r_gctr_cia_S0_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/CIN_1 undriven or
+     does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/w_gctr_3_S1_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/co3 undriven or
+     does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/w_gctr_cia_S1_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/w_gctr_cia_S0_2
+     undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/CIN_2 undriven or
+     does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB1
+     7_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB1
+     6_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB1
+     5_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB1
+     4_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB1
+     3_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB1
+     2_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB1
+     1_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB1
+     0_1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB9
+     _0 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOB8
+     _0 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA1
+
+     7_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA1
+     6_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA1
+     5_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA1
+     4_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA1
+     3_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA1
+     2_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA1
+     1_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA1
+     0_2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA9
+     _2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA8
+     _2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA7
+     _2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA6
+     _2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA5
+     _2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA4
+     _2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA3
+     _2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA2
+     _2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA1
+     _2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0_DOA0
+     _2 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/un1_dn_count_3_s_7_0_
+     S1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/un1_dn_count_3_s_7_0_
+     COUT undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/un1_dn_count_3_cry_0_
+     0_S1 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/un1_dn_count_3_cry_0_
+     0_S0 undriven or does not drive anything - clipped.
+Signal slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/N_1 undriven or does
+     not drive anything - clipped.
+Signal DAC081S101_inst/un8_s_p_data_1d_0_I_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal DAC081S101_inst/un8_s_p_data_1d_0_I_9_0_S0 undriven or does not drive
+     anything - clipped.
+Signal DAC081S101_inst/un8_s_p_data_1d_0_I_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal DAC081S101_inst/un8_s_p_data_1d_0_I_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal DAC081S101_inst/N_1 undriven or does not drive anything - clipped.
+Signal DAC081S101_inst/un8_s_p_data_1d_0_I_21_0_S0 undriven or does not drive
+     anything - clipped.
+
+Signal DAC081S101_inst/un8_s_p_data_1d_0_I_21_0_COUT undriven or does not drive
+     anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/encdat_cry_0_COUT[14]
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/encdat_lcry_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/encdat_lcry_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/N_1 undriven or does not
+     drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/s_ph_b_flt_cry_0_COUT[7]
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/s_ph_b_flt_cry_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/N_2 undriven or does not
+     drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/s_ph_a_flt_cry_0_COUT[7]
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/s_ph_a_flt_cry_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/N_3 undriven or does not
+     drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_13_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_13_0_CO
+     UT undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_12_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_12_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_10_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_10_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_8_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_8_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_6_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_6_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_4_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_4_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_2_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_2_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_1_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_0_cry_1_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/N_1 undriven or does not
+     drive anything - clipped.
+
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_13_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_13_0_CO
+     UT undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_11_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_11_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_9_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_9_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_7_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_7_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_5_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_5_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_3_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_3_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_1_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_1_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_0_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un28_s_encerr_1_cry_0_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/N_2 undriven or does not
+     drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_13_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_13_0_COUT
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_11_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_11_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_9_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_9_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_7_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_7_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_5_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_5_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_3_0_S1
+     undriven or does not drive anything - clipped.
+
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_3_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_1_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_1_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_0_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un30_s_encerr_cry_0_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/N_3 undriven or does not
+     drive anything - clipped.
+Signal
+     ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_4_s_13_0_C
+     OUT undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_
+     S1 undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_4_cry_0_0_
+     S0 undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/N_4 undriven or does not
+     drive anything - clipped.
+Signal
+     ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_6_s_13_0_C
+     OUT undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_6_cry_0_0_
+     S0 undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/N_5 undriven or does not
+     drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_s_13_0_S1
+     undriven or does not drive anything - clipped.
+Signal
+     ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_s_13_0_COUT
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_cry_0_0_S1
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/un1_s_encerr_1_0_cry_0_0_S0
+     undriven or does not drive anything - clipped.
+Signal ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/N_6 undriven or does not
+     drive anything - clipped.
+Signal pulse_sensor/ring_counter_inst/un1_CNT_1_cry_7_0_COUT undriven or does
+     not drive anything - clipped.
+Signal pulse_sensor/ring_counter_inst/un1_CNT_1_cry_0_0_S1 undriven or does not
+     drive anything - clipped.
+Signal pulse_sensor/ring_counter_inst/un1_CNT_1_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal pulse_sensor/ring_counter_inst/N_1 undriven or does not drive anything -
+     clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_
+     0_I_21_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_
+     0_I_21_0_COUT undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_
+
+     0_I_33_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_
+     0_I_33_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_
+     0_I_27_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_
+     0_I_27_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_
+     0_I_9_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_
+     0_I_9_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_
+     0_I_1_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/un2_reg_
+     0_I_1_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_1
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_
+     S1_1[15] undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_s_0_
+     COUT_1[15] undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/reg_cry_
+     0_S0_1[0] undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/N_2
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_15_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_15_0_COUT undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_13_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_13_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_11_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_11_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_9_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_9_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_7_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_7_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_5_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_5_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_3_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_3_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_1_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+
+     lse_cry_1_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un2_acc_pu
+     lse_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_6
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_15_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_15_0_COUT undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_13_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_13_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_11_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_11_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_9_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_9_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_7_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_7_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_5_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_5_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_3_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_3_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_1_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_1_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/un8_acc_pu
+     lse_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_7
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_S1
+     [15] undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_s_0_CO
+     UT[15] undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/reg_cry_0_
+     S0[0] undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/N_8
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_18_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+
+     clk_cry_18_0_COUT undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_17_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_17_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_15_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_15_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_13_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_13_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_11_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_11_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_9_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_9_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_7_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_7_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_5_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_5_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_3_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_3_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_1_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_1_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un5_pulse_
+     clk_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/N_1
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un1_reg_2_
+     cry_17_0_COUT undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un1_reg_2_
+     cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un1_reg_2_
+     cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/N_2
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un1_reg_2_
+     4_cry_17_0_COUT undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un1_reg_2_
+     4_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/un1_reg_2_
+
+     4_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/N_3
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un4_o_slow_0
+     _I_21_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un4_o_slow_0
+     _I_21_0_COUT undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un4_o_slow_0
+     _I_33_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un4_o_slow_0
+     _I_33_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un4_o_slow_0
+     _I_27_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un4_o_slow_0
+     _I_27_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un4_o_slow_0
+     _I_9_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un4_o_slow_0
+     _I_9_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un4_o_slow_0
+     _I_1_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un4_o_slow_0
+     _I_1_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/N_1 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un5_pout_cry
+     _7_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un5_pout_cry
+     _7_0_COUT undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un5_pout_cry
+     _5_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un5_pout_cry
+     _5_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un5_pout_cry
+     _3_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un5_pout_cry
+     _3_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un5_pout_cry
+     _1_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un5_pout_cry
+     _1_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un5_pout_cry
+     _0_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un5_pout_cry
+     _0_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/N_2 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_15_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_15_0_COUT undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_13_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_13_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+
+     ry_11_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_11_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_9_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_9_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_7_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_7_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_5_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_5_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_3_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_3_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_1_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_1_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_0_0_S1 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/un2_s_slow_c
+     ry_0_0_S0 undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/N_3 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg_s_0_S1_0
+     [15] undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg_s_0_COUT
+     _0[15] undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/reg_cry_0_S0
+     _0[0] undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/N_4 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulse_s_
+     0_S1[7] undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulse_s_
+     0_COUT[7] undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/pre_pulse_cr
+     y_0_S0[0] undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/N_5 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_enblr/un1_enb_wait_cnt_1_s_13_0_S1
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_enblr/un1_enb_wait_cnt_1_s_13_0_COUT
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_enblr/un1_enb_wait_cnt_1_cry_0_0_S0
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_enblr/N_1 undriven or does not drive
+     anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/speed_0_I_21_0_S0 undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/speed_0_I_21_0_COUT undriven or
+
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/speed_0_I_33_0_S1 undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/speed_0_I_33_0_S0 undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/speed_0_I_27_0_S1 undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/speed_0_I_27_0_S0 undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/speed_0_I_9_0_S1 undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/speed_0_I_9_0_S0 undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/speed_0_I_1_0_S1 undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/speed_0_I_1_0_S0 undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_1 undriven or does not drive
+     anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_speed_0_I_21_0_S0 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_speed_0_I_21_0_COUT undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_speed_0_I_33_0_S1 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_speed_0_I_33_0_S0 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_speed_0_I_27_0_S1 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_speed_0_I_27_0_S0 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_speed_0_I_9_0_S1 undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_speed_0_I_9_0_S0 undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_speed_0_I_1_0_S1 undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un1_speed_0_I_1_0_S0 undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_6 undriven or does not drive
+     anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_15_0_S0
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_15_0_COUT
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_13_0_S1
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_13_0_S0
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_11_0_S1
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_11_0_S0
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_9_0_S1 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_9_0_S0 undriven
+
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_7_0_S1 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_7_0_S0 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_5_0_S1 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_5_0_S0 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_3_0_S1 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_3_0_S0 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_1_0_S1 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_1_0_S0 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_0_0_S1 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/un6_more_flg_cry_0_0_S0 undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_7 undriven or does not drive
+     anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/more_cnt_s_0_S1[15] undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/more_cnt_s_0_COUT[15] undriven
+     or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/more_cnt_cry_0_S0[0] undriven or
+     does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/N_8 undriven or does not drive
+     anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_15_0_S0
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_15_0_COUT
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_13_0_S1
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_13_0_S0
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_11_0_S1
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_11_0_S0
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_9_0_S1
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_9_0_S0
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_7_0_S1
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_7_0_S0
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_5_0_S1
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_5_0_S0
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_3_0_S1
+
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_3_0_S0
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_1_0_S1
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_1_0_S0
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_0_0_S1
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/un13_command_hit_cry_0_0_S0
+     undriven or does not drive anything - clipped.
+Signal stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/N_1 undriven or does not drive
+     anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch1cut_cry_11_0_S0
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch1cut_cry_11_0_COUT
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch1cut_cry_9_0_S1
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch1cut_cry_9_0_S0
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch1cut_cry_7_0_S1
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch1cut_cry_7_0_S0
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch1cut_cry_5_0_S1
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch1cut_cry_5_0_S0
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch1cut_cry_3_0_S1
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch1cut_cry_3_0_S0
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch1cut_cry_2_0_S1
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch1cut_cry_2_0_S0
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/N_1 undriven or does
+     not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch0cut_cry_11_0_S0
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch0cut_cry_11_0_COUT
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch0cut_cry_9_0_S1
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch0cut_cry_9_0_S0
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch0cut_cry_7_0_S1
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch0cut_cry_7_0_S0
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch0cut_cry_5_0_S1
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch0cut_cry_5_0_S0
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch0cut_cry_3_0_S1
+
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch0cut_cry_3_0_S0
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch0cut_cry_2_0_S1
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/ch0cut_cry_2_0_S0
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/N_2 undriven or does
+     not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/un1_sub_2_cry_11_0_COUT
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/un1_sub_2_cry_0_0_S1
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/un1_sub_2_cry_0_0_S0
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/N_1 undriven or does not
+     drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsgen_inst/count_cry_0_COUT[17]
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsgen_inst/count_cry_0_S0[0]
+     undriven or does not drive anything - clipped.
+Signal tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsgen_inst/N_16 undriven or does
+     not drive anything - clipped.
+Block sa5phub/genblk8.jtagg_u_RNIQDUC was optimized away.
+Block sa5phub/ip_enable_0_.CN was optimized away.
+Block sa5phub/jtdo2_int_bm_RNO_2 was optimized away.
+Block PORb_pad_RNI71BB was optimized away.
+Block sp0565_reveal_coretop_instance/core0/tm_u/jrstn_RNIH98D was optimized
+     away.
+Block sp0565_reveal_coretop_instance/core0/tm_u/jtck_RNICM68 was optimized away.
+     
+Block sp0565_reveal_coretop_instance/core0/tm_u/reset_n_RNIGUS4 was optimized
+     away.
+Block sp0565_reveal_coretop_instance/core0/jtag_int_u/parity_calc.CN was
+     optimized away.
+Block sp0565_reveal_coretop_instance/core0/jtag_int_u/jrstn_RNIH98D was
+     optimized away.
+Block sp0565_reveal_coretop_instance/core0/jtag_int_u/reset_n_RNIGUS4 was
+     optimized away.
+Block sp0565_reveal_coretop_instance/core0/trig_u/tcnt_0/reset_n_RNIGUS4 was
+     optimized away.
+Block sp0565_reveal_coretop_instance/core0/trig_u/te_0/tt_wr_addr_cntr_0_.CN was
+     optimized away.
+Block sp0565_reveal_coretop_instance/core0/trig_u/te_0/jrstn_RNIH98D was
+     optimized away.
+Block sp0565_reveal_coretop_instance/core0/trig_u/te_0/reset_n_RNIGUS4 was
+     optimized away.
+Block sp0565_reveal_coretop_instance/core0/trig_u/tu_0/reset_n_RNIGUS4 was
+     optimized away.
+Block slv_com/rst_cnt_inst/clk2An_cntr_RNIA1S4[8] was optimized away.
+Block slv_com/rst_cnt_inst/clk2Ap_cntr_RNICHK6[8] was optimized away.
+Block slv_com/rst_cnt_inst/clk2n_cntr_RNI91LC[8] was optimized away.
+Block slv_com/rst_cnt_inst/clk2p_cntr_RNIBHDE[8] was optimized away.
+Block slv_com/rst_cnt_inst/clk_cntr_RNI94AD[8] was optimized away.
+Block slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/LRSTb_RNIBT7E was optimized
+     away.
+
+Block slv_com/tx_com_inst/enc8b10b_wrapper_inst/reset_n_reg_RNI10UE was
+     optimized away.
+Block slv_com/tx_com_inst/enc8b10b_wrapper_inst/enc8b10b_new_inst/enc8b_10b_inst
+     /enc3b_4b_inst/DATAOUT_0_.CN was optimized away.
+Block slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/INV_0 was optimized
+     away.
+Block slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/INV_1 was optimized
+     away.
+Block slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/FF_0_RNIACI4 was
+     optimized away.
+Block slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/OR2_t12 was
+     optimized away.
+Block slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/OR2_t12 was
+     optimized away.
+Block slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/INV_0 was
+     optimized away.
+Block slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/INV_1 was
+     optimized away.
+Block slv_com/rx_com_inst/dec8b10b_wrapper_inst/reset_n_reg_i was optimized
+     away.
+Block slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/OR2_t12 was
+     optimized away.
+Block slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/INV_0 was
+     optimized away.
+Block slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/INV_1 was
+     optimized away.
+Block slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0_RN
+     I6NOC was optimized away.
+Block slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/OR2_t12 was
+     optimized away.
+Block slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/INV_0 was optimized
+     away.
+Block slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/INV_1 was optimized
+     away.
+Block slv_com/cds_inst/cz_0_.CN was optimized away.
+Block slv_com/cds_inst/dz_0_.CN was optimized away.
+Block sa5phub/jtdo2_int_m5_bm was optimized away.
+Block sa5phub/VCC_0 was optimized away.
+Block sa5phub/jtdo2_int_m0 was optimized away.
+Block sa5phub/jtdo2_int_m1 was optimized away.
+Block sa5phub/jtdo2_int_m4 was optimized away.
+Block sa5phub/jtdo2_int_m7 was optimized away.
+Block sa5phub/jtdo2_int_bm_RNO_1 was optimized away.
+Block GND was optimized away.
+Block sp0565_reveal_coretop_instance/core0/tm_u/VCC_0 was optimized away.
+Block sp0565_reveal_coretop_instance/core0/tm_u/genblk4.tr_mem/scuba_vlo_inst
+     was optimized away.
+Block sp0565_reveal_coretop_instance/core0/tm_u/genblk4.tr_mem/scuba_vhi_inst
+     was optimized away.
+Block sp0565_reveal_coretop_instance/core0/jtag_int_u/VCC_0 was optimized away.
+Block sp0565_reveal_coretop_instance/core0/trig_u/te_0/VCC_0 was optimized away.
+     
+Block sp0565_reveal_coretop_instance/core0/trig_u/te_0/GND_0 was optimized away.
+     
+Block sp0565_reveal_coretop_instance/core0/trig_u/te_0/genblk1.te_tt_ebr_ram/scu
+     ba_vlo_inst was optimized away.
+
+Block slv_com/rst_cnt_inst/VCC was optimized away.
+Block slv_com/slv_ctrl_top_inst/slv_tx_ctrl_inst/VCC was optimized away.
+Block slv_com/slv_ctrl_top_inst/slv_rx_ctrl_inst/VCC was optimized away.
+Block slv_com/slvadr_cnv_inst/VCC was optimized away.
+Block slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/VCC was optimized
+     away.
+Block slv_com/tx_com_inst/tx_cont_b1_inst/tx_ctl_1st_inst/VCC was optimized
+     away.
+Block slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/VCC was
+     optimized away.
+Block slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/VCC was
+     optimized away.
+Block slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/VCC was optimized
+     away.
+Block slv_com/rx_com_inst/rx_cont_b2_inst/rx_ctl_3rd_inst/VCC was optimized
+     away.
+Block DAC081S101_inst/VCC was optimized away.
+Block ENC_inst/\enc_func(1).enc_top_inst\/encoder_inst/VCC was optimized away.
+Block ENC_inst/\enc_func(1).enc_top_inst\/U_enc_lmt/VCC was optimized away.
+Block pulse_sensor/ring_counter_inst/VCC was optimized away.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_acc_tim_gen_inst/VCC was
+     optimized away.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_speed_cnt_inst/VCC was
+     optimized away.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_timer_cnt_inst/VCC was
+     optimized away.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_plsgen/ppmc_pls_cnt_inst/VCC was
+     optimized away.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_enblr/VCC was optimized away.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_ctrl/VCC was optimized away.
+Block stm01/ppmc_reg_S118M_inst/inst_ppmc_cmdchk/VCC was optimized away.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_rng_chk_inst/VCC was optimized away.
+     
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/VCC was optimized away.
+Block tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_plsgen_inst/VCC was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+/slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 60
+    PFU Registers: 72
+    -Contains EBR pdp_ram_0_0_0:  TYPE= DP16KD,  Width_B= 11,  Depth_A= 64,
+         Depth_B= 64,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= DISABLED,  MEM_LPC_FILE= dcfifo_rx_b1.lpc
+/slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 59
+    PFU Registers: 72
+    -Contains EBR pdp_ram_0_0_0:  TYPE= DP16KD,  Width_B= 8,  Depth_A= 64,
+         Depth_B= 64,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+
+         GSR= DISABLED,  MEM_LPC_FILE= dcfifo_rx_b2.lpc
+/slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 60
+    PFU Registers: 72
+    -Contains EBR pdp_ram_0_0_0:  TYPE= DP16KD,  Width_B= 8,  Depth_A= 64,
+         Depth_B= 64,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= DISABLED,  MEM_LPC_FILE= dcfifo_tx_b1.lpc
+/slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 60
+    PFU Registers: 72
+    -Contains EBR pdp_ram_0_0_0:  TYPE= DP16KD,  Width_B= 10,  Depth_A= 64,
+         Depth_B= 64,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= DISABLED,  MEM_LPC_FILE= dcfifo_tx_b2.lpc
+/sp0565_reveal_coretop_instance/core0/tm_u/genblk4.tr_mem:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dpEbnonesadr248256248256p1372b6e7_0_0_0:  TYPE=
+         PDPW16KD,  Width= 24,  Depth_R= 256,  Depth_W= 256,  REGMODE= OUTREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  GSR= DISABLED,
+         MEM_LPC_FILE=
+         pmi_ram_dpEbnonesadr248256248256p1372b6e7__PMIP__256__24__24__-1B
+/sp0565_reveal_coretop_instance/core0/trig_u/te_0/genblk1.te_tt_ebr_ram:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR pmi_ram_dpEbnonesadr112112p13063b8e_0_0_0:  TYPE= DP16KD,
+         Width_B= 1,  Depth_A= 2,  Depth_B= 2,  REGMODE_A= OUTREG,  REGMODE_B=
+         OUTREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= ASYNC,  WRITEMODE_A=
+         NORMAL,  WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_LPC_FILE=
+         pmi_ram_dpEbnonesadr112112p13063b8e__PMIP__2__1__1__-1B
+
+     
+
+
+
+<A name="mrp_pll"></A><B><U><big>PLL/DLL Summary</big></U></B>
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:
+       slv_com/clk_gen_inst2/PLL_inst/PLLInst_0
+  PLL Type:                                         EHXPLLL
+  Input Clock:                             PIN      UP_CLK_c
+  Input Clock2:                                     NONE
+  Input Clock select:                               NONE
+  Output Clock(P):                         NODE     slv_com.CLKCOM_OUT
+  Output Clock(S):                         NODE     slv_com/CLK2A
+  Output Clock(S2):                        NODE     s_PLL_CLK20M
+  Output Clock(S3):                        NODE     slv_com.CLK1
+
+  Feedback Signal:                         NODE     slv_com.CLKCOM_OUT
+  Reset Signal:                            NODE
+       slv_com/clk_gen_inst2/PLL_inst/s_RSTb2_i
+  Standby Signal:                          NODE
+       slv_com/clk_gen_inst2/PLL_inst/GND
+  PLL LOCK signal:                         NODE     slv_com/LOCKED
+  PLL Internal LOCK Signal:                         NONE
+  Input Clock Frequency (MHz):                      20.0000
+  Output Clock(P) Frequency (MHz):                  100.0000
+  Output Clock(S) Frequency (MHz):                  100.0000
+  Output Clock(S2) Frequency (MHz):                 20.0000
+  Output Clock(S3) Frequency (MHz):                 10.0000
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              NONE
+  Pre Divider B Input:                              NONE
+  Pre Divider C Input:                              NONE
+  Pre Divider D Input:                              NONE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    5
+  CLKOP Divider:                                    6
+  CLKOS Divider:                                    6
+  CLKOS2 Divider:                                   30
+  CLKOS3 Divider:                                   60
+  Fractional N Divider:                             NONE
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 FALLING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                90
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS2 Trim Option Rising/Falling:                NONE
+  CLKOS2 Trim Option Delay:                         NONE
+  CLKOS3 Desired Phase Shift(degree):               0
+  CLKOS3 Trim Option Rising/Falling:                NONE
+  CLKOS3 Trim Option Delay:                         NONE
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name:
+     slv_com/rx_com_inst/rx_cont_b2_inst/rx_dcfifo1_48_inst/pdp_ram_0_0_0
+         Type: DP16KD
+Instance Name:
+     slv_com/rx_com_inst/rx_cont_b1_inst/rx_ck_dcfifo1_48_inst/pdp_ram_0_0_0
+         Type: DP16KD
+Instance Name:
+     slv_com/tx_com_inst/tx_cont_b2_inst/tx_ck_dcfifo1_48_inst/pdp_ram_0_0_0
+         Type: DP16KD
+Instance Name:
+     slv_com/tx_com_inst/tx_cont_b1_inst/tx_dcfifo1_48_inst/pdp_ram_0_0_0
+         Type: DP16KD
+
+Instance Name: slv_com/clk_gen_inst2/PLL_inst/PLLInst_0
+         Type: EHXPLLL
+Instance Name: sp0565_reveal_coretop_instance/core0/trig_u/te_0/genblk1.te_tt_eb
+     r_ram/pmi_ram_dpEbnonesadr112112p13063b8e_0_0_0
+         Type: DP16KD
+Instance Name: sp0565_reveal_coretop_instance/core0/tm_u/genblk4.tr_mem/pmi_ram_
+     dpEbnonesadr248256248256p1372b6e7_0_0_0
+         Type: PDPW16KD
+Instance Name: sa5phub/genblk8.jtagg_u
+         Type: JTAGG
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The local reset signal 's_LRSTb' of the design has been inferred as Global
+        Set Reset (GSR). The reset signal used for GSR control is 's_LRSTb'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components on inferred reset domain with GSR Property disabled
+--------------------------------------------------------------
+
+     These components have the GSR property set to DISABLED and are on the
+     inferred reset domain. The components will respond to the reset signal
+     's_LRSTb' via the local reset on the component and not the GSR component.
+
+     Type and number of components of the type: 
+   Register = 4 
+
+     Type and instance name of component: 
+   Register : DAC081S101_inst/log_ca_DAC_ctrl_inst/s_DA_SEND_old
+   Register : tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/count[2]
+   Register : tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/count[1]
+   Register : tmpctrl_4ch/tmpctrl_4ch_reg_inst/temp_ctrl_inst/count[0]
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 2 secs  
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 146 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

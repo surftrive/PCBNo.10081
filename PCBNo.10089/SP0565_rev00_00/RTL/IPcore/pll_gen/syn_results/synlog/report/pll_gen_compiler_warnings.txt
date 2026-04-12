@@ -1,0 +1,2 @@
+@W: CL168 :"C:\work\Diamond\zz_customer\VHDL\Sysmex\05_20250221\PCBNo.10082_20250221\RTL\IPcore\pll_gen\pll_gen.vhd":54:4:54:17|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+

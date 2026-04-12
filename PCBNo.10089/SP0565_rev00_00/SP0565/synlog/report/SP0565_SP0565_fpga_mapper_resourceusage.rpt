@@ -1,0 +1,40 @@
+Resource Usage Report
+Part: lfe5u_25f-6
+
+Register bits: 2757 of 24288 (11%)
+PIC Latch:       0
+I/O cells:       66
+
+Details:
+AND2:           8
+CCU2C:          422
+DP16KD:         4
+EHXPLLL:        1
+FD1P3AX:        62
+FD1P3BX:        55
+FD1P3DX:        1719
+FD1S3AX:        91
+FD1S3BX:        51
+FD1S3DX:        747
+FD1S3IX:        2
+GSR:            1
+IB:             30
+IFS1P3DX:       17
+IFS1P3IX:       1
+INV:            49
+L6MUX21:        8
+OB:             36
+OFS1P3BX:       2
+OFS1P3DX:       10
+OR2:            4
+ORCALUT4:       2598
+PFUMX:          53
+PUR:            1
+ROM16X1A:       64
+ROM64X1A:       5
+VHI:            134
+VLO:            134
+XOR2:           48
+jtagconn16:     1
+pmi_ram_dp:     1
+pmi_ram_dp:     1

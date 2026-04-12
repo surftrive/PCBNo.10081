@@ -58,7 +58,7 @@ Finished optimization stage 1 on ppmc_enblr_S118M (CPU Time 0h:00m:00s, Memory U
 @N: CD364 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_rgstr.vhd":484:16:484:20|Removing redundant assignment.
 Post processing for work.ppmc_rgstr.rtl
 Running optimization stage 1 on ppmc_rgstr .......
-Finished optimization stage 1 on ppmc_rgstr (CPU Time 0h:00m:00s, Memory Used current: 116MB peak: 116MB)
+Finished optimization stage 1 on ppmc_rgstr (CPU Time 0h:00m:00s, Memory Used current: 115MB peak: 116MB)
 @N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_dec.vhd":34:7:34:14|Synthesizing work.ppmc_dec.rtl.
 Post processing for work.ppmc_dec.rtl
 Running optimization stage 1 on ppmc_dec .......
@@ -481,7 +481,7 @@ Finished optimization stage 1 on adr_sel (CPU Time 0h:00m:00s, Memory Used curre
 @N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\node_sel.vhd":20:7:20:14|Synthesizing work.node_sel.rtl.
 Post processing for work.node_sel.rtl
 Running optimization stage 1 on node_sel .......
-Finished optimization stage 1 on node_sel (CPU Time 0h:00m:00s, Memory Used current: 134MB peak: 142MB)
+Finished optimization stage 1 on node_sel (CPU Time 0h:00m:00s, Memory Used current: 133MB peak: 142MB)
 @N: CD630 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":26:7:26:17|Synthesizing work.slv_rx_ctrl.rtl.
 @N: CD604 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_ctrl\slv_rx_ctrl.vhd":439:3:439:16|OTHERS clause is not synthesized.
 Post processing for work.slv_rx_ctrl.rtl
@@ -548,52 +548,52 @@ Finished optimization stage 2 on node_sel (CPU Time 0h:00m:00s, Memory Used curr
 Running optimization stage 2 on adr_sel .......
 Finished optimization stage 2 on adr_sel (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
 Running optimization stage 2 on nd_sel .......
-Finished optimization stage 2 on nd_sel (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on nd_sel (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on slv_ctrl_top .......
-Finished optimization stage 2 on slv_ctrl_top (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on slv_ctrl_top (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on slvadr_cnv .......
-Finished optimization stage 2 on slvadr_cnv (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on slvadr_cnv (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on pll_gen .......
-Finished optimization stage 2 on pll_gen (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on pll_gen (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on CLK_gen_S124M .......
-Finished optimization stage 2 on CLK_gen_S124M (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on CLK_gen_S124M (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on enc5b_6b .......
-Finished optimization stage 2 on enc5b_6b (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on enc5b_6b (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on enc3b_4b .......
-Finished optimization stage 2 on enc3b_4b (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on enc3b_4b (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on enc8b_10b .......
-Finished optimization stage 2 on enc8b_10b (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on enc8b_10b (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on enc8b10b_new .......
-Finished optimization stage 2 on enc8b10b_new (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on enc8b10b_new (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on enc8b10b_wrapper .......
-Finished optimization stage 2 on enc8b10b_wrapper (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on enc8b10b_wrapper (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on dcfifo_tx_b1 .......
-Finished optimization stage 2 on dcfifo_tx_b1 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on dcfifo_tx_b1 (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on crc_gen .......
-Finished optimization stage 2 on crc_gen (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on crc_gen (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on tx_ctl_1st .......
-Finished optimization stage 2 on tx_ctl_1st (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on tx_ctl_1st (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on tx_cont_b1 .......
-Finished optimization stage 2 on tx_cont_b1 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on tx_cont_b1 (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on dcfifo_tx_b2 .......
-Finished optimization stage 2 on dcfifo_tx_b2 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on dcfifo_tx_b2 (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on tx_ctl_3rd .......
-Finished optimization stage 2 on tx_ctl_3rd (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on tx_ctl_3rd (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on tx_cont_b2 .......
-Finished optimization stage 2 on tx_cont_b2 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on tx_cont_b2 (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on tx_com .......
-Finished optimization stage 2 on tx_com (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on tx_com (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on dec6b_5b .......
-Finished optimization stage 2 on dec6b_5b (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on dec6b_5b (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on dec4b_3b .......
 @W: CL246 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\dec4b_3b.vhd":22:8:22:13|Input port bits 1 to 0 of datain(9 downto 0) are unused. Assign logic for all port bits or change the input port size.
-Finished optimization stage 2 on dec4b_3b (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on dec4b_3b (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on dec8b10b_new .......
-Finished optimization stage 2 on dec8b10b_new (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on dec8b10b_new (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on dec8b10b_wrapper .......
-Finished optimization stage 2 on dec8b10b_wrapper (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on dec8b10b_wrapper (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on dcfifo_rx_b1 .......
-Finished optimization stage 2 on dcfifo_rx_b1 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on dcfifo_rx_b1 (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on rx_ctl_1st .......
 @N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_1st.vhd":132:2:132:3|Trying to extract state machine for register state_count.
 Extracted state machine for register state_count
@@ -604,23 +604,23 @@ State machine has 6 reachable states with original encodings of:
    011
    100
    101
-Finished optimization stage 2 on rx_ctl_1st (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on rx_ctl_1st (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on rx_cont_b1 .......
-Finished optimization stage 2 on rx_cont_b1 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on rx_cont_b1 (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on dcfifo_rx_b2 .......
-Finished optimization stage 2 on dcfifo_rx_b2 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on dcfifo_rx_b2 (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on crc_check .......
-Finished optimization stage 2 on crc_check (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on crc_check (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on rx_ctl_3rd .......
 @N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com\rx_ctl_3rd.vhd":25:2:25:9|Input RX_EMPTY is unused.
-Finished optimization stage 2 on rx_ctl_3rd (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on rx_ctl_3rd (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on rx_cont_b2 .......
-Finished optimization stage 2 on rx_cont_b2 (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on rx_cont_b2 (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on rx_com .......
 @N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\rx_com.vhd":28:8:28:12|Input CLK2A is unused.
-Finished optimization stage 2 on rx_com (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on rx_com (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on cds .......
-Finished optimization stage 2 on cds (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on cds (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on slv_com_top .......
 @N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd":286:2:286:3|Trying to extract state machine for register ck_state.
 Extracted state machine for register ck_state
@@ -630,9 +630,9 @@ State machine has 4 reachable states with original encodings of:
    10
    11
 @N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\slv_com\slv_com_top.vhd":41:2:41:9|Input LVCLK_Ip is unused.
-Finished optimization stage 2 on slv_com_top (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on slv_com_top (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on slv_clk_gen .......
-Finished optimization stage 2 on slv_clk_gen (CPU Time 0h:00m:00s, Memory Used current: 135MB peak: 142MB)
+Finished optimization stage 2 on slv_clk_gen (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 142MB)
 Running optimization stage 2 on SPI_master2 .......
 @N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\sp_conv\SPI_master2.vhd":289:2:289:3|Trying to extract state machine for register s_sta.
 Extracted state machine for register s_sta
@@ -795,15 +795,15 @@ Finished optimization stage 2 on CTRL_32CH (CPU Time 0h:00m:00s, Memory Used cur
 Running optimization stage 2 on DAC43608_top .......
 Finished optimization stage 2 on DAC43608_top (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
 Running optimization stage 2 on adclk_gen .......
-Finished optimization stage 2 on adclk_gen (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 180MB)
+Finished optimization stage 2 on adclk_gen (CPU Time 0h:00m:00s, Memory Used current: 136MB peak: 180MB)
 Running optimization stage 2 on adif_seq .......
-Finished optimization stage 2 on adif_seq (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 180MB)
+Finished optimization stage 2 on adif_seq (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 180MB)
 Running optimization stage 2 on shiftreg12bit .......
-Finished optimization stage 2 on shiftreg12bit (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 180MB)
+Finished optimization stage 2 on shiftreg12bit (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 180MB)
 Running optimization stage 2 on adc_reg .......
-Finished optimization stage 2 on adc_reg (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 180MB)
+Finished optimization stage 2 on adc_reg (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 180MB)
 Running optimization stage 2 on ad_ctrl .......
-Finished optimization stage 2 on ad_ctrl (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 180MB)
+Finished optimization stage 2 on ad_ctrl (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 180MB)
 Running optimization stage 2 on TLC5916_CTRL .......
 @N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\TLC5916_CTRL.vhd":68:2:68:3|Trying to extract state machine for register s_state.
 Extracted state machine for register s_state
@@ -811,7 +811,7 @@ State machine has 3 reachable states with original encodings of:
    00
    01
    10
-Finished optimization stage 2 on TLC5916_CTRL (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 180MB)
+Finished optimization stage 2 on TLC5916_CTRL (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 180MB)
 Running optimization stage 2 on ad8402 .......
 @N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\ad8402.vhd":78:2:78:3|Trying to extract state machine for register st.
 Extracted state machine for register st
@@ -822,7 +822,7 @@ State machine has 6 reachable states with original encodings of:
    0011
    0100
    1001
-Finished optimization stage 2 on ad8402 (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 180MB)
+Finished optimization stage 2 on ad8402 (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 180MB)
 Running optimization stage 2 on AD8402_CTRL .......
 @N: CL201 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\LEDLT\AD8402_CTRL\AD8402_CTRL.vhd":172:2:172:3|Trying to extract state machine for register s_sta.
 Extracted state machine for register s_sta
@@ -831,9 +831,9 @@ State machine has 4 reachable states with original encodings of:
    01
    10
    11
-Finished optimization stage 2 on AD8402_CTRL (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 180MB)
+Finished optimization stage 2 on AD8402_CTRL (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 180MB)
 Running optimization stage 2 on LEDLT_TOP .......
-Finished optimization stage 2 on LEDLT_TOP (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 180MB)
+Finished optimization stage 2 on LEDLT_TOP (CPU Time 0h:00m:00s, Memory Used current: 137MB peak: 180MB)
 Running optimization stage 2 on encoder_2bit .......
 Finished optimization stage 2 on encoder_2bit (CPU Time 0h:00m:00s, Memory Used current: 138MB peak: 180MB)
 Running optimization stage 2 on enc_lmt .......
@@ -865,11 +865,11 @@ Finished optimization stage 2 on ppmc_speed_cnt (CPU Time 0h:00m:00s, Memory Use
 Running optimization stage 2 on ppmc_timer_cnt .......
 Finished optimization stage 2 on ppmc_timer_cnt (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 180MB)
 Running optimization stage 2 on ppmc_pls_cnt .......
-Finished optimization stage 2 on ppmc_pls_cnt (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
+Finished optimization stage 2 on ppmc_pls_cnt (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 180MB)
 Running optimization stage 2 on ppmc_plsgen .......
-Finished optimization stage 2 on ppmc_plsgen (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
+Finished optimization stage 2 on ppmc_plsgen (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 180MB)
 Running optimization stage 2 on ppmc_dec .......
-Finished optimization stage 2 on ppmc_dec (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
+Finished optimization stage 2 on ppmc_dec (CPU Time 0h:00m:00s, Memory Used current: 140MB peak: 180MB)
 Running optimization stage 2 on ppmc_rgstr .......
 Finished optimization stage 2 on ppmc_rgstr (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
 Running optimization stage 2 on ppmc_enblr_S118M .......
@@ -886,7 +886,7 @@ State machine has 4 reachable states with original encodings of:
    1000
 @W: CL246 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":41:8:41:18|Input port bits 6 to 4 of command_reg(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
 @N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_ctrl.vhd":42:8:42:16|Input PULSE_REG is unused.
-Finished optimization stage 2 on ppmc_ctrl (CPU Time 0h:00m:00s, Memory Used current: 142MB peak: 180MB)
+Finished optimization stage 2 on ppmc_ctrl (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
 Running optimization stage 2 on ppmc_cmdchk .......
 @N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":29:8:29:14|Input UP_DOWN is unused.
 @N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":30:8:30:14|Input ACC_ENB is unused.
@@ -894,28 +894,28 @@ Running optimization stage 2 on ppmc_cmdchk .......
 @N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":35:8:35:16|Input HIGH_FREQ is unused.
 @N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":36:8:36:16|Input PULSE_REG is unused.
 @N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557\compactppmc\ppmc_cmdchk.vhd":39:8:39:12|Input SPEED is unused.
-Finished optimization stage 2 on ppmc_cmdchk (CPU Time 0h:00m:00s, Memory Used current: 142MB peak: 180MB)
+Finished optimization stage 2 on ppmc_cmdchk (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
 Running optimization stage 2 on ppmc_reg_S118M .......
-Finished optimization stage 2 on ppmc_reg_S118M (CPU Time 0h:00m:00s, Memory Used current: 142MB peak: 180MB)
+Finished optimization stage 2 on ppmc_reg_S118M (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
 Running optimization stage 2 on ppmc_top_S118M .......
-Finished optimization stage 2 on ppmc_top_S118M (CPU Time 0h:00m:00s, Memory Used current: 142MB peak: 180MB)
+Finished optimization stage 2 on ppmc_top_S118M (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
 Running optimization stage 2 on fc_dec .......
-Finished optimization stage 2 on fc_dec (CPU Time 0h:00m:00s, Memory Used current: 142MB peak: 180MB)
+Finished optimization stage 2 on fc_dec (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
 Running optimization stage 2 on fc_sel .......
-Finished optimization stage 2 on fc_sel (CPU Time 0h:00m:00s, Memory Used current: 142MB peak: 180MB)
+Finished optimization stage 2 on fc_sel (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
 Running optimization stage 2 on gpio_id .......
-Finished optimization stage 2 on gpio_id (CPU Time 0h:00m:00s, Memory Used current: 142MB peak: 180MB)
+Finished optimization stage 2 on gpio_id (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
 Running optimization stage 2 on gpio_op_reg .......
-Finished optimization stage 2 on gpio_op_reg (CPU Time 0h:00m:00s, Memory Used current: 142MB peak: 180MB)
+Finished optimization stage 2 on gpio_op_reg (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
 Running optimization stage 2 on gpio_ip_reg .......
-Finished optimization stage 2 on gpio_ip_reg (CPU Time 0h:00m:00s, Memory Used current: 142MB peak: 180MB)
+Finished optimization stage 2 on gpio_ip_reg (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
 Running optimization stage 2 on gpio_reg .......
-Finished optimization stage 2 on gpio_reg (CPU Time 0h:00m:00s, Memory Used current: 142MB peak: 180MB)
+Finished optimization stage 2 on gpio_reg (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
 Running optimization stage 2 on gpio_top .......
-Finished optimization stage 2 on gpio_top (CPU Time 0h:00m:00s, Memory Used current: 142MB peak: 180MB)
+Finished optimization stage 2 on gpio_top (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
 Running optimization stage 2 on SP0557 .......
 @N: CL159 :"C:\FPGAwork\PCBNo.10081\FPGA\RTL\SP0557.vhd":53:2:53:11|Input LEDSH_MISO is unused.
-Finished optimization stage 2 on SP0557 (CPU Time 0h:00m:00s, Memory Used current: 142MB peak: 180MB)
+Finished optimization stage 2 on SP0557 (CPU Time 0h:00m:00s, Memory Used current: 141MB peak: 180MB)
 
 For a summary of runtime per design unit, please see file:
 ==========================================================

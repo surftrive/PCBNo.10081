@@ -19,7 +19,7 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="Warnings">
-<data>10</data>
+<data>1</data>
 <report_link name="more">
 <data>C:\FPGAwork\PCBNo.10081\FPGA\SP0557\synlog\report\SP0557_SP0557_premap_warnings.txt</data>
 </report_link>
@@ -37,10 +37,10 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:03s</data>
 </info>
 <info name="Peak Memory">
-<data>329MB</data>
+<data>328MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1772336025</data>
+<data type="timestamp">1772375133</data>
 </info>
 </job_info>
 </job_run_status>

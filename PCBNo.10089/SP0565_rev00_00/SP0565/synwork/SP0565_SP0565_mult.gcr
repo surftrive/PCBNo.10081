@@ -1,0 +1,59 @@
+i CLK20M
+m 0 0
+u 53 187
+p {p:CLK20M}{t:slv_com.CLKSLV}{p:slv_com.CLKSLV}{t:slv_com.ck_state[1].C}
+e ckid0_0 {t:slv_com.ck_state[1].C} dffr
+c ckid0_0 {p:CLK20M} port Unsupported/too complex instance on clock path
+i sp0565_reveal_coretop_instance.jtck_i[0]
+m 0 0
+u 46 203
+p {t:sp0565_reveal_coretop_instance.jtag0.jtck}{t:sp0565_reveal_coretop_instance.jtck_inferred_clock[0].I[0]}{t:sp0565_reveal_coretop_instance.jtck_inferred_clock[0].OUT[0]}{t:sp0565_reveal_coretop_instance.core0.jtck}{p:sp0565_reveal_coretop_instance.core0.jtck}{t:sp0565_reveal_coretop_instance.core0.tm_u.jtck}{p:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_1 {t:ENCRYPTED} <ENCRYPTED>
+c ckid0_1 {t:sp0565_reveal_coretop_instance.jtag0.jtck} jtagconn16 Unsupported/too complex instance on clock path
+i slv_com.clk_gen_inst2.PLL_inst.CLKOS2_i
+m 0 0
+u 381 1766
+n ckid0_2 {t:tmpctrl_4ch.tmpctrl_4ch_reg_inst.temp_plsgen_inst.count[18:0].C} Clock source is invalid for GCC
+p {t:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2}{t:slv_com.clk_gen_inst2.PLL_inst.CLKOS2_inferred_clock.I[0]}{t:slv_com.clk_gen_inst2.PLL_inst.CLKOS2_inferred_clock.OUT[0]}{p:slv_com.clk_gen_inst2.PLL_inst.CLKOS2}{t:slv_com.clk_gen_inst2.PLL_inst.CLKOS2}{p:slv_com.clk_gen_inst2.CLK_PLL_20M}{t:slv_com.clk_gen_inst2.CLK_PLL_20M}{t:slv_com.slvadr_cnv_inst.CLK}{p:slv_com.slvadr_cnv_inst.CLK}{t:slv_com.slvadr_cnv_inst.s_HEX_OUT[5:0].C}
+e ckid0_3 {t:slv_com.slvadr_cnv_inst.s_HEX_OUT[5:0].C} dffr
+d ckid0_2,ckid0_3 {t:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2} EHXPLLL Clock source is constant
+i slv_com.clk_gen_inst2.PLL_inst.CLKOP_i
+m 0 0
+u 135 258
+n ckid0_4 {t:slv_com.rx_com_inst.rx_cont_b1_inst.rx_ck_dcfifo1_48_inst.pdp_ram_0_0_0.CLKA} Synplify Pro Clock optimization on technology cells not supported in this product
+p {t:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOP}{t:slv_com.clk_gen_inst2.PLL_inst.CLKOP_inferred_clock.I[0]}{t:slv_com.clk_gen_inst2.PLL_inst.CLKOP_inferred_clock.OUT[0]}{p:slv_com.clk_gen_inst2.PLL_inst.CLKOP}{t:slv_com.clk_gen_inst2.PLL_inst.CLKOP}{p:slv_com.clk_gen_inst2.CLK_PLL_100M}{t:slv_com.clk_gen_inst2.CLK_PLL_100M}{t:slv_com.rx_com_inst.CLK2}{p:slv_com.rx_com_inst.CLK2}{t:slv_com.rx_com_inst.rx_cont_b1_inst.CLK2}{p:slv_com.rx_com_inst.rx_cont_b1_inst.CLK2}{t:slv_com.rx_com_inst.rx_cont_b1_inst.rx_ck_dcfifo1_48_inst.WrClock}{p:slv_com.rx_com_inst.rx_cont_b1_inst.rx_ck_dcfifo1_48_inst.WrClock}{t:slv_com.rx_com_inst.rx_cont_b1_inst.rx_ck_dcfifo1_48_inst.pdp_ram_0_0_0.CLKA}
+e ckid0_4 {t:slv_com.rx_com_inst.rx_cont_b1_inst.rx_ck_dcfifo1_48_inst.pdp_ram_0_0_0.CLKA} DP16KD
+d ckid0_4 {t:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOP} EHXPLLL Clock source is constant
+i slv_com.clk_gen_inst2.PLL_inst.CLKOS_i
+m 0 0
+u 6 22
+p {t:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS}{t:slv_com.clk_gen_inst2.PLL_inst.CLKOS_inferred_clock.I[0]}{t:slv_com.clk_gen_inst2.PLL_inst.CLKOS_inferred_clock.OUT[0]}{p:slv_com.clk_gen_inst2.PLL_inst.CLKOS}{t:slv_com.clk_gen_inst2.PLL_inst.CLKOS}{p:slv_com.clk_gen_inst2.CLK_PLL_100M_90}{t:slv_com.clk_gen_inst2.CLK_PLL_100M_90}{t:slv_com.cds_inst.CLK2A}{p:slv_com.cds_inst.CLK2A}{t:slv_com.cds_inst.dz[2].C}
+e ckid0_5 {t:slv_com.cds_inst.dz[2].C} dffr
+c ckid0_5 {t:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS} EHXPLLL Clock source is constant
+i slv_com.clk_gen_inst2.PLL_inst.CLKOS3_i
+m 0 0
+u 336 545
+n ckid0_6 {t:slv_com.rx_com_inst.rx_cont_b2_inst.rx_dcfifo1_48_inst.pdp_ram_0_0_0.CLKA} Synplify Pro Clock optimization on technology cells not supported in this product
+p {t:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3}{t:slv_com.clk_gen_inst2.PLL_inst.CLKOS3_inferred_clock.I[0]}{t:slv_com.clk_gen_inst2.PLL_inst.CLKOS3_inferred_clock.OUT[0]}{p:slv_com.clk_gen_inst2.PLL_inst.CLKOS3}{t:slv_com.clk_gen_inst2.PLL_inst.CLKOS3}{p:slv_com.clk_gen_inst2.CLK_PLL_10M}{t:slv_com.clk_gen_inst2.CLK_PLL_10M}{t:slv_com.rx_com_inst.CLK1}{p:slv_com.rx_com_inst.CLK1}{t:slv_com.rx_com_inst.rx_cont_b2_inst.CLK1}{p:slv_com.rx_com_inst.rx_cont_b2_inst.CLK1}{t:slv_com.rx_com_inst.rx_cont_b2_inst.rx_dcfifo1_48_inst.WrClock}{p:slv_com.rx_com_inst.rx_cont_b2_inst.rx_dcfifo1_48_inst.WrClock}{t:slv_com.rx_com_inst.rx_cont_b2_inst.rx_dcfifo1_48_inst.pdp_ram_0_0_0.CLKA}
+e ckid0_6 {t:slv_com.rx_com_inst.rx_cont_b2_inst.rx_dcfifo1_48_inst.pdp_ram_0_0_0.CLKA} DP16KD
+d ckid0_6 {t:slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3} EHXPLLL Clock source is constant
+i slv_com.clk_gen_inst2.PLL_inst.LOCK
+m 0 0
+u 0 0
+i sp0565_reveal_coretop_instance.jtdi[0]
+m 0 0
+u 0 0
+i sp0565_reveal_coretop_instance.jshift[0]
+m 0 0
+u 0 0
+i sp0565_reveal_coretop_instance.jrstn[0]
+m 0 0
+u 0 0
+i sp0565_reveal_coretop_instance.jce2[0]
+m 0 0
+u 0 0
+i sp0565_reveal_coretop_instance.ip_enable[0]
+m 0 0
+u 0 0
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

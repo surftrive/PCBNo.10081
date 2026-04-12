@@ -1,0 +1,168 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn260129175512"></A><B><U><big>pn260129175512</big></U></B>
+#Start recording tcl command: 1/29/2026 17:53:44
+#Project Location: C:/work/S127M/PCBNo_10089/SP0565_rev02_00; Project name: SP0565
+prj_project new -name "SP0565" -impl "SP0565" -dev LFE5U-25F-6BG256C -synthesis "synplify"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/com/fc_dec.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/com/fc_sel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/com/w_pack.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/IPcore/IPcore.sbx" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_clk_gen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/ad_ctrl/ad_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/ad_ctrl/adc_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/ad_ctrl/adclk_gen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/ad_ctrl/adif_seq.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/ad_ctrl/shiftreg12bit.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/AD5270/ad5270_5271_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_acc_tim_gen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_cmdchk.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_dec.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_enblr_S118M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_id.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_phgen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_pls_cnt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_plsgen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_reg_S118M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_rgstr.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_speed_cnt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_timer_cnt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_top_S118M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_u_step_ext.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/DAC081S101/DAC081S101_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/DAC081S101/log_ca_DAC_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/DAC081S101/log_ca_DACclk_gen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/DAC081S101/log_ca_DACif_seq.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/encoder/enc_func_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/encoder/enc_lmt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/encoder/enc_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/encoder/encoder_2bit.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/gpio/gpio_id.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/gpio/gpio_ip_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/gpio/gpio_op_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/gpio/gpio_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/gpio/gpio_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/linear_signal_ctrl/linear_signal_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/pls_sens/pls_sens.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slaveid_top/slaveid_id.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slaveid_top/slaveid_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/cds.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/CLK_gen_S124M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rst_cnt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slv_com_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slv_ctrl_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slvadr_cnv.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/crc_check.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/dec4b_3b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/dec6b_5b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/dec8b10b_new.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/dec8b10b_wrapper.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/rx_cont_b1.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/rx_cont_b2.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/rx_ctl_1st.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/rx_ctl_3rd.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slv_ctrl/adr_sel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slv_ctrl/nd_sel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slv_ctrl/node_sel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slv_ctrl/slv_rx_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slv_ctrl/slv_tx_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/crc_gen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/enc3b_4b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/enc5b_6b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/enc8b_10b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/enc8b10b_new.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/enc8b10b_wrapper.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/tx_cont_b1.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/tx_cont_b2.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/tx_ctl_1st.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/tx_ctl_3rd.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_ajst_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_ctst_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_cut_ref_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_dec.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_dly_2term.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_dlysel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_edge_dtct.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_idlm_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_meas_reg_S127M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_plsdrv.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_plsgen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_plsmod.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_plsnum_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_plssel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_prm_sel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_ref_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_rng_chk.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/tmpctrl_4ch_id.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/tmpctrl_4ch_reg_S127M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/tmpctrl_4ch_top_S127M.vhd"
+prj_project save
+prj_strgy set_value -strategy Strategy1 syn_vhdl2008=True
+prj_src remove "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552.vhd"
+#Stop recording: 1/29/2026 17:55:12
+
+
+
+<A name="pn260130103901"></A><B><U><big>pn260130103901</big></U></B>
+#Start recording tcl command: 1/30/2026 09:40:30
+#Project Location: C:/work/S127M/PCBNo_10089/SP0565_rev02_00; Project name: SP0565
+prj_project open "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/SP0565.ldf"
+prj_src remove "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552.vhd"
+prj_src remove "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_clk_gen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/ad_ctrl/ad_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/ad_ctrl/adc_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/ad_ctrl/adclk_gen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/ad_ctrl/adif_seq.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/ad_ctrl/shiftreg12bit.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/AD5270/ad5270_5271_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_acc_tim_gen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_cmdchk.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_dec.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_enblr_S118M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_id.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_phgen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_pls_cnt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_plsgen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_reg_S118M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_rgstr.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_speed_cnt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_timer_cnt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_top_S118M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/compactppmc/ppmc_u_step_ext.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/DAC081S101/DAC081S101_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/DAC081S101/log_ca_DAC_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/DAC081S101/log_ca_DACclk_gen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/DAC081S101/log_ca_DACif_seq.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/encoder/enc_func_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/encoder/enc_lmt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/encoder/enc_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/encoder/encoder_2bit.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/gpio/gpio_id.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/gpio/gpio_ip_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/gpio/gpio_op_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/gpio/gpio_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/gpio/gpio_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/linear_signal_ctrl/linear_signal_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/pls_sens/pls_sens.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slaveid_top/slaveid_id.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slaveid_top/slaveid_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/cds.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/CLK_gen_S124M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rst_cnt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slv_com_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slv_ctrl_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slvadr_cnv.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/crc_check.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/dec4b_3b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/dec6b_5b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/dec8b10b_new.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/dec8b10b_wrapper.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/rx_cont_b1.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/rx_cont_b2.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/rx_ctl_1st.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/rx_com/rx_ctl_3rd.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slv_ctrl/adr_sel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slv_ctrl/nd_sel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slv_ctrl/node_sel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slv_ctrl/slv_rx_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/slv_ctrl/slv_tx_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/crc_gen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/enc3b_4b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/enc5b_6b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/enc8b_10b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/enc8b10b_new.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/enc8b10b_wrapper.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/tx_cont_b1.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/tx_cont_b2.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/tx_ctl_1st.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/slv_com/tx_com/tx_ctl_3rd.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_ajst_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_ctst_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_cut_ref_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_dec.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_dly_2term.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_dlysel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_edge_dtct.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_idlm_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_meas_reg_S127M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_plsdrv.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_plsgen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_plsmod.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_plsnum_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_plssel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_prm_sel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_ref_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/temp_rng_chk.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/tmpctrl_4ch_id.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/tmpctrl_4ch_reg_S127M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0552/tmpctrl_4ch/tmpctrl_4ch_top_S127M.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP0565.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/ad_ctrl/ad_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/ad_ctrl/adc_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/ad_ctrl/adclk_gen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/ad_ctrl/adif_seq.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/ad_ctrl/shiftreg12bit.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/AD5270/ad5270_5271_ctrl.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_acc_tim_gen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_cmdchk.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_dec.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_enblr_S118M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_id.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_phgen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_pls_cnt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_plsgen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_reg_S118M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_rgstr.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_speed_cnt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_timer_cnt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_top_S118M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/compactppmc/ppmc_u_step_ext.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/DAC081S101/DAC081S101_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/DAC081S101/log_ca_DAC_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/DAC081S101/log_ca_DACclk_gen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/DAC081S101/log_ca_DACif_seq.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/encoder/enc_func_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/encoder/enc_lmt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/encoder/enc_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/encoder/encoder_2bit.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/gpio/gpio_id.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/gpio/gpio_ip_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/gpio/gpio_op_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/gpio/gpio_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/gpio/gpio_top.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/linear_signal_ctrl/linear_signal_ctrl.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/pls_sens/pls_sens.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slaveid_top/slaveid_id.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slaveid_top/slaveid_top.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/rx_com/crc_check.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/rx_com/dec4b_3b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/rx_com/dec6b_5b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/rx_com/dec8b10b_new.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/rx_com/dec8b10b_wrapper.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/rx_com/rx_cont_b1.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/rx_com/rx_cont_b2.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/rx_com/rx_ctl_1st.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/rx_com/rx_ctl_3rd.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/slv_ctrl/adr_sel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/slv_ctrl/nd_sel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/slv_ctrl/node_sel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/slv_ctrl/slv_rx_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/slv_ctrl/slv_tx_ctrl.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/tx_com/crc_gen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/tx_com/enc3b_4b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/tx_com/enc5b_6b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/tx_com/enc8b_10b.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/tx_com/enc8b10b_new.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/tx_com/enc8b10b_wrapper.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/tx_com/tx_cont_b1.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/tx_com/tx_cont_b2.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/tx_com/tx_ctl_1st.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/tx_com/tx_ctl_3rd.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/cds.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/CLK_gen_S124M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/rst_cnt.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/rx_com.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/slv_com_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/slv_ctrl_top.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/slvadr_cnv.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_com/tx_com.vhd"
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_ajst_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_ctrl.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_ctst_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_cut_ref_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_dec.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_dly_2term.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_dlysel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_edge_dtct.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_idlm_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_meas_reg_S127M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_plsdrv.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_plsgen.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_plsmod.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_plsnum_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_plssel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_prm_sel.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_ref_reg.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/temp_rng_chk.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/tmpctrl_4ch_id.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/tmpctrl_4ch_reg_S127M.vhd" "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/tmpctrl_4ch/tmpctrl_4ch_top_S127M.vhd"
+prj_run Export -impl SP0565 -task Bitgen
+prj_src add "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/slv_clk_gen.vhd"
+prj_run Map -impl SP0565 -task MapTrace
+prj_run Export -impl SP0565 -task Bitgen
+launch_synplify_prj SP0565
+#Stop recording: 1/30/2026 10:39:01
+
+
+
+<A name="pn260204093027"></A><B><U><big>pn260204093027</big></U></B>
+#Start recording tcl command: 2/4/2026 08:44:09
+#Project Location: C:/work/S127M/PCBNo_10089/SP0565_rev02_00; Project name: SP0565
+prj_project open "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/SP0565.ldf"
+rvl_project new
+rvl_project close -force
+#Stop recording: 2/4/2026 09:30:27
+
+
+
+<A name="pn260219155042"></A><B><U><big>pn260219155042</big></U></B>
+#Start recording tcl command: 2/19/2026 15:49:56
+#Project Location: C:/work/S127M/PCBNo_10089/SP0565_rev02_00; Project name: SP0565
+prj_project open "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/SP0565.ldf"
+prj_project close
+#Stop recording: 2/19/2026 15:50:42
+
+
+
+<A name="pn260305113445"></A><B><U><big>pn260305113445</big></U></B>
+#Start recording tcl command: 3/5/2026 11:30:15
+#Project Location: C:/work/S127M/PCBNo_10089/SP0565_rev02_00; Project name: SP0565
+prj_project open "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/SP0565.ldf"
+prj_run Export -impl SP0565 -task Bitgen
+prj_project close
+#Stop recording: 3/5/2026 11:34:45
+
+
+
+<A name="pn260305125855"></A><B><U><big>pn260305125855</big></U></B>
+#Start recording tcl command: 3/5/2026 11:35:19
+#Project Location: C:/work/S127M/PCBNo_10089/SP0565_rev02_00; Project name: SP0565
+prj_project open "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/SP0565.ldf"
+prj_run Map -impl SP0565 -task MapTrace
+prj_run Export -impl SP0565 -task Bitgen
+#Stop recording: 3/5/2026 12:58:55
+
+
+
+<A name="pn260316090911"></A><B><U><big>pn260316090911</big></U></B>
+#Start recording tcl command: 3/16/2026 09:04:11
+#Project Location: C:/work/S127M/PCBNo_10089/SP0565_rev02_00; Project name: SP0565
+prj_project open "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/SP0565.ldf"
+prj_run Export -impl SP0565 -task Bitgen
+#Stop recording: 3/16/2026 09:09:11
+
+
+
+<A name="pn260323100939"></A><B><U><big>pn260323100939</big></U></B>
+#Start recording tcl command: 3/23/2026 10:09:15
+#Project Location: C:/work/S127M/PCBNo_10089/SP0565_rev00_00; Project name: SP0565
+prj_project open "C:/work/S127M/PCBNo_10089/SP0565_rev00_00/SP0565.ldf"
+prj_project close
+#Stop recording: 3/23/2026 10:09:39
+
+
+
+<A name="pn260324164328"></A><B><U><big>pn260324164328</big></U></B>
+#Start recording tcl command: 3/24/2026 16:42:39
+#Project Location: C:/work/S127M/PCBNo_10089/SP0565_rev00_00; Project name: SP0565
+prj_project open "C:/work/S127M/PCBNo_10089/SP0565_rev00_00/SP0565.ldf"
+#Stop recording: 3/24/2026 16:43:28
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

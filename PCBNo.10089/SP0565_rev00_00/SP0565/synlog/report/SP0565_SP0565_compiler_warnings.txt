@@ -1,0 +1,161 @@
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":44:49:44:61|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":62:50:62:62|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":84:50:84:62|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":107:49:107:61|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":124:87:124:99|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":141:80:141:92|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":159:62:159:74|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":179:76:179:88|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":204:80:204:92|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":225:79:225:91|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":243:33:243:45|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":260:33:260:45|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":275:45:275:57|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":292:31:292:43|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":320:54:320:66|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":351:54:351:66|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":387:53:387:65|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":426:53:426:65|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":450:50:450:62|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":476:50:476:62|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":497:49:497:61|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":528:33:528:45|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":553:33:553:45|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":630:35:630:47|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":687:35:687:47|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":770:35:770:47|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":853:35:853:47|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":969:35:969:47|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":1073:40:1073:52|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":1098:32:1098:44|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":1122:32:1122:44|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":1159:15:1159:27|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":1162:94:1162:106|User defined pragma syn_black_box detected
+@W: CD326 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\sp0565.vhd":655:26:655:47|Port test of entity work.pulse_sens_uniq_0 is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD638 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\reveal_coretop.vhd":19:11:19:21|Signal trigger_out is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD326 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_top_s127m_uniq_0.vhd":111:25:111:42|Port logsel of entity work.fc_dec_uniq_2 is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CG296 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_reg_s127m_uniq_0.vhd":360:4:360:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_reg_s127m_uniq_0.vhd":363:25:363:35|Referenced variable s_ch0tc_enb is not in sensitivity list.
+@W: CG290 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_reg_s127m_uniq_0.vhd":366:19:366:24|Referenced variable ch0enb is not in sensitivity list.
+@W: CG290 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_reg_s127m_uniq_0.vhd":365:19:365:24|Referenced variable ch0neg is not in sensitivity list.
+@W: CG290 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\tmpctrl_4ch_reg_s127m_uniq_0.vhd":364:19:364:24|Referenced variable ch0num is not in sensitivity list.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsgen_uniq_0.vhd":51:8:51:9|Optimizing register bit PLS(7) to a constant 1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plsgen_uniq_0.vhd":51:8:51:9|Pruning register bit 7 of PLS(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL271 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":97:8:97:9|Pruning unused bits 7 to 6 of ch3ctlatch_3(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":97:8:97:9|Pruning unused bits 3 to 2 of ch3ctlatch_3(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":97:8:97:9|Pruning unused bits 7 to 6 of ch2ctlatch_3(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":97:8:97:9|Pruning unused bits 3 to 2 of ch2ctlatch_3(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":97:8:97:9|Pruning unused bits 7 to 6 of ch1ctlatch_3(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":97:8:97:9|Pruning unused bits 3 to 2 of ch1ctlatch_3(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":97:8:97:9|Pruning unused bits 7 to 6 of ch0ctlatch_3(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":97:8:97:9|Pruning unused bits 3 to 2 of ch0ctlatch_3(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL265 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":55:8:55:9|Removing unused bit 7 of ch3ctreg_2(7 downto 0). Either assign all bits or reduce the width of the signal.
+@W: CL265 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":55:8:55:9|Removing unused bit 7 of ch2ctreg_2(7 downto 0). Either assign all bits or reduce the width of the signal.
+@W: CL265 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":55:8:55:9|Removing unused bit 7 of ch1ctreg_2(7 downto 0). Either assign all bits or reduce the width of the signal.
+@W: CL265 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":55:8:55:9|Removing unused bit 7 of ch0ctreg_4(7 downto 0). Either assign all bits or reduce the width of the signal.
+@W: CD326 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_reg_s118m_uniq_0.vhd":462:29:462:50|Port limit_monitor_reg of entity work.ppmc_rgstr_uniq_0 is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_reg_s118m_uniq_0.vhd":552:28:552:48|Port limit_mask of entity work.ppmc_ctrl_uniq_0 is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CL111 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":271:8:271:9|All reachable assignments to LIMIT_IN_A(0) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":271:8:271:9|All reachable assignments to LIMIT_IN_A(3) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":271:8:271:9|All reachable assignments to LIMIT_IN_A(4) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":271:8:271:9|All reachable assignments to LIMIT_IN_A(5) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":271:8:271:9|All reachable assignments to LIMIT_IN_A(6) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL111 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":271:8:271:9|All reachable assignments to LIMIT_IN_A(7) are '0'; removing register. To preserve a constant register, use the syn_preserve attribute.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":282:8:282:9|Optimizing register bit LIMIT_MONITOR_REG_O(0) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":282:8:282:9|Optimizing register bit LIMIT_MONITOR_REG_O(3) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":282:8:282:9|Optimizing register bit LIMIT_MONITOR_REG_O(4) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":282:8:282:9|Optimizing register bit LIMIT_MONITOR_REG_O(5) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":282:8:282:9|Optimizing register bit LIMIT_MONITOR_REG_O(6) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":282:8:282:9|Optimizing register bit LIMIT_MONITOR_REG_O(7) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":282:8:282:9|Pruning register bits 7 to 3 of LIMIT_MONITOR_REG_O(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":282:8:282:9|Pruning register bit 0 of LIMIT_MONITOR_REG_O(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":67:8:67:9|Optimizing register bit s_cd(3) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":67:8:67:9|Pruning register bit 3 of s_cd(3 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CG296 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\linear_signal_ctrl_uniq_0.vhd":102:4:102:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\linear_signal_ctrl_uniq_0.vhd":105:23:105:24|Referenced variable d1 is not in sensitivity list.
+@W: CD638 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\pulse_sens_uniq_0.vhd":24:11:24:15|Signal s_sns is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\log_ca_dac_ctrl_uniq_0.vhd":35:11:35:19|Signal s_send_tc is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\log_ca_dac_ctrl_uniq_0.vhd":39:11:39:16|Signal s_sync is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\log_ca_dac_ctrl_uniq_0.vhd":40:11:40:18|Signal s_sync_t is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_rx_b2_uniq_0.vhd":1225:4:1225:16|Input cin of instance full_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_rx_b2_uniq_0.vhd":1123:4:1123:17|Input cin of instance empty_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_rx_b2_uniq_0.vhd":1038:4:1038:13|Input cin of instance r_gctr_cia is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_rx_b2_uniq_0.vhd":953:4:953:13|Input cin of instance w_gctr_cia is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_rx_b1_uniq_0.vhd":1225:4:1225:16|Input cin of instance full_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_rx_b1_uniq_0.vhd":1123:4:1123:17|Input cin of instance empty_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_rx_b1_uniq_0.vhd":1038:4:1038:13|Input cin of instance r_gctr_cia is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_rx_b1_uniq_0.vhd":953:4:953:13|Input cin of instance w_gctr_cia is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_tx_b2_uniq_0.vhd":1225:4:1225:16|Input cin of instance full_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_tx_b2_uniq_0.vhd":1123:4:1123:17|Input cin of instance empty_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_tx_b2_uniq_0.vhd":1038:4:1038:13|Input cin of instance r_gctr_cia is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_tx_b2_uniq_0.vhd":953:4:953:13|Input cin of instance w_gctr_cia is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_tx_b1_uniq_0.vhd":1225:4:1225:16|Input cin of instance full_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_tx_b1_uniq_0.vhd":1123:4:1123:17|Input cin of instance empty_cmp_ci_a is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_tx_b1_uniq_0.vhd":1038:4:1038:13|Input cin of instance r_gctr_cia is floating
+@W: CL167 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dcfifo_tx_b1_uniq_0.vhd":953:4:953:13|Input cin of instance w_gctr_cia is floating
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_ctrl_top_uniq_0.vhd":148:8:148:9|Optimizing register bit s_prpty(1) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_ctrl_top_uniq_0.vhd":148:8:148:9|Optimizing register bit s_prpty(2) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_ctrl_top_uniq_0.vhd":148:8:148:9|Optimizing register bit s_prpty(4) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_ctrl_top_uniq_0.vhd":148:8:148:9|Optimizing register bit s_prpty(5) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_ctrl_top_uniq_0.vhd":148:8:148:9|Optimizing register bit s_prpty(6) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_ctrl_top_uniq_0.vhd":148:8:148:9|Optimizing register bit s_prpty(7) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_ctrl_top_uniq_0.vhd":148:8:148:9|Pruning register bits 7 to 4 of s_prpty(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_ctrl_top_uniq_0.vhd":148:8:148:9|Pruning register bits 2 to 1 of s_prpty(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL240 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\sp0565.vhd":14:8:14:13|Signal SLV_ER is floating; a simulation mismatch is possible.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_rx_ctrl_uniq_0.vhd":72:8:72:9|Optimizing register bit byte_cnt(2) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slv_rx_ctrl_uniq_0.vhd":72:8:72:9|Pruning register bit 2 of byte_cnt(2 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\slvadr_cnv_uniq_0.vhd":24:8:24:9|Pruning register bits 7 to 6 of s_HEX_OUT(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL246 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\dec4b_3b_uniq_0.vhd":11:8:11:13|Input port bits 1 to 0 of datain(9 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@W: CL177 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_ctl_1st_uniq_0.vhd":25:8:25:9|Sharing sequential element sp_dt and merging sp_dt_1q. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL279 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_ctl_1st_uniq_0.vhd":25:8:25:9|Pruning register bits 8 to 0 of sp_dt(9 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\rx_ctl_1st_uniq_0.vhd":50:8:50:9|Pruning register bits 9 to 1 of sp_dt_2q(9 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ad5270_5271_ctrl_uniq_0.vhd":67:8:67:9|Pruning register bit 2 of s_cd(2 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL247 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_u_step_ext_uniq_0.vhd":10:8:10:18|Input port bit 7 of init_reg_in(7 downto 0) is unused 
+@W: CL246 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_u_step_ext_uniq_0.vhd":10:8:10:18|Input port bits 5 to 0 of init_reg_in(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@W: CL260 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":109:8:109:9|Pruning register bit 7 of INIT_REG_O(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":109:8:109:9|Pruning register bits 5 to 1 of INIT_REG_O(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL190 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":109:8:109:9|Optimizing register bit INIT_REG_O(0) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_rgstr_uniq_0.vhd":109:8:109:9|Pruning unused register INIT_REG_O(0). Make sure that there are no unused intermediate registers.
+@W: CL247 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_phgen_uniq_0.vhd":10:8:10:15|Input port bit 7 of init_reg(7 downto 0) is unused 
+@W: CL246 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_phgen_uniq_0.vhd":10:8:10:15|Input port bits 5 to 0 of init_reg(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@W: CL177 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd":195:8:195:9|Sharing sequential element s_pls_ld and merging ENB_START. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL246 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\ppmc_ctrl_uniq_0.vhd":9:8:9:18|Input port bits 6 to 4 of command_reg(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@W: CL247 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_ctst_reg_uniq_0.vhd":12:8:12:10|Input port bit 7 of ldi(7 downto 0) is unused 
+@W: CL246 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_0.vhd":14:8:14:11|Input port bits 7 to 3 of idlm(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_1.vhd":14:8:14:11|Input port bits 7 to 3 of idlm(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_2.vhd":14:8:14:11|Input port bits 7 to 3 of idlm(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\reveal_workspace\tmpreveal\temp_plssel_uniq_3.vhd":14:8:14:11|Input port bits 7 to 3 of idlm(7 downto 0) are unused. Assign logic for all port bits or change the input port size.
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":44:49:44:61|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":62:50:62:62|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":84:50:84:62|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":107:49:107:61|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":124:87:124:99|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":141:80:141:92|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":159:62:159:74|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":179:76:179:88|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":204:80:204:92|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":225:79:225:91|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":243:33:243:45|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":260:33:260:45|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":275:45:275:57|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":292:31:292:43|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":320:54:320:66|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":351:54:351:66|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":387:53:387:65|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":426:53:426:65|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":450:50:450:62|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":476:50:476:62|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":497:49:497:61|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":528:33:528:45|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":553:33:553:45|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":630:35:630:47|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":687:35:687:47|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":770:35:770:47|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":853:35:853:47|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":969:35:969:47|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":1073:40:1073:52|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":1098:32:1098:44|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":1122:32:1122:44|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":1159:15:1159:27|User defined pragma syn_black_box detected
+@W: CG100 :"C:\lscc\diamond\3.13\cae_library\synthesis\verilog\pmi_def.v":1162:94:1162:106|User defined pragma syn_black_box detected
+

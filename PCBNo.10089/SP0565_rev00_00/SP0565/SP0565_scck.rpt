@@ -1,0 +1,66 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: SCPP006598
+
+Implementation : SP0565
+
+# Written on Tue Feb  3 10:34:30 2026
+
+##### FILES SYNTAX CHECKED ##############################################
+Constraint File(s):      (none)
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+*************
+
+          Start                             Requested     Requested     Clock        Clock               Clock
+Level     Clock                             Frequency     Period        Type         Group               Load 
+--------------------------------------------------------------------------------------------------------------
+0 -       System                            1.0 MHz       1000.000      system       system_clkgroup     0    
+                                                                                                              
+0 -       pll_gen|CLKOS2_inferred_clock     257.3 MHz     3.887         inferred     (multiple)          1640 
+                                                                                                              
+0 -       pll_gen|CLKOS3_inferred_clock     4.1 MHz       242.387       inferred     (multiple)          545  
+                                                                                                              
+0 -       pll_gen|CLKOP_inferred_clock      506.9 MHz     1.973         inferred     (multiple)          258  
+                                                                                                              
+0 -       pll_gen|CLKOS_inferred_clock      908.0 MHz     1.101         inferred     (multiple)          22   
+                                                                                                              
+0 -       SP0565|CLK20M                     887.2 MHz     1.127         inferred     (multiple)          12   
+==============================================================================================================
+
+
+Clock Load Summary
+******************
+
+                                  Clock     Source                                                       Clock Pin                                                Non-clock Pin                                                          Non-clock Pin                                                        
+Clock                             Load      Pin                                                          Seq Example                                              Seq Example                                                            Comb Example                                                         
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                            0         -                                                            -                                                        -                                                                      -                                                                    
+                                                                                                                                                                                                                                                                                                              
+pll_gen|CLKOS2_inferred_clock     1640      slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2(EHXPLLL)     tmpctrl_4ch.tmpctrl_4ch_reg_inst.s_COUNT_TEMP[1:0].C     -                                                                      -                                                                    
+                                                                                                                                                                                                                                                                                                              
+pll_gen|CLKOS3_inferred_clock     545       slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3(EHXPLLL)     slv_com.rx_com_inst.rx_cont_b2_inst.rxd_1q[7:0].C        tmpctrl_4ch.tmpctrl_4ch_reg_inst.temp_idlm_reg_inst.CH0ILDO[7:0].E     tmpctrl_4ch.tmpctrl_4ch_reg_inst.temp_idlm_reg_inst.WRP[3:0].SEL(mux)
+                                                                                                                                                                                                                                                                                                              
+pll_gen|CLKOP_inferred_clock      258       slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOP(EHXPLLL)      slv_com.cds_inst.cz[0].C                                 -                                                                      slv_com.cds_inst.un1_clk2.I[0](inv)                                  
+                                                                                                                                                                                                                                                                                                              
+pll_gen|CLKOS_inferred_clock      22        slv_com.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS(EHXPLLL)      slv_com.cds_inst.bz[0].C                                 -                                                                      slv_com.cds_inst.un1_clk2a.I[0](inv)                                 
+                                                                                                                                                                                                                                                                                                              
+SP0565|CLK20M                     12        CLK20M(port)                                                 slv_com.ckgen_rstb.C                                     -                                                                      -                                                                    
+==============================================================================================================================================================================================================================================================================================================

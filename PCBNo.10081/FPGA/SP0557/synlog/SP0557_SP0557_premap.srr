@@ -1,4 +1,4 @@
-# Sun Mar  1 12:33:41 2026
+# Sun Mar  1 23:25:30 2026
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -38,20 +38,20 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 220MB peak: 220MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 221MB peak: 222MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 221MB peak: 223MB)
 
 NConnInternalConnection caching is on
 
 Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 306MB peak: 306MB)
 
 
-Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 306MB peak: 307MB)
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 306MB peak: 306MB)
 
 
-Started DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 306MB peak: 307MB)
+Started DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 306MB peak: 306MB)
 
 
-Finished DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 306MB peak: 307MB)
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 306MB peak: 306MB)
 
 @N: BN362 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\tx_com\enc8b10b_wrapper.vhd":58:6:58:7|Removing sequential instance rdout (in view: work.enc8b10b_wrapper(wrapper)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\rx_com\dec8b10b_wrapper.vhd":67:6:67:7|Removing sequential instance rdout (in view: work.dec8b10b_wrapper(wrapper)) of type view:PrimLib.dff(prim) because it does not drive other instances.
@@ -462,17 +462,13 @@ Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapse
 
 mixed edge conversion for GCC is OFF
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 323MB)
-
-@W: MT548 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":33:0:33:0|Source for clock CLKOP_100M not found in netlist.
-@W: MT548 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":39:0:39:0|Source for clock CLKOS_100M_90 not found in netlist.
-@W: MT548 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":45:0:45:0|Source for clock CLKOS2_20M not found in netlist.
-@W: MT548 :"c:/fpgawork/pcbno.10081/fpga/sp0557/sp0557.fdc":51:0:51:0|Source for clock CLKOS3_10M not found in netlist.
-
-Starting clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 324MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 323MB peak: 323MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 324MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 323MB peak: 323MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 323MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=56 on top level netlist SP0557 
 
@@ -483,43 +479,42 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0
 Clock Summary
 ******************
 
-          Start                             Requested     Requested     Clock        Clock          Clock
-Level     Clock                             Frequency     Period        Type         Group          Load 
----------------------------------------------------------------------------------------------------------
-0 -       CLK20M_ext                        20.0 MHz      50.000        declared     ext_clks       12   
-                                                                                                         
-0 -       pll_gen|CLKOS2_inferred_clock     200.0 MHz     5.000         inferred     (multiple)     9425 
-                                                                                                         
-0 -       pll_gen|CLKOS3_inferred_clock     200.0 MHz     5.000         inferred     (multiple)     552  
-                                                                                                         
-0 -       pll_gen|CLKOP_inferred_clock      200.0 MHz     5.000         inferred     (multiple)     276  
-                                                                                                         
-0 -       pll_gen|CLKOS_inferred_clock      200.0 MHz     5.000         inferred     (multiple)     22   
-=========================================================================================================
+          Start             Requested     Requested     Clock        Clock                Clock
+Level     Clock             Frequency     Period        Type         Group                Load 
+-----------------------------------------------------------------------------------------------
+0 -       CLKOS2_20M        20.0 MHz      50.000        declared     default_clkgroup     9425 
+                                                                                               
+0 -       CLKOS3_10M        10.0 MHz      100.000       declared     default_clkgroup     552  
+                                                                                               
+0 -       CLKOP_100M        100.0 MHz     10.000        declared     default_clkgroup     276  
+                                                                                               
+0 -       CLKOS_100M_90     100.0 MHz     10.000        declared     default_clkgroup     22   
+                                                                                               
+0 -       CLK20M_ext        20.0 MHz      50.000        declared     default_clkgroup     12   
+                                                                                               
+0 -       System            200.0 MHz     5.000         system       system_clkgroup      0    
+===============================================================================================
 
 
 
 Clock Load Summary
 ***********************
 
-                                  Clock     Source                                                                Clock Pin                                                      Non-clock Pin                                          Non-clock Pin                                                 
-Clock                             Load      Pin                                                                   Seq Example                                                    Seq Example                                            Comb Example                                                  
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-CLK20M_ext                        12        CLK20M(port)                                                          slv_com_top_inst.ckgen_rstb.C                                  -                                                      -                                                             
-                                                                                                                                                                                                                                                                                                      
-pll_gen|CLKOS2_inferred_clock     9425      slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2(EHXPLLL)     gpio02.gpio_reg_inst.gpio_ip_reg_inst31.REG1[7:0].C            -                                                      -                                                             
-                                                                                                                                                                                                                                                                                                      
-pll_gen|CLKOS3_inferred_clock     552       slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3(EHXPLLL)     slv_com_top_inst.rx_com_inst.rx_cont_b2_inst.rxd_1q[7:0].C     gpio02.gpio_reg_inst.gpio_op_reg_inst19.REG[7:0].E     gpio02.gpio_reg_inst.gpio_op_reg_inst19.un1_writeenb.I[0](inv)
-                                                                                                                                                                                                                                                                                                      
-pll_gen|CLKOP_inferred_clock      276       slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOP(EHXPLLL)      slv_com_top_inst.cds_inst.cz[0].C                              -                                                      slv_com_top_inst.cds_inst.un1_clk2.I[0](inv)                  
-                                                                                                                                                                                                                                                                                                      
-pll_gen|CLKOS_inferred_clock      22        slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS(EHXPLLL)      slv_com_top_inst.cds_inst.bz[0].C                              -                                                      slv_com_top_inst.cds_inst.un1_clk2a.I[0](inv)                 
-======================================================================================================================================================================================================================================================================================================
-
-@W: MT529 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slvadr_cnv.vhd":55:4:55:5|Found inferred clock pll_gen|CLKOS2_inferred_clock which controls 9425 sequential elements including slv_com_top_inst.slvadr_cnv_inst.s_HEX_OUT[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
-@W: MT529 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\rst_cnt.vhd":108:2:108:3|Found inferred clock pll_gen|CLKOS_inferred_clock which controls 22 sequential elements including slv_com_top_inst.rst_cnt_inst.clk2An_cntr[8:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
-@W: MT529 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\rst_cnt.vhd":84:2:84:3|Found inferred clock pll_gen|CLKOP_inferred_clock which controls 276 sequential elements including slv_com_top_inst.rst_cnt_inst.clk2n_cntr[8:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
-@W: MT529 :"c:\fpgawork\pcbno.10081\fpga\rtl\sp0557\slv_com\slv_ctrl\slv_tx_ctrl.vhd":78:8:78:9|Found inferred clock pll_gen|CLKOS3_inferred_clock which controls 552 sequential elements including slv_com_top_inst.slv_ctrl_top_inst.slv_tx_ctrl_inst.STATE[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+                  Clock     Source                                                                Clock Pin                                                      Non-clock Pin                                          Non-clock Pin                                                 
+Clock             Load      Pin                                                                   Seq Example                                                    Seq Example                                            Comb Example                                                  
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CLKOS2_20M        9425      slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS2(EHXPLLL)     gpio02.gpio_reg_inst.gpio_ip_reg_inst31.REG1[7:0].C            -                                                      -                                                             
+                                                                                                                                                                                                                                                                                      
+CLKOS3_10M        552       slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS3(EHXPLLL)     slv_com_top_inst.rx_com_inst.rx_cont_b2_inst.rxd_1q[7:0].C     gpio02.gpio_reg_inst.gpio_op_reg_inst19.REG[7:0].E     gpio02.gpio_reg_inst.gpio_op_reg_inst19.un1_writeenb.I[0](inv)
+                                                                                                                                                                                                                                                                                      
+CLKOP_100M        276       -                                                                     slv_com_top_inst.cds_inst.cz[0].C                              -                                                      slv_com_top_inst.cds_inst.un1_clk2.I[0](inv)                  
+                                                                                                                                                                                                                                                                                      
+CLKOS_100M_90     22        slv_com_top_inst.clk_gen_inst2.PLL_inst.PLLInst_0.CLKOS(EHXPLLL)      slv_com_top_inst.cds_inst.bz[0].C                              -                                                      slv_com_top_inst.cds_inst.un1_clk2a.I[0](inv)                 
+                                                                                                                                                                                                                                                                                      
+CLK20M_ext        12        CLK20M(port)                                                          slv_com_top_inst.ckgen_rstb.C                                  -                                                      -                                                             
+                                                                                                                                                                                                                                                                                      
+System            0         -                                                                     -                                                              -                                                      -                                                             
+======================================================================================================================================================================================================================================================================================
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -556,20 +551,19 @@ Summary of user generated gated clocks:
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 310MB peak: 324MB)
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 309MB peak: 324MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 320MB peak: 324MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 319MB peak: 324MB)
 
-@W: MF511 |Found issues with constraints. Please check constraint checker report "C:\FPGAwork\PCBNo.10081\FPGA\SP0557\SP0557_SP0557_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 328MB peak: 328MB)
+Finished constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 327MB peak: 328MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 229MB peak: 329MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 228MB peak: 328MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Sun Mar  1 12:33:45 2026
+# Sun Mar  1 23:25:34 2026
 
 ###########################################################]

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\work\S127M\PCBNo_10089\SP0565_rev00_00\SP0565\synlog\SP0565_SP0565_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>SP0565|CLK20M</data>
+<data>200.0 MHz</data>
+<data>221.3 MHz</data>
+<data>0.481</data>
+</row>
+<row>
+<data>pll_gen_uniq_0|CLKOP_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>243.3 MHz</data>
+<data>0.890</data>
+</row>
+<row>
+<data>pll_gen_uniq_0|CLKOS2_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>111.4 MHz</data>
+<data>-3.979</data>
+</row>
+<row>
+<data>pll_gen_uniq_0|CLKOS3_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>134.1 MHz</data>
+<data>-2.211</data>
+</row>
+<row>
+<data>pll_gen_uniq_0|CLKOS_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>324.9 MHz</data>
+<data>1.923</data>
+</row>
+<row>
+<data>reveal_coretop|jtck_inferred_clock[0]</data>
+<data>200.0 MHz</data>
+<data>175.1 MHz</data>
+<data>-0.710</data>
+</row>
+<row>
+<data>System</data>
+<data>200.0 MHz</data>
+<data>300.8 MHz</data>
+<data>1.676</data>
+</row>
+</report_table>

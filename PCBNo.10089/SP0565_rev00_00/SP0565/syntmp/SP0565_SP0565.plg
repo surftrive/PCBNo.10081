@@ -1,0 +1,165 @@
+@P:  Worst Slack : -3.979
+@P:  SP0565|CLK20M - Estimated Frequency : 221.3 MHz
+@P:  SP0565|CLK20M - Requested Frequency : 200.0 MHz
+@P:  SP0565|CLK20M - Estimated Period : 4.519
+@P:  SP0565|CLK20M - Requested Period : 5.000
+@P:  SP0565|CLK20M - Slack : 0.481
+@P:  pll_gen_uniq_0|CLKOP_inferred_clock - Estimated Frequency : 243.3 MHz
+@P:  pll_gen_uniq_0|CLKOP_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  pll_gen_uniq_0|CLKOP_inferred_clock - Estimated Period : 4.109
+@P:  pll_gen_uniq_0|CLKOP_inferred_clock - Requested Period : 5.000
+@P:  pll_gen_uniq_0|CLKOP_inferred_clock - Slack : 0.890
+@P:  pll_gen_uniq_0|CLKOS2_inferred_clock - Estimated Frequency : 111.4 MHz
+@P:  pll_gen_uniq_0|CLKOS2_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  pll_gen_uniq_0|CLKOS2_inferred_clock - Estimated Period : 8.979
+@P:  pll_gen_uniq_0|CLKOS2_inferred_clock - Requested Period : 5.000
+@P:  pll_gen_uniq_0|CLKOS2_inferred_clock - Slack : -3.979
+@P:  pll_gen_uniq_0|CLKOS3_inferred_clock - Estimated Frequency : 134.1 MHz
+@P:  pll_gen_uniq_0|CLKOS3_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  pll_gen_uniq_0|CLKOS3_inferred_clock - Estimated Period : 7.456
+@P:  pll_gen_uniq_0|CLKOS3_inferred_clock - Requested Period : 5.000
+@P:  pll_gen_uniq_0|CLKOS3_inferred_clock - Slack : -2.211
+@P:  pll_gen_uniq_0|CLKOS_inferred_clock - Estimated Frequency : 324.9 MHz
+@P:  pll_gen_uniq_0|CLKOS_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  pll_gen_uniq_0|CLKOS_inferred_clock - Estimated Period : 3.078
+@P:  pll_gen_uniq_0|CLKOS_inferred_clock - Requested Period : 5.000
+@P:  pll_gen_uniq_0|CLKOS_inferred_clock - Slack : 1.923
+@P:  reveal_coretop|jtck_inferred_clock[0] - Estimated Frequency : 175.1 MHz
+@P:  reveal_coretop|jtck_inferred_clock[0] - Requested Frequency : 200.0 MHz
+@P:  reveal_coretop|jtck_inferred_clock[0] - Estimated Period : 5.710
+@P:  reveal_coretop|jtck_inferred_clock[0] - Requested Period : 5.000
+@P:  reveal_coretop|jtck_inferred_clock[0] - Slack : -0.710
+@P:  System - Estimated Frequency : 300.8 MHz
+@P:  System - Requested Frequency : 200.0 MHz
+@P:  System - Estimated Period : 3.324
+@P:  System - Requested Period : 5.000
+@P:  System - Slack : 1.676
+@P:  Total Area : 2647.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:29s

@@ -1,0 +1,163 @@
+<html><body><samp><pre>
+<!@TC:1770082472>
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03L-SP1
+Install: C:\lscc\diamond\3.13\synpbase
+OS: Windows 10 or later
+Hostname: SCPP006598
+
+Implementation : SP0565
+
+# Written on Tue Feb  3 10:34:32 2026
+
+##### DESIGN INFO #######################################################
+
+Top View:                "SP0565"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+<a name=clockRelationships66></a>Clock Relationships</a>
+*******************
+
+Starting                          Ending                            |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                            System                            |     1000.000         |     No paths         |     No paths         |     No paths                         
+System                            pll_gen|CLKOS2_inferred_clock     |     3.887            |     No paths         |     No paths         |     No paths                         
+System                            SP0565|CLK20M                     |     1.127            |     No paths         |     No paths         |     No paths                         
+System                            pll_gen|CLKOS_inferred_clock      |     1.101            |     No paths         |     1.101            |     No paths                         
+System                            pll_gen|CLKOP_inferred_clock      |     1.973            |     No paths         |     1.973            |     No paths                         
+System                            pll_gen|CLKOS3_inferred_clock     |     242.387          |     No paths         |     No paths         |     No paths                         
+pll_gen|CLKOS2_inferred_clock     pll_gen|CLKOS2_inferred_clock     |     3.887            |     No paths         |     No paths         |     No paths                         
+pll_gen|CLKOS2_inferred_clock     pll_gen|CLKOS3_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+SP0565|CLK20M                     System                            |     1.127            |     No paths         |     No paths         |     No paths                         
+SP0565|CLK20M                     SP0565|CLK20M                     |     1.127            |     No paths         |     No paths         |     No paths                         
+SP0565|CLK20M                     pll_gen|CLKOP_inferred_clock      |     Diff grp         |     No paths         |     No paths         |     No paths                         
+SP0565|CLK20M                     pll_gen|CLKOS3_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+pll_gen|CLKOS_inferred_clock      pll_gen|CLKOS_inferred_clock      |     1.101            |     1.101            |     No paths         |     No paths                         
+pll_gen|CLKOS_inferred_clock      pll_gen|CLKOP_inferred_clock      |     Diff grp         |     Diff grp         |     No paths         |     No paths                         
+pll_gen|CLKOP_inferred_clock      System                            |     1.973            |     No paths         |     No paths         |     No paths                         
+pll_gen|CLKOP_inferred_clock      pll_gen|CLKOS_inferred_clock      |     No paths         |     No paths         |     No paths         |     Diff grp                         
+pll_gen|CLKOP_inferred_clock      pll_gen|CLKOP_inferred_clock      |     1.973            |     1.973            |     No paths         |     No paths                         
+pll_gen|CLKOP_inferred_clock      pll_gen|CLKOS3_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+pll_gen|CLKOS3_inferred_clock     System                            |     242.387          |     No paths         |     No paths         |     No paths                         
+pll_gen|CLKOS3_inferred_clock     pll_gen|CLKOS2_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+pll_gen|CLKOS3_inferred_clock     SP0565|CLK20M                     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+pll_gen|CLKOS3_inferred_clock     pll_gen|CLKOP_inferred_clock      |     Diff grp         |     No paths         |     No paths         |     No paths                         
+pll_gen|CLKOS3_inferred_clock     pll_gen|CLKOS3_inferred_clock     |     242.387          |     No paths         |     121.194          |     121.194                          
+===============================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+<a name=UnconstrainedStartEndPointsCCK67></a>Unconstrained Start/End Points</a>
+******************************
+
+p:ACTb[1]
+p:ACTb[2]
+p:ACTb[3]
+p:ACTb[4]
+p:ACTb[5]
+p:ACTb[6]
+p:ADC_MISO
+p:ADC_MOSI
+p:ADC_SCK
+p:ADC_nCS
+p:ENC_A[1]
+p:ENC_B[1]
+p:FAN_ON[1]
+p:FAN_SNS[1]
+p:PLS_SNS[1]
+p:PLS_SNS[2]
+p:PLT_EN
+p:PLT_MOSI
+p:PLT_ON
+p:PLT_SCLK
+p:PLT_SYNCb
+p:PORb
+p:PTLEDb[1]
+p:PTLEDb[2]
+p:PUMPb[1]
+p:PUMPb[2]
+p:PW_LMT_ON
+p:PW_PLS_ON
+p:PW_PUMP_ON
+p:PW_SNSLED_ON
+p:PW_SV_ON
+p:SLVADR[0]
+p:SLVADR[1]
+p:SLVADR[2]
+p:SLVADR[3]
+p:SLVADR[4]
+p:SLVADR[5]
+p:SLVADR[6]
+p:SLVADR[7]
+p:SLV_ER
+p:SNS[1]
+p:SNS[2]
+p:STM_DIR
+p:STM_EN
+p:STM_LCCW[1]
+p:STM_LCW[1]
+p:STM_M0S
+p:STM_M0Z
+p:STM_M1
+p:STM_MOSI
+p:STM_PCK[1]
+p:STM_SCLK
+p:STM_SYNCb
+p:STM_nFAULT[1]
+p:STM_nSLP
+p:UP_CLK
+p:UP_RXD
+p:UP_TXD
+p:nFLT_LMT
+p:nFLT_PLS
+p:nFLT_PLSSNS
+p:nFLT_PLT
+p:nFLT_PUMP
+p:nFLT_SNSLED
+p:nFLT_SV
+
+
+<a name=InapplicableconstraintsCCK68></a>Inapplicable constraints</a>
+************************
+
+(none)
+
+
+<a name=ApplicableConstraintsWithIssuesCCK69></a>Applicable constraints with issues</a>
+**********************************
+
+(none)
+
+
+<a name=ConstraintsWithMatchingWildcardExpressionsCCK70></a>Constraints with matching wildcard expressions</a>
+**********************************************
+
+(none)
+
+
+<a name=LibraryReportCCK71></a>Library Report</a>
+**************
+
+
+# End of Constraint Checker Report
+
+</pre></samp></body></html>

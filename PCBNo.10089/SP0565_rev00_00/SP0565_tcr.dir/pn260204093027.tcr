@@ -1,0 +1,6 @@
+#Start recording tcl command: 2/4/2026 08:44:09
+#Project Location: C:/work/S127M/PCBNo_10089/SP0565_rev02_00; Project name: SP0565
+prj_project open "C:/work/S127M/PCBNo_10089/SP0565_rev02_00/SP0565.ldf"
+rvl_project new
+rvl_project close -force
+#Stop recording: 2/4/2026 09:30:27

@@ -1,0 +1,98 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/work/S127M/LED_serch/sim/test_STLED_CTRL_TOP
+Etb_temp_alm_top
+Z0 w1770620353
+Z1 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z2 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z3 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 1
+Z4 dC:/work/S127M/PCBNo_10089/SP0565_rev02_00/SIM/test_TEMP_ALM_TOP
+Z5 8C:/work/S127M/PCBNo_10089/SP0565_rev02_00/SIM/TB/TEMP_ALM_TOP_tb.vhd
+Z6 FC:/work/S127M/PCBNo_10089/SP0565_rev02_00/SIM/TB/TEMP_ALM_TOP_tb.vhd
+l0
+L5 1
+VzVH3`zUSWUl9<JNL2ROkZ1
+!s100 <82>:EV7Q2i6>?U=Wf?cO1
+Z7 OT;C;2023.3;77
+32
+Z8 !s110 1770620516
+!i10b 1
+Z9 !s108 1770620516.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/work/S127M/PCBNo_10089/SP0565_rev02_00/SIM/TB/TEMP_ALM_TOP_tb.vhd|
+Z11 !s107 C:/work/S127M/PCBNo_10089/SP0565_rev02_00/SIM/TB/TEMP_ALM_TOP_tb.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1 CvgOpt 0
+Asim
+Z14 DEx4 work 12 temp_alm_top 0 22 VzE5jVVJ=;2U0_3?oC6Hk1
+R1
+R2
+R3
+DEx4 work 15 tb_temp_alm_top 0 22 zVH3`zUSWUl9<JNL2ROkZ1
+!i122 1
+l24
+L8 89
+V:lUE2;]<k4lJZcK3]9K<n1
+!s100 QmA7_b?2TQfUBXENFCHMX3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etemp_alm_top
+Z15 w1770678869
+R1
+R2
+R3
+!i122 12
+R4
+Z16 8C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/cool_mode/TEMP_ALM_TOP.vhd
+Z17 FC:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/cool_mode/TEMP_ALM_TOP.vhd
+l0
+L20 1
+Veb2YHL;C8?=97nf?e65hm0
+!s100 XhbP>5D?<C?MEJVJM5kBB3
+R7
+32
+Z18 !s110 1770678877
+!i10b 1
+Z19 !s108 1770678877.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/cool_mode/TEMP_ALM_TOP.vhd|
+Z21 !s107 C:/work/S127M/PCBNo_10089/SP0565_rev02_00/RTL/SP05565/cool_mode/TEMP_ALM_TOP.vhd|
+!i113 1
+R12
+R13
+Artl
+R1
+R2
+R3
+DEx4 work 12 temp_alm_top 0 22 eb2YHL;C8?=97nf?e65hm0
+!i122 12
+l59
+L34 103
+VTM1akLAEVm`BJo7D];:6^1
+!s100 be;aJ8VoZ_SVgm3<AG18B2
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R12
+R13

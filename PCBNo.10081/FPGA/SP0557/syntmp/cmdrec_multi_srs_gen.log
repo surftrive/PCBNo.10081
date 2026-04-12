@@ -1,7 +1,7 @@
 C:\lscc\diamond\3.14\synpbase\bin64\syn_nfilter.exe  -link  -top  SP0557  -multisrs  C:\FPGAwork\PCBNo.10081\FPGA\SP0557\synwork\SP0557_comp.srs  -osyn  C:\FPGAwork\PCBNo.10081\FPGA\SP0557\synwork\SP0557_mult.srs  -log  C:\FPGAwork\PCBNo.10081\FPGA\SP0557\synlog\SP0557_multi_srs_gen.srr 
 relcom:..\..\..\..\..\lscc\diamond\3.14\synpbase\bin64\syn_nfilter.exe -link -top SP0557 -multisrs ..\synwork\SP0557_comp.srs -osyn ..\synwork\SP0557_mult.srs -log ..\synlog\SP0557_multi_srs_gen.srr
-rc:0 success:1 runtime:0
-file:..\synwork\sp0557_comp.srs|io:i|time:1772370216|size:264726|exec:0|csum:95C85F294F3CB4B82920FDDDB08F7478
-file:..\synwork\sp0557_mult.srs|io:o|time:1772370218|size:17459|exec:0|csum:
-file:..\synlog\sp0557_multi_srs_gen.srr|io:o|time:1772370218|size:1129|exec:0|csum:
+rc:0 success:1 runtime:1
+file:..\synwork\sp0557_comp.srs|io:i|time:1772375838|size:264737|exec:0|csum:AF0FCE91BF870159D99A7848EE5ED9B7
+file:..\synwork\sp0557_mult.srs|io:o|time:1772375840|size:17461|exec:0|csum:
+file:..\synlog\sp0557_multi_srs_gen.srr|io:o|time:1772375840|size:1128|exec:0|csum:
 file:..\..\..\..\..\lscc\diamond\3.14\synpbase\bin64\syn_nfilter.exe|io:i|time:1727134362|size:10549248|exec:1|csum:D91EA53737F6BC51A484A15DD0EB29F5
